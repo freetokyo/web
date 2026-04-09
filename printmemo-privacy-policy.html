@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrintMemo Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --card: #ffffff;
+      --text: #1f2a24;
+      --muted: #5d6a63;
+      --accent: #1c5f52;
+      --line: #d8ddd8;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; background: linear-gradient(180deg, #eef3ee 0%, var(--bg) 100%); color: var(--text); line-height: 1.7; }
+    main { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; box-shadow: 0 12px 32px rgba(24, 38, 31, 0.06); }
+    h1, h2 { line-height: 1.25; margin: 0 0 16px; }
+    h1 { font-size: 32px; letter-spacing: -0.02em; }
+    h2 { margin-top: 28px; font-size: 20px; color: var(--accent); }
+    p, li { font-size: 15px; margin: 0 0 12px; }
+    ul { padding-left: 20px; margin: 0; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>PrintMemo Privacy Policy</h1>
+      <p class="meta">最終更新日: 2026-04-09</p>
+      <p>PrintMemo は、学校プリントの撮影、OCR 解析、締切整理を主な目的とするアプリです。本ポリシーは、PrintMemo がどのような情報を端末内で扱うか、どの情報を外部に送信しないかを説明します。</p>
+      <h2>1. 基本方針</h2>
+      <p>PrintMemo は、アカウント作成や独自サーバーへの保存を前提としていません。現在の方針として、独自サーバー送信、広告 SDK、外部解析 SDK、アカウント作成は行いません。コード上で確認できる範囲では、OCR と締切抽出を含む主要な処理はユーザーの端末内で完結します。</p>
+      <h2>2. アプリが扱う情報</h2>
+      <ul>
+        <li>撮影または読み込んだ学校プリント画像</li>
+        <li>OCR により抽出された文字情報</li>
+        <li>締切日、持ち物、科目、提出状態、復習タグなどの整理情報</li>
+        <li>通知設定、最近開いたプリント、追加辞書、課金状態などの端末内設定情報</li>
+      </ul>
+      <h2>3. 情報の利用目的</h2>
+      <ul>
+        <li>プリント画像から文字を読み取り、締切や持ち物を整理するため</li>
+        <li>保存済みプリントを検索、再確認、再処理するため</li>
+        <li>締切前のローカル通知を表示するため</li>
+        <li>無料枠や買い切り Premium の利用状態を端末内で管理するため</li>
+      </ul>
+      <h2>4. 外部送信について</h2>
+      <p>コード上で確認できる範囲では、PrintMemo は OCR 用の画像やテキストを外部 API に送信しません。独自クラウド同期、広告 SDK、第三者解析 SDK も利用しません。</p>
+      <h2>5. 権限の利用</h2>
+      <ul>
+        <li>カメラ: 学校プリントを撮影して端末内で OCR 解析するために使用します。</li>
+        <li>写真: 既存のプリント画像を読み込み、端末内で OCR 解析するために使用します。</li>
+        <li>通知: 締切前のローカル通知を表示するために使用します。</li>
+      </ul>
+      <h2>6. 保存場所</h2>
+      <p>コード上で確認できる範囲では、画像はアプリの Application Support 配下に保存され、OCR テキストや抽出候補などは端末内のデータストアに保存されます。一部の設定値は UserDefaults に保存されます。</p>
+      <h2>7. バックアップと共有</h2>
+      <p>アプリ独自の自動クラウド同期はありません。手動バックアップでは JSON ファイルを書き出すことができますが、これはユーザーが明示的に共有操作を行った場合に限られます。</p>
+      <p>手動バックアップにはメタデータや OCR テキストが含まれる可能性があります。保存画像そのもの、通知設定、最近開いた履歴、購入状態は含まれません。</p>
+      <h2>8. 課金</h2>
+      <p>PrintMemo は App Store の買い切り型 In-App Purchase を利用する場合があります。購入処理は Apple の StoreKit を通じて行われます。</p>
+      <h2>9. データ削除</h2>
+      <p>アプリ内の Settings から、保存済みプリント、OCR 結果、保存画像、誤抽出サンプル、追加辞書、最近開いた履歴などのローカルデータを削除できます。</p>
+      <h2>10. お問い合わせ</h2>
+      <p>お問い合わせ先: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+      <p>サポートページ: <a href="./printmemo-support.html">PrintMemo Support</a></p>
+    </div>
+  </main>
+</body>
+</html>

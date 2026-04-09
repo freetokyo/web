@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrintMemo Support</title>
+  <style>
+    :root {
+      --bg: #f3f1ea;
+      --card: #ffffff;
+      --text: #203028;
+      --muted: #617067;
+      --accent: #1c5f52;
+      --line: #d9ddd6;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; color: var(--text); background: radial-gradient(circle at top right, rgba(28, 95, 82, 0.09), transparent 26%), linear-gradient(180deg, #eef2ec 0%, var(--bg) 100%); }
+    main { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; box-shadow: 0 12px 32px rgba(32, 48, 40, 0.06); margin-bottom: 20px; }
+    h1, h2, h3 { margin: 0 0 16px; line-height: 1.25; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 20px; color: var(--accent); margin-top: 12px; }
+    h3 { font-size: 16px; }
+    p, li { font-size: 15px; line-height: 1.7; margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 20px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>PrintMemo Support</h1>
+      <p class="meta">最終更新日: 2026-04-09</p>
+      <p>PrintMemo は、学校プリントの撮影、OCR 解析、締切整理を支援するアプリです。このページでは、基本的な使い方とトラブル時の確認事項を案内します。</p>
+    </section>
+    <section class="card">
+      <h2>基本機能</h2>
+      <ul>
+        <li>カメラで学校プリントを撮影</li>
+        <li>端末内 OCR による文字抽出</li>
+        <li>締切候補、持ち物、提出状態の整理</li>
+        <li>締切前のローカル通知</li>
+        <li>買い切り Premium による保存上限解除</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>よくある確認事項</h2>
+      <h3>カメラが開かない</h3>
+      <p>iPhone または iPad の設定で、PrintMemo にカメラ権限が付与されているか確認してください。</p>
+      <h3>写真を読み込めない</h3>
+      <p>写真アクセス権限が未許可の場合、読み込みに失敗する可能性があります。設定アプリから権限状態を確認してください。</p>
+      <h3>通知が届かない</h3>
+      <p>通知権限が許可されているか、対象プリントに締切日が設定されているか、すでに提出済みになっていないかを確認してください。</p>
+      <h3>OCR や締切抽出が不正確</h3>
+      <p>画像が暗い、ぼやけている、紙面レイアウトが複雑な場合は抽出精度が低下することがあります。再撮影や再処理を試してください。</p>
+      <h3>保存できない</h3>
+      <p>無料プランでは新規保存件数に月次上限があります。上限に達した場合は、翌月まで待つか Premium の利用を検討してください。</p>
+      <h3>データを消したい</h3>
+      <p>Settings の「Delete Data」から、保存済みプリント、OCR 結果、保存画像、誤抽出サンプル、追加辞書、最近開いた履歴を削除できます。</p>
+    </section>
+    <section class="card">
+      <h2>プライバシー</h2>
+      <p>PrintMemo の主要処理は、コード上で確認できる範囲と現在の方針の両面から、端末内完結を前提としています。詳細は <a href="./printmemo-privacy-policy.html">Privacy Policy</a> を参照してください。</p>
+    </section>
+    <section class="card">
+      <h2>サポート連絡先</h2>
+      <p>お問い合わせ先: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+    </section>
+  </main>
+</body>
+</html>
