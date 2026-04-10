@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaunaFlow — プライバシーポリシー / Privacy Policy / Datenschutzrichtlinie</title>
+  <meta name="description" content="SaunaFlow のプライバシーポリシー。個人情報の収集なし。すべてのデータはデバイス内に保存。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0c0c0c;
+      --bg2:     #161616;
+      --bg3:     #1f1f1f;
+      --accent:  #e85d04;
+      --accent2: #f48c06;
+      --text:    #f0ece6;
+      --text2:   #9c8f83;
+      --border:  #2a2a2a;
+      --radius:  14px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(12,12,12,0.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 52px;
+    }
+    .nav-left { display: flex; align-items: center; gap: 12px; }
+    .nav-back {
+      color: var(--accent); font-size: 14px; text-decoration: none;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .nav-back:hover { color: var(--accent2); }
+    .nav-title { font-size: 15px; font-weight: 700; color: var(--text2); }
+    .lang-switch { display: flex; gap: 6px; }
+    .lang-btn {
+      background: none; border: 1px solid var(--border);
+      color: var(--text2); font-size: 12px;
+      padding: 4px 10px; border-radius: 20px; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+
+    /* ── Layout ── */
+    .page { max-width: 760px; margin: 0 auto; padding: 60px 24px 80px; }
+
+    .page-header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .page-header h1 {
+      font-size: clamp(28px, 5vw, 42px); font-weight: 800;
+      letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 12px;
+    }
+    .page-header .meta { font-size: 13px; color: var(--text2); }
+
+    /* ── Summary banner ── */
+    .summary-banner {
+      background: rgba(26,122,58,0.12); border: 1px solid rgba(26,122,58,0.3);
+      border-radius: var(--radius); padding: 20px 24px; margin-bottom: 48px;
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .summary-banner .icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+    .summary-banner p { font-size: 14px; line-height: 1.7; }
+    .summary-banner strong { color: #6dcc8a; }
+
+    /* ── Sections ── */
+    .policy-section { margin-bottom: 44px; }
+    .policy-section h2 {
+      font-size: 17px; font-weight: 700; letter-spacing: -0.3px;
+      margin-bottom: 14px; padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .policy-section p, .policy-section li {
+      font-size: 14px; color: var(--text2); line-height: 1.8;
+    }
+    .policy-section ul {
+      list-style: none; display: flex; flex-direction: column; gap: 8px;
+      margin-top: 12px;
+    }
+    .policy-section li { display: flex; gap: 10px; align-items: flex-start; }
+    .policy-section li::before { content: "•"; color: var(--accent2); flex-shrink: 0; margin-top: 1px; }
+    .policy-section p + p { margin-top: 10px; }
+
+    /* ── Table ── */
+    .data-table {
+      width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px;
+    }
+    .data-table th {
+      text-align: left; padding: 10px 12px;
+      background: var(--bg2); color: var(--text2);
+      font-weight: 600; font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td {
+      padding: 12px; border-bottom: 1px solid var(--border);
+      color: var(--text2); vertical-align: top; line-height: 1.6;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .badge-none {
+      display: inline-block; padding: 2px 8px; border-radius: 6px;
+      background: rgba(26,122,58,0.15); color: #6dcc8a;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.3px;
+    }
+    .badge-local {
+      display: inline-block; padding: 2px 8px; border-radius: 6px;
+      background: rgba(232,93,4,0.1); color: var(--accent2);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.3px;
+    }
+
+    /* ── Contact ── */
+    .contact-card {
+      background: var(--bg2); border-radius: var(--radius);
+      padding: 28px; margin-top: 16px;
+    }
+    .contact-card p { font-size: 14px; color: var(--text2); line-height: 1.7; margin-bottom: 14px; }
+    .contact-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--accent); font-size: 14px; font-weight: 600;
+      text-decoration: none;
+    }
+    .contact-link:hover { color: var(--accent2); text-decoration: underline; }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--bg2); border-radius: var(--radius);
+      padding: 20px 24px; margin-bottom: 40px;
+    }
+    .toc p { font-size: 12px; font-weight: 700; color: var(--text2); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
+    .toc ol { list-style: none; display: flex; flex-direction: column; gap: 6px; padding: 0; }
+    .toc li::before { display: none; }
+    .toc a { font-size: 13px; color: var(--text2); text-decoration: none; }
+    .toc a:hover { color: var(--accent); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px; text-align: center;
+      color: var(--text2); font-size: 13px;
+    }
+    .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text2); text-decoration: none; }
+    .footer-links a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <a href="saunaflow.html" class="nav-back">← SaunaFlow</a>
+    <span class="nav-title">Privacy Policy</span>
+  </div>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('ja')">日本語</button>
+    <button class="lang-btn"        onclick="setLang('en')">English</button>
+    <button class="lang-btn"        onclick="setLang('de')">Deutsch</button>
+  </div>
+</nav>
+
+<!-- ═══════════ JAPANESE ═══════════ -->
+<div id="lang-ja" class="lang-section active">
+<div class="page">
+
+  <div class="page-header">
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">最終更新日：2025年4月10日 &nbsp;｜&nbsp; 対象アプリ：SaunaFlow（iOS / watchOS）</p>
+  </div>
+
+  <div class="summary-banner">
+    <span class="icon">🔒</span>
+    <p><strong>一言でいうと：SaunaFlow は個人情報を一切収集しません。</strong><br>
+    すべてのデータ（プリセット・履歴・メモ）はあなたのデバイス内にのみ保存されます。外部サーバーへの送信・広告・アナリティクス SDK の使用は一切ありません。</p>
+  </div>
+
+  <div class="toc">
+    <p>目次</p>
+    <ol>
+      <li><a href="#ja-1">1. 収集する情報</a></li>
+      <li><a href="#ja-2">2. データの保存場所</a></li>
+      <li><a href="#ja-3">3. アプリ内課金</a></li>
+      <li><a href="#ja-4">4. サードパーティ SDK</a></li>
+      <li><a href="#ja-5">5. お子様のプライバシー</a></li>
+      <li><a href="#ja-6">6. プライバシーポリシーの変更</a></li>
+      <li><a href="#ja-7">7. お問い合わせ</a></li>
+    </ol>
+  </div>
+
+  <div class="policy-section" id="ja-1">
+    <h2>1. 収集する情報</h2>
+    <p>SaunaFlow は個人を特定できる情報（氏名・メールアドレス・位置情報・連絡先等）を一切収集しません。</p>
+    <p>アプリが扱うデータは以下のとおりです。</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>データ種別</th><th>内容</th><th>保存先</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>プリセット</td><td>フェーズ設定・セット数・名前</td><td><span class="badge-local">デバイス内</span></td></tr>
+        <tr><td>セッション履歴</td><td>日時・完了セット数・ととのいスコア</td><td><span class="badge-local">デバイス内</span></td></tr>
+        <tr><td>メモ</td><td>セッション後に任意で入力したテキスト</td><td><span class="badge-local">デバイス内</span></td></tr>
+        <tr><td>プレミアム購入状態</td><td>購入済みかどうかのフラグ（UserDefaults）</td><td><span class="badge-local">デバイス内</span></td></tr>
+        <tr><td>外部への送信</td><td>—</td><td><span class="badge-none">なし</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="policy-section" id="ja-2">
+    <h2>2. データの保存場所</h2>
+    <p>すべてのデータは Apple の SwiftData フレームワークを使用してデバイスのローカルストレージに保存されます。クラウドへのバックアップ（iCloud 同期）は行いません。アプリを削除するとすべてのデータが完全に削除されます。</p>
+  </div>
+
+  <div class="policy-section" id="ja-3">
+    <h2>3. アプリ内課金（プレミアムプラン）</h2>
+    <p>プレミアムプランの購入処理は Apple Inc. の App Store によって処理されます。当アプリは支払い情報や Apple ID 等の購入者情報にアクセスしません。Apple のプライバシーポリシーについては <a href="https://www.apple.com/jp/legal/privacy/" style="color:var(--accent)">apple.com/jp/legal/privacy/</a> をご参照ください。</p>
+  </div>
+
+  <div class="policy-section" id="ja-4">
+    <h2>4. サードパーティ SDK・広告</h2>
+    <p>SaunaFlow にはサードパーティのアナリティクス・広告・クラッシュレポート SDK は一切組み込まれていません。アプリの動作に使用するフレームワークは Apple 純正のもの（SwiftUI・SwiftData・WatchConnectivity・StoreKit）のみです。</p>
+  </div>
+
+  <div class="policy-section" id="ja-5">
+    <h2>5. お子様のプライバシー</h2>
+    <p>本アプリは 13 歳未満のお子様を対象としていません。また、いかなる年齢のユーザーからも個人情報を収集しないため、お子様の情報が収集・保存されることはありません。</p>
+  </div>
+
+  <div class="policy-section" id="ja-6">
+    <h2>6. プライバシーポリシーの変更</h2>
+    <p>本ポリシーは必要に応じて更新されます。重要な変更がある場合はアプリのアップデートを通じてお知らせします。最新のポリシーは常に本ページで公開されます。</p>
+  </div>
+
+  <div class="policy-section" id="ja-7">
+    <h2>7. お問い合わせ</h2>
+    <p>プライバシーに関するご質問やご懸念がありましたら、以下よりご連絡ください。</p>
+    <div class="contact-card">
+      <p>開発者：Yang Lichen<br>
+      本ポリシーに関するお問い合わせは GitHub Issue またはメールにてお受けします。</p>
+      <a href="https://github.com/freetokyo/saunaflow/issues" class="contact-link">GitHub で問い合わせる →</a>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="footer-links">
+    <a href="saunaflow.html">SaunaFlow</a>
+    <a href="saunaflow-support.html">サポート</a>
+  </div>
+  <p>© 2025 Yang Lichen</p>
+</footer>
+</div><!-- /lang-ja -->
+
+<!-- ═══════════ ENGLISH ═══════════ -->
+<div id="lang-en" class="lang-section">
+<div class="page">
+
+  <div class="page-header">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: April 10, 2025 &nbsp;|&nbsp; App: SaunaFlow (iOS / watchOS)</p>
+  </div>
+
+  <div class="summary-banner">
+    <span class="icon">🔒</span>
+    <p><strong>Short version: SaunaFlow collects no personal information.</strong><br>
+    All data (presets, session history, notes) is stored exclusively on your device. There is no data transmission to external servers, no advertising, and no third-party analytics SDKs.</p>
+  </div>
+
+  <div class="toc">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#en-1">1. Information We Collect</a></li>
+      <li><a href="#en-2">2. Data Storage</a></li>
+      <li><a href="#en-3">3. In-App Purchases</a></li>
+      <li><a href="#en-4">4. Third-Party SDKs</a></li>
+      <li><a href="#en-5">5. Children's Privacy</a></li>
+      <li><a href="#en-6">6. California Privacy Rights (CCPA)</a></li>
+      <li><a href="#en-7">7. Changes to This Policy</a></li>
+      <li><a href="#en-8">8. Contact</a></li>
+    </ol>
+  </div>
+
+  <div class="policy-section" id="en-1">
+    <h2>1. Information We Collect</h2>
+    <p>SaunaFlow does not collect any personally identifiable information — no names, email addresses, location data, contacts, or device identifiers.</p>
+    <p>The data the app handles is limited to the following:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data Type</th><th>Content</th><th>Storage</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Presets</td><td>Phase configuration, set count, name</td><td><span class="badge-local">On-device</span></td></tr>
+        <tr><td>Session history</td><td>Date/time, completed sets, Totonoi Score</td><td><span class="badge-local">On-device</span></td></tr>
+        <tr><td>Notes</td><td>Optional text entered after each session</td><td><span class="badge-local">On-device</span></td></tr>
+        <tr><td>Premium status</td><td>Boolean flag stored in UserDefaults</td><td><span class="badge-local">On-device</span></td></tr>
+        <tr><td>External transmission</td><td>—</td><td><span class="badge-none">None</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="policy-section" id="en-2">
+    <h2>2. Data Storage</h2>
+    <p>All data is stored locally on your device using Apple's SwiftData framework. SaunaFlow does not use iCloud sync or any cloud backup service. Deleting the app permanently removes all associated data from your device.</p>
+  </div>
+
+  <div class="policy-section" id="en-3">
+    <h2>3. In-App Purchases (Premium Plan)</h2>
+    <p>Premium plan purchases are processed entirely by Apple Inc. through the App Store. SaunaFlow does not have access to your payment information, Apple ID, or any other purchase-related personal data. Please refer to <a href="https://www.apple.com/legal/privacy/" style="color:var(--accent)">Apple's Privacy Policy</a> for details on how Apple handles purchase data.</p>
+  </div>
+
+  <div class="policy-section" id="en-4">
+    <h2>4. Third-Party SDKs &amp; Advertising</h2>
+    <p>SaunaFlow contains no third-party analytics, advertising, or crash reporting SDKs. The only frameworks used are Apple's own: SwiftUI, SwiftData, WatchConnectivity, and StoreKit.</p>
+  </div>
+
+  <div class="policy-section" id="en-5">
+    <h2>5. Children's Privacy</h2>
+    <p>SaunaFlow is not directed at children under the age of 13. Because the app collects no personal information from any user, no data from children is collected or stored.</p>
+  </div>
+
+  <div class="policy-section" id="en-6">
+    <h2>6. California Privacy Rights (CCPA)</h2>
+    <p>If you are a California resident, you have the right to know what personal information is collected about you, the right to delete it, and the right to opt out of its sale.</p>
+    <p>SaunaFlow does not collect, share, or sell any personal information. Therefore, there is no data to disclose, delete, or opt out of. If you have questions about this, please contact us using the information below.</p>
+  </div>
+
+  <div class="policy-section" id="en-7">
+    <h2>7. Changes to This Policy</h2>
+    <p>This policy may be updated from time to time. Material changes will be communicated through an app update. The current version is always available at this URL.</p>
+  </div>
+
+  <div class="policy-section" id="en-8">
+    <h2>8. Contact</h2>
+    <p>If you have questions or concerns about this privacy policy, please reach out through GitHub Issues.</p>
+    <div class="contact-card">
+      <p>Developer: Yang Lichen</p>
+      <a href="https://github.com/freetokyo/saunaflow/issues" class="contact-link">Contact via GitHub →</a>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="footer-links">
+    <a href="saunaflow.html">SaunaFlow</a>
+    <a href="saunaflow-support.html">Support</a>
+  </div>
+  <p>© 2025 Yang Lichen</p>
+</footer>
+</div><!-- /lang-en -->
+
+<!-- ═══════════ GERMAN ═══════════ -->
+<div id="lang-de" class="lang-section">
+<div class="page">
+
+  <div class="page-header">
+    <h1>Datenschutzrichtlinie</h1>
+    <p class="meta">Zuletzt aktualisiert: 10. April 2025 &nbsp;|&nbsp; App: SaunaFlow (iOS / watchOS)</p>
+  </div>
+
+  <div class="summary-banner">
+    <span class="icon">🔒</span>
+    <p><strong>Kurzfassung: SaunaFlow erfasst keinerlei personenbezogene Daten.</strong><br>
+    Alle Daten (Programme, Einheitenverlauf, Notizen) werden ausschließlich auf deinem Gerät gespeichert. Es gibt keine Datenübertragung an externe Server, keine Werbung und keine Analyse-SDKs von Drittanbietern.</p>
+  </div>
+
+  <div class="toc">
+    <p>Inhalt</p>
+    <ol>
+      <li><a href="#de-1">1. Erfasste Daten</a></li>
+      <li><a href="#de-2">2. Datenspeicherung</a></li>
+      <li><a href="#de-3">3. In-App-Käufe</a></li>
+      <li><a href="#de-4">4. Drittanbieter-SDKs</a></li>
+      <li><a href="#de-5">5. Datenschutz für Kinder</a></li>
+      <li><a href="#de-6">6. Betroffenenrechte (DSGVO)</a></li>
+      <li><a href="#de-7">7. Änderungen dieser Richtlinie</a></li>
+      <li><a href="#de-8">8. Kontakt</a></li>
+    </ol>
+  </div>
+
+  <div class="policy-section" id="de-1">
+    <h2>1. Erfasste Daten</h2>
+    <p>SaunaFlow erfasst keinerlei personenbezogene Daten — keine Namen, E-Mail-Adressen, Standortdaten, Kontakte oder Gerätekennungen.</p>
+    <p>Die vom App verarbeiteten Daten beschränken sich auf Folgendes:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Datentyp</th><th>Inhalt</th><th>Speicherort</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Programme</td><td>Phasenkonfiguration, Zyklenanzahl, Name</td><td><span class="badge-local">Auf dem Gerät</span></td></tr>
+        <tr><td>Einheitenverlauf</td><td>Datum/Uhrzeit, abgeschlossene Zyklen, Totonoi-Score</td><td><span class="badge-local">Auf dem Gerät</span></td></tr>
+        <tr><td>Notizen</td><td>Optionaler Text nach jeder Einheit</td><td><span class="badge-local">Auf dem Gerät</span></td></tr>
+        <tr><td>Premium-Status</td><td>Boolean-Flag in UserDefaults</td><td><span class="badge-local">Auf dem Gerät</span></td></tr>
+        <tr><td>Externe Übertragung</td><td>—</td><td><span class="badge-none">Keine</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="policy-section" id="de-2">
+    <h2>2. Datenspeicherung</h2>
+    <p>Alle Daten werden lokal auf deinem Gerät mit Apples SwiftData-Framework gespeichert. SaunaFlow nutzt keine iCloud-Synchronisierung oder andere Cloud-Backup-Dienste. Das Löschen der App entfernt alle zugehörigen Daten dauerhaft vom Gerät.</p>
+  </div>
+
+  <div class="policy-section" id="de-3">
+    <h2>3. In-App-Käufe (Premium-Tarif)</h2>
+    <p>Käufe des Premium-Tarifs werden ausschließlich von Apple Inc. über den App Store abgewickelt. SaunaFlow hat keinen Zugriff auf Zahlungsinformationen, Apple-ID oder andere kaufbezogene personenbezogene Daten. Weitere Informationen zur Datenverarbeitung durch Apple findest du in der <a href="https://www.apple.com/de/legal/privacy/" style="color:var(--accent)">Datenschutzrichtlinie von Apple</a>.</p>
+  </div>
+
+  <div class="policy-section" id="de-4">
+    <h2>4. Drittanbieter-SDKs &amp; Werbung</h2>
+    <p>SaunaFlow enthält keinerlei Analyse-, Werbe- oder Absturzberichte-SDKs von Drittanbietern. Die einzigen verwendeten Frameworks sind Apple-eigene: SwiftUI, SwiftData, WatchConnectivity und StoreKit.</p>
+  </div>
+
+  <div class="policy-section" id="de-5">
+    <h2>5. Datenschutz für Kinder</h2>
+    <p>SaunaFlow richtet sich nicht an Kinder unter 13 Jahren. Da die App keinerlei personenbezogene Daten von Nutzern erfasst, werden auch keine Daten von Kindern gesammelt oder gespeichert.</p>
+  </div>
+
+  <div class="policy-section" id="de-6">
+    <h2>6. Betroffenenrechte (DSGVO)</h2>
+    <p>Als betroffene Person nach der Datenschutz-Grundverordnung (DSGVO) hast du das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner personenbezogenen Daten sowie das Recht auf Datenübertragbarkeit.</p>
+    <p>Da SaunaFlow keinerlei personenbezogene Daten erfasst, verarbeitet oder speichert, gibt es nichts auszukunften, zu berichtigen oder zu löschen. Bei Fragen stehe ich dir gerne zur Verfügung.</p>
+    <p>Verantwortlicher im Sinne der DSGVO:<br>Yang Lichen — Kontakt siehe unten.</p>
+  </div>
+
+  <div class="policy-section" id="de-7">
+    <h2>7. Änderungen dieser Richtlinie</h2>
+    <p>Diese Richtlinie kann von Zeit zu Zeit aktualisiert werden. Wesentliche Änderungen werden über ein App-Update kommuniziert. Die jeweils aktuelle Version ist stets unter dieser URL abrufbar.</p>
+  </div>
+
+  <div class="policy-section" id="de-8">
+    <h2>8. Kontakt</h2>
+    <p>Bei Fragen oder Anmerkungen zu dieser Datenschutzrichtlinie wende dich bitte über GitHub Issues an uns.</p>
+    <div class="contact-card">
+      <p>Entwickler: Yang Lichen</p>
+      <a href="https://github.com/freetokyo/saunaflow/issues" class="contact-link">Kontakt über GitHub →</a>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="footer-links">
+    <a href="saunaflow.html">SaunaFlow</a>
+    <a href="saunaflow-support.html">Hilfe</a>
+  </div>
+  <p>© 2025 Yang Lichen</p>
+</footer>
+</div><!-- /lang-de -->
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    event.currentTarget.classList.add('active');
+    document.documentElement.lang = lang === 'de' ? 'de' : lang === 'en' ? 'en' : 'ja';
+    window.scrollTo({ top: 0 });
+  }
+</script>
+</body>
+</html>

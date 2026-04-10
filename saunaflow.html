@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaunaFlow — サウナ専用タイマー for Apple Watch</title>
+  <meta name="description" content="サウナ・水風呂・休憩を Apple Watch が自動進行。ととのいへの最短ルートを手首から。">
+  <meta property="og:title" content="SaunaFlow">
+  <meta property="og:description" content="サウナ専用タイマー for Apple Watch">
+  <meta property="og:type" content="website">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0c0c0c;
+      --bg2:     #161616;
+      --bg3:     #1f1f1f;
+      --accent:  #e85d04;
+      --accent2: #f48c06;
+      --blue:    #1a6eb5;
+      --green:   #1a7a3a;
+      --text:    #f0ece6;
+      --text2:   #9c8f83;
+      --border:  #2a2a2a;
+      --radius:  14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Navigation ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(12,12,12,0.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 52px;
+    }
+    .nav-logo {
+      font-size: 17px; font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      letter-spacing: -0.3px;
+    }
+    .lang-switch { display: flex; gap: 6px; }
+    .lang-btn {
+      background: none; border: 1px solid var(--border);
+      color: var(--text2); font-size: 12px;
+      padding: 4px 10px; border-radius: 20px; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      border-color: var(--accent); color: var(--accent);
+    }
+
+    /* ── Language sections ── */
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 100px 24px 80px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(232,93,4,0.12), transparent);
+      pointer-events: none;
+    }
+    .app-icon {
+      width: 96px; height: 96px; border-radius: 22px;
+      background: linear-gradient(145deg, #3d1a08, #1a0a03);
+      border: 1px solid rgba(232,93,4,0.3);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 28px;
+      font-size: 48px; line-height: 1;
+    }
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 72px);
+      font-weight: 800; letter-spacing: -2px;
+      background: linear-gradient(135deg, #fff 30%, var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      line-height: 1.05; margin-bottom: 16px;
+    }
+    .hero-sub {
+      font-size: clamp(16px, 3vw, 20px);
+      color: var(--text2); margin-bottom: 40px;
+      max-width: 560px; margin-left: auto; margin-right: auto;
+    }
+    .phase-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; flex-wrap: wrap; margin-bottom: 48px;
+    }
+    .phase-pill {
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 14px; border-radius: 100px;
+      font-size: 13px; font-weight: 600;
+    }
+    .phase-pill.sauna  { background: rgba(176,42,20,0.25); color: #ff8060; border: 1px solid rgba(176,42,20,0.4); }
+    .phase-pill.cold   { background: rgba(26,110,181,0.25); color: #6db8ff; border: 1px solid rgba(26,110,181,0.4); }
+    .phase-pill.rest   { background: rgba(26,122,58,0.25);  color: #6dcc8a; border: 1px solid rgba(26,122,58,0.4); }
+    .arrow { color: var(--text2); font-size: 12px; }
+    .cta-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-appstore {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--text); color: #000;
+      padding: 14px 28px; border-radius: 100px;
+      font-size: 15px; font-weight: 700; text-decoration: none;
+      transition: opacity 0.2s; letter-spacing: -0.2px;
+    }
+    .btn-appstore:hover { opacity: 0.88; }
+    .btn-appstore svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    /* ── Section ── */
+    section { padding: 80px 24px; max-width: 1000px; margin: 0 auto; }
+    .section-label {
+      font-size: 12px; font-weight: 700; letter-spacing: 2px;
+      color: var(--accent); text-transform: uppercase; margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(28px, 5vw, 44px); font-weight: 800;
+      letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 16px;
+    }
+    .section-desc {
+      font-size: 17px; color: var(--text2); max-width: 600px; margin-bottom: 56px;
+    }
+
+    /* ── Feature Grid ── */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+    }
+    .feature-card {
+      background: var(--bg2); padding: 32px;
+      transition: background 0.2s;
+    }
+    .feature-card:hover { background: var(--bg3); }
+    .feature-card:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+    .feature-card:last-child  { border-radius: 0 var(--radius) var(--radius) 0; }
+    @media (max-width: 600px) {
+      .feature-card:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+      .feature-card:last-child  { border-radius: 0 0 var(--radius) var(--radius); }
+    }
+    .feature-icon {
+      font-size: 32px; margin-bottom: 16px;
+      width: 56px; height: 56px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--bg3); border-radius: 14px; margin-bottom: 20px;
+    }
+    .feature-card h3 {
+      font-size: 19px; font-weight: 700; letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .feature-card p { font-size: 14px; color: var(--text2); line-height: 1.65; }
+
+    /* ── How it Works ── */
+    .steps { display: flex; flex-direction: column; gap: 2px; }
+    .step {
+      display: flex; gap: 24px; align-items: flex-start;
+      background: var(--bg2); padding: 28px 32px;
+      border-radius: 0;
+    }
+    .step:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+    .step:last-child  { border-radius: 0 0 var(--radius) var(--radius); }
+    .step-num {
+      font-size: 13px; font-weight: 800; color: var(--accent);
+      background: rgba(232,93,4,0.1); border: 1px solid rgba(232,93,4,0.25);
+      width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .step h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.3px; }
+    .step p  { font-size: 14px; color: var(--text2); line-height: 1.65; }
+
+    /* ── Score Section ── */
+    .score-bands {
+      display: flex; flex-direction: column; gap: 10px; margin-top: 40px;
+    }
+    .score-band {
+      display: flex; align-items: center; gap: 16px;
+      background: var(--bg2); padding: 16px 20px; border-radius: 12px;
+    }
+    .score-num {
+      font-size: 22px; font-weight: 800; width: 56px; text-align: right;
+      flex-shrink: 0;
+    }
+    .score-bar-wrap { flex: 1; height: 6px; background: var(--border); border-radius: 3px; }
+    .score-bar { height: 100%; border-radius: 3px; }
+    .score-label { font-size: 14px; font-weight: 600; width: 110px; flex-shrink: 0; }
+
+    /* ── Premium ── */
+    .premium-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+    }
+    @media (max-width: 600px) { .premium-grid { grid-template-columns: 1fr; } }
+    .plan-card {
+      background: var(--bg2); padding: 32px;
+    }
+    .plan-card:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+    .plan-card:last-child  { border-radius: 0 var(--radius) var(--radius) 0; }
+    @media (max-width: 600px) {
+      .plan-card:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+      .plan-card:last-child  { border-radius: 0 0 var(--radius) var(--radius); }
+    }
+    .plan-card.premium { background: linear-gradient(145deg, #1a0e05, #251507); border: 1px solid rgba(232,93,4,0.25); }
+    .plan-name {
+      font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--text2); margin-bottom: 8px;
+    }
+    .plan-card.premium .plan-name { color: var(--accent); }
+    .plan-price {
+      font-size: 28px; font-weight: 800; letter-spacing: -1px; margin-bottom: 20px;
+    }
+    .plan-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .plan-features li {
+      font-size: 14px; color: var(--text2); display: flex; align-items: flex-start; gap: 10px;
+    }
+    .plan-features li::before { content: "✓"; color: var(--accent2); font-weight: 700; flex-shrink: 0; }
+    .plan-features li.disabled { opacity: 0.35; }
+    .plan-features li.disabled::before { content: "–"; color: var(--text2); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--text2); font-size: 13px;
+    }
+    footer a { color: var(--text2); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
+
+    /* ── Divider ── */
+    hr.section-divider {
+      border: none; border-top: 1px solid var(--border);
+      max-width: 1000px; margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <span class="nav-logo">SaunaFlow</span>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('ja')">日本語</button>
+    <button class="lang-btn"        onclick="setLang('en')">English</button>
+    <button class="lang-btn"        onclick="setLang('de')">Deutsch</button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ JAPANESE ═══════════════════════ -->
+<div id="lang-ja" class="lang-section active">
+
+  <div class="hero">
+    <div class="app-icon">🔥</div>
+    <h1>SaunaFlow</h1>
+    <p class="hero-sub">サウナ・水風呂・休憩を Apple Watch が自動進行。<br>「ととのい」への最短ルートを、手首から。</p>
+    <div class="phase-row">
+      <span class="phase-pill sauna">🔥 サウナ</span>
+      <span class="arrow">→</span>
+      <span class="phase-pill cold">🧊 水風呂</span>
+      <span class="arrow">→</span>
+      <span class="phase-pill rest">🍃 休憩</span>
+    </div>
+    <div class="cta-group">
+      <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-appstore">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store でダウンロード
+      </a>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">Features</p>
+    <h2 class="section-title">Apple Watch で完結する<br>サウナ体験</h2>
+    <p class="section-desc">スマートフォンはロッカーへ。SaunaFlow は Apple Watch だけで完結します。</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⌚</div>
+        <h3>Watch だけで操作</h3>
+        <p>フェーズ切り替えは振動でお知らせ。Digital Crown でスキップ・一時停止。文字盤をタップしても一時停止できます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>プリセット管理</h3>
+        <p>サウナ・水風呂・休憩・移動を自由に組み合わせたプリセットを作成。iPhone で設定して Watch に自動同期。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌡️</div>
+        <h3>ととのいスコア</h3>
+        <p>セッション終了後に 0〜100 点でスコアを算出。完了率・フェーズバランス・継続時間を総合評価します。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>履歴・カレンダー</h3>
+        <p>リスト表示とカレンダー表示で過去のセッションを振り返り。メモ機能で体調や感想も記録できます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>再実行機能</h3>
+        <p>前回のセッションをワンタップで Watch に再送信。いつものルーティンをすぐ再開できます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>完全オフライン・プライバシー</h3>
+        <p>すべてのデータはデバイス内に保存。外部サーバーへの送信・個人情報の収集は一切行いません。</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">How it works</p>
+    <h2 class="section-title">使い方</h2>
+    <p class="section-desc">3 ステップで今日のサウナを始められます。</p>
+    <div class="steps">
+      <div class="step"><span class="step-num">1</span><div><h3>プリセットを作る</h3><p>iPhone アプリでフェーズ（サウナ・水風呂・休憩）の時間とセット数を設定してプリセットを保存。お気に入り登録で Watch のトップに表示されます。</p></div></div>
+      <div class="step"><span class="step-num">2</span><div><h3>Watch でスタート</h3><p>Apple Watch アプリからプリセットを選んでスタート。あとは Watch が自動でフェーズを進めます。サウナ室に入ったらスマートフォンはしまいましょう。</p></div></div>
+      <div class="step"><span class="step-num">3</span><div><h3>スコアを確認する</h3><p>全セット終了後にととのいスコアが表示されます。Watch からメモを送信して iPhone の履歴に保存。次回の参考にしましょう。</p></div></div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">Totonoi Score</p>
+    <h2 class="section-title">ととのいスコアとは</h2>
+    <p class="section-desc">「ととのい」はサウナ後の深い心地よさを表す日本語。SaunaFlow はそのクオリティを 0〜100 点で見える化します。</p>
+    <div class="score-bands">
+      <div class="score-band">
+        <span class="score-num" style="color:#aaa">〜59</span>
+        <div class="score-bar-wrap"><div class="score-bar" style="width:59%;background:#555"></div></div>
+        <span class="score-label" style="color:#888">まだまだ</span>
+      </div>
+      <div class="score-band">
+        <span class="score-num" style="color:#c8a030">〜74</span>
+        <div class="score-bar-wrap"><div class="score-bar" style="width:74%;background:#b8901c"></div></div>
+        <span class="score-label" style="color:#c8a030">温まり中</span>
+      </div>
+      <div class="score-band">
+        <span class="score-num" style="color:#e88020">〜89</span>
+        <div class="score-bar-wrap"><div class="score-bar" style="width:89%;background:linear-gradient(90deg,#b87010,#e88020)"></div></div>
+        <span class="score-label" style="color:#e88020">いい感じ</span>
+      </div>
+      <div class="score-band">
+        <span class="score-num" style="color:#f0a030">〜99</span>
+        <div class="score-bar-wrap"><div class="score-bar" style="width:99%;background:linear-gradient(90deg,#d07010,var(--accent2))"></div></div>
+        <span class="score-label" style="color:#f0a030">ととのい中…</span>
+      </div>
+      <div class="score-band">
+        <span class="score-num" style="color:var(--accent2)">100</span>
+        <div class="score-bar-wrap"><div class="score-bar" style="width:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))"></div></div>
+        <span class="score-label" style="color:var(--accent2)">ととのった！🔥</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">Pricing</p>
+    <h2 class="section-title">プラン</h2>
+    <p class="section-desc">基本機能は無料。プレミアムは買い切り型。サブスクリプションはありません。</p>
+    <div class="premium-grid">
+      <div class="plan-card">
+        <p class="plan-name">Free</p>
+        <p class="plan-price">無料</p>
+        <ul class="plan-features">
+          <li>プリセット最大 3 件</li>
+          <li>最近のセッション履歴</li>
+          <li>ととのいスコア</li>
+          <li class="disabled">プリセット無制限</li>
+          <li class="disabled">履歴の無制限保存</li>
+          <li class="disabled">前回セッションの再実行</li>
+        </ul>
+      </div>
+      <div class="plan-card premium">
+        <p class="plan-name">Premium</p>
+        <p class="plan-price">買い切り</p>
+        <ul class="plan-features">
+          <li>プリセット最大 3 件</li>
+          <li>最近のセッション履歴</li>
+          <li>ととのいスコア</li>
+          <li>プリセット無制限</li>
+          <li>履歴の無制限保存</li>
+          <li>前回セッションの再実行</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="saunaflow-support.html">サポート</a>
+      <a href="saunaflow-privacy.html">プライバシーポリシー</a>
+    </div>
+    <p>© 2025 Yang Lichen. SaunaFlow は Apple Inc. と提携していません。Apple Watch は Apple Inc. の商標です。</p>
+  </footer>
+
+</div><!-- /lang-ja -->
+
+<!-- ═══════════════════════ ENGLISH ═══════════════════════ -->
+<div id="lang-en" class="lang-section">
+
+  <div class="hero">
+    <div class="app-icon">🔥</div>
+    <h1>SaunaFlow</h1>
+    <p class="hero-sub">Your Apple Watch guides every phase — sauna, cold plunge, rest.<br>Chase "totonoi" without ever checking your phone.</p>
+    <div class="phase-row">
+      <span class="phase-pill sauna">🔥 Sauna</span>
+      <span class="arrow">→</span>
+      <span class="phase-pill cold">🧊 Cold Plunge</span>
+      <span class="arrow">→</span>
+      <span class="phase-pill rest">🍃 Rest</span>
+    </div>
+    <div class="cta-group">
+      <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-appstore">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on the App Store
+      </a>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">Features</p>
+    <h2 class="section-title">Everything on your wrist</h2>
+    <p class="section-desc">Leave your phone at the locker. SaunaFlow runs entirely on Apple Watch.</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⌚</div>
+        <h3>Watch-native</h3>
+        <p>Haptic alerts at every phase transition. Rotate the Digital Crown to skip or pause. Tap the display to pause anytime.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>Custom Presets</h3>
+        <p>Mix sauna, cold plunge, rest, and walk phases in any order and duration. Set up on iPhone, sync to Watch instantly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌡️</div>
+        <h3>Totonoi Score</h3>
+        <p>Post-session score from 0–100. Factors in set completion, phase balance, and total duration. Five levels from "Keep Going" to "Totonoi!"</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>History & Calendar</h3>
+        <p>Review sessions in list or calendar view. Add notes from your Watch right after each session.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Rerun Sessions</h3>
+        <p>One tap to resend the same preset to your Watch. Your routine, instantly resumed.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Fully Offline</h3>
+        <p>All data stays on your device. No servers, no tracking, no analytics SDKs — ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">How it works</p>
+    <h2 class="section-title">Three steps</h2>
+    <p class="section-desc">Get your first session running in minutes.</p>
+    <div class="steps">
+      <div class="step"><span class="step-num">1</span><div><h3>Build a preset</h3><p>Open SaunaFlow on iPhone. Add phases — sauna, cold plunge, rest — set the duration and number of sets. Save it. Favorites appear at the top of your Watch app.</p></div></div>
+      <div class="step"><span class="step-num">2</span><div><h3>Start on Watch</h3><p>Pick a preset on Apple Watch and tap Start. SaunaFlow advances through every phase automatically, alerting you with a haptic tap when it's time to move on.</p></div></div>
+      <div class="step"><span class="step-num">3</span><div><h3>Check your score</h3><p>After the final set, your Totonoi Score appears. Add a note from the Watch and it syncs to your iPhone history automatically.</p></div></div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">Pricing</p>
+    <h2 class="section-title">Simple pricing</h2>
+    <p class="section-desc">Free to start. Premium is a one-time purchase — no subscription.</p>
+    <div class="premium-grid">
+      <div class="plan-card">
+        <p class="plan-name">Free</p>
+        <p class="plan-price">Free</p>
+        <ul class="plan-features">
+          <li>Up to 3 presets</li>
+          <li>Recent session history</li>
+          <li>Totonoi Score</li>
+          <li class="disabled">Unlimited presets</li>
+          <li class="disabled">Unlimited history</li>
+          <li class="disabled">Rerun last session</li>
+        </ul>
+      </div>
+      <div class="plan-card premium">
+        <p class="plan-name">Premium</p>
+        <p class="plan-price">One-time purchase</p>
+        <ul class="plan-features">
+          <li>Up to 3 presets</li>
+          <li>Recent session history</li>
+          <li>Totonoi Score</li>
+          <li>Unlimited presets</li>
+          <li>Unlimited history</li>
+          <li>Rerun last session</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="saunaflow-support.html">Support</a>
+      <a href="saunaflow-privacy.html">Privacy Policy</a>
+    </div>
+    <p>© 2025 Yang Lichen. SaunaFlow is not affiliated with Apple Inc. Apple Watch is a trademark of Apple Inc.</p>
+  </footer>
+
+</div><!-- /lang-en -->
+
+<!-- ═══════════════════════ GERMAN ═══════════════════════ -->
+<div id="lang-de" class="lang-section">
+
+  <div class="hero">
+    <div class="app-icon">🔥</div>
+    <h1>SaunaFlow</h1>
+    <p class="hero-sub">Deine Apple Watch führt dich automatisch durch Sauna, Kaltbad und Ruhephase —<br>ganz ohne Blick aufs Smartphone.</p>
+    <div class="phase-row">
+      <span class="phase-pill sauna">🔥 Sauna</span>
+      <span class="arrow">→</span>
+      <span class="phase-pill cold">🧊 Kaltbad</span>
+      <span class="arrow">→</span>
+      <span class="phase-pill rest">🍃 Ruhephase</span>
+    </div>
+    <div class="cta-group">
+      <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-appstore">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Im App Store laden
+      </a>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">Funktionen</p>
+    <h2 class="section-title">Alles am Handgelenk</h2>
+    <p class="section-desc">Das Smartphone bleibt im Spind. SaunaFlow läuft vollständig auf der Apple Watch.</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⌚</div>
+        <h3>Watch-nativ</h3>
+        <p>Haptisches Feedback bei jedem Phasenwechsel. Digital Crown zum Überspringen oder Pausieren. Display antippen zum Pausieren.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>Individuelle Programme</h3>
+        <p>Kombiniere Sauna, Kaltbad, Ruhephase und Gehen in beliebiger Reihenfolge und Dauer. Auf iPhone einrichten, automatisch auf Watch synchronisieren.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌡️</div>
+        <h3>Totonoi-Score</h3>
+        <p>Score von 0–100 nach jeder Einheit. Bewertet Abschlussrate, Phasenbalance und Gesamtdauer. Fünf Stufen bis „Totonoi!"</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>Verlauf & Kalender</h3>
+        <p>Einheiten in Listen- oder Kalenderansicht durchsuchen. Notizen direkt von der Watch hinzufügen.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Einheit wiederholen</h3>
+        <p>Ein Tipp genügt, um dasselbe Programm erneut an die Watch zu senden. Deine Routine, sofort wieder gestartet.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Vollständig offline</h3>
+        <p>Alle Daten bleiben auf deinem Gerät. Keine Server, kein Tracking, keine Analyse-SDKs — garantiert.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <section>
+    <p class="section-label">Tarife</p>
+    <h2 class="section-title">Einfache Preisgestaltung</h2>
+    <p class="section-desc">Kostenlos starten. Premium ist ein Einmalkauf — kein Abonnement.</p>
+    <div class="premium-grid">
+      <div class="plan-card">
+        <p class="plan-name">Kostenlos</p>
+        <p class="plan-price">Gratis</p>
+        <ul class="plan-features">
+          <li>Bis zu 3 Programme</li>
+          <li>Letzter Verlauf</li>
+          <li>Totonoi-Score</li>
+          <li class="disabled">Unbegrenzte Programme</li>
+          <li class="disabled">Unbegrenzter Verlauf</li>
+          <li class="disabled">Einheit wiederholen</li>
+        </ul>
+      </div>
+      <div class="plan-card premium">
+        <p class="plan-name">Premium</p>
+        <p class="plan-price">Einmalkauf</p>
+        <ul class="plan-features">
+          <li>Bis zu 3 Programme</li>
+          <li>Letzter Verlauf</li>
+          <li>Totonoi-Score</li>
+          <li>Unbegrenzte Programme</li>
+          <li>Unbegrenzter Verlauf</li>
+          <li>Einheit wiederholen</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="saunaflow-support.html">Support</a>
+      <a href="saunaflow-privacy.html">Datenschutzrichtlinie</a>
+    </div>
+    <p>© 2025 Yang Lichen. SaunaFlow steht in keiner Verbindung zu Apple Inc. Apple Watch ist ein Markenzeichen von Apple Inc.</p>
+  </footer>
+
+</div><!-- /lang-de -->
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    event.currentTarget.classList.add('active');
+    document.documentElement.lang = lang === 'de' ? 'de' : lang === 'en' ? 'en' : 'ja';
+    window.scrollTo({ top: 0 });
+  }
+</script>
+</body>
+</html>
