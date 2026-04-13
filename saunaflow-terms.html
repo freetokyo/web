@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaunaFlow Terms of Use | 利用規約</title>
+  <meta name="description" content="SaunaFlow の利用規約ページです。サイト利用、アプリ利用、知的財産、免責、安全上の注意、準拠するライセンス関係をまとめています。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0c0c0c">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SaunaFlow">
+  <meta property="og:title" content="SaunaFlow Terms of Use">
+  <meta property="og:description" content="Terms covering public website use, app use, safety disclaimers, and licensing context for SaunaFlow.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0c0c0c;
+      --bg2: #171717;
+      --accent: #e85d04;
+      --accent2: #f48c06;
+      --text: #f0ece6;
+      --text2: #b1a497;
+      --text3: #897b70;
+      --border: #2b2b2b;
+      --radius: 20px;
+      --max: 900px;
+    }
+    body {
+      background:
+        radial-gradient(circle at top, rgba(232,93,4,0.12), transparent 28%),
+        #0c0c0c;
+      color: var(--text);
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(12,12,12,0.84);
+      backdrop-filter: saturate(180%) blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-left {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .nav-left a,
+    .nav-left span {
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .nav-left a:hover { color: var(--text); }
+    .lang-switch {
+      display: flex;
+      gap: 6px;
+      padding: 4px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: var(--text3);
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang-btn.active,
+    .lang-btn:hover {
+      background: rgba(232,93,4,0.14);
+      color: var(--accent2);
+    }
+    .page {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+    .hero,
+    .section,
+    .summary {
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 22px;
+    }
+    .eyebrow {
+      color: var(--accent2);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: clamp(32px, 6vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      margin-bottom: 12px;
+    }
+    .meta { color: var(--text3); font-size: 13px; }
+    .summary {
+      margin-bottom: 20px;
+      padding: 20px 22px;
+      background: rgba(232,93,4,0.08);
+      border-color: rgba(232,93,4,0.22);
+      color: var(--text2);
+      font-size: 14px;
+    }
+    .summary strong { color: #f0ab67; }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .toc a {
+      text-decoration: none;
+      color: var(--text2);
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+    .section {
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    .section h2 {
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      margin-bottom: 12px;
+    }
+    .section p,
+    .section li {
+      color: var(--text2);
+      font-size: 14px;
+    }
+    .section ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .section li::before {
+      content: "•";
+      color: var(--accent2);
+      margin-right: 8px;
+    }
+    footer {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 0 24px 56px;
+      color: var(--text3);
+      font-size: 13px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .footer-links a {
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--text); }
+    @media (max-width: 640px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+      .page, footer { padding-left: 16px; padding-right: 16px; }
+      .hero, .section, .summary { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a href="saunaflow.html">← SaunaFlow</a>
+        <span>Terms of Use</span>
+        <a href="saunaflow-support.html">Support</a>
+        <a href="saunaflow-privacy.html">Privacy</a>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-btn active" type="button" data-lang="ja">日本語</button>
+        <button class="lang-btn" type="button" data-lang="en">English</button>
+        <button class="lang-btn" type="button" data-lang="de">Deutsch</button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="lang-ja" class="lang-section active">
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Terms of Use</p>
+        <h1>SaunaFlow 利用規約</h1>
+        <p class="meta">最終更新日: 2026年4月13日</p>
+        <div class="toc">
+          <a href="#ja-1">適用範囲</a>
+          <a href="#ja-2">アプリ利用</a>
+          <a href="#ja-3">安全上の注意</a>
+          <a href="#ja-4">知的財産</a>
+          <a href="#ja-5">免責</a>
+        </div>
+      </section>
+
+      <div class="summary"><strong>重要:</strong> App Store で配布されるアプリのライセンス条件は、App Store Connect でカスタム EULA を設定していない場合、Apple の標準 EULA が適用されます。このページは公開サイト用の利用規約として追加しています。</div>
+
+      <section class="section" id="ja-1">
+        <h2>1. 適用範囲</h2>
+        <p>本規約は、SaunaFlow の公開サイトおよび関連する情報提供ページの利用に適用されます。App Store で配布されるライセンス条件について別途 Apple または開発者が定める条件がある場合、その条件が優先して適用されます。</p>
+      </section>
+
+      <section class="section" id="ja-2">
+        <h2>2. アプリ利用</h2>
+        <p>ユーザーは、法令および施設ルールに従って SaunaFlow を利用するものとします。アプリはサウナ、水風呂、休憩などの時間管理を補助するものであり、医療機器または安全装置ではありません。</p>
+      </section>
+
+      <section class="section" id="ja-3">
+        <h2>3. 安全上の注意</h2>
+        <ul>
+          <li>サウナは高温環境であり、Apple Watch を含むデバイスの許容温度を超える可能性があります。</li>
+          <li>タイマー表示は目安であり、体調や施設ルールより優先されません。</li>
+          <li>心疾患、高血圧、妊娠中、体調不良などの場合は利用可否を慎重に判断してください。</li>
+        </ul>
+      </section>
+
+      <section class="section" id="ja-4">
+        <h2>4. 知的財産</h2>
+        <p>SaunaFlow および関連する文章、デザイン、表示内容に関する権利は、開発者または正当な権利者に帰属します。法令上認められる場合を除き、無断複製、改変、再配布を禁止します。</p>
+      </section>
+
+      <section class="section" id="ja-5">
+        <h2>5. 免責</h2>
+        <p>開発者は、アプリまたはサイトの継続性、完全性、特定目的適合性について保証しません。サウナ利用に伴う判断は利用者自身の責任で行ってください。法令で許容される範囲で、開発者は間接損害、付随損害、特別損害について責任を負いません。</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-support.html">サポート</a>
+        <a href="saunaflow-privacy.html">プライバシーポリシー</a>
+      </div>
+      <p>© 2026 Yang Lichen</p>
+    </footer>
+  </div>
+
+  <div id="lang-en" class="lang-section">
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Terms of Use</p>
+        <h1>SaunaFlow Terms of Use</h1>
+        <p class="meta">Last updated: April 13, 2026</p>
+        <div class="toc">
+          <a href="#en-1">Scope</a>
+          <a href="#en-2">App use</a>
+          <a href="#en-3">Safety</a>
+          <a href="#en-4">Intellectual property</a>
+          <a href="#en-5">Disclaimer</a>
+        </div>
+      </section>
+
+      <div class="summary"><strong>Important:</strong> If no custom EULA is configured in App Store Connect, Apple's Standard EULA applies to the licensed app distributed through the App Store. This page is added as a public-facing website terms page.</div>
+
+      <section class="section" id="en-1">
+        <h2>1. Scope</h2>
+        <p>These terms apply to the public SaunaFlow website and related informational pages. If Apple or the developer separately provides license terms for the app distributed through the App Store, those license terms govern the app license relationship.</p>
+      </section>
+
+      <section class="section" id="en-2">
+        <h2>2. App use</h2>
+        <p>Users are responsible for using SaunaFlow in compliance with applicable laws and facility rules. SaunaFlow is a timing aid for sauna, cold plunge, and rest routines. It is not a medical device or a safety monitoring system.</p>
+      </section>
+
+      <section class="section" id="en-3">
+        <h2>3. Safety notice</h2>
+        <ul>
+          <li>Saunas are high-heat environments and device temperature limits may be exceeded.</li>
+          <li>Timer values are reference guidance and do not override physical condition or facility instructions.</li>
+          <li>Users with heart conditions, high blood pressure, pregnancy, or other health concerns should make careful decisions about use.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-4">
+        <h2>4. Intellectual property</h2>
+        <p>Rights in SaunaFlow and related text, design, and presentation belong to the developer or relevant rights holders. Except where permitted by law, unauthorized copying, modification, or redistribution is prohibited.</p>
+      </section>
+
+      <section class="section" id="en-5">
+        <h2>5. Disclaimer</h2>
+        <p>The developer does not guarantee uninterrupted availability, completeness, or fitness for a particular purpose. Use of the app and any decisions made during sauna sessions remain the user's responsibility. To the extent permitted by law, the developer is not liable for indirect, incidental, or special damages.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-support.html">Support</a>
+        <a href="saunaflow-privacy.html">Privacy Policy</a>
+      </div>
+      <p>© 2026 Yang Lichen</p>
+    </footer>
+  </div>
+
+  <div id="lang-de" class="lang-section">
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Terms of Use</p>
+        <h1>SaunaFlow Nutzungsbedingungen</h1>
+        <p class="meta">Zuletzt aktualisiert: 13. April 2026</p>
+        <div class="toc">
+          <a href="#de-1">Geltungsbereich</a>
+          <a href="#de-2">App-Nutzung</a>
+          <a href="#de-3">Sicherheit</a>
+          <a href="#de-4">Urheberrechte</a>
+          <a href="#de-5">Haftung</a>
+        </div>
+      </section>
+
+      <div class="summary"><strong>Wichtig:</strong> Wenn in App Store Connect keine benutzerdefinierte EULA hinterlegt ist, gilt für die über den App Store lizenzierte App Apples Standard-EULA. Diese Seite wurde als öffentlich sichtbare Nutzungsbedingungen für die Website ergänzt.</div>
+
+      <section class="section" id="de-1">
+        <h2>1. Geltungsbereich</h2>
+        <p>Diese Bedingungen gelten für die öffentliche SaunaFlow Website und die zugehörigen Informationsseiten. Wenn Apple oder der Entwickler für die im App Store bereitgestellte App gesonderte Lizenzbedingungen vorgeben, regeln diese Bedingungen das Lizenzverhältnis der App.</p>
+      </section>
+
+      <section class="section" id="de-2">
+        <h2>2. Nutzung der App</h2>
+        <p>Nutzer sind dafür verantwortlich, SaunaFlow im Einklang mit geltendem Recht und den Regeln der jeweiligen Einrichtung zu verwenden. SaunaFlow ist eine Zeitsteuerungshilfe für Sauna-, Kaltbad- und Ruhe-Routinen und kein Medizinprodukt oder Sicherheitssystem.</p>
+      </section>
+
+      <section class="section" id="de-3">
+        <h2>3. Sicherheitshinweis</h2>
+        <ul>
+          <li>Saunen sind Umgebungen mit hoher Hitze, in denen Temperaturgrenzen von Geräten überschritten werden können.</li>
+          <li>Timer-Werte sind nur Richtwerte und ersetzen weder körperliche Warnsignale noch Anweisungen der Einrichtung.</li>
+          <li>Nutzer mit Herz-Kreislauf-Erkrankungen, Bluthochdruck, Schwangerschaft oder anderen gesundheitlichen Bedenken sollten die Nutzung besonders sorgfältig abwägen.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="de-4">
+        <h2>4. Geistiges Eigentum</h2>
+        <p>Rechte an SaunaFlow sowie an Texten, Gestaltung und Darstellung stehen dem Entwickler oder den jeweiligen Rechteinhabern zu. Soweit gesetzlich nicht erlaubt, sind unerlaubte Vervielfältigung, Änderung oder Weiterverbreitung untersagt.</p>
+      </section>
+
+      <section class="section" id="de-5">
+        <h2>5. Haftungsausschluss</h2>
+        <p>Der Entwickler übernimmt keine Gewähr für unterbrechungsfreie Verfügbarkeit, Vollständigkeit oder Eignung für einen bestimmten Zweck. Entscheidungen während der Saunanutzung liegen in der Verantwortung der Nutzer. Soweit rechtlich zulässig, haftet der Entwickler nicht für indirekte, beiläufige oder besondere Schäden.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-support.html">Hilfe</a>
+        <a href="saunaflow-privacy.html">Datenschutz</a>
+      </div>
+      <p>© 2026 Yang Lichen</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang, button) {
+      document.querySelectorAll('.lang-section').forEach((section) => section.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      if (button) button.classList.add('active');
+      document.documentElement.lang = lang;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach((button) => {
+      button.addEventListener('click', () => setLang(button.dataset.lang, button));
+    });
+  </script>
+</body>
+</html>
