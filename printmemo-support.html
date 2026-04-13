@@ -3,70 +3,371 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PrintMemo Support</title>
+  <title>PrintSummary / プリサマ Support | 学校プリント整理アプリの使い方と問い合わせ</title>
+  <meta name="description" content="PrintSummary / プリサマ のサポートページです。学校プリントのOCR、締切整理、通知、Premium、データ削除、権限設定に関する基本案内と問い合わせ先を掲載しています。">
+  <meta name="keywords" content="PrintSummary,プリサマ,学校プリント,OCR,締切管理,提出管理,通知,サポート,FAQ">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PrintSummary / プリサマ Support">
+  <meta property="og:description" content="学校プリントをOCRで整理し、締切と提出状況を管理する PrintSummary / プリサマ のサポート情報。">
+  <meta property="og:site_name" content="PrintSummary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrintSummary / プリサマ Support">
+  <meta name="twitter:description" content="学校プリントのOCR整理、締切管理、通知、Premium に関するサポート情報。">
   <style>
     :root {
-      --bg: #f3f1ea;
-      --card: #ffffff;
-      --text: #203028;
-      --muted: #617067;
-      --accent: #1c5f52;
-      --line: #d9ddd6;
+      --bg: #f4efe6;
+      --bg-soft: #fbf8f2;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-strong: #ffffff;
+      --text: #1d2a25;
+      --muted: #607168;
+      --line: rgba(29, 42, 37, 0.1);
+      --accent: #0e6b57;
+      --accent-strong: #0a4f40;
+      --accent-soft: rgba(14, 107, 87, 0.12);
+      --shadow: 0 24px 60px rgba(18, 34, 29, 0.08);
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; color: var(--text); background: radial-gradient(circle at top right, rgba(28, 95, 82, 0.09), transparent 26%), linear-gradient(180deg, #eef2ec 0%, var(--bg) 100%); }
-    main { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; box-shadow: 0 12px 32px rgba(32, 48, 40, 0.06); margin-bottom: 20px; }
-    h1, h2, h3 { margin: 0 0 16px; line-height: 1.25; }
-    h1 { font-size: 32px; }
-    h2 { font-size: 20px; color: var(--accent); margin-top: 12px; }
-    h3 { font-size: 16px; }
-    p, li { font-size: 15px; line-height: 1.7; margin: 0 0 12px; }
-    ul { margin: 0; padding-left: 20px; }
-    .meta { color: var(--muted); font-size: 14px; }
-    a { color: var(--accent); }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(14, 107, 87, 0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(212, 124, 72, 0.15), transparent 24%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--bg) 100%);
+    }
+    a { color: var(--accent-strong); }
+    main { max-width: 1080px; margin: 0 auto; padding: 28px 20px 72px; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .lang-button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .lang-button.is-active {
+      color: #fff;
+      background: var(--accent);
+    }
+    .lang-panel[hidden] { display: none; }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      border-radius: 28px;
+    }
+    .hero {
+      padding: 34px;
+      margin-bottom: 20px;
+    }
+    .hero-grid, .grid {
+      display: grid;
+      gap: 18px;
+    }
+    .hero-grid { grid-template-columns: 1.3fr 0.9fr; align-items: start; }
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 18px; }
+    .card { padding: 24px; }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      color: var(--accent-strong);
+      margin-bottom: 14px;
+    }
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 0.98rem;
+      line-height: 1.78;
+      color: var(--text);
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      color: var(--accent-strong);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+    .meta, .mini {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .pill-row, .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+      font-size: 0.9rem;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 11px 14px;
+      border-radius: 16px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      text-decoration: none;
+    }
+    .faq-item + .faq-item {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 18px;
+    }
+    @media (max-width: 820px) {
+      .hero, .card { border-radius: 22px; }
+      .hero, .card { padding: 22px; }
+      .hero-grid, .grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <main>
-    <section class="card">
-      <h1>PrintMemo Support</h1>
-      <p class="meta">最終更新日: 2026-04-09</p>
-      <p>PrintMemo は、学校プリントの撮影、OCR 解析、締切整理を支援するアプリです。このページでは、基本的な使い方とトラブル時の確認事項を案内します。</p>
+    <div class="topbar">
+      <div class="brand">PrintSummary Support</div>
+      <div class="language-switch" role="tablist" aria-label="Language switch">
+        <button class="lang-button" id="lang-ja-button" type="button" role="tab" aria-selected="true" aria-controls="lang-ja">日本語</button>
+        <button class="lang-button" id="lang-en-button" type="button" role="tab" aria-selected="false" aria-controls="lang-en">English</button>
+      </div>
+    </div>
+
+    <section class="hero lang-panel" id="lang-ja" lang="ja">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Support for Students</div>
+          <h1>PrintSummary / プリサマ サポート</h1>
+          <p class="meta">最終更新日: 2026-04-13</p>
+          <p style="margin-top:14px;">PrintSummary（日本語名: プリサマ）は、学校プリントの撮影、OCR による文字抽出、締切と提出状態の整理、復習向けの再確認を支援するアプリです。このページでは、利用開始前に知っておきたい事項、よくある確認ポイント、問い合わせ先をまとめています。</p>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">学校プリント OCR</span>
+            <span class="pill">締切整理</span>
+            <span class="pill">提出管理</span>
+            <span class="pill">ローカル通知</span>
+          </div>
+        </div>
+        <div class="card" style="margin:0;">
+          <h2>サポートの前提</h2>
+          <ul>
+            <li>カメラ、写真、通知の権限設定で挙動が変わります。</li>
+            <li>OCR 精度は画像品質と紙面レイアウトの影響を受けます。</li>
+            <li>無料版には月次保存上限があり、Premium は買い切りです。</li>
+          </ul>
+          <div class="link-row" style="margin-top:16px;">
+            <a class="cta" href="mailto:freetokyo2020@yahoo.co.jp">問い合わせる</a>
+            <a class="link-chip" href="./printmemo-privacy-policy.html">Privacy Policy</a>
+            <a class="link-chip" href="./printmemo.html">Marketing Page</a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="card">
-      <h2>基本機能</h2>
-      <ul>
-        <li>カメラで学校プリントを撮影</li>
-        <li>端末内 OCR による文字抽出</li>
-        <li>締切候補、持ち物、提出状態の整理</li>
-        <li>締切前のローカル通知</li>
-        <li>買い切り Premium による保存上限解除</li>
-      </ul>
+
+    <section class="hero lang-panel" id="lang-en" lang="en" hidden>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Support for Students</div>
+          <h1>PrintSummary / Purisama Support</h1>
+          <p class="meta">Last updated: 2026-04-13</p>
+          <p style="margin-top:14px;">PrintSummary, also referred to in Japanese as Purisama, helps students scan school handouts, extract text with OCR, organize deadlines and submission status, and revisit important pages for review. This page summarizes onboarding notes, common checks, and contact details.</p>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">School handout OCR</span>
+            <span class="pill">Deadline tracking</span>
+            <span class="pill">Submission status</span>
+            <span class="pill">Local reminders</span>
+          </div>
+        </div>
+        <div class="card" style="margin:0;">
+          <h2>Before Contacting Support</h2>
+          <ul>
+            <li>Camera, Photos, and Notifications permissions affect behavior.</li>
+            <li>OCR quality depends on image clarity and paper layout.</li>
+            <li>The free plan has a monthly save limit, while Premium is a one-time purchase.</li>
+          </ul>
+          <div class="link-row" style="margin-top:16px;">
+            <a class="cta" href="mailto:freetokyo2020@yahoo.co.jp">Contact Support</a>
+            <a class="link-chip" href="./printmemo-privacy-policy.html">Privacy Policy</a>
+            <a class="link-chip" href="./printmemo.html">Marketing Page</a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="card">
-      <h2>よくある確認事項</h2>
-      <h3>カメラが開かない</h3>
-      <p>iPhone または iPad の設定で、PrintMemo にカメラ権限が付与されているか確認してください。</p>
-      <h3>写真を読み込めない</h3>
-      <p>写真アクセス権限が未許可の場合、読み込みに失敗する可能性があります。設定アプリから権限状態を確認してください。</p>
-      <h3>通知が届かない</h3>
-      <p>通知権限が許可されているか、対象プリントに締切日が設定されているか、すでに提出済みになっていないかを確認してください。</p>
-      <h3>OCR や締切抽出が不正確</h3>
-      <p>画像が暗い、ぼやけている、紙面レイアウトが複雑な場合は抽出精度が低下することがあります。再撮影や再処理を試してください。</p>
-      <h3>保存できない</h3>
-      <p>無料プランでは新規保存件数に月次上限があります。上限に達した場合は、翌月まで待つか Premium の利用を検討してください。</p>
-      <h3>データを消したい</h3>
-      <p>Settings の「Delete Data」から、保存済みプリント、OCR 結果、保存画像、誤抽出サンプル、追加辞書、最近開いた履歴を削除できます。</p>
+
+    <div class="grid">
+      <section class="card lang-panel" lang="ja">
+        <h2>よくある確認項目</h2>
+        <div class="faq-item">
+          <h3>カメラや写真が使えない</h3>
+          <p>iPhone または iPad の設定で、PrintSummary / プリサマ にカメラ権限と写真アクセス権限が付与されているか確認してください。</p>
+        </div>
+        <div class="faq-item">
+          <h3>通知が届かない</h3>
+          <p>通知権限が許可されているか、締切が設定されているか、すでに提出済みになっていないかを確認してください。</p>
+        </div>
+        <div class="faq-item">
+          <h3>OCR や締切抽出が不正確</h3>
+          <p>暗い画像、ぼやけた画像、複雑なレイアウトでは精度が下がる可能性があります。再撮影や OCR 再処理を試してください。</p>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="en" hidden>
+        <h2>Common Checks</h2>
+        <div class="faq-item">
+          <h3>Camera or Photos are unavailable</h3>
+          <p>Check whether PrintSummary / Purisama has Camera and Photos permission in the iPhone or iPad Settings app.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Notifications do not arrive</h3>
+          <p>Confirm that notifications are allowed, the handout has a deadline, and the item is not already marked as submitted.</p>
+        </div>
+        <div class="faq-item">
+          <h3>OCR or deadline extraction looks inaccurate</h3>
+          <p>Dark images, blurred text, or complex layouts can reduce accuracy. Try capturing again or running OCR reprocessing.</p>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="ja">
+        <h2>基本案内</h2>
+        <div class="faq-item">
+          <h3>保存上限</h3>
+          <p>無料版では新規保存に月次上限があります。上限到達後は翌月まで待つか、Premium を検討してください。</p>
+        </div>
+        <div class="faq-item">
+          <h3>データ削除</h3>
+          <p>「設定 &gt; データ削除」から、保存済みプリント、OCR 結果、保存画像、誤抽出サンプル、追加辞書、最近開いた履歴を削除できます。</p>
+        </div>
+        <div class="faq-item">
+          <h3>プライバシー方針</h3>
+          <p>アプリの主要処理は、現在の実装確認範囲では端末内完結を前提としています。詳細は Privacy Policy を確認してください。</p>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="en" hidden>
+        <h2>Key Policies</h2>
+        <div class="faq-item">
+          <h3>Save Limit</h3>
+          <p>The free version has a monthly limit for new saves. After that, wait until the next month or consider Premium.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Delete Data</h3>
+          <p>From Settings &gt; Delete Data, users can remove saved handouts, OCR results, stored images, extraction issue samples, added vocabulary, and recent history.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Privacy Posture</h3>
+          <p>Within the scope verified in the current implementation, core processing is intended to remain on-device. See the Privacy Policy for details.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="card lang-panel" lang="ja">
+      <h2>連絡先</h2>
+      <p>お問い合わせ: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+      <p class="mini" style="margin-top:10px;">App Store の Support URL、SNS のプロフィールリンク、検索結果の問い合わせ導線としてそのまま利用できる構成にしています。</p>
     </section>
-    <section class="card">
-      <h2>プライバシー</h2>
-      <p>PrintMemo の主要処理は、コード上で確認できる範囲と現在の方針の両面から、端末内完結を前提としています。詳細は <a href="./printmemo-privacy-policy.html">Privacy Policy</a> を参照してください。</p>
+
+    <section class="card lang-panel" lang="en" hidden>
+      <h2>Contact</h2>
+      <p>Support email: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+      <p class="mini" style="margin-top:10px;">This page is structured to work well as an App Store Support URL, a social profile support link, and a search result landing page.</p>
     </section>
-    <section class="card">
-      <h2>サポート連絡先</h2>
-      <p>お問い合わせ先: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
-    </section>
+
+    <p class="footer-note">PrintSummary Support</p>
   </main>
+
+  <script>
+    (function () {
+      const buttons = {
+        ja: document.getElementById('lang-ja-button'),
+        en: document.getElementById('lang-en-button')
+      };
+      const panels = Array.from(document.querySelectorAll('.lang-panel'));
+
+      function setLanguage(lang) {
+        const next = lang === 'en' ? 'en' : 'ja';
+        document.documentElement.lang = next;
+        Object.entries(buttons).forEach(([key, button]) => {
+          const active = key === next;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-selected', String(active));
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.getAttribute('lang') !== next;
+        });
+      }
+
+      buttons.ja.addEventListener('click', function () { setLanguage('ja'); });
+      buttons.en.addEventListener('click', function () { setLanguage('en'); });
+
+      const query = new URLSearchParams(window.location.search).get('lang');
+      const browserLang = (navigator.language || '').toLowerCase();
+      setLanguage(query === 'en' || browserLang.startsWith('en') ? 'en' : 'ja');
+    }());
+  </script>
 </body>
 </html>
