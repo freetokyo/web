@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrintSummary / プリサマ 利用規約</title>
+  <meta name="description" content="PrintSummary / プリサマ の利用規約です。アプリ利用条件、禁止事項、保存データ、免責、Premium 購入、利用停止、問い合わせ先を案内します。">
+  <meta name="keywords" content="PrintSummary,プリサマ,利用規約,terms of use,学校プリント,OCR,締切管理">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PrintSummary / プリサマ Terms of Use">
+  <meta property="og:description" content="PrintSummary / プリサマ の利用条件、禁止事項、免責、購入条件、問い合わせ先。">
+  <meta property="og:site_name" content="PrintSummary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrintSummary / プリサマ Terms of Use">
+  <meta name="twitter:description" content="PrintSummary / プリサマ の利用条件と問い合わせ先。">
+  <style>
+    :root {
+      --bg: #f3ede2;
+      --surface: rgba(255, 255, 255, 0.9);
+      --text: #1c2622;
+      --muted: #61706a;
+      --line: rgba(28, 38, 34, 0.1);
+      --accent: #0e6b57;
+      --accent-soft: rgba(14, 107, 87, 0.1);
+      --warm: rgba(199, 130, 74, 0.14);
+      --shadow: 0 22px 58px rgba(20, 33, 29, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, var(--accent-soft), transparent 30%),
+        radial-gradient(circle at top right, var(--warm), transparent 22%),
+        linear-gradient(180deg, #f8f2e7 0%, var(--bg) 100%);
+    }
+    a { color: var(--accent); }
+    main { max-width: 1040px; margin: 0 auto; padding: 28px 20px 72px; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .lang-button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .lang-button.is-active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .lang-panel[hidden] { display: none; }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.74);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      border-radius: 28px;
+    }
+    .hero { padding: 34px; margin-bottom: 20px; }
+    .card { padding: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+    h2 {
+      font-size: 1.14rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 0.98rem;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+    .summary {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .summary-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .section + .section {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 820px) {
+      .hero, .card { border-radius: 22px; padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <div class="brand">PrintSummary Terms</div>
+      <div class="language-switch" role="tablist" aria-label="Language switch">
+        <button class="lang-button" id="lang-ja-button" type="button" role="tab" aria-selected="true" aria-controls="lang-ja">日本語</button>
+        <button class="lang-button" id="lang-en-button" type="button" role="tab" aria-selected="false" aria-controls="lang-en">English</button>
+      </div>
+    </div>
+
+    <section class="hero lang-panel" id="lang-ja" lang="ja">
+      <div class="eyebrow">Terms of Use</div>
+      <h1>PrintSummary / プリサマ 利用規約</h1>
+      <p>本規約は、PrintSummary / プリサマ の利用条件を定めるものです。利用者は、本アプリを利用した時点で本規約に同意したものとみなします。</p>
+      <div class="summary">
+        <div class="summary-item"><strong>対象:</strong> 学校プリントの撮影、OCR、締切整理、提出管理、関連機能の利用。</div>
+        <div class="summary-item"><strong>購入:</strong> Premium は App Store 経由の買い切り型機能解放です。</div>
+        <div class="summary-item"><strong>問い合わせ:</strong> <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></div>
+      </div>
+    </section>
+
+    <section class="hero lang-panel" id="lang-en" lang="en" hidden>
+      <div class="eyebrow">Terms of Use</div>
+      <h1>PrintSummary / Purisama Terms of Use</h1>
+      <p>These Terms of Use define the conditions for using PrintSummary / Purisama. By using the app, users are deemed to have agreed to these terms.</p>
+      <div class="summary">
+        <div class="summary-item"><strong>Scope:</strong> School handout capture, OCR, deadline organization, submission management, and related features.</div>
+        <div class="summary-item"><strong>Purchases:</strong> Premium is a one-time unlock offered through the App Store.</div>
+        <div class="summary-item"><strong>Contact:</strong> <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card lang-panel" lang="ja">
+        <h2>利用条件</h2>
+        <div class="section">
+          <h3>1. 利用範囲</h3>
+          <p>本アプリは、学校プリントの保存、OCR による文字抽出、締切や提出状態の整理、検索、通知、復習支援を目的として提供されます。</p>
+        </div>
+        <div class="section">
+          <h3>2. 禁止事項</h3>
+          <ul>
+            <li>法令または公序良俗に反する利用</li>
+            <li>本アプリの運営や利用を妨げる行為</li>
+            <li>不正な手段による購入、解析、改変、権利侵害行為</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>3. Premium と課金</h3>
+          <p>Premium の購入、請求、返金条件は、原則として App Store および Apple の決済条件に従います。</p>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="en" hidden>
+        <h2>Conditions of Use</h2>
+        <div class="section">
+          <h3>1. Scope of service</h3>
+          <p>The app is provided for saving school handouts, extracting text with OCR, organizing deadlines and submission status, searching, notifications, and review support.</p>
+        </div>
+        <div class="section">
+          <h3>2. Prohibited acts</h3>
+          <ul>
+            <li>Use that violates laws or public order</li>
+            <li>Acts that interfere with the operation or use of the app</li>
+            <li>Unauthorized purchase behavior, reverse engineering, modification, or infringement of rights</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>3. Premium and billing</h3>
+          <p>Premium purchase, billing, and refund conditions are generally governed by the App Store and Apple's payment terms.</p>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="ja">
+        <h2>免責・変更・連絡先</h2>
+        <div class="section">
+          <h3>4. 免責</h3>
+          <p>本アプリは、OCR 結果、締切抽出、通知表示、保存内容について完全性や無誤性を保証するものではありません。重要な提出期限や持ち物は、利用者自身で原本確認を行ってください。</p>
+        </div>
+        <div class="section">
+          <h3>5. 提供内容の変更</h3>
+          <p>機能、仕様、無料枠、Premium の内容、サポート範囲は、必要に応じて変更または終了される場合があります。</p>
+        </div>
+        <div class="section">
+          <h3>6. 問い合わせ</h3>
+          <p>問い合わせ先: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support</a> / <a href="./printmemo-privacy-policy.html">Privacy Policy</a> / <a href="./printmemo.html">Marketing</a></p>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="en" hidden>
+        <h2>Disclaimer, Changes, and Contact</h2>
+        <div class="section">
+          <h3>4. Disclaimer</h3>
+          <p>The app does not guarantee complete accuracy of OCR output, deadline extraction, notifications, or saved content. Users should verify important due dates and required items against the original handout.</p>
+        </div>
+        <div class="section">
+          <h3>5. Changes to the service</h3>
+          <p>Features, specifications, free limits, Premium scope, and support coverage may be changed or discontinued as needed.</p>
+        </div>
+        <div class="section">
+          <h3>6. Contact</h3>
+          <p>Contact: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support</a> / <a href="./printmemo-privacy-policy.html">Privacy Policy</a> / <a href="./printmemo.html">Marketing</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      const buttons = {
+        ja: document.getElementById('lang-ja-button'),
+        en: document.getElementById('lang-en-button')
+      };
+      const panels = Array.from(document.querySelectorAll('.lang-panel'));
+
+      function setLanguage(lang) {
+        const next = lang === 'en' ? 'en' : 'ja';
+        document.documentElement.lang = next;
+        Object.entries(buttons).forEach(([key, button]) => {
+          const active = key === next;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-selected', String(active));
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.getAttribute('lang') !== next;
+        });
+      }
+
+      buttons.ja.addEventListener('click', function () { setLanguage('ja'); });
+      buttons.en.addEventListener('click', function () { setLanguage('en'); });
+
+      const query = new URLSearchParams(window.location.search).get('lang');
+      const browserLang = (navigator.language || '').toLowerCase();
+      setLanguage(query === 'en' || browserLang.startsWith('en') ? 'en' : 'ja');
+    }());
+  </script>
+</body>
+</html>
