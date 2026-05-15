@@ -166,22 +166,24 @@
     <section class="hero lang-panel" id="lang-ja" lang="ja">
       <div class="eyebrow">Privacy and Data Handling</div>
       <h1>PrintSummary / プリサマ プライバシーポリシー</h1>
-      <p style="margin-top:14px;">PrintSummary（日本語名: プリサマ）は、学校プリントの撮影、OCR による文字抽出、締切整理、提出管理を支援するアプリです。このページでは、アプリが扱う情報、保存場所、外部送信しない範囲、ユーザーが削除できるデータを説明します。</p>
+      <p class="meta" style="margin-top:10px;">最終更新: 2026年5月15日</p>
+      <p style="margin-top:10px;">PrintSummary（日本語名: プリサマ）は、学校プリントの撮影、OCR による文字抽出、締切整理、提出管理を支援するアプリです。このページでは、アプリが扱う情報、保存場所、外部送信しない範囲、ユーザーが削除できるデータを説明します。</p>
       <div class="summary">
-        <div class="summary-item"><strong>基本方針:</strong> 現在の実装確認範囲では、主要処理は端末内完結を前提としています。</div>
+        <div class="summary-item"><strong>基本方針:</strong> 画像・OCR テキストは外部サーバーに送信しません。主要処理は端末内で完結します。</div>
         <div class="summary-item"><strong>対象データ:</strong> 画像、OCR テキスト、締切候補、提出状態、復習用情報、通知設定、購入状態。</div>
-        <div class="summary-item"><strong>外部送信:</strong> 独自クラウド同期、広告 SDK、第三者解析 SDK は前提にしていません。</div>
+        <div class="summary-item"><strong>外部送信なし:</strong> 独自クラウド同期・広告 SDK・第三者解析 SDK は使用していません。</div>
       </div>
     </section>
 
     <section class="hero lang-panel" id="lang-en" lang="en" hidden>
       <div class="eyebrow">Privacy and Data Handling</div>
       <h1>PrintSummary / Purisama Privacy Policy</h1>
-      <p style="margin-top:14px;">PrintSummary, also referred to in Japanese as Purisama, helps users capture school handouts, extract text with OCR, organize deadlines, and manage submission status. This page explains what information the app handles, where it is stored, what is not transmitted externally, and what users can delete.</p>
+      <p class="meta" style="margin-top:10px;">Last updated: May 15, 2026</p>
+      <p style="margin-top:10px;">PrintSummary, also referred to in Japanese as Purisama, helps users capture school handouts, extract text with OCR, organize deadlines, and manage submission status. This page explains what information the app handles, where it is stored, what is not transmitted externally, and what users can delete.</p>
       <div class="summary">
-        <div class="summary-item"><strong>Core posture:</strong> Within the scope verified in the current implementation, core processing is intended to remain on-device.</div>
+        <div class="summary-item"><strong>Core posture:</strong> Images and OCR text are not sent to external servers. Core processing stays on-device.</div>
         <div class="summary-item"><strong>Handled data:</strong> Images, OCR text, deadline candidates, submission status, review-related data, notification settings, and purchase status.</div>
-        <div class="summary-item"><strong>External transmission:</strong> The app is not designed around proprietary cloud sync, ad SDKs, or third-party analytics SDKs.</div>
+        <div class="summary-item"><strong>No external transmission:</strong> The app does not use proprietary cloud sync, ad SDKs, or third-party analytics SDKs.</div>
       </div>
     </section>
 
@@ -250,17 +252,17 @@
         <h2>保存・共有・削除</h2>
         <div class="section">
           <h3>4. 保存場所</h3>
-          <p>現在の実装確認範囲では、画像はアプリの Application Support 配下、OCR テキストや抽出候補などは端末内データストア、設定の一部は UserDefaults に保存されます。</p>
+          <p>画像はアプリの Application Support 配下、OCR テキストや抽出候補などは端末内データストア、設定の一部は UserDefaults に保存されます。いずれも端末外には出ません。</p>
         </div>
         <div class="section">
           <h3>5. 外部送信と共有</h3>
-          <p>OCR 用画像や OCR テキストを外部 API に送信する前提ではありません。手動バックアップでは JSON エクスポートが可能ですが、これはユーザーが明示的に共有操作をした場合のみです。</p>
+          <p>OCR 用画像・OCR テキストは外部 API に送信しません。手動バックアップで JSON エクスポートが可能ですが、これはユーザーが明示的に共有操作をした場合のみです。</p>
         </div>
         <div class="section">
           <h3>6. データ削除と問い合わせ</h3>
           <p>「設定 &gt; データ削除」から、保存済みプリント、OCR 結果、保存画像、誤抽出サンプル、追加辞書、最近開いた履歴などのローカルデータを削除できます。</p>
           <p style="margin-top:10px;">問い合わせ先: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
-          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support ページ</a> / <a href="./printmemo-terms.html">利用規約</a> / <a href="./printmemo.html">Marketing ページ</a></p>
+          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support</a> / <a href="./printmemo-terms.html">利用規約</a> / <a href="./printmemo.html">アプリについて</a></p>
         </div>
       </section>
 
@@ -268,17 +270,17 @@
         <h2>Storage, Sharing, and Deletion</h2>
         <div class="section">
           <h3>4. Storage location</h3>
-          <p>Within the current implementation scope, images are stored under Application Support, OCR text and extraction candidates are stored in the on-device data store, and some settings are stored in UserDefaults.</p>
+          <p>Images are stored under Application Support, OCR text and extraction candidates are stored in the on-device data store, and some settings are stored in UserDefaults. None of this leaves the device.</p>
         </div>
         <div class="section">
           <h3>5. External transmission and sharing</h3>
-          <p>The app is not designed to send OCR images or OCR text to external APIs. Manual backup can export JSON, but only when the user explicitly chooses to share it.</p>
+          <p>OCR images and OCR text are not sent to external APIs. Manual backup can export JSON, but only when the user explicitly chooses to share it.</p>
         </div>
         <div class="section">
           <h3>6. Data deletion and contact</h3>
           <p>From Settings &gt; Delete Data, users can remove local data including saved handouts, OCR results, stored images, extraction issue samples, added vocabulary, and recent history.</p>
           <p style="margin-top:10px;">Contact: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
-          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support page</a> / <a href="./printmemo-terms.html">Terms of Use</a> / <a href="./printmemo.html">Marketing page</a></p>
+          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support</a> / <a href="./printmemo-terms.html">Terms of Use</a> / <a href="./printmemo.html">About</a></p>
         </div>
       </section>
     </div>
