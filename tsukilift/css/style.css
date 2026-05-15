@@ -564,3 +564,108 @@ details.tl-faq-item .faq-answer {
   padding-bottom: 0.3rem;
   border-bottom: 2px solid var(--color-surface-raised);
 }
+
+/* ── スクリーンショットギャラリー ── */
+.screenshot-section {
+  padding: var(--space-lg) 0;
+  overflow: hidden;
+}
+
+.screenshot-section h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
+  padding: 0 var(--space-md);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screenshot-gallery {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--space-xs) var(--space-md) var(--space-sm);
+  scrollbar-width: none;
+}
+
+.screenshot-gallery::-webkit-scrollbar { display: none; }
+
+.screenshot-item {
+  flex: 0 0 auto;
+  width: 200px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.screenshot-item img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  display: block;
+}
+
+.screenshot-caption {
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* ── こんな方に向いています ── */
+.for-you-section {
+  padding: var(--space-lg) 0;
+  background: var(--color-surface);
+}
+
+.for-you-section h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
+}
+
+.for-you-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 600px) {
+  .for-you-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.for-you-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: var(--space-sm);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+}
+
+.for-you-icon { font-size: 1.5rem; flex-shrink: 0; line-height: 1.4; }
+
+.for-you-card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: var(--color-text-primary);
+}
+
+.for-you-card p {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* ── プレミアム年額 ── */
+.premium-price-annual {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
