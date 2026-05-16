@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポート - CareHours</title>
+  <style>
+    :root {
+      --primary: #4CAF82;
+      --primary-dark: #357A5C;
+      --bg: #F8FAF9;
+      --text: #1A2E25;
+      --text-muted: #6B8F7A;
+      --card-bg: #FFFFFF;
+      --border: #D4E8DC;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #1A2E25 0%, #2D5040 100%);
+      color: white;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo { font-size: 22px; font-weight: 700; }
+    .logo span { color: var(--primary); }
+    nav a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+    }
+    nav a:hover { color: white; }
+
+    .page-hero {
+      background: linear-gradient(150deg, #1A2E25 0%, #2D5040 100%);
+      color: white;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+    .page-hero p { color: rgba(255,255,255,0.65); font-size: 14px; }
+
+    .content {
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 0 24px 64px;
+    }
+
+    .contact-banner {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .contact-banner h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .contact-banner p { font-size: 15px; opacity: 0.85; margin-bottom: 20px; }
+    .contact-banner a {
+      display: inline-block;
+      background: white;
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .faq-list { margin-bottom: 40px; }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 18px 20px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-q:hover { background: #F0F8F4; }
+    .faq-q::after { content: "＋"; color: var(--primary); font-size: 18px; flex-shrink: 0; margin-left: 12px; }
+    .faq-item input[type="checkbox"] { display: none; }
+    .faq-item input:checked + label.faq-q::after { content: "－"; }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 14px;
+      color: #444;
+      padding: 0 20px;
+    }
+    .faq-item input:checked ~ .faq-a {
+      max-height: 400px;
+      padding: 0 20px 18px;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .guide-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .guide-card .step {
+      background: var(--primary);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 100px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .guide-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .guide-card p { font-size: 13px; color: var(--text-muted); }
+
+    footer {
+      background: #1A2E25;
+      color: rgba(255,255,255,0.6);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    footer .footer-links { margin-bottom: 12px; }
+    footer .footer-links a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 13px;
+    }
+    footer .footer-links a:hover { color: white; }
+    footer p { font-size: 12px; }
+    @media (max-width: 600px) { nav { display: none; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Care<span>Hours</span></div>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <h1>サポート</h1>
+  <p>Support</p>
+</div>
+
+<div class="content">
+
+  <div class="contact-banner">
+    <h2>お問い合わせ</h2>
+    <p>ご不明な点はメールでお気軽にご連絡ください。<br>内容を確認のうえ、順次ご返信いたします。</p>
+    <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
+  </div>
+
+  <div class="section-title">📖 はじめかたガイド</div>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <span class="step">Step 1</span>
+      <h3>利用者を登録する</h3>
+      <p>ホーム画面の「＋」から担当する利用者を追加します。名前と基本サービス種別を設定してください。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 2</span>
+      <h3>訪問記録を入力する</h3>
+      <p>訪問日・開始・終了時刻・サービス内容を入力します。夜間をまたぐ場合も自動で計算されます。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 3</span>
+      <h3>給与見込みを確認する</h3>
+      <p>「給与」タブで今月の実績と見込み収入を確認できます。時給や交通費は設定から変更できます。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 4</span>
+      <h3>レポートを出力する（Premium）</h3>
+      <p>月次レポートをPDF形式でエクスポート。事業所への提出書類や確定申告に活用できます。</p>
+    </div>
+  </div>
+
+  <div class="section-title">❓ よくある質問</div>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq1">
+      <label class="faq-q" for="faq1">データはどこに保存されますか？</label>
+      <div class="faq-a">
+        <p>フリープランではデータはお使いのiPhone内（ローカルストレージ）に保存されます。プレミアムプランではiCloudを利用した同期が可能です。いずれの場合も、開発者がお客様のデータにアクセスすることはありません。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq2">
+      <label class="faq-q" for="faq2">夜間割増はどのように計算されますか？</label>
+      <div class="faq-a">
+        <p>22:00〜06:00を夜間時間帯として、この時間帯に該当する分だけ割増賃金（通常25%増）で計算します。たとえば21:00〜23:00の訪問の場合、21:00〜22:00は通常単価、22:00〜23:00は割増単価で自動計算されます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq3">
+      <label class="faq-q" for="faq3">プレミアムプランはいつでも解約できますか？</label>
+      <div class="faq-a">
+        <p>はい、いつでも解約できます。App Storeの「設定」→「サブスクリプション」から解約手続きを行ってください。解約後は次の更新日まで引き続きプレミアム機能をご利用いただけます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq4">
+      <label class="faq-q" for="faq4">機種変更したらデータはどうなりますか？</label>
+      <div class="faq-a">
+        <p>フリープランの場合、iPhoneのバックアップ（iCloudバックアップまたはMacでのバックアップ）から復元することで引き継ぎが可能です。プレミアムプランのiCloud同期をご利用の場合は、同じApple IDでサインインすれば自動的にデータが引き継がれます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq5">
+      <label class="faq-q" for="faq5">複数の事業所に登録している場合は使えますか？</label>
+      <div class="faq-a">
+        <p>プレミアムプランでは複数事業所の管理に対応しています。事業所ごとに時給・交通費等を設定し、合算した給与見込みを確認できます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq6">
+      <label class="faq-q" for="faq6">PDFレポートの内容をカスタマイズできますか？</label>
+      <div class="faq-a">
+        <p>現在のバージョンでは標準フォーマットのPDF出力のみ対応しています。カスタマイズ機能は今後のアップデートで追加予定です。ご要望はお問い合わせからお聞かせください。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq7">
+      <label class="faq-q" for="faq7">対応しているiOSのバージョンは？</label>
+      <div class="faq-a">
+        <p>iOS 17.0以降に対応しています。最新のiOSへのアップデートを推奨します。</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </div>
+  <p>&copy; 2026 CareHours. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
