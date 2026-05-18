@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — RecoverySync</title>
+  <link rel="stylesheet" href="shared/style.css">
+</head>
+<body data-page="support">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="recoverysync.html" class="site-logo">Recovery<span class="logo-accent">Sync</span></a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="recoverysync.html" data-i18n="nav.product">RecoverySync</a>
+        <a href="privacy.html"      data-i18n="nav.privacy">Privacy</a>
+        <a href="support.html"      data-i18n="nav.support">Support</a>
+        <a href="terms.html"        data-i18n="nav.terms">Terms</a>
+      </nav>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button class="lang-btn" data-lang="en" data-i18n="lang.en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="ja" data-i18n="lang.ja" aria-pressed="false">JA</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <div class="page-header" data-i18n-title="support.page-title">
+      <h1 data-i18n="support.title">Support</h1>
+      <p class="page-meta" data-i18n="support.subtitle">We're here to help. Most questions are answered in the FAQ below.</p>
+    </div>
+
+    <div class="contact-card">
+      <div>
+        <p class="contact-card__title" data-i18n="support.contact.title">Contact Support</p>
+        <p class="contact-card__desc" data-i18n="support.contact.desc">Typically responds within 1–2 business days.</p>
+      </div>
+      <div class="contact-card__cta">
+        <a href="mailto:support@recoverysync.app" class="btn" data-i18n="support.contact.btn">Send Email</a>
+      </div>
+    </div>
+
+    <h2 data-i18n="support.faq.title">Frequently Asked Questions</h2>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q1">How does the recovery score work?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a1">Your recovery score is calculated from three metrics read from Apple Watch: Heart Rate Variability (HRV, RMSSD) accounts for 50%, Resting Heart Rate accounts for 30%, and Sleep Duration accounts for 20%. Each metric is compared to your personal 28-day baseline (established after a 14-day calibration period) to produce a score from 0–100. HIGH is 76–100, MODERATE is 51–75, and LOW is 0–50.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q2">Why is my score showing "—" (dash)?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a2">The app needs at least 7 nights of Apple Watch sleep data to begin calibration. During the initial calibration period (up to 14 days), the score will display "—". Make sure to wear your Apple Watch while sleeping every night to speed up calibration.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q3">Does RecoverySync work without an Apple Watch?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a3">No. RecoverySync requires Apple Watch (Series 4 or later) to record the HRV, resting heart rate, and sleep data used for score calculation. The iPhone app displays and analyzes the data, but the Apple Watch is the required data source.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q4">Why does the app need access to my Health data?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a4">RecoverySync reads HRV (RMSSD), resting heart rate, and sleep data from Apple HealthKit to calculate your recovery score. This is the only purpose for which health data is used. The data is processed entirely on-device and never leaves your iPhone.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q5">How do I restore my purchase?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a5">Open RecoverySync and go to Settings → Restore Purchase. Make sure you are signed in to the same Apple ID used for the original purchase. If the issue persists, contact Apple Support for purchase-related assistance.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q6">Does the app sync data to iCloud or any server?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a6">No. RecoverySync stores all data locally on your device only. There is no cloud sync, no account, and no server. Your data never leaves your device (unless included in your iCloud device backup, which is controlled by your iOS settings).</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q7">My Apple Watch complication is not showing — how do I fix it?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a7">Open the Watch app on your iPhone → My Watch tab → scroll to RecoverySync → tap it → make sure the complication is added to your active watch face. You can also long-press your watch face → Edit → select a complication slot → choose RecoverySync.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary data-i18n="support.faq.q8">What Apple Watch models are supported?</summary>
+      <div class="faq-body">
+        <p data-i18n="support.faq.a8">RecoverySync requires Apple Watch Series 4 or later running watchOS 10.0 or later, paired with an iPhone running iOS 17.0 or later.</p>
+      </div>
+    </details>
+
+    <div class="section" style="margin-top: 2.5rem;">
+      <h2 data-i18n="support.compat.title">Compatibility</h2>
+      <ul class="compat-list">
+        <li>iOS 17.0+</li>
+        <li>watchOS 10.0+</li>
+        <li>Apple Watch Series 4+</li>
+        <li>iPhone</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="recoverysync.html" data-i18n="nav.product">RecoverySync</a>
+      <a href="privacy.html"      data-i18n="nav.privacy">Privacy</a>
+      <a href="support.html"      data-i18n="nav.support">Support</a>
+      <a href="terms.html"        data-i18n="nav.terms">Terms</a>
+    </div>
+    <p><span data-i18n="footer.copyright">© 2026 RecoverySync</span> &middot; <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </footer>
+
+  <script src="shared/i18n.js"></script>
+</body>
+</html>
