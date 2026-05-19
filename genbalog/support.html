@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポート — Genbalog</title>
+  <style>
+    :root {
+      --aizome: #0F3D5C; --shu: #C5392C; --washi: #FAF7F0;
+      --sumi: #1C1C1E; --sumi-light: #6B6B73; --kintsugi: #B8860B; --matcha: #3D7A47;
+      --radius: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', sans-serif;
+      background: var(--washi); color: var(--sumi); line-height: 1.8;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 60px;
+      background: rgba(250,247,240,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(15,61,92,0.08);
+    }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--aizome); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { font-size: 0.875rem; color: var(--sumi-light); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: var(--aizome); }
+    .lang-btn {
+      font-size: 0.8125rem; font-weight: 600; padding: 5px 14px;
+      border: 1.5px solid var(--aizome); border-radius: 20px;
+      color: var(--aizome); background: transparent; cursor: pointer; transition: all .2s;
+    }
+    .lang-btn:hover { background: var(--aizome); color: #fff; }
+    .page-header {
+      background: linear-gradient(160deg, #e8f0f5 0%, var(--washi) 60%);
+      padding: 60px 5vw 48px; text-align: center;
+    }
+    .page-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 800;
+      color: var(--aizome); letter-spacing: -0.02em; margin-bottom: 12px;
+    }
+    .page-header .subtitle { color: var(--sumi-light); font-size: 0.95rem; }
+    .content {
+      max-width: 820px; margin: 0 auto; padding: 56px 5vw 80px;
+    }
+
+    /* QUICK LINKS */
+    .quick-links {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px; margin-bottom: 56px;
+    }
+    .quick-card {
+      background: #fff; border-radius: var(--radius);
+      border: 1px solid rgba(15,61,92,0.1);
+      padding: 24px 20px; text-align: center;
+      text-decoration: none; color: var(--sumi);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .quick-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(15,61,92,0.1); }
+    .quick-card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .quick-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--aizome); margin-bottom: 6px; }
+    .quick-card p { font-size: 0.8125rem; color: var(--sumi-light); }
+
+    /* FAQ */
+    .section-title {
+      font-size: 1.35rem; font-weight: 700; color: var(--aizome);
+      margin-bottom: 20px; padding-bottom: 10px;
+      border-bottom: 2px solid rgba(15,61,92,0.12);
+    }
+    .faq-list { margin-bottom: 56px; }
+    details {
+      border: 1px solid rgba(15,61,92,0.1);
+      border-radius: var(--radius); margin-bottom: 10px;
+      background: #fff; overflow: hidden;
+    }
+    summary {
+      font-weight: 600; font-size: 0.95rem;
+      padding: 18px 20px; cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      color: var(--sumi);
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 1.25rem; color: var(--aizome); font-weight: 300; flex-shrink: 0; margin-left: 12px; }
+    details[open] summary::after { content: '−'; }
+    details[open] summary { color: var(--aizome); border-bottom: 1px solid rgba(15,61,92,0.08); }
+    .faq-body { padding: 16px 20px; font-size: 0.9rem; color: var(--sumi-light); }
+    .faq-body p { margin-bottom: 8px; }
+    .faq-body p:last-child { margin-bottom: 0; }
+
+    /* CONTACT */
+    .contact-box {
+      background: linear-gradient(135deg, var(--aizome) 0%, #0a2a40 100%);
+      border-radius: var(--radius); padding: 40px 36px;
+      color: #fff; text-align: center; margin-bottom: 40px;
+    }
+    .contact-box h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; }
+    .contact-box p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 24px; }
+    .contact-btn {
+      display: inline-block;
+      background: var(--shu); color: #fff;
+      padding: 13px 28px; border-radius: 10px;
+      font-size: 0.95rem; font-weight: 700; text-decoration: none;
+      transition: opacity .15s;
+    }
+    .contact-btn:hover { opacity: 0.88; }
+
+    /* VERSION INFO */
+    .version-info {
+      background: rgba(15,61,92,0.04); border-radius: var(--radius);
+      padding: 20px 24px; font-size: 0.875rem; color: var(--sumi-light);
+    }
+    .version-info strong { color: var(--sumi); }
+
+    footer {
+      background: var(--sumi); color: rgba(255,255,255,0.5);
+      text-align: center; padding: 28px 5vw; font-size: 0.8125rem;
+    }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Genbalog</a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">ホーム</a>
+    <a href="privacy.html" data-i18n="nav_privacy">プライバシー</a>
+    <button class="lang-btn" onclick="toggleLang()" id="langBtn">EN</button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1 data-i18n="title">サポート</h1>
+  <p class="subtitle" data-i18n="subtitle">ご不明な点はこちらでご確認ください</p>
+</div>
+
+<div class="content">
+
+  <!-- Quick links -->
+  <div class="quick-links">
+    <a href="#faq" class="quick-card">
+      <div class="icon">💬</div>
+      <h3 data-i18n="ql_faq_title">よくある質問</h3>
+      <p data-i18n="ql_faq_desc">使い方・トラブルの答えはこちら</p>
+    </a>
+    <a href="#contact" class="quick-card">
+      <div class="icon">✉️</div>
+      <h3 data-i18n="ql_contact_title">お問い合わせ</h3>
+      <p data-i18n="ql_contact_desc">解決しない場合はメールでご連絡を</p>
+    </a>
+    <a href="privacy.html" class="quick-card">
+      <div class="icon">🔒</div>
+      <h3 data-i18n="ql_privacy_title">プライバシー</h3>
+      <p data-i18n="ql_privacy_desc">データの扱いについて</p>
+    </a>
+    <a href="terms.html" class="quick-card">
+      <div class="icon">📄</div>
+      <h3 data-i18n="ql_terms_title">利用規約</h3>
+      <p data-i18n="ql_terms_desc">ご利用条件を確認する</p>
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <div id="faq">
+    <h2 class="section-title" data-i18n="faq_title">よくある質問</h2>
+    <div class="faq-list">
+
+      <details>
+        <summary data-i18n="faq1_q">写真を撮影してPDFにするには？</summary>
+        <div class="faq-body">
+          <p data-i18n="faq1_a">案件を作成してタップ → 右上の＋ボタンでカメラまたはライブラリから写真を追加 → 写真をタップしてキャプション・手書きメモを編集 → 「PDF作成」ボタンでPDFが生成されます。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq2_q">写真の編集内容が保存されないことがある</summary>
+        <div class="faq-body">
+          <p data-i18n="faq2_a">写真編集画面で右上の「保存」ボタンをタップしてから閉じてください。「×」ボタンで閉じると変更は破棄されます。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq3_q">無料版でできることは？</summary>
+        <div class="faq-body">
+          <p data-i18n="faq3_a">無料版では月5件までPDF生成、最新10案件の表示、写真の撮影・アノテーション・音声キャプションがご利用いただけます。Proにアップグレードすると無制限でご利用いただけます。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq4_q">Proをキャンセルするには？</summary>
+        <div class="faq-body">
+          <p data-i18n="faq4_a">iOSの「設定」→ 上部のApple ID →「サブスクリプション」→「Genbalog Pro」→「サブスクリプションをキャンセル」からキャンセルできます。更新日の24時間前までにキャンセルしてください。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq5_q">データはどこに保存されますか？</summary>
+        <div class="faq-body">
+          <p data-i18n="faq5_a">すべてのデータは端末内のみに保存されます。外部サーバーへの送信は一切ありません。iCloudバックアップはONにしておくことをお勧めします。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq6_q">機種変更したらデータは引き継げますか？</summary>
+        <div class="faq-body">
+          <p data-i18n="faq6_a">iCloudバックアップまたはiTunesバックアップから新しい端末に復元することでデータを引き継げます。サブスクリプションは同じApple IDで購入を復元できます（設定画面内「購入を復元」）。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq7_q">PDFにロゴを入れたい</summary>
+        <div class="faq-body">
+          <p data-i18n="faq7_a">ロゴ挿入はProプランの機能です。設定画面からProにアップグレードし、設定 → 会社情報 → ロゴ画像を設定してください。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq8_q">アプリの言語を切り替えたい</summary>
+        <div class="faq-body">
+          <p data-i18n="faq8_a">設定画面 → 「言語」から日本語・English・システム設定に従うの3つから選べます。切り替えは即時反映されます。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq9_q">音声キャプションが認識されない</summary>
+        <div class="faq-body">
+          <p data-i18n="faq9_a">iOSの設定 → プライバシーとセキュリティ → 音声認識で Genbalog を許可してください。また、マイクのアクセス権限も必要です。静かな環境で、はっきり話しかけてみてください。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary data-i18n="faq10_q">アプリが落ちる・動作が不安定</summary>
+        <div class="faq-body">
+          <p data-i18n="faq10_a">アプリを完全に終了して再起動してみてください。iOSとアプリを最新バージョンに更新することで解決する場合があります。解決しない場合はお問い合わせください。</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact">
+    <h2 class="section-title" data-i18n="contact_title">お問い合わせ</h2>
+    <div class="contact-box">
+      <h2 data-i18n="contact_box_title">解決しない場合はお気軽にご連絡ください</h2>
+      <p data-i18n="contact_box_desc">通常2〜3営業日以内にご返答します。お問い合わせの際はiOSのバージョンとアプリのバージョンをお知らせいただくとスムーズです。</p>
+      <a href="mailto:freetokyo2020@yahoo.co.jp" class="contact-btn" data-i18n="contact_btn">メールで問い合わせる</a>
+    </div>
+    <div class="version-info">
+      <strong data-i18n="version_label">アプリバージョン:</strong> <span data-i18n="version_num">1.0.0</span>
+      <strong data-i18n="ios_label">対応iOS:</strong> <span>17.0+</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div style="margin-bottom:10px;">
+    <a href="index.html" data-i18n="footer_home">ホーム</a>
+    <a href="privacy.html" data-i18n="footer_privacy">プライバシー</a>
+    <a href="terms.html" data-i18n="footer_terms">利用規約</a>
+    <a href="support.html" data-i18n="footer_support">サポート</a>
+  </div>
+  <p>© 2026 Genbalog. All rights reserved.</p>
+</footer>
+
+<script>
+const i18n = {
+  ja: {
+    nav_home: 'ホーム', nav_privacy: 'プライバシー',
+    title: 'サポート',
+    subtitle: 'ご不明な点はこちらでご確認ください',
+    ql_faq_title: 'よくある質問', ql_faq_desc: '使い方・トラブルの答えはこちら',
+    ql_contact_title: 'お問い合わせ', ql_contact_desc: '解決しない場合はメールでご連絡を',
+    ql_privacy_title: 'プライバシー', ql_privacy_desc: 'データの扱いについて',
+    ql_terms_title: '利用規約', ql_terms_desc: 'ご利用条件を確認する',
+    faq_title: 'よくある質問',
+    faq1_q: '写真を撮影してPDFにするには？',
+    faq1_a: '案件を作成してタップ → 右上の＋ボタンでカメラまたはライブラリから写真を追加 → 写真をタップしてキャプション・手書きメモを編集 → 「PDF作成」ボタンでPDFが生成されます。',
+    faq2_q: '写真の編集内容が保存されないことがある',
+    faq2_a: '写真編集画面で右上の「保存」ボタンをタップしてから閉じてください。「×」ボタンで閉じると変更は破棄されます。',
+    faq3_q: '無料版でできることは？',
+    faq3_a: '無料版では月5件までPDF生成、最新10案件の表示、写真の撮影・アノテーション・音声キャプションがご利用いただけます。Proにアップグレードすると無制限でご利用いただけます。',
+    faq4_q: 'Proをキャンセルするには？',
+    faq4_a: 'iOSの「設定」→ 上部のApple ID →「サブスクリプション」→「Genbalog Pro」→「サブスクリプションをキャンセル」からキャンセルできます。更新日の24時間前までにキャンセルしてください。',
+    faq5_q: 'データはどこに保存されますか？',
+    faq5_a: 'すべてのデータは端末内のみに保存されます。外部サーバーへの送信は一切ありません。iCloudバックアップはONにしておくことをお勧めします。',
+    faq6_q: '機種変更したらデータは引き継げますか？',
+    faq6_a: 'iCloudバックアップまたはiTunesバックアップから新しい端末に復元することでデータを引き継げます。サブスクリプションは同じApple IDで購入を復元できます（設定画面内「購入を復元」）。',
+    faq7_q: 'PDFにロゴを入れたい',
+    faq7_a: 'ロゴ挿入はProプランの機能です。設定画面からProにアップグレードし、設定 → 会社情報 → ロゴ画像を設定してください。',
+    faq8_q: 'アプリの言語を切り替えたい',
+    faq8_a: '設定画面 → 「言語」から日本語・English・システム設定に従うの3つから選べます。切り替えは即時反映されます。',
+    faq9_q: '音声キャプションが認識されない',
+    faq9_a: 'iOSの設定 → プライバシーとセキュリティ → 音声認識で Genbalog を許可してください。また、マイクのアクセス権限も必要です。静かな環境で、はっきり話しかけてみてください。',
+    faq10_q: 'アプリが落ちる・動作が不安定',
+    faq10_a: 'アプリを完全に終了して再起動してみてください。iOSとアプリを最新バージョンに更新することで解決する場合があります。解決しない場合はお問い合わせください。',
+    contact_title: 'お問い合わせ',
+    contact_box_title: '解決しない場合はお気軽にご連絡ください',
+    contact_box_desc: '通常2〜3営業日以内にご返答します。お問い合わせの際はiOSのバージョンとアプリのバージョンをお知らせいただくとスムーズです。',
+    contact_btn: 'メールで問い合わせる',
+    version_label: 'アプリバージョン:', version_num: '1.0.0', ios_label: '対応iOS:',
+    footer_home: 'ホーム', footer_privacy: 'プライバシー', footer_terms: '利用規約', footer_support: 'サポート',
+  },
+  en: {
+    nav_home: 'Home', nav_privacy: 'Privacy',
+    title: 'Support',
+    subtitle: 'Find answers and get help',
+    ql_faq_title: 'FAQ', ql_faq_desc: 'Answers to common questions',
+    ql_contact_title: 'Contact Us', ql_contact_desc: 'Email us if you need more help',
+    ql_privacy_title: 'Privacy Policy', ql_privacy_desc: 'How we handle your data',
+    ql_terms_title: 'Terms of Service', ql_terms_desc: 'Review usage terms',
+    faq_title: 'Frequently Asked Questions',
+    faq1_q: 'How do I create a PDF report from photos?',
+    faq1_a: 'Create a project and tap it → tap the + button to add photos from camera or library → tap a photo to add captions or annotations → tap "Create PDF" to generate your report.',
+    faq2_q: 'My photo edits aren\'t being saved',
+    faq2_a: 'In the photo editor, tap "Save" in the top-right corner before closing. Tapping "×" discards any changes.',
+    faq3_q: 'What can I do with the free version?',
+    faq3_a: 'The free tier allows up to 5 PDF exports per month, viewing your 10 most recent projects, and full access to photo capture, annotations, and voice captions. Upgrade to Pro for unlimited use.',
+    faq4_q: 'How do I cancel my Pro subscription?',
+    faq4_a: 'Go to iOS Settings → your Apple ID at the top → Subscriptions → Genbalog Pro → Cancel Subscription. Cancel at least 24 hours before your renewal date.',
+    faq5_q: 'Where is my data stored?',
+    faq5_a: 'All data is stored exclusively on your device. Nothing is sent to external servers. We recommend enabling iCloud Backup to protect your data.',
+    faq6_q: 'Can I transfer my data to a new device?',
+    faq6_a: 'Yes — restore your new device from an iCloud or iTunes backup. Your Pro subscription can be restored via the "Restore Purchases" button in the app\'s Settings screen using the same Apple ID.',
+    faq7_q: 'I want to add my company logo to the PDF',
+    faq7_a: 'Logo insertion is a Pro feature. Upgrade to Pro, then go to Settings → Company Info → set your logo image.',
+    faq8_q: 'How do I switch the app language?',
+    faq8_a: 'Go to Settings → Language and choose Japanese, English, or follow system settings. The change takes effect immediately.',
+    faq9_q: 'Voice captions aren\'t being recognized',
+    faq9_a: 'Go to iOS Settings → Privacy & Security → Speech Recognition and allow Genbalog. Microphone access is also required. Try speaking clearly in a quiet environment.',
+    faq10_q: 'The app is crashing or behaving unstably',
+    faq10_a: 'Force-quit the app and relaunch it. Updating both iOS and the app to the latest version often resolves instability. If the issue persists, please contact us.',
+    contact_title: 'Contact Us',
+    contact_box_title: 'Still need help? We\'re here for you',
+    contact_box_desc: 'We typically respond within 2–3 business days. Please include your iOS version and app version in your message.',
+    contact_btn: 'Send us an email',
+    version_label: 'App version:', version_num: '1.0.0', ios_label: 'Requires iOS:',
+    footer_home: 'Home', footer_privacy: 'Privacy', footer_terms: 'Terms', footer_support: 'Support',
+  }
+};
+
+let currentLang = localStorage.getItem('genbalog-lang') || 'ja';
+
+function applyLang(l) {
+  currentLang = l;
+  localStorage.setItem('genbalog-lang', l);
+  document.documentElement.lang = l;
+  document.getElementById('langBtn').textContent = l === 'ja' ? 'EN' : 'JA';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[l][key] !== undefined) el.textContent = i18n[l][key];
+  });
+}
+
+function toggleLang() { applyLang(currentLang === 'ja' ? 'en' : 'ja'); }
+
+applyLang(currentLang);
+</script>
+</body>
+</html>

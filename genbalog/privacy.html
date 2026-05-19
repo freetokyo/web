@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — Genbalog</title>
+  <style>
+    :root {
+      --aizome: #0F3D5C; --shu: #C5392C; --washi: #FAF7F0;
+      --sumi: #1C1C1E; --sumi-light: #6B6B73; --kintsugi: #B8860B;
+      --radius: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', sans-serif;
+      background: var(--washi); color: var(--sumi); line-height: 1.8;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 60px;
+      background: rgba(250,247,240,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(15,61,92,0.08);
+    }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--aizome); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { font-size: 0.875rem; color: var(--sumi-light); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: var(--aizome); }
+    .lang-btn {
+      font-size: 0.8125rem; font-weight: 600; padding: 5px 14px;
+      border: 1.5px solid var(--aizome); border-radius: 20px;
+      color: var(--aizome); background: transparent; cursor: pointer; transition: all .2s;
+    }
+    .lang-btn:hover { background: var(--aizome); color: #fff; }
+    .page-header {
+      background: linear-gradient(160deg, #e8f0f5 0%, var(--washi) 60%);
+      padding: 60px 5vw 48px; text-align: center;
+    }
+    .page-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 800;
+      color: var(--aizome); letter-spacing: -0.02em; margin-bottom: 12px;
+    }
+    .page-header .subtitle { color: var(--sumi-light); font-size: 0.95rem; }
+    .content {
+      max-width: 780px; margin: 0 auto; padding: 56px 5vw 80px;
+    }
+    .content h2 {
+      font-size: 1.15rem; font-weight: 700; color: var(--aizome);
+      margin: 40px 0 12px; padding-bottom: 8px;
+      border-bottom: 2px solid rgba(15,61,92,0.12);
+    }
+    .content h2:first-child { margin-top: 0; }
+    .content p { margin-bottom: 14px; color: var(--sumi); font-size: 0.95rem; }
+    .content ul { margin: 10px 0 14px 20px; }
+    .content ul li { margin-bottom: 6px; font-size: 0.95rem; color: var(--sumi); }
+    .content a { color: var(--aizome); }
+    .updated-date {
+      display: inline-block; font-size: 0.8125rem; color: var(--sumi-light);
+      background: rgba(15,61,92,0.06); padding: 4px 12px; border-radius: 20px;
+      margin-bottom: 32px;
+    }
+    footer {
+      background: var(--sumi); color: rgba(255,255,255,0.5);
+      text-align: center; padding: 28px 5vw;
+      font-size: 0.8125rem;
+    }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Genbalog</a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">ホーム</a>
+    <a href="support.html" data-i18n="nav_support">サポート</a>
+    <button class="lang-btn" onclick="toggleLang()" id="langBtn">EN</button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1 data-i18n="title">プライバシーポリシー</h1>
+  <p class="subtitle" data-i18n="subtitle">Genbalog — あなたのデータを大切に守ります</p>
+</div>
+
+<div class="content">
+  <h2 data-i18n="s1_title">1. はじめに</h2>
+  <p data-i18n="s1_body">Genbalog（以下「本アプリ」）は、現場職人・一人親方の業務効率化を目的としたiOSアプリです。本プライバシーポリシーは、本アプリがどのような情報を収集・利用・保護するかについて説明します。</p>
+
+  <h2 data-i18n="s2_title">2. 収集する情報</h2>
+  <p data-i18n="s2_intro">本アプリは以下の情報を端末内でのみ処理します。外部サーバーへのデータ送信は一切行いません。</p>
+  <ul>
+    <li data-i18n="s2_item1">撮影した写真・画像データ（端末内のみに保存）</li>
+    <li data-i18n="s2_item2">写真に付与したキャプション・アノテーション</li>
+    <li data-i18n="s2_item3">案件名・工種・セクション情報</li>
+    <li data-i18n="s2_item4">写真撮影時の位置情報（ユーザーが許可した場合のみ）</li>
+    <li data-i18n="s2_item5">アプリ設定情報（言語設定など）</li>
+  </ul>
+
+  <h2 data-i18n="s3_title">3. 情報の利用目的</h2>
+  <p data-i18n="s3_body">収集した情報は、PDF報告書の生成・表示のためにのみ使用されます。本アプリはオフラインで完結するため、インターネット接続なしで全機能をご利用いただけます。</p>
+
+  <h2 data-i18n="s4_title">4. 第三者への提供</h2>
+  <p data-i18n="s4_body">本アプリは、ユーザーのデータを第三者に販売・提供・開示しません。ただし、以下の場合を除きます。</p>
+  <ul>
+    <li data-i18n="s4_item1">ユーザー自身がPDFを共有・エクスポートする場合（ユーザーの操作による）</li>
+    <li data-i18n="s4_item2">法律・法令に基づく開示が必要な場合</li>
+  </ul>
+
+  <h2 data-i18n="s5_title">5. 位置情報について</h2>
+  <p data-i18n="s5_body">本アプリは、写真撮影時に位置情報（緯度・経度）を記録する機能を持ちます。位置情報の取得には事前にユーザーの許可が必要です。位置情報はPDF報告書への記載にのみ使用され、外部サーバーへ送信されることはありません。位置情報の利用を希望しない場合は、iOSの設定アプリからいつでも権限を取り消すことができます。</p>
+
+  <h2 data-i18n="s6_title">6. カメラ・写真ライブラリへのアクセス</h2>
+  <p data-i18n="s6_body">本アプリは、写真の撮影および写真ライブラリからのインポートのためにカメラおよび写真ライブラリへのアクセスを要求します。取得した写真データは端末内のSwiftDataデータベースにのみ保存され、外部に送信されることはありません。</p>
+
+  <h2 data-i18n="s7_title">7. 音声認識について</h2>
+  <p data-i18n="s7_body">本アプリのPro版では、音声によるキャプション入力機能を提供しています。音声認識にはAppleのSpeech Frameworkを使用しており、Apple社のプライバシーポリシーが適用されます。音声データはAppleのサーバーで処理される場合があります。</p>
+
+  <h2 data-i18n="s8_title">8. サブスクリプション・課金情報</h2>
+  <p data-i18n="s8_body">本アプリ内の課金処理はすべてApple Inc.のApp Store経由で行われます。クレジットカード情報等の支払い情報は本アプリでは一切取得・保存しません。課金に関するプライバシーはApple社のプライバシーポリシーに従います。</p>
+
+  <h2 data-i18n="s9_title">9. データの保存・削除</h2>
+  <p data-i18n="s9_body">すべてのユーザーデータは端末内のみに保存されます。アプリを削除することで、すべてのデータが端末から削除されます。クラウドバックアップはiCloudのバックアップ設定に従います。</p>
+
+  <h2 data-i18n="s10_title">10. お子様のプライバシー</h2>
+  <p data-i18n="s10_body">本アプリは業務用途を目的としており、13歳未満のお子様による使用は想定しておりません。</p>
+
+  <h2 data-i18n="s11_title">11. プライバシーポリシーの変更</h2>
+  <p data-i18n="s11_body">本プライバシーポリシーは予告なく変更される場合があります。重要な変更がある場合は、アプリのアップデートノートにてお知らせします。最新のポリシーは本ページに掲載されます。</p>
+
+  <h2 data-i18n="s12_title">12. お問い合わせ</h2>
+  <p data-i18n="s12_body">プライバシーに関するご質問は、サポートページよりお問い合わせください。</p>
+  <p><a href="support.html" data-i18n="s12_link">サポートページへ →</a></p>
+</div>
+
+<footer>
+  <div style="margin-bottom:10px;">
+    <a href="index.html" data-i18n="footer_home">ホーム</a>
+    <a href="privacy.html" data-i18n="footer_privacy">プライバシー</a>
+    <a href="terms.html" data-i18n="footer_terms">利用規約</a>
+    <a href="support.html" data-i18n="footer_support">サポート</a>
+  </div>
+  <p>© 2026 Genbalog. All rights reserved.</p>
+</footer>
+
+<script>
+const i18n = {
+  ja: {
+    nav_home: 'ホーム', nav_support: 'サポート',
+    title: 'プライバシーポリシー',
+    subtitle: 'Genbalog — あなたのデータを大切に守ります',
+    updated: '最終更新: 2026年5月19日',
+    s1_title: '1. はじめに',
+    s1_body: 'Genbalog（以下「本アプリ」）は、現場職人・一人親方の業務効率化を目的としたiOSアプリです。本プライバシーポリシーは、本アプリがどのような情報を収集・利用・保護するかについて説明します。',
+    s2_title: '2. 収集する情報',
+    s2_intro: '本アプリは以下の情報を端末内でのみ処理します。外部サーバーへのデータ送信は一切行いません。',
+    s2_item1: '撮影した写真・画像データ（端末内のみに保存）',
+    s2_item2: '写真に付与したキャプション・アノテーション',
+    s2_item3: '案件名・工種・セクション情報',
+    s2_item4: '写真撮影時の位置情報（ユーザーが許可した場合のみ）',
+    s2_item5: 'アプリ設定情報（言語設定など）',
+    s3_title: '3. 情報の利用目的',
+    s3_body: '収集した情報は、PDF報告書の生成・表示のためにのみ使用されます。本アプリはオフラインで完結するため、インターネット接続なしで全機能をご利用いただけます。',
+    s4_title: '4. 第三者への提供',
+    s4_body: '本アプリは、ユーザーのデータを第三者に販売・提供・開示しません。ただし、以下の場合を除きます。',
+    s4_item1: 'ユーザー自身がPDFを共有・エクスポートする場合（ユーザーの操作による）',
+    s4_item2: '法律・法令に基づく開示が必要な場合',
+    s5_title: '5. 位置情報について',
+    s5_body: '本アプリは、写真撮影時に位置情報（緯度・経度）を記録する機能を持ちます。位置情報の取得には事前にユーザーの許可が必要です。位置情報はPDF報告書への記載にのみ使用され、外部サーバーへ送信されることはありません。位置情報の利用を希望しない場合は、iOSの設定アプリからいつでも権限を取り消すことができます。',
+    s6_title: '6. カメラ・写真ライブラリへのアクセス',
+    s6_body: '本アプリは、写真の撮影および写真ライブラリからのインポートのためにカメラおよび写真ライブラリへのアクセスを要求します。取得した写真データは端末内のSwiftDataデータベースにのみ保存され、外部に送信されることはありません。',
+    s7_title: '7. 音声認識について',
+    s7_body: '本アプリのPro版では、音声によるキャプション入力機能を提供しています。音声認識にはAppleのSpeech Frameworkを使用しており、Apple社のプライバシーポリシーが適用されます。音声データはAppleのサーバーで処理される場合があります。',
+    s8_title: '8. サブスクリプション・課金情報',
+    s8_body: '本アプリ内の課金処理はすべてApple Inc.のApp Store経由で行われます。クレジットカード情報等の支払い情報は本アプリでは一切取得・保存しません。課金に関するプライバシーはApple社のプライバシーポリシーに従います。',
+    s9_title: '9. データの保存・削除',
+    s9_body: 'すべてのユーザーデータは端末内のみに保存されます。アプリを削除することで、すべてのデータが端末から削除されます。クラウドバックアップはiCloudのバックアップ設定に従います。',
+    s10_title: '10. お子様のプライバシー',
+    s10_body: '本アプリは業務用途を目的としており、13歳未満のお子様による使用は想定しておりません。',
+    s11_title: '11. プライバシーポリシーの変更',
+    s11_body: '本プライバシーポリシーは予告なく変更される場合があります。重要な変更がある場合は、アプリのアップデートノートにてお知らせします。最新のポリシーは本ページに掲載されます。',
+    s12_title: '12. お問い合わせ',
+    s12_body: 'プライバシーに関するご質問は、サポートページよりお問い合わせください。',
+    s12_link: 'サポートページへ →',
+    footer_home: 'ホーム', footer_privacy: 'プライバシー', footer_terms: '利用規約', footer_support: 'サポート',
+  },
+  en: {
+    nav_home: 'Home', nav_support: 'Support',
+    title: 'Privacy Policy',
+    subtitle: 'Genbalog — We protect your data with care',
+    updated: 'Last updated: May 19, 2026',
+    s1_title: '1. Introduction',
+    s1_body: 'Genbalog (the "App") is an iOS application designed to help field workers and independent contractors streamline their reporting workflow. This Privacy Policy explains what information the App collects, how it is used, and how it is protected.',
+    s2_title: '2. Information We Collect',
+    s2_intro: 'The App processes the following information entirely on your device. No data is transmitted to external servers.',
+    s2_item1: 'Photos and image data captured or imported (stored on device only)',
+    s2_item2: 'Captions and annotations added to photos',
+    s2_item3: 'Project names, work types, and section information',
+    s2_item4: 'Location data at time of photo capture (only if you grant permission)',
+    s2_item5: 'App settings and preferences (e.g., language selection)',
+    s3_title: '3. How We Use Information',
+    s3_body: 'Information collected is used solely for generating and displaying PDF reports. The App works fully offline — no internet connection is required for any feature.',
+    s4_title: '4. Third-Party Disclosure',
+    s4_body: 'We do not sell, transfer, or disclose your data to third parties, except in the following cases:',
+    s4_item1: 'When you share or export a PDF yourself (initiated by your own action)',
+    s4_item2: 'When disclosure is required by law or regulation',
+    s5_title: '5. Location Information',
+    s5_body: 'The App can record location data (latitude/longitude) when you take photos. Location access requires your explicit permission. Location data is used only for inclusion in PDF reports and is never sent to external servers. You can revoke location permission at any time in iOS Settings.',
+    s6_title: '6. Camera & Photo Library Access',
+    s6_body: 'The App requests access to your camera and photo library to capture and import photos. Image data is stored only in the on-device SwiftData database and is never transmitted externally.',
+    s7_title: '7. Speech Recognition',
+    s7_body: 'The Pro version offers voice caption input using Apple\'s Speech Framework. Apple\'s privacy policy applies to speech processing. Audio data may be processed on Apple\'s servers.',
+    s8_title: '8. Subscriptions & Payments',
+    s8_body: 'All in-app purchases are processed through Apple Inc.\'s App Store. The App does not collect or store any payment information such as credit card details. Apple\'s privacy policy governs all payment-related data.',
+    s9_title: '9. Data Storage & Deletion',
+    s9_body: 'All user data is stored exclusively on your device. Uninstalling the App removes all associated data from the device. iCloud backup behavior follows your iOS iCloud settings.',
+    s10_title: '10. Children\'s Privacy',
+    s10_body: 'The App is intended for professional use and is not directed at children under 13 years of age.',
+    s11_title: '11. Changes to This Policy',
+    s11_body: 'This Privacy Policy may be updated without prior notice. Significant changes will be communicated through app update notes. The current version is always available on this page.',
+    s12_title: '12. Contact Us',
+    s12_body: 'For privacy-related inquiries, please visit our support page.',
+    s12_link: 'Go to Support →',
+    footer_home: 'Home', footer_privacy: 'Privacy', footer_terms: 'Terms', footer_support: 'Support',
+  }
+};
+
+let currentLang = localStorage.getItem('genbalog-lang') || 'ja';
+
+function applyLang(l) {
+  currentLang = l;
+  localStorage.setItem('genbalog-lang', l);
+  document.documentElement.lang = l;
+  document.getElementById('langBtn').textContent = l === 'ja' ? 'EN' : 'JA';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[l][key] !== undefined) el.textContent = i18n[l][key];
+  });
+}
+
+function toggleLang() { applyLang(currentLang === 'ja' ? 'en' : 'ja'); }
+
+applyLang(currentLang);
+</script>
+</body>
+</html>

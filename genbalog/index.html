@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genbalog — 60秒で現場報告書</title>
+  <meta name="description" content="現場職人のための報告書アプリ。写真を撮ってPDFにまとめるだけ。">
+  <style>
+    :root {
+      --aizome: #0F3D5C;
+      --shu: #C5392C;
+      --washi: #FAF7F0;
+      --sumi: #1C1C1E;
+      --sumi-light: #6B6B73;
+      --kintsugi: #B8860B;
+      --matcha: #3D7A47;
+      --radius: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', sans-serif;
+      background: var(--washi);
+      color: var(--sumi);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 60px;
+      background: rgba(250,247,240,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(15,61,92,0.08);
+    }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--aizome); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { font-size: 0.875rem; color: var(--sumi-light); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: var(--aizome); }
+    .lang-btn {
+      font-size: 0.8125rem; font-weight: 600; padding: 5px 14px;
+      border: 1.5px solid var(--aizome); border-radius: 20px;
+      color: var(--aizome); background: transparent; cursor: pointer;
+      transition: all .2s;
+    }
+    .lang-btn:hover { background: var(--aizome); color: #fff; }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 80px 5vw 64px;
+      background: linear-gradient(160deg, #e8f0f5 0%, var(--washi) 60%);
+    }
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+      color: var(--kintsugi); background: rgba(184,134,11,0.1);
+      padding: 4px 12px; border-radius: 20px; margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800; letter-spacing: -0.03em;
+      color: var(--aizome); line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--sumi-light); max-width: 520px;
+      margin: 0 auto 36px;
+    }
+    .hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--shu); color: #fff;
+      padding: 14px 28px; border-radius: 12px;
+      font-size: 1rem; font-weight: 700; text-decoration: none;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(197,57,44,0.3); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--aizome);
+      border: 2px solid var(--aizome);
+      padding: 13px 28px; border-radius: 12px;
+      font-size: 1rem; font-weight: 600; text-decoration: none;
+      transition: all .15s;
+    }
+    .btn-secondary:hover { background: var(--aizome); color: #fff; }
+    .app-store-img { height: 44px; }
+    .hero-visual {
+      margin-top: 56px;
+      display: flex; justify-content: center;
+    }
+    .phone-mockup {
+      width: min(280px, 70vw);
+      aspect-ratio: 9/19.5;
+      background: var(--aizome);
+      border-radius: 36px;
+      box-shadow: 0 32px 80px rgba(15,61,92,0.25);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 12px;
+      color: rgba(255,255,255,0.7); font-size: 0.85rem;
+    }
+    .phone-icon { font-size: 2.5rem; }
+
+    /* FEATURES */
+    section { padding: 72px 5vw; }
+    section.alt { background: #fff; }
+    .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--shu); margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.02em; color: var(--aizome); margin-bottom: 16px; }
+    .section-sub { font-size: 1rem; color: var(--sumi-light); max-width: 560px; }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px; margin-top: 48px;
+    }
+    .feature-card {
+      background: var(--washi);
+      border: 1px solid rgba(15,61,92,0.08);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: box-shadow .2s;
+    }
+    .feature-card:hover { box-shadow: 0 8px 32px rgba(15,61,92,0.08); }
+    .feature-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: rgba(15,61,92,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; margin-bottom: 16px;
+    }
+    .feature-card h3 { font-size: 1rem; font-weight: 700; color: var(--sumi); margin-bottom: 8px; }
+    .feature-card p { font-size: 0.875rem; color: var(--sumi-light); line-height: 1.6; }
+
+    /* STEPS */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-top: 48px; }
+    .step { text-align: center; }
+    .step-num {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--aizome); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 800; margin: 0 auto 16px;
+    }
+    .step h3 { font-size: 0.95rem; font-weight: 700; color: var(--sumi); margin-bottom: 6px; }
+    .step p { font-size: 0.85rem; color: var(--sumi-light); }
+
+    /* PRICING */
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 48px; }
+    .plan-card {
+      background: #fff; border: 1.5px solid rgba(15,61,92,0.1);
+      border-radius: var(--radius); padding: 32px;
+      position: relative;
+    }
+    .plan-card.popular { border-color: var(--shu); box-shadow: 0 8px 40px rgba(197,57,44,0.12); }
+    .popular-badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--shu); color: #fff;
+      font-size: 0.7rem; font-weight: 700; padding: 4px 14px; border-radius: 20px;
+      white-space: nowrap;
+    }
+    .plan-name { font-size: 0.875rem; font-weight: 700; color: var(--sumi-light); margin-bottom: 8px; }
+    .plan-price { font-size: 2.4rem; font-weight: 800; color: var(--aizome); line-height: 1; margin-bottom: 4px; }
+    .plan-period { font-size: 0.875rem; color: var(--sumi-light); margin-bottom: 24px; }
+    .plan-features { list-style: none; margin-bottom: 28px; display: flex; flex-direction: column; gap: 10px; }
+    .plan-features li { font-size: 0.875rem; display: flex; align-items: center; gap: 8px; }
+    .plan-features li::before { content: '✓'; font-weight: 700; color: var(--matcha); flex-shrink: 0; }
+    .plan-features li.no::before { content: '—'; color: var(--sumi-light); }
+    .plan-btn {
+      display: block; text-align: center;
+      padding: 12px; border-radius: 10px;
+      font-weight: 700; font-size: 0.9rem; text-decoration: none;
+      transition: all .15s;
+    }
+    .plan-btn.primary { background: var(--shu); color: #fff; }
+    .plan-btn.primary:hover { background: #a82e22; }
+    .plan-btn.secondary { background: rgba(15,61,92,0.06); color: var(--aizome); }
+    .plan-btn.secondary:hover { background: rgba(15,61,92,0.12); }
+
+    /* FAQ */
+    .faq-list { margin-top: 40px; display: flex; flex-direction: column; gap: 2px; }
+    details {
+      background: #fff; border: 1px solid rgba(15,61,92,0.08);
+      border-radius: 10px; overflow: hidden;
+    }
+    details + details { margin-top: 8px; }
+    summary {
+      padding: 18px 20px; font-weight: 600; font-size: 0.95rem;
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::after { content: '+'; font-size: 1.2rem; color: var(--aizome); flex-shrink: 0; margin-left: 12px; }
+    details[open] summary::after { content: '−'; }
+    .faq-answer { padding: 0 20px 18px; font-size: 0.875rem; color: var(--sumi-light); line-height: 1.8; }
+
+    /* FOOTER */
+    footer {
+      background: var(--aizome); color: rgba(255,255,255,0.7);
+      padding: 48px 5vw 32px;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; }
+    .footer-logo { font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .footer-tagline { font-size: 0.8rem; }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.6); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.75rem; }
+
+    @media (max-width: 600px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .nav-links a:not(.lang-btn) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">⚒ Genbalog</a>
+  <div class="nav-links">
+    <a href="support.html" data-i18n="nav.support">サポート</a>
+    <a href="privacy.html" data-i18n="nav.privacy">プライバシー</a>
+    <button class="lang-btn" id="lang-btn" onclick="toggleLang()">English</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge" data-i18n="hero.badge">現場職人向けアプリ</div>
+  <h1 data-i18n="hero.title">60秒で<br>現場報告書を作成</h1>
+  <p data-i18n="hero.sub">写真を撮るだけでプロ品質のPDFを生成。完全オフライン・登録不要。一人親方から工務店まで。</p>
+  <div class="hero-cta">
+    <a href="https://apps.apple.com/jp/app/genbalog/id6770864162" class="btn-primary">
+      <span>🍎</span><span data-i18n="hero.download">App Store でダウンロード</span>
+    </a>
+    <a href="support.html" class="btn-secondary" data-i18n="hero.learnmore">詳しく見る</a>
+  </div>
+  <div class="hero-visual">
+    <div class="phone-mockup">
+      <div class="phone-icon">📋</div>
+      <span data-i18n="hero.mockup">Genbalog</span>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="section-label" data-i18n="features.label">機能</div>
+  <div class="section-title" data-i18n="features.title">現場のすべてを、その場で記録</div>
+  <div class="section-sub" data-i18n="features.sub">煩雑な書類作業をアプリ一つで完結。移動中でも、現場でも、いつでも使えます。</div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📸</div>
+      <h3 data-i18n="f1.title">現場写真の整理</h3>
+      <p data-i18n="f1.desc">施工前・施工中・施工後などのセクション別に写真を整理。GPSタグも自動記録。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📄</div>
+      <h3 data-i18n="f2.title">ワンタップPDF生成</h3>
+      <p data-i18n="f2.desc">写真とキャプションをA4 PDFにまとめるのに60秒。メール・LINEで即共有。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✏️</div>
+      <h3 data-i18n="f3.title">写真にメモ・手書き</h3>
+      <p data-i18n="f3.desc">指やApple Pencilで写真に直接書き込み。音声入力でキャプションも素早く。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📡</div>
+      <h3 data-i18n="f4.title">完全オフライン対応</h3>
+      <p data-i18n="f4.desc">電波のない現場でも動作。データはすべて端末内に保存。外部サーバー不要。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏢</div>
+      <h3 data-i18n="f5.title">会社ブランディング</h3>
+      <p data-i18n="f5.desc">会社ロゴ・社名をPDFヘッダーに自動挿入。プロフェッショナルな印象を。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📁</div>
+      <h3 data-i18n="f6.title">カスタムテンプレート</h3>
+      <p data-i18n="f6.desc">業種に合わせた独自のセクション構成を作成。最大6タブのオリジナルテンプレート。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label" data-i18n="steps.label">使い方</div>
+  <div class="section-title" data-i18n="steps.title">3ステップで完成</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3 data-i18n="step1.title">案件を作成</h3>
+      <p data-i18n="step1.desc">案件名・住所・顧客名を入力。テンプレートを選択するだけ。</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3 data-i18n="step2.title">写真を撮影</h3>
+      <p data-i18n="step2.desc">カメラで撮影またはライブラリから選択。キャプションや手書きメモを追加。</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3 data-i18n="step3.title">PDFを共有</h3>
+      <p data-i18n="step3.desc">ワンタップでPDF生成。メール・LINE・AirDropでそのまま送信。</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="section-label" data-i18n="pricing.label">料金</div>
+  <div class="section-title" data-i18n="pricing.title">シンプルな料金プラン</div>
+  <div class="section-sub" data-i18n="pricing.sub">まずは無料で試して、必要になったらアップグレード。</div>
+  <div class="pricing-grid">
+    <div class="plan-card">
+      <div class="plan-name" data-i18n="plan.free.name">無料プラン</div>
+      <div class="plan-price" data-i18n="plan.free.price">¥0</div>
+      <div class="plan-period" data-i18n="plan.free.period">ずっと無料</div>
+      <ul class="plan-features">
+        <li data-i18n="plan.free.f1">PDF生成 5件/月</li>
+        <li data-i18n="plan.free.f2">案件管理 最新10件</li>
+        <li data-i18n="plan.free.f3">基本テンプレート</li>
+        <li data-i18n="plan.free.f4">写真アノテーション</li>
+        <li class="no" data-i18n="plan.free.f5">会社ブランディング</li>
+        <li class="no" data-i18n="plan.free.f6">カスタムテンプレート</li>
+      </ul>
+      <a href="https://apps.apple.com/jp/app/genbalog/id6770864162" class="plan-btn secondary" data-i18n="plan.free.cta">無料で始める</a>
+    </div>
+    <div class="plan-card popular">
+      <div class="popular-badge" data-i18n="plan.pro.badge">おすすめ</div>
+      <div class="plan-name" data-i18n="plan.pro.name">Proプラン</div>
+      <div class="plan-price" data-i18n="plan.pro.price">¥480<span style="font-size:1rem;font-weight:400;">/月</span></div>
+      <div class="plan-period" data-i18n="plan.pro.period">年額 ¥3,800 で2ヶ月分お得</div>
+      <ul class="plan-features">
+        <li data-i18n="plan.pro.f1">PDF生成 無制限</li>
+        <li data-i18n="plan.pro.f2">案件管理 無制限</li>
+        <li data-i18n="plan.pro.f3">基本テンプレート</li>
+        <li data-i18n="plan.pro.f4">写真アノテーション</li>
+        <li data-i18n="plan.pro.f5">会社ロゴ・社名入り</li>
+        <li data-i18n="plan.pro.f6">カスタムテンプレート（最大6）</li>
+      </ul>
+      <a href="https://apps.apple.com/jp/app/genbalog/id6770864162" class="plan-btn primary" data-i18n="plan.pro.cta">3日間無料で試す</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">FAQ</div>
+  <div class="section-title" data-i18n="faq.title">よくある質問</div>
+  <div class="faq-list">
+    <details>
+      <summary data-i18n="faq1.q">オフラインでも使えますか？</summary>
+      <div class="faq-answer" data-i18n="faq1.a">はい。Genbalogはすべての機能がオフラインで動作します。写真、PDF、案件データはすべて端末内に保存され、外部サーバーへの通信は一切必要ありません。</div>
+    </details>
+    <details>
+      <summary data-i18n="faq2.q">iPad でも使えますか？</summary>
+      <div class="faq-answer" data-i18n="faq2.a">はい。iPhone・iPad 両対応です。Apple Pencil を使ったアノテーション機能はiPadで特に使いやすくなっています。</div>
+    </details>
+    <details>
+      <summary data-i18n="faq3.q">Proプランはいつでもキャンセルできますか？</summary>
+      <div class="faq-answer" data-i18n="faq3.a">はい。App Storeのサブスクリプション設定からいつでもキャンセルできます。キャンセル後も契約期間終了までProの機能をご利用いただけます。</div>
+    </details>
+    <details>
+      <summary data-i18n="faq4.q">データはどこに保存されますか？</summary>
+      <div class="faq-answer" data-i18n="faq4.a">すべてのデータはお使いの端末（iPhone/iPad）にのみ保存されます。クラウドや外部サーバーへのアップロードは行いません。</div>
+    </details>
+  </div>
+  <div style="margin-top:32px;text-align:center;">
+    <a href="support.html" class="btn-secondary" data-i18n="faq.more">他の質問を見る →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">⚒ Genbalog</div>
+      <div class="footer-tagline" data-i18n="footer.tagline">現場職人のための報告書アプリ</div>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html" data-i18n="footer.privacy">プライバシーポリシー</a>
+      <a href="terms.html" data-i18n="footer.terms">利用規約</a>
+      <a href="support.html" data-i18n="footer.support">サポート</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="footer.copy">© 2026 Genbalog. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+const i18n = {
+  ja: {
+    "nav.support": "サポート", "nav.privacy": "プライバシー",
+    "hero.badge": "現場職人向けアプリ",
+    "hero.title": "60秒で<br>現場報告書を作成",
+    "hero.sub": "写真を撮るだけでプロ品質のPDFを生成。完全オフライン・登録不要。一人親方から工務店まで。",
+    "hero.download": "App Store でダウンロード",
+    "hero.learnmore": "詳しく見る",
+    "hero.mockup": "Genbalog",
+    "features.label": "機能",
+    "features.title": "現場のすべてを、その場で記録",
+    "features.sub": "煩雑な書類作業をアプリ一つで完結。移動中でも、現場でも、いつでも使えます。",
+    "f1.title": "現場写真の整理", "f1.desc": "施工前・施工中・施工後などのセクション別に写真を整理。GPSタグも自動記録。",
+    "f2.title": "ワンタップPDF生成", "f2.desc": "写真とキャプションをA4 PDFにまとめるのに60秒。メール・LINEで即共有。",
+    "f3.title": "写真にメモ・手書き", "f3.desc": "指やApple Pencilで写真に直接書き込み。音声入力でキャプションも素早く。",
+    "f4.title": "完全オフライン対応", "f4.desc": "電波のない現場でも動作。データはすべて端末内に保存。外部サーバー不要。",
+    "f5.title": "会社ブランディング", "f5.desc": "会社ロゴ・社名をPDFヘッダーに自動挿入。プロフェッショナルな印象を。",
+    "f6.title": "カスタムテンプレート", "f6.desc": "業種に合わせた独自のセクション構成を作成。最大6タブのオリジナルテンプレート。",
+    "steps.label": "使い方", "steps.title": "3ステップで完成",
+    "step1.title": "案件を作成", "step1.desc": "案件名・住所・顧客名を入力。テンプレートを選択するだけ。",
+    "step2.title": "写真を撮影", "step2.desc": "カメラで撮影またはライブラリから選択。キャプションや手書きメモを追加。",
+    "step3.title": "PDFを共有", "step3.desc": "ワンタップでPDF生成。メール・LINE・AirDropでそのまま送信。",
+    "pricing.label": "料金", "pricing.title": "シンプルな料金プラン",
+    "pricing.sub": "まずは無料で試して、必要になったらアップグレード。",
+    "plan.free.name": "無料プラン", "plan.free.price": "¥0", "plan.free.period": "ずっと無料",
+    "plan.free.f1": "PDF生成 5件/月", "plan.free.f2": "案件管理 最新10件",
+    "plan.free.f3": "基本テンプレート", "plan.free.f4": "写真アノテーション",
+    "plan.free.f5": "会社ブランディング", "plan.free.f6": "カスタムテンプレート",
+    "plan.free.cta": "無料で始める",
+    "plan.pro.badge": "おすすめ", "plan.pro.name": "Proプラン",
+    "plan.pro.price": "¥480<span style='font-size:1rem;font-weight:400;'>/月</span>",
+    "plan.pro.period": "年額 ¥3,800 で2ヶ月分お得",
+    "plan.pro.f1": "PDF生成 無制限", "plan.pro.f2": "案件管理 無制限",
+    "plan.pro.f3": "基本テンプレート", "plan.pro.f4": "写真アノテーション",
+    "plan.pro.f5": "会社ロゴ・社名入り", "plan.pro.f6": "カスタムテンプレート（最大6）",
+    "plan.pro.cta": "3日間無料で試す",
+    "faq.title": "よくある質問",
+    "faq1.q": "オフラインでも使えますか？",
+    "faq1.a": "はい。Genbalogはすべての機能がオフラインで動作します。写真、PDF、案件データはすべて端末内に保存され、外部サーバーへの通信は一切必要ありません。",
+    "faq2.q": "iPad でも使えますか？",
+    "faq2.a": "はい。iPhone・iPad 両対応です。Apple Pencil を使ったアノテーション機能はiPadで特に使いやすくなっています。",
+    "faq3.q": "Proプランはいつでもキャンセルできますか？",
+    "faq3.a": "はい。App Storeのサブスクリプション設定からいつでもキャンセルできます。キャンセル後も契約期間終了までProの機能をご利用いただけます。",
+    "faq4.q": "データはどこに保存されますか？",
+    "faq4.a": "すべてのデータはお使いの端末（iPhone/iPad）にのみ保存されます。クラウドや外部サーバーへのアップロードは行いません。",
+    "faq.more": "他の質問を見る →",
+    "footer.tagline": "現場職人のための報告書アプリ",
+    "footer.privacy": "プライバシーポリシー", "footer.terms": "利用規約", "footer.support": "サポート",
+    "footer.copy": "© 2026 Genbalog. All rights reserved."
+  },
+  en: {
+    "nav.support": "Support", "nav.privacy": "Privacy",
+    "hero.badge": "For Field Professionals",
+    "hero.title": "Site Reports<br>in 60 Seconds",
+    "hero.sub": "Generate professional PDFs from photos instantly. Fully offline, no sign-up required. For solo contractors to construction firms.",
+    "hero.download": "Download on the App Store",
+    "hero.learnmore": "Learn more",
+    "hero.mockup": "Genbalog",
+    "features.label": "Features",
+    "features.title": "Everything you need on-site",
+    "features.sub": "Complete your paperwork with one app — from the job site, on the road, anytime.",
+    "f1.title": "Organize Site Photos", "f1.desc": "Sort photos by section: Before / During / After. GPS tags recorded automatically.",
+    "f2.title": "One-Tap PDF", "f2.desc": "Turn photos and captions into a professional A4 PDF in 60 seconds. Share via email or messaging.",
+    "f3.title": "Annotate Photos", "f3.desc": "Draw directly on photos with your finger or Apple Pencil. Use voice input for captions.",
+    "f4.title": "Fully Offline", "f4.desc": "Works anywhere, even without signal. All data stored locally — no external server needed.",
+    "f5.title": "Company Branding", "f5.desc": "Add your company logo and name to every PDF header. Make a professional impression.",
+    "f6.title": "Custom Templates", "f6.desc": "Create templates tailored to your trade. Up to 6 custom section tabs per template.",
+    "steps.label": "How it works", "steps.title": "3 Simple Steps",
+    "step1.title": "Create a Project", "step1.desc": "Enter the project name, address, and client. Choose a template and you're ready.",
+    "step2.title": "Take Photos", "step2.desc": "Shoot with the camera or import from your library. Add captions and hand-drawn notes.",
+    "step3.title": "Share the PDF", "step3.desc": "Generate a PDF with one tap. Send by email, messaging app, or AirDrop.",
+    "pricing.label": "Pricing", "pricing.title": "Simple, transparent pricing",
+    "pricing.sub": "Start free, upgrade when you need more.",
+    "plan.free.name": "Free", "plan.free.price": "¥0", "plan.free.period": "Forever free",
+    "plan.free.f1": "5 PDFs per month", "plan.free.f2": "Up to 10 projects",
+    "plan.free.f3": "Built-in templates", "plan.free.f4": "Photo annotation",
+    "plan.free.f5": "Company branding", "plan.free.f6": "Custom templates",
+    "plan.free.cta": "Get started free",
+    "plan.pro.badge": "Best Value", "plan.pro.name": "Pro",
+    "plan.pro.price": "¥480<span style='font-size:1rem;font-weight:400;'>/mo</span>",
+    "plan.pro.period": "or ¥3,800/year — save 2 months",
+    "plan.pro.f1": "Unlimited PDFs", "plan.pro.f2": "Unlimited projects",
+    "plan.pro.f3": "Built-in templates", "plan.pro.f4": "Photo annotation",
+    "plan.pro.f5": "Logo & company branding", "plan.pro.f6": "Custom templates (up to 6)",
+    "plan.pro.cta": "Try free for 3 days",
+    "faq.title": "Frequently Asked Questions",
+    "faq1.q": "Does it work offline?",
+    "faq1.a": "Yes. All Genbalog features work completely offline. Photos, PDFs, and project data are stored on your device — no internet connection required.",
+    "faq2.q": "Is it available on iPad?",
+    "faq2.a": "Yes. Genbalog is a universal app for both iPhone and iPad. The annotation feature works great with Apple Pencil on iPad.",
+    "faq3.q": "Can I cancel my Pro subscription anytime?",
+    "faq3.a": "Yes. You can cancel anytime from App Store subscription settings. You'll retain Pro access until the end of the current billing period.",
+    "faq4.q": "Where is my data stored?",
+    "faq4.a": "All your data is stored exclusively on your iPhone or iPad. Nothing is uploaded to the cloud or any external server.",
+    "faq.more": "See more questions →",
+    "footer.tagline": "Site report app for field professionals",
+    "footer.privacy": "Privacy Policy", "footer.terms": "Terms of Service", "footer.support": "Support",
+    "footer.copy": "© 2026 Genbalog. All rights reserved."
+  }
+};
+
+let lang = localStorage.getItem('genbalog-lang') || 'ja';
+
+function applyLang(l) {
+  lang = l;
+  localStorage.setItem('genbalog-lang', l);
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (i18n[l][key] !== undefined) el.innerHTML = i18n[l][key];
+  });
+  document.getElementById('lang-btn').textContent = l === 'ja' ? 'English' : '日本語';
+  document.title = l === 'ja' ? 'Genbalog — 60秒で現場報告書' : 'Genbalog — Site Reports in 60 Seconds';
+}
+
+function toggleLang() { applyLang(lang === 'ja' ? 'en' : 'ja'); }
+
+applyLang(lang);
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 — Genbalog</title>
+  <style>
+    :root {
+      --aizome: #0F3D5C; --shu: #C5392C; --washi: #FAF7F0;
+      --sumi: #1C1C1E; --sumi-light: #6B6B73; --kintsugi: #B8860B;
+      --radius: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic UI', 'Segoe UI', sans-serif;
+      background: var(--washi); color: var(--sumi); line-height: 1.8;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 60px;
+      background: rgba(250,247,240,0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(15,61,92,0.08);
+    }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--aizome); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { font-size: 0.875rem; color: var(--sumi-light); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: var(--aizome); }
+    .lang-btn {
+      font-size: 0.8125rem; font-weight: 600; padding: 5px 14px;
+      border: 1.5px solid var(--aizome); border-radius: 20px;
+      color: var(--aizome); background: transparent; cursor: pointer; transition: all .2s;
+    }
+    .lang-btn:hover { background: var(--aizome); color: #fff; }
+    .page-header {
+      background: linear-gradient(160deg, #e8f0f5 0%, var(--washi) 60%);
+      padding: 60px 5vw 48px; text-align: center;
+    }
+    .page-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 800;
+      color: var(--aizome); letter-spacing: -0.02em; margin-bottom: 12px;
+    }
+    .page-header .subtitle { color: var(--sumi-light); font-size: 0.95rem; }
+    .content {
+      max-width: 780px; margin: 0 auto; padding: 56px 5vw 80px;
+    }
+    .content h2 {
+      font-size: 1.15rem; font-weight: 700; color: var(--aizome);
+      margin: 40px 0 12px; padding-bottom: 8px;
+      border-bottom: 2px solid rgba(15,61,92,0.12);
+    }
+    .content h2:first-child { margin-top: 0; }
+    .content p { margin-bottom: 14px; color: var(--sumi); font-size: 0.95rem; }
+    .content ul { margin: 10px 0 14px 20px; }
+    .content ul li { margin-bottom: 6px; font-size: 0.95rem; color: var(--sumi); }
+    .content a { color: var(--aizome); }
+    .updated-date {
+      display: inline-block; font-size: 0.8125rem; color: var(--sumi-light);
+      background: rgba(15,61,92,0.06); padding: 4px 12px; border-radius: 20px;
+      margin-bottom: 32px;
+    }
+    footer {
+      background: var(--sumi); color: rgba(255,255,255,0.5);
+      text-align: center; padding: 28px 5vw; font-size: 0.8125rem;
+    }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Genbalog</a>
+  <div class="nav-links">
+    <a href="index.html" data-i18n="nav_home">ホーム</a>
+    <a href="support.html" data-i18n="nav_support">サポート</a>
+    <button class="lang-btn" onclick="toggleLang()" id="langBtn">EN</button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1 data-i18n="title">利用規約</h1>
+  <p class="subtitle" data-i18n="subtitle">Genbalog アプリのご利用にあたって</p>
+</div>
+
+<div class="content">
+  <h2 data-i18n="s1_title">第1条（適用）</h2>
+  <p data-i18n="s1_body">本利用規約（以下「本規約」）は、Genbalog（以下「本アプリ」）の利用に関して定めるものです。本アプリをダウンロード・インストール・使用することで、本規約に同意したものとみなします。</p>
+
+  <h2 data-i18n="s2_title">第2条（サービス内容）</h2>
+  <p data-i18n="s2_body">本アプリは、現場写真の管理およびPDF報告書の生成を目的としたiOSアプリケーションです。無料版（Free）およびサブスクリプション版（Pro）を提供します。</p>
+
+  <h2 data-i18n="s3_title">第3条（アカウント・登録）</h2>
+  <p data-i18n="s3_body">本アプリの利用にアカウント登録は不要です。すべてのデータはお使いの端末内のみに保存されます。</p>
+
+  <h2 data-i18n="s4_title">第4条（サブスクリプション）</h2>
+  <p data-i18n="s4_intro">Proプランは以下の条件でご利用いただけます。</p>
+  <ul>
+    <li data-i18n="s4_item1">月額プラン：¥480/月（自動更新）</li>
+    <li data-i18n="s4_item2">年額プラン：¥3,800/年（自動更新）</li>
+    <li data-i18n="s4_item3">無料トライアルが提供される場合があります（期間はApp Store表示を参照）</li>
+    <li data-i18n="s4_item4">更新日の24時間以上前にキャンセルしない限り自動更新されます</li>
+    <li data-i18n="s4_item5">解約はiOS「設定」>「Apple ID」>「サブスクリプション」から行えます</li>
+  </ul>
+
+  <h2 data-i18n="s5_title">第5条（禁止事項）</h2>
+  <p data-i18n="s5_intro">以下の行為を禁止します。</p>
+  <ul>
+    <li data-i18n="s5_item1">本アプリのリバースエンジニアリング・改変・複製</li>
+    <li data-i18n="s5_item2">本アプリを利用した違法行為</li>
+    <li data-i18n="s5_item3">他者の権利を侵害するコンテンツの作成・共有</li>
+    <li data-i18n="s5_item4">本アプリのサービスを妨害する行為</li>
+  </ul>
+
+  <h2 data-i18n="s6_title">第6条（知的財産権）</h2>
+  <p data-i18n="s6_body">本アプリおよびそのコンテンツに関する一切の知的財産権は開発者に帰属します。ユーザーが本アプリを使用して作成したPDF等のコンテンツの権利はユーザー自身に帰属します。</p>
+
+  <h2 data-i18n="s7_title">第7条（免責事項）</h2>
+  <p data-i18n="s7_body">本アプリは現状のまま提供されます。開発者は本アプリの動作の完全性・正確性・継続性を保証しません。本アプリの利用により生じた損害について、開発者は一切の責任を負いません。</p>
+
+  <h2 data-i18n="s8_title">第8条（サービスの変更・終了）</h2>
+  <p data-i18n="s8_body">開発者は予告なく本アプリの機能追加・変更・終了を行う場合があります。重要な変更はアプリのアップデートノートまたは本サイトにてお知らせします。</p>
+
+  <h2 data-i18n="s9_title">第9条（準拠法・管轄）</h2>
+  <p data-i18n="s9_body">本規約は日本法に準拠します。本規約に関する紛争については、開発者の所在地を管轄する裁判所を専属的合意管轄とします。</p>
+
+  <h2 data-i18n="s10_title">第10条（お問い合わせ）</h2>
+  <p data-i18n="s10_body">本規約に関するご質問は、サポートページよりお問い合わせください。</p>
+  <p><a href="support.html" data-i18n="s10_link">サポートページへ →</a></p>
+</div>
+
+<footer>
+  <div style="margin-bottom:10px;">
+    <a href="index.html" data-i18n="footer_home">ホーム</a>
+    <a href="privacy.html" data-i18n="footer_privacy">プライバシー</a>
+    <a href="terms.html" data-i18n="footer_terms">利用規約</a>
+    <a href="support.html" data-i18n="footer_support">サポート</a>
+  </div>
+  <p>© 2026 Genbalog. All rights reserved.</p>
+</footer>
+
+<script>
+const i18n = {
+  ja: {
+    nav_home: 'ホーム', nav_support: 'サポート',
+    title: '利用規約',
+    subtitle: 'Genbalog アプリのご利用にあたって',
+    updated: '最終更新: 2026年5月19日',
+    s1_title: '第1条（適用）',
+    s1_body: '本利用規約（以下「本規約」）は、Genbalog（以下「本アプリ」）の利用に関して定めるものです。本アプリをダウンロード・インストール・使用することで、本規約に同意したものとみなします。',
+    s2_title: '第2条（サービス内容）',
+    s2_body: '本アプリは、現場写真の管理およびPDF報告書の生成を目的としたiOSアプリケーションです。無料版（Free）およびサブスクリプション版（Pro）を提供します。',
+    s3_title: '第3条（アカウント・登録）',
+    s3_body: '本アプリの利用にアカウント登録は不要です。すべてのデータはお使いの端末内のみに保存されます。',
+    s4_title: '第4条（サブスクリプション）',
+    s4_intro: 'Proプランは以下の条件でご利用いただけます。',
+    s4_item1: '月額プラン：¥480/月（自動更新）',
+    s4_item2: '年額プラン：¥3,800/年（自動更新）',
+    s4_item3: '無料トライアルが提供される場合があります（期間はApp Store表示を参照）',
+    s4_item4: '更新日の24時間以上前にキャンセルしない限り自動更新されます',
+    s4_item5: '解約はiOS「設定」>「Apple ID」>「サブスクリプション」から行えます',
+    s5_title: '第5条（禁止事項）',
+    s5_intro: '以下の行為を禁止します。',
+    s5_item1: '本アプリのリバースエンジニアリング・改変・複製',
+    s5_item2: '本アプリを利用した違法行為',
+    s5_item3: '他者の権利を侵害するコンテンツの作成・共有',
+    s5_item4: '本アプリのサービスを妨害する行為',
+    s6_title: '第6条（知的財産権）',
+    s6_body: '本アプリおよびそのコンテンツに関する一切の知的財産権は開発者に帰属します。ユーザーが本アプリを使用して作成したPDF等のコンテンツの権利はユーザー自身に帰属します。',
+    s7_title: '第7条（免責事項）',
+    s7_body: '本アプリは現状のまま提供されます。開発者は本アプリの動作の完全性・正確性・継続性を保証しません。本アプリの利用により生じた損害について、開発者は一切の責任を負いません。',
+    s8_title: '第8条（サービスの変更・終了）',
+    s8_body: '開発者は予告なく本アプリの機能追加・変更・終了を行う場合があります。重要な変更はアプリのアップデートノートまたは本サイトにてお知らせします。',
+    s9_title: '第9条（準拠法・管轄）',
+    s9_body: '本規約は日本法に準拠します。本規約に関する紛争については、開発者の所在地を管轄する裁判所を専属的合意管轄とします。',
+    s10_title: '第10条（お問い合わせ）',
+    s10_body: '本規約に関するご質問は、サポートページよりお問い合わせください。',
+    s10_link: 'サポートページへ →',
+    footer_home: 'ホーム', footer_privacy: 'プライバシー', footer_terms: '利用規約', footer_support: 'サポート',
+  },
+  en: {
+    nav_home: 'Home', nav_support: 'Support',
+    title: 'Terms of Service',
+    subtitle: 'Terms governing your use of Genbalog',
+    updated: 'Last updated: May 19, 2026',
+    s1_title: 'Article 1 — Acceptance',
+    s1_body: 'These Terms of Service ("Terms") govern your use of the Genbalog iOS application ("App"). By downloading, installing, or using the App, you agree to be bound by these Terms.',
+    s2_title: 'Article 2 — Service Description',
+    s2_body: 'The App is an iOS application for managing field photos and generating PDF reports. It is offered in a free tier (Free) and a subscription tier (Pro).',
+    s3_title: 'Article 3 — Account Registration',
+    s3_body: 'No account registration is required to use the App. All data is stored exclusively on your device.',
+    s4_title: 'Article 4 — Subscriptions',
+    s4_intro: 'The Pro plan is available under the following terms:',
+    s4_item1: 'Monthly plan: ¥480/month (auto-renewing)',
+    s4_item2: 'Annual plan: ¥3,800/year (auto-renewing)',
+    s4_item3: 'A free trial may be offered (see App Store listing for details)',
+    s4_item4: 'Subscriptions renew automatically unless cancelled at least 24 hours before the renewal date',
+    s4_item5: 'Cancel via iOS Settings > Apple ID > Subscriptions',
+    s5_title: 'Article 5 — Prohibited Actions',
+    s5_intro: 'The following actions are prohibited:',
+    s5_item1: 'Reverse engineering, modifying, or copying the App',
+    s5_item2: 'Using the App for any illegal purpose',
+    s5_item3: 'Creating or sharing content that infringes others\' rights',
+    s5_item4: 'Interfering with or disrupting the App\'s services',
+    s6_title: 'Article 6 — Intellectual Property',
+    s6_body: 'All intellectual property rights in the App and its content belong to the developer. Content you create using the App (such as PDF reports) remains your property.',
+    s7_title: 'Article 7 — Disclaimer of Warranties',
+    s7_body: 'The App is provided "as is." The developer makes no warranties regarding the completeness, accuracy, or continued availability of the App. The developer is not liable for any damages arising from your use of the App.',
+    s8_title: 'Article 8 — Changes & Termination',
+    s8_body: 'The developer may add, modify, or discontinue features without prior notice. Significant changes will be communicated through app update notes or this website.',
+    s9_title: 'Article 9 — Governing Law',
+    s9_body: 'These Terms are governed by the laws of Japan. Any disputes shall be subject to the exclusive jurisdiction of the courts having jurisdiction over the developer\'s place of business.',
+    s10_title: 'Article 10 — Contact',
+    s10_body: 'For questions about these Terms, please visit our support page.',
+    s10_link: 'Go to Support →',
+    footer_home: 'Home', footer_privacy: 'Privacy', footer_terms: 'Terms', footer_support: 'Support',
+  }
+};
+
+let currentLang = localStorage.getItem('genbalog-lang') || 'ja';
+
+function applyLang(l) {
+  currentLang = l;
+  localStorage.setItem('genbalog-lang', l);
+  document.documentElement.lang = l;
+  document.getElementById('langBtn').textContent = l === 'ja' ? 'EN' : 'JA';
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[l][key] !== undefined) el.textContent = i18n[l][key];
+  });
+}
+
+function toggleLang() { applyLang(currentLang === 'ja' ? 'en' : 'ja'); }
+
+applyLang(currentLang);
+</script>
+</body>
+</html>
