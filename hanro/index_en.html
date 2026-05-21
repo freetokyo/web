@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanro - Delivery Driver Earnings</title>
+<meta name="description" content="The all-in-one earnings tracker for gig delivery drivers. Multi-platform support, automatic mileage tracking, AI peak-time prediction, tax-ready CSV export. Fully offline.">
+<style>
+  :root { --navy: #0A0E14; --amber: #F59E0B; --green: #10B981; --text: #1F2937; --muted: #6B7280; --bg: #FFFFFF; --card: #F9FAFB; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; color: var(--text); background: var(--bg); line-height: 1.7; }
+  header { background: var(--navy); color: white; padding: 80px 24px 96px; text-align: center; position: relative; }
+  header .logo { font-size: 48px; font-weight: 800; letter-spacing: -1px; }
+  header .tagline { font-size: 20px; color: var(--amber); margin-top: 8px; font-weight: 600; }
+  header .sub { color: #9CA3AF; margin-top: 16px; max-width: 640px; margin-left: auto; margin-right: auto; }
+  .badge { display: inline-block; margin-top: 28px; padding: 12px 28px; background: var(--amber); color: white; border-radius: 999px; font-weight: 700; text-decoration: none; }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 24px; }
+  h2 { font-size: 28px; margin-top: 56px; border-left: 4px solid var(--amber); padding-left: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
+  .card { background: var(--card); padding: 20px; border-radius: 12px; }
+  .card h4 { margin: 0 0 8px; color: var(--amber); }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+  .price-card { border: 1px solid #E5E7EB; padding: 20px; border-radius: 12px; }
+  .price-card .name { font-weight: 700; }
+  .price-card .price { font-size: 24px; color: var(--navy); margin: 8px 0; }
+  .price-card .desc { color: var(--muted); font-size: 13px; }
+  footer { background: var(--card); padding: 40px 24px; margin-top: 80px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--navy); margin: 0 12px; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .lang-switch { position: absolute; top: 16px; right: 24px; }
+  .lang-switch a { color: white; text-decoration: none; opacity: 0.7; }
+</style>
+</head>
+<body>
+<header>
+  <div class="lang-switch"><a href="index.html">日本語</a></div>
+  <div class="logo">Hanro</div>
+  <div class="tagline">See your daily earnings instantly</div>
+  <p class="sub">The all-in-one earnings tracker for gig delivery drivers. Multi-platform support, automatic mileage tracking, AI peak-time prediction, and tax-ready data export — all running fully on-device.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6771629040">View on App Store</a>
+</header>
+
+<main>
+  <h2>Key Features</h2>
+  <div class="grid">
+    <div class="card"><h4>Multi-platform Support</h4><p>Track earnings across Uber Eats, Wolt, menu, Amazon Flex, and any custom service in one place.</p></div>
+    <div class="card"><h4>Auto Mileage Tracking</h4><p>Core Motion + Core Location + vehicle Bluetooth automatically detects driving and splits business/personal km.</p></div>
+    <div class="card"><h4>AI Peak-time Prediction</h4><p>Apple Intelligence analyzes day-of-week × time-of-day × weather to suggest high-yield slots.</p></div>
+    <div class="card"><h4>Tax-ready Data Export</h4><p>CSV formats for Japanese tax software (freee, MoneyForward, Yayoi). Automatic household-allocation.</p></div>
+    <div class="card"><h4>Receipt OCR</h4><p>Scan receipts → VisionKit + Foundation Models auto-categorize. Monthly PDF reports per expense category.</p></div>
+    <div class="card"><h4>Fully Offline</h4><p>All processing on-device. No data leaves your device. Optional iCloud Private DB sync.</p></div>
+    <div class="card"><h4>Apple Watch</h4><p>Log deliveries with one tap from your wrist. Large buttons designed for use while driving.</p></div>
+    <div class="card"><h4>Widgets & Live Activities</h4><p>Today's earnings and monthly goal on Home Screen. Active sessions on Lock Screen.</p></div>
+  </div>
+
+  <h2>Subscriptions</h2>
+  <div class="price-grid">
+    <div class="price-card"><div class="name">Driver Monthly</div><div class="price">JPY 490 / mo</div><div class="desc">Unlimited features · 30-day free trial</div></div>
+    <div class="price-card"><div class="name">Driver Yearly</div><div class="price">JPY 4,900 / yr</div><div class="desc">Save 2 months vs monthly</div></div>
+    <div class="price-card"><div class="name">Family Monthly</div><div class="price">JPY 990 / mo</div><div class="desc">Family Sharing up to 6 · 30-day trial</div></div>
+    <div class="price-card"><div class="name">Family Yearly</div><div class="price">JPY 9,900 / yr</div><div class="desc">Family Sharing · Save 2 months</div></div>
+  </div>
+  <p style="margin-top:16px;color:var(--muted);font-size:14px;">Cancel anytime from your Apple ID settings. No charge if canceled during the free trial.</p>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>iPhone / iPad on iOS 17.0 or later</li>
+    <li>Apple Watch on watchOS 10.0 or later (optional)</li>
+    <li>Apple Intelligence: iPhone with A17 Pro or later (AI features)</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Bug reports, feature requests, and questions: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+</main>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a> ·
+  <a href="terms.html">Terms of Service</a> ·
+  <a href="support.html">Support</a> ·
+  <a href="mailto:freetokyo2020@yahoo.co.jp">Contact</a>
+  <p>© 2026 CHEN YANGLI. All rights reserved.</p>
+</footer>
+</body>
+</html>

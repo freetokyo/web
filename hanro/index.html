@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanro - 配達ドライバーの稼ぎ管理</title>
+<meta name="description" content="フードデリバリー・軽貨物ドライバーの売上 & 経費管理アプリ。マルチプラットフォーム対応、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV 出力。完全オフラインで安心。">
+<style>
+  :root { --navy: #0A0E14; --amber: #F59E0B; --green: #10B981; --text: #1F2937; --muted: #6B7280; --bg: #FFFFFF; --card: #F9FAFB; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; margin: 0; color: var(--text); background: var(--bg); line-height: 1.7; }
+  header { background: var(--navy); color: white; padding: 80px 24px 96px; text-align: center; }
+  header .logo { font-size: 48px; font-weight: 800; letter-spacing: -1px; }
+  header .tagline { font-size: 20px; color: var(--amber); margin-top: 8px; font-weight: 600; }
+  header .sub { color: #9CA3AF; margin-top: 16px; max-width: 640px; margin-left: auto; margin-right: auto; }
+  .badge { display: inline-block; margin-top: 28px; padding: 12px 28px; background: var(--amber); color: white; border-radius: 999px; font-weight: 700; text-decoration: none; }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 24px; }
+  h2 { font-size: 28px; margin-top: 56px; border-left: 4px solid var(--amber); padding-left: 12px; }
+  h3 { font-size: 18px; margin-top: 28px; color: var(--navy); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
+  .card { background: var(--card); padding: 20px; border-radius: 12px; }
+  .card h4 { margin: 0 0 8px; color: var(--amber); }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+  .price-card { border: 1px solid #E5E7EB; padding: 20px; border-radius: 12px; }
+  .price-card .name { font-weight: 700; }
+  .price-card .price { font-size: 24px; color: var(--navy); margin: 8px 0; }
+  .price-card .desc { color: var(--muted); font-size: 13px; }
+  footer { background: var(--card); padding: 40px 24px; margin-top: 80px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--navy); margin: 0 12px; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .lang-switch { position: absolute; top: 16px; right: 24px; }
+  .lang-switch a { color: white; text-decoration: none; opacity: 0.7; }
+</style>
+</head>
+<body>
+<header>
+  <div class="lang-switch"><a href="index_en.html">English</a></div>
+  <div class="logo">Hanro</div>
+  <div class="tagline">毎日の稼ぎが、ひと目でわかる</div>
+  <p class="sub">フードデリバリー・軽貨物・タクシードライバーのための、完全オフラインで使える売上 & 経費管理アプリ。マルチプラットフォーム対応、自動マイレージ記録、AI 稼ぎ時予測、確定申告データ出力をすべて 1 つのアプリで。</p>
+  <a class="badge" href="https://apps.apple.com/app/id6771629040">App Store で見る</a>
+</header>
+
+<main>
+  <h2>主な機能</h2>
+  <div class="grid">
+    <div class="card"><h4>マルチプラットフォーム対応</h4><p>Uber Eats / 出前館 / Wolt / menu / Amazon Flex / ピックゴー など、複数の配達サービスをまたいだ売上を一元管理。</p></div>
+    <div class="card"><h4>自動マイレージ記録</h4><p>Core Motion + Core Location + 車両 Bluetooth で運転を自動検知し、業務 km と私用 km を自動振り分け。</p></div>
+    <div class="card"><h4>AI 稼ぎ時予測</h4><p>Apple Intelligence による曜日 × 時間帯 × 天気の最適化。月次レビューで次月の重点曜日を提案。</p></div>
+    <div class="card"><h4>確定申告データ出力</h4><p>freee / マネーフォワード / 弥生会計 の CSV フォーマットに対応。家事按分も自動計算。</p></div>
+    <div class="card"><h4>レシート OCR</h4><p>レシートを撮影 → VisionKit + Foundation Models が自動仕分け。科目別の月次レポートを PDF 出力。</p></div>
+    <div class="card"><h4>完全オフライン動作</h4><p>すべての処理を端末内で完結。データの外部送信なし。iCloud Private DB で複数端末同期も可能（任意）。</p></div>
+    <div class="card"><h4>Apple Watch 対応</h4><p>手元のワンタップで配達を記録。大型ボタンで運転中も安心。</p></div>
+    <div class="card"><h4>ウィジェット & ライブアクティビティ</h4><p>今日の売上・月間目標進捗をホーム画面に表示。稼働中のセッションをロック画面に表示。</p></div>
+  </div>
+
+  <h2>サブスクリプション</h2>
+  <div class="price-grid">
+    <div class="price-card"><div class="name">ドライバー 月額</div><div class="price">¥490 / 月</div><div class="desc">全機能無制限・30 日無料体験</div></div>
+    <div class="price-card"><div class="name">ドライバー 年額</div><div class="price">¥4,900 / 年</div><div class="desc">月額より 2 ヶ月分お得</div></div>
+    <div class="price-card"><div class="name">ファミリ 月額</div><div class="price">¥990 / 月</div><div class="desc">最大 6 人ファミリー共有・30 日無料体験</div></div>
+    <div class="price-card"><div class="name">ファミリ 年額</div><div class="price">¥9,900 / 年</div><div class="desc">最大 6 人ファミリー共有・2 ヶ月分お得</div></div>
+  </div>
+  <p style="margin-top:16px;color:var(--muted);font-size:14px;">購入後、Apple ID 設定からいつでもキャンセル可能です。無料体験期間中の解約で課金は発生しません。</p>
+
+  <h2>動作環境</h2>
+  <ul>
+    <li>iOS 17.0 以降の iPhone / iPad</li>
+    <li>watchOS 10.0 以降の Apple Watch（任意）</li>
+    <li>Apple Intelligence: A17 Pro 以降の iPhone（AI 予測機能）</li>
+  </ul>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合報告・機能要望・購入に関するご質問は <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a> までお願いします。</p>
+</main>
+
+<footer>
+  <a href="privacy.html">プライバシーポリシー</a> ·
+  <a href="terms.html">利用規約</a> ·
+  <a href="support.html">サポート</a> ·
+  <a href="mailto:freetokyo2020@yahoo.co.jp">お問い合わせ</a>
+  <p>© 2026 CHEN YANGLI. All rights reserved.</p>
+</footer>
+</body>
+</html>
