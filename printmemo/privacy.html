@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrintSummary / プリサマ Privacy Policy | 学校プリントOCRアプリのプライバシー</title>
+  <meta name="description" content="PrintSummary / プリサマ のプライバシーポリシーです。学校プリント画像、OCR テキスト、締切情報、通知設定、Premium 購入状態などの扱いと、外部送信しない範囲を説明します。">
+  <meta name="keywords" content="PrintSummary,プリサマ,privacy policy,プライバシーポリシー,学校プリント,OCR,締切管理,端末内処理">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PrintSummary / プリサマ Privacy Policy">
+  <meta property="og:description" content="学校プリントをOCRで整理する PrintSummary / プリサマ が扱う情報、保存場所、外部送信しない範囲を説明します。">
+  <meta property="og:site_name" content="PrintSummary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrintSummary / プリサマ Privacy Policy">
+  <meta name="twitter:description" content="PrintSummary / プリサマ の画像、OCR テキスト、通知、購入情報の取り扱い方針。">
+  <style>
+    :root {
+      --bg: #f3efe8;
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-strong: #ffffff;
+      --text: #1d2623;
+      --muted: #5f6d68;
+      --line: rgba(29, 38, 35, 0.11);
+      --accent: #0e6b57;
+      --accent-soft: rgba(14, 107, 87, 0.1);
+      --accent-warm: rgba(204, 122, 69, 0.16);
+      --shadow: 0 22px 58px rgba(21, 35, 30, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, var(--accent-soft), transparent 32%),
+        radial-gradient(circle at top right, var(--accent-warm), transparent 24%),
+        linear-gradient(180deg, #f7f4ed 0%, var(--bg) 100%);
+    }
+    main { max-width: 1040px; margin: 0 auto; padding: 28px 20px 72px; }
+    a { color: var(--accent); }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .lang-button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .lang-button.is-active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .lang-panel[hidden] { display: none; }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      border-radius: 28px;
+    }
+    .hero { padding: 34px; margin-bottom: 20px; }
+    .card { padding: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.7rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 1.12rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 0.96rem;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 0.98rem;
+      line-height: 1.78;
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+    .meta, .mini {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .summary {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .summary-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+    }
+    .section + .section {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 820px) {
+      .hero, .card { border-radius: 22px; padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <div class="brand">PrintSummary Privacy</div>
+      <div class="language-switch" role="tablist" aria-label="Language switch">
+        <button class="lang-button" id="lang-ja-button" type="button" role="tab" aria-selected="true" aria-controls="lang-ja">日本語</button>
+        <button class="lang-button" id="lang-en-button" type="button" role="tab" aria-selected="false" aria-controls="lang-en">English</button>
+      </div>
+    </div>
+
+    <section class="hero lang-panel" id="lang-ja" lang="ja">
+      <div class="eyebrow">Privacy and Data Handling</div>
+      <h1>PrintSummary / プリサマ プライバシーポリシー</h1>
+      <p class="meta" style="margin-top:10px;">最終更新: 2026年5月15日</p>
+      <p style="margin-top:10px;">PrintSummary（日本語名: プリサマ）は、学校プリントの撮影、OCR による文字抽出、締切整理、提出管理を支援するアプリです。このページでは、アプリが扱う情報、保存場所、外部送信しない範囲、ユーザーが削除できるデータを説明します。</p>
+      <div class="summary">
+        <div class="summary-item"><strong>基本方針:</strong> 画像・OCR テキストは外部サーバーに送信しません。主要処理は端末内で完結します。</div>
+        <div class="summary-item"><strong>対象データ:</strong> 画像、OCR テキスト、締切候補、提出状態、復習用情報、通知設定、購入状態。</div>
+        <div class="summary-item"><strong>外部送信なし:</strong> 独自クラウド同期・広告 SDK・第三者解析 SDK は使用していません。</div>
+      </div>
+    </section>
+
+    <section class="hero lang-panel" id="lang-en" lang="en" hidden>
+      <div class="eyebrow">Privacy and Data Handling</div>
+      <h1>PrintSummary / Purisama Privacy Policy</h1>
+      <p class="meta" style="margin-top:10px;">Last updated: May 15, 2026</p>
+      <p style="margin-top:10px;">PrintSummary, also referred to in Japanese as Purisama, helps users capture school handouts, extract text with OCR, organize deadlines, and manage submission status. This page explains what information the app handles, where it is stored, what is not transmitted externally, and what users can delete.</p>
+      <div class="summary">
+        <div class="summary-item"><strong>Core posture:</strong> Images and OCR text are not sent to external servers. Core processing stays on-device.</div>
+        <div class="summary-item"><strong>Handled data:</strong> Images, OCR text, deadline candidates, submission status, review-related data, notification settings, and purchase status.</div>
+        <div class="summary-item"><strong>No external transmission:</strong> The app does not use proprietary cloud sync, ad SDKs, or third-party analytics SDKs.</div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card lang-panel" lang="ja">
+        <h2>データの扱い</h2>
+        <div class="section">
+          <h3>1. アプリが扱う情報</h3>
+          <ul>
+            <li>撮影または読み込んだ学校プリント画像</li>
+            <li>OCR で抽出したテキスト</li>
+            <li>締切日、持ち物、科目、提出状態、復習タグなどの整理情報</li>
+            <li>通知設定、追加辞書、最近開いた履歴、購入状態などの端末内設定</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>2. 利用目的</h3>
+          <ul>
+            <li>プリント画像から文字を読み取り、締切や持ち物を整理するため</li>
+            <li>保存済みプリントを検索、再確認、OCR 再処理するため</li>
+            <li>締切前のローカル通知を表示するため</li>
+            <li>無料枠と Premium 利用状態を端末内で管理するため</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>3. 権限</h3>
+          <ul>
+            <li>カメラ: 学校プリント撮影と端末内 OCR のために使用します。</li>
+            <li>写真: 既存画像の読込と端末内 OCR のために使用します。</li>
+            <li>通知: 締切前のローカル通知表示のために使用します。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="en" hidden>
+        <h2>How Data Is Handled</h2>
+        <div class="section">
+          <h3>1. Information the app handles</h3>
+          <ul>
+            <li>School handout images captured or imported by the user</li>
+            <li>Text extracted through OCR</li>
+            <li>Organizing data such as deadlines, required items, subjects, submission status, and review tags</li>
+            <li>On-device settings such as notifications, added vocabulary, recent history, and purchase status</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>2. Purpose of use</h3>
+          <ul>
+            <li>To read text from handout images and organize deadlines or required items</li>
+            <li>To search, revisit, and reprocess saved handouts</li>
+            <li>To display local reminders before deadlines</li>
+            <li>To manage the free quota and Premium status on the device</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>3. Permissions</h3>
+          <ul>
+            <li>Camera: Used for capturing school handouts and running OCR on-device.</li>
+            <li>Photos: Used for importing existing images and running OCR on-device.</li>
+            <li>Notifications: Used for local reminders before deadlines.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="ja">
+        <h2>保存・共有・削除</h2>
+        <div class="section">
+          <h3>4. 保存場所</h3>
+          <p>画像はアプリの Application Support 配下、OCR テキストや抽出候補などは端末内データストア、設定の一部は UserDefaults に保存されます。いずれも端末外には出ません。</p>
+        </div>
+        <div class="section">
+          <h3>5. 外部送信と共有</h3>
+          <p>OCR 用画像・OCR テキストは外部 API に送信しません。手動バックアップで JSON エクスポートが可能ですが、これはユーザーが明示的に共有操作をした場合のみです。</p>
+        </div>
+        <div class="section">
+          <h3>6. データ削除と問い合わせ</h3>
+          <p>「設定 &gt; データ削除」から、保存済みプリント、OCR 結果、保存画像、誤抽出サンプル、追加辞書、最近開いた履歴などのローカルデータを削除できます。</p>
+          <p style="margin-top:10px;">問い合わせ先: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support</a> / <a href="./printmemo-terms.html">利用規約</a> / <a href="./printmemo.html">アプリについて</a></p>
+        </div>
+      </section>
+
+      <section class="card lang-panel" lang="en" hidden>
+        <h2>Storage, Sharing, and Deletion</h2>
+        <div class="section">
+          <h3>4. Storage location</h3>
+          <p>Images are stored under Application Support, OCR text and extraction candidates are stored in the on-device data store, and some settings are stored in UserDefaults. None of this leaves the device.</p>
+        </div>
+        <div class="section">
+          <h3>5. External transmission and sharing</h3>
+          <p>OCR images and OCR text are not sent to external APIs. Manual backup can export JSON, but only when the user explicitly chooses to share it.</p>
+        </div>
+        <div class="section">
+          <h3>6. Data deletion and contact</h3>
+          <p>From Settings &gt; Delete Data, users can remove local data including saved handouts, OCR results, stored images, extraction issue samples, added vocabulary, and recent history.</p>
+          <p style="margin-top:10px;">Contact: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+          <p style="margin-top:8px;"><a href="./printmemo-support.html">Support</a> / <a href="./printmemo-terms.html">Terms of Use</a> / <a href="./printmemo.html">About</a></p>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <script>
+    (function () {
+      const buttons = {
+        ja: document.getElementById('lang-ja-button'),
+        en: document.getElementById('lang-en-button')
+      };
+      const panels = Array.from(document.querySelectorAll('.lang-panel'));
+
+      function setLanguage(lang) {
+        const next = lang === 'en' ? 'en' : 'ja';
+        document.documentElement.lang = next;
+        Object.entries(buttons).forEach(([key, button]) => {
+          const active = key === next;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-selected', String(active));
+        });
+        panels.forEach((panel) => {
+          panel.hidden = panel.getAttribute('lang') !== next;
+        });
+      }
+
+      buttons.ja.addEventListener('click', function () { setLanguage('ja'); });
+      buttons.en.addEventListener('click', function () { setLanguage('en'); });
+
+      const query = new URLSearchParams(window.location.search).get('lang');
+      const browserLang = (navigator.language || '').toLowerCase();
+      setLanguage(query === 'en' || browserLang.startsWith('en') ? 'en' : 'ja');
+    }());
+  </script>
+</body>
+</html>
