@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- CareHours -->
+  <url>
+    <loc>https://freetokyo.github.io/web/carehours/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/carehours/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/carehours/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/carehours/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- Genbalog -->
+  <url>
+    <loc>https://freetokyo.github.io/web/genbalog/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/genbalog/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/genbalog/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/genbalog/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- hanro -->
+  <url>
+    <loc>https://freetokyo.github.io/web/hanro/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hanro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hanro/index_en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hanro/"/>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/hanro/index_en.html</loc><priority>0.7</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hanro/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hanro/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hanro/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- IeKan -->
+  <url>
+    <loc>https://freetokyo.github.io/web/iekan/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/iekan/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/iekan/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/iekan/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- PrintMemo -->
+  <url>
+    <loc>https://freetokyo.github.io/web/printmemo/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/printmemo/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/printmemo/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/printmemo/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- RecoverySync -->
+  <url>
+    <loc>https://freetokyo.github.io/web/recoverysync/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/recoverysync/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/recoverysync/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/recoverysync/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- SaunaFlow -->
+  <url>
+    <loc>https://freetokyo.github.io/web/saunaflow/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/saunaflow/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/saunaflow/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/saunaflow/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- Trero (multilingual) -->
+  <url>
+    <loc>https://freetokyo.github.io/web/trero/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/trero/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/trero/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/trero/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/trero/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/trero/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://freetokyo.github.io/web/trero/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://freetokyo.github.io/web/trero/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/trero/zh-Hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/trero/zh-Hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/trero/"/>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/trero/en/</loc><priority>0.7</priority></url>
+  <url><loc>https://freetokyo.github.io/web/trero/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/trero/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/trero/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- TsukiLift -->
+  <url>
+    <loc>https://freetokyo.github.io/web/tsukilift/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/tokushoho.html</loc><priority>0.5</priority></url>
+
+</urlset>
