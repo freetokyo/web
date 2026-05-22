@@ -60,7 +60,7 @@ const TRANSLATIONS = {
 
     "privacy.s8.title":      "Contact",
     "privacy.s8.body":       "If you have questions about this privacy policy, please contact us:",
-    "privacy.s8.email":      "support@recoverysync.app",
+    "privacy.s8.email":      "freetokyo2020@yahoo.co.jp",
 
     /* ── Terms page ───────────────────────────────────────────────────────── */
     "terms.page-title":      "Terms of Use — RecoverySync",
@@ -102,7 +102,7 @@ const TRANSLATIONS = {
 
     "terms.s10.title":       "10. Contact",
     "terms.s10.body":        "Questions about these terms:",
-    "terms.s10.email":       "support@recoverysync.app",
+    "terms.s10.email":       "freetokyo2020@yahoo.co.jp",
 
     /* ── Support page ─────────────────────────────────────────────────────── */
     "support.page-title":    "Support — RecoverySync",
@@ -246,7 +246,7 @@ const TRANSLATIONS = {
 
     "privacy.s8.title":      "お問い合わせ",
     "privacy.s8.body":       "プライバシーポリシーに関するご質問は、下記までご連絡ください:",
-    "privacy.s8.email":      "support@recoverysync.app",
+    "privacy.s8.email":      "freetokyo2020@yahoo.co.jp",
 
     /* ── 利用規約ページ ───────────────────────────────────────────────────── */
     "terms.page-title":      "利用規約 — RecoverySync",
@@ -288,7 +288,7 @@ const TRANSLATIONS = {
 
     "terms.s10.title":       "10. お問い合わせ",
     "terms.s10.body":        "本規約に関するご質問:",
-    "terms.s10.email":       "support@recoverysync.app",
+    "terms.s10.email":       "freetokyo2020@yahoo.co.jp",
 
     /* ── サポートページ ───────────────────────────────────────────────────── */
     "support.page-title":    "サポート — RecoverySync",

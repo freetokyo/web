@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RecoverySync — Sleep &amp; HRV Recovery Tracker</title>
+  <link rel="stylesheet" href="shared/style.css">
+</head>
+<body data-page="recoverysync">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="recoverysync.html" class="site-logo">Recovery<span class="logo-accent">Sync</span></a>
+      <nav class="site-nav" aria-label="Site navigation">
+        <a href="recoverysync.html" data-i18n="nav.product">RecoverySync</a>
+        <a href="privacy.html"      data-i18n="nav.privacy">Privacy</a>
+        <a href="support.html"      data-i18n="nav.support">Support</a>
+        <a href="terms.html"        data-i18n="nav.terms">Terms</a>
+      </nav>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button class="lang-btn" data-lang="en" data-i18n="lang.en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="ja" data-i18n="lang.ja" aria-pressed="false">JA</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero__eyebrow" data-i18n="product.eyebrow">For Apple Watch</p>
+    <h1 class="hero__title">Recovery<span class="accent">Sync</span></h1>
+    <p class="hero__tagline" data-i18n="product.tagline">RecoverySync analyzes your HRV, resting heart rate, and sleep to deliver a single daily recovery score — right on your wrist.</p>
+    <div class="hero__cta">
+      <a href="https://apps.apple.com/app/id6770408873" class="btn--primary" data-i18n="product.cta.store">Download on the App Store</a>
+      <a href="#how-it-works" class="btn--ghost" data-i18n="product.cta.learn">Learn more</a>
+    </div>
+  </section>
+
+  <!-- Score section -->
+  <section class="score-section">
+    <div class="score-section__inner">
+      <h2 class="score-section__title" data-i18n="product.score.title">One score. Three signals.</h2>
+      <p class="score-section__subtitle" data-i18n="product.score.subtitle">Your recovery score is calculated from the health data your Apple Watch records while you sleep.</p>
+
+      <div class="score-levels">
+        <div class="score-level score-level--high">
+          <div class="score-level__range">76–100</div>
+          <div class="score-level__label" data-i18n="product.level.high">HIGH</div>
+        </div>
+        <div class="score-level score-level--mod">
+          <div class="score-level__range">51–75</div>
+          <div class="score-level__label" data-i18n="product.level.mod">MODERATE</div>
+        </div>
+        <div class="score-level score-level--low">
+          <div class="score-level__range">0–50</div>
+          <div class="score-level__label" data-i18n="product.level.low">LOW</div>
+        </div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric-chip">
+          <span data-i18n="product.metric.hrv">Heart Rate Variability</span>
+          <span class="metric-chip__pct">50%</span>
+        </div>
+        <div class="metric-chip">
+          <span data-i18n="product.metric.rhr">Resting Heart Rate</span>
+          <span class="metric-chip__pct">30%</span>
+        </div>
+        <div class="metric-chip">
+          <span data-i18n="product.metric.sleep">Sleep Duration</span>
+          <span class="metric-chip__pct">20%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features-section">
+    <div class="features-section__inner">
+      <div class="section-header">
+        <h2 data-i18n="product.features.title">Built different.</h2>
+        <p data-i18n="product.features.subtitle">No subscriptions. No account. No data leaving your device.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F512;</div>
+          <h3 class="feature-card__title" data-i18n="product.feat1.title">Privacy First</h3>
+          <p class="feature-card__desc" data-i18n="product.feat1.desc">Zero data collection. Your health data stays on your device. No servers, no tracking, no ads.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x231A;</div>
+          <h3 class="feature-card__title" data-i18n="product.feat2.title">Apple Watch Native</h3>
+          <p class="feature-card__desc" data-i18n="product.feat2.desc">Reads directly from HealthKit. Works with Apple Watch Series 4 and later, including complications and widgets.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F305;</div>
+          <h3 class="feature-card__title" data-i18n="product.feat3.title">Morning Score</h3>
+          <p class="feature-card__desc" data-i18n="product.feat3.desc">Get your personalized recovery score every morning. Optional notification delivers it before you start your day.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F4C8;</div>
+          <h3 class="feature-card__title" data-i18n="product.feat4.title">Personal Baseline</h3>
+          <p class="feature-card__desc" data-i18n="product.feat4.desc">After a short calibration period, scores are benchmarked against your own 28-day moving average — not population averages.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F4B3;</div>
+          <h3 class="feature-card__title" data-i18n="product.feat5.title">One-Time Purchase</h3>
+          <p class="feature-card__desc" data-i18n="product.feat5.desc">No subscription, no recurring charges. Pay once, use forever.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F4CA;</div>
+          <h3 class="feature-card__title" data-i18n="product.feat6.title">Trend Analysis</h3>
+          <p class="feature-card__desc" data-i18n="product.feat6.desc">Track your recovery trends over time with built-in charts. Export your data as CSV anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="steps-section" id="how-it-works">
+    <div class="steps-section__inner">
+      <div class="section-header">
+        <h2 data-i18n="product.how.title">How it works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <div>
+            <p class="step__title" data-i18n="product.step1.title">Wear Apple Watch to sleep</p>
+            <p class="step__desc"  data-i18n="product.step1.desc">Sleep tracking and HRV recording happen automatically.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <div>
+            <p class="step__title" data-i18n="product.step2.title">Open the app in the morning</p>
+            <p class="step__desc"  data-i18n="product.step2.desc">Your recovery score is ready when you wake up.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <div>
+            <p class="step__title" data-i18n="product.step3.title">Read your score</p>
+            <p class="step__desc"  data-i18n="product.step3.desc">HIGH, MODERATE, or LOW — with a breakdown of each metric.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">4</div>
+          <div>
+            <p class="step__title" data-i18n="product.step4.title">Train accordingly</p>
+            <p class="step__desc"  data-i18n="product.step4.desc">Let your body guide your training intensity for the day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy promise -->
+  <section class="privacy-promise">
+    <div class="privacy-promise__inner">
+      <h2 data-i18n="product.privacy.title">Your data stays on your device.</h2>
+      <p data-i18n="product.privacy.body">RecoverySync has a "Data Not Collected" privacy label on the App Store — the highest standard. No analytics, no crash tracking, no advertising. Your health data never leaves your iPhone.</p>
+      <a href="privacy.html" class="btn--ghost" data-i18n="product.privacy.link">Read our Privacy Policy</a>
+    </div>
+  </section>
+
+  <!-- Download CTA -->
+  <section class="product-cta">
+    <h2 data-i18n="product.download.title">Start tracking your recovery</h2>
+    <p data-i18n="product.download.body">Available on the App Store for iPhone and Apple Watch.</p>
+    <span class="price-tag" data-i18n="product.download.price">$4.99 one-time · ¥780</span>
+    <div>
+      <a href="https://apps.apple.com/app/id6770408873" class="btn--primary" data-i18n="product.download.btn">Download on the App Store</a>
+    </div>
+    <div style="margin-top: 2rem;">
+      <p style="font-size: .875rem; color: var(--color-text-muted); margin-bottom: .5rem;" data-i18n="product.compat.title">Requires</p>
+      <ul class="compat-list" style="justify-content: center;">
+        <li>iOS 17.0+</li>
+        <li>watchOS 10.0+</li>
+        <li>Apple Watch Series 4+</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="recoverysync.html" data-i18n="nav.product">RecoverySync</a>
+      <a href="privacy.html"      data-i18n="nav.privacy">Privacy</a>
+      <a href="support.html"      data-i18n="nav.support">Support</a>
+      <a href="terms.html"        data-i18n="nav.terms">Terms</a>
+    </div>
+    <p><span data-i18n="footer.copyright">© 2026 RecoverySync</span> &middot; <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </footer>
+
+  <script src="shared/i18n.js"></script>
+</body>
+</html>
