@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaunaFlow | Apple Watchで使うサウナタイマー・水風呂タイマー</title>
+  <meta name="description" content="SaunaFlow は Apple Watch 向けのサウナタイマーです。サウナ・水風呂・休憩を手首で進行し、ととのいスコア、履歴、メモ、プリセット管理まで対応。完全オフライン、買い切りプレミアム。">
+  <meta name="keywords" content="SaunaFlow, サウナタイマー, Apple Watch サウナ, 水風呂タイマー, ととのい, ととのいスコア, sauna timer, cold plunge timer, Apple Watch app">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0c0c0c">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SaunaFlow">
+  <meta property="og:title" content="SaunaFlow | Apple Watch Sauna Timer">
+  <meta property="og:description" content="Apple Watchでサウナ・水風呂・休憩を進行。プリセット、履歴、ととのいスコア、完全オフライン対応。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SaunaFlow | Apple Watch Sauna Timer">
+  <meta name="twitter:description" content="Apple Watchで使うサウナタイマー。完全オフライン、ととのいスコア、買い切りプレミアム。">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SaunaFlow",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS 17 or later, watchOS 10 or later",
+    "description": "SaunaFlow is an Apple Watch sauna timer app with presets, Totonoi Score, session history, notes, offline storage, and a one-time premium unlock.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Apple Watch sauna timer",
+      "Cold plunge and rest timer",
+      "Custom presets",
+      "Totonoi Score",
+      "Session history and notes",
+      "Offline storage",
+      "One-time premium purchase"
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0c0c0c;
+      --bg2: #171717;
+      --bg3: #222222;
+      --surface: rgba(255,255,255,0.03);
+      --accent: #e85d04;
+      --accent2: #f48c06;
+      --blue: #1a6eb5;
+      --green: #1a7a3a;
+      --text: #f0ece6;
+      --text2: #b1a497;
+      --text3: #897b70;
+      --border: #2b2b2b;
+      --radius: 18px;
+      --max: 1080px;
+      --shadow: 0 24px 80px rgba(0,0,0,0.28);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top, rgba(232,93,4,0.16), transparent 32%),
+        linear-gradient(180deg, #111111 0%, #0c0c0c 26%, #0c0c0c 100%);
+      color: var(--text);
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 24px;
+      backdrop-filter: saturate(180%) blur(18px);
+      background: rgba(12, 12, 12, 0.82);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+    }
+    .nav-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #391808, #1a0a03);
+      border: 1px solid rgba(232,93,4,0.35);
+      color: var(--accent2);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+    }
+    .nav-brand span:last-child {
+      background: linear-gradient(135deg, #ffffff 0%, #f3b16a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 6px;
+      padding: 4px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+    }
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: var(--text3);
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .lang-btn.active,
+    .lang-btn:hover {
+      background: rgba(232,93,4,0.14);
+      color: var(--accent2);
+    }
+    .nav-link {
+      font-size: 13px;
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .nav-link:hover { color: var(--text); }
+
+    .hero {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 88px 24px 40px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .hero-copy {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 30px;
+      padding: 42px;
+      box-shadow: var(--shadow);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(232,93,4,0.1);
+      color: #f0ab67;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 74px);
+      line-height: 1.03;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+    }
+    .hero h1 strong {
+      display: block;
+      background: linear-gradient(135deg, #ffffff 15%, #f5a54d 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      color: var(--text2);
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 24px;
+    }
+    .keyword-row,
+    .trust-row,
+    .mini-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .keyword-row { margin-bottom: 24px; }
+    .trust-row { margin-top: 18px; }
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      color: var(--text2);
+    }
+    .chip.hot { border-color: rgba(232,93,4,0.28); color: #ffaf70; }
+    .chip.cool { border-color: rgba(26,110,181,0.25); color: #8ecbff; }
+    .chip.rest { border-color: rgba(26,122,58,0.28); color: #82d49a; }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--text), #ffffff);
+      color: #000;
+    }
+    .btn-secondary {
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+    }
+    .btn-primary:hover,
+    .btn-secondary:hover { transform: translateY(-1px); opacity: 0.92; }
+    .btn-primary svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    .hero-side {
+      display: grid;
+      gap: 16px;
+    }
+    .stats-card,
+    .story-card,
+    .benefit-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 26px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .stat {
+      border-radius: 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+      padding: 16px;
+    }
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      letter-spacing: -0.8px;
+      margin-bottom: 4px;
+    }
+    .stat span {
+      color: var(--text2);
+      font-size: 12px;
+    }
+    .story-card h2,
+    .benefit-card h2 {
+      font-size: 18px;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+    }
+    .story-card p,
+    .benefit-card p,
+    .benefit-card li {
+      color: var(--text2);
+      font-size: 14px;
+    }
+    .benefit-card ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .benefit-card li::before {
+      content: "•";
+      color: var(--accent2);
+      margin-right: 8px;
+    }
+
+    main section {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 34px 24px 0;
+    }
+    .section-head {
+      margin-bottom: 24px;
+    }
+    .section-kicker {
+      color: var(--accent2);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .section-head h2 {
+      font-size: clamp(28px, 5vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+      margin-bottom: 12px;
+    }
+    .section-head p {
+      max-width: 760px;
+      color: var(--text2);
+      font-size: 17px;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+    .features {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 24px;
+      padding: 24px;
+    }
+    .card .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      background: rgba(255,255,255,0.04);
+      font-size: 24px;
+    }
+    .card h3 {
+      font-size: 18px;
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+    .card p {
+      color: var(--text2);
+      font-size: 14px;
+    }
+
+    .steps {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .step-num {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(232,93,4,0.1);
+      border: 1px solid rgba(232,93,4,0.24);
+      color: var(--accent2);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .use-cases {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .use-case {
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .use-case strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+      letter-spacing: -0.3px;
+    }
+    .use-case p {
+      color: var(--text2);
+      font-size: 14px;
+    }
+
+    .pricing {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .price-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 28px;
+      padding: 28px;
+    }
+    .price-card.featured {
+      background: linear-gradient(180deg, rgba(232,93,4,0.14), rgba(255,255,255,0.03));
+      border-color: rgba(232,93,4,0.24);
+    }
+    .plan-label {
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--text3);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .featured .plan-label { color: #f3b16a; }
+    .plan-price {
+      font-size: 32px;
+      letter-spacing: -1.1px;
+      margin-bottom: 12px;
+    }
+    .plan-note {
+      color: var(--text2);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    .price-card ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .price-card li {
+      color: var(--text2);
+      font-size: 14px;
+    }
+    .price-card li::before {
+      content: "✓";
+      color: var(--accent2);
+      margin-right: 8px;
+    }
+    .price-card li.disabled::before {
+      content: "–";
+      color: var(--text3);
+    }
+    .price-card li.disabled { color: var(--text3); }
+
+    .cta-banner {
+      margin: 34px auto 0;
+      width: min(100%, var(--max));
+      padding: 24px;
+    }
+    .cta-banner-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 28px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(232,93,4,0.16), rgba(26,110,181,0.1));
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .cta-banner h2 {
+      font-size: clamp(24px, 4vw, 38px);
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+    .cta-banner p {
+      color: var(--text2);
+      font-size: 15px;
+      max-width: 700px;
+    }
+
+    footer {
+      width: min(100%, var(--max));
+      margin: 48px auto 0;
+      padding: 28px 24px 56px;
+      color: var(--text3);
+      font-size: 13px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .footer-links a {
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy {
+      display: grid;
+      gap: 6px;
+    }
+    .footer-copy a {
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .footer-copy a:hover { color: var(--text); }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; padding-top: 56px; }
+      .hero-copy { padding: 30px; }
+    }
+    @media (max-width: 640px) {
+      nav { padding: 12px 16px; }
+      .nav-inner { align-items: flex-start; flex-direction: column; }
+      .hero,
+      main section,
+      .cta-banner,
+      footer { padding-left: 16px; padding-right: 16px; }
+      .hero-copy,
+      .stats-card,
+      .story-card,
+      .benefit-card { border-radius: 24px; }
+      .cta-banner-inner { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-mark">🔥</span>
+        <span>SaunaFlow</span>
+      </div>
+      <div class="nav-actions">
+        <a class="nav-link" href="saunaflow-support.html">Support</a>
+        <a class="nav-link" href="saunaflow-privacy.html">Privacy</a>
+        <a class="nav-link" href="saunaflow-terms.html">Terms</a>
+        <div class="lang-switch" role="tablist" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-lang="ja">日本語</button>
+          <button class="lang-btn" type="button" data-lang="en">English</button>
+          <button class="lang-btn" type="button" data-lang="de">Deutsch</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="lang-ja" class="lang-section active">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Apple Watch Sauna Timer</p>
+        <h1>スマホを見ない。<strong>手首でととのう。</strong></h1>
+        <p class="hero-sub">SaunaFlow は Apple Watch 向けのサウナタイマーです。サウナ・水風呂・休憩を自動で進行し、プリセット管理、ととのいスコア、履歴、メモまで一つにまとめます。</p>
+        <div class="keyword-row">
+          <span class="chip hot">🔥 サウナタイマー</span>
+          <span class="chip cool">🧊 水風呂タイマー</span>
+          <span class="chip rest">🍃 休憩タイマー</span>
+          <span class="chip">⌚ Apple Watch完結</span>
+        </div>
+        <div class="cta-group">
+          <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-primary" aria-label="App StoreでSaunaFlowをダウンロード">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Storeで入手
+          </a>
+          <a href="saunaflow-support.html" class="btn-secondary">使い方を見る</a>
+        </div>
+        <div class="trust-row">
+          <span class="chip">完全オフライン保存</span>
+          <span class="chip">プレミアムは買い切り</span>
+          <span class="chip">個人情報の収集なし</span>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="stats-card">
+          <div class="stats-grid">
+            <div class="stat"><strong>3+</strong><span>サウナ・水風呂・休憩を1本化</span></div>
+            <div class="stat"><strong>0-100</strong><span>ととのいスコアを可視化</span></div>
+            <div class="stat"><strong>Offline</strong><span>データは端末内のみ保存</span></div>
+            <div class="stat"><strong>1-time</strong><span>Premiumはサブスクなし</span></div>
+          </div>
+        </div>
+        <div class="story-card">
+          <h2>SNSで伝わる要点</h2>
+          <p>「Apple Watchだけでサウナ導線を完結」「ととのいを記録」「追跡なし」という3点は、短文投稿や紹介動画で差別化しやすい特徴です。ページ文言もその軸に合わせています。</p>
+        </div>
+        <div class="benefit-card">
+          <h2>このアプリが向いている人</h2>
+          <ul>
+            <li>サウナ室でスマホを見たくない人</li>
+            <li>毎回のルーティンをプリセット化したい人</li>
+            <li>ととのい体験を履歴で振り返りたい人</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Why SaunaFlow</p>
+          <h2>SEOとASOで拾われやすい特徴を、実機体験に沿って整理。</h2>
+          <p>Apple Watch サウナタイマー、水風呂タイマー、休憩タイマー、サウナルーティン管理、履歴、メモ、買い切り、オフライン保存。検索されやすい語と実際の機能を一致させています。</p>
+        </div>
+        <div class="grid features">
+          <article class="card">
+            <div class="icon">⌚</div>
+            <h3>Apple Watchで完結</h3>
+            <p>フェーズ切り替えは触覚通知。Digital Crown とタップ操作でスキップや一時停止に対応し、サウナ室で iPhone を見る必要を減らします。</p>
+          </article>
+          <article class="card">
+            <div class="icon">📋</div>
+            <h3>サウナルーティンをプリセット化</h3>
+            <p>サウナ・水風呂・休憩・移動を自由に組み合わせて、セット数と時間を保存。よく使う流れを再利用できます。</p>
+          </article>
+          <article class="card">
+            <div class="icon">🌡️</div>
+            <h3>ととのいスコア</h3>
+            <p>完了率、フェーズバランス、継続時間をもとに 0〜100 点で表示。セッション結果を一目で比較できます。</p>
+          </article>
+          <article class="card">
+            <div class="icon">🗓️</div>
+            <h3>履歴とメモ</h3>
+            <p>セッション履歴をあとから見返し、メモで体調や施設の印象を残せます。再現性のあるルーティン作りに向いています。</p>
+          </article>
+          <article class="card">
+            <div class="icon">🔁</div>
+            <h3>前回セッションを再実行</h3>
+            <p>同じ構成で入りたい日に、前回の流れを素早く再開できます。日常ユース向けの導線です。</p>
+          </article>
+          <article class="card">
+            <div class="icon">🔒</div>
+            <h3>追跡なし・完全オフライン</h3>
+            <p>プリセット、履歴、メモはデバイス内に保存。外部サーバー送信や第三者広告 SDK を前提としない設計です。</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">How It Works</p>
+          <h2>初回利用からセッション終了まで、3ステップ。</h2>
+          <p>体験の流れが明確なことは、LPの離脱率低減にもASO文言の整合にも効きます。</p>
+        </div>
+        <div class="grid steps">
+          <article class="card">
+            <span class="step-num">1</span>
+            <h3>iPhoneでプリセット作成</h3>
+            <p>各フェーズの時間とセット数を設定して保存。Apple Watch で使う前提のサウナルーティンを整えます。</p>
+          </article>
+          <article class="card">
+            <span class="step-num">2</span>
+            <h3>Apple Watchで開始</h3>
+            <p>プリセットを選ぶと、サウナ・水風呂・休憩が順に進行。通知に従って動くだけで流れを維持できます。</p>
+          </article>
+          <article class="card">
+            <span class="step-num">3</span>
+            <h3>スコアと履歴を確認</h3>
+            <p>終了後にスコアを確認し、メモを残して次回に活かせます。ルーティンの改善点も見つけやすくなります。</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Use Cases</p>
+          <h2>SNS投稿や検索流入で刺さる利用シーン。</h2>
+          <p>誇張せず、実際の利用文脈で説明すると、公開後の紹介文・短尺動画・検索スニペットと整合しやすくなります。</p>
+        </div>
+        <div class="grid use-cases">
+          <div class="use-case">
+            <strong>毎回同じサウナルーティンで入りたい</strong>
+            <p>施設ごとの時間配分をプリセット化して、迷わず開始できます。</p>
+          </div>
+          <div class="use-case">
+            <strong>スマホをロッカーに置いて入りたい</strong>
+            <p>Apple Watch 主体の操作設計なので、サウナ室での確認回数を減らせます。</p>
+          </div>
+          <div class="use-case">
+            <strong>ととのい具合を記録したい</strong>
+            <p>スコアとメモを残すことで、満足度の高い流れを振り返りやすくなります。</p>
+          </div>
+          <div class="use-case">
+            <strong>サブスクを増やしたくない</strong>
+            <p>プレミアムは買い切り型で、継続課金を前提にしていません。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Pricing</p>
+          <h2>無料で試せる。必要なら買い切りで拡張。</h2>
+          <p>ASOでは「無料開始」と「サブスクなし」は反応差が出やすい訴求点です。ここでも明確に示しています。</p>
+        </div>
+        <div class="grid pricing">
+          <article class="price-card">
+            <p class="plan-label">Free</p>
+            <p class="plan-price">無料</p>
+            <p class="plan-note">基本機能を試したい人向け。</p>
+            <ul>
+              <li>プリセット最大3件</li>
+              <li>最近のセッション履歴</li>
+              <li>ととのいスコア</li>
+              <li class="disabled">プリセット無制限</li>
+              <li class="disabled">履歴の無制限保存</li>
+              <li class="disabled">前回セッションの再実行</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <p class="plan-label">Premium</p>
+            <p class="plan-price">買い切り</p>
+            <p class="plan-note">サブスクリプションではありません。</p>
+            <ul>
+              <li>プリセット無制限</li>
+              <li>履歴の無制限保存</li>
+              <li>前回セッションの再実行</li>
+              <li>基本機能を含む全機能利用</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="cta-banner">
+      <div class="cta-banner-inner">
+        <div>
+          <h2>Apple Watchで使うサウナタイマーを探しているなら、まずは無料で。</h2>
+          <p>公開ページは SNS 共有、検索流入、App Store 送客の3用途を兼ねる構成に更新しています。詳しい仕様はサポート、法務情報はプライバシーポリシーと利用規約から確認できます。</p>
+        </div>
+        <div class="cta-group">
+          <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-primary">App Storeで入手</a>
+          <a href="saunaflow-support.html" class="btn-secondary">FAQを見る</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow-support.html">サポート</a>
+        <a href="saunaflow-privacy.html">プライバシーポリシー</a>
+        <a href="saunaflow-terms.html">利用規約</a>
+      </div>
+      <div class="footer-copy">
+        <p><a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+        <p>© 2026 SaunaFlow</p>
+        <p>SaunaFlow は Apple Inc. と提携していません。Apple Watch と App Store は Apple Inc. の商標です。</p>
+      </div>
+    </footer>
+  </div>
+
+  <div id="lang-en" class="lang-section">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Apple Watch Sauna Timer</p>
+        <h1>Stop checking your phone.<strong>Track your sauna flow on your wrist.</strong></h1>
+        <p class="hero-sub">SaunaFlow is an Apple Watch sauna timer for sauna, cold plunge, and rest. Build presets on iPhone, run sessions on Watch, review Totonoi Score, history, and notes after each session.</p>
+        <div class="keyword-row">
+          <span class="chip hot">🔥 Sauna Timer</span>
+          <span class="chip cool">🧊 Cold Plunge Timer</span>
+          <span class="chip rest">🍃 Rest Timer</span>
+          <span class="chip">⌚ Apple Watch-first</span>
+        </div>
+        <div class="cta-group">
+          <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-primary" aria-label="Download SaunaFlow on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
+          </a>
+          <a href="saunaflow-support.html" class="btn-secondary">See How It Works</a>
+        </div>
+        <div class="trust-row">
+          <span class="chip">Fully offline</span>
+          <span class="chip">One-time premium unlock</span>
+          <span class="chip">No personal data collection</span>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="stats-card">
+          <div class="stats-grid">
+            <div class="stat"><strong>3+</strong><span>Sauna, cold plunge, rest in one flow</span></div>
+            <div class="stat"><strong>0-100</strong><span>Totonoi Score after each session</span></div>
+            <div class="stat"><strong>Offline</strong><span>Presets and history stay on-device</span></div>
+            <div class="stat"><strong>1-time</strong><span>Premium is not a subscription</span></div>
+          </div>
+        </div>
+        <div class="story-card">
+          <h2>Social-ready positioning</h2>
+          <p>The clearest share hooks are: Apple Watch-first sauna timing, session logging, and privacy-first offline storage. The page copy now keeps those claims consistent across landing and support content.</p>
+        </div>
+        <div class="benefit-card">
+          <h2>Best for</h2>
+          <ul>
+            <li>People who do not want to look at their phone in the sauna</li>
+            <li>Users who repeat the same sauna routine often</li>
+            <li>Anyone who wants session notes and Totonoi tracking</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Why SaunaFlow</p>
+          <h2>Built around real search intent: sauna timer, cold plunge timer, Apple Watch sauna app.</h2>
+          <p>The messaging now aligns product discovery keywords with features that actually exist in the app: presets, Totonoi Score, history, notes, offline storage, and one-time premium.</p>
+        </div>
+        <div class="grid features">
+          <article class="card"><div class="icon">⌚</div><h3>Apple Watch-first</h3><p>Run sessions on your wrist with haptic phase alerts. Skip or pause with the Digital Crown or screen tap.</p></article>
+          <article class="card"><div class="icon">📋</div><h3>Preset-based sauna routines</h3><p>Create reusable flows with sauna, cold plunge, rest, and move phases. Set duration and number of sets on iPhone.</p></article>
+          <article class="card"><div class="icon">🌡️</div><h3>Totonoi Score</h3><p>See a 0-100 score based on completion, phase balance, and total session duration.</p></article>
+          <article class="card"><div class="icon">🗓️</div><h3>History and notes</h3><p>Review sessions later and add notes to remember what worked best at each facility or routine.</p></article>
+          <article class="card"><div class="icon">🔁</div><h3>Rerun your last session</h3><p>Resume your familiar routine quickly without rebuilding the same setup each time.</p></article>
+          <article class="card"><div class="icon">🔒</div><h3>Privacy-first offline design</h3><p>Your presets, history, and notes stay on-device. No external analytics SDKs or ad SDKs are described on this site.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">How It Works</p>
+          <h2>Three steps from setup to review.</h2>
+          <p>Clear onboarding copy improves both conversion and search snippet relevance.</p>
+        </div>
+        <div class="grid steps">
+          <article class="card"><span class="step-num">1</span><h3>Create a preset on iPhone</h3><p>Pick the phase order, duration, and number of sets for your preferred sauna routine.</p></article>
+          <article class="card"><span class="step-num">2</span><h3>Start on Apple Watch</h3><p>Follow haptic cues as SaunaFlow moves through sauna, cold plunge, and rest.</p></article>
+          <article class="card"><span class="step-num">3</span><h3>Review score and history</h3><p>Check Totonoi Score and save notes so your best sessions are easier to repeat.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Use Cases</p>
+          <h2>Practical scenarios that work well in social posts, app listings, and SEO pages.</h2>
+          <p>The copy avoids unsupported claims and stays close to what the app demonstrably offers.</p>
+        </div>
+        <div class="grid use-cases">
+          <div class="use-case"><strong>Repeat the same sauna flow</strong><p>Save your preferred sequence once and use it again.</p></div>
+          <div class="use-case"><strong>Keep your phone in the locker</strong><p>Apple Watch-driven control reduces the need to check your iPhone mid-session.</p></div>
+          <div class="use-case"><strong>Track how each session felt</strong><p>Use score and notes together to compare routines over time.</p></div>
+          <div class="use-case"><strong>Avoid subscription fatigue</strong><p>Premium is positioned as a one-time purchase instead of a recurring plan.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Pricing</p>
+          <h2>Start free. Upgrade once if you need more.</h2>
+          <p>The page now states the monetization model clearly for both ASO clarity and landing page conversion.</p>
+        </div>
+        <div class="grid pricing">
+          <article class="price-card">
+            <p class="plan-label">Free</p>
+            <p class="plan-price">Free</p>
+            <p class="plan-note">Good for trying the core experience.</p>
+            <ul>
+              <li>Up to 3 presets</li>
+              <li>Recent session history</li>
+              <li>Totonoi Score</li>
+              <li class="disabled">Unlimited presets</li>
+              <li class="disabled">Unlimited history</li>
+              <li class="disabled">Rerun last session</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <p class="plan-label">Premium</p>
+            <p class="plan-price">One-time purchase</p>
+            <p class="plan-note">Not a subscription.</p>
+            <ul>
+              <li>Unlimited presets</li>
+              <li>Unlimited history</li>
+              <li>Rerun last session</li>
+              <li>Includes core features</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="cta-banner">
+      <div class="cta-banner-inner">
+        <div>
+          <h2>If you are comparing Apple Watch sauna timer apps, start with the free version.</h2>
+          <p>This page now supports social sharing, search discovery, and App Store send-through with the same positioning.</p>
+        </div>
+        <div class="cta-group">
+          <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-primary">Download</a>
+          <a href="saunaflow-support.html" class="btn-secondary">FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow-support.html">Support</a>
+        <a href="saunaflow-privacy.html">Privacy Policy</a>
+        <a href="saunaflow-terms.html">Terms of Use</a>
+      </div>
+      <div class="footer-copy">
+        <p><a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+        <p>© 2026 SaunaFlow</p>
+        <p>SaunaFlow is not affiliated with Apple Inc. Apple Watch and App Store are trademarks of Apple Inc.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div id="lang-de" class="lang-section">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Apple Watch Sauna Timer</p>
+        <h1>Weniger Smartphone.<strong>Mehr Flow am Handgelenk.</strong></h1>
+        <p class="hero-sub">SaunaFlow ist ein Sauna-Timer für die Apple Watch. Steuere Sauna, Kaltbad und Ruhephase am Handgelenk, speichere Routinen als Presets und prüfe danach Verlauf, Notizen und Totonoi-Score.</p>
+        <div class="keyword-row">
+          <span class="chip hot">🔥 Sauna-Timer</span>
+          <span class="chip cool">🧊 Kaltbad-Timer</span>
+          <span class="chip rest">🍃 Ruhe-Timer</span>
+          <span class="chip">⌚ Apple Watch-fokussiert</span>
+        </div>
+        <div class="cta-group">
+          <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-primary">Im App Store laden</a>
+          <a href="saunaflow-support.html" class="btn-secondary">So funktioniert es</a>
+        </div>
+        <div class="trust-row">
+          <span class="chip">Vollständig offline</span>
+          <span class="chip">Premium als Einmalkauf</span>
+          <span class="chip">Keine Erfassung personenbezogener Daten</span>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="stats-card">
+          <div class="stats-grid">
+            <div class="stat"><strong>3+</strong><span>Sauna, Kaltbad und Ruhe in einem Ablauf</span></div>
+            <div class="stat"><strong>0-100</strong><span>Totonoi-Score pro Einheit</span></div>
+            <div class="stat"><strong>Offline</strong><span>Daten bleiben auf dem Gerät</span></div>
+            <div class="stat"><strong>1-time</strong><span>Kein Abo für Premium</span></div>
+          </div>
+        </div>
+        <div class="story-card">
+          <h2>Geeignet für Social und Suche</h2>
+          <p>Die Kernbotschaften sind jetzt konsistent: Apple Watch-first, Routinen speichern, Datenschutz durch Offline-Speicherung.</p>
+        </div>
+        <div class="benefit-card">
+          <h2>Geeignet für</h2>
+          <ul>
+            <li>Nutzer, die ihr Smartphone im Spind lassen wollen</li>
+            <li>Wiederkehrende Sauna-Routinen mit Presets</li>
+            <li>Verlauf, Notizen und Score nach jeder Einheit</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Warum SaunaFlow</p>
+          <h2>Texte für reale Suchanfragen: Sauna-Timer, Kaltbad-Timer, Apple Watch Sauna-App.</h2>
+          <p>Die Seite nennt nur Funktionen, die sich direkt mit dem Produktversprechen verbinden lassen: Presets, Totonoi-Score, Verlauf, Notizen, Offline-Speicherung und Einmalkauf.</p>
+        </div>
+        <div class="grid features">
+          <article class="card"><div class="icon">⌚</div><h3>Apple Watch im Mittelpunkt</h3><p>Haptische Hinweise bei jedem Phasenwechsel. Überspringen oder pausieren per Digital Crown oder Touch.</p></article>
+          <article class="card"><div class="icon">📋</div><h3>Routinen als Presets</h3><p>Sauna, Kaltbad, Ruhe und Bewegung als wiederverwendbare Abläufe speichern.</p></article>
+          <article class="card"><div class="icon">🌡️</div><h3>Totonoi-Score</h3><p>Ein Score von 0 bis 100 auf Basis von Abschlussrate, Balance und Dauer.</p></article>
+          <article class="card"><div class="icon">🗓️</div><h3>Verlauf und Notizen</h3><p>Einheiten später prüfen und Erfahrungen direkt dokumentieren.</p></article>
+          <article class="card"><div class="icon">🔁</div><h3>Letzte Einheit erneut starten</h3><p>Bekannte Routinen schnell wiederverwenden.</p></article>
+          <article class="card"><div class="icon">🔒</div><h3>Offline und datensparsam</h3><p>Presets, Verlauf und Notizen bleiben lokal auf dem Gerät.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Ablauf</p>
+          <h2>Drei Schritte vom Setup bis zur Auswertung.</h2>
+          <p>Klare Produktführung hilft sowohl bei Conversion als auch bei Such-Snippets.</p>
+        </div>
+        <div class="grid steps">
+          <article class="card"><span class="step-num">1</span><h3>Preset auf dem iPhone erstellen</h3><p>Phasen, Dauer und Anzahl der Sets definieren und speichern.</p></article>
+          <article class="card"><span class="step-num">2</span><h3>Auf der Watch starten</h3><p>SaunaFlow führt per Haptik durch Sauna, Kaltbad und Ruhephase.</p></article>
+          <article class="card"><span class="step-num">3</span><h3>Score und Verlauf prüfen</h3><p>Ergebnisse vergleichen und Notizen für spätere Einheiten speichern.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Einsatzfälle</p>
+          <h2>Praktische Nutzungsszenarien für Landingpage, Social Post und App Store Text.</h2>
+          <p>Die Aussagen bleiben bewusst sachlich und nah an den vorhandenen Funktionen.</p>
+        </div>
+        <div class="grid use-cases">
+          <div class="use-case"><strong>Immer derselbe Ablauf</strong><p>Einmal speichern, danach schnell erneut starten.</p></div>
+          <div class="use-case"><strong>Ohne Blick aufs iPhone</strong><p>Die Watch bleibt der zentrale Bedienpunkt während der Einheit.</p></div>
+          <div class="use-case"><strong>Einheiten vergleichen</strong><p>Score und Notizen machen Unterschiede zwischen Routinen sichtbar.</p></div>
+          <div class="use-case"><strong>Kein weiteres Abo</strong><p>Premium wird als Einmalkauf kommuniziert.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="section-kicker">Preise</p>
+          <h2>Kostenlos starten. Einmal zahlen, wenn mehr gebraucht wird.</h2>
+          <p>Das Preismodell ist für Suchmaschinen, Nutzer und App Store-Besucher jetzt eindeutig beschrieben.</p>
+        </div>
+        <div class="grid pricing">
+          <article class="price-card">
+            <p class="plan-label">Kostenlos</p>
+            <p class="plan-price">Gratis</p>
+            <p class="plan-note">Für den Einstieg in die Kernfunktionen.</p>
+            <ul>
+              <li>Bis zu 3 Presets</li>
+              <li>Jüngerer Einheitenverlauf</li>
+              <li>Totonoi-Score</li>
+              <li class="disabled">Unbegrenzte Presets</li>
+              <li class="disabled">Unbegrenzter Verlauf</li>
+              <li class="disabled">Letzte Einheit erneut starten</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <p class="plan-label">Premium</p>
+            <p class="plan-price">Einmalkauf</p>
+            <p class="plan-note">Kein Abonnement.</p>
+            <ul>
+              <li>Unbegrenzte Presets</li>
+              <li>Unbegrenzter Verlauf</li>
+              <li>Letzte Einheit erneut starten</li>
+              <li>Alle Kernfunktionen enthalten</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="cta-banner">
+      <div class="cta-banner-inner">
+        <div>
+          <h2>Wenn du eine Apple Watch Sauna-App suchst, starte mit der kostenlosen Version.</h2>
+          <p>Die Seite wurde für Teilen in sozialen Netzwerken, Suchmaschinen und App Store-Weiterleitung überarbeitet.</p>
+        </div>
+        <div class="cta-group">
+          <a href="https://apps.apple.com/app/saunaflow/id6761906547" class="btn-primary">Laden</a>
+          <a href="saunaflow-support.html" class="btn-secondary">FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow-support.html">Hilfe</a>
+        <a href="saunaflow-privacy.html">Datenschutz</a>
+        <a href="saunaflow-terms.html">Nutzungsbedingungen</a>
+      </div>
+      <div class="footer-copy">
+        <p><a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+        <p>© 2026 SaunaFlow</p>
+        <p>SaunaFlow ist nicht mit Apple Inc. verbunden. Apple Watch und App Store sind Marken von Apple Inc.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang, button) {
+      document.querySelectorAll('.lang-section').forEach((section) => section.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      if (button) button.classList.add('active');
+      document.documentElement.lang = lang;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach((button) => {
+      button.addEventListener('click', () => setLang(button.dataset.lang, button));
+    });
+  </script>
+</body>
+</html>

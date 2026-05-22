@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaunaFlow Support | FAQ・使い方・トラブルシューティング</title>
+  <meta name="description" content="SaunaFlow のサポートページです。Apple Watch サウナタイマーの使い方、同期、プリセット、課金、プライバシー、安全上の注意をFAQ形式でまとめています。">
+  <meta name="keywords" content="SaunaFlow support, SaunaFlow FAQ, Apple Watch sauna timer support, サウナタイマー 使い方, Apple Watch サウナ FAQ">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0c0c0c">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SaunaFlow">
+  <meta property="og:title" content="SaunaFlow Support | FAQ and Help">
+  <meta property="og:description" content="Set up SaunaFlow, sync presets, restore purchases, and review privacy and safety guidance.">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "SaunaFlow を使うには何が必要ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iPhone（iOS 17以降）と Apple Watch（watchOS 10以降）が必要です。プリセットは iPhone で作成し、セッションは Apple Watch で実行します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Watch アプリが iPhone と同期されません。",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iPhone と Apple Watch の両方で SaunaFlow を開き、Watch 側はプリセット一覧を表示したままにしてください。iPhone 側でプリセットを保存または編集すると同期が始まります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "プレミアムはサブスクリプションですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "いいえ。SaunaFlow のプレミアムは買い切り型です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "データはどこに保存されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "プリセット、履歴、メモなどのデータはデバイス内に保存され、外部サーバーへの送信は行いません。"
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0c0c0c;
+      --bg2: #171717;
+      --bg3: #222222;
+      --accent: #e85d04;
+      --accent2: #f48c06;
+      --text: #f0ece6;
+      --text2: #b1a497;
+      --text3: #897b70;
+      --border: #2b2b2b;
+      --radius: 20px;
+      --max: 880px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top, rgba(232,93,4,0.14), transparent 30%),
+        #0c0c0c;
+      color: var(--text);
+      font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(12, 12, 12, 0.84);
+      backdrop-filter: saturate(180%) blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-inner {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .nav-back,
+    .nav-link {
+      text-decoration: none;
+      color: var(--text2);
+      font-size: 13px;
+    }
+    .nav-back:hover,
+    .nav-link:hover { color: var(--text); }
+    .nav-title { font-weight: 800; letter-spacing: -0.3px; }
+    .lang-switch {
+      display: flex;
+      gap: 6px;
+      padding: 4px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+    }
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: var(--text3);
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .lang-btn.active,
+    .lang-btn:hover {
+      background: rgba(232,93,4,0.14);
+      color: var(--accent2);
+    }
+
+    .page {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+    .hero {
+      margin-bottom: 28px;
+      padding: 28px;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .eyebrow {
+      display: inline-block;
+      color: var(--accent2);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.06;
+      letter-spacing: -1.5px;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      color: var(--text2);
+      font-size: 16px;
+      max-width: 720px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .quick-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .note {
+      margin-bottom: 24px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: rgba(232,93,4,0.08);
+      border: 1px solid rgba(232,93,4,0.2);
+      color: var(--text2);
+      font-size: 14px;
+    }
+    .note strong { color: #f0ab67; }
+
+    .section {
+      margin-bottom: 24px;
+      padding: 24px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .section-title {
+      color: var(--accent2);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 14px;
+    }
+    .faq-item + .faq-item {
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .faq-question {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: var(--text);
+      text-align: left;
+      font: inherit;
+      padding: 18px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+    .faq-chevron {
+      color: var(--text3);
+      font-size: 12px;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      color: var(--text2);
+      font-size: 14px;
+      transition: max-height 0.25s ease, padding-bottom 0.25s ease;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 280px;
+      padding-bottom: 18px;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .contact {
+      display: grid;
+      gap: 12px;
+    }
+    .contact a {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .contact a:hover { text-decoration: underline; }
+
+    footer {
+      width: min(100%, var(--max));
+      margin: 0 auto;
+      padding: 0 24px 56px;
+      color: var(--text3);
+      font-size: 13px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .footer-links a {
+      color: var(--text2);
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      .nav-inner { flex-direction: column; align-items: flex-start; }
+      .page, footer { padding-left: 16px; padding-right: 16px; }
+      .hero, .section { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a href="saunaflow.html" class="nav-back">← SaunaFlow</a>
+        <span class="nav-title">Support</span>
+        <a href="saunaflow-privacy.html" class="nav-link">Privacy</a>
+        <a href="saunaflow-terms.html" class="nav-link">Terms</a>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-btn active" type="button" data-lang="ja">日本語</button>
+        <button class="lang-btn" type="button" data-lang="en">English</button>
+        <button class="lang-btn" type="button" data-lang="de">Deutsch</button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="lang-ja" class="lang-section active">
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Support</p>
+        <h1>SaunaFlow の使い方と公開前に必要な補足情報。</h1>
+        <p>FAQ は検索流入を意識して、Apple Watch サウナタイマー、同期、課金、プライバシー、安全性といった主要な意図を拾う構成に更新しています。</p>
+        <div class="quick-links">
+          <a class="quick-link" href="https://apps.apple.com/app/saunaflow/id6761906547">App Store</a>
+          <a class="quick-link" href="saunaflow-privacy.html">プライバシーポリシー</a>
+          <a class="quick-link" href="saunaflow-terms.html">利用規約</a>
+        </div>
+      </section>
+
+      <div class="note"><strong>安全に関する注意：</strong>サウナは高温環境です。Apple Watch の皮膚接触温度上限を超える可能性があります。タイマー時間は目安であり、体調に異変があればただちに利用を中止してください。</div>
+
+      <section class="section">
+        <p class="section-title">Getting Started</p>
+        <div class="faq-item">
+          <button class="faq-question" type="button">SaunaFlow を使うには何が必要ですか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">iPhone（iOS 17 以降）と Apple Watch（watchOS 10 以降）が必要です。プリセットは iPhone で作成し、セッションは Apple Watch で開始します。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">プリセットは何を設定できますか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">サウナ、水風呂、休憩、移動の各フェーズと、その時間、セット数を設定できます。よく使う流れを保存して再利用できます。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">Apple Watch だけで操作できますか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">セッション実行中の主操作は Apple Watch で行います。プリセット作成や履歴確認などは iPhone 側で行う構成です。</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Sync & Controls</p>
+        <div class="faq-item">
+          <button class="faq-question" type="button">Watch アプリが iPhone と同期されません。<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">iPhone と Apple Watch の両方で SaunaFlow を開き、Watch 側はプリセット一覧を表示したままにしてください。iPhone 側でプリセットを保存または編集すると同期が始まります。Bluetooth 接続も確認してください。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">Digital Crown はどう使いますか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">セッション中に Digital Crown を回してフェーズ操作ができます。画面タップによる一時停止にも対応しています。</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Totonoi Score & History</p>
+        <div class="faq-item">
+          <button class="faq-question" type="button">ととのいスコアは何を表していますか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">セット完了率、フェーズバランス、セッション継続時間をもとに 0〜100 点で可視化した指標です。体験そのものを医学的に保証する数値ではありません。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">履歴やメモは残せますか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">セッション履歴を保存でき、メモも残せます。前回セッションの再実行機能はプレミアム向けです。</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Premium</p>
+        <div class="faq-item">
+          <button class="faq-question" type="button">プレミアムはサブスクリプションですか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">いいえ。SaunaFlow のプレミアムは買い切り型です。継続課金ではありません。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">購入を復元するにはどうすればよいですか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">iPhone アプリ内のプレミアム画面から「購入を復元」を選んでください。同じ Apple ID で購入している場合は復元されます。</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Privacy & Contact</p>
+        <div class="faq-item">
+          <button class="faq-question" type="button">データはどこに保存されますか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">プリセット、履歴、メモなどのデータはデバイス内に保存されます。外部サーバーへの送信を前提とした説明はこのサイト上にありません。詳細はプライバシーポリシーをご確認ください。</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">問い合わせ先はどこですか？<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">お問い合わせ先はメールです。サポートが必要な場合は freetokyo2020@yahoo.co.jp までご連絡ください。</div>
+        </div>
+        <div class="contact">
+          <p>お問い合わせ窓口:</p>
+          <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-privacy.html">プライバシーポリシー</a>
+        <a href="saunaflow-terms.html">利用規約</a>
+      </div>
+      <p>© 2026 SaunaFlow</p>
+    </footer>
+  </div>
+
+  <div id="lang-en" class="lang-section">
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Support</p>
+        <h1>Setup, troubleshooting, privacy, and purchase help for SaunaFlow.</h1>
+        <p>This FAQ is optimized for common support search intent around Apple Watch sauna timers, syncing, pricing, privacy, and safety.</p>
+        <div class="quick-links">
+          <a class="quick-link" href="https://apps.apple.com/app/saunaflow/id6761906547">App Store</a>
+          <a class="quick-link" href="saunaflow-privacy.html">Privacy Policy</a>
+          <a class="quick-link" href="saunaflow-terms.html">Terms of Use</a>
+        </div>
+      </section>
+
+      <div class="note"><strong>Safety notice:</strong> Sauna sessions take place in high-heat environments. Timer values are reference only. Stop using the app if you feel unwell and follow facility guidance.</div>
+
+      <section class="section">
+        <p class="section-title">Getting Started</p>
+        <div class="faq-item"><button class="faq-question" type="button">What do I need to use SaunaFlow?<span class="faq-chevron">▼</span></button><div class="faq-answer">You need an iPhone running iOS 17 or later and an Apple Watch running watchOS 10 or later. Create presets on iPhone and run sessions on Apple Watch.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">What can I configure in a preset?<span class="faq-chevron">▼</span></button><div class="faq-answer">You can define sauna, cold plunge, rest, and move phases, along with duration and number of sets.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Can I use SaunaFlow mainly from Apple Watch?<span class="faq-chevron">▼</span></button><div class="faq-answer">Session control is designed around Apple Watch. Preset editing and history review are handled on iPhone.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Sync & Controls</p>
+        <div class="faq-item"><button class="faq-question" type="button">My Watch app is not syncing with iPhone.<span class="faq-chevron">▼</span></button><div class="faq-answer">Open SaunaFlow on both devices, keep the Watch app on the preset list, and save or edit a preset on iPhone. That should trigger sync. Check Bluetooth as well.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">How does the Digital Crown work?<span class="faq-chevron">▼</span></button><div class="faq-answer">During a session, the Digital Crown is used for phase control, and screen tap can also pause the session.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Totonoi Score & History</p>
+        <div class="faq-item"><button class="faq-question" type="button">What does Totonoi Score represent?<span class="faq-chevron">▼</span></button><div class="faq-answer">It is a 0-100 session summary based on completion rate, phase balance, and session duration. It is not a medical metric.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Can I save history and notes?<span class="faq-chevron">▼</span></button><div class="faq-answer">Yes. SaunaFlow supports session history and notes. Rerunning the last session is part of the premium offering.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Premium</p>
+        <div class="faq-item"><button class="faq-question" type="button">Is Premium a subscription?<span class="faq-chevron">▼</span></button><div class="faq-answer">No. Premium is described as a one-time purchase.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">How do I restore my purchase?<span class="faq-chevron">▼</span></button><div class="faq-answer">Use the restore purchase option on the premium screen inside the iPhone app while signed into the same Apple ID.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Privacy & Contact</p>
+        <div class="faq-item"><button class="faq-question" type="button">Where is my data stored?<span class="faq-chevron">▼</span></button><div class="faq-answer">The site describes presets, history, and notes as on-device data. See the Privacy Policy for the full statement.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">How can I contact support?<span class="faq-chevron">▼</span></button><div class="faq-answer">Support inquiries should be sent by email to freetokyo2020@yahoo.co.jp.</div></div>
+        <div class="contact">
+          <p>Support contact:</p>
+          <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-privacy.html">Privacy Policy</a>
+        <a href="saunaflow-terms.html">Terms of Use</a>
+      </div>
+      <p>© 2026 SaunaFlow</p>
+    </footer>
+  </div>
+
+  <div id="lang-de" class="lang-section">
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Support</p>
+        <h1>Einrichtung, Hilfe, Datenschutz und Kaufinformationen zu SaunaFlow.</h1>
+        <p>Diese FAQ deckt typische Suchanfragen zu Apple Watch Sauna-Timern, Synchronisierung, Preisen, Datenschutz und Sicherheit ab.</p>
+        <div class="quick-links">
+          <a class="quick-link" href="https://apps.apple.com/app/saunaflow/id6761906547">App Store</a>
+          <a class="quick-link" href="saunaflow-privacy.html">Datenschutz</a>
+          <a class="quick-link" href="saunaflow-terms.html">Nutzungsbedingungen</a>
+        </div>
+      </section>
+
+      <div class="note"><strong>Sicherheitshinweis:</strong> Saunaeinheiten finden in einer Umgebung mit hoher Hitze statt. Timer-Werte sind nur Richtwerte. Bei Unwohlsein sofort beenden.</div>
+
+      <section class="section">
+        <p class="section-title">Erste Schritte</p>
+        <div class="faq-item"><button class="faq-question" type="button">Was benötige ich für SaunaFlow?<span class="faq-chevron">▼</span></button><div class="faq-answer">Du benötigst ein iPhone mit iOS 17 oder neuer und eine Apple Watch mit watchOS 10 oder neuer. Presets werden auf dem iPhone erstellt, Einheiten auf der Watch gestartet.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Was lässt sich in einem Preset konfigurieren?<span class="faq-chevron">▼</span></button><div class="faq-answer">Sauna-, Kaltbad-, Ruhe- und Bewegungsphasen sowie Dauer und Anzahl der Sets.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Kann ich die App hauptsächlich auf der Watch nutzen?<span class="faq-chevron">▼</span></button><div class="faq-answer">Die Sitzungssteuerung ist watch-zentriert. Preset-Bearbeitung und Verlaufsansicht laufen über das iPhone.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Sync & Steuerung</p>
+        <div class="faq-item"><button class="faq-question" type="button">Die Watch synchronisiert nicht mit dem iPhone.<span class="faq-chevron">▼</span></button><div class="faq-answer">Öffne SaunaFlow auf beiden Geräten, lasse die Watch auf der Preset-Liste und speichere oder bearbeite ein Preset auf dem iPhone. Prüfe zusätzlich Bluetooth.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Wie funktioniert die Digital Crown?<span class="faq-chevron">▼</span></button><div class="faq-answer">Während einer Einheit dient die Digital Crown zur Phasensteuerung, zusätzlich kann der Bildschirm pausieren.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Totonoi-Score & Verlauf</p>
+        <div class="faq-item"><button class="faq-question" type="button">Was bedeutet der Totonoi-Score?<span class="faq-chevron">▼</span></button><div class="faq-answer">Es ist eine Zusammenfassung von 0 bis 100 auf Basis von Abschlussrate, Phasenbalance und Dauer. Kein medizinischer Wert.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Kann ich Verlauf und Notizen speichern?<span class="faq-chevron">▼</span></button><div class="faq-answer">Ja. SaunaFlow unterstützt Verlauf und Notizen. Das erneute Starten der letzten Einheit gehört zum Premium-Angebot.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Premium</p>
+        <div class="faq-item"><button class="faq-question" type="button">Ist Premium ein Abonnement?<span class="faq-chevron">▼</span></button><div class="faq-answer">Nein. Premium wird als Einmalkauf beschrieben.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Wie stelle ich meinen Kauf wieder her?<span class="faq-chevron">▼</span></button><div class="faq-answer">Nutze die Funktion zum Wiederherstellen des Kaufs im Premium-Bereich der iPhone-App mit derselben Apple ID.</div></div>
+      </section>
+
+      <section class="section">
+        <p class="section-title">Datenschutz & Kontakt</p>
+        <div class="faq-item"><button class="faq-question" type="button">Wo werden meine Daten gespeichert?<span class="faq-chevron">▼</span></button><div class="faq-answer">Die Seite beschreibt Presets, Verlauf und Notizen als lokal auf dem Gerät gespeichert. Details stehen in der Datenschutzrichtlinie.</div></div>
+        <div class="faq-item"><button class="faq-question" type="button">Wie kontaktiere ich den Support?<span class="faq-chevron">▼</span></button><div class="faq-answer">Support-Anfragen sollen per E-Mail an freetokyo2020@yahoo.co.jp gesendet werden.</div></div>
+        <div class="contact">
+          <p>Support-Kontakt:</p>
+          <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-privacy.html">Datenschutz</a>
+        <a href="saunaflow-terms.html">Nutzungsbedingungen</a>
+      </div>
+      <p>© 2026 SaunaFlow</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang, button) {
+      document.querySelectorAll('.lang-section').forEach((section) => section.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach((btn) => btn.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      if (button) button.classList.add('active');
+      document.documentElement.lang = lang;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach((button) => {
+      button.addEventListener('click', () => setLang(button.dataset.lang, button));
+    });
+
+    document.querySelectorAll('.faq-question').forEach((button) => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const section = item.closest('.section');
+        const isOpen = item.classList.contains('open');
+        section.querySelectorAll('.faq-item').forEach((faq) => faq.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>
