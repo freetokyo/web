@@ -3,4 +3,4 @@ Allow: /
 Disallow: /*.source.html$
 Disallow: /*.source.txt$
 
-Sitemap: https://trero.app/sitemap.xml
+Sitemap: https://freetokyo.github.io/web/trero/sitemap.xml

@@ -7,7 +7,7 @@ Usage:
 
 import os
 
-BASE_URL = "https://trero.app"
+BASE_URL = "https://freetokyo.github.io/web/trero"
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # All language codes in display order

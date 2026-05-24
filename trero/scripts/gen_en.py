@@ -17,40 +17,40 @@ EN_META = {
         "description": "Trero is an iPhone workout tracker for people who want faster gym logging, clearer goal tracking, progress analysis, body metrics, and Apple Watch support in one app.",
         "og_title": "Trero | Workout Tracker & Gym Log App for iPhone",
         "og_description": "Check previous records, reuse past values, track exercise goals, review body metrics, and log sets from Apple Watch in one app.",
-        "canonical": "https://trero.app/en/",
-        "hreflang_ja": "https://trero.app/",
-        "hreflang_en": "https://trero.app/en/",
-        "og_url": "https://trero.app/en/",
+        "canonical": "https://freetokyo.github.io/web/trero/en/",
+        "hreflang_ja": "https://freetokyo.github.io/web/trero/",
+        "hreflang_en": "https://freetokyo.github.io/web/trero/en/",
+        "og_url": "https://freetokyo.github.io/web/trero/en/",
     },
     "support.html": {
         "title": "Support & FAQ | Trero Workout Tracker App",
         "description": "Read Trero support answers covering account setup, workout logging, goals, body metrics, Apple Health, Apple Watch, notifications, and Free vs Pro.",
         "og_title": "Support & FAQ | Trero Workout Tracker App",
         "og_description": "Read Trero support answers covering account setup, workout logging, goals, body metrics, Apple Health, Apple Watch, notifications, and Free vs Pro.",
-        "canonical": "https://trero.app/en/support.html",
-        "hreflang_ja": "https://trero.app/support.html",
-        "hreflang_en": "https://trero.app/en/support.html",
-        "og_url": "https://trero.app/en/support.html",
+        "canonical": "https://freetokyo.github.io/web/trero/en/support.html",
+        "hreflang_ja": "https://freetokyo.github.io/web/trero/support.html",
+        "hreflang_en": "https://freetokyo.github.io/web/trero/en/support.html",
+        "og_url": "https://freetokyo.github.io/web/trero/en/support.html",
     },
     "privacy.html": {
         "title": "Privacy Policy | Trero – Workout Tracker App",
         "description": "Read Trero's Privacy Policy to understand what data we collect, how third-party services are used, and how to delete your account.",
         "og_title": "Privacy Policy | Trero – Workout Tracker App",
         "og_description": "Read Trero's Privacy Policy to understand what data we collect, how third-party services are used, and how to delete your account.",
-        "canonical": "https://trero.app/en/privacy.html",
-        "hreflang_ja": "https://trero.app/privacy.html",
-        "hreflang_en": "https://trero.app/en/privacy.html",
-        "og_url": "https://trero.app/en/privacy.html",
+        "canonical": "https://freetokyo.github.io/web/trero/en/privacy.html",
+        "hreflang_ja": "https://freetokyo.github.io/web/trero/privacy.html",
+        "hreflang_en": "https://freetokyo.github.io/web/trero/en/privacy.html",
+        "og_url": "https://freetokyo.github.io/web/trero/en/privacy.html",
     },
     "terms.html": {
         "title": "Terms of Service | Trero – Workout Tracker App",
         "description": "Review Trero's Terms of Service covering accounts, plans, prohibited conduct, user data rights, and subscription billing terms.",
         "og_title": "Terms of Service | Trero – Workout Tracker App",
         "og_description": "Review Trero's Terms of Service covering accounts, plans, prohibited conduct, user data rights, and subscription billing terms.",
-        "canonical": "https://trero.app/en/terms.html",
-        "hreflang_ja": "https://trero.app/terms.html",
-        "hreflang_en": "https://trero.app/en/terms.html",
-        "og_url": "https://trero.app/en/terms.html",
+        "canonical": "https://freetokyo.github.io/web/trero/en/terms.html",
+        "hreflang_ja": "https://freetokyo.github.io/web/trero/terms.html",
+        "hreflang_en": "https://freetokyo.github.io/web/trero/en/terms.html",
+        "og_url": "https://freetokyo.github.io/web/trero/en/terms.html",
     },
 }
 
@@ -163,7 +163,7 @@ def transform(src_path, filename):
     if filename == "index.html":
         banner = soup.find("meta", attrs={"name": "apple-itunes-app"})
         if banner:
-            banner["content"] = 'app-id=6760746164, app-argument=https://trero.app/en/'
+            banner["content"] = 'app-id=6760746164, app-argument=https://freetokyo.github.io/web/trero/en/'
 
     return str(soup)
 
