@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世帯手取ナビ（HomeNet Navi）— 2026年制度対応「年収の壁」シミュレーター</title>
+  <meta name="description" content="2026年制度に正確対応した「年収の壁」シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案する iOS アプリ。">
+  <meta name="keywords" content="世帯手取ナビ,HomeNet Navi,年収の壁,103万の壁,106万の壁,130万の壁,150万の壁,配偶者控除,社会保険,シミュレーター,iOS">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#0F6E56">
+  <link rel="canonical" href="https://freetokyo.github.io/web/homenetnavi/">
+  <meta name="apple-itunes-app" content="app-id=6772911843">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="世帯手取ナビ">
+  <meta property="og:title" content="世帯手取ナビ（HomeNet Navi）— 2026年制度対応「年収の壁」シミュレーター">
+  <meta property="og:description" content="配偶者控除・社会保険・住民税の壁を世帯ベースで可視化。手取り最大シナリオを提案する iOS アプリ。">
+  <meta property="og:url" content="https://freetokyo.github.io/web/homenetnavi/">
+  <meta property="og:image" content="https://freetokyo.github.io/web/homenetnavi/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="世帯手取ナビ — 年収の壁を世帯で見える化">
+  <meta property="og:locale" content="ja_JP">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="世帯手取ナビ（HomeNet Navi）— 年収の壁シミュレーター">
+  <meta name="twitter:description" content="配偶者控除・社会保険・住民税の壁を一画面で。世帯ベースで手取り最大シナリオを提案。">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/homenetnavi/ogp.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "HomeNet Navi",
+    "alternateName": "世帯手取ナビ",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "iOS 16 or later",
+    "description": "世帯手取ナビ（HomeNet Navi）は、2026年制度に対応した年収の壁シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の各壁を世帯ベースで可視化し、手取り最大化シナリオを提案。",
+    "url": "https://apps.apple.com/jp/app/id6772911843",
+    "inLanguage": ["ja"],
+    "featureList": [
+      "2026年制度に対応した正確な手取り計算",
+      "配偶者控除・社会保険・住民税の壁を一画面で可視化",
+      "Swift Chartsによる年収帯ごとの手取りカーブ",
+      "複数の働き方をシナリオ比較",
+      "壁接近時の通知アラート",
+      "公的URL（国税庁・年金機構）への直接参照"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="index.html">
+      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="7" fill="#0F6E56"/>
+        <path d="M6 20V10l8-5 8 5v10h-5v-6h-6v6H6Z" fill="white"/>
+      </svg>
+      世帯手取ナビ
+    </a>
+    <div class="site-nav__links">
+      <a href="index.html" aria-current="page">ホーム</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシー</a>
+      <a href="terms.html">利用規約</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="badge badge--green">💴 2026年制度対応・年収の壁シミュレーター</div>
+    <h1 class="t-large-title mt-16">「あと10万円働くと、<br>世帯の手取りはどう変わる？」</h1>
+    <p class="t-body mt-16">
+      配偶者控除・社会保険・住民税の「壁」を、<br>
+      世帯ベースで一画面に可視化。<br>
+      手取りが最大になる働き方を、即提案します。
+    </p>
+
+    <div class="stat-row">
+      <div class="stat-badge">
+        <div class="stat-badge__num">2026年</div>
+        <div class="stat-badge__label">制度改正対応</div>
+      </div>
+      <div class="stat-badge">
+        <div class="stat-badge__num">5本の壁</div>
+        <div class="stat-badge__label">103・106・130・150・201万</div>
+      </div>
+    </div>
+
+    <div class="hero__cta">
+      <a class="appstore-badge" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener" aria-label="App Storeでダウンロード">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M14.94 10.68c-.02-2.28 1.87-3.38 1.96-3.44-1.07-1.56-2.73-1.77-3.32-1.79-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.54.02-2.97.9-3.76 2.27-1.61 2.78-.41 6.9 1.15 9.16.77 1.11 1.68 2.35 2.88 2.31 1.16-.05 1.6-.75 3-.75 1.39 0 1.79.75 3.01.73 1.24-.02 2.03-1.12 2.79-2.24.88-1.28 1.24-2.52 1.26-2.58-.03-.01-2.47-.94-2.48-3.71ZM12.54 3.87c.64-.78 1.07-1.86.95-2.94-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.81 1.03.08 2.07-.52 2.71-1.25Z"/>
+        </svg>
+        <div>
+          <span class="appstore-badge__sub">App Storeで入手</span>
+          世帯手取ナビ をダウンロード
+        </div>
+      </a>
+    </div>
+    <p class="hero__note">iOS 16以降対応 · 端末内処理（サーバー送信なし）· 無料で始められます</p>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header center">
+      <div class="badge badge--green">主な機能</div>
+      <h2 class="t-title mt-8">「年収の壁」と賢く付き合う、<br>4 つの中核機能</h2>
+    </div>
+
+    <div class="feature-grid">
+
+      <div class="card">
+        <div class="feature-row">
+          <div class="feature-icon feature-icon--blue">📊</div>
+          <div class="feature-text">
+            <h3>手取りカーブの可視化</h3>
+            <p>あなたと配偶者の年収帯ごとの世帯手取りを Swift Charts で描画。壁の位置と「ヘコみ」が一目でわかります。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="feature-row">
+          <div class="feature-icon feature-icon--green">🧮</div>
+          <div class="feature-text">
+            <h3>2026年制度に正確対応</h3>
+            <p>国税庁・年金機構の最新制度に基づき所得税・住民税・社会保険を世帯ベースで計算。配偶者控除・特別控除も網羅。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="feature-row">
+          <div class="feature-icon feature-icon--orange">⚖️</div>
+          <div class="feature-text">
+            <h3>シナリオ比較</h3>
+            <p>「夫 500万・妻 100万」vs「夫 500万・妻 130万」など、複数の働き方を並べて手取り差分と税負担を比較。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="feature-row">
+          <div class="feature-icon feature-icon--purple">🔔</div>
+          <div class="feature-text">
+            <h3>壁接近アラート</h3>
+            <p>給与から「あと◯万円で壁を超える」を判定し通知。年末調整前の働き方調整に役立ちます。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== DETAILED FEATURES ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge badge--blue">詳しい機能</div>
+      <h2 class="t-title mt-8">主婦・主夫の働き方判断を、<br>制度の正確さで支援</h2>
+    </div>
+
+    <div class="callout-stack">
+
+      <div class="callout callout--green">
+        <div class="callout__label">手取りカーブ</div>
+        <div class="callout__title">「壁のヘコみ」を世帯ベースで可視化</div>
+        <p class="callout__body">
+          配偶者の年収を 0〜250万円までスライドさせると、世帯全体の手取りがリアルタイムで動きます。
+          103・106・130・150・201万の各壁を色付きで明示。「実は壁を超えた方が得」のラインも一目でわかります。
+        </p>
+      </div>
+
+      <div class="callout callout--orange">
+        <div class="callout__label">シナリオ比較</div>
+        <div class="callout__title">複数の働き方を並べて、手取り差分を即判定</div>
+        <p class="callout__body">
+          現在の働き方と、もし配偶者がパート時間を増やしたら／フルタイムに切り替えたら、を保存して比較。
+          所得税・住民税・社保それぞれの内訳と、世帯総手取りの差を金額で提示します。
+        </p>
+      </div>
+
+      <div class="callout callout--purple">
+        <div class="callout__label">Wall一覧</div>
+        <div class="callout__title">公的URL（国税庁・年金機構）に直接リンク</div>
+        <p class="callout__body">
+          アプリ内の各「壁」の詳細から、国税庁・年金機構の根拠ページへワンタップで遷移。
+          制度の正確性を担保し、ご自身でも一次情報を確認できます。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="section section--alt" id="pricing">
+  <div class="container">
+    <div class="section-header center">
+      <div class="badge badge--green">料金プラン</div>
+      <h2 class="t-title mt-8">まずは無料で試せます</h2>
+      <p class="t-body mt-8">基本機能は無料、高度なシナリオ比較・通知はプレミアム / 買い切りで開放されます。</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Free -->
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-card__name">無料プラン</div>
+          <div class="pricing-card__price mt-8">¥0<span> / 月</span></div>
+          <div class="pricing-card__alt">永続無料</div>
+        </div>
+        <ul class="pricing-card__features">
+          <li>基本の手取り計算</li>
+          <li>主要 5 本の「壁」表示</li>
+          <li>1 シナリオ保存</li>
+          <li>公的URLリンク</li>
+        </ul>
+        <a class="btn btn--outline btn--block" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Storeで入手</a>
+      </div>
+
+      <!-- Premium -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card__recommended">
+          <span class="badge badge--orange">おすすめ</span>
+        </div>
+        <div>
+          <div class="pricing-card__name">プレミアム</div>
+          <div class="pricing-card__price mt-8">¥190<span> / 月</span></div>
+          <div class="pricing-card__alt">または ¥1,500 / 年（約34%お得・初月無料）</div>
+        </div>
+        <ul class="pricing-card__features">
+          <li>シナリオ無制限保存・比較</li>
+          <li>精密入力（社保区分・各種控除）</li>
+          <li>壁接近通知アラート</li>
+          <li>住民税の自治体差分対応</li>
+          <li>1ヶ月無料トライアル付き</li>
+        </ul>
+        <a class="btn btn--primary btn--block" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">今すぐ始める</a>
+      </div>
+
+      <!-- Lifetime -->
+      <div class="pricing-card">
+        <div>
+          <div class="pricing-card__name">永続ライセンス</div>
+          <div class="pricing-card__price mt-8">¥2,000<span> / 買い切り</span></div>
+          <div class="pricing-card__alt">一度の購入で全機能を永続利用</div>
+        </div>
+        <ul class="pricing-card__features">
+          <li>プレミアムの全機能</li>
+          <li>自動更新なし</li>
+          <li>制度アップデート無料</li>
+          <li>家族の Apple ID で復元可能</li>
+        </ul>
+        <a class="btn btn--outline btn--block" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Storeで入手</a>
+      </div>
+
+    </div>
+
+    <p class="pricing-note">
+      購入はApp Storeを通じて行われ、Appleの利用規約が適用されます。<br>
+      自動更新サブスクリプションはいつでもキャンセルできます（iPhone「設定」→「Apple ID」→「サブスクリプション」）。
+    </p>
+  </div>
+</section>
+
+<!-- ===== PRIVACY BANNER ===== -->
+<section class="section">
+  <div class="container">
+    <div class="simplemode-banner">
+      <div class="simplemode-banner__icon">🔒</div>
+      <div>
+        <h2 class="simplemode-banner__title">あなたの収入データは、端末から外に出ません</h2>
+        <p class="simplemode-banner__body">
+          年収・控除等の入力データはすべて端末内（UserDefaults / FileManager）で処理されます。
+          開発者のサーバーへの送信や第三者への提供は一切ありません。CloudKit 同期や Firebase も利用しません。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__grid">
+      <div>
+        <div class="footer-col__title">世帯手取ナビ</div>
+        <ul class="footer-col__links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="support.html">サポート・FAQ</a></li>
+          <li><a href="index.html#pricing">料金プラン</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col__title">法的情報</div>
+        <ul class="footer-col__links">
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="terms.html">利用規約</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col__title">お問い合わせ</div>
+        <ul class="footer-col__links">
+          <li><a href="mailto:freetokyo2020@yahoo.co.jp">メールで連絡する</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__copy">
+      © 2026 HomeNet Navi. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
