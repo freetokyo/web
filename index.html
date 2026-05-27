@@ -137,6 +137,10 @@
     .pickup-card:hover { transform: translateY(-2px); box-shadow: var(--color-shadow-hover); text-decoration: none; }
     .pickup-card--tsuki { background: linear-gradient(135deg, #1a0033 0%, #4a1a6b 60%, #ff5fa2 100%); }
     .pickup-card--iekan { background: linear-gradient(135deg, #064e3b 0%, #047857 60%, #34c759 100%); }
+    .pickup-card--trero { background:
+        radial-gradient(circle at top right, rgba(255,138,61,0.45), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(139,36,22,0.35), transparent 30%),
+        linear-gradient(145deg, #241717 0%, #4a1f16 46%, #7b2d1b 100%); }
     .pickup-card__eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.9; }
     .pickup-card__title { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.01em; margin: 10px 0 12px; }
     .pickup-card__desc { font-size: 16px; max-width: 30em; opacity: 0.92; }
@@ -283,7 +287,7 @@
 <!-- ===== HERO ===== -->
 <header class="hero">
   <div class="container">
-    <span class="badge">✨ 健康・生活・仕事に効く iOS アプリ</span>
+    <span class="badge">🏋️ Trero — 筋トレ記録の決定版が新登場</span>
     <h1>あなたの毎日を、<br>少しだけ軽くする道具を。</h1>
     <p class="hero__sub">睡眠も、サウナも、実家も、現場も。日常のあちこちにある小さな手間を、9 つの iOS アプリでまとめて整えます。</p>
     <div class="stats" aria-label="サイト統計">
@@ -295,23 +299,17 @@
 </header>
 
 <!-- ===== PICKUP (Today-style) ===== -->
-<section class="section" aria-label="今月のピックアップ">
+<section class="section" aria-label="今月の一押し">
   <div class="container">
     <div class="section__head">
-      <div class="section__eyebrow">Pick of the Month</div>
-      <h2 class="section__title">いま、おすすめの 2 本</h2>
+      <div class="section__eyebrow">Flagship App</div>
+      <h2 class="section__title">今月の一押し、Trero</h2>
     </div>
     <div class="pickup">
-      <a class="pickup-card pickup-card--tsuki" href="./tsukilift/">
-        <div class="pickup-card__eyebrow">健康 — Women's Fitness</div>
-        <div class="pickup-card__title">TsukiLift<br>月とともに、強くなる。</div>
-        <p class="pickup-card__desc">生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。フェーズに合った強度と種目をおすすめし、自分のリズムで強くなれます。</p>
-        <span class="pickup-card__cta">アプリを見る →</span>
-      </a>
-      <a class="pickup-card pickup-card--iekan" href="./iekan/">
-        <div class="pickup-card__eyebrow">生活 — Family Care</div>
-        <div class="pickup-card__title">IeKan<br>実家を、家族で見守る。</div>
-        <p class="pickup-card__desc">写真タイムライン、点検チェックリスト、書類スキャンを家族で共有。離れて暮らす実家の状態を、いつでも確認できます。</p>
+      <a class="pickup-card pickup-card--trero" href="./trero/">
+        <div class="pickup-card__eyebrow">健康 — Strength Training</div>
+        <div class="pickup-card__title">Trero<br>淡々と、確実に強くなる。</div>
+        <p class="pickup-card__desc">前回値を見ながらサッと記録できる、シンプルな筋トレ・ワークアウト管理アプリ。目標管理、進捗分析、体組成、Apple Watch 対応まで網羅し、9 言語に対応しています。</p>
         <span class="pickup-card__cta">アプリを見る →</span>
       </a>
     </div>
