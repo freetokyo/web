@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポート - Miawell</title>
+
+  <meta name="description" content="Miawellの使い方、よくある質問（FAQ）、お問い合わせ窓口。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/miawell/support.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Miawell">
+  <meta property="og:title" content="サポート — Miawell">
+  <meta property="og:description" content="Miawellの使い方、よくある質問（FAQ）、お問い合わせ窓口。">
+  <meta property="og:url" content="https://freetokyo.github.io/web/miawell/support.html">
+  <meta property="og:image" content="https://freetokyo.github.io/web/miawell/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="サポート — Miawell">
+  <meta name="twitter:description" content="Miawellの使い方、よくある質問（FAQ）。">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/miawell/ogp.png">
+<style>
+  :root {
+    --primary:      #FF8B7A;
+    --primary-dark: #C4534A;
+    --secondary:    #5BBFA6;
+    --bg:           #FFF5F4;
+    --text:         #2E1510;
+    --text-muted:   #8F6B64;
+    --card-bg:      #FFFFFF;
+    --border:       #FFD8D4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+  header {
+    background: linear-gradient(135deg, #2E1510 0%, #5A2620 100%);
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo { font-size: 22px; font-weight: 700; }
+  .logo span { color: var(--primary); }
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+  }
+  nav a:hover { color: white; }
+  .page-hero {
+    background: linear-gradient(150deg, #2E1510 0%, #5A2620 100%);
+    color: white;
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .page-hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+  .page-hero p { color: rgba(255,255,255,0.65); font-size: 14px; }
+  .content {
+    max-width: 800px;
+    margin: 48px auto;
+    padding: 0 24px 64px;
+  }
+  .contact-banner {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: white;
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contact-banner h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+  .contact-banner p { font-size: 15px; opacity: 0.85; margin-bottom: 20px; }
+  .contact-banner a {
+    display: inline-block;
+    background: white;
+    color: var(--primary-dark);
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .guide-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+  }
+  .guide-card .step {
+    background: var(--primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 100px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .guide-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .guide-card p { font-size: 13px; color: var(--text-muted); }
+  .faq-list { margin-bottom: 40px; }
+  .faq-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .faq-item input[type="checkbox"] { display: none; }
+  .faq-q {
+    padding: 18px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  .faq-q:hover { background: #FFF0EE; }
+  .faq-q::after { content: "＋"; color: var(--primary); font-size: 18px; flex-shrink: 0; margin-left: 12px; }
+  .faq-item input:checked + label.faq-q::after { content: "－"; }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 14px;
+    color: #444;
+    padding: 0 20px;
+  }
+  .faq-item input:checked ~ .faq-a { max-height: 400px; padding: 0 20px 18px; }
+  footer {
+    background: #2E1510;
+    color: rgba(255,255,255,0.6);
+    padding: 32px 24px;
+    text-align: center;
+  }
+  footer .footer-links { margin-bottom: 12px; }
+  footer .footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+  }
+  footer .footer-links a:hover { color: white; }
+  footer p { font-size: 12px; }
+  @media (max-width: 600px) { nav { display: none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span>Mia</span>well</div>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <h1>サポート</h1>
+  <p>Support</p>
+</div>
+
+<div class="content">
+
+  <div class="contact-banner">
+    <h2>お問い合わせ</h2>
+    <p>ご不明な点はメールでお気軽にご連絡ください。<br>内容を確認のうえ、順次ご返信いたします。</p>
+    <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
+  </div>
+
+  <div class="section-title">📖 はじめかたガイド</div>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <span class="step">Step 1</span>
+      <h3>猫を登録する</h3>
+      <p>アプリを起動して名前・誕生日・体重基準値を設定。プロフィールはいつでも編集できます。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 2</span>
+      <h3>毎日記録をつける</h3>
+      <p>ホーム画面からワンタップで食事・水分を記録。体重・トイレは詳細入力フォームから。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 3</span>
+      <h3>AIで体調をチェック</h3>
+      <p>「AI体調チェック」タブで愛猫の写真を選ぶだけ。元気/普通/要注意を自動判定します。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 4</span>
+      <h3>変化をグラフで把握</h3>
+      <p>レポートタブで体重推移とトイレ頻度グラフを確認。アラートが届いたら早めに受診を。</p>
+    </div>
+  </div>
+
+  <div class="section-title">❓ よくある質問</div>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq1">
+      <label class="faq-q" for="faq1">データはどこに保存されますか？</label>
+      <div class="faq-a">
+        <p>フリープランではデータはお使いのiPhone内（ローカルストレージ）に保存されます。プレミアムプランではiCloudを利用した同期が可能です。いずれの場合も、開発者がお客様のデータにアクセスすることはありません。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq2">
+      <label class="faq-q" for="faq2">AI判定の精度はどれくらいですか？</label>
+      <div class="faq-a">
+        <p>Oxford-IIIT Pet データセットをベースに学習したモデルを使用しています。撮影環境（明るさ・猫が画面全体に入っているか等）により精度が変わります。信頼度が60%未満の場合は「低信頼度」の注意表示が出ます。AI判定はあくまで参考情報であり、医療診断ではありません。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq3">
+      <label class="faq-q" for="faq3">写真が外部に送信されることはありますか？</label>
+      <div class="faq-a">
+        <p>ありません。AI体調判定はすべてお使いのデバイス上の Core ML で処理されます。写真データが外部サーバーに送信されることは一切ありません。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq4">
+      <label class="faq-q" for="faq4">複数の猫を管理できますか？</label>
+      <div class="faq-a">
+        <p>現在のバージョンでは1匹の猫の管理に対応しています。複数猫の管理機能は今後のアップデートで追加予定です。ご要望はお問い合わせよりお知らせください。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq5">
+      <label class="faq-q" for="faq5">プレミアムプランはいつでも解約できますか？</label>
+      <div class="faq-a">
+        <p>はい、いつでも解約できます。App Storeの「設定」→「サブスクリプション」から解約手続きを行ってください。解約後は次の更新日まで引き続きプレミアム機能をご利用いただけます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq6">
+      <label class="faq-q" for="faq6">機種変更したらデータはどうなりますか？</label>
+      <div class="faq-a">
+        <p>フリープランの場合、iPhoneのバックアップ（iCloudバックアップまたはMacでのバックアップ）から復元することで引き継ぎが可能です。プレミアムプランのiCloud同期をご利用の場合は、同じApple IDでサインインすれば自動的にデータが引き継がれます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq7">
+      <label class="faq-q" for="faq7">対応しているiOSのバージョンは？</label>
+      <div class="faq-a">
+        <p>iOS 17.0以降に対応しています。最新のiOSへのアップデートを推奨します。</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </div>
+  <p>&copy; 2026 CHEN YANGLI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

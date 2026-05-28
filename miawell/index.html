@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miawell — 猫専用ヘルスケアアプリ</title>
+
+  <meta name="description" content="愛猫の体調を、毎日スマートに。AI写真判定・日次記録・行動改善コーチングを搭載した猫専用ヘルスケアアプリ。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/miawell/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Miawell">
+  <meta property="og:title" content="Miawell — 猫専用ヘルスケアアプリ">
+  <meta property="og:description" content="愛猫の体調を、毎日スマートに。AI写真判定・日次記録・行動改善コーチング。">
+  <meta property="og:url" content="https://freetokyo.github.io/web/miawell/">
+  <meta property="og:image" content="https://freetokyo.github.io/web/miawell/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miawell — 猫専用ヘルスケアアプリ">
+  <meta name="twitter:description" content="愛猫の体調を、毎日スマートに。AI写真判定・日次記録・行動改善コーチング。">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/miawell/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6774019571">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Miawell",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+    "description": "愛猫の体調を、毎日スマートに。AI写真判定・日次記録・行動改善コーチング。"
+  }
+  </script>
+<style>
+  :root {
+    --primary:      #FF8B7A;
+    --primary-dark: #C4534A;
+    --secondary:    #5BBFA6;
+    --bg:           #FFF5F4;
+    --text:         #2E1510;
+    --text-muted:   #8F6B64;
+    --card-bg:      #FFFFFF;
+    --border:       #FFD8D4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+  header {
+    background: linear-gradient(135deg, #2E1510 0%, #5A2620 100%);
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo { font-size: 22px; font-weight: 700; }
+  .logo span { color: var(--primary); }
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+  }
+  nav a:hover { color: white; }
+
+  .hero {
+    background: linear-gradient(150deg, #2E1510 0%, #5A2620 60%, #7A3530 100%);
+    color: white;
+    padding: 80px 24px 72px;
+    text-align: center;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100px;
+    padding: 6px 18px;
+    font-size: 13px;
+    margin-bottom: 24px;
+    letter-spacing: 0.04em;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+  .hero h1 em { color: var(--primary); font-style: normal; }
+  .hero p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.75);
+    max-width: 520px;
+    margin: 0 auto 36px;
+  }
+  .hero-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-appstore {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    color: #2E1510;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .btn-appstore:hover { opacity: 0.85; }
+  .btn-appstore .apple-icon { font-size: 22px; }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    font-size: 14px;
+    padding: 14px 24px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+  .section {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  .section-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .feature-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    transition: box-shadow 0.2s;
+  }
+  .feature-card:hover { box-shadow: 0 8px 32px rgba(255,139,122,0.12); }
+  .feature-icon { font-size: 32px; margin-bottom: 14px; }
+  .feature-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+  .feature-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+  .feature-tag {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 100px;
+    margin-top: 12px;
+  }
+  .feature-tag.mint { background: var(--secondary); }
+
+  /* Stats bar */
+  .stats-bar {
+    background: linear-gradient(135deg, #2E1510 0%, #5A2620 100%);
+    color: white;
+    padding: 48px 24px;
+  }
+  .stats-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 32px;
+    text-align: center;
+  }
+  .stat-num { font-size: 36px; font-weight: 800; color: var(--primary); }
+  .stat-label { font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
+  /* Pricing */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .plan-card {
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    padding: 32px;
+    text-align: center;
+  }
+  .plan-card.featured {
+    border-color: var(--primary);
+    position: relative;
+  }
+  .plan-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .plan-name { font-size: 18px; font-weight: 800; margin-bottom: 8px; }
+  .plan-price { font-size: 36px; font-weight: 800; color: var(--primary); }
+  .plan-price span { font-size: 16px; color: var(--text-muted); font-weight: 400; }
+  .plan-desc { font-size: 13px; color: var(--text-muted); margin: 8px 0 20px; }
+  .plan-features { list-style: none; text-align: left; margin-bottom: 24px; }
+  .plan-features li {
+    font-size: 14px;
+    padding: 6px 0 6px 22px;
+    position: relative;
+    color: var(--text);
+  }
+  .plan-features li::before {
+    content: "✓";
+    color: var(--secondary);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+  }
+  .plan-cta {
+    display: block;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .plan-cta:hover { opacity: 0.85; }
+  .plan-cta.outline {
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  footer {
+    background: #2E1510;
+    color: rgba(255,255,255,0.6);
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .footer-links { margin-bottom: 14px; }
+  .footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+  }
+  .footer-links a:hover { color: white; }
+  footer p { font-size: 12px; }
+
+  @media (max-width: 600px) { nav { display: none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span>Mia</span>well</div>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="badge">🐱 AI × CoreData × iCloud</div>
+  <h1>愛猫の体調を、<br><em>毎日スマートに。</em></h1>
+  <p>写真1枚でAI体調判定。体重・食事・トイレを記録して、<br>愛猫の変化を見逃さないためのヘルスケアアプリ。</p>
+  <div class="hero-cta">
+    <a href="https://apps.apple.com/jp/app/miawell/id6774019571" class="btn-appstore">
+      <span class="apple-icon">🍎</span>
+      <span>App Store でダウンロード</span>
+    </a>
+    <a href="support.html" class="btn-secondary">使い方を見る →</a>
+  </div>
+</div>
+
+<!-- Features -->
+<div class="section">
+  <p class="section-label">Features</p>
+  <h2 class="section-title">愛猫の健康を、360°サポート</h2>
+  <p class="section-sub">記録・AI判定・アラート・コーチングを1つのアプリで。</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📸</div>
+      <h3>AI 体調判定</h3>
+      <p>愛猫の写真を撮るだけで「元気 / 普通 / 要注意」を自動判定。Core ML でオンデバイス処理するため、写真が外部に送信されることはありません。</p>
+      <span class="feature-tag">AI / Core ML</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📝</div>
+      <h3>日次記録</h3>
+      <p>体重・食事量・トイレ回数・水分・メモを毎日記録。シンプルな入力フォームで 30秒以内に完了します。</p>
+      <span class="feature-tag">CoreData</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📈</div>
+      <h3>トレンドグラフ</h3>
+      <p>週・月・3ヶ月の体重推移とトイレ頻度グラフを表示。体調の変化パターンを視覚的に把握できます。</p>
+      <span class="feature-tag">Swift Charts</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔔</div>
+      <h3>スマートアラート</h3>
+      <p>体重の急変・トイレ回数の異常・食欲低下などを自動検知して通知。早期発見をサポートします。</p>
+      <span class="feature-tag">UserNotifications</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h3>行動改善コーチング</h3>
+      <p>爪とぎ・夜鳴き・噛み癖など6カテゴリの行動改善プログラム。5ステップのガイドで毎日少しずつ改善をサポート。</p>
+      <span class="feature-tag mint">Premium</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>プライバシー重視</h3>
+      <p>すべてのデータはお使いのデバイスまたは iCloud にのみ保存。開発者のサーバーへの送信は一切ありません。</p>
+      <span class="feature-tag mint">iCloud 対応</span>
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">iOS 17+</div>
+      <div class="stat-label">対応プラットフォーム</div>
+    </div>
+    <div>
+      <div class="stat-num">6言語</div>
+      <div class="stat-label">多言語対応</div>
+    </div>
+    <div>
+      <div class="stat-num">0件</div>
+      <div class="stat-label">外部サーバー送信</div>
+    </div>
+    <div>
+      <div class="stat-num">¥190</div>
+      <div class="stat-label">月額プレミアム</div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing -->
+<div class="section" style="text-align: center;">
+  <p class="section-label">Pricing</p>
+  <h2 class="section-title">シンプルな料金プラン</h2>
+  <p class="section-sub">基本機能は無料。より深くケアしたい方にプレミアムプランをご用意。</p>
+
+  <div class="pricing-grid">
+    <div class="plan-card">
+      <div class="plan-name">Free</div>
+      <div class="plan-price">¥0 <span>/ 月</span></div>
+      <div class="plan-desc">まずは無料でお試し</div>
+      <ul class="plan-features">
+        <li>日次記録（体重・食事・トイレ・水分）</li>
+        <li>AI体調判定（月3回）</li>
+        <li>カレンダー表示</li>
+        <li>基本アラート</li>
+      </ul>
+      <a href="https://apps.apple.com/jp/app/miawell/id6774019571" class="plan-cta outline">無料でダウンロード</a>
+    </div>
+
+    <div class="plan-card featured">
+      <div class="plan-badge">🎁 1ヶ月無料トライアル</div>
+      <div class="plan-name">Premium</div>
+      <div class="plan-price">¥190 <span>/ 月</span></div>
+      <div class="plan-desc">愛猫のために、もっと深く</div>
+      <ul class="plan-features">
+        <li>Free の全機能</li>
+        <li>AI体調判定（無制限）</li>
+        <li>iCloud 同期・バックアップ</li>
+        <li>行動改善コーチング</li>
+        <li>詳細トレンドグラフ</li>
+        <li>高度アラート設定</li>
+      </ul>
+      <a href="https://apps.apple.com/jp/app/miawell/id6774019571" class="plan-cta">1ヶ月無料で試す</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </div>
+  <p>&copy; 2026 CHEN YANGLI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
