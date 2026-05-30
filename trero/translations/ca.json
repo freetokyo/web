@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | App de registre d'entrenaments per a iPhone",
-      "description": "Trero és una app per a iPhone per registrar entrenaments ràpidament, fer seguiment d'objectius, analitzar el progrés, mètriques corporals i suport de l'Apple Watch.",
+      "description": "Trero és una app per a iPhone per registrar entrenaments ràpidament, fer seguiment d'objectius, analitzar el progrés, mètriques corporals i suport de l'Apple Watch. Nou a v1.1: widgets de pantalla d'inici i bloqueig, Live Activity i dreceres de Siri.",
       "og_title": "Trero | App de registre d'entrenaments per a iPhone",
-      "og_description": "Consulta el teu últim registre i comença el proper exercici de seguida."
+      "og_description": "Consulta el teu últim registre i comença el proper exercici de seguida. Nou a v1.1: widgets de pantalla d'inici i bloqueig, Live Activity i dreceres de Siri."
     },
     "support.html": {
       "title": "Suport i PMF | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relació amb Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Aquesta app es distribueix a través de l'App Store d'Apple, però les parts d'aquestes condicions són l'usuari i el desenvolupador. Apple no és una part directa.",
     "9. Governing Law and Contact": "9. Llei aplicable i contacte",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Aquestes condicions es regeixen per la llei japonesa. Contacte: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Aquestes condicions es regeixen per la llei japonesa. Contacte: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Nou a v1.1 — Widgets, Live Activity i dreceres de Siri"
   },
   "blocks": {
     "index.html": {

@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Aplikácia na sledovanie tréningu pre iPhone",
-      "description": "Trero je iPhone aplikácia na rýchle zaznamenávanie tréningov, sledovanie cieľov, analýzu pokroku, telesné metriky a podporu Apple Watch.",
+      "description": "Trero je iPhone aplikácia na rýchle zaznamenávanie tréningov, sledovanie cieľov, analýzu pokroku, telesné metriky a podporu Apple Watch. Novinka v1.1: widgety domovskej a uzamknutej obrazovky, Live Activity a skratky Siri.",
       "og_title": "Trero | Aplikácia na sledovanie tréningu pre iPhone",
-      "og_description": "Pozri si posledný záznam a prejdi rovno na ďalšiu sériu."
+      "og_description": "Pozri si posledný záznam a prejdi rovno na ďalšiu sériu. Novinka v1.1: widgety domovskej a uzamknutej obrazovky, Live Activity a skratky Siri."
     },
     "support.html": {
       "title": "Podpora a FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Vzťah s Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Táto aplikácia je distribuovaná prostredníctvom App Store, ale stranami týchto podmienok sú používateľ a vývojár. Apple nie je priamou stranou.",
     "9. Governing Law and Contact": "9. Rozhodné právo a kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Tieto podmienky sa riadia japonským právom. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Tieto podmienky sa riadia japonským právom. Kontakt: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Novinka v1.1 — Widgety, Live Activity a skratky Siri"
   },
   "blocks": {
     "index.html": {

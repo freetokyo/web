@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | تطبيق تتبع التمارين وتدريب القوة لـ iPhone",
-      "description": "Trero تطبيق iPhone لتسجيل التمارين بسرعة، تتبع الأهداف، تحليل التقدم، قياسات الجسم، ودعم Apple Watch في مكان واحد.",
+      "description": "Trero تطبيق iPhone لتسجيل التمارين بسرعة، تتبع الأهداف، تحليل التقدم، قياسات الجسم، ودعم Apple Watch في مكان واحد. جديد في v1.1: عناصر واجهة للشاشة الرئيسية والقفل، Live Activity واختصارات Siri.",
       "og_title": "Trero | تطبيق تتبع التمارين وتدريب القوة لـ iPhone",
-      "og_description": "راجع آخر سجل لك، وانتقل مباشرة إلى المجموعة التالية."
+      "og_description": "راجع آخر سجل لك، وانتقل مباشرة إلى المجموعة التالية. جديد في v1.1: عناصر واجهة للشاشة الرئيسية والقفل، Live Activity واختصارات Siri."
     },
     "support.html": {
       "title": "الدعم والأسئلة الشائعة | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. العلاقة مع Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "يُوزَّع هذا التطبيق عبر App Store، لكن أطراف هذه الشروط هم المستخدم والمطور. Apple ليست طرفاً مباشراً.",
     "9. Governing Law and Contact": "9. القانون الحاكم والتواصل",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "تخضع هذه الشروط للقانون الياباني. التواصل: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "تخضع هذه الشروط للقانون الياباني. التواصل: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "جديد في v1.1 — عناصر واجهة، Live Activity واختصارات Siri"
   },
   "blocks": {
     "index.html": {

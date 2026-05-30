@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Träningstracker och styrketräningsapp för iPhone",
-      "description": "Trero är en iPhone-app för snabbare gymloggning, tydlig målspårning, framstegsanalys, kroppsmätningar och Apple Watch-stöd i en app.",
+      "description": "Trero är en iPhone-app för snabbare gymloggning, tydlig målspårning, framstegsanalys, kroppsmätningar och Apple Watch-stöd i en app. Nytt i v1.1: widgets för hem- och låsskärm, Live Activity och Siri-genvägar.",
       "og_title": "Trero | Träningstracker och styrketräningsapp för iPhone",
-      "og_description": "Kontrollera tidigare värden, spåra mål, registrera kroppsmätningar och logga set från Apple Watch – allt i en app."
+      "og_description": "Kontrollera tidigare värden, spåra mål, registrera kroppsmätningar och logga set från Apple Watch – allt i en app. Nytt i v1.1: widgets för hem- och låsskärm, Live Activity och Siri-genvägar."
     },
     "support.html": {
       "title": "Support & FAQ | Trero träningstracker-app",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relation till Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Denna app distribueras via Apples App Store, men parterna i dessa villkor är användaren och utvecklaren. Apple är inte en direkt part i dessa villkor.",
     "9. Governing Law and Contact": "9. Tillämplig lag och kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Dessa villkor lyder under japansk lag. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Dessa villkor lyder under japansk lag. Kontakt: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Nytt i v1.1 — Widgets, Live Activity och Siri-genvägar"
   },
   "blocks": {
     "index.html": {

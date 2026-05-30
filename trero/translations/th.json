@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | แอปติดตามการออกกำลังกายสำหรับ iPhone",
-      "description": "Trero แอป iPhone สำหรับบันทึกการออกกำลังกายอย่างรวดเร็ว ติดตามเป้าหมาย วิเคราะห์ความก้าวหน้า ตัวชี้วัดร่างกาย และรองรับ Apple Watch",
+      "description": "Trero แอป iPhone สำหรับบันทึกการออกกำลังกายอย่างรวดเร็ว ติดตามเป้าหมาย วิเคราะห์ความก้าวหน้า ตัวชี้วัดร่างกาย และรองรับ Apple Watch ใหม่ใน v1.1: วิดเจ็ตหน้าจอหลักและล็อก Live Activity และทางลัด Siri",
       "og_title": "Trero | แอปติดตามการออกกำลังกายสำหรับ iPhone",
-      "og_description": "ดูสถิติล่าสุดของคุณและเริ่มเซตถัดไปได้เลย"
+      "og_description": "ดูสถิติล่าสุดของคุณและเริ่มเซตถัดไปได้เลย ใหม่ใน v1.1: วิดเจ็ตหน้าจอหลักและล็อก Live Activity และทางลัด Siri"
     },
     "support.html": {
       "title": "ความช่วยเหลือและคำถามที่พบบ่อย | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. ความสัมพันธ์กับ Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "แอปนี้เผยแพร่ผ่าน App Store ของ Apple แต่คู่สัญญาของข้อกำหนดเหล่านี้คือผู้ใช้และนักพัฒนา Apple ไม่ใช่คู่สัญญาโดยตรง",
     "9. Governing Law and Contact": "9. กฎหมายที่ใช้บังคับและการติดต่อ",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "ข้อกำหนดเหล่านี้อยู่ภายใต้กฎหมายญี่ปุ่น ติดต่อ: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "ข้อกำหนดเหล่านี้อยู่ภายใต้กฎหมายญี่ปุ่น ติดต่อ: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "ใหม่ใน v1.1 — วิดเจ็ต Live Activity และทางลัด Siri"
   },
   "blocks": {
     "index.html": {

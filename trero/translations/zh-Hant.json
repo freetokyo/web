@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | iPhone 健身追蹤器和力量訓練應用程式",
-      "description": "Trero 是一款 iPhone 應用程式，集健身房快速記錄、清晰目標追蹤、進度分析、身體數據和 Apple Watch 支援於一體。",
+      "description": "Trero 是一款 iPhone 應用程式，集健身房快速記錄、清晰目標追蹤、進度分析、身體數據和 Apple Watch 支援於一體。 v1.1 現已支援主畫面與鎖定畫面小工具、即時動態和 Siri 捷徑。",
       "og_title": "Trero | iPhone 健身追蹤器和力量訓練應用程式",
-      "og_description": "查看上次記錄、追蹤目標、記錄身體數據，並從 Apple Watch 記錄組數——一切盡在一個應用程式。"
+      "og_description": "查看上次記錄、追蹤目標、記錄身體數據，並從 Apple Watch 記錄組數——一切盡在一個應用程式。 v1.1 現已支援主畫面與鎖定畫面小工具、即時動態和 Siri 捷徑。"
     },
     "support.html": {
       "title": "支援與常見問題 | Trero 健身追蹤器應用程式",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. 與 Apple 的關係",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "本應用程式透過 Apple 的 App Store 分發，但本條款的當事方為使用者和開發者。Apple 不是本條款的直接當事方。",
     "9. Governing Law and Contact": "9. 適用法律與聯絡方式",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "本條款受日本法律管轄。聯絡方式：freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "本條款受日本法律管轄。聯絡方式：freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "v1.1 新功能 — 小工具、即時動態和 Siri 捷徑"
   },
   "blocks": {
     "index.html": {

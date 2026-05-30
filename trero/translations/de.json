@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Workout-Tracker & Krafttraining-App für iPhone",
-      "description": "Trero ist eine iPhone-App für schnelleres Gym-Logging, klare Zielverfolgung, Fortschrittsanalyse, Körpermetriken und Apple Watch-Unterstützung in einer App.",
+      "description": "Trero ist eine iPhone-App für schnelleres Gym-Logging, klare Zielverfolgung, Fortschrittsanalyse, Körpermetriken und Apple Watch-Unterstützung in einer App. Neu in v1.1: Home- und Sperrbildschirm-Widgets, Live Activity und Siri-Kurzbefehle.",
       "og_title": "Trero | Workout-Tracker & Krafttraining-App für iPhone",
-      "og_description": "Vorwerte prüfen, Ziele verfolgen, Körpermetriken tracken und Sätze von der Apple Watch loggen – alles in einer App."
+      "og_description": "Vorwerte prüfen, Ziele verfolgen, Körpermetriken tracken und Sätze von der Apple Watch loggen – alles in einer App. Neu in v1.1: Home- und Sperrbildschirm-Widgets, Live Activity und Siri-Kurzbefehle."
     },
     "support.html": {
       "title": "Support & FAQ | Trero Workout-Tracker App",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Beziehung zu Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Diese App wird über den App Store vertrieben, aber Vertragsparteien sind Nutzer und Entwickler. Apple ist keine direkte Vertragspartei.",
     "9. Governing Law and Contact": "9. Anwendbares Recht und Kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Diese Bedingungen unterliegen japanischem Recht. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Diese Bedingungen unterliegen japanischem Recht. Kontakt: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Neu in v1.1 — Widgets, Live Activity & Siri-Kurzbefehle"
   },
   "blocks": {
     "index.html": {

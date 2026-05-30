@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Aplikasi log latihan & latihan kekuatan iPhone",
-      "description": "Trero aplikasi iPhone untuk log latihan pantas, penjejakan matlamat, analisis kemajuan, metrik badan, dan sokongan Apple Watch di satu tempat.",
+      "description": "Trero aplikasi iPhone untuk log latihan pantas, penjejakan matlamat, analisis kemajuan, metrik badan, dan sokongan Apple Watch di satu tempat. Baharu dalam v1.1: widget Skrin Utama & Kunci, Live Activity dan Pintasan Siri.",
       "og_title": "Trero | Aplikasi log latihan & latihan kekuatan iPhone",
-      "og_description": "Lihat rekod terakhir anda dan terus ke set seterusnya."
+      "og_description": "Lihat rekod terakhir anda dan terus ke set seterusnya. Baharu dalam v1.1: widget Skrin Utama & Kunci, Live Activity dan Pintasan Siri."
     },
     "support.html": {
       "title": "Sokongan & FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Hubungan dengan Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Aplikasi ini diedarkan melalui App Store Apple, tetapi pihak dalam syarat ini ialah pengguna dan pembangun. Apple bukan pihak langsung.",
     "9. Governing Law and Contact": "9. Undang-undang dan hubungan",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Syarat ini dikawal oleh undang-undang Jepun. Hubungi: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Syarat ini dikawal oleh undang-undang Jepun. Hubungi: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Baharu dalam v1.1 — Widget, Live Activity & Pintasan Siri"
   },
   "blocks": {
     "index.html": {

@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Workout-tracker & krachttraining-app voor iPhone",
-      "description": "Trero is een iPhone-app voor snellere gym-logging, duidelijke doeltracking, voortgangsanalyse, lichaamsgegevens en Apple Watch-ondersteuning in één app.",
+      "description": "Trero is een iPhone-app voor snellere gym-logging, duidelijke doeltracking, voortgangsanalyse, lichaamsgegevens en Apple Watch-ondersteuning in één app. Nieuw in v1.1: widgets voor beginscherm en vergrendelscherm, Live Activity en Siri-snelkoppelingen.",
       "og_title": "Trero | Workout-tracker & krachttraining-app voor iPhone",
-      "og_description": "Controleer vorige waarden, volg doelen, registreer lichaamsgegevens en log sets vanaf Apple Watch – alles in één app."
+      "og_description": "Controleer vorige waarden, volg doelen, registreer lichaamsgegevens en log sets vanaf Apple Watch – alles in één app. Nieuw in v1.1: widgets voor beginscherm en vergrendelscherm, Live Activity en Siri-snelkoppelingen."
     },
     "support.html": {
       "title": "Ondersteuning & FAQ | Trero workout-tracker app",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relatie met Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Deze app wordt gedistribueerd via de App Store van Apple, maar de partijen bij deze voorwaarden zijn de gebruiker en de ontwikkelaar. Apple is geen directe partij bij deze voorwaarden.",
     "9. Governing Law and Contact": "9. Toepasselijk recht en contact",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Deze voorwaarden worden beheerst door Japans recht. Contact: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Deze voorwaarden worden beheerst door Japans recht. Contact: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Nieuw in v1.1 — Widgets, Live Activity & Siri-snelkoppelingen"
   },
   "blocks": {
     "index.html": {

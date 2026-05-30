@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Ứng dụng theo dõi luyện tập cho iPhone",
-      "description": "Trero là ứng dụng iPhone để ghi lại bài tập nhanh chóng, theo dõi mục tiêu, phân tích tiến trình, chỉ số cơ thể và hỗ trợ Apple Watch.",
+      "description": "Trero là ứng dụng iPhone để ghi lại bài tập nhanh chóng, theo dõi mục tiêu, phân tích tiến trình, chỉ số cơ thể và hỗ trợ Apple Watch. Mới trong v1.1: Widget Màn hình chính và Khóa, Live Activity và Phím tắt Siri.",
       "og_title": "Trero | Ứng dụng theo dõi luyện tập cho iPhone",
-      "og_description": "Xem kết quả lần trước và bắt đầu hiệp tiếp theo ngay."
+      "og_description": "Xem kết quả lần trước và bắt đầu hiệp tiếp theo ngay. Mới trong v1.1: Widget Màn hình chính và Khóa, Live Activity và Phím tắt Siri."
     },
     "support.html": {
       "title": "Hỗ trợ và FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Mối quan hệ với Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Ứng dụng này được phân phối qua App Store của Apple, nhưng các bên trong Điều khoản này là người dùng và nhà phát triển. Apple không phải là bên trực tiếp.",
     "9. Governing Law and Contact": "9. Luật điều chỉnh và liên hệ",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Các điều khoản này được điều chỉnh bởi luật Nhật Bản. Liên hệ: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Các điều khoản này được điều chỉnh bởi luật Nhật Bản. Liên hệ: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Mới trong v1.1 — Widget, Live Activity & Phím tắt Siri"
   },
   "blocks": {
     "index.html": {

@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Приложение для трекинга тренировок на iPhone",
-      "description": "Trero — iPhone-приложение для быстрой записи тренировок, отслеживания целей, анализа прогресса, параметров тела и поддержки Apple Watch.",
+      "description": "Trero — iPhone-приложение для быстрой записи тренировок, отслеживания целей, анализа прогресса, параметров тела и поддержки Apple Watch. Новое в v1.1: виджеты главного и заблокированного экрана, Live Activity и команды Siri.",
       "og_title": "Trero | Приложение для трекинга тренировок на iPhone",
-      "og_description": "Смотри свой последний результат и сразу переходи к следующему подходу."
+      "og_description": "Смотри свой последний результат и сразу переходи к следующему подходу. Новое в v1.1: виджеты главного и заблокированного экрана, Live Activity и команды Siri."
     },
     "support.html": {
       "title": "Поддержка и FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Отношения с Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Это приложение распространяется через App Store, но сторонами этих условий являются пользователь и разработчик. Apple не является прямой стороной.",
     "9. Governing Law and Contact": "9. Применимое право и контакт",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Эти условия регулируются японским правом. Контакт: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Эти условия регулируются японским правом. Контакт: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Новое в v1.1 — Виджеты, Live Activity и команды Siri"
   },
   "blocks": {
     "index.html": {

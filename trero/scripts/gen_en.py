@@ -14,9 +14,9 @@ OUT_DIR = os.path.join(BASE, "en")
 EN_META = {
     "index.html": {
         "title": "Trero | Workout Tracker & Gym Log App for iPhone",
-        "description": "Trero is an iPhone workout tracker for people who want faster gym logging, clearer goal tracking, progress analysis, body metrics, and Apple Watch support in one app.",
+        "description": "Trero is an iPhone workout tracker for people who want faster gym logging, clearer goal tracking, progress analysis, body metrics, and Apple Watch support in one app. Now in v1.1: Home & Lock Screen widgets, Live Activity, and Siri Shortcuts.",
         "og_title": "Trero | Workout Tracker & Gym Log App for iPhone",
-        "og_description": "Check previous records, reuse past values, track exercise goals, review body metrics, and log sets from Apple Watch in one app.",
+        "og_description": "Check previous records, reuse past values, track exercise goals, review body metrics, and log sets from Apple Watch in one app. Now in v1.1: Home & Lock Screen widgets, Live Activity, and Siri Shortcuts.",
         "canonical": "https://freetokyo.github.io/web/trero/en/",
         "hreflang_ja": "https://freetokyo.github.io/web/trero/",
         "hreflang_en": "https://freetokyo.github.io/web/trero/en/",

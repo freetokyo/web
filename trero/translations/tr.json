@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | iPhone için Antrenman Takip ve Güç Antrenmanı Uygulaması",
-      "description": "Trero, hızlı egzersiz kaydı, hedef takibi, ilerleme analizi, vücut ölçümleri ve Apple Watch desteği için iPhone uygulaması.",
+      "description": "Trero, hızlı egzersiz kaydı, hedef takibi, ilerleme analizi, vücut ölçümleri ve Apple Watch desteği için iPhone uygulaması. v1.1'de yeni: Ana ekran ve kilit ekranı widget'ları, Canlı Etkinlik ve Siri Kısayolları.",
       "og_title": "Trero | iPhone için Antrenman Takip ve Güç Antrenmanı Uygulaması",
-      "og_description": "Son kaydına bak ve doğrudan bir sonraki sete geç."
+      "og_description": "Son kaydına bak ve doğrudan bir sonraki sete geç. v1.1'de yeni: Ana ekran ve kilit ekranı widget'ları, Canlı Etkinlik ve Siri Kısayolları."
     },
     "support.html": {
       "title": "Destek ve SSS | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Apple ile İlişki",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Bu uygulama Apple'ın App Store'u aracılığıyla dağıtılmaktadır, ancak bu Koşulların tarafları kullanıcı ve geliştiricisidir. Apple bu Koşulların doğrudan tarafı değildir.",
     "9. Governing Law and Contact": "9. Geçerli Hukuk ve İletişim",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Bu Koşullar Japon hukukuna tabidir. İletişim: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Bu Koşullar Japon hukukuna tabidir. İletişim: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "v1.1'de yeni — Widget'lar, Canlı Etkinlik ve Siri Kısayolları"
   },
   "blocks": {
     "index.html": {

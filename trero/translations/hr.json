@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Aplikacija za praćenje treninga snage za iPhone",
-      "description": "Trero je iPhone aplikacija za brzo bilježenje treninga, praćenje ciljeva, analizu napretka, tjelesne mjere i podršku Apple Watch.",
+      "description": "Trero je iPhone aplikacija za brzo bilježenje treninga, praćenje ciljeva, analizu napretka, tjelesne mjere i podršku Apple Watch. Novo u v1.1: widgeti početnog i zaključanog zaslona, Live Activity i Siri prečaci.",
       "og_title": "Trero | Aplikacija za praćenje treninga snage za iPhone",
-      "og_description": "Pogledajte svoj posljednji zapis i nastavite izravno u sljedeću seriju."
+      "og_description": "Pogledajte svoj posljednji zapis i nastavite izravno u sljedeću seriju. Novo u v1.1: widgeti početnog i zaključanog zaslona, Live Activity i Siri prečaci."
     },
     "support.html": {
       "title": "Podrška i FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Odnos s Appleom",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Aplikacija se distribuira preko Apple App Storea, ali stranke ovih uvjeta su korisnik i razvojni programer. Apple nije izravna strana.",
     "9. Governing Law and Contact": "9. Mjerodavno pravo i kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ovi uvjeti podliježu japanskom pravu. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ovi uvjeti podliježu japanskom pravu. Kontakt: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Novo u v1.1 — Widgeti, Live Activity i Siri prečaci"
   },
   "blocks": {
     "index.html": {

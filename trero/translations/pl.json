@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Tracker treningowy i aplikacja do treningu siłowego na iPhone",
-      "description": "Trero to aplikacja na iPhone do szybszego logowania na siłowni, śledzenia celów, analizy postępów, pomiarów ciała i obsługi Apple Watch w jednej aplikacji.",
+      "description": "Trero to aplikacja na iPhone do szybszego logowania na siłowni, śledzenia celów, analizy postępów, pomiarów ciała i obsługi Apple Watch w jednej aplikacji. Nowość w v1.1: widżety ekranu głównego i blokady, Live Activity oraz skróty Siri.",
       "og_title": "Trero | Tracker treningowy i aplikacja do treningu siłowego na iPhone",
-      "og_description": "Sprawdź poprzednie wyniki, śledź cele, rejestruj pomiary ciała i loguj serie z Apple Watch – wszystko w jednej aplikacji."
+      "og_description": "Sprawdź poprzednie wyniki, śledź cele, rejestruj pomiary ciała i loguj serie z Apple Watch – wszystko w jednej aplikacji. Nowość w v1.1: widżety ekranu głównego i blokady, Live Activity oraz skróty Siri."
     },
     "support.html": {
       "title": "Wsparcie i FAQ | Trero tracker treningowy",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relacja z Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Ta aplikacja jest dystrybuowana przez App Store Apple, ale strony tych warunków to użytkownik i deweloper. Apple nie jest bezpośrednią stroną tych warunków.",
     "9. Governing Law and Contact": "9. Prawo właściwe i kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Te warunki podlegają prawu japońskiemu. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Te warunki podlegają prawu japońskiemu. Kontakt: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Nowość w v1.1 — widżety, Live Activity i skróty Siri"
   },
   "blocks": {
     "index.html": {

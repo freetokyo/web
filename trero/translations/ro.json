@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Aplicație de urmărire a antrenamentelor pentru iPhone",
-      "description": "Trero este o aplicație iPhone pentru înregistrarea rapidă a antrenamentelor, urmărirea obiectivelor, analiza progresului, metrici corporale și suport Apple Watch.",
+      "description": "Trero este o aplicație iPhone pentru înregistrarea rapidă a antrenamentelor, urmărirea obiectivelor, analiza progresului, metrici corporale și suport Apple Watch. Nou în v1.1: widgeturi pentru ecran principal și de blocare, Live Activity și scurtături Siri.",
       "og_title": "Trero | Aplicație de urmărire a antrenamentelor pentru iPhone",
-      "og_description": "Verifică ultimul tău record și treci direct la următoarea serie."
+      "og_description": "Verifică ultimul tău record și treci direct la următoarea serie. Nou în v1.1: widgeturi pentru ecran principal și de blocare, Live Activity și scurtături Siri."
     },
     "support.html": {
       "title": "Suport și FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relația cu Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Această aplicație este distribuită prin App Store-ul Apple, dar părțile acestor termeni sunt utilizatorul și dezvoltatorul. Apple nu este o parte directă.",
     "9. Governing Law and Contact": "9. Legea aplicabilă și contact",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Acești termeni sunt reglementați de legea japoneză. Contact: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Acești termeni sunt reglementați de legea japoneză. Contact: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Nou în v1.1 — Widgeturi, Live Activity și scurtături Siri"
   },
   "blocks": {
     "index.html": {

@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | אפליקציית תיעוד אימוני כוח ל-iPhone",
-      "description": "Trero היא אפליקציית iPhone לתיעוד מהיר של אימונים, מעקב אחר יעדים, ניתוח התקדמות, מדדי גוף ותמיכת Apple Watch.",
+      "description": "Trero היא אפליקציית iPhone לתיעוד מהיר של אימונים, מעקב אחר יעדים, ניתוח התקדמות, מדדי גוף ותמיכת Apple Watch. חדש ב-v1.1: וידג'טים למסך הבית והנעילה, Live Activity וקיצורי Siri.",
       "og_title": "Trero | אפליקציית תיעוד אימוני כוח ל-iPhone",
-      "og_description": "ראה את הרישום האחרון שלך ועבור ישר לסט הבא."
+      "og_description": "ראה את הרישום האחרון שלך ועבור ישר לסט הבא. חדש ב-v1.1: וידג'טים למסך הבית והנעילה, Live Activity וקיצורי Siri."
     },
     "support.html": {
       "title": "תמיכה ושאלות נפוצות | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. קשר עם Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "האפליקציה מופצת דרך App Store של Apple, אך הצדדים לתנאים הם המשתמש והמפתח. Apple אינה צד ישיר.",
     "9. Governing Law and Contact": "9. חוק חל ויצירת קשר",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "תנאים אלה כפופים לחוק היפני. יצירת קשר: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "תנאים אלה כפופים לחוק היפני. יצירת קשר: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "חדש ב-v1.1 — וידג'טים, Live Activity וקיצורי Siri"
   },
   "blocks": {
     "index.html": {

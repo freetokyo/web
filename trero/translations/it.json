@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | App per il tracciamento degli allenamenti per iPhone",
-      "description": "Trero è un'app iPhone per registrare rapidamente in palestra, tracciare obiettivi, analizzare progressi, metriche corporee e Apple Watch, tutto in un'unica app.",
+      "description": "Trero è un'app iPhone per registrare rapidamente in palestra, tracciare obiettivi, analizzare progressi, metriche corporee e Apple Watch, tutto in un'unica app. Novità in v1.1: widget per schermata Home e blocco, Live Activity e scorciatoie Siri.",
       "og_title": "Trero | App per il tracciamento degli allenamenti per iPhone",
-      "og_description": "Controlla i tuoi ultimi valori, segui gli obiettivi, gestisci le metriche corporee e registra le serie da Apple Watch in un'unica app."
+      "og_description": "Controlla i tuoi ultimi valori, segui gli obiettivi, gestisci le metriche corporee e registra le serie da Apple Watch in un'unica app. Novità in v1.1: widget per schermata Home e blocco, Live Activity e scorciatoie Siri."
     },
     "support.html": {
       "title": "Supporto & FAQ | Trero App per il tracciamento degli allenamenti",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Rapporto con Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Questa app è distribuita tramite l'App Store di Apple, ma le parti di questi Termini sono l'utente e lo sviluppatore. Apple non è parte diretta.",
     "9. Governing Law and Contact": "9. Legge applicabile e contatto",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Questi Termini sono regolati dalla legge giapponese. Contatto: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Questi Termini sono regolati dalla legge giapponese. Contatto: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Novità in v1.1 — Widget, Live Activity e scorciatoie Siri"
   },
   "blocks": {
     "index.html": {

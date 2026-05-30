@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Aplikace pro záznam tréninku a sílu na iPhone",
-      "description": "Trero je aplikace pro iPhone na rychlé zaznamenávání tréninku, sledování cílů, analýzu pokroku, tělesné metriky a podporu Apple Watch.",
+      "description": "Trero je aplikace pro iPhone na rychlé zaznamenávání tréninku, sledování cílů, analýzu pokroku, tělesné metriky a podporu Apple Watch. Novinka v1.1: widgety domovské a uzamykací obrazovky, Live Activity a zkratky Siri.",
       "og_title": "Trero | Aplikace pro záznam tréninku a sílu na iPhone",
-      "og_description": "Podívejte se na svůj poslední záznam a pokračujte přímo další sérií."
+      "og_description": "Podívejte se na svůj poslední záznam a pokračujte přímo další sérií. Novinka v1.1: widgety domovské a uzamykací obrazovky, Live Activity a zkratky Siri."
     },
     "support.html": {
       "title": "Podpora a časté dotazy | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Vztah k Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Tato aplikace je distribuována přes Apple App Store, ale stranami těchto podmínek jsou uživatel a vývojář. Apple není přímou stranou.",
     "9. Governing Law and Contact": "9. Rozhodné právo a kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Tyto podmínky se řídí japonským právem. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Tyto podmínky se řídí japonským právem. Kontakt: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Novinka v1.1 — Widgety, Live Activity a zkratky Siri"
   },
   "blocks": {
     "index.html": {

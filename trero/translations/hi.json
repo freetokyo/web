@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | iPhone के लिए स्ट्रेंथ ट्रेनिंग वर्कआउट ट्रैकर ऐप",
-      "description": "Trero एक iPhone ऐप है जो तेज़ वर्कआउट लॉगिंग, लक्ष्य ट्रैकिंग, प्रगति विश्लेषण, शरीर मेट्रिक्स और Apple Watch समर्थन प्रदान करता है।",
+      "description": "Trero एक iPhone ऐप है जो तेज़ वर्कआउट लॉगिंग, लक्ष्य ट्रैकिंग, प्रगति विश्लेषण, शरीर मेट्रिक्स और Apple Watch समर्थन प्रदान करता है। v1.1 में नया: होम और लॉक स्क्रीन विजेट्स, Live Activity और Siri शॉर्टकट।",
       "og_title": "Trero | iPhone के लिए स्ट्रेंथ ट्रेनिंग वर्कआउट ट्रैकर ऐप",
-      "og_description": "अपना पिछला रिकॉर्ड देखें और सीधे अगले सेट पर जाएं।"
+      "og_description": "अपना पिछला रिकॉर्ड देखें और सीधे अगले सेट पर जाएं। v1.1 में नया: होम और लॉक स्क्रीन विजेट्स, Live Activity और Siri शॉर्टकट।"
     },
     "support.html": {
       "title": "सहायता और FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Apple के साथ संबंध",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "यह ऐप Apple App Store के माध्यम से वितरित है, लेकिन इन शर्तों के पक्ष उपयोगकर्ता और डेवलपर हैं। Apple सीधा पक्ष नहीं है।",
     "9. Governing Law and Contact": "9. शासी कानून और संपर्क",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "ये शर्तें जापानी कानून द्वारा शासित हैं। संपर्क: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "ये शर्तें जापानी कानून द्वारा शासित हैं। संपर्क: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "v1.1 में नया — विजेट्स, Live Activity और Siri शॉर्टकट"
   },
   "blocks": {
     "index.html": {

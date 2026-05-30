@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Erősítő edzésnapló alkalmazás iPhone-ra",
-      "description": "A Trero iPhone alkalmazás gyors edzésrögzítéshez, célkövetéshez, haladáselemzéshez, testmetrikákhoz és Apple Watch támogatáshoz.",
+      "description": "A Trero iPhone alkalmazás gyors edzésrögzítéshez, célkövetéshez, haladáselemzéshez, testmetrikákhoz és Apple Watch támogatáshoz. Új a v1.1-ben: kezdő- és zárolási képernyő widgetek, Live Activity és Siri-parancsok.",
       "og_title": "Trero | Erősítő edzésnapló alkalmazás iPhone-ra",
-      "og_description": "Nézd meg az utolsó rekordod és folytasd egyből a következő sorozattal."
+      "og_description": "Nézd meg az utolsó rekordod és folytasd egyből a következő sorozattal. Új a v1.1-ben: kezdő- és zárolási képernyő widgetek, Live Activity és Siri-parancsok."
     },
     "support.html": {
       "title": "Támogatás és GYIK | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Kapcsolat az Apple-lel",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Az alkalmazás az Apple App Store-on keresztül kerül forgalomba, de a feltételek felei a felhasználó és a fejlesztő. Az Apple nem közvetlen fél.",
     "9. Governing Law and Contact": "9. Irányadó jog és kapcsolat",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ezekre a feltételekre a japán jog vonatkozik. Kapcsolat: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ezekre a feltételekre a japán jog vonatkozik. Kapcsolat: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Új a v1.1-ben — widgetek, Live Activity és Siri-parancsok"
   },
   "blocks": {
     "index.html": {

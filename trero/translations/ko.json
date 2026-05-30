@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | iPhone 운동 트래커 & 근력 훈련 앱",
-      "description": "Trero는 빠른 체육관 기록, 명확한 목표 추적, 진행 분석, 신체 지표, Apple Watch 지원을 하나의 앱에 담은 iPhone 앱입니다.",
+      "description": "Trero는 빠른 체육관 기록, 명확한 목표 추적, 진행 분석, 신체 지표, Apple Watch 지원을 하나의 앱에 담은 iPhone 앱입니다. v1.1에서 홈 및 잠금 화면 위젯, 라이브 액티비티, Siri 단축어 지원.",
       "og_title": "Trero | iPhone 운동 트래커 & 근력 훈련 앱",
-      "og_description": "이전 기록 확인, 목표 추적, 신체 지표 트래킹, Apple Watch에서 세트 기록 – 모두 하나의 앱에서."
+      "og_description": "이전 기록 확인, 목표 추적, 신체 지표 트래킹, Apple Watch에서 세트 기록 – 모두 하나의 앱에서. v1.1에서 홈 및 잠금 화면 위젯, 라이브 액티비티, Siri 단축어 지원."
     },
     "support.html": {
       "title": "지원 & FAQ | Trero 운동 트래커 앱",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Apple과의 관계",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "이 앱은 Apple의 App Store를 통해 배포되지만 이 약관의 당사자는 사용자와 개발자입니다. Apple은 이 약관의 직접 당사자가 아닙니다.",
     "9. Governing Law and Contact": "9. 준거법 및 연락처",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "이 약관은 일본법의 적용을 받습니다. 연락처: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "이 약관은 일본법의 적용을 받습니다. 연락처: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "v1.1 신기능 — 위젯, 라이브 액티비티 & Siri 단축어"
   },
   "blocks": {
     "index.html": {

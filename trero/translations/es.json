@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | App de seguimiento de entrenamiento para iPhone",
-      "description": "Trero es una app de iPhone para registro rápido en el gym, seguimiento de objetivos, análisis de progreso, métricas corporales y Apple Watch, todo en uno.",
+      "description": "Trero es una app de iPhone para registro rápido en el gym, seguimiento de objetivos, análisis de progreso, métricas corporales y Apple Watch, todo en uno. Novedades en v1.1: widgets de inicio y bloqueo, Live Activity y atajos de Siri.",
       "og_title": "Trero | App de seguimiento de entrenamiento para iPhone",
-      "og_description": "Consulta tus últimos valores, sigue tus objetivos, gestiona métricas corporales y registra series desde Apple Watch en una sola app."
+      "og_description": "Consulta tus últimos valores, sigue tus objetivos, gestiona métricas corporales y registra series desde Apple Watch en una sola app. Novedades en v1.1: widgets de inicio y bloqueo, Live Activity y atajos de Siri."
     },
     "support.html": {
       "title": "Soporte & FAQ | Trero App de seguimiento de entrenamiento",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relación con Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Esta app se distribuye a través del App Store de Apple, pero las partes de estos Términos son el usuario y el desarrollador. Apple no es parte directa.",
     "9. Governing Law and Contact": "9. Ley aplicable y contacto",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estos Términos se rigen por la ley japonesa. Contacto: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estos Términos se rigen por la ley japonesa. Contacto: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Novedades v1.1 — Widgets, Live Activity y atajos de Siri"
   },
   "blocks": {
     "index.html": {

@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | App de registro de treinos e musculação para iPhone",
-      "description": "Trero app de iPhone para registro rápido de treinos, acompanhamento de metas, análise de progresso, métricas corporais e suporte ao Apple Watch em um só lugar.",
+      "description": "Trero app de iPhone para registro rápido de treinos, acompanhamento de metas, análise de progresso, métricas corporais e suporte ao Apple Watch em um só lugar. Novidades na v1.1: widgets de Início e Bloqueio, Live Activity e atalhos da Siri.",
       "og_title": "Trero | App de registro de treinos e musculação para iPhone",
-      "og_description": "Veja seu último registro e vá direto para a próxima série."
+      "og_description": "Veja seu último registro e vá direto para a próxima série. Novidades na v1.1: widgets de Início e Bloqueio, Live Activity e atalhos da Siri."
     },
     "support.html": {
       "title": "Suporte & FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relação com a Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Este app é distribuído pela App Store da Apple, mas as partes destes Termos são o usuário e o desenvolvedor. A Apple não é parte direta.",
     "9. Governing Law and Contact": "9. Lei aplicável e contato",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estes Termos são regidos pela lei japonesa. Contato: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estes Termos são regidos pela lei japonesa. Contato: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Novidades v1.1 — Widgets, Live Activity e atalhos da Siri"
   },
   "blocks": {
     "index.html": {

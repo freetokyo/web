@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | App de registo de treino para iPhone",
-      "description": "Trero é uma app para iPhone para registar treinos rapidamente, acompanhar objetivos, analisar progressos, métricas corporais e suporte Apple Watch.",
+      "description": "Trero é uma app para iPhone para registar treinos rapidamente, acompanhar objetivos, analisar progressos, métricas corporais e suporte Apple Watch. Novidades na v1.1: widgets de Ecrã Principal e Bloqueio, Live Activity e atalhos da Siri.",
       "og_title": "Trero | App de registo de treino para iPhone",
-      "og_description": "Consulta o teu último registo e avança diretamente para a próxima série."
+      "og_description": "Consulta o teu último registo e avança diretamente para a próxima série. Novidades na v1.1: widgets de Ecrã Principal e Bloqueio, Live Activity e atalhos da Siri."
     },
     "support.html": {
       "title": "Suporte e FAQ | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Relação com a Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Esta app é distribuída através da App Store da Apple, mas as partes destes termos são o utilizador e o programador. A Apple não é uma parte direta.",
     "9. Governing Law and Contact": "9. Lei aplicável e contacto",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estes termos são regidos pela lei japonesa. Contacto: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estes termos são regidos pela lei japonesa. Contacto: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Novidades v1.1 — Widgets, Live Activity e atalhos da Siri"
   },
   "blocks": {
     "index.html": {

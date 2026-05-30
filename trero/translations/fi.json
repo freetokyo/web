@@ -3,9 +3,9 @@
   "meta": {
     "index.html": {
       "title": "Trero | Treenin kirjaussovellus iPhonelle",
-      "description": "Trero on iPhone-sovellus nopeaan treenin kirjaamiseen, tavoitteiden seurantaan, edistymisen analyysiin, kehon mittareihin ja Apple Watch -tukeen.",
+      "description": "Trero on iPhone-sovellus nopeaan treenin kirjaamiseen, tavoitteiden seurantaan, edistymisen analyysiin, kehon mittareihin ja Apple Watch -tukeen. Uutta v1.1:ssä: koti- ja lukitusnäytön widgetit, Live Activity ja Siri-pikatoiminnot.",
       "og_title": "Trero | Treenin kirjaussovellus iPhonelle",
-      "og_description": "Katso edellinen kirjauksesi ja jatka suoraan seuraavaan sarjaan."
+      "og_description": "Katso edellinen kirjauksesi ja jatka suoraan seuraavaan sarjaan. Uutta v1.1:ssä: koti- ja lukitusnäytön widgetit, Live Activity ja Siri-pikatoiminnot."
     },
     "support.html": {
       "title": "Tuki ja UKK | Trero",
@@ -213,7 +213,8 @@
     "8. Relationship with Apple": "8. Suhde Appleen",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Sovellus jaetaan Applen App Storen kautta, mutta näiden ehtojen osapuolet ovat käyttäjä ja kehittäjä. Apple ei ole suora osapuoli.",
     "9. Governing Law and Contact": "9. Sovellettava laki ja yhteystiedot",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Näihin ehtoihin sovelletaan Japanin lakia. Yhteystiedot: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Näihin ehtoihin sovelletaan Japanin lakia. Yhteystiedot: freetokyo2020@yahoo.co.jp",
+    "NEW in v1.1 — Widgets, Live Activity & Siri Shortcuts": "Uutta v1.1:ssä — widgetit, Live Activity ja Siri-pikatoiminnot"
   },
   "blocks": {
     "index.html": {
