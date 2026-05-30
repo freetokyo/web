@@ -29,6 +29,16 @@
   <url><loc>https://freetokyo.github.io/web/genbalog/privacy.html</loc><priority>0.5</priority></url>
   <url><loc>https://freetokyo.github.io/web/genbalog/terms.html</loc><priority>0.5</priority></url>
 
+  <!-- HomeNetNavi（世帯手取ナビ） -->
+  <url>
+    <loc>https://freetokyo.github.io/web/homenetnavi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/homenetnavi/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/homenetnavi/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/homenetnavi/terms.html</loc><priority>0.5</priority></url>
+
   <!-- hanro -->
   <url>
     <loc>https://freetokyo.github.io/web/hanro/</loc>
@@ -52,6 +62,16 @@
   <url><loc>https://freetokyo.github.io/web/iekan/support.html</loc><priority>0.5</priority></url>
   <url><loc>https://freetokyo.github.io/web/iekan/privacy.html</loc><priority>0.5</priority></url>
   <url><loc>https://freetokyo.github.io/web/iekan/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- Miawell -->
+  <url>
+    <loc>https://freetokyo.github.io/web/miawell/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/miawell/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/miawell/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/miawell/terms.html</loc><priority>0.5</priority></url>
 
   <!-- PrintMemo -->
   <url>

@@ -1,31 +1,56 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 11 本の iOS / watchOS アプリを公開中。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 9 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 11 アプリを一覧）
+
+開発者: freetokyo（個人開発者・iOS / watchOS）
+リポジトリ: https://github.com/freetokyo/web
+最終更新: 2026-05-30
 
 ## Apps
 
-- [CareHours](https://freetokyo.github.io/web/carehours/): 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力。
-- [Genbalog](https://freetokyo.github.io/web/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。
-- [hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。
-- [IeKan（家看）](https://freetokyo.github.io/web/iekan/): 離れて暮らす家族で実家を見守る iOS アプリ。写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。
-- [PrintSummary / プリサマ](https://freetokyo.github.io/web/printmemo/): 学校プリントを OCR で読み取り締切・提出状態・復習を整理する iOS アプリ。
-- [RecoverySync](https://freetokyo.github.io/web/recoverysync/): Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内。
-- [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
-- [Trero](https://freetokyo.github.io/web/trero/): iPhone 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成、Apple Watch 対応。
-- [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
+### Health（健康）
+
+- [RecoverySync](https://freetokyo.github.io/web/recoverysync/): Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内で完結。App Store: https://apps.apple.com/app/id6770408873
+- [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。App Store: https://apps.apple.com/app/id6761906547
+- [Trero](https://freetokyo.github.io/web/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。38 言語対応のフラッグシップアプリ。App Store: https://apps.apple.com/app/id6760746164
+- [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。App Store: https://apps.apple.com/app/id6767084251
+
+### Life（生活・家族）
+
+- [IeKan（家看）](https://freetokyo.github.io/web/iekan/): 離れて暮らす家族で実家を見守る iOS アプリ。写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。App Store: https://apps.apple.com/app/id6764244913
+- [PrintSummary / プリサマ](https://freetokyo.github.io/web/printmemo/): 学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理する iOS アプリ。家族カレンダー連携対応。App Store: https://apps.apple.com/app/id6761879860
+- [Miawell](https://freetokyo.github.io/web/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。App Store: https://apps.apple.com/jp/app/miawell/id6774019571
+- [世帯手取ナビ / HomeNet Navi](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。App Store: https://apps.apple.com/jp/app/id6772911843
+
+### Work（仕事・現場）
+
+- [CareHours](https://freetokyo.github.io/web/carehours/): 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力。App Store: https://apps.apple.com/app/id6769304063
+- [Genbalog](https://freetokyo.github.io/web/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。App Store: https://apps.apple.com/app/id6770864162
+- [hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。App Store: https://apps.apple.com/app/id6771629040
 
 ## Pages
 
-各アプリは以下の 4 ページ構成（Trero は多言語対応、hanro は英語版あり）：
+各アプリは以下の 4 ページ構成（Trero は 38 言語対応、hanro は英語版あり）：
 
 - `/<app>/` — プロダクト紹介（index.html）
 - `/<app>/support.html` — サポート / FAQ
 - `/<app>/privacy.html` — プライバシーポリシー
 - `/<app>/terms.html` — 利用規約
 
+TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記）あり。
+
+## Design Principles
+
+- **健康**: スコアは目安。データに振り回されず、体感と並べて長く続けられる行動を選ぶための補助線として設計。
+- **生活**: ひとりに負担が偏らないよう、共有・記録・確認の流れを誰でも追えるシンプルな形にまとめる。
+- **仕事**: 現場で働く人が休憩 1 分でひと作業終えられる軽さ。オフライン優先、紙とハンコの代わりになる。
+- 共通: 多くのアプリは完全オフライン or iCloud のみ利用。サーバー側でユーザーデータを収集しない方針。基本機能は無料、サブスク／買い切りは任意。
+
 ## Optional
 
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
-- 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication）はページ HTML に埋め込み済み。
+- Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
+- 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
+- ルート `index.html` には CollectionPage + ItemList（全 11 アプリ）の JSON-LD あり。
