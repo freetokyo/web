@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サポート - Toscore</title>
+
+  <meta name="description" content="Toscoreのサポートページ。使い方ガイドとよくある質問（FAQ）、お問い合わせ先を掲載。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/toscore/support.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Toscore">
+  <meta property="og:title" content="サポート — Toscore">
+  <meta property="og:description" content="Toscoreの使い方ガイドとよくある質問、お問い合わせ先。">
+  <meta property="og:url" content="https://freetokyo.github.io/web/toscore/support.html">
+  <meta property="og:image" content="https://freetokyo.github.io/web/toscore/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="サポート — Toscore">
+  <meta name="twitter:description" content="Toscoreの使い方ガイドとよくある質問。">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/toscore/ogp.png">
+<style>
+  :root {
+    --primary:      #3B7AF5;
+    --primary-dark: #2456C0;
+    --secondary:    #30A46C;
+    --bg:           #F4F7FF;
+    --text:         #0F1B2D;
+    --text-muted:   #5A6B85;
+    --card-bg:      #FFFFFF;
+    --border:       #D6E2FF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+  header {
+    background: linear-gradient(135deg, #0F1B2D 0%, #1E3A6E 100%);
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo { font-size: 22px; font-weight: 700; }
+  .logo span { color: var(--primary); }
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+  }
+  nav a:hover { color: white; }
+  .page-hero {
+    background: linear-gradient(150deg, #0F1B2D 0%, #1E3A6E 100%);
+    color: white;
+    padding: 48px 24px;
+    text-align: center;
+  }
+  .page-hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+  .page-hero p { color: rgba(255,255,255,0.65); font-size: 14px; }
+  .content {
+    max-width: 800px;
+    margin: 48px auto;
+    padding: 0 24px 64px;
+  }
+  .contact-banner {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: white;
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contact-banner h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+  .contact-banner p { font-size: 15px; opacity: 0.85; margin-bottom: 20px; }
+  .contact-banner a {
+    display: inline-block;
+    background: white;
+    color: var(--primary-dark);
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .guide-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+  }
+  .guide-card .step {
+    background: var(--primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 100px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .guide-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .guide-card p { font-size: 13px; color: var(--text-muted); }
+  .faq-list { margin-bottom: 40px; }
+  .faq-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .faq-item input[type="checkbox"] { display: none; }
+  .faq-q {
+    padding: 18px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  .faq-q:hover { background: #EAF1FF; }
+  .faq-q::after { content: "＋"; color: var(--primary); font-size: 18px; flex-shrink: 0; margin-left: 12px; }
+  .faq-item input:checked + label.faq-q::after { content: "－"; }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 14px;
+    color: #444;
+    padding: 0 20px;
+  }
+  .faq-item input:checked ~ .faq-a { max-height: 400px; padding: 0 20px 18px; }
+  footer {
+    background: #0F1B2D;
+    color: rgba(255,255,255,0.6);
+    padding: 32px 24px;
+    text-align: center;
+  }
+  footer .footer-links { margin-bottom: 12px; }
+  footer .footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+  }
+  footer .footer-links a:hover { color: white; }
+  footer p { font-size: 12px; }
+  @media (max-width: 600px) { nav { display: none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span>To</span>score</div>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <h1>サポート</h1>
+  <p>Support</p>
+</div>
+
+<div class="content">
+
+  <div class="contact-banner">
+    <h2>お問い合わせ</h2>
+    <p>ご不明な点はメールでお気軽にご連絡ください。<br>内容を確認のうえ、順次ご返信いたします。</p>
+    <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
+  </div>
+
+  <div class="section-title">📖 はじめかたガイド</div>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <span class="step">Step 1</span>
+      <h3>試合を作成する</h3>
+      <p>一覧画面の「＋」から試合を作成。ルールプロファイル（既定はミニバス）を選びます。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 2</span>
+      <h3>チームを設定する</h3>
+      <p>チーム名・色・ロスター（背番号）・コーチ・開始アローを入力します。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 3</span>
+      <h3>ライブで記録する</h3>
+      <p>選手をタップして得点・ファウル・タイムアウト・出場を記録。違反は自動でアラート表示。</p>
+    </div>
+    <div class="guide-card">
+      <span class="step">Step 4</span>
+      <h3>書き出して共有する</h3>
+      <p>試合後はスコアシート風の画像／PDF／テキストに書き出し、共有シートで配布できます。</p>
+    </div>
+  </div>
+
+  <div class="section-title">❓ よくある質問</div>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq1">
+      <label class="faq-q" for="faq1">オフラインでも使えますか？</label>
+      <div class="faq-a">
+        <p>はい。Toscoreはすべての機能をオフラインで提供します。記録・ルール検証・出場時間検証・書き出しのいずれもネットワーク通信を行いません。電波の届かない体育館でも安心してご利用いただけます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq2">
+      <label class="faq-q" for="faq2">データはどこに保存されますか？</label>
+      <div class="faq-a">
+        <p>すべての試合記録はお使いのiPhone内にのみ保存されます。開発者のサーバーや外部へ送信されることは一切ありません。アプリをアンインストールするとデータは削除されますので、必要な記録は書き出し機能でバックアップしてください。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq3">
+      <label class="faq-q" for="faq3">この記録は公式記録として使えますか？</label>
+      <div class="faq-a">
+        <p>本アプリは「非公式記録／参照用」です。チーム相互TO・育成年代・練習試合などでの記録補助を目的としています。最終的な競技の判定は、競技規則・大会規定および審判の判断が優先されます。書き出した記録にも「非公式記録／参照用」と明記されます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq4">
+      <label class="faq-q" for="faq4">ルールの設定は変更できますか？</label>
+      <div class="faq-a">
+        <p>はい。ルール設定画面でプリセット（一般 / U15 / ミニバス基本 / ミニバス全国特別 / カスタム）を選べます。さらに時間・タイムアウト・交代・得点・ファウル・名簿・出場・アローなどを論理グループ単位で編集し、カスタムプロファイルとして保存・複製できます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq5">
+      <label class="faq-q" for="faq5">出場時間検証とは何ですか？</label>
+      <div class="faq-a">
+        <p>ミニバスの全員出場規定の充足見込みを事前にチェックする機能です。未出場の選手や必要な出場枠を前面に表示し、クォーター開始前にラインアップの妥当性を検証します。達成が難しい状況は警告として通知します（保守的な近似による判定です）。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq6">
+      <label class="faq-q" for="faq6">記録を間違えたときは？</label>
+      <div class="faq-a">
+        <p>ライブ画面の「元に戻す」で直前の記録を即座に取り消せます。さらに履歴・訂正画面では、任意の記録の取り消し・復活や、クォーターの取り違えの一括補正ができます。すべての記録は追記型で保持され、物理削除はされません。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq7">
+      <label class="faq-q" for="faq7">対応しているiOSのバージョンは？</label>
+      <div class="faq-a">
+        <p>iOS 17.0以降に対応しています。最新のiOSへのアップデートを推奨します。</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </div>
+  <p>&copy; 2026 CHEN YANGLI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

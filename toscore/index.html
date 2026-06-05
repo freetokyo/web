@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toscore — ミニバス対応 デジタルスコアシート＋検証</title>
+
+  <meta name="description" content="記録ミスを減らす、TO（テーブルオフィシャルズ）のためのデジタルスコアシート。能動的ルール検証とミニバス出場時間検証を搭載。完全オフライン・データ収集なし。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/toscore/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Toscore">
+  <meta property="og:title" content="Toscore — ミニバス対応 デジタルスコアシート＋検証">
+  <meta property="og:description" content="記録ミスを減らす、TOのためのデジタルスコアシート。ルール検証・出場時間検証を搭載。完全オフライン。">
+  <meta property="og:url" content="https://freetokyo.github.io/web/toscore/">
+  <meta property="og:image" content="https://freetokyo.github.io/web/toscore/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Toscore — ミニバス対応 デジタルスコアシート＋検証">
+  <meta name="twitter:description" content="ルール検証・出場時間検証を搭載したTO支援アプリ。完全オフライン・データ収集なし。">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/toscore/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6776913396">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Toscore",
+    "operatingSystem": "iOS",
+    "applicationCategory": "SportsApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+    "description": "ミニバス対応 デジタルスコアシート＋検証。能動的ルール検証と出場時間検証を搭載したTO支援アプリ。"
+  }
+  </script>
+<style>
+  :root {
+    --primary:      #3B7AF5;
+    --primary-dark: #2456C0;
+    --secondary:    #30A46C;
+    --bg:           #F4F7FF;
+    --text:         #0F1B2D;
+    --text-muted:   #5A6B85;
+    --card-bg:      #FFFFFF;
+    --border:       #D6E2FF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+  header {
+    background: linear-gradient(135deg, #0F1B2D 0%, #1E3A6E 100%);
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo { font-size: 22px; font-weight: 700; }
+  .logo span { color: var(--primary); }
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+  }
+  nav a:hover { color: white; }
+
+  .hero {
+    background: linear-gradient(150deg, #0F1B2D 0%, #1E3A6E 60%, #2456C0 100%);
+    color: white;
+    padding: 80px 24px 72px;
+    text-align: center;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 100px;
+    padding: 6px 18px;
+    font-size: 13px;
+    margin-bottom: 24px;
+    letter-spacing: 0.04em;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+  .hero h1 em { color: var(--primary); font-style: normal; }
+  .hero p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.75);
+    max-width: 560px;
+    margin: 0 auto 36px;
+  }
+  .hero-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-appstore {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    color: #0F1B2D;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .btn-appstore:hover { opacity: 0.85; }
+  .btn-appstore .apple-icon { font-size: 22px; }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    font-size: 14px;
+    padding: 14px 24px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .btn-secondary:hover { background: rgba(255,255,255,0.2); }
+
+  .section {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  .section-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .feature-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    transition: box-shadow 0.2s;
+  }
+  .feature-card:hover { box-shadow: 0 8px 32px rgba(59,122,245,0.12); }
+  .feature-icon { font-size: 32px; margin-bottom: 14px; }
+  .feature-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+  .feature-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+  .feature-tag {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 100px;
+    margin-top: 12px;
+  }
+  .feature-tag.mint { background: var(--secondary); }
+
+  /* Stats bar */
+  .stats-bar {
+    background: linear-gradient(135deg, #0F1B2D 0%, #1E3A6E 100%);
+    color: white;
+    padding: 48px 24px;
+  }
+  .stats-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 32px;
+    text-align: center;
+  }
+  .stat-num { font-size: 36px; font-weight: 800; color: var(--primary); }
+  .stat-label { font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
+  /* Pricing */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .plan-card {
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    padding: 32px;
+    text-align: center;
+  }
+  .plan-card.featured {
+    border-color: var(--primary);
+    position: relative;
+  }
+  .plan-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .plan-name { font-size: 18px; font-weight: 800; margin-bottom: 8px; }
+  .plan-price { font-size: 36px; font-weight: 800; color: var(--primary); }
+  .plan-price span { font-size: 16px; color: var(--text-muted); font-weight: 400; }
+  .plan-desc { font-size: 13px; color: var(--text-muted); margin: 8px 0 20px; }
+  .plan-features { list-style: none; text-align: left; margin-bottom: 24px; }
+  .plan-features li {
+    font-size: 14px;
+    padding: 6px 0 6px 22px;
+    position: relative;
+    color: var(--text);
+  }
+  .plan-features li::before {
+    content: "✓";
+    color: var(--secondary);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+  }
+  .plan-cta {
+    display: block;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .plan-cta:hover { opacity: 0.85; }
+  .plan-cta.outline {
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  footer {
+    background: #0F1B2D;
+    color: rgba(255,255,255,0.6);
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .footer-links { margin-bottom: 14px; }
+  .footer-links a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+  }
+  .footer-links a:hover { color: white; }
+  footer p { font-size: 12px; }
+
+  @media (max-width: 600px) { nav { display: none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span>To</span>score</div>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシー</a>
+    <a href="terms.html">利用規約</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="badge">🏀 SwiftUI × SwiftData × RuleKit</div>
+  <h1>記録ミスを、<br><em>その場で防ぐ。</em></h1>
+  <p>ミニバス対応のデジタルスコアシート。能動的なルール検証と出場時間検証で、<br>TO（テーブルオフィシャルズ）の「うっかり」を未然に防ぎます。</p>
+  <div class="hero-cta">
+    <a href="https://apps.apple.com/jp/app/toscore/id6776913396" class="btn-appstore">
+      <span class="apple-icon">🍎</span>
+      <span>App Store でダウンロード</span>
+    </a>
+    <a href="support.html" class="btn-secondary">使い方を見る →</a>
+  </div>
+</div>
+
+<!-- Features -->
+<div class="section">
+  <p class="section-label">Features</p>
+  <h2 class="section-title">記録するほど、ミスに気づける</h2>
+  <p class="section-sub">記録・ルール検証・出場管理・書き出しを1つのアプリで。JBA競技規則に準拠。</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">✅</div>
+      <h3>能動的ルール検証</h3>
+      <p>記録するたびに決定論エンジンが判定。5ファウル・累積テクニカル・チームファウルペナルティ・コーチ失格などを、その場でアラート表示します。</p>
+      <span class="feature-tag">RuleKit</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⏱️</div>
+      <h3>出場時間検証（ミニバス）</h3>
+      <p>全員出場の充足見込みを事前にチェック。未出場の選手や必要な出場枠を前面に表示し、達成不能な状況を警告します。</p>
+      <span class="feature-tag">ミニバス対応</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">👆</div>
+      <h3>2タップ得点</h3>
+      <p>選手をタップして得点を選ぶだけ。ランニングスコアとクォーター別の色付けを自動更新。素早く正確に記録できます。</p>
+      <span class="feature-tag">高速入力</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">↩️</div>
+      <h3>履歴・訂正</h3>
+      <p>すべての記録は時系列ログに残り、いつでも取り消し・復活が可能。クォーターの取り違えも一括で補正できます。</p>
+      <span class="feature-tag">追記型・論理削除</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📄</div>
+      <h3>画像・PDF 書き出し</h3>
+      <p>スコアシート風のレイアウトで画像／PDF／テキストに書き出し。システム共有シートから配布できます（「非公式記録／参照用」）。</p>
+      <span class="feature-tag mint">共有対応</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>完全オフライン</h3>
+      <p>すべての処理は端末内で完結。ネットワーク送信もデータ収集も一切ありません。電波の届かない体育館でも安心して使えます。</p>
+      <span class="feature-tag mint">データ収集なし</span>
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">iOS 17+</div>
+      <div class="stat-label">対応プラットフォーム</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">オフライン動作</div>
+    </div>
+    <div>
+      <div class="stat-num">0件</div>
+      <div class="stat-label">外部サーバー送信</div>
+    </div>
+    <div>
+      <div class="stat-num">買い切り</div>
+      <div class="stat-label">サブスクなし</div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing -->
+<div class="section" style="text-align: center;">
+  <p class="section-label">Pricing</p>
+  <h2 class="section-title">シンプルな料金</h2>
+  <p class="section-sub">主要機能はすべて無料。開発を応援したい方に買い切りの Pro をご用意。</p>
+
+  <div class="pricing-grid">
+    <div class="plan-card">
+      <div class="plan-name">無料</div>
+      <div class="plan-price">¥0</div>
+      <div class="plan-desc">すべての記録・検証機能</div>
+      <ul class="plan-features">
+        <li>得点・ファウル・タイムアウト・出場の記録</li>
+        <li>能動的ルール検証</li>
+        <li>出場時間検証（ミニバス）</li>
+        <li>履歴・訂正</li>
+        <li>画像／PDF／テキスト書き出し</li>
+      </ul>
+      <a href="https://apps.apple.com/jp/app/toscore/id6776913396" class="plan-cta outline">無料でダウンロード</a>
+    </div>
+
+    <div class="plan-card featured">
+      <div class="plan-badge">🙌 開発を応援</div>
+      <div class="plan-name">Toscore Pro</div>
+      <div class="plan-price">買い切り</div>
+      <div class="plan-desc">一度の購入で永続</div>
+      <ul class="plan-features">
+        <li>無料版の全機能</li>
+        <li>開発者を応援（買い切り）</li>
+        <li>サブスクリプションなし</li>
+        <li>今後の機能拡張をサポート</li>
+      </ul>
+      <a href="https://apps.apple.com/jp/app/toscore/id6776913396" class="plan-cta">App Store で見る</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </div>
+  <p>&copy; 2026 CHEN YANGLI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
