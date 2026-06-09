@@ -63,6 +63,36 @@
   <url><loc>https://freetokyo.github.io/web/iekan/privacy.html</loc><priority>0.5</priority></url>
   <url><loc>https://freetokyo.github.io/web/iekan/terms.html</loc><priority>0.5</priority></url>
 
+  <!-- Mochiru -->
+  <url>
+    <loc>https://freetokyo.github.io/web/mochiru/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/mochiru/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/mochiru/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/mochiru/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- Sukushori -->
+  <url>
+    <loc>https://freetokyo.github.io/web/sukushori/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/sukushori/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/sukushori/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/sukushori/terms.html</loc><priority>0.5</priority></url>
+
+  <!-- Toscore -->
+  <url>
+    <loc>https://freetokyo.github.io/web/toscore/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url><loc>https://freetokyo.github.io/web/toscore/support.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/toscore/privacy.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/toscore/terms.html</loc><priority>0.5</priority></url>
+
   <!-- Miawell -->
   <url>
     <loc>https://freetokyo.github.io/web/miawell/</loc>
