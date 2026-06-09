@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>スクショリ — 端末内でスクショを自動で仕分け・整理</title>
+  <meta name="description" content="撮ったまま埋もれるスクリーンショットを、端末内のAIが「行きたい店」「予定」「欲しいモノ」などに仕分け。完全オフライン・データ収集なし・買い切り。" />
+  <style>
+    :root { --bg:#f3ece2; --bg2:#e6d9c8; --ink:#2c2a26; --sub:#6b6459; --oak:#c19a6b; --teal:#5c9e96; --card:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+           color:var(--ink); background:linear-gradient(180deg,var(--bg),var(--bg2)); line-height:1.75; }
+    main { max-width:760px; margin:0 auto; padding:48px 22px 72px; }
+    header { text-align:center; padding:24px 0 8px; }
+    h1 { font-size:2.1rem; margin:.2em 0 .1em; }
+    .tag { color:var(--sub); font-size:1.05rem; }
+    .lead { background:var(--card); border-radius:16px; padding:20px 22px; margin:28px 0;
+            box-shadow:0 6px 24px rgba(60,45,30,.08); }
+    h2 { font-size:1.2rem; margin:1.8em 0 .5em; }
+    ul { padding-left:1.2em; } li { margin:.35em 0; }
+    .pill { display:inline-block; background:rgba(92,158,150,.14); color:#3f726b;
+            border-radius:999px; padding:4px 12px; font-size:.85rem; margin:2px 4px 2px 0; }
+    .note { color:var(--sub); font-size:.9rem; }
+    footer { text-align:center; margin-top:40px; }
+    a { color:#3f726b; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>スクショリ</h1>
+      <p class="tag">端末内でスクショを自動で仕分け・整理</p>
+      <p>
+        <span class="pill">完全オフライン</span>
+        <span class="pill">データ収集なし</span>
+        <span class="pill">買い切り</span>
+        <span class="pill">広告なし</span>
+      </p>
+    </header>
+
+    <div class="lead">
+      撮ったまま埋もれてしまうスクリーンショットを、端末内で「分類・要点抽出・行動・片付け」までまとめて行うアプリです。
+      すべての処理は端末内で完結し、データを外部へ送信・収集しません。
+    </div>
+
+    <h2>できること</h2>
+    <ul>
+      <li>写真ライブラリのスクリーンショットを読み込み、内容に合わせて自動で仕分け</li>
+      <li>カテゴリ: 行きたい店・場所／欲しいモノ／予定・日付／金額・レシート／レシピ・手順／メモ・アイデア</li>
+      <li>読み取れた文字から要点（店名・住所・URL・価格や日時の表記など）を抽出</li>
+      <li>ワンタップで行動: 地図で開く／URLを開く／カレンダー・リマインダーに追加／コピー</li>
+      <li>タイトル・要約・本文の端末内全文検索とカテゴリ絞り込み</li>
+      <li>整理後は原本をまとめて削除してストレージを回収（削除前に確認）</li>
+      <li>手動での再分類にも対応</li>
+    </ul>
+
+    <h2>プライバシー第一</h2>
+    <ul>
+      <li>通信を一切行いません（ネットワーク権限を要求しません）</li>
+      <li>画像・抽出結果はすべて端末内に保存され、外部送信・収集はありません</li>
+      <li>パスワードや認証コードの可能性がある内容は、値を保存せず伏せて扱います</li>
+    </ul>
+
+    <h2>AIによる分類について</h2>
+    <p class="note">
+      分類と要約は端末内のAIによる補助です。読み取れた文字のみを対象とし、推測や金額の算定は行いません。内容は必ずご確認ください。
+      AI自動分類はApple Intelligence対応端末（iOS 26以降）で利用できます。非対応端末では、文字認識（OCR）と手動整理でご利用いただけます。
+    </p>
+
+    <footer>
+      <p><a href="support.html">サポート</a> ・ <a href="terms.html">利用規約</a> ・ <a href="privacy.html">プライバシー</a></p>
+      <p class="note">© 2026 freetokyo</p>
+    </footer>
+  </main>
+</body>
+</html>
