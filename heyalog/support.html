@@ -3,17 +3,145 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Heyalog サポート</title>
+  <title>ヘヤログ — サポート</title>
+  <style>
+    :root {
+      --indigo: #2B3A67;
+      --paper:  #F7F6F2;
+      --ink:    #22273A;
+      --muted:  #6B7186;
+      --amber:  #E8A33D;
+      --line:   #E3E1D9;
+      --card:   #FFFFFF;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                   "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: var(--paper); color: var(--ink); line-height: 1.85;
+    }
+    nav {
+      background: rgba(247,246,242,.92); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line); padding: 0 20px;
+    }
+    .nav-inner {
+      max-width: 760px; margin: 0 auto;
+      display: flex; align-items: center; height: 52px; gap: 20px;
+    }
+    .brand { font-weight: 700; color: var(--indigo); font-size: 1rem; }
+    .nav-links { display: flex; gap: 18px; font-size: .85rem; }
+    .nav-links a { color: var(--muted); text-decoration: none; }
+    .nav-links a:hover { color: var(--indigo); }
+    main {
+      max-width: 760px; margin: 0 auto;
+      padding: 52px 22px 88px;
+    }
+    h1 {
+      font-size: 1.65rem; font-weight: 800;
+      color: var(--indigo); margin-bottom: 6px;
+    }
+    .meta { font-size: .85rem; color: var(--muted); margin-bottom: 36px; }
+    h2 {
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--indigo); margin: 2.2em 0 .8em;
+      padding-bottom: .3em; border-bottom: 1px solid var(--line);
+    }
+    .q {
+      font-weight: 700; color: var(--ink);
+      margin: 1.4em 0 .3em;
+    }
+    p { margin: .3em 0 .8em; color: var(--ink); }
+    a { color: var(--indigo); }
+    .contact-box {
+      background: var(--card); border: 1px solid var(--line);
+      border-left: 4px solid var(--amber);
+      border-radius: 8px; padding: 20px 22px; margin-top: 2em;
+    }
+    .contact-box p { margin: .4em 0; }
+    footer {
+      border-top: 1px solid var(--line); padding: 24px 22px;
+      text-align: center; font-size: .82rem; color: var(--muted);
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-inner">
+      <span class="brand">ヘヤログ</span>
+      <div class="nav-links">
+        <a href="index.html">ホーム</a>
+        <a href="privacy.html">プライバシー</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
-    <h1>Heyalog サポート</h1>
-    <h2>よくある質問</h2>
-    <p><strong>無料で使えますか？</strong><br />基本無料でお試しいただけます。一部機能は買い切り（サブスクなし）で解放します。</p>
-    <p><strong>購入を復元したい</strong><br />設定 → 「購入を復元」から復元できます。</p>
-    <p><strong>データはどこに保存されますか？</strong><br />すべて端末内に保存され、外部送信はありません。</p>
+    <h1>サポート</h1>
+    <p class="meta">ご不明な点はよくある質問をご確認のうえ、解決しない場合はメールにてお問い合わせください。</p>
+
+    <h2>基本的な使い方</h2>
+
+    <p class="q">どうやって使い始めますか？</p>
+    <p>「ホーム」画面右上の「＋」から物件を登録します。物件名・種別（アパート・マンションなど）を入力し、次に部屋（リビング・浴室など）を追加します。あとは各部屋のチェックポイントごとに写真を撮るだけです。</p>
+
+    <p class="q">入居時と退去時の記録はどう使い分けますか？</p>
+    <p>物件詳細画面のセグメントで「入居時」「退去時」を切り替えられます。入居時に撮影した写真と退去時の同アングル写真を並べて比較できるため、どの傷が入居前からあったかを一目で確認できます。</p>
+
+    <p class="q">チェックリストの項目はカスタマイズできますか？</p>
+    <p>部屋の種別（キッチン・浴室・洋室など）に応じて国交省ガイドライン準拠のチェックポイントが自動で設定されます。現バージョンでは項目の追加・削除はできません。</p>
+
+    <h2>写真・位置情報</h2>
+
+    <p class="q">写真に GPS を記録できますか？</p>
+    <p>「設定 → 位置情報を写真に付ける」をオンにすると、撮影時に現在地の緯度・経度が写真に記録されます。初期値はオフです。位置情報は端末内にのみ保存され、外部送信はありません。</p>
+
+    <p class="q">既存の写真（カメラロールの写真）を取り込めますか？</p>
+    <p>チェックポイント画面のカメラボタンから「ライブラリから選択」を選ぶと、撮影済みの写真を使用できます。</p>
+
+    <p class="q">写真の画質や枚数に制限はありますか？</p>
+    <p>1チェックポイントにつき複数枚撮影できます（上限なし）。写真はフルサイズで保存されるため、物件数や枚数が増えると端末ストレージを消費します。不要な記録は削除することをお勧めします。</p>
+
+    <h2>PDF 報告書</h2>
+
+    <p class="q">PDF はどうやって作りますか？</p>
+    <p>物件詳細画面の「PDF報告書を作成」をタップします。日本語・英語を選択して生成でき、生成後は共有ボタンからメール送信・Files アプリへの保存・印刷などが行えます。</p>
+
+    <p class="q">PDF に出力される内容は何ですか？</p>
+    <p>物件名・部屋名・チェックポイントごとの写真と記録日時・位置情報（記録した場合）・チェック状態が出力されます。退去時には入居時と退去時の写真を横並びで比較表示します。</p>
+
+    <h2>課金・購入</h2>
+
+    <p class="q">無料でどこまで使えますか？</p>
+    <p>入居時の写真記録・チェックリスト・PDF報告書の作成は完全無料です。退去時の同アングル比較撮影・比較レポートPDF・データ一括書き出し（ZIP）が買い切り購入で解放されます。</p>
+
+    <p class="q">サブスクリプションはありますか？</p>
+    <p>ありません。¥600の買い切りです。一度購入すれば追加費用なく永続的に使用できます。</p>
+
+    <p class="q">購入を復元したい</p>
+    <p>「設定 → 購入を復元」をタップしてください。同一 Apple ID でログインしていれば、機種変更後も無料で復元できます。</p>
+
+    <h2>データ・バックアップ</h2>
+
+    <p class="q">データはどこに保存されますか？</p>
+    <p>すべてのデータ（物件情報・写真・チェック記録）は利用者の端末内にのみ保存されます。外部サーバーへの送信・収集は一切行いません。</p>
+
+    <p class="q">アプリを削除するとデータは消えますか？</p>
+    <p>はい、アプリを削除すると端末内のデータもすべて削除されます。重要な写真は事前に「データ書き出し（ZIP）」で別の場所に保存することをお勧めします（買い切り機能）。</p>
+
+    <p class="q">機種変更時にデータを引き継げますか？</p>
+    <p>iOS の「iCloud バックアップ」または「iPhone 同士で直接転送」を使うと、アプリのデータも含めて引き継ぎができます。本アプリ独自のクラウド同期機能はありません。</p>
+
     <h2>お問い合わせ</h2>
-    <p>メール: freetokyo2020@yahoo.co.jp</p>
+    <div class="contact-box">
+      <p>よくある質問で解決しない場合は、以下のメールアドレスへお問い合わせください。</p>
+      <p>メール: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+      <p style="margin-top:.8em; font-size:.88rem; color:var(--muted);">
+        お問い合わせの際は、端末機種・iOS バージョン・アプリバージョン（設定画面で確認）をご記載いただくとスムーズです。
+      </p>
+    </div>
   </main>
+
+  <footer>© 2026 CHEN YANGLI. All rights reserved.</footer>
 </body>
 </html>

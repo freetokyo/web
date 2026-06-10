@@ -3,19 +3,118 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Heyalog プライバシーポリシー</title>
+  <title>ヘヤログ — プライバシーポリシー</title>
+  <style>
+    :root {
+      --indigo: #2B3A67;
+      --paper:  #F7F6F2;
+      --ink:    #22273A;
+      --muted:  #6B7186;
+      --amber:  #E8A33D;
+      --line:   #E3E1D9;
+      --card:   #FFFFFF;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                   "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: var(--paper); color: var(--ink); line-height: 1.85;
+    }
+    nav {
+      background: rgba(247,246,242,.92); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line); padding: 0 20px;
+    }
+    .nav-inner {
+      max-width: 760px; margin: 0 auto;
+      display: flex; align-items: center; height: 52px; gap: 20px;
+    }
+    .brand { font-weight: 700; color: var(--indigo); font-size: 1rem; }
+    .nav-links { display: flex; gap: 18px; font-size: .85rem; color: var(--muted); }
+    .nav-links a { color: var(--muted); text-decoration: none; }
+    .nav-links a:hover { color: var(--indigo); }
+    main {
+      max-width: 760px; margin: 0 auto;
+      padding: 52px 22px 88px;
+    }
+    h1 {
+      font-size: 1.65rem; font-weight: 800;
+      color: var(--indigo); margin-bottom: 6px;
+    }
+    .meta { font-size: .85rem; color: var(--muted); margin-bottom: 28px; }
+    h2 {
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--indigo); margin: 2em 0 .5em;
+      padding-bottom: .3em; border-bottom: 1px solid var(--line);
+    }
+    p { margin: .6em 0; }
+    a { color: var(--indigo); }
+    .highlight {
+      background: var(--card); border: 1px solid var(--line);
+      border-left: 4px solid var(--amber);
+      border-radius: 8px; padding: 14px 18px; margin: 1.4em 0;
+      font-size: .95rem;
+    }
+    footer {
+      border-top: 1px solid var(--line); padding: 24px 22px;
+      text-align: center; font-size: .82rem; color: var(--muted);
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-inner">
+      <span class="brand">ヘヤログ</span>
+      <div class="nav-links">
+        <a href="index.html">ホーム</a>
+        <a href="support.html">サポート</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
-    <h1>Heyalog プライバシーポリシー</h1>
-    <p>最終更新: 2026年</p>
-    <p>Heyalog（以下「本アプリ」）は、利用者のプライバシーを最優先します。</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">最終更新: 2026年6月 ／ 開発者: CHEN YANGLI（freetokyo）</p>
+
+    <div class="highlight">
+      ヘヤログはすべての処理を端末内で完結させています。個人情報・利用データの収集・外部送信は一切行いません。
+    </div>
+
     <h2>収集する情報</h2>
-    <p>本アプリは個人情報・利用データを一切収集しません。すべての処理は端末内で完結し、外部送信はありません。アカウント登録は不要です。</p>
-    <h2>第三者提供</h2>
-    <p>収集するデータが存在しないため、第三者への提供もありません。解析 SDK・広告 SDK は使用していません。</p>
+    <p>本アプリは個人情報・利用データを収集しません。入力した物件名・撮影した写真・生成したPDF・チェックリストの記録はすべて利用者の端末内にのみ保存されます。アカウント登録は不要です。</p>
+
+    <h2>カメラの利用</h2>
+    <p>部屋の状態を撮影するためにカメラへのアクセスを使用します。撮影した写真は端末内にのみ保存され、開発者や第三者へ送信されることはありません。</p>
+
+    <h2>位置情報の利用</h2>
+    <p>写真への GPS 座標の添付はオプション機能です。設定画面の「位置情報を写真に付ける」がオフ（初期値）の場合、位置情報へのアクセスは行いません。利用者がオンにした場合のみ、撮影時に端末の現在地を取得して写真のメタデータに記録します。取得した座標が外部へ送信されることはありません。</p>
+
+    <h2>端末内に保存されるデータ</h2>
+    <p>以下のデータが端末のアプリ専用領域に保存されます。</p>
+    <ul style="padding-left:1.4em; margin:.5em 0;">
+      <li>物件名・部屋名・チェックポイント名などの入力テキスト</li>
+      <li>撮影・インポートした写真</li>
+      <li>チェックリストの記録状態</li>
+      <li>生成した PDF ファイル（一時領域）</li>
+    </ul>
+
+    <h2>iCloud バックアップ</h2>
+    <p>本アプリは iCloud 同期を行いません。ただし iOS 標準の「iCloud バックアップ」が有効な場合、本アプリのデータも端末バックアップに含まれます。これは Apple の iCloud 機能によるものであり、開発者はデータにアクセスできません。</p>
+
+    <h2>第三者提供・解析・広告</h2>
+    <p>収集するデータが存在しないため、第三者への提供はありません。解析 SDK・広告 SDK・クラッシュレポート SDK は一切使用していません。</p>
+
+    <h2>お子様のプライバシー</h2>
+    <p>本アプリは13歳未満の方を対象としておらず、意図的に情報を収集しません。</p>
+
+    <h2>ポリシーの変更</h2>
+    <p>プライバシーポリシーを変更する場合は、このページを更新します。重大な変更がある場合はアプリのアップデートを通じてお知らせします。</p>
+
     <h2>お問い合わせ</h2>
-    <p><a href="support.html">サポートページ</a>よりご連絡ください。</p>
+    <p>メール: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+    <p><a href="support.html">サポートページ</a>もご覧ください。</p>
   </main>
+
+  <footer>© 2026 CHEN YANGLI. All rights reserved.</footer>
 </body>
 </html>

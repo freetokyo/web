@@ -3,20 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Heyalog 利用規約</title>
+  <title>ヘヤログ — 利用規約</title>
+  <style>
+    :root {
+      --indigo: #2B3A67;
+      --paper:  #F7F6F2;
+      --ink:    #22273A;
+      --muted:  #6B7186;
+      --amber:  #E8A33D;
+      --line:   #E3E1D9;
+      --card:   #FFFFFF;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                   "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: var(--paper); color: var(--ink); line-height: 1.85;
+    }
+    nav {
+      background: rgba(247,246,242,.92); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line); padding: 0 20px;
+    }
+    .nav-inner {
+      max-width: 760px; margin: 0 auto;
+      display: flex; align-items: center; height: 52px; gap: 20px;
+    }
+    .brand { font-weight: 700; color: var(--indigo); font-size: 1rem; }
+    .nav-links { display: flex; gap: 18px; font-size: .85rem; }
+    .nav-links a { color: var(--muted); text-decoration: none; }
+    .nav-links a:hover { color: var(--indigo); }
+    main {
+      max-width: 760px; margin: 0 auto;
+      padding: 52px 22px 88px;
+    }
+    h1 {
+      font-size: 1.65rem; font-weight: 800;
+      color: var(--indigo); margin-bottom: 6px;
+    }
+    .meta { font-size: .85rem; color: var(--muted); margin-bottom: 28px; }
+    h2 {
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--indigo); margin: 2em 0 .5em;
+      padding-bottom: .3em; border-bottom: 1px solid var(--line);
+    }
+    p { margin: .6em 0; }
+    a { color: var(--indigo); }
+    footer {
+      border-top: 1px solid var(--line); padding: 24px 22px;
+      text-align: center; font-size: .82rem; color: var(--muted);
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-inner">
+      <span class="brand">ヘヤログ</span>
+      <div class="nav-links">
+        <a href="index.html">ホーム</a>
+        <a href="support.html">サポート</a>
+        <a href="privacy.html">プライバシー</a>
+      </div>
+    </div>
+  </nav>
+
   <main>
-    <h1>Heyalog 利用規約</h1>
-    <p>最終更新: 2026年</p>
+    <h1>利用規約</h1>
+    <p class="meta">最終更新: 2026年6月 ／ 開発者: CHEN YANGLI（freetokyo）</p>
+
     <h2>1. 本アプリの目的</h2>
-    <p>本アプリは一般的な情報提供・学習目的のツールです。特定の専門的助言（金融・医療・法務等）を提供するものではありません。試算・出力結果は将来の成果を保証するものではなく、最終的な判断は利用者ご自身の責任で行ってください。</p>
-    <h2>2. 課金</h2>
-    <p>一部機能は買い切り（非消費型・サブスクなし）で提供します。購入は設定から復元できます。</p>
-    <h2>3. 免責</h2>
-    <p>本アプリの利用により生じたいかなる損害についても、開発者は責任を負いません。</p>
-    <h2>4. お問い合わせ</h2>
-    <p><a href="support.html">サポートページ</a>よりご連絡ください。</p>
+    <p>ヘヤログ（以下「本アプリ」）は、賃貸住宅の入居時・退去時における部屋の状態を写真とチェックリストで記録し、PDF報告書を作成することを支援するツールです。国土交通省「原状回復をめぐるトラブルとガイドライン」を参考にしたチェックリストを提供しますが、法律上の権利・義務の確定や、特定の専門的助言（法務・不動産等）の代替を目的とするものではありません。</p>
+
+    <h2>2. PDF 報告書について</h2>
+    <p>本アプリが生成する PDF 報告書は、利用者が記録した情報をまとめたものです。報告書の法的証拠能力・効力は状況により異なり、開発者はこれを保証しません。退去時の交渉・紛争における具体的な判断は、利用者ご自身の責任のもと行ってください。必要に応じて専門家（弁護士・不動産業者等）にご相談ください。</p>
+
+    <h2>3. 国交省ガイドラインについて</h2>
+    <p>本アプリのチェックリストは国土交通省「原状回復をめぐるトラブルとガイドライン」を参考に作成していますが、公式コンテンツではありません。ガイドラインの解釈・適用については、国土交通省の公式資料および専門家の見解を参照してください。</p>
+
+    <h2>4. 利用条件</h2>
+    <p>本アプリは個人利用を目的としています。本アプリのコンテンツを無断で複製・再配布・改変・商業利用することを禁じます。本アプリは日本国内での利用を想定しています。</p>
+
+    <h2>5. 課金・購入</h2>
+    <p>入居時の写真記録・チェックリスト・PDF作成は無料でご利用いただけます。退去時の同アングル比較撮影・比較レポートPDF・データ一括書き出しは、買い切り購入（サブスクリプションなし）で解放されます。購入は App Store を通じて行われ、Apple の利用規約が適用されます。「設定 → 購入を復元」から同一 Apple ID での復元が可能です。</p>
+
+    <h2>6. 免責事項</h2>
+    <p>本アプリは現状のまま（"as is"）提供されます。開発者は、本アプリの利用または利用不能により生じたいかなる損害（データの損失、退去トラブル、間接損害等）についても責任を負いません。本アプリは iOS プラットフォームの仕様変更により予告なく機能が変更される場合があります。</p>
+
+    <h2>7. 準拠法</h2>
+    <p>本規約は日本法に準拠し、日本法に従って解釈されます。</p>
+
+    <h2>8. 規約の変更</h2>
+    <p>利用規約を変更する場合は、このページを更新します。アプリの継続利用をもって変更後の規約に同意したものとみなします。</p>
+
+    <h2>9. お問い合わせ</h2>
+    <p>メール: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+    <p><a href="support.html">サポートページ</a>もご覧ください。</p>
   </main>
+
+  <footer>© 2026 CHEN YANGLI. All rights reserved.</footer>
 </body>
 </html>
