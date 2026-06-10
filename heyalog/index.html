@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヘヤログ — 入居時の30分が、退去時のあなたを守る</title>
+<meta name="description" content="ヘヤログは賃貸の入居時・退去時の部屋の状態を写真で記録するアプリ。国交省ガイドライン準拠のチェックリストに沿って撮影し、日時・位置情報付きのPDF報告書を作成。完全オフライン・データ収集なし・買い切り。">
+<meta name="keywords" content="ヘヤログ,入居時 チェックリスト,退去 立会い,原状回復 写真,敷金 トラブル,入居時 記録,賃貸,iOS">
+<meta name="theme-color" content="#2B3A67">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:title" content="ヘヤログ — 入居時の30分が、退去時のあなたを守る">
+<meta property="og:description" content="国交省ガイドライン準拠の入退去記録アプリ。写真・チェックリスト・PDF報告書。完全オフライン・買い切り¥600。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freetokyo.github.io/web/heyalog/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:site_name" content="ヘヤログ">
+<link rel="canonical" href="https://freetokyo.github.io/web/heyalog/">
+<style>
+:root{
+  --indigo:#2B3A67;        /* ブランド主色 Deep Indigo */
+  --indigo-deep:#1E2A4A;
+  --paper:#F7F6F2;         /* Off-White */
+  --ink:#22273A;
+  --muted:#6B7186;
+  --amber:#E8A33D;         /* 注意・チェック印のアクセント */
+  --green:#3E8E63;
+  --line:#E3E1D9;
+  --card:#FFFFFF;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+/* ===== Nav ===== */
+nav{position:sticky;top:0;background:rgba(247,246,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-weight:700;color:var(--indigo);font-size:1.05rem;letter-spacing:.02em}
+.nav-links{display:flex;gap:22px;font-size:.88rem;color:var(--muted)}
+.nav-links a:hover{color:var(--indigo)}
+
+/* ===== Hero ===== */
+header{padding:72px 0 56px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.badge{display:inline-block;font-size:.78rem;font-weight:600;color:var(--indigo);background:#E7EAF4;border:1px solid #D4D9EA;border-radius:999px;padding:4px 14px;margin-bottom:18px}
+h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.35;font-weight:800;letter-spacing:.01em;color:var(--indigo-deep)}
+h1 .keep{white-space:nowrap}
+.lead{margin:18px 0 28px;color:var(--muted);font-size:1.02rem;max-width:34em}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:13px 22px;font-weight:700;font-size:.95rem;transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--indigo);color:#fff;box-shadow:0 4px 14px rgba(43,58,103,.25)}
+.btn-primary:hover{box-shadow:0 6px 20px rgba(43,58,103,.35)}
+.btn-ghost{border:1.5px solid var(--line);background:var(--card);color:var(--indigo)}
+.coming{font-size:.8rem;color:var(--muted)}
+
+/* 署名要素：入居時/退去時の比較フレーム */
+.compare{position:relative;height:340px}
+.shot{position:absolute;width:230px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 10px 14px;box-shadow:0 10px 30px rgba(34,39,58,.12)}
+.shot .ph{height:140px;border-radius:6px;background:
+  linear-gradient(135deg,#DDE2EE 0 60%,#CBD3E6 60% 100%)}
+.shot.out .ph{background:linear-gradient(135deg,#E9E4D8 0 60%,#DCD4C2 60% 100%)}
+.shot .tag{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;font-size:.74rem;color:var(--muted)}
+.shot .tag b{color:var(--indigo);font-size:.85rem}
+.shot.in{top:8px;left:0;transform:rotate(-4deg)}
+.shot.out{top:96px;right:0;transform:rotate(3deg)}
+.stamp{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%) rotate(-8deg);border:3px solid var(--amber);color:var(--amber);font-weight:800;font-size:.95rem;letter-spacing:.18em;padding:6px 14px;border-radius:8px;background:rgba(247,246,242,.85)}
+
+/* ===== Sections ===== */
+section{padding:64px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:.8rem;font-weight:700;color:var(--amber);letter-spacing:.14em;margin-bottom:8px}
+h2{font-size:clamp(1.4rem,2.8vw,1.9rem);color:var(--indigo-deep);margin-bottom:10px}
+.sub{color:var(--muted);max-width:38em;margin-bottom:36px}
+
+/* 根拠ストリップ */
+.evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ev-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.ev-card .num{font-size:1.5rem;font-weight:800;color:var(--indigo)}
+.ev-card p{font-size:.86rem;color:var(--muted);margin-top:6px}
+.note{font-size:.76rem;color:var(--muted);margin-top:14px}
+
+/* 機能グリッド */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.f-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.f-card .ico{font-size:1.6rem}
+.f-card h3{font-size:1.02rem;margin:10px 0 6px;color:var(--indigo-deep)}
+.f-card p{font-size:.88rem;color:var(--muted)}
+
+/* 使い方 */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;position:relative}
+.step::before{counter-increment:step;content:counter(step);position:absolute;top:-14px;left:20px;width:28px;height:28px;border-radius:50%;background:var(--indigo);color:#fff;font-weight:700;font-size:.9rem;display:flex;align-items:center;justify-content:center}
+.step h3{font-size:1rem;margin:8px 0 6px;color:var(--indigo-deep)}
+.step p{font-size:.88rem;color:var(--muted)}
+
+/* 料金 */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px;margin:0 auto}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;position:relative}
+.plan.reco{border:2px solid var(--indigo)}
+.plan .flag{position:absolute;top:-13px;left:24px;background:var(--amber);color:#fff;font-size:.74rem;font-weight:700;border-radius:999px;padding:3px 12px}
+.plan h3{font-size:1.05rem;color:var(--indigo-deep)}
+.price{font-size:2rem;font-weight:800;color:var(--indigo);margin:8px 0 2px}
+.price small{font-size:.85rem;font-weight:600;color:var(--muted)}
+.plan ul{list-style:none;margin:18px 0 22px}
+.plan li{font-size:.88rem;padding:7px 0;border-bottom:1px dashed var(--line)}
+.plan li.ok::before{content:"✓ ";color:var(--green);font-weight:700}
+.plan li.no{color:#B9BCC9}
+.plan li.no::before{content:"— "}
+.plan .btn{width:100%;justify-content:center}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+summary{font-weight:700;font-size:.95rem;cursor:pointer;color:var(--indigo-deep)}
+details p{margin-top:10px;font-size:.88rem;color:var(--muted)}
+
+/* 免責 */
+.disclaimer{background:#F0EDE3;border:1px solid #E0DAC4;border-radius:12px;padding:18px 22px;font-size:.82rem;color:#7A7460;margin-top:36px}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:44px 0 56px;color:var(--muted);font-size:.85rem}
+.foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot-links{display:flex;gap:18px}
+.foot-links a:hover{color:var(--indigo)}
+.back{display:inline-block;margin-bottom:18px;font-weight:600;color:var(--indigo)}
+
+@media (max-width:760px){
+  .hero-grid{grid-template-columns:1fr}
+  .compare{height:300px;max-width:420px;margin:0 auto}
+  .evidence,.features,.steps,.plans{grid-template-columns:1fr}
+  header{padding:48px 0 40px}
+  section{padding:48px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="./">🔍 ヘヤログ</a>
+    <div class="nav-links">
+      <a href="#features">機能</a>
+      <a href="#pricing">料金</a>
+      <a href="#faq">FAQ</a>
+      <a href="./support.html">サポート</a>
+      <a href="./privacy.html">プライバシー</a>
+      <a href="./en/">English</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge">賃貸入居者向けアプリ</span>
+      <h1>入居時の30分が、<br><span class="keep">退去時のあなたを守る。</span></h1>
+      <p class="lead">部屋のキズ・汚れを、国土交通省ガイドライン準拠のチェックリストに沿って写真で記録。日時・位置情報付きのPDF報告書にまとめて、原状回復トラブルに「記録」で備えます。</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#">🍎 App Store でダウンロード</a>
+        <a class="btn btn-ghost" href="#features">詳しく見る</a>
+      </div>
+      <p class="coming" style="margin-top:10px">※ 2026年夏 公開予定</p>
+    </div>
+    <div class="compare" aria-hidden="true">
+      <div class="shot in">
+        <div class="ph"></div>
+        <div class="tag"><b>入居時</b><span>2026.04.01 14:02</span></div>
+      </div>
+      <div class="shot out">
+        <div class="ph"></div>
+        <div class="tag"><b>退去時</b><span>2028.03.28 10:45</span></div>
+      </div>
+      <div class="stamp">記録済</div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">WHY</p>
+    <h2>退去時のトラブル、争点はいつも「証拠の有無」</h2>
+    <p class="sub">国民生活センターは入居時に写真とメモで記録を残すことを繰り返し推奨しています。ヘヤログは、その「正しい手順」をアプリとして実装したものです。</p>
+    <div class="evidence">
+      <div class="ev-card"><div class="num">数十万円</div><p>原状回復費用をめぐる高額請求の相談事例が、消費生活センターに継続的に寄せられています。</p></div>
+      <div class="ev-card"><div class="num">入居後 2週間</div><p>キズや汚れの記録に最適なゴールデンタイム。後からでは「いつ付いたか」を示せません。</p></div>
+      <div class="ev-card"><div class="num">国交省リスト準拠</div><p>「入退去時の物件状況及び原状回復確認リスト（例）」の区分に沿って、撮るべき場所を案内します。</p></div>
+    </div>
+    <p class="note">出典：国民生活センター 公表資料／国土交通省「原状回復をめぐるトラブルとガイドライン」</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <p class="eyebrow">FEATURES</p>
+    <h2>記録から報告書まで、これひとつで</h2>
+    <p class="sub">玄関から浴室まで、部屋ごとに撮るべきポイントを表示。撮り忘れは進捗率でひと目で分かります。</p>
+    <div class="features">
+      <div class="f-card"><div class="ico">📷</div><h3>ガイド付き撮影</h3><p>洋室なら床・壁4面・天井・建具・窓。場所ごとのチェックリストに沿って、全体写真と接写のペアで記録します。</p></div>
+      <div class="f-card"><div class="ico">🕐</div><h3>改ざんできない日時記録</h3><p>撮影日時は自動記録され、編集できません。位置情報も任意で付与でき、記録の信頼性を支えます。</p></div>
+      <div class="f-card"><div class="ico">📄</div><h3>A4 PDF報告書</h3><p>チェックリスト・写真台帳・貸主借主の確認欄をひとつのPDFに。メール添付や印刷で管理会社と共有できます。</p></div>
+      <div class="f-card"><div class="ico">🔁</div><h3>退去時の比較レポート</h3><p>入居時の写真を半透明で重ねて同じアングルで再撮影。入居時と退去時を並べた比較PDFを立会いに持参できます。</p></div>
+      <div class="f-card"><div class="ico">📡</div><h3>完全オフライン・収集なし</h3><p>外部サーバーへの送信は一切ありません。データはあなたの端末と、あなた自身のiCloudにだけ保存されます。</p></div>
+      <div class="f-card"><div class="ico">☁️</div><h3>iCloudバックアップ</h3><p>退去までの数年間、機種変更してもデータは引き継がれます。zip形式での一括書き出しにも対応。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">HOW IT WORKS</p>
+    <h2>3ステップで「証拠」が残る</h2>
+    <p class="sub">入居日の前後、30分だけ時間をください。</p>
+    <div class="steps">
+      <div class="step"><h3>物件を登録</h3><p>物件名・住所・入居日を入力。間取りに合わせて部屋リストが用意されます。</p></div>
+      <div class="step"><h3>リストに沿って撮影</h3><p>気になるキズ・汚れにはコメントとタグを追加。進捗率100%を目指すだけ。</p></div>
+      <div class="step"><h3>PDFを出力・保管</h3><p>日時・位置情報付きの報告書を出力。管理会社へ送るか、退去日まで保管します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">PRICING</p>
+    <h2>記録は無料。守りたいときだけ、買い切り。</h2>
+    <p class="sub">サブスクリプションはありません。広告もありません。</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>無料</h3>
+        <div class="price">¥0 <small>ずっと無料</small></div>
+        <ul>
+          <li class="ok">物件数 無制限</li>
+          <li class="ok">写真・記録 無制限</li>
+          <li class="ok">入居時PDF報告書（透かしなし）</li>
+          <li class="ok">入居中の不具合記録</li>
+          <li class="ok">iCloudバックアップ</li>
+          <li class="no">退去時 比較レポート</li>
+          <li class="no">データ一括書き出し（zip）</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">無料で始める</a>
+      </div>
+      <div class="plan reco">
+        <span class="flag">退去が決まったら</span>
+        <h3>プレミアム</h3>
+        <div class="price">¥600 <small>買い切り・追加課金なし</small></div>
+        <ul>
+          <li class="ok">無料版のすべて</li>
+          <li class="ok">退去時 比較撮影モード</li>
+          <li class="ok">入居時×退去時 比較レポートPDF</li>
+          <li class="ok">経過年数の自動計算</li>
+          <li class="ok">データ一括書き出し（zip）</li>
+          <li class="ok">今後の追加機能もそのまま利用可</li>
+        </ul>
+        <a class="btn btn-primary" href="#">プレミアムにアップグレード</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2>よくある質問</h2>
+    <div style="max-width:760px;margin-top:28px">
+      <details>
+        <summary>このアプリの記録に法的な効力はありますか？</summary>
+        <p>ヘヤログは記録を整理して残すためのツールであり、法的な証明力を保証するものではありません。一方で、日時・位置情報付きの写真記録は、国民生活センターが推奨する自衛策そのものです。トラブルになった場合は、お住まいの消費生活センター（188）等にご相談ください。</p>
+      </details>
+      <details>
+        <summary>すでに入居して時間が経っています。使えますか？</summary>
+        <p>はい。今からでも現状の記録を残すことには意味があります。また退去が決まった方向けに、退去時の状態だけを記録してレポート化するモードも用意しています。</p>
+      </details>
+      <details>
+        <summary>データはどこに保存されますか？</summary>
+        <p>すべてのデータはお使いのiPhoneと、ご自身のiCloudにのみ保存されます。開発者を含む外部のサーバーに写真や個人情報が送信されることは一切ありません。アナリティクスSDKも使用していません。</p>
+      </details>
+      <details>
+        <summary>機種変更してもデータは残りますか？</summary>
+        <p>はい。iCloudバックアップが有効であれば、新しいiPhoneでサインインするだけで記録が引き継がれます。退去までの数年間、安心して保管できます。</p>
+      </details>
+      <details>
+        <summary>英語には対応していますか？</summary>
+        <p>はい。日本語と英語に対応しており、PDF報告書の出力言語はアプリの表示言語と別に選べます。外国人の入居者の方が日本の管理会社に日本語の報告書を提出することも、その逆も可能です。</p>
+      </details>
+    </div>
+    <div class="disclaimer">
+      ヘヤログは記録・整理のためのツールであり、法律相談、請求金額の妥当性の判断、貸主・管理会社との交渉の代行その他の法律事務を行うものではありません。個別のトラブルについては、消費生活センターや弁護士等の専門家にご相談ください。
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="back" href="../">← freetokyo apps　他のアプリも見る</a>
+    <div class="foot-grid">
+      <div>
+        <strong style="color:var(--indigo)">🔍 ヘヤログ</strong><br>
+        賃貸の入退去を、記録で守るアプリ
+      </div>
+      <div class="foot-links">
+        <a href="./privacy.html">プライバシーポリシー</a>
+        <a href="./terms.html">利用規約</a>
+        <a href="./support.html">サポート</a>
+      </div>
+    </div>
+    <p style="margin-top:24px">© 2026 freetokyo apps. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
