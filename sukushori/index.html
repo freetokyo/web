@@ -5,6 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>スクショリ — 端末内でスクショを自動で仕分け・整理</title>
   <meta name="description" content="撮ったまま埋もれるスクリーンショットを、端末内のAIが「行きたい店」「予定」「欲しいモノ」などに仕分け。完全オフライン・データ収集なし・買い切り。" />
+  <meta name="keywords" content="スクショリ,スクリーンショット 整理,スクショ 仕分け,Vision OCR,FoundationModels,Apple Intelligence,オフライン,買い切り,iOS" />
+  <meta name="theme-color" content="#5c9e96" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://freetokyo.github.io/web/sukushori/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="スクショリ" />
+  <meta property="og:title" content="スクショリ — 端末内でスクショを自動で仕分け・整理" />
+  <meta property="og:description" content="撮ったまま埋もれるスクショを、端末内AIが「行きたい店」「予定」「欲しいモノ」などに自動仕分け。完全オフライン・データ収集なし・買い切り。" />
+  <meta property="og:url" content="https://freetokyo.github.io/web/sukushori/" />
+  <meta property="og:image" content="https://freetokyo.github.io/web/sukushori/ogp.png" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="スクショリ — 端末内でスクショを自動で仕分け・整理" />
+  <meta name="twitter:description" content="端末内AIがスクショを「行きたい店」「予定」「欲しいモノ」に自動仕分け。完全オフライン・買い切り。" />
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/sukushori/ogp.png" />
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "スクショリ（Sukushori）",
+    "operatingSystem": "iOS",
+    "applicationCategory": "UtilitiesApplication",
+    "url": "https://freetokyo.github.io/web/sukushori/",
+    "downloadUrl": "https://apps.apple.com/jp/app/id6778336001",
+    "description": "撮ったまま埋もれるスクリーンショットを、端末内のAIが「行きたい店」「予定」「欲しいモノ」などに自動仕分けする iOS アプリ。Vision OCR + FoundationModels、完全オフライン・データ収集なし・買い切り・広告なし。",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"},
+    "author": {"@type": "Organization", "name": "freetokyo apps", "url": "https://freetokyo.github.io/web/"}
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "スクショリは何をするアプリですか？", "acceptedAnswer": {"@type": "Answer", "text": "写真ライブラリのスクリーンショットを読み込み、内容に合わせて「行きたい店・場所／欲しいモノ／予定・日付／金額・レシート／レシピ・手順／メモ・アイデア」などへ端末内のAIが自動で仕分けします。要点抽出やワンタップ行動、整理後の原本一括削除にも対応します。"}},
+      {"@type": "Question", "name": "データは外部に送信されますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。通信を一切行わず（ネットワーク権限を要求しません）、画像・抽出結果はすべて端末内に保存されます。外部送信・収集はありません。"}},
+      {"@type": "Question", "name": "どの端末で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "AI自動分類は Apple Intelligence 対応端末（iOS 26 以降）で利用できます。非対応端末でも、文字認識（OCR）と手動整理でご利用いただけます。"}}
+    ]
+  }
+  </script>
   <style>
     :root { --bg:#f3ece2; --bg2:#e6d9c8; --ink:#2c2a26; --sub:#6b6459; --oak:#c19a6b; --teal:#5c9e96; --card:#fff; }
     * { box-sizing:border-box; }
@@ -21,6 +69,10 @@
     .pill { display:inline-block; background:rgba(92,158,150,.14); color:#3f726b;
             border-radius:999px; padding:4px 12px; font-size:.85rem; margin:2px 4px 2px 0; }
     .note { color:var(--sub); font-size:.9rem; }
+    .cta { text-align:center; margin:8px 0 4px; }
+    .appstore { display:inline-block; background:var(--ink); color:#fff; text-decoration:none;
+                border-radius:999px; padding:12px 26px; font-weight:700; font-size:.98rem;
+                box-shadow:0 6px 20px rgba(60,45,30,.18); }
     footer { text-align:center; margin-top:40px; }
     a { color:#3f726b; }
   </style>
@@ -35,6 +87,9 @@
         <span class="pill">データ収集なし</span>
         <span class="pill">買い切り</span>
         <span class="pill">広告なし</span>
+      </p>
+      <p class="cta">
+        <a class="appstore" href="https://apps.apple.com/jp/app/id6778336001" target="_blank" rel="noopener">🍎 App Store でダウンロード</a>
       </p>
     </header>
 

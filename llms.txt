@@ -1,12 +1,12 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 14 本の iOS / watchOS アプリを公開中・準備中。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 15 本の iOS / watchOS アプリを公開中。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 14 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 15 アプリを一覧）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
 リポジトリ: https://github.com/freetokyo/web
-最終更新: 2026-06-09
+最終更新: 2026-06-12
 
 ## Apps
 
@@ -23,8 +23,9 @@
 - [PrintSummary / プリサマ](https://freetokyo.github.io/web/printmemo/): 学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理する iOS アプリ。家族カレンダー連携対応。App Store: https://apps.apple.com/app/id6761879860
 - [Miawell](https://freetokyo.github.io/web/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。App Store: https://apps.apple.com/jp/app/miawell/id6774019571
 - [世帯手取ナビ / HomeNet Navi](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。App Store: https://apps.apple.com/jp/app/id6772911843
-- [Mochiru](https://freetokyo.github.io/web/mochiru/) ★準備中: 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。
-- [スクショリ / Sukushori](https://freetokyo.github.io/web/sukushori/) ★準備中: 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、完全オフライン・買い切り・広告なし。
+- [Mochiru](https://freetokyo.github.io/web/mochiru/): 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。App Store: https://apps.apple.com/jp/app/id6778235888
+- [スクショリ / Sukushori](https://freetokyo.github.io/web/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、完全オフライン・買い切り・広告なし。App Store: https://apps.apple.com/jp/app/id6778336001
+- [ヘヤログ / Heyalog](https://freetokyo.github.io/web/heyalog/): 賃貸住宅の入居・退去時の部屋状態を写真で記録し、国土交通省「原状回復をめぐるトラブルとガイドライン」準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で敷金トラブルを防ぐ。完全オフライン・買い切り 600 円・広告なし。App Store: https://apps.apple.com/jp/app/id6778713193
 
 ### Work（仕事・現場）
 
@@ -56,4 +57,4 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
 - Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
 - 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
-- ルート `index.html` には CollectionPage + ItemList（全 11 アプリ）の JSON-LD あり。
+- ルート `index.html` には CollectionPage + ItemList（全 15 アプリ）の JSON-LD あり。
