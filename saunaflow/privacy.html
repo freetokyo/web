@@ -250,10 +250,10 @@
   <nav>
     <div class="nav-inner">
       <div class="nav-left">
-        <a href="./">← SaunaFlow</a>
+        <a href="saunaflow.html">← SaunaFlow</a>
         <span>Privacy Policy</span>
-        <a href="support.html">Support</a>
-        <a href="terms.html">Terms</a>
+        <a href="saunaflow-support.html">Support</a>
+        <a href="saunaflow-terms.html">Terms</a>
       </div>
       <div class="lang-switch">
         <button class="lang-btn active" type="button" data-lang="ja">日本語</button>
@@ -272,6 +272,7 @@
         <div class="toc">
           <a href="#ja-1">収集する情報</a>
           <a href="#ja-2">保存場所</a>
+          <a href="#ja-health">ヘルスケア</a>
           <a href="#ja-3">課金</a>
           <a href="#ja-4">第三者SDK</a>
           <a href="#ja-5">お問い合わせ</a>
@@ -289,6 +290,7 @@
             <tr><td>プリセット</td><td>フェーズ構成、時間、セット数、名称</td><td><span class="badge local">デバイス内</span></td></tr>
             <tr><td>セッション履歴</td><td>日時、完了数、スコア、メモ</td><td><span class="badge local">デバイス内</span></td></tr>
             <tr><td>購入状態</td><td>プレミアム解放状態</td><td><span class="badge local">デバイス内</span></td></tr>
+            <tr><td>心拍数（HealthKit）</td><td>Apple Watch で計測したセッション中の心拍。曲線表示・スコア評価にのみ使用</td><td><span class="badge local">デバイス内</span></td></tr>
             <tr><td>外部送信</td><td>本ページ記載の範囲では個人情報送信を前提としません</td><td><span class="badge none">なし</span></td></tr>
           </tbody>
         </table>
@@ -297,6 +299,17 @@
       <section class="section" id="ja-2">
         <h2>2. データの保存場所</h2>
         <p>公開中のアプリ説明では、プリセット、履歴、メモなどのデータはデバイス内に保存される前提です。プライバシー上の利点は、外部サーバー依存を減らせる点にあります。一方で、別端末への同期やWeb管理機能は前提にしていません。</p>
+      </section>
+
+      <section class="section" id="ja-health">
+        <h2>ヘルスケアデータ（HealthKit）</h2>
+        <p>v1.1 以降、Apple Watch を使用するセッション中に <strong>HealthKit から心拍数を読み取り</strong>ます。心拍データは「ととのい」曲線の可視化と、ととのい度スコアの心拍回復評価にのみ使用します。</p>
+        <ul>
+          <li>心拍データはデバイス内（および iCloud を有効にしている場合はユーザー自身の非公開 iCloud）にのみ保存されます。</li>
+          <li>開発者や第三者へ送信されることは一切ありません。</li>
+          <li>広告・解析の目的には一切使用しません。</li>
+          <li>HealthKit へのアクセスは初回利用時に許可を求め、いつでも「設定 &gt; プライバシーとセキュリティ &gt; ヘルスケア」から取り消せます。</li>
+        </ul>
       </section>
 
       <section class="section" id="ja-3">
@@ -318,9 +331,9 @@
 
     <footer>
       <div class="footer-links">
-        <a href="./">SaunaFlow</a>
-        <a href="support.html">サポート</a>
-        <a href="terms.html">利用規約</a>
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-support.html">サポート</a>
+        <a href="saunaflow-terms.html">利用規約</a>
       </div>
       <p>© 2026 SaunaFlow</p>
     </footer>
@@ -335,6 +348,7 @@
         <div class="toc">
           <a href="#en-1">Information</a>
           <a href="#en-2">Storage</a>
+          <a href="#en-health">Health data</a>
           <a href="#en-3">Purchases</a>
           <a href="#en-4">Third-party SDKs</a>
           <a href="#en-5">Contact</a>
@@ -351,6 +365,7 @@
             <tr><td>Presets</td><td>Phase structure, duration, set count, name</td><td><span class="badge local">On-device</span></td></tr>
             <tr><td>Session history</td><td>Date, completion, score, notes</td><td><span class="badge local">On-device</span></td></tr>
             <tr><td>Purchase status</td><td>Premium unlock state</td><td><span class="badge local">On-device</span></td></tr>
+            <tr><td>Heart rate (HealthKit)</td><td>Recorded on Apple Watch during a session; used only to display your curve and score</td><td><span class="badge local">On-device</span></td></tr>
             <tr><td>External transmission</td><td>The public site does not describe personal data transmission</td><td><span class="badge none">None stated</span></td></tr>
           </tbody>
         </table>
@@ -359,6 +374,17 @@
       <section class="section" id="en-2">
         <h2>2. Data storage</h2>
         <p>The public product description presents presets, history, and notes as on-device data. The practical privacy advantage is reduced dependence on external servers. The tradeoff is that cross-device web sync is not part of the public positioning.</p>
+      </section>
+
+      <section class="section" id="en-health">
+        <h2>Health data (HealthKit)</h2>
+        <p>From v1.1, SaunaFlow <strong>reads your heart rate from HealthKit</strong> during a session that uses Apple Watch. This heart-rate data is used only to visualize your “totonoi” curve and to factor heart-rate recovery into the Totonoi score.</p>
+        <ul>
+          <li>Heart-rate data is stored only on-device (and in your own private iCloud via CloudKit if you enable it).</li>
+          <li>It is never transmitted to the developer or any third party.</li>
+          <li>It is never used for advertising or analytics.</li>
+          <li>HealthKit access is requested on first use and can be revoked anytime in Settings &gt; Privacy &amp; Security &gt; Health.</li>
+        </ul>
       </section>
 
       <section class="section" id="en-3">
@@ -380,9 +406,9 @@
 
     <footer>
       <div class="footer-links">
-        <a href="./">SaunaFlow</a>
-        <a href="support.html">Support</a>
-        <a href="terms.html">Terms of Use</a>
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-support.html">Support</a>
+        <a href="saunaflow-terms.html">Terms of Use</a>
       </div>
       <p>© 2026 SaunaFlow</p>
     </footer>
@@ -397,6 +423,7 @@
         <div class="toc">
           <a href="#de-1">Informationen</a>
           <a href="#de-2">Speicherung</a>
+          <a href="#de-health">Gesundheitsdaten</a>
           <a href="#de-3">Käufe</a>
           <a href="#de-4">SDKs</a>
           <a href="#de-5">Kontakt</a>
@@ -413,6 +440,7 @@
             <tr><td>Presets</td><td>Phasen, Dauer, Anzahl der Sets, Name</td><td><span class="badge local">Auf dem Gerät</span></td></tr>
             <tr><td>Verlauf</td><td>Datum, Abschluss, Score, Notizen</td><td><span class="badge local">Auf dem Gerät</span></td></tr>
             <tr><td>Kaufstatus</td><td>Freischaltung von Premium</td><td><span class="badge local">Auf dem Gerät</span></td></tr>
+            <tr><td>Herzfrequenz (HealthKit)</td><td>Während der Sitzung auf der Apple Watch erfasst; nur zur Anzeige der Kurve und des Scores</td><td><span class="badge local">Auf dem Gerät</span></td></tr>
             <tr><td>Externe Übertragung</td><td>Die öffentliche Seite beschreibt keine Übertragung personenbezogener Daten</td><td><span class="badge none">Nicht angegeben</span></td></tr>
           </tbody>
         </table>
@@ -421,6 +449,17 @@
       <section class="section" id="de-2">
         <h2>2. Datenspeicherung</h2>
         <p>Die öffentliche Produktbeschreibung stellt Presets, Verlauf und Notizen als lokale Gerätedaten dar. Der praktische Vorteil ist geringere Abhängigkeit von externen Servern. Der Nachteil ist, dass eine webbasierte Synchronisierung nicht Teil der öffentlichen Positionierung ist.</p>
+      </section>
+
+      <section class="section" id="de-health">
+        <h2>Gesundheitsdaten (HealthKit)</h2>
+        <p>Ab v1.1 <strong>liest SaunaFlow während einer Sitzung mit Apple Watch deine Herzfrequenz aus HealthKit</strong>. Diese Herzfrequenzdaten werden ausschließlich verwendet, um deine „Totonoi“-Kurve anzuzeigen und die Herzfrequenz-Erholung in den Totonoi-Wert einzubeziehen.</p>
+        <ul>
+          <li>Herzfrequenzdaten werden nur auf dem Gerät gespeichert (und in deiner eigenen privaten iCloud via CloudKit, falls aktiviert).</li>
+          <li>Sie werden niemals an den Entwickler oder Dritte übertragen.</li>
+          <li>Sie werden niemals für Werbung oder Analyse verwendet.</li>
+          <li>Der HealthKit-Zugriff wird bei der ersten Nutzung angefragt und kann jederzeit unter Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Health widerrufen werden.</li>
+        </ul>
       </section>
 
       <section class="section" id="de-3">
@@ -442,9 +481,9 @@
 
     <footer>
       <div class="footer-links">
-        <a href="./">SaunaFlow</a>
-        <a href="support.html">Hilfe</a>
-        <a href="terms.html">Nutzungsbedingungen</a>
+        <a href="saunaflow.html">SaunaFlow</a>
+        <a href="saunaflow-support.html">Hilfe</a>
+        <a href="saunaflow-terms.html">Nutzungsbedingungen</a>
       </div>
       <p>© 2026 SaunaFlow</p>
     </footer>
