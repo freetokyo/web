@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>Support &amp; FAQ | RecoverySync — Recovery Tracker</title>
   
   <meta name="description" content="Support and FAQ for RecoverySync, the Apple Watch recovery tracker. Find setup help, answers to common questions, troubleshooting tips, and how to reach the developer.">
+  <meta name="keywords" content="RecoverySync support,RecoverySync FAQ,Apple Watch sleep &amp; HRV recovery tracker help,troubleshooting,contact">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://freetokyo.github.io/web/recoverysync/support.html">
   <meta property="og:type" content="article">
@@ -19,7 +22,80 @@
   <meta name="twitter:title" content="Support &amp; FAQ | RecoverySync — Recovery Tracker">
   <meta name="twitter:description" content="Support and FAQ for RecoverySync, the Apple Watch recovery tracker. Find setup help, answers to common questions, troubleshooting tips, and how to reach the developer.">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/recoverysync/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6770408873, app-argument=https://freetokyo.github.io/web/recoverysync/support.html">
 <link rel="stylesheet" href="shared/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the recovery score work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your recovery score is calculated from three metrics read from Apple Watch: Heart Rate Variability (HRV, RMSSD) accounts for 50%, Resting Heart Rate accounts for 30%, and Sleep Duration accounts for 20%. Each metric is compared to your personal 28-day baseline (established after a 14-day calibration period) to produce a score from 0–100. HIGH is 76–100, MODERATE is 51–75, and LOW is 0–50."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my score showing \"—\" (dash)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The app needs at least 7 nights of Apple Watch sleep data to begin calibration. During the initial calibration period (up to 14 days), the score will display \"—\". Make sure to wear your Apple Watch while sleeping every night to speed up calibration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does RecoverySync work without an Apple Watch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. RecoverySync requires Apple Watch (Series 4 or later) to record the HRV, resting heart rate, and sleep data used for score calculation. The iPhone app displays and analyzes the data, but the Apple Watch is the required data source."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does the app need access to my Health data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RecoverySync reads HRV (RMSSD), resting heart rate, and sleep data from Apple HealthKit to calculate your recovery score. This is the only purpose for which health data is used. The data is processed entirely on-device and never leaves your iPhone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I restore my purchase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open RecoverySync and go to Settings → Restore Purchase. Make sure you are signed in to the same Apple ID used for the original purchase. If the issue persists, contact Apple Support for purchase-related assistance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the app sync data to iCloud or any server?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. RecoverySync stores all data locally on your device only. There is no cloud sync, no account, and no server. Your data never leaves your device (unless included in your iCloud device backup, which is controlled by your iOS settings)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My Apple Watch complication is not showing — how do I fix it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open the Watch app on your iPhone → My Watch tab → scroll to RecoverySync → tap it → make sure the complication is added to your active watch face. You can also long-press your watch face → Edit → select a complication slot → choose RecoverySync."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What Apple Watch models are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RecoverySync requires Apple Watch Series 4 or later running watchOS 10.0 or later, paired with an iPhone running iOS 17.0 or later."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body data-page="support">
 

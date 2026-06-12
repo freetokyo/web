@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>Toscore — ミニバス対応 デジタルスコアシート＋検証</title>
 
   <meta name="description" content="記録ミスを減らす、TO（テーブルオフィシャルズ）のためのデジタルスコアシート。能動的ルール検証とミニバス出場時間検証を搭載。完全オフライン・データ収集なし。">
+  <meta name="keywords" content="バスケ,ミニバス,スコアシート,スコアラー,テーブルオフィシャル,TO,得点記録,ルール検証,出場時間,審判,試合記録,オフライン,iPhone">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://freetokyo.github.io/web/toscore/">
   <meta property="og:type" content="website">
@@ -27,8 +30,20 @@
     "name": "Toscore",
     "operatingSystem": "iOS",
     "applicationCategory": "SportsApplication",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
-    "description": "ミニバス対応 デジタルスコアシート＋検証。能動的ルール検証と出場時間検証を搭載したTO支援アプリ。"
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "description": "ミニバス対応 デジタルスコアシート＋検証。能動的ルール検証と出場時間検証を搭載したTO支援アプリ。",
+    "featureList": [
+      "デジタルスコアシート記録",
+      "能動的ルール検証",
+      "ミニバス出場時間検証",
+      "プリセット（U15/ミニバス等）",
+      "元に戻す・訂正履歴",
+      "完全オフライン動作"
+    ]
   }
   </script>
 <style>
@@ -282,6 +297,18 @@
 
   @media (max-width: 600px) { nav { display: none; } }
 </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://freetokyo.github.io/web/toscore/",
+    "name": "Toscore",
+    "inLanguage": [
+      "ja",
+      "en"
+    ]
+  }
+  </script>
 </head>
 <body>
 

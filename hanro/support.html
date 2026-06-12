@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>サポート・よくある質問｜Hanro（配達ドライバー収支管理アプリ）</title>
 
   <meta name="description" content="Hanro（配達ドライバーの収支管理アプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
+  <meta name="keywords" content="Hanro サポート,Hanro FAQ,配達ドライバーの収支管理アプリ 使い方,ヘルプ,お問い合わせ">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://freetokyo.github.io/web/hanro/support.html">
   <meta property="og:type" content="article">
@@ -19,6 +22,7 @@
   <meta name="twitter:title" content="サポート・よくある質問｜Hanro（配達ドライバー収支管理アプリ）">
   <meta name="twitter:description" content="Hanro（配達ドライバーの収支管理アプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/hanro/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6771629040, app-argument=https://freetokyo.github.io/web/hanro/support.html">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; max-width: 760px; margin: 0 auto; padding: 48px 24px; color: #1F2937; line-height: 1.8; }
   h1 { border-bottom: 2px solid #F59E0B; padding-bottom: 8px; }
@@ -32,6 +36,94 @@
   .contact a { color: #F59E0B; font-weight: bold; }
   footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #E5E7EB; color: #6B7280; font-size: 14px; }
 </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "オフラインで使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。本アプリはすべての主要機能をオフラインで利用できます。データはすべて端末内に保存され、当方のサーバーには送信されません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "複数の iPhone・iPad でデータを同期できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。設定 → iCloud 同期を有効にすると、同じ Apple ID でサインインしている端末間で自動同期されます。同期データは Apple の CloudKit Private Database 上でのみ管理されます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "自動マイレージ記録の精度は？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Core Motion（加速度センサー）+ Core Location（GPS）+ Bluetooth（車載機器との接続）を組み合わせて運転を検知します。検知の正確性は端末の状態・電波状況・運転環境により異なります。手動補正も可能です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AI 稼ぎ時予測はどの端末で使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "pple Intelligence に対応した端末（iPhone 15 Pro / 16 Pro / 17 Pro 以降など）で利用可能です。非対応端末でも統計ベースのフォールバックが動作します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "確定申告データはどのソフトで読み込めますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "freee / マネーフォワード / 弥生会計 の CSV インポート形式に対応しています。出力された CSV をそれぞれの会計ソフトでインポートしてください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "サブスクリプションを解約するには？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iPhone の「設定」 → アカウント名タップ → 「サブスクリプション」から Hanro を選択 → 「サブスクリプションをキャンセル」をタップしてください。無料体験期間中の解約で課金は発生しません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "購入を別の端末に復元するには？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "同じ Apple ID でサインインした状態で、アプリ内の「設定」→「購入を復元」をタップしてください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "データのバックアップは取れますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iCloud 同期が有効な場合、データは自動的に iCloud にバックアップされます。CSV / PDF 形式での書き出しも可能です（記録 → データ出力）。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apple Watch との連携はどうすれば？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iPhone 上で Hanro アプリを起動し、Watch アプリで Hanro のインストールを承認してください。Watch から「ヘイ」と話しかけるかタップでワンタッチ記録が可能です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "法人プランや複数ドライバー管理はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "現バージョンは個人事業主向けです。法人・複数ドライバー管理機能は今後のアップデートで検討しています。ご要望はメールにてお寄せください。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

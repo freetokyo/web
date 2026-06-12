@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>サポート・よくある質問｜世帯手取ナビ（年収の壁シミュレーター）</title>
   <meta name="description" content="世帯手取ナビ（年収の壁シミュレーター）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
+  <meta name="keywords" content="世帯手取ナビ サポート,世帯手取ナビ FAQ,年収の壁シミュレーター 使い方,ヘルプ,お問い合わせ">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://freetokyo.github.io/web/homenetnavi/support.html">
   <meta property="og:type" content="article">
@@ -18,7 +21,96 @@
   <meta name="twitter:title" content="サポート・よくある質問｜世帯手取ナビ（年収の壁シミュレーター）">
   <meta name="twitter:description" content="世帯手取ナビ（年収の壁シミュレーター）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/homenetnavi/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6772911843, app-argument=https://freetokyo.github.io/web/homenetnavi/support.html">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "無料で使い始めるにはどうすればよいですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "App Storeから世帯手取ナビをダウンロードするだけで、すぐに無料でお使いいただけます。アカウント登録は不要です。 基本の手取り計算と主要 5 本の壁表示、1 シナリオ保存までは永続無料でご利用いただけます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "初期入力の最小項目は何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "世帯主の年収と配偶者の年収（給与）の 2 項目だけ入力すれば、年収の壁が反映された世帯手取りカーブが表示されます。 扶養親族や追加控除は「精密入力」で後から追加できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "2026年制度のどこまでに対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "所得税・住民税・社会保険料の主要項目について、2026年時点で公表されている制度に基づき計算しています。 具体的には、給与所得控除・基礎控除・配偶者控除・配偶者特別控除（103万・150万・201万の壁）、 健康保険・厚生年金（106万・130万の壁）、住民税の各種控除に対応しています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "「壁」とは何を指していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "本アプリでは以下 5 本の壁を扱います。 103万の壁： 所得税の発生／配偶者控除の満額適用ライン 106万の壁： 大企業パートの社会保険加入ライン 130万の壁： 扶養から外れる社会保険加入ライン 150万の壁： 配偶者特別控除の満額適用ライン 201万の壁： 配偶者特別控除の上限ライン アプリ内の各壁の詳細画面から、国税庁・年金機構の根拠ページへ直接遷移できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "住民税の自治体差分には対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "標準的な住民税率（所得割10%＋均等割）に基づく計算をデフォルトとし、プレミアムプランでは主要自治体の差分にも対応します。 厳密な税額は、お住まいの自治体の公式情報または住民税通知書をご確認ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "計算結果は確定申告にそのまま使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "本アプリは「働き方の意思決定支援」を目的としたシミュレーターです。確定申告や年末調整の正式書類としてはご利用いただけません。 重要な意思決定の前には必ず税理士・社労士・FP等の専門家にご相談ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "シナリオは何件まで保存できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "無料プランでは 1 件、プレミアムプランでは無制限に保存できます。 「現在 vs もし時短をフルタイムにしたら」など、複数の働き方を並べて手取り差分を確認できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "シナリオ比較画面では何が見られますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "各シナリオの世帯手取りに加え、所得税・住民税・社会保険料の内訳と、シナリオ間の差分が金額で表示されます。 どの「壁」を超えた／超えなかったかも色付きで明示されます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "「壁接近通知」は何を通知しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "プレミアムプランでは、年内の累計給与から「あと◯万円で壁を超える」をローカル通知で配信します。 通知はすべて端末内処理で、サーバーへの送信はありません。 通知のオン／オフは「設定」→「通知」から切り替えられます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "無料トライアルはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "プレミアム月額・年額プランには、初月 1 ヶ月の無料トライアルが付いています。トライアル期間中はいつでも解約でき、解約しても期間終了までプレミアム機能をご利用いただけます。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

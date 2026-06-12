@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>サポート・よくある質問｜Miawell（猫専用ヘルスケアアプリ）</title>
 
   <meta name="description" content="Miawell（猫専用ヘルスケアアプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
+  <meta name="keywords" content="Miawell サポート,Miawell FAQ,猫専用ヘルスケアアプリ 使い方,ヘルプ,お問い合わせ">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://freetokyo.github.io/web/miawell/support.html">
   <meta property="og:type" content="article">
@@ -19,6 +22,7 @@
   <meta name="twitter:title" content="サポート・よくある質問｜Miawell（猫専用ヘルスケアアプリ）">
   <meta name="twitter:description" content="Miawell（猫専用ヘルスケアアプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/miawell/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6774019571, app-argument=https://freetokyo.github.io/web/miawell/support.html">
 <style>
   :root {
     --primary:      #FF8B7A;
@@ -168,6 +172,70 @@
   footer p { font-size: 12px; }
   @media (max-width: 600px) { nav { display: none; } }
 </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "データはどこに保存されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "フリープランではデータはお使いのiPhone内（ローカルストレージ）に保存されます。プレミアムプランではiCloudを利用した同期が可能です。いずれの場合も、開発者がお客様のデータにアクセスすることはありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AI判定の精度はどれくらいですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oxford-IIIT Pet データセットをベースに学習したモデルを使用しています。撮影環境（明るさ・猫が画面全体に入っているか等）により精度が変わります。信頼度が60%未満の場合は「低信頼度」の注意表示が出ます。AI判定はあくまで参考情報であり、医療診断ではありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "写真が外部に送信されることはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ありません。AI体調判定はすべてお使いのデバイス上の Core ML で処理されます。写真データが外部サーバーに送信されることは一切ありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "複数の猫を管理できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "現在のバージョンでは1匹の猫の管理に対応しています。複数猫の管理機能は今後のアップデートで追加予定です。ご要望はお問い合わせよりお知らせください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "プレミアムプランはいつでも解約できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、いつでも解約できます。App Storeの「設定」→「サブスクリプション」から解約手続きを行ってください。解約後は次の更新日まで引き続きプレミアム機能をご利用いただけます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "機種変更したらデータはどうなりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "フリープランの場合、iPhoneのバックアップ（iCloudバックアップまたはMacでのバックアップ）から復元することで引き継ぎが可能です。プレミアムプランのiCloud同期をご利用の場合は、同じApple IDでサインインすれば自動的にデータが引き継がれます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "対応しているiOSのバージョンは？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iOS 17.0以降に対応しています。最新のiOSへのアップデートを推奨します。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

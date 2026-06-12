@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" content="#3E4F8F">
   <title>サポート・よくある質問｜TsukiLift（女性向けフィットネスアプリ）</title>
   <meta name="description" content="TsukiLift（生理周期と連動する女性向けフィットネスアプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
+  <meta name="keywords" content="TsukiLift サポート,TsukiLift FAQ,生理周期と連動する女性向けフィットネスアプリ 使い方,ヘルプ,お問い合わせ">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TsukiLift">
   <meta property="og:title" content="サポート・よくある質問｜TsukiLift（女性向けフィットネスアプリ）">
@@ -14,7 +17,96 @@
   <meta property="og:image" content="https://freetokyo.github.io/tsukilift/img/ogp.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="https://freetokyo.github.io/tsukilift/img/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6767084251, app-argument=https://freetokyo.github.io/web/tsukilift/support.html">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "アカウント登録は必要ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不要です。TsukiLift はアカウントなしで完全に利用できます。メールアドレスや個人情報の登録は一切求めません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "HealthKit（Apple ヘルスケア）との連携は必須ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "任意です。HealthKit 連携を拒否・スキップしても、生理記録・筋トレ・BBT・体組成・症状ログなど、本アプリのすべての機能をご利用いただけます。連携設定はいつでも「設定 → HealthKit 連携」から変更できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "データはどこに保存されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "お使いの iPhone 内のみに保存されます。外部サーバーやクラウドへの送信は一切行いません。iCloud 同期も使用していないため、機種変更時は手動でのエクスポート・復元が必要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "機種変更時にデータを引き継げますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "「設定 → データ管理 → エクスポート」から JSON ファイルを保存し、新しい端末でそのファイルをインポートすることでデータを引き継げます。この機能は無料でご利用いただけます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "生理周期の予測はどのように計算されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "過去の記録をもとに平均周期を算出し、次の生理開始日を予測します。記録が少ない場合は精度が低くなります。あくまで傾向の参考値であり、医学的な診断ではありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "排卵日の特定や避妊・妊娠の判断に使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "本アプリは排卵日の特定や、避妊・妊娠の判断を目的としたツールではありません。表示される情報は生理周期の「傾向提示」であり、医療上の判断には使用できません。これらの目的には医師・専門家にご相談ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ホルモン避妊法（ピルなど）を使用していますが、影響はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "「設定 → ホルモン避妊法を使用中」をオンにすると、周期フェーズ予測に参考値である旨の注意書きが表示されます。ホルモン避妊法の使用中は周期が変化するため、予測精度が通常より低くなる場合があります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "種目はカスタマイズできますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。内蔵の種目カタログに加え、オリジナルの種目を追加できます。トレーニングテンプレートを作成・保存しておくことで、よく使う種目セットをすばやく呼び出せます（無制限テンプレートはプレミアム機能です）。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "1RM（最大挙上重量）の推定はどう計算されますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "記録したセットのデータ（重量・回数・RPE）をもとに、一般的な推定式を用いて 1RM を計算します。あくまで参考値であり、実際の最大挙上重量とは異なる場合があります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "データをバックアップする方法は？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "「設定 → データ管理 → エクスポート」から、全データを JSON または CSV 形式でエクスポートできます。エクスポートファイルをご自身の安全な場所（iCloud Drive・Files アプリ等）に保存してください。この機能は無料です。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

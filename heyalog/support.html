@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>サポート・よくある質問｜ヘヤログ（賃貸入退去記録アプリ）</title>
   <meta name="description" content="ヘヤログ（賃貸の入退去を写真で記録するアプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
+  <meta name="keywords" content="ヘヤログ サポート,ヘヤログ FAQ,賃貸の入退去を写真で記録するアプリ 使い方,ヘルプ,お問い合わせ">
   <meta name="robots" content="index,follow">
   <meta property="og:type" content="article">
   <meta property="og:title" content="サポート・よくある質問｜ヘヤログ（賃貸入退去記録アプリ）">
@@ -15,6 +18,7 @@
   <meta name="twitter:title" content="サポート・よくある質問｜ヘヤログ（賃貸入退去記録アプリ）">
   <meta name="twitter:description" content="ヘヤログ（賃貸の入退去を写真で記録するアプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/heyalog/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6778713193, app-argument=https://freetokyo.github.io/web/heyalog/support.html">
   <style>
     :root {
       --indigo: #2B3A67;
@@ -74,6 +78,94 @@
       text-align: center; font-size: .82rem; color: var(--muted);
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "どうやって使い始めますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "「ホーム」画面右上の「＋」から物件を登録します。物件名・種別（アパート・マンションなど）を入力し、次に部屋（リビング・浴室など）を追加します。あとは各部屋のチェックポイントごとに写真を撮るだけです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "入居時と退去時の記録はどう使い分けますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "物件詳細画面のセグメントで「入居時」「退去時」を切り替えられます。入居時に撮影した写真と退去時の同アングル写真を並べて比較できるため、どの傷が入居前からあったかを一目で確認できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "チェックリストの項目はカスタマイズできますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "部屋の種別（キッチン・浴室・洋室など）に応じて国交省ガイドライン準拠のチェックポイントが自動で設定されます。現バージョンでは項目の追加・削除はできません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "写真に GPS を記録できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "「設定 → 位置情報を写真に付ける」をオンにすると、撮影時に現在地の緯度・経度が写真に記録されます。初期値はオフです。位置情報は端末内にのみ保存され、外部送信はありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "既存の写真（カメラロールの写真）を取り込めますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "チェックポイント画面のカメラボタンから「ライブラリから選択」を選ぶと、撮影済みの写真を使用できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "写真の画質や枚数に制限はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1チェックポイントにつき複数枚撮影できます（上限なし）。写真はフルサイズで保存されるため、物件数や枚数が増えると端末ストレージを消費します。不要な記録は削除することをお勧めします。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PDF はどうやって作りますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "物件詳細画面の「PDF報告書を作成」をタップします。日本語・英語を選択して生成でき、生成後は共有ボタンからメール送信・Files アプリへの保存・印刷などが行えます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PDF に出力される内容は何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "物件名・部屋名・チェックポイントごとの写真と記録日時・位置情報（記録した場合）・チェック状態が出力されます。退去時には入居時と退去時の写真を横並びで比較表示します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "無料でどこまで使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "入居時の写真記録・チェックリスト・PDF報告書の作成は完全無料です。退去時の同アングル比較撮影・比較レポートPDF・データ一括書き出し（ZIP）が買い切り購入で解放されます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "サブスクリプションはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ありません。¥600の買い切りです。一度購入すれば追加費用なく永続的に使用できます。"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav>
