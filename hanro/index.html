@@ -40,7 +40,7 @@
   "@type": "MobileApplication",
   "name": "Hanro",
   "applicationCategory": "FinanceApplication",
-  "operatingSystem": "iOS 17 or later",
+  "operatingSystem": "iOS 17.0 以降",
   "description": "Hanro はフードデリバリー・軽貨物ドライバー向けの売上＆経費管理アプリ。マルチプラットフォーム対応、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV 出力に対応し、完全オフラインで動作する。",
   "url": "https://apps.apple.com/app/id6771629040",
   "inLanguage": [
@@ -57,7 +57,8 @@
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "JPY"
+    "priceCurrency": "JPY",
+    "availability": "https://schema.org/InStock"
   },
   "author": {
     "@type": "Organization",
@@ -79,7 +80,11 @@
       "https://github.com/freetokyo"
     ]
   },
-  "dateModified": "2026-06-12"
+  "dateModified": "2026-06-12",
+  "softwareVersion": "1.0",
+  "datePublished": "2026-05-31",
+  "contentRating": "4+",
+  "fileSize": "2 MB"
 }
 </script>
 <style>
@@ -132,6 +137,33 @@
     "dateModified": "2026-06-12"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "アプリの使い方",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "売上・経費を記録する",
+        "text": "売上・経費を記録する"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "自動マイレージで距離を記録",
+        "text": "自動マイレージで距離を記録"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "確定申告用CSVを出力する",
+        "text": "確定申告用CSVを出力する"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header>
@@ -145,6 +177,31 @@
 <main>
 
 <section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
+
+<section class="ftfacts" aria-label="アプリ概要">
+  <h2>アプリ概要</h2>
+  <table>
+    <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
+    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
+    <tr><th>バージョン</th><td>1.0</td></tr>
+    <tr><th>サイズ</th><td>約 2 MB</td></tr>
+    <tr><th>カテゴリ</th><td>ビジネス</td></tr>
+    <tr><th>対象年齢</th><td>4+</td></tr>
+    <tr><th>対象ユーザー</th><td>フードデリバリー・軽貨物ドライバー</td></tr>
+    <tr><th>データの扱い</th><td>完全オフライン（任意でiCloud同期）</td></tr>
+    <tr><th>開発者</th><td>freetokyo（YANGLI CHEN）</td></tr>
+    <tr><th>最終更新</th><td>2026-05-31</td></tr>
+  </table>
+</section>
+<section class="fthowto" aria-label="使い方（3ステップ）">
+  <h2>使い方（3ステップ）</h2>
+  <ol>
+    <li>売上・経費を記録する</li>
+    <li>自動マイレージで距離を記録</li>
+    <li>確定申告用CSVを出力する</li>
+  </ol>
+  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
+</section>
   <h2>アプリの画面</h2>
   <div class="ftshot-row">
     <figure class="ftshot-item"><img src="shots/01.png" alt="Hanro 配達ドライバーの今日の売上ホーム画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>今日の稼ぎ</figcaption></figure>

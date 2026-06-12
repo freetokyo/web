@@ -40,7 +40,7 @@
     "@type": "MobileApplication",
     "name": "Genbalog",
     "applicationCategory": "BusinessApplication",
-    "operatingSystem": "iOS 17 or later",
+    "operatingSystem": "iOS 17.0 以降",
     "description": "Genbalog は現場職人向けの報告書作成アプリ。写真をセクション別に整理し、ワンタップで A4 PDF を生成する。GPS タグ・手書きメモ・カスタムテンプレートに対応し、完全オフラインで動作する。",
     "url": "https://apps.apple.com/jp/app/id6770864162",
     "inLanguage": [
@@ -59,7 +59,8 @@
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "JPY"
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock"
     },
     "author": {
       "@type": "Organization",
@@ -81,7 +82,11 @@
         "https://github.com/freetokyo"
       ]
     },
-    "dateModified": "2026-06-12"
+    "dateModified": "2026-06-12",
+    "softwareVersion": "1.0",
+    "datePublished": "2026-05-20",
+    "contentRating": "4+",
+    "fileSize": "1 MB"
   }
   </script>
   <style>
@@ -314,6 +319,33 @@
     "dateModified": "2026-06-12"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "アプリの使い方",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "現場写真を撮影する",
+        "text": "現場写真を撮影する"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "写真に注釈・手書きメモを追加",
+        "text": "写真に注釈・手書きメモを追加"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "ワンタップでA4 PDF報告書を生成",
+        "text": "ワンタップでA4 PDF報告書を生成"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -346,6 +378,31 @@
 
 
 <section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
+
+<section class="ftfacts" aria-label="アプリ概要">
+  <h2>アプリ概要</h2>
+  <table>
+    <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
+    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
+    <tr><th>バージョン</th><td>1.0</td></tr>
+    <tr><th>サイズ</th><td>約 1 MB</td></tr>
+    <tr><th>カテゴリ</th><td>ビジネス</td></tr>
+    <tr><th>対象年齢</th><td>4+</td></tr>
+    <tr><th>対象ユーザー</th><td>建設現場の職人・施工管理</td></tr>
+    <tr><th>データの扱い</th><td>完全オフライン・登録不要・データ収集なし</td></tr>
+    <tr><th>開発者</th><td>freetokyo（YANGLI CHEN）</td></tr>
+    <tr><th>最終更新</th><td>2026-05-20</td></tr>
+  </table>
+</section>
+<section class="fthowto" aria-label="使い方（3ステップ）">
+  <h2>使い方（3ステップ）</h2>
+  <ol>
+    <li>現場写真を撮影する</li>
+    <li>写真に注釈・手書きメモを追加</li>
+    <li>ワンタップでA4 PDF報告書を生成</li>
+  </ol>
+  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
+</section>
   <h2>アプリの画面</h2>
   <div class="ftshot-row">
     <figure class="ftshot-item"><img src="shots/01.png" alt="Genbalog 現場案件の一覧画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>案件一覧</figcaption></figure>

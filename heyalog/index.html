@@ -31,7 +31,7 @@
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "ヘヤログ（Heyalog）",
-  "operatingSystem": "iOS",
+  "operatingSystem": "iOS 17.0 以降",
   "applicationCategory": "LifestyleApplication",
   "url": "https://freetokyo.github.io/web/heyalog/",
   "downloadUrl": "https://apps.apple.com/jp/app/id6778713193",
@@ -39,7 +39,8 @@
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": "JPY"
+    "priceCurrency": "JPY",
+    "availability": "https://schema.org/InStock"
   },
   "author": {
     "@type": "Organization",
@@ -69,7 +70,11 @@
       "https://github.com/freetokyo"
     ]
   },
-  "dateModified": "2026-06-12"
+  "dateModified": "2026-06-12",
+  "softwareVersion": "1.0",
+  "datePublished": "2026-06-11",
+  "contentRating": "4+",
+  "fileSize": "1 MB"
 }
 </script>
 
@@ -218,6 +223,33 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;color:var(--muted);f
     "dateModified": "2026-06-12"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "アプリの使い方",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "物件と部屋を登録する",
+        "text": "物件と部屋を登録する"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "国交省ガイドライン準拠のチェックリストに沿って写真撮影",
+        "text": "国交省ガイドライン準拠のチェックリストに沿って写真撮影"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "日時・位置情報付きPDF報告書を作成",
+        "text": "日時・位置情報付きPDF報告書を作成"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -266,6 +298,31 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;color:var(--muted);f
     <p class="eyebrow">WHY</p>
 
 <section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
+
+<section class="ftfacts" aria-label="アプリ概要">
+  <h2>アプリ概要</h2>
+  <table>
+    <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
+    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
+    <tr><th>バージョン</th><td>1.0</td></tr>
+    <tr><th>サイズ</th><td>約 1 MB</td></tr>
+    <tr><th>カテゴリ</th><td>ユーティリティ</td></tr>
+    <tr><th>対象年齢</th><td>4+</td></tr>
+    <tr><th>対象ユーザー</th><td>賃貸の入居者・退去予定者</td></tr>
+    <tr><th>データの扱い</th><td>完全オフライン・データ収集なし</td></tr>
+    <tr><th>開発者</th><td>freetokyo（YANGLI CHEN）</td></tr>
+    <tr><th>最終更新</th><td>2026-06-11</td></tr>
+  </table>
+</section>
+<section class="fthowto" aria-label="使い方（3ステップ）">
+  <h2>使い方（3ステップ）</h2>
+  <ol>
+    <li>物件と部屋を登録する</li>
+    <li>国交省ガイドライン準拠のチェックリストに沿って写真撮影</li>
+    <li>日時・位置情報付きPDF報告書を作成</li>
+  </ol>
+  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
+</section>
   <h2>アプリの画面</h2>
   <div class="ftshot-row">
     <figure class="ftshot-item"><img src="shots/01.png" alt="ヘヤログ 賃貸物件の一覧画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>物件一覧</figcaption></figure>

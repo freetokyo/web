@@ -28,12 +28,13 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Miawell",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS 17.0 以降",
     "applicationCategory": "LifestyleApplication",
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "JPY"
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock"
     },
     "description": "愛猫の体調を、毎日スマートに。AI写真判定・日次記録・行動改善コーチング。",
     "featureList": [
@@ -64,7 +65,11 @@
         "https://github.com/freetokyo"
       ]
     },
-    "dateModified": "2026-06-12"
+    "dateModified": "2026-06-12",
+    "softwareVersion": "1.0",
+    "datePublished": "2026-05-29",
+    "contentRating": "4+",
+    "fileSize": "2 MB"
   }
   </script>
 <style>
@@ -341,6 +346,33 @@
     "dateModified": "2026-06-12"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "アプリの使い方",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "愛猫の写真を撮る",
+        "text": "愛猫の写真を撮る"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "端末内AIが体調を判定",
+        "text": "端末内AIが体調を判定"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "毎日の記録でトレンドを把握する",
+        "text": "毎日の記録でトレンドを把握する"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -373,6 +405,31 @@
   <p class="section-label">Features</p>
 
 <section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
+
+<section class="ftfacts" aria-label="アプリ概要">
+  <h2>アプリ概要</h2>
+  <table>
+    <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
+    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
+    <tr><th>バージョン</th><td>1.0</td></tr>
+    <tr><th>サイズ</th><td>約 2 MB</td></tr>
+    <tr><th>カテゴリ</th><td>ヘルスケア／フィットネス</td></tr>
+    <tr><th>対象年齢</th><td>4+</td></tr>
+    <tr><th>対象ユーザー</th><td>猫の飼い主</td></tr>
+    <tr><th>データの扱い</th><td>完全オフライン・写真の外部送信なし（端末内Core ML）</td></tr>
+    <tr><th>開発者</th><td>freetokyo（YANGLI CHEN）</td></tr>
+    <tr><th>最終更新</th><td>2026-05-29</td></tr>
+  </table>
+</section>
+<section class="fthowto" aria-label="使い方（3ステップ）">
+  <h2>使い方（3ステップ）</h2>
+  <ol>
+    <li>愛猫の写真を撮る</li>
+    <li>端末内AIが体調を判定</li>
+    <li>毎日の記録でトレンドを把握する</li>
+  </ol>
+  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
+</section>
   <h2>アプリの画面</h2>
   <div class="ftshot-row">
     <figure class="ftshot-item"><img src="shots/01.png" alt="Miawell 猫の写真からのAI体調判定画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>AI体調判定</figcaption></figure>
