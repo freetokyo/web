@@ -5,6 +5,7 @@
   <!-- Site index -->
   <url>
     <loc>https://freetokyo.github.io/web/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,130 +13,180 @@
   <!-- CareHours -->
   <url>
     <loc>https://freetokyo.github.io/web/carehours/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/carehours/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/carehours/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/carehours/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/carehours/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/carehours/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/carehours/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- Genbalog -->
   <url>
     <loc>https://freetokyo.github.io/web/genbalog/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/genbalog/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/genbalog/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/genbalog/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/genbalog/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/genbalog/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/genbalog/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- HomeNetNavi（世帯手取ナビ） -->
   <url>
     <loc>https://freetokyo.github.io/web/homenetnavi/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/homenetnavi/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/homenetnavi/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/homenetnavi/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/homenetnavi/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/homenetnavi/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/homenetnavi/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- hanro -->
   <url>
     <loc>https://freetokyo.github.io/web/hanro/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hanro/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hanro/index_en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hanro/"/>
   </url>
-  <url><loc>https://freetokyo.github.io/web/hanro/index_en.html</loc><priority>0.7</priority></url>
-  <url><loc>https://freetokyo.github.io/web/hanro/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/hanro/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/hanro/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hanro/index_en.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hanro/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hanro/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hanro/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- IeKan -->
   <url>
     <loc>https://freetokyo.github.io/web/iekan/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/iekan/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/iekan/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/iekan/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/iekan/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/iekan/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/iekan/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- Mochiru -->
   <url>
     <loc>https://freetokyo.github.io/web/mochiru/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/mochiru/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/mochiru/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/mochiru/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/mochiru/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/mochiru/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/mochiru/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- Sukushori -->
   <url>
     <loc>https://freetokyo.github.io/web/sukushori/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/sukushori/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/sukushori/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/sukushori/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/sukushori/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/sukushori/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/sukushori/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- Toscore -->
   <url>
     <loc>https://freetokyo.github.io/web/toscore/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/toscore/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/toscore/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/toscore/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/toscore/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/toscore/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/toscore/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- Miawell -->
   <url>
     <loc>https://freetokyo.github.io/web/miawell/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/miawell/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/miawell/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/miawell/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/miawell/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/miawell/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/miawell/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- PrintMemo -->
   <url>
     <loc>https://freetokyo.github.io/web/printmemo/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/printmemo/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/printmemo/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/printmemo/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/printmemo/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/printmemo/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/printmemo/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- RecoverySync -->
   <url>
     <loc>https://freetokyo.github.io/web/recoverysync/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/recoverysync/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/recoverysync/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/recoverysync/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/recoverysync/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/recoverysync/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/recoverysync/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- SaunaFlow -->
   <url>
     <loc>https://freetokyo.github.io/web/saunaflow/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/saunaflow/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/saunaflow/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/saunaflow/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/saunaflow/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/saunaflow/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/saunaflow/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- Trero (multilingual) -->
   <url>
     <loc>https://freetokyo.github.io/web/trero/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/trero/"/>
@@ -149,30 +200,43 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/trero/zh-Hant/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/trero/"/>
   </url>
-  <url><loc>https://freetokyo.github.io/web/trero/en/</loc><priority>0.7</priority></url>
-  <url><loc>https://freetokyo.github.io/web/trero/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/trero/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/trero/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/trero/en/</loc>
+<lastmod>2026-06-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://freetokyo.github.io/web/trero/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/trero/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/trero/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- TsukiLift -->
   <url>
     <loc>https://freetokyo.github.io/web/tsukilift/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/tsukilift/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/tsukilift/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/tsukilift/terms.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/tsukilift/tokushoho.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/tsukilift/tokushoho.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
   <!-- Heyalog -->
   <url>
     <loc>https://freetokyo.github.io/web/heyalog/</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://freetokyo.github.io/web/heyalog/support.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/heyalog/privacy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/heyalog/terms.html</loc><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/heyalog/support.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/heyalog/privacy.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
+  <url><loc>https://freetokyo.github.io/web/heyalog/terms.html</loc>
+<lastmod>2026-06-12</lastmod><priority>0.5</priority></url>
 
 </urlset>
