@@ -1,0 +1,28 @@
+# 世帯手取ナビ
+
+> 年収の壁シミュレーター。入力は端末内で計算・外部送信なし。対象: 扶養内・パートで働く世帯。
+
+App Store: https://apps.apple.com/jp/app/id6772911843
+Web: https://freetokyo.github.io/web/homenetnavi/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 16.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 年収の壁の世帯シミュレーション
+- 所得税・住民税・社会保険料の内訳表示
+- 複数シナリオの比較
+- 手取り最大シナリオの提案
+- 壁接近通知（プレミアム）
+- 2026年制度に対応
+
+## 使い方
+1. 世帯の年収を入力する
+2. 年収の壁と世帯手取りを確認
+3. 働き方シナリオを比較して最適化
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/homenetnavi/
+- サポート / FAQ: https://freetokyo.github.io/web/homenetnavi/support.html
+- プライバシー: https://freetokyo.github.io/web/homenetnavi/privacy.html
+- 利用規約: https://freetokyo.github.io/web/homenetnavi/terms.html

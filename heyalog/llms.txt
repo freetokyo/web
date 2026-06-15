@@ -1,0 +1,28 @@
+# ヘヤログ
+
+> 賃貸の入退去を写真で記録するアプリ。完全オフライン・データ収集なし。対象: 賃貸の入居者・退去予定者。
+
+App Store: https://apps.apple.com/jp/app/id6778713193
+Web: https://freetokyo.github.io/web/heyalog/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 入居時・退去時の写真記録
+- 国交省ガイドライン準拠チェックリスト
+- 日時・位置情報付きPDF報告書
+- 部屋種別ごとのチェック項目
+- 日本語・英語のPDF出力
+- 完全オフライン・買い切り
+
+## 使い方
+1. 物件と部屋を登録する
+2. 国交省ガイドライン準拠のチェックリストに沿って写真撮影
+3. 日時・位置情報付きPDF報告書を作成
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/heyalog/
+- サポート / FAQ: https://freetokyo.github.io/web/heyalog/support.html
+- プライバシー: https://freetokyo.github.io/web/heyalog/privacy.html
+- 利用規約: https://freetokyo.github.io/web/heyalog/terms.html

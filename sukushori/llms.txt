@@ -1,0 +1,28 @@
+# スクショリ
+
+> スクショを端末内AIで自動仕分けするアプリ。完全オフライン・データ収集なし・買い切り。対象: スクショが溜まりがちな人。
+
+App Store: https://apps.apple.com/jp/app/id6778336001
+Web: https://freetokyo.github.io/web/sukushori/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 端末内AIによるスクショ自動分類
+- 行きたい店・予定・欲しいモノに仕分け
+- 手動での再分類
+- 要点の抽出（タイトル・要約）
+- 完全オフライン・データ収集なし
+- 買い切り
+
+## 使い方
+1. スクショを取り込む
+2. 端末内AIが自動で分類
+3. 要点を活用して原本を片付ける
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/sukushori/
+- サポート / FAQ: https://freetokyo.github.io/web/sukushori/support.html
+- プライバシー: https://freetokyo.github.io/web/sukushori/privacy.html
+- 利用規約: https://freetokyo.github.io/web/sukushori/terms.html

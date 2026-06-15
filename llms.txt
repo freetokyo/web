@@ -1,12 +1,12 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 15 本の iOS / watchOS アプリを公開中。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 18 本の iOS / watchOS アプリを公開中。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 15 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 18 アプリを一覧）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
 リポジトリ: https://github.com/freetokyo/web
-最終更新: 2026-06-12
+最終更新: 2026-06-15
 
 ## Apps
 
@@ -26,6 +26,7 @@
 - [Mochiru](https://freetokyo.github.io/web/mochiru/): 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。App Store: https://apps.apple.com/jp/app/id6778235888
 - [スクショリ / Sukushori](https://freetokyo.github.io/web/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、完全オフライン・買い切り・広告なし。App Store: https://apps.apple.com/jp/app/id6778336001
 - [ヘヤログ / Heyalog](https://freetokyo.github.io/web/heyalog/): 賃貸住宅の入居・退去時の部屋状態を写真で記録し、国土交通省「原状回復をめぐるトラブルとガイドライン」準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で敷金トラブルを防ぐ。完全オフライン・買い切り 600 円・広告なし。App Store: https://apps.apple.com/jp/app/id6778713193
+- [ジツヒロ / Jitsuhiro](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。App Store: https://apps.apple.com/jp/app/id6779472712
 
 ### Work（仕事・現場）
 
@@ -33,6 +34,8 @@
 - [Genbalog](https://freetokyo.github.io/web/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。App Store: https://apps.apple.com/app/id6770864162
 - [hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。App Store: https://apps.apple.com/app/id6771629040
 - [Toscore](https://freetokyo.github.io/web/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。App Store: https://apps.apple.com/jp/app/toscore/id6776913396
+- [ケイヒバ / Keihiba](https://freetokyo.github.io/web/keihiba/): 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。App Store: https://apps.apple.com/jp/app/id6779895529
+- [コエガキ / Koegaki](https://freetokyo.github.io/web/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。App Store: https://apps.apple.com/jp/app/id6780139132
 
 ## Pages
 
@@ -57,4 +60,5 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
 - Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
 - 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
-- ルート `index.html` には CollectionPage + ItemList（全 15 アプリ）の JSON-LD あり。
+- ルート `index.html` には CollectionPage + ItemList（全 18 アプリ）の JSON-LD あり。
+- 各アプリページには MobileApplication / WebSite / HowTo / BreadcrumbList、support には FAQPage の JSON-LD を埋め込み。各アプリ `web/llms.txt`（per-app）も用意。

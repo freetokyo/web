@@ -1,0 +1,28 @@
+# Trero
+
+> 筋トレ・ワークアウト記録アプリ。アカウント不要・端末内保存（任意でHealthKit連携）。対象: 筋トレ・ワークアウトを記録する人。
+
+App Store: https://apps.apple.com/jp/app/id6760746164
+Web: https://freetokyo.github.io/web/trero/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.2 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 前回値を見ながらの記録
+- セット・重量・RM管理
+- 進捗・体組成の分析
+- 目標管理
+- Apple Watch 対応
+- 38言語対応
+
+## 使い方
+1. 前回の記録を見ながら入力
+2. セット・重量を記録する
+3. 進捗と体組成を分析する
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/trero/
+- サポート / FAQ: https://freetokyo.github.io/web/trero/support.html
+- プライバシー: https://freetokyo.github.io/web/trero/privacy.html
+- 利用規約: https://freetokyo.github.io/web/trero/terms.html

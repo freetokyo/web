@@ -1,0 +1,28 @@
+# CareHours
+
+> 訪問介護ヘルパーの給与管理アプリ。完全オフライン・データは端末内に保存。対象: 訪問介護の登録ヘルパー。
+
+App Store: https://apps.apple.com/jp/app/id6769304063
+Web: https://freetokyo.github.io/web/carehours/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.1 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 訪問記録の登録と集計
+- 夜間割増の自動計算
+- 特定事業所加算の計算
+- 月次PDFレポート出力
+- 複数事業所の管理（プレミアム）
+- 端末内でのデータ保存
+
+## 使い方
+1. 訪問を記録する
+2. 夜間割増・特定事業所加算を自動計算
+3. 月次PDFレポートを出力する
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/carehours/
+- サポート / FAQ: https://freetokyo.github.io/web/carehours/support.html
+- プライバシー: https://freetokyo.github.io/web/carehours/privacy.html
+- 利用規約: https://freetokyo.github.io/web/carehours/terms.html

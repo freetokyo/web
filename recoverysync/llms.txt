@@ -1,0 +1,28 @@
+# RecoverySync
+
+> Apple Watch sleep & HRV recovery tracker. On-device only / no account / no servers. For: Apple Watch ユーザー・アスリート.
+
+App Store: https://apps.apple.com/jp/app/id6770408873
+Web: https://freetokyo.github.io/web/recoverysync/
+Developer: freetokyo (YANGLI CHEN)
+Version: 1.0 / Requires: iOS 17.0 or later / Price: Free (with in-app purchase)
+Updated: 2026-06-15
+
+## Features
+- Single recovery score from Apple Watch
+- HRV (RMSSD) tracking
+- Resting heart rate analysis
+- Sleep-based calibration
+- Apple Watch complication
+- On-device, no account, no servers
+
+## How to use
+1. Wear Apple Watch while you sleep
+2. RecoverySync reads HRV, resting HR and sleep
+3. Check your single daily recovery score
+
+## Pages
+- Overview: https://freetokyo.github.io/web/recoverysync/
+- Support / FAQ: https://freetokyo.github.io/web/recoverysync/support.html
+- Privacy: https://freetokyo.github.io/web/recoverysync/privacy.html
+- Terms: https://freetokyo.github.io/web/recoverysync/terms.html

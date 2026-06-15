@@ -1,0 +1,28 @@
+# コエガキ
+
+> オンデバイス議事メモアプリ。完全オンデバイス・データ収集なし。対象: 会議・打合せの記録を取る人。
+
+App Store: https://apps.apple.com/jp/app/id6780139132
+Web: https://freetokyo.github.io/web/koegaki/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 26.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 会議録音と端末内文字起こし
+- 要点・決定事項・ToDoの3区分要約
+- タイトル自動生成
+- タイムコードtapで頭出し再生
+- 完全オンデバイス・データ収集なし
+- フリーミアム（月60分無料）
+
+## 使い方
+1. 会議を録音する
+2. 端末内で文字起こしする
+3. AIが要点・決定事項・ToDoに要約
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/koegaki/
+- サポート / FAQ: https://freetokyo.github.io/web/koegaki/support.html
+- プライバシー: https://freetokyo.github.io/web/koegaki/privacy.html
+- 利用規約: https://freetokyo.github.io/web/koegaki/terms.html

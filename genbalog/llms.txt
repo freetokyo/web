@@ -1,0 +1,28 @@
+# Genbalog
+
+> 現場写真から報告書を作るアプリ。完全オフライン・登録不要・データ収集なし。対象: 建設現場の職人・施工管理。
+
+App Store: https://apps.apple.com/jp/app/id6770864162
+Web: https://freetokyo.github.io/web/genbalog/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 現場写真をワンタップでPDF化
+- 写真への手書きアノテーション
+- 音声キャプション入力
+- GPS位置情報タグ
+- 会社ロゴ入りPDF（Pro）
+- 完全オフライン動作
+
+## 使い方
+1. 現場写真を撮影する
+2. 写真に注釈・手書きメモを追加
+3. ワンタップでA4 PDF報告書を生成
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/genbalog/
+- サポート / FAQ: https://freetokyo.github.io/web/genbalog/support.html
+- プライバシー: https://freetokyo.github.io/web/genbalog/privacy.html
+- 利用規約: https://freetokyo.github.io/web/genbalog/terms.html

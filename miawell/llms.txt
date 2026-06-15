@@ -1,0 +1,28 @@
+# Miawell
+
+> 猫専用ヘルスケアアプリ。完全オフライン・写真の外部送信なし（端末内Core ML）。対象: 猫の飼い主。
+
+App Store: https://apps.apple.com/jp/app/id6774019571
+Web: https://freetokyo.github.io/web/miawell/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- AIによる写真からの体調判定
+- 毎日の体調・行動の記録
+- 行動改善コーチング
+- 体重・食事の記録
+- オンデバイスCore MLでの処理
+- 端末内でのデータ保存
+
+## 使い方
+1. 愛猫の写真を撮る
+2. 端末内AIが体調を判定
+3. 毎日の記録でトレンドを把握する
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/miawell/
+- サポート / FAQ: https://freetokyo.github.io/web/miawell/support.html
+- プライバシー: https://freetokyo.github.io/web/miawell/privacy.html
+- 利用規約: https://freetokyo.github.io/web/miawell/terms.html

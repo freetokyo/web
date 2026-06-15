@@ -1,0 +1,28 @@
+# TsukiLift
+
+> 生理周期と連動する女性向けフィットネスアプリ。アカウント不要・データは端末内に保存。対象: 筋トレをする女性。
+
+App Store: https://apps.apple.com/jp/app/id6767084251
+Web: https://freetokyo.github.io/web/tsukilift/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.1 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 生理周期と筋トレの連動管理
+- フェーズに合ったトレーニング推奨
+- 生理周期の予測
+- 1RMの推定
+- HealthKit任意連携
+- アカウント不要・端末内保存
+
+## 使い方
+1. 生理周期を記録する
+2. フェーズに合うトレーニングを確認
+3. 筋トレを記録して傾向を分析する
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/tsukilift/
+- サポート / FAQ: https://freetokyo.github.io/web/tsukilift/support.html
+- プライバシー: https://freetokyo.github.io/web/tsukilift/privacy.html
+- 利用規約: https://freetokyo.github.io/web/tsukilift/terms.html

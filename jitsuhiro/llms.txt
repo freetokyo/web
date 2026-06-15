@@ -1,0 +1,28 @@
+# ジツヒロ
+
+> 間取り図の有効面積チェッカー。完全オフライン・データ収集なし・買い切り。対象: 中古マンションの購入検討者。
+
+App Store: https://apps.apple.com/jp/app/id6779472712
+Web: https://freetokyo.github.io/web/jitsuhiro/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 18.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 間取り図の有効面積（柱抜き）を算出
+- 図面記載の専有面積との差を表示
+- 帖数・㎡換算
+- 家具配置での動線・クリアランス検証
+- 完全オフライン動作
+- 買い切り・データ収集なし
+
+## 使い方
+1. 間取り図（PDF/写真）を取り込む
+2. 柱・寸法を設定して有効面積を算出
+3. 家具を置いて動線・クリアランスを検証
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/jitsuhiro/
+- サポート / FAQ: https://freetokyo.github.io/web/jitsuhiro/support.html
+- プライバシー: https://freetokyo.github.io/web/jitsuhiro/privacy.html
+- 利用規約: https://freetokyo.github.io/web/jitsuhiro/terms.html

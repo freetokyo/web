@@ -1,0 +1,28 @@
+# Hanro
+
+> 配達ドライバーの収支管理アプリ。完全オフライン（任意でiCloud同期）。対象: フードデリバリー・軽貨物ドライバー。
+
+App Store: https://apps.apple.com/jp/app/id6771629040
+Web: https://freetokyo.github.io/web/hanro/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 売上・経費の記録
+- マルチプラットフォーム対応
+- 自動マイレージ記録
+- AI稼ぎ時予測
+- 確定申告CSV出力
+- iCloud同期
+
+## 使い方
+1. 売上・経費を記録する
+2. 自動マイレージで距離を記録
+3. 確定申告用CSVを出力する
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/hanro/
+- サポート / FAQ: https://freetokyo.github.io/web/hanro/support.html
+- プライバシー: https://freetokyo.github.io/web/hanro/privacy.html
+- 利用規約: https://freetokyo.github.io/web/hanro/terms.html

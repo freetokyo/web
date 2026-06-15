@@ -1,0 +1,28 @@
+# IeKan（家看）
+
+> 実家を家族で見守るホーム管理アプリ。家族間のみiCloud共有・第三者提供なし。対象: 実家を離れて暮らす家族。
+
+App Store: https://apps.apple.com/jp/app/id6764244913
+Web: https://freetokyo.github.io/web/iekan/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.1 / 対応: iOS 26.2 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- 実家の写真タイムライン
+- 家族での共有・招待
+- 季節のチェックリスト
+- 書類スキャン（OCR）
+- ビフォーアフター比較
+- iCloudでの家族同期
+
+## 使い方
+1. 実家を登録して家族を招待
+2. 写真・チェックリストで状態を記録
+3. タイムラインで家族と共有する
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/iekan/
+- サポート / FAQ: https://freetokyo.github.io/web/iekan/support.html
+- プライバシー: https://freetokyo.github.io/web/iekan/privacy.html
+- 利用規約: https://freetokyo.github.io/web/iekan/terms.html

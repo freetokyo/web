@@ -1,0 +1,28 @@
+# Toscore
+
+> ミニバス対応デジタルスコアシート。完全オフライン・データ収集なし。対象: ミニバス・バスケのTO／スコアラー。
+
+App Store: https://apps.apple.com/jp/app/id6776913396
+Web: https://freetokyo.github.io/web/toscore/
+開発者: freetokyo（YANGLI CHEN）
+バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
+最終更新: 2026-06-15
+
+## 主な機能
+- デジタルスコアシート記録
+- 能動的ルール検証
+- ミニバス出場時間検証
+- プリセット（U15/ミニバス等）
+- 元に戻す・訂正履歴
+- 完全オフライン動作
+
+## 使い方
+1. 試合とルールを設定する
+2. ライブでスコアを記録
+3. ルール・出場時間を検証する
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/toscore/
+- サポート / FAQ: https://freetokyo.github.io/web/toscore/support.html
+- プライバシー: https://freetokyo.github.io/web/toscore/privacy.html
+- 利用規約: https://freetokyo.github.io/web/toscore/terms.html
