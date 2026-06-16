@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi" >
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Mochiru - Tuổi thọ tài sản — Tài sản đủ dùng bao lâu? Monte Carlo mô phỏng từ tích lũy đế…</title>
+<meta name="description" content="Tài sản đủ dùng bao lâu? Monte Carlo mô phỏng từ tích lũy đến rút tiền hưu trí. Phân tích độ nhạy &amp; so sánh chiến lược rút tiền. Ngoại tuyến, không thu thập dữ liệu."/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<link rel="canonical" href="https://freetokyo.github.io/web/mochiru/vi/"/>
+<link rel="icon" type="image/png" href="../favicon.png"/>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/mochiru/"/>
+<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/mochiru/ar/"/>
+<link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/mochiru/ca/"/>
+<link rel="alternate" hreflang="cs" href="https://freetokyo.github.io/web/mochiru/cs/"/>
+<link rel="alternate" hreflang="da" href="https://freetokyo.github.io/web/mochiru/da/"/>
+<link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/mochiru/de/"/>
+<link rel="alternate" hreflang="el" href="https://freetokyo.github.io/web/mochiru/el/"/>
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/mochiru/en/"/>
+<link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/mochiru/es/"/>
+<link rel="alternate" hreflang="fi" href="https://freetokyo.github.io/web/mochiru/fi/"/>
+<link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/mochiru/fr/"/>
+<link rel="alternate" hreflang="he" href="https://freetokyo.github.io/web/mochiru/he/"/>
+<link rel="alternate" hreflang="hi" href="https://freetokyo.github.io/web/mochiru/hi/"/>
+<link rel="alternate" hreflang="hr" href="https://freetokyo.github.io/web/mochiru/hr/"/>
+<link rel="alternate" hreflang="hu" href="https://freetokyo.github.io/web/mochiru/hu/"/>
+<link rel="alternate" hreflang="id" href="https://freetokyo.github.io/web/mochiru/id/"/>
+<link rel="alternate" hreflang="it" href="https://freetokyo.github.io/web/mochiru/it/"/>
+<link rel="alternate" hreflang="ko" href="https://freetokyo.github.io/web/mochiru/ko/"/>
+<link rel="alternate" hreflang="ms" href="https://freetokyo.github.io/web/mochiru/ms/"/>
+<link rel="alternate" hreflang="nb" href="https://freetokyo.github.io/web/mochiru/nb/"/>
+<link rel="alternate" hreflang="nl" href="https://freetokyo.github.io/web/mochiru/nl/"/>
+<link rel="alternate" hreflang="pl" href="https://freetokyo.github.io/web/mochiru/pl/"/>
+<link rel="alternate" hreflang="pt-BR" href="https://freetokyo.github.io/web/mochiru/pt-BR/"/>
+<link rel="alternate" hreflang="pt-PT" href="https://freetokyo.github.io/web/mochiru/pt-PT/"/>
+<link rel="alternate" hreflang="ro" href="https://freetokyo.github.io/web/mochiru/ro/"/>
+<link rel="alternate" hreflang="ru" href="https://freetokyo.github.io/web/mochiru/ru/"/>
+<link rel="alternate" hreflang="sk" href="https://freetokyo.github.io/web/mochiru/sk/"/>
+<link rel="alternate" hreflang="sv" href="https://freetokyo.github.io/web/mochiru/sv/"/>
+<link rel="alternate" hreflang="th" href="https://freetokyo.github.io/web/mochiru/th/"/>
+<link rel="alternate" hreflang="tr" href="https://freetokyo.github.io/web/mochiru/tr/"/>
+<link rel="alternate" hreflang="uk" href="https://freetokyo.github.io/web/mochiru/uk/"/>
+<link rel="alternate" hreflang="vi" href="https://freetokyo.github.io/web/mochiru/vi/"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/mochiru/zh-Hans/"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/mochiru/zh-Hant/"/>
+<link rel="alternate" hreflang="fr-CA" href="https://freetokyo.github.io/web/mochiru/fr/"/>
+<link rel="alternate" hreflang="es-MX" href="https://freetokyo.github.io/web/mochiru/es/"/>
+<link rel="alternate" hreflang="en-AU" href="https://freetokyo.github.io/web/mochiru/en/"/>
+<link rel="alternate" hreflang="en-CA" href="https://freetokyo.github.io/web/mochiru/en/"/>
+<link rel="alternate" hreflang="en-GB" href="https://freetokyo.github.io/web/mochiru/en/"/>
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/mochiru/"/>
+<link rel="preconnect" href="https://apps.apple.com"/>
+<meta name="apple-itunes-app" content="app-id=6778235888, app-argument=https://freetokyo.github.io/web/mochiru/vi/"/>
+<meta name="theme-color" content="#22314F"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Mochiru - Tuổi thọ tài sản"/>
+<meta property="og:title" content="Mochiru - Tuổi thọ tài sản — Tài sản đủ dùng bao lâu? Monte Carlo mô phỏng từ tích lũy đế…"/>
+<meta property="og:description" content="Tài sản đủ dùng bao lâu? Monte Carlo mô phỏng từ tích lũy đến rút tiền hưu trí. Phân tích độ nhạy &amp; so sánh chiến lược rút tiền. Ngoại tuyến, không thu thập dữ liệu."/>
+<meta property="og:url" content="https://freetokyo.github.io/web/mochiru/vi/"/>
+<meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="vi_VN"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Mochiru - Tuổi thọ tài sản — Tài sản đủ dùng bao lâu? Monte Carlo mô phỏng từ tích lũy đế…"/>
+<meta name="twitter:description" content="Tài sản đủ dùng bao lâu? Monte Carlo mô phỏng từ tích lũy đến rút tiền hưu trí. Phân tích độ nhạy &amp; so sánh chiến lược rút tiền. Ngoại tuyến, không thu thập dữ liệu."/>
+<meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MobileApplication",
+  "name":"Mochiru - Tu\u1ed5i th\u1ecd t\u00e0i s\u1ea3n",
+  "operatingSystem":"iOS",
+  "applicationCategory":"MobileApplication",
+  "inLanguage":"vi",
+  "url":"https://freetokyo.github.io/web/mochiru/",
+  "downloadUrl":"https://apps.apple.com/app/id6778235888",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"JPY","availability":"https://schema.org/InStock"},
+  "author":{"@type":"Organization","name":"freetokyo","url":"https://freetokyo.github.io/web/"}
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
+     background:#f5f5f7;color:#1d1d1f;line-height:1.7;font-size:16px}
+a{color:inherit;text-decoration:none}
+nav{background:rgba(255,255,255,.88);backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.08);
+    display:flex;align-items:center;padding:12px 20px;gap:16px;
+    position:sticky;top:0;z-index:100}
+nav .logo{display:flex;align-items:center;gap:10px;margin-right:auto}
+nav .logo img{width:32px;height:32px;border-radius:7px}
+nav .logo span{font-weight:600;font-size:15px}
+nav a.nav-link{font-size:14px;opacity:.7;transition:opacity .2s}
+nav a.nav-link:hover{opacity:1}
+.hero{text-align:center;padding:60px 20px 40px;background:#fff;
+      border-bottom:1px solid rgba(0,0,0,.06)}
+.hero img.app-icon{width:96px;height:96px;border-radius:22px;
+       box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
+.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
+         letter-spacing:-.02em;margin-bottom:10px}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
+.btn-dl{display:inline-block;background:#5EA3F5;color:#fff;
+        border-radius:980px;padding:12px 28px;font-size:15px;
+        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
+.btn-dl:hover{opacity:.85}
+.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
+.desc p{margin-bottom:14px;color:#333}
+.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
+         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
+.desc ul{margin:0 0 14px;padding-left:20px}
+.desc li{margin-bottom:6px;color:#333}
+.legal-links{text-align:center;padding:32px 20px 48px;
+             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
+.legal-links a{margin:0 12px}
+.legal-links a:hover{opacity:.7;text-decoration:underline}
+footer{text-align:center;padding:20px;font-size:12px;
+       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+[dir=rtl] nav{flex-direction:row-reverse}
+[dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="..">
+    <img src="../apple-touch-icon.png" alt="Mochiru - Tuổi thọ tài sản" width="32" height="32"/>
+    <span>Mochiru - Tuổi thọ tài sản</span>
+  </a>
+  <a class="nav-link" href="support.html">Hỗ trợ</a>
+  <a class="nav-link" href="privacy.html">Chính sách quyền riêng tư</a>
+  <a class="nav-link" href="terms.html">Điều khoản sử dụng</a>
+</nav>
+<main>
+  <section class="hero">
+    <img class="app-icon" src="../apple-touch-icon.png" alt="Mochiru - Tuổi thọ tài sản" width="96" height="96"/>
+    <h1>Mochiru - Tuổi thọ tài sản</h1>
+    <p class="subtitle">Tích lũy-&gt;rút tiền-Monte Carlo</p>
+    <a class="btn-dl" href="https://apps.apple.com/app/id6778235888" rel="noopener">Tải xuống trên App Store</a>
+  </section>
+  <section class="desc">
+<p>Mochiru là ứng dụng mô phỏng tuổi thọ tài sản hoàn toàn ngoại tuyến, giúp bạn trả lời câu hỏi: &quot;Tài sản của tôi có đủ dùng đến cuối đời không?&quot;</p>
+<p>Sử dụng phương pháp Monte Carlo, Mochiru mô phỏng toàn bộ vòng đời tài sản — từ giai đoạn tích lũy đến rút tiền sau hưu trí.</p>
+<h3>Tính năng chính</h3>
+<ul>
+<li>Trực quan hóa tỷ lệ thành công, xác suất cạn kiệt tài sản, tuổi thọ tài sản trung vị và phân phối tài sản cuối kỳ qua biểu đồ hình quạt</li>
+<li>So sánh nhiều chiến lược rút tiền: cố định số tiền, cố định tỷ lệ, guardrail động, sàn và trần</li>
+<li>Phân tích độ nhạy: xem tỷ lệ thành công thay đổi như thế nào khi điều chỉnh tỷ lệ rút tiền, tuổi nghỉ hưu hoặc tỷ lệ cổ phiếu</li>
+<li>Phiên bản Premium mở khóa: rủi ro chuỗi lợi nhuận (sequence of returns risk), so sánh phòng hộ tỷ giá, backtest lịch sử, lưu và so sánh vô giới hạn kịch bản, xuất báo cáo PDF</li>
+</ul>
+<h3>Điểm nổi bật</h3>
+<p>Mochiru tính đến rủi ro khi thị trường cổ phiếu và đồng nội tệ cùng suy yếu đồng thời — rủi ro mà nhiều công cụ thông thường bỏ qua. Hỗ trợ cả mô hình tham số và bootstrap khối lịch sử.</p>
+<h3>Quyền riêng tư</h3>
+<p>Hoàn toàn ngoại tuyến. Không kết nối mạng, không thu thập dữ liệu, không liên kết tài khoản ngân hàng, không cần đăng ký tài khoản. Mọi tính toán đều thực hiện trên thiết bị của bạn.</p>
+<h3>Lưu ý quan trọng</h3>
+<p>Ứng dụng này chỉ phục vụ mục đích cung cấp thông tin và học tập. Đây không phải tư vấn tài chính, không khuyến nghị mua bán bất kỳ sản phẩm tài chính nào, và không đảm bảo kết quả đầu tư trong tương lai. Kết quả mô phỏng dựa trên các giả định đầu vào và chỉ mang tính tham khảo. Mọi quyết định tài chính là trách nhiệm cá nhân của bạn.</p>
+  </section>
+</main>
+<div class="legal-links">
+  <a href="support.html">Hỗ trợ</a>
+  <a href="privacy.html">Chính sách quyền riêng tư</a>
+  <a href="terms.html">Điều khoản sử dụng</a>
+  <a href="mailto:chenyangli123@gmail.com">Liên hệ</a>
+</div>
+<footer>© freetokyo · <a href="https://apps.apple.com/app/id6778235888" rel="noopener">App Store</a></footer>
+</body>
+</html>
