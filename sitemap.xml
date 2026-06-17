@@ -49,7 +49,7 @@
     <lastmod>2026-06-17</lastmod>
   </sitemap>
 
-  <!-- Japanese-only apps -->
+  <!-- Japanese-only (Xcode) but full ASC multilingual apps -->
   <sitemap>
     <loc>https://freetokyo.github.io/web/heyalog/sitemap.xml</loc>
     <lastmod>2026-06-17</lastmod>
