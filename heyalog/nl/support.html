@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl" >
+<html lang="nl">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Ondersteuning | Heyalog - Woningrapport</title>
-<meta name="description" content="Ondersteuning — Heyalog - Woningrapport"/>
+<title>Ondersteuning | ヘヤログ</title>
+<meta name="description" content="Ondersteuning — ヘヤログ"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/heyalog/nl/support.html"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -43,19 +43,20 @@
 <link rel="alternate" hreflang="vi" href="https://freetokyo.github.io/web/heyalog/vi/support.html"/>
 <link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/heyalog/zh-Hans/support.html"/>
 <link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/heyalog/zh-Hant/support.html"/>
-<link rel="alternate" hreflang="fr-CA" href="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
-<link rel="alternate" hreflang="es-MX" href="https://freetokyo.github.io/web/heyalog/es/support.html"/>
 <link rel="alternate" hreflang="en-AU" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
 <link rel="alternate" hreflang="en-CA" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
 <link rel="alternate" hreflang="en-GB" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
+<link rel="alternate" hreflang="fr-CA" href="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
+<link rel="alternate" hreflang="es-MX" href="https://freetokyo.github.io/web/heyalog/es/support.html"/>
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/heyalog/support.html"/>
 <meta name="theme-color" content="#2B3A67"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Ondersteuning | Heyalog - Woningrapport"/>
-<meta property="og:description" content="Ondersteuning — Heyalog - Woningrapport"/>
+<meta property="og:title" content="Ondersteuning | ヘヤログ"/>
+<meta property="og:description" content="Ondersteuning — ヘヤログ"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/heyalog/nl/support.html"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/heyalog/ogp.png"/>
 <meta property="og:locale" content="nl_NL"/>
+<meta name="apple-itunes-app" content="app-id=6778713193, app-argument=https://freetokyo.github.io/web/heyalog/nl/support.html"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
@@ -76,48 +77,124 @@ nav a.nav-link:hover{opacity:1}
        box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
          letter-spacing:-.02em;margin-bottom:10px}
-.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
-.btn-dl{display:inline-block;background:#3A6ED6;color:#fff;
-        border-radius:980px;padding:12px 28px;font-size:15px;
-        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
-.btn-dl:hover{opacity:.85}
-.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
-.desc p{margin-bottom:14px;color:#333}
-.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
-         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
-.desc ul{margin:0 0 14px;padding-left:20px}
-.desc li{margin-bottom:6px;color:#333}
-.legal-links{text-align:center;padding:32px 20px 48px;
-             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
-.legal-links a{margin:0 12px}
-.legal-links a:hover{opacity:.7;text-decoration:underline}
-footer{text-align:center;padding:20px;font-size:12px;
-       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto}
+.content{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+.content h2{font-size:1.1rem;font-weight:700;margin:32px 0 10px;color:#1d1d1f}
+.content h3{font-size:.95rem;font-weight:600;margin:20px 0 8px;opacity:.75}
+.content p{margin-bottom:14px;color:#3a3a3c;line-height:1.75}
+.content ul{margin:0 0 14px 20px}
+.content li{margin-bottom:6px;color:#3a3a3c;line-height:1.65}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:16px;margin:24px 0 32px}
+.step-card{background:#fff;border-radius:14px;padding:20px;
+           box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.step-card .step-num{font-size:.75rem;font-weight:700;opacity:.45;
+                      text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.step-card h3{font-size:1rem;font-weight:600;margin:0 0 6px}
+.step-card p{font-size:.9rem;opacity:.65;margin:0;line-height:1.5}
+.faq-section{margin-top:40px}
+.faq-item{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+          box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.faq-q{font-weight:600;padding:18px 20px;cursor:default;font-size:.95rem}
+.faq-a{padding:0 20px 18px;color:#3a3a3c;font-size:.9rem;line-height:1.7}
+.legal-content{background:#fff;border-radius:14px;padding:28px;
+               box-shadow:0 2px 8px rgba(0,0,0,.06);margin-top:24px}
+.legal-content h2{font-size:1.05rem;font-weight:700;margin:24px 0 8px;
+                   padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.legal-content h2:first-child{border-top:none;margin-top:0;padding-top:0}
+.legal-content p{margin-bottom:12px;color:#3a3a3c;font-size:.95rem;line-height:1.75}
+.contact-box{background:#fff;border-radius:14px;padding:24px;margin-top:32px;
+             box-shadow:0 1px 4px rgba(0,0,0,.05);text-align:center}
+.contact-box p{margin-bottom:8px;opacity:.65}
+.contact-box a{color:#007AFF;font-weight:600;font-size:1rem}
+footer{text-align:center;padding:24px 20px;font-size:12px;
+       opacity:.4;border-top:1px solid rgba(0,0,0,.06)}
 [dir=rtl] nav{flex-direction:row-reverse}
 [dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+[dir=rtl] .content ul{margin-left:0;margin-right:20px}
 </style>
 </head>
 <body>
 <nav>
   <a class="logo" href="..">
-    <img src="../apple-touch-icon.png" alt="Heyalog - Woningrapport" width="32" height="32"/>
-    <span>Heyalog - Woningrapport</span>
+    <img src="../apple-touch-icon.png" alt="ヘヤログ" width="32" height="32"/>
+    <span>ヘヤログ</span>
   </a>
-  <a class="nav-link" href="index.html" style="font-weight:600;opacity:1">Ondersteuning</a>
+  <a class="nav-link" href="support.html" style="font-weight:600;opacity:1">Ondersteuning</a>
   <a class="nav-link" href="privacy.html">Privacybeleid</a>
   <a class="nav-link" href="terms.html">Gebruiksvoorwaarden</a>
 </nav>
 <main>
   <section class="hero">
-    <img class="app-icon" src="../apple-touch-icon.png" alt="Heyalog - Woningrapport" width="96" height="96"/>
+    <img class="app-icon" src="../apple-touch-icon.png" alt="ヘヤログ" width="96" height="96"/>
     <h1>Ondersteuning</h1>
-    <p class="subtitle">Heyalog - Woningrapport</p>
+    <p class="subtitle">ヘヤログ</p>
   </section>
-  <section class="desc">
-    <p><a href="mailto:chenyangli123@gmail.com" style="color:#3A6ED6;font-weight:600">chenyangli123@gmail.com</a></p>
-    <p style="margin-top:20px"><a href="https://freetokyo.github.io/web/heyalog/support.html" style="color:#3A6ED6">🇯🇵 日本語サポートページ</a></p>
-    <p><a href="https://apps.apple.com/app/id6778713193" rel="noopener" style="color:#3A6ED6">App Store</a></p>
-  </section>
+  <div class="content">
+    
+    <div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-q">Hoe te beginnen?</div>
+    <div class="faq-a">Tik op het startscherm op + rechtsboven om een woning te registreren. Voer de naam van de woning en de naam van de kamer in, dan kunt u meteen beginnen met registreren.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hoe gebruik ik in- en uitrekordecords apart?</div>
+    <div class="faq-a">U kunt schakelen tussen Intrek en Uitrek met het segment op het detailscherm van de woning. Foto&#x27;s en controlelijsten worden voor elk afzonderlijk beheerd.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kunnen controlelijstitems worden aangepast?</div>
+    <div class="faq-a">Controlepunten worden automatisch ingesteld volgens ministeriële richtlijnen op basis van het kamertype (keuken, badkamer, enz.). U kunt vrije notities toevoegen aan elk punt.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan GPS worden opgeslagen in foto&#x27;s?</div>
+    <div class="faq-a">Als u Instellingen &gt; Locatie toevoegen aan foto&#x27;s inschakelt, worden de breedte- en lengtegraad van de huidige locatie ingebed in foto&#x27;s die in de app zijn gemaakt.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan ik bestaande foto&#x27;s importeren van de fotobibliotheek?</div>
+    <div class="faq-a">Tik op het controlepuntscherm op de cameraknop en selecteer Selecteer uit bibliotheek.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Zijn er beperkingen op de kwaliteit of het aantal foto&#x27;s?</div>
+    <div class="faq-a">Er kunnen meerdere foto&#x27;s per controlepunt worden gemaakt (geen limiet). Foto&#x27;s worden opgeslagen op volledige grootte, dus meer woningen betekent meer opslagruimte.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hoe maak ik een PDF?</div>
+    <div class="faq-a">Tik op PDF-rapport maken op het detailscherm van de woning. Selecteer de taal (Japans of Engels) en download de voltooide PDF.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Wat bevat de PDF?</div>
+    <div class="faq-a">Het bevat: woningnaam, kamernaam, foto&#x27;s van elk controlepunt met opnamedatum en -tijd, locatie-informatie en een voltooiingscontrolelijst.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Wat kan ik gratis gebruiken?</div>
+    <div class="faq-a">Fotoregistratie bij intrek, de controlelijst en het maken van PDF-rapporten zijn volledig gratis. Vergelijkingsfoto&#x27;s vanuit dezelfde hoek en sommige geavanceerde functies vereisen een eenmalige aankoop.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Is er een abonnement?</div>
+    <div class="faq-a">Nee. Het is een eenmalige aankoop van ¥600. Eenmaal gekocht, kan het permanent worden gebruikt zonder extra kosten.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Ik wil mijn aankoop herstellen</div>
+    <div class="faq-a">Tik op Instellingen &gt; Aankopen herstellen. Als u bent ingelogd met dezelfde Apple ID, kunt u gratis herstellen.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Waar worden gegevens opgeslagen?</div>
+    <div class="faq-a">Alle gegevens (woninginformatie, foto&#x27;s, inspectiebeschrijvingen) worden alleen op het apparaat opgeslagen. Er wordt niets geüpload naar externe servers.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Worden gegevens verwijderd wanneer de app wordt verwijderd?</div>
+    <div class="faq-a">Ja, wanneer de app wordt verwijderd, worden ook alle gegevens op het apparaat verwijderd. Het wordt aanbevolen om belangrijke PDF-rapporten vooraf op te slaan in Bestanden of iCloud.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan ik gegevens overzetten bij apparaatwissel?</div>
+    <div class="faq-a">Met behulp van iOS iCloud Back-up of Directe overdracht tussen iPhones kunnen app-gegevens ook worden overgedragen. Directe iCloud-synchronisatie wordt niet ondersteund.</div>
+  </div>
+</div>
+    <div class="contact-box">
+      <p>Contact</p>
+      <a href="mailto:chenyangli123@gmail.com">chenyangli123@gmail.com</a>
+    </div>
+  </div>
 </main>
 <footer>© freetokyo · <a href="https://apps.apple.com/app/id6778713193" rel="noopener">App Store</a></footer>
 </body>

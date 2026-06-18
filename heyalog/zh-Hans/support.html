@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-Hans" >
+<html lang="zh-Hans">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>支持 | Heyalog - 房间状况记录</title>
-<meta name="description" content="支持 — Heyalog - 房间状况记录"/>
+<title>支持 | ヘヤログ</title>
+<meta name="description" content="支持 — ヘヤログ"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/heyalog/zh-Hans/support.html"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -43,19 +43,20 @@
 <link rel="alternate" hreflang="vi" href="https://freetokyo.github.io/web/heyalog/vi/support.html"/>
 <link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/heyalog/zh-Hans/support.html"/>
 <link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/heyalog/zh-Hant/support.html"/>
-<link rel="alternate" hreflang="fr-CA" href="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
-<link rel="alternate" hreflang="es-MX" href="https://freetokyo.github.io/web/heyalog/es/support.html"/>
 <link rel="alternate" hreflang="en-AU" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
 <link rel="alternate" hreflang="en-CA" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
 <link rel="alternate" hreflang="en-GB" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
+<link rel="alternate" hreflang="fr-CA" href="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
+<link rel="alternate" hreflang="es-MX" href="https://freetokyo.github.io/web/heyalog/es/support.html"/>
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/heyalog/support.html"/>
 <meta name="theme-color" content="#2B3A67"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="支持 | Heyalog - 房间状况记录"/>
-<meta property="og:description" content="支持 — Heyalog - 房间状况记录"/>
+<meta property="og:title" content="支持 | ヘヤログ"/>
+<meta property="og:description" content="支持 — ヘヤログ"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/heyalog/zh-Hans/support.html"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/heyalog/ogp.png"/>
 <meta property="og:locale" content="zh_CN"/>
+<meta name="apple-itunes-app" content="app-id=6778713193, app-argument=https://freetokyo.github.io/web/heyalog/zh-Hans/support.html"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
@@ -76,48 +77,124 @@ nav a.nav-link:hover{opacity:1}
        box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
          letter-spacing:-.02em;margin-bottom:10px}
-.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
-.btn-dl{display:inline-block;background:#3A6ED6;color:#fff;
-        border-radius:980px;padding:12px 28px;font-size:15px;
-        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
-.btn-dl:hover{opacity:.85}
-.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
-.desc p{margin-bottom:14px;color:#333}
-.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
-         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
-.desc ul{margin:0 0 14px;padding-left:20px}
-.desc li{margin-bottom:6px;color:#333}
-.legal-links{text-align:center;padding:32px 20px 48px;
-             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
-.legal-links a{margin:0 12px}
-.legal-links a:hover{opacity:.7;text-decoration:underline}
-footer{text-align:center;padding:20px;font-size:12px;
-       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto}
+.content{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+.content h2{font-size:1.1rem;font-weight:700;margin:32px 0 10px;color:#1d1d1f}
+.content h3{font-size:.95rem;font-weight:600;margin:20px 0 8px;opacity:.75}
+.content p{margin-bottom:14px;color:#3a3a3c;line-height:1.75}
+.content ul{margin:0 0 14px 20px}
+.content li{margin-bottom:6px;color:#3a3a3c;line-height:1.65}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:16px;margin:24px 0 32px}
+.step-card{background:#fff;border-radius:14px;padding:20px;
+           box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.step-card .step-num{font-size:.75rem;font-weight:700;opacity:.45;
+                      text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.step-card h3{font-size:1rem;font-weight:600;margin:0 0 6px}
+.step-card p{font-size:.9rem;opacity:.65;margin:0;line-height:1.5}
+.faq-section{margin-top:40px}
+.faq-item{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+          box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.faq-q{font-weight:600;padding:18px 20px;cursor:default;font-size:.95rem}
+.faq-a{padding:0 20px 18px;color:#3a3a3c;font-size:.9rem;line-height:1.7}
+.legal-content{background:#fff;border-radius:14px;padding:28px;
+               box-shadow:0 2px 8px rgba(0,0,0,.06);margin-top:24px}
+.legal-content h2{font-size:1.05rem;font-weight:700;margin:24px 0 8px;
+                   padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.legal-content h2:first-child{border-top:none;margin-top:0;padding-top:0}
+.legal-content p{margin-bottom:12px;color:#3a3a3c;font-size:.95rem;line-height:1.75}
+.contact-box{background:#fff;border-radius:14px;padding:24px;margin-top:32px;
+             box-shadow:0 1px 4px rgba(0,0,0,.05);text-align:center}
+.contact-box p{margin-bottom:8px;opacity:.65}
+.contact-box a{color:#007AFF;font-weight:600;font-size:1rem}
+footer{text-align:center;padding:24px 20px;font-size:12px;
+       opacity:.4;border-top:1px solid rgba(0,0,0,.06)}
 [dir=rtl] nav{flex-direction:row-reverse}
 [dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+[dir=rtl] .content ul{margin-left:0;margin-right:20px}
 </style>
 </head>
 <body>
 <nav>
   <a class="logo" href="..">
-    <img src="../apple-touch-icon.png" alt="Heyalog - 房间状况记录" width="32" height="32"/>
-    <span>Heyalog - 房间状况记录</span>
+    <img src="../apple-touch-icon.png" alt="ヘヤログ" width="32" height="32"/>
+    <span>ヘヤログ</span>
   </a>
-  <a class="nav-link" href="index.html" style="font-weight:600;opacity:1">支持</a>
+  <a class="nav-link" href="support.html" style="font-weight:600;opacity:1">支持</a>
   <a class="nav-link" href="privacy.html">隐私政策</a>
   <a class="nav-link" href="terms.html">使用条款</a>
 </nav>
 <main>
   <section class="hero">
-    <img class="app-icon" src="../apple-touch-icon.png" alt="Heyalog - 房间状况记录" width="96" height="96"/>
+    <img class="app-icon" src="../apple-touch-icon.png" alt="ヘヤログ" width="96" height="96"/>
     <h1>支持</h1>
-    <p class="subtitle">Heyalog - 房间状况记录</p>
+    <p class="subtitle">ヘヤログ</p>
   </section>
-  <section class="desc">
-    <p><a href="mailto:chenyangli123@gmail.com" style="color:#3A6ED6;font-weight:600">chenyangli123@gmail.com</a></p>
-    <p style="margin-top:20px"><a href="https://freetokyo.github.io/web/heyalog/support.html" style="color:#3A6ED6">🇯🇵 日本語サポートページ</a></p>
-    <p><a href="https://apps.apple.com/app/id6778713193" rel="noopener" style="color:#3A6ED6">App Store</a></p>
-  </section>
+  <div class="content">
+    
+    <div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-q">如何开始？</div>
+    <div class="faq-a">在主屏幕上，点击右上角的+以注册房产。输入房产名称和房间名称，然后可以立即开始记录。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">如何分别使用入住和退房记录？</div>
+    <div class="faq-a">在房产详情屏幕上，使用分段控件在入住和退房之间切换。照片和清单分别独立管理。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">清单项目可以自定义吗？</div>
+    <div class="faq-a">检查点根据房间类型（厨房、浴室等）按照国土交通省指南自动设置。每个检查点可以添加自由备注。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以在照片中记录GPS吗？</div>
+    <div class="faq-a">如果开启「设置 &gt; 为照片添加位置」，在应用内拍摄的照片将嵌入当前位置的纬度和经度。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以从相册导入现有照片吗？</div>
+    <div class="faq-a">在检查点屏幕上，点击相机按钮，选择「从图库选取」。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">照片质量或数量有限制吗？</div>
+    <div class="faq-a">每个检查点可拍摄多张照片（无上限）。照片以原始尺寸保存，因此房产越多，占用的存储空间越大。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">如何创建PDF？</div>
+    <div class="faq-a">在房产详情屏幕上点击「创建PDF报告」。选择语言（日语或英语）并下载完成的PDF。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">PDF包含什么内容？</div>
+    <div class="faq-a">包括：房产名称、房间名称、各检查点的照片（含记录日期和时间）、位置信息以及完成清单。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以免费使用哪些功能？</div>
+    <div class="faq-a">入住时的照片记录、清单以及创建PDF报告完全免费。相同角度的对比照片和部分高级功能需要一次性购买。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">有订阅服务吗？</div>
+    <div class="faq-a">没有。这是一次性购买，价格为600日元。购买后可永久使用，无需额外费用。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">我想恢复购买</div>
+    <div class="faq-a">点击「设置 &gt; 恢复购买」。如果使用相同的Apple ID登录，可以免费恢复。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">数据存储在哪里？</div>
+    <div class="faq-a">所有数据（房产信息、照片、检查记录）仅存储在设备上，不会上传到任何外部服务器。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">删除应用时数据也会删除吗？</div>
+    <div class="faq-a">是的，删除应用后设备上的所有数据也会被删除。建议提前将重要的PDF报告保存到「文件」或iCloud中。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">更换设备时可以转移数据吗？</div>
+    <div class="faq-a">使用iOS的iCloud备份或iPhone之间的直接传输，应用数据也可以转移。不支持直接iCloud同步。</div>
+  </div>
+</div>
+    <div class="contact-box">
+      <p>联系</p>
+      <a href="mailto:chenyangli123@gmail.com">chenyangli123@gmail.com</a>
+    </div>
+  </div>
 </main>
 <footer>© freetokyo · <a href="https://apps.apple.com/app/id6778713193" rel="noopener">App Store</a></footer>
 </body>

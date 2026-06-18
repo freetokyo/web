@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" >
+<html lang="fr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Assistance | Heyalog - État des Lieux</title>
-<meta name="description" content="Assistance — Heyalog - État des Lieux"/>
+<title>Assistance | ヘヤログ</title>
+<meta name="description" content="Assistance — ヘヤログ"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -43,19 +43,20 @@
 <link rel="alternate" hreflang="vi" href="https://freetokyo.github.io/web/heyalog/vi/support.html"/>
 <link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/heyalog/zh-Hans/support.html"/>
 <link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/heyalog/zh-Hant/support.html"/>
-<link rel="alternate" hreflang="fr-CA" href="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
-<link rel="alternate" hreflang="es-MX" href="https://freetokyo.github.io/web/heyalog/es/support.html"/>
 <link rel="alternate" hreflang="en-AU" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
 <link rel="alternate" hreflang="en-CA" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
 <link rel="alternate" hreflang="en-GB" href="https://freetokyo.github.io/web/heyalog/en/support.html"/>
+<link rel="alternate" hreflang="fr-CA" href="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
+<link rel="alternate" hreflang="es-MX" href="https://freetokyo.github.io/web/heyalog/es/support.html"/>
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/heyalog/support.html"/>
 <meta name="theme-color" content="#2B3A67"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Assistance | Heyalog - État des Lieux"/>
-<meta property="og:description" content="Assistance — Heyalog - État des Lieux"/>
+<meta property="og:title" content="Assistance | ヘヤログ"/>
+<meta property="og:description" content="Assistance — ヘヤログ"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/heyalog/fr/support.html"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/heyalog/ogp.png"/>
 <meta property="og:locale" content="fr_FR"/>
+<meta name="apple-itunes-app" content="app-id=6778713193, app-argument=https://freetokyo.github.io/web/heyalog/fr/support.html"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
@@ -76,48 +77,124 @@ nav a.nav-link:hover{opacity:1}
        box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
          letter-spacing:-.02em;margin-bottom:10px}
-.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
-.btn-dl{display:inline-block;background:#3A6ED6;color:#fff;
-        border-radius:980px;padding:12px 28px;font-size:15px;
-        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
-.btn-dl:hover{opacity:.85}
-.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
-.desc p{margin-bottom:14px;color:#333}
-.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
-         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
-.desc ul{margin:0 0 14px;padding-left:20px}
-.desc li{margin-bottom:6px;color:#333}
-.legal-links{text-align:center;padding:32px 20px 48px;
-             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
-.legal-links a{margin:0 12px}
-.legal-links a:hover{opacity:.7;text-decoration:underline}
-footer{text-align:center;padding:20px;font-size:12px;
-       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto}
+.content{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+.content h2{font-size:1.1rem;font-weight:700;margin:32px 0 10px;color:#1d1d1f}
+.content h3{font-size:.95rem;font-weight:600;margin:20px 0 8px;opacity:.75}
+.content p{margin-bottom:14px;color:#3a3a3c;line-height:1.75}
+.content ul{margin:0 0 14px 20px}
+.content li{margin-bottom:6px;color:#3a3a3c;line-height:1.65}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:16px;margin:24px 0 32px}
+.step-card{background:#fff;border-radius:14px;padding:20px;
+           box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.step-card .step-num{font-size:.75rem;font-weight:700;opacity:.45;
+                      text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.step-card h3{font-size:1rem;font-weight:600;margin:0 0 6px}
+.step-card p{font-size:.9rem;opacity:.65;margin:0;line-height:1.5}
+.faq-section{margin-top:40px}
+.faq-item{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+          box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.faq-q{font-weight:600;padding:18px 20px;cursor:default;font-size:.95rem}
+.faq-a{padding:0 20px 18px;color:#3a3a3c;font-size:.9rem;line-height:1.7}
+.legal-content{background:#fff;border-radius:14px;padding:28px;
+               box-shadow:0 2px 8px rgba(0,0,0,.06);margin-top:24px}
+.legal-content h2{font-size:1.05rem;font-weight:700;margin:24px 0 8px;
+                   padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.legal-content h2:first-child{border-top:none;margin-top:0;padding-top:0}
+.legal-content p{margin-bottom:12px;color:#3a3a3c;font-size:.95rem;line-height:1.75}
+.contact-box{background:#fff;border-radius:14px;padding:24px;margin-top:32px;
+             box-shadow:0 1px 4px rgba(0,0,0,.05);text-align:center}
+.contact-box p{margin-bottom:8px;opacity:.65}
+.contact-box a{color:#007AFF;font-weight:600;font-size:1rem}
+footer{text-align:center;padding:24px 20px;font-size:12px;
+       opacity:.4;border-top:1px solid rgba(0,0,0,.06)}
 [dir=rtl] nav{flex-direction:row-reverse}
 [dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+[dir=rtl] .content ul{margin-left:0;margin-right:20px}
 </style>
 </head>
 <body>
 <nav>
   <a class="logo" href="..">
-    <img src="../apple-touch-icon.png" alt="Heyalog - État des Lieux" width="32" height="32"/>
-    <span>Heyalog - État des Lieux</span>
+    <img src="../apple-touch-icon.png" alt="ヘヤログ" width="32" height="32"/>
+    <span>ヘヤログ</span>
   </a>
-  <a class="nav-link" href="index.html" style="font-weight:600;opacity:1">Assistance</a>
+  <a class="nav-link" href="support.html" style="font-weight:600;opacity:1">Assistance</a>
   <a class="nav-link" href="privacy.html">Politique de confidentialité</a>
-  <a class="nav-link" href="terms.html">Conditions d'utilisation</a>
+  <a class="nav-link" href="terms.html">Conditions d&#x27;utilisation</a>
 </nav>
 <main>
   <section class="hero">
-    <img class="app-icon" src="../apple-touch-icon.png" alt="Heyalog - État des Lieux" width="96" height="96"/>
+    <img class="app-icon" src="../apple-touch-icon.png" alt="ヘヤログ" width="96" height="96"/>
     <h1>Assistance</h1>
-    <p class="subtitle">Heyalog - État des Lieux</p>
+    <p class="subtitle">ヘヤログ</p>
   </section>
-  <section class="desc">
-    <p><a href="mailto:chenyangli123@gmail.com" style="color:#3A6ED6;font-weight:600">chenyangli123@gmail.com</a></p>
-    <p style="margin-top:20px"><a href="https://freetokyo.github.io/web/heyalog/support.html" style="color:#3A6ED6">🇯🇵 日本語サポートページ</a></p>
-    <p><a href="https://apps.apple.com/app/id6778713193" rel="noopener" style="color:#3A6ED6">App Store</a></p>
-  </section>
+  <div class="content">
+    
+    <div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-q">Comment commencer à utiliser l&#x27;application ?</div>
+    <div class="faq-a">Depuis l&#x27;écran &#x27;Accueil&#x27;, appuyez sur &#x27;+&#x27; en haut à droite pour enregistrer un bien. Saisissez le nom et le type de bien (appartement, immeuble résidentiel, etc.) et ajoutez des pièces (salon, salle de bain, etc.). Ensuite, il vous suffit de prendre des photos pour chaque point de contrôle dans chaque pièce.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Comment utiliser séparément les enregistrements d&#x27;entrée et de sortie ?</div>
+    <div class="faq-a">Vous pouvez basculer entre &#x27;Entrée&#x27; et &#x27;Sortie&#x27; en utilisant le segment sur l&#x27;écran de détails du bien. Les photos prises à l&#x27;entrée et les photos de sortie depuis le même angle peuvent être comparées côte à côte, ce qui vous permet de vérifier facilement quels dommages existaient avant l&#x27;entrée.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Les éléments de la liste de contrôle peuvent-ils être personnalisés ?</div>
+    <div class="faq-a">Les points de contrôle sont définis automatiquement selon les directives du Ministère en fonction du type de pièce (cuisine, salle de bain, chambre, etc.). Dans la version actuelle, il n&#x27;est pas possible d&#x27;ajouter ou de supprimer des éléments.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Le GPS peut-il être enregistré dans les photos ?</div>
+    <div class="faq-a">Si vous activez &#x27;Réglages → Ajouter la localisation aux photos&#x27;, la latitude et la longitude de la position actuelle seront enregistrées dans les photos lors de leur prise. La valeur par défaut est désactivée. Les informations de localisation sont stockées uniquement sur l&#x27;appareil et ne sont pas envoyées à l&#x27;extérieur.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puis-je importer des photos existantes (depuis le pellicule) ?</div>
+    <div class="faq-a">Sur l&#x27;écran du point de contrôle, appuyez sur le bouton appareil photo et sélectionnez &#x27;Choisir dans la bibliothèque&#x27; pour utiliser des photos déjà prises.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Y a-t-il des restrictions sur la qualité ou le nombre de photos ?</div>
+    <div class="faq-a">Plusieurs photos peuvent être prises par point de contrôle (sans limite). Les photos sont enregistrées en taille complète, donc plus il y a de biens et de photos, plus l&#x27;espace de stockage de l&#x27;appareil est consommé. Il est recommandé de supprimer les enregistrements inutiles.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Comment créer un PDF ?</div>
+    <div class="faq-a">Appuyez sur &#x27;Créer un rapport PDF&#x27; sur l&#x27;écran de détails du bien. Vous pouvez sélectionner la langue (japonais ou anglais) et le générer ; après génération, vous pouvez l&#x27;envoyer par e-mail, le sauvegarder dans l&#x27;application Fichiers ou l&#x27;imprimer via le bouton de partage.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Que contient le PDF ?</div>
+    <div class="faq-a">Il contient : le nom du bien, le nom de la pièce, les photos de chaque point de contrôle avec la date et l&#x27;heure d&#x27;enregistrement, les informations de localisation (si enregistrées) et le statut d&#x27;inspection. À la sortie, les photos d&#x27;entrée et de sortie sont affichées comparativement côte à côte.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Que puis-je utiliser gratuitement ?</div>
+    <div class="faq-a">L&#x27;enregistrement photographique à l&#x27;entrée, la liste de contrôle et la création de rapports PDF sont entièrement gratuits. La photographie comparative depuis le même angle à la sortie, le rapport PDF comparatif et l&#x27;export groupé de données (ZIP) se débloquent avec un achat unique.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Y a-t-il un abonnement ?</div>
+    <div class="faq-a">Non. C&#x27;est un achat unique à ¥600. Une fois acheté, il peut être utilisé de façon permanente sans frais supplémentaires.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Je veux restaurer mon achat</div>
+    <div class="faq-a">Appuyez sur &#x27;Réglages → Restaurer les achats&#x27;. Si vous êtes connecté avec le même Apple ID, vous pouvez restaurer gratuitement même après avoir changé d&#x27;appareil.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Où les données sont-elles stockées ?</div>
+    <div class="faq-a">Toutes les données (informations sur le bien, photos, enregistrements d&#x27;inspection) sont stockées uniquement sur l&#x27;appareil de l&#x27;utilisateur. Rien n&#x27;est envoyé à ou collecté sur des serveurs externes.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Les données sont-elles supprimées lors de la suppression de l&#x27;application ?</div>
+    <div class="faq-a">Oui, lors de la suppression de l&#x27;application, toutes les données sur l&#x27;appareil sont également supprimées. Il est recommandé de sauvegarder les photos importantes ailleurs au préalable avec &#x27;Exporter les données (ZIP)&#x27; (fonctionnalité d&#x27;achat unique).</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puis-je transférer les données lors d&#x27;un changement d&#x27;appareil ?</div>
+    <div class="faq-a">En utilisant &#x27;iCloud Backup&#x27; d&#x27;iOS ou le &#x27;Transfert direct entre iPhone&#x27;, les données de l&#x27;application peuvent également être transférées. Cette application ne dispose pas de sa propre fonction de synchronisation cloud.</div>
+  </div>
+</div>
+    <div class="contact-box">
+      <p>Contact</p>
+      <a href="mailto:chenyangli123@gmail.com">chenyangli123@gmail.com</a>
+    </div>
+  </div>
 </main>
 <footer>© freetokyo · <a href="https://apps.apple.com/app/id6778713193" rel="noopener">App Store</a></footer>
 </body>
