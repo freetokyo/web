@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it" >
+<html lang="it">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Supporto | CareHours: paghe assistenza</title>
-<meta name="description" content="Supporto — CareHours: paghe assistenza"/>
+<title>Supporto | CareHours 訪問介護 給与計算・記録</title>
+<meta name="description" content="Supporto — CareHours 訪問介護 給与計算・記録"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/carehours/it/support.html"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -51,11 +51,12 @@
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/carehours/support.html"/>
 <meta name="theme-color" content="#4CAF82"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Supporto | CareHours: paghe assistenza"/>
-<meta property="og:description" content="Supporto — CareHours: paghe assistenza"/>
+<meta property="og:title" content="Supporto | CareHours 訪問介護 給与計算・記録"/>
+<meta property="og:description" content="Supporto — CareHours 訪問介護 給与計算・記録"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/carehours/it/support.html"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/carehours/ogp.png"/>
 <meta property="og:locale" content="it_IT"/>
+<meta name="apple-itunes-app" content="app-id=6769304063, app-argument=https://freetokyo.github.io/web/carehours/it/support.html"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
@@ -76,48 +77,96 @@ nav a.nav-link:hover{opacity:1}
        box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
          letter-spacing:-.02em;margin-bottom:10px}
-.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
-.btn-dl{display:inline-block;background:#4CAF82;color:#fff;
-        border-radius:980px;padding:12px 28px;font-size:15px;
-        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
-.btn-dl:hover{opacity:.85}
-.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
-.desc p{margin-bottom:14px;color:#333}
-.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
-         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
-.desc ul{margin:0 0 14px;padding-left:20px}
-.desc li{margin-bottom:6px;color:#333}
-.legal-links{text-align:center;padding:32px 20px 48px;
-             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
-.legal-links a{margin:0 12px}
-.legal-links a:hover{opacity:.7;text-decoration:underline}
-footer{text-align:center;padding:20px;font-size:12px;
-       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto}
+.content{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+.content h2{font-size:1.1rem;font-weight:700;margin:32px 0 10px;color:#1d1d1f}
+.content h3{font-size:.95rem;font-weight:600;margin:20px 0 8px;opacity:.75}
+.content p{margin-bottom:14px;color:#3a3a3c;line-height:1.75}
+.content ul{margin:0 0 14px 20px}
+.content li{margin-bottom:6px;color:#3a3a3c;line-height:1.65}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:16px;margin:24px 0 32px}
+.step-card{background:#fff;border-radius:14px;padding:20px;
+           box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.step-card .step-num{font-size:.75rem;font-weight:700;opacity:.45;
+                      text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.step-card h3{font-size:1rem;font-weight:600;margin:0 0 6px}
+.step-card p{font-size:.9rem;opacity:.65;margin:0;line-height:1.5}
+.faq-section{margin-top:40px}
+.faq-item{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+          box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.faq-q{font-weight:600;padding:18px 20px;cursor:default;font-size:.95rem}
+.faq-a{padding:0 20px 18px;color:#3a3a3c;font-size:.9rem;line-height:1.7}
+.legal-content{background:#fff;border-radius:14px;padding:28px;
+               box-shadow:0 2px 8px rgba(0,0,0,.06);margin-top:24px}
+.legal-content h2{font-size:1.05rem;font-weight:700;margin:24px 0 8px;
+                   padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.legal-content h2:first-child{border-top:none;margin-top:0;padding-top:0}
+.legal-content p{margin-bottom:12px;color:#3a3a3c;font-size:.95rem;line-height:1.75}
+.contact-box{background:#fff;border-radius:14px;padding:24px;margin-top:32px;
+             box-shadow:0 1px 4px rgba(0,0,0,.05);text-align:center}
+.contact-box p{margin-bottom:8px;opacity:.65}
+.contact-box a{color:#007AFF;font-weight:600;font-size:1rem}
+footer{text-align:center;padding:24px 20px;font-size:12px;
+       opacity:.4;border-top:1px solid rgba(0,0,0,.06)}
 [dir=rtl] nav{flex-direction:row-reverse}
 [dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+[dir=rtl] .content ul{margin-left:0;margin-right:20px}
 </style>
 </head>
 <body>
 <nav>
   <a class="logo" href="..">
-    <img src="../apple-touch-icon.png" alt="CareHours: paghe assistenza" width="32" height="32"/>
-    <span>CareHours</span>
+    <img src="../apple-touch-icon.png" alt="CareHours 訪問介護 給与計算・記録" width="32" height="32"/>
+    <span>CareHours 訪問介護 給与計算・記録</span>
   </a>
-  <a class="nav-link" href="index.html" style="font-weight:600;opacity:1">Supporto</a>
+  <a class="nav-link" href="support.html" style="font-weight:600;opacity:1">Supporto</a>
   <a class="nav-link" href="privacy.html">Informativa sulla privacy</a>
   <a class="nav-link" href="terms.html">Termini di utilizzo</a>
 </nav>
 <main>
   <section class="hero">
-    <img class="app-icon" src="../apple-touch-icon.png" alt="CareHours: paghe assistenza" width="96" height="96"/>
+    <img class="app-icon" src="../apple-touch-icon.png" alt="CareHours 訪問介護 給与計算・記録" width="96" height="96"/>
     <h1>Supporto</h1>
-    <p class="subtitle">CareHours: paghe assistenza</p>
+    <p class="subtitle">CareHours 訪問介護 給与計算・記録</p>
   </section>
-  <section class="desc">
-    <p><a href="mailto:chenyangli123@gmail.com" style="color:#4CAF82;font-weight:600">chenyangli123@gmail.com</a></p>
-    <p style="margin-top:20px"><a href="https://freetokyo.github.io/web/carehours/support.html" style="color:#4CAF82">🇯🇵 日本語サポートページ</a></p>
-    <p><a href="https://apps.apple.com/app/id6769304063" rel="noopener" style="color:#4CAF82">App Store</a></p>
-  </section>
+  <div class="content">
+    
+    <div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-q">Dove vengono archiviati i miei dati?</div>
+    <div class="faq-a">Nel piano gratuito, i dati vengono archiviati sul tuo iPhone (archiviazione locale). Nel piano premium, è disponibile la sincronizzazione con iCloud. In entrambi i casi, lo sviluppatore non può accedere ai tuoi dati.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Come viene calcolato il supplemento notturno?</div>
+    <div class="faq-a">22:00–06:00 è il periodo notturno, e i minuti in questo periodo vengono calcolati alla tariffa notturna (solitamente 25% in più). Ad esempio, per una visita dalle 21:00 alle 23:00: 21:00–22:00 alla tariffa normale e 22:00–23:00 automaticamente alla tariffa con supplemento.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Posso cancellare il piano premium in qualsiasi momento?</div>
+    <div class="faq-a">Sì. Vai su Impostazioni App Store → Abbonamenti per cancellare. Dopo la cancellazione puoi continuare a usare le funzioni premium fino alla prossima data di rinnovo.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Cosa succede ai miei dati quando cambio dispositivo?</div>
+    <div class="faq-a">Piano gratuito: i dati possono essere trasferiti ripristinando un backup iPhone. Piano premium con sincronizzazione iCloud: accedi con lo stesso Apple ID e i dati verranno trasferiti automaticamente.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Posso usarlo se sono registrato presso più datori di lavoro?</div>
+    <div class="faq-a">Il piano premium supporta la gestione di più datori di lavoro. Puoi impostare la tariffa oraria e l&#x27;indennità di trasporto per datore di lavoro e visualizzare il salario stimato combinato.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Posso personalizzare il contenuto del rapporto PDF?</div>
+    <div class="faq-a">La versione corrente supporta solo l&#x27;output PDF in formato standard. La personalizzazione è prevista per un futuro aggiornamento.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Quale versione di iOS è supportata?</div>
+    <div class="faq-a">iOS 17.0 e versioni successive. Si consiglia di aggiornare all&#x27;ultimo iOS.</div>
+  </div>
+</div>
+    <div class="contact-box">
+      <p>Contatto</p>
+      <a href="mailto:chenyangli123@gmail.com">chenyangli123@gmail.com</a>
+    </div>
+  </div>
 </main>
 <footer>© freetokyo · <a href="https://apps.apple.com/app/id6769304063" rel="noopener">App Store</a></footer>
 </body>

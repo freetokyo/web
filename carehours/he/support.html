@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>תמיכה | CareHours רישום וחישוב שכר</title>
-<meta name="description" content="תמיכה — CareHours רישום וחישוב שכר"/>
+<title>תמיכה | CareHours 訪問介護 給与計算・記録</title>
+<meta name="description" content="תמיכה — CareHours 訪問介護 給与計算・記録"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/carehours/he/support.html"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -51,11 +51,12 @@
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/carehours/support.html"/>
 <meta name="theme-color" content="#4CAF82"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="תמיכה | CareHours רישום וחישוב שכר"/>
-<meta property="og:description" content="תמיכה — CareHours רישום וחישוב שכר"/>
+<meta property="og:title" content="תמיכה | CareHours 訪問介護 給与計算・記録"/>
+<meta property="og:description" content="תמיכה — CareHours 訪問介護 給与計算・記録"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/carehours/he/support.html"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/carehours/ogp.png"/>
 <meta property="og:locale" content="he_IL"/>
+<meta name="apple-itunes-app" content="app-id=6769304063, app-argument=https://freetokyo.github.io/web/carehours/he/support.html"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
@@ -76,48 +77,96 @@ nav a.nav-link:hover{opacity:1}
        box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
          letter-spacing:-.02em;margin-bottom:10px}
-.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
-.btn-dl{display:inline-block;background:#4CAF82;color:#fff;
-        border-radius:980px;padding:12px 28px;font-size:15px;
-        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
-.btn-dl:hover{opacity:.85}
-.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
-.desc p{margin-bottom:14px;color:#333}
-.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
-         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
-.desc ul{margin:0 0 14px;padding-left:20px}
-.desc li{margin-bottom:6px;color:#333}
-.legal-links{text-align:center;padding:32px 20px 48px;
-             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
-.legal-links a{margin:0 12px}
-.legal-links a:hover{opacity:.7;text-decoration:underline}
-footer{text-align:center;padding:20px;font-size:12px;
-       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto}
+.content{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+.content h2{font-size:1.1rem;font-weight:700;margin:32px 0 10px;color:#1d1d1f}
+.content h3{font-size:.95rem;font-weight:600;margin:20px 0 8px;opacity:.75}
+.content p{margin-bottom:14px;color:#3a3a3c;line-height:1.75}
+.content ul{margin:0 0 14px 20px}
+.content li{margin-bottom:6px;color:#3a3a3c;line-height:1.65}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:16px;margin:24px 0 32px}
+.step-card{background:#fff;border-radius:14px;padding:20px;
+           box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.step-card .step-num{font-size:.75rem;font-weight:700;opacity:.45;
+                      text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.step-card h3{font-size:1rem;font-weight:600;margin:0 0 6px}
+.step-card p{font-size:.9rem;opacity:.65;margin:0;line-height:1.5}
+.faq-section{margin-top:40px}
+.faq-item{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+          box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.faq-q{font-weight:600;padding:18px 20px;cursor:default;font-size:.95rem}
+.faq-a{padding:0 20px 18px;color:#3a3a3c;font-size:.9rem;line-height:1.7}
+.legal-content{background:#fff;border-radius:14px;padding:28px;
+               box-shadow:0 2px 8px rgba(0,0,0,.06);margin-top:24px}
+.legal-content h2{font-size:1.05rem;font-weight:700;margin:24px 0 8px;
+                   padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.legal-content h2:first-child{border-top:none;margin-top:0;padding-top:0}
+.legal-content p{margin-bottom:12px;color:#3a3a3c;font-size:.95rem;line-height:1.75}
+.contact-box{background:#fff;border-radius:14px;padding:24px;margin-top:32px;
+             box-shadow:0 1px 4px rgba(0,0,0,.05);text-align:center}
+.contact-box p{margin-bottom:8px;opacity:.65}
+.contact-box a{color:#007AFF;font-weight:600;font-size:1rem}
+footer{text-align:center;padding:24px 20px;font-size:12px;
+       opacity:.4;border-top:1px solid rgba(0,0,0,.06)}
 [dir=rtl] nav{flex-direction:row-reverse}
 [dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+[dir=rtl] .content ul{margin-left:0;margin-right:20px}
 </style>
 </head>
 <body>
 <nav>
   <a class="logo" href="..">
-    <img src="../apple-touch-icon.png" alt="CareHours רישום וחישוב שכר" width="32" height="32"/>
-    <span>CareHours רישום וחישוב שכר</span>
+    <img src="../apple-touch-icon.png" alt="CareHours 訪問介護 給与計算・記録" width="32" height="32"/>
+    <span>CareHours 訪問介護 給与計算・記録</span>
   </a>
-  <a class="nav-link" href="index.html" style="font-weight:600;opacity:1">תמיכה</a>
+  <a class="nav-link" href="support.html" style="font-weight:600;opacity:1">תמיכה</a>
   <a class="nav-link" href="privacy.html">מדיניות פרטיות</a>
   <a class="nav-link" href="terms.html">תנאי שימוש</a>
 </nav>
 <main>
   <section class="hero">
-    <img class="app-icon" src="../apple-touch-icon.png" alt="CareHours רישום וחישוב שכר" width="96" height="96"/>
+    <img class="app-icon" src="../apple-touch-icon.png" alt="CareHours 訪問介護 給与計算・記録" width="96" height="96"/>
     <h1>תמיכה</h1>
-    <p class="subtitle">CareHours רישום וחישוב שכר</p>
+    <p class="subtitle">CareHours 訪問介護 給与計算・記録</p>
   </section>
-  <section class="desc">
-    <p><a href="mailto:chenyangli123@gmail.com" style="color:#4CAF82;font-weight:600">chenyangli123@gmail.com</a></p>
-    <p style="margin-top:20px"><a href="https://freetokyo.github.io/web/carehours/support.html" style="color:#4CAF82">🇯🇵 日本語サポートページ</a></p>
-    <p><a href="https://apps.apple.com/app/id6769304063" rel="noopener" style="color:#4CAF82">App Store</a></p>
-  </section>
+  <div class="content">
+    
+    <div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-q">היכן מאוחסנים הנתונים שלי?</div>
+    <div class="faq-a">בתוכנית החינמית, הנתונים מאוחסנים ב-iPhone שלך (אחסון מקומי). בתוכנית הפרימיום, סנכרון iCloud זמין. בשני המקרים, המפתח אינו יכול לגשת לנתוניך.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">כיצד מחושבת תוספת הלילה?</div>
+    <div class="faq-a">22:00–06:00 הוא הזמן הלילי, ודקות בתקופה זו מחושבות בתעריף לילה (בדרך כלל 25% תוספת). לדוגמה, לביקור 21:00–23:00: 21:00–22:00 בתעריף רגיל ו-22:00–23:00 אוטומטית בתעריף תוספת.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">האם ניתן לבטל את תוכנית הפרימיום בכל עת?</div>
+    <div class="faq-a">כן. עבור להגדרות App Store ← מנויים לביטול. לאחר הביטול, ניתן להמשיך להשתמש בתכונות פרימיום עד תאריך החידוש הבא.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">מה קורה לנתונים שלי בעת שינוי מכשיר?</div>
+    <div class="faq-a">תוכנית חינמית: ניתן להעביר נתונים על ידי שחזור גיבוי iPhone. תוכנית פרימיום עם סנכרון iCloud: התחברות עם אותו Apple ID תעביר נתונים אוטומטית.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">האם ניתן להשתמש בו אם אני רשום בכמה מקומות עבודה?</div>
+    <div class="faq-a">תוכנית הפרימיום תומכת בניהול מקומות עבודה מרובים. ניתן להגדיר שכר לשעה ודמי נסיעה לכל מקום עבודה ולצפות בשכר המשוער הכולל.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">האם ניתן להתאים אישית את תוכן דוח PDF?</div>
+    <div class="faq-a">הגרסה הנוכחית תומכת רק בפלט PDF בפורמט סטנדרטי. התאמה אישית מתוכננת לעדכון עתידי.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">איזו גרסת iOS נתמכת?</div>
+    <div class="faq-a">iOS 17.0 ומעלה. מומלץ לעדכן ל-iOS האחרון.</div>
+  </div>
+</div>
+    <div class="contact-box">
+      <p>יצירת קשר</p>
+      <a href="mailto:chenyangli123@gmail.com">chenyangli123@gmail.com</a>
+    </div>
+  </div>
 </main>
 <footer>© freetokyo · <a href="https://apps.apple.com/app/id6769304063" rel="noopener">App Store</a></footer>
 </body>
