@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="el" >
+<html lang="el">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Πολιτική Απορρήτου | IeKan: Φροντίδα πατρικού</title>
-<meta name="description" content="Πολιτική Απορρήτου — IeKan: Φροντίδα πατρικού"/>
+<title>Πολιτική Απορρήτου | 実家管理 IeKan-親の家を家族で見守る</title>
+<meta name="description" content="実家管理 IeKan-親の家を家族で見守る — Πολιτική Απορρήτου"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/iekan/el/privacy.html"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -51,11 +51,12 @@
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/iekan/privacy.html"/>
 <meta name="theme-color" content="#5C8D89"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Πολιτική Απορρήτου | IeKan: Φροντίδα πατρικού"/>
-<meta property="og:description" content="Πολιτική Απορρήτου — IeKan: Φροντίδα πατρικού"/>
+<meta property="og:title" content="Πολιτική Απορρήτου | 実家管理 IeKan-親の家を家族で見守る"/>
+<meta property="og:description" content="実家管理 IeKan-親の家を家族で見守る — Πολιτική Απορρήτου"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/iekan/el/privacy.html"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/iekan/ogp.png"/>
 <meta property="og:locale" content="el_GR"/>
+<meta name="apple-itunes-app" content="app-id=6764244913, app-argument=https://freetokyo.github.io/web/iekan/el/privacy.html"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
@@ -76,47 +77,90 @@ nav a.nav-link:hover{opacity:1}
        box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
          letter-spacing:-.02em;margin-bottom:10px}
-.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
-.btn-dl{display:inline-block;background:#34C759;color:#fff;
-        border-radius:980px;padding:12px 28px;font-size:15px;
-        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
-.btn-dl:hover{opacity:.85}
-.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
-.desc p{margin-bottom:14px;color:#333}
-.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
-         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
-.desc ul{margin:0 0 14px;padding-left:20px}
-.desc li{margin-bottom:6px;color:#333}
-.legal-links{text-align:center;padding:32px 20px 48px;
-             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
-.legal-links a{margin:0 12px}
-.legal-links a:hover{opacity:.7;text-decoration:underline}
-footer{text-align:center;padding:20px;font-size:12px;
-       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto}
+.content{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+.content h2{font-size:1.1rem;font-weight:700;margin:32px 0 10px;color:#1d1d1f}
+.content h3{font-size:.95rem;font-weight:600;margin:20px 0 8px;opacity:.75}
+.content p{margin-bottom:14px;color:#3a3a3c;line-height:1.75}
+.content ul{margin:0 0 14px 20px}
+.content li{margin-bottom:6px;color:#3a3a3c;line-height:1.65}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:16px;margin:24px 0 32px}
+.step-card{background:#fff;border-radius:14px;padding:20px;
+           box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.step-card .step-num{font-size:.75rem;font-weight:700;opacity:.45;
+                      text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.step-card h3{font-size:1rem;font-weight:600;margin:0 0 6px}
+.step-card p{font-size:.9rem;opacity:.65;margin:0;line-height:1.5}
+.faq-section{margin-top:40px}
+.faq-item{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+          box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.faq-q{font-weight:600;padding:18px 20px;cursor:default;font-size:.95rem}
+.faq-a{padding:0 20px 18px;color:#3a3a3c;font-size:.9rem;line-height:1.7}
+.legal-content{background:#fff;border-radius:14px;padding:28px;
+               box-shadow:0 2px 8px rgba(0,0,0,.06);margin-top:24px}
+.legal-content h2{font-size:1.05rem;font-weight:700;margin:24px 0 8px;
+                   padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.legal-content h2:first-child{border-top:none;margin-top:0;padding-top:0}
+.legal-content p{margin-bottom:12px;color:#3a3a3c;font-size:.95rem;line-height:1.75}
+.contact-box{background:#fff;border-radius:14px;padding:24px;margin-top:32px;
+             box-shadow:0 1px 4px rgba(0,0,0,.05);text-align:center}
+.contact-box p{margin-bottom:8px;opacity:.65}
+.contact-box a{color:#007AFF;font-weight:600;font-size:1rem}
+footer{text-align:center;padding:24px 20px;font-size:12px;
+       opacity:.4;border-top:1px solid rgba(0,0,0,.06)}
 [dir=rtl] nav{flex-direction:row-reverse}
 [dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+[dir=rtl] .content ul{margin-left:0;margin-right:20px}
 </style>
 </head>
 <body>
 <nav>
   <a class="logo" href="..">
-    <img src="../apple-touch-icon.png" alt="IeKan: Φροντίδα πατρικού" width="32" height="32"/>
-    <span>IeKan</span>
+    <img src="../apple-touch-icon.png" alt="実家管理 IeKan-親の家を家族で見守る" width="32" height="32"/>
+    <span>実家管理 IeKan-親の家を家族で見守る</span>
   </a>
-  <a class="nav-link" href="index.html">Υποστήριξη</a>
-  <a class="nav-link" href="privacy.html"style="font-weight:600;opacity:1">Πολιτική Απορρήτου</a>
+  <a class="nav-link" href="support.html">Υποστήριξη</a>
+  <a class="nav-link" href="privacy.html" style="font-weight:600;opacity:1">Πολιτική Απορρήτου</a>
   <a class="nav-link" href="terms.html">Όροι Χρήσης</a>
 </nav>
 <main>
   <section class="hero">
-    <img class="app-icon" src="../apple-touch-icon.png" alt="IeKan: Φροντίδα πατρικού" width="96" height="96"/>
+    <img class="app-icon" src="../apple-touch-icon.png" alt="実家管理 IeKan-親の家を家族で見守る" width="96" height="96"/>
     <h1>Πολιτική Απορρήτου</h1>
-    <p class="subtitle">IeKan: Φροντίδα πατρικού</p>
+    <p class="subtitle">実家管理 IeKan-親の家を家族で見守る</p>
   </section>
-  <section class="desc">
-    <p><a href="https://freetokyo.github.io/web/iekan/privacy.html" style="color:#34C759">🇯🇵 Πολιτική Απορρήτου（日本語）</a></p>
-    <p style="margin-top:16px"><a href="mailto:chenyangli123@gmail.com" style="color:#34C759">chenyangli123@gmail.com</a></p>
-  </section>
+  <div class="content">
+    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Ημερομηνία δημιουργίας: 13 Μαΐου 2026 / Προγραμματιστής: CHEN YANGLI (freetokyo)</p>
+    <div class="legal-content">
+<h2>Εισαγωγή</h2>
+<p>Το IeKan είναι εφαρμογή iOS για οικογένειες που διαχειρίζονται από κοινού το οικογενειακό σπίτι. Δεν εμφανίζει διαφημίσεις και δεν πωλεί τις πληροφορίες σας σε τρίτους.</p>
+<h2>Πληροφορίες που συλλέγουμε</h2>
+<p>Εισαγόμενες από τον χρήστη: όνομα ακινήτου, διεύθυνση, έτος κατασκευής· φωτογραφίες· εικόνες σαρωμένων εγγράφων και κείμενο OCR· όνομα (προφίλ)· στοιχεία λίστας, εργασίες και σχόλια.</p>
+<p>Αυτόματα συλλεγόμενες: ημερομηνία πρώτης εγκατάστασης και αριθμός εκκινήσεων, ανώνυμα μοτίβα χρήσης, ελεύθερος χώρος συσκευής.</p>
+<p>ΔΕΝ συλλέγονται: GPS, επαφές, IDFA, βιομετρικά δεδομένα, ιστορικό περιήγησης.</p>
+<h2>Πώς χρησιμοποιούμε τις πληροφορίες σας</h2>
+<p>Αποκλειστικά για: τοπική διαχείριση ακινήτων, εγγράφων και φωτογραφιών· συγχρονισμό οικογενειακών δεδομένων μέσω iCloud (CloudKit)· αποστολή ειδοποιήσεων υπενθύμισης συντήρησης· βελτίωση υπηρεσιών με ανώνυμες στατιστικές· καθορισμό πλάνου συνδρομής.</p>
+<h2>Πού αποθηκεύονται τα δεδομένα</h2>
+<p>Στη συσκευή σας: SwiftData (τοπική βάση δεδομένων). iCloud (Apple CloudKit): κατά τη χρήση οικογενειακής κοινής χρήσης, τα δεδομένα συγχρονίζονται κρυπτογραφημένα. Δεν αποστέλλονται δεδομένα στους διακομιστές του προγραμματιστή.</p>
+<h2>Υπηρεσίες τρίτων</h2>
+<p>Η εφαρμογή χρησιμοποιεί μόνο υπηρεσίες Apple: CloudKit (οικογενειακός συγχρονισμός, κρυπτογράφηση end-to-end)· StoreKit/App Store (χρέωση συνδρομής)· VisionKit OCR (μόνο στη συσκευή)· UserNotifications (υπενθυμίσεις). Βλ. apple.com/legal/privacy.</p>
+<h2>Διατήρηση δεδομένων</h2>
+<p>Τα δεδομένα διατηρούνται στη συσκευή σας μέχρι τη διαγραφή της εφαρμογής. Τα δεδομένα iCloud ακολουθούν την πολιτική διατήρησης δεδομένων της Apple. Μπορείτε να διαγράψετε δεδομένα CloudKit μέσω iCloud.com.</p>
+<h2>Τα δικαιώματά σας</h2>
+<p>Εξαγωγή δεδομένων: Ρυθμίσεις → Αντίγραφο ασφαλείας εξάγει όλα τα δεδομένα σε JSON. Διαγραφή δεδομένων: η διαγραφή ακινήτου διαγράφει σε καταρράκτη όλα τα σχετικά δεδομένα. Κάτοικοι ΕΕ: δικαιώματα GDPR. Κάτοικοι Ιαπωνίας: δικαιώματα νόμου περί προσωπικών δεδομένων. Επικοινωνήστε μαζί μας.</p>
+<h2>Απόρρητο παιδιών</h2>
+<p>Η εφαρμογή απευθύνεται σε χρήστες 13 ετών και άνω. Δεν συλλέγουμε εν γνώσει μας πληροφορίες από παιδιά κάτω των 13 ετών.</p>
+<h2>Επικοινωνία</h2>
+<p>Για ερωτήσεις: freetokyo2020@yahoo.co.jp</p>
+<h2>Αλλαγές πολιτικής</h2>
+<p>Αυτή η πολιτική μπορεί να αναθεωρηθεί όπως απαιτείται. Σημαντικές αλλαγές θα ανακοινωθούν στην εφαρμογή ή σε αυτή τη σελίδα. Ημερομηνία δημιουργίας: 13 Μαΐου 2026.</p>
+    </div>
+    <div class="contact-box" style="margin-top:32px">
+      <p>Επικοινωνία</p>
+      <a href="mailto:chenyangli123@gmail.com">chenyangli123@gmail.com</a>
+    </div>
+  </div>
 </main>
 <footer>© freetokyo · <a href="https://apps.apple.com/app/id6764244913" rel="noopener">App Store</a></footer>
 </body>

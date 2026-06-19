@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="es">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Soporte | IeKan: cuidar la casa familiar</title>
-<meta name="description" content="Soporte — IeKan: cuidar la casa familiar"/>
+<title>Soporte | 実家管理 IeKan-親の家を家族で見守る</title>
+<meta name="description" content="Soporte — 実家管理 IeKan-親の家を家族で見守る"/>
 <meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/iekan/es/support.html"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -51,11 +51,12 @@
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/iekan/support.html"/>
 <meta name="theme-color" content="#5C8D89"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Soporte | IeKan: cuidar la casa familiar"/>
-<meta property="og:description" content="Soporte — IeKan: cuidar la casa familiar"/>
+<meta property="og:title" content="Soporte | 実家管理 IeKan-親の家を家族で見守る"/>
+<meta property="og:description" content="Soporte — 実家管理 IeKan-親の家を家族で見守る"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/iekan/es/support.html"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/iekan/ogp.png"/>
 <meta property="og:locale" content="es_ES"/>
+<meta name="apple-itunes-app" content="app-id=6764244913, app-argument=https://freetokyo.github.io/web/iekan/es/support.html"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
@@ -76,48 +77,108 @@ nav a.nav-link:hover{opacity:1}
        box-shadow:0 8px 24px rgba(0,0,0,.15);margin-bottom:20px}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
          letter-spacing:-.02em;margin-bottom:10px}
-.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto 28px}
-.btn-dl{display:inline-block;background:#34C759;color:#fff;
-        border-radius:980px;padding:12px 28px;font-size:15px;
-        font-weight:600;letter-spacing:.01em;transition:opacity .2s}
-.btn-dl:hover{opacity:.85}
-.desc{max-width:680px;margin:40px auto;padding:0 20px 40px}
-.desc p{margin-bottom:14px;color:#333}
-.desc h3{font-size:1rem;font-weight:700;margin:22px 0 8px;
-         text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-size:.8rem}
-.desc ul{margin:0 0 14px;padding-left:20px}
-.desc li{margin-bottom:6px;color:#333}
-.legal-links{text-align:center;padding:32px 20px 48px;
-             border-top:1px solid rgba(0,0,0,.06);font-size:14px;opacity:.55}
-.legal-links a{margin:0 12px}
-.legal-links a:hover{opacity:.7;text-decoration:underline}
-footer{text-align:center;padding:20px;font-size:12px;
-       opacity:.45;border-top:1px solid rgba(0,0,0,.06)}
+.hero p.subtitle{font-size:1.1rem;opacity:.6;max-width:520px;margin:0 auto}
+.content{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+.content h2{font-size:1.1rem;font-weight:700;margin:32px 0 10px;color:#1d1d1f}
+.content h3{font-size:.95rem;font-weight:600;margin:20px 0 8px;opacity:.75}
+.content p{margin-bottom:14px;color:#3a3a3c;line-height:1.75}
+.content ul{margin:0 0 14px 20px}
+.content li{margin-bottom:6px;color:#3a3a3c;line-height:1.65}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+            gap:16px;margin:24px 0 32px}
+.step-card{background:#fff;border-radius:14px;padding:20px;
+           box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.step-card .step-num{font-size:.75rem;font-weight:700;opacity:.45;
+                      text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.step-card h3{font-size:1rem;font-weight:600;margin:0 0 6px}
+.step-card p{font-size:.9rem;opacity:.65;margin:0;line-height:1.5}
+.faq-section{margin-top:40px}
+.faq-item{background:#fff;border-radius:12px;margin-bottom:12px;overflow:hidden;
+          box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.faq-q{font-weight:600;padding:18px 20px;cursor:default;font-size:.95rem}
+.faq-a{padding:0 20px 18px;color:#3a3a3c;font-size:.9rem;line-height:1.7}
+.legal-content{background:#fff;border-radius:14px;padding:28px;
+               box-shadow:0 2px 8px rgba(0,0,0,.06);margin-top:24px}
+.legal-content h2{font-size:1.05rem;font-weight:700;margin:24px 0 8px;
+                   padding-top:24px;border-top:1px solid rgba(0,0,0,.06)}
+.legal-content h2:first-child{border-top:none;margin-top:0;padding-top:0}
+.legal-content p{margin-bottom:12px;color:#3a3a3c;font-size:.95rem;line-height:1.75}
+.contact-box{background:#fff;border-radius:14px;padding:24px;margin-top:32px;
+             box-shadow:0 1px 4px rgba(0,0,0,.05);text-align:center}
+.contact-box p{margin-bottom:8px;opacity:.65}
+.contact-box a{color:#007AFF;font-weight:600;font-size:1rem}
+footer{text-align:center;padding:24px 20px;font-size:12px;
+       opacity:.4;border-top:1px solid rgba(0,0,0,.06)}
 [dir=rtl] nav{flex-direction:row-reverse}
 [dir=rtl] nav .logo{margin-right:0;margin-left:auto}
+[dir=rtl] .content ul{margin-left:0;margin-right:20px}
 </style>
 </head>
 <body>
 <nav>
   <a class="logo" href="..">
-    <img src="../apple-touch-icon.png" alt="IeKan: cuidar la casa familiar" width="32" height="32"/>
-    <span>IeKan</span>
+    <img src="../apple-touch-icon.png" alt="実家管理 IeKan-親の家を家族で見守る" width="32" height="32"/>
+    <span>実家管理 IeKan-親の家を家族で見守る</span>
   </a>
-  <a class="nav-link" href="index.html" style="font-weight:600;opacity:1">Soporte</a>
+  <a class="nav-link" href="support.html" style="font-weight:600;opacity:1">Soporte</a>
   <a class="nav-link" href="privacy.html">Política de privacidad</a>
   <a class="nav-link" href="terms.html">Condiciones de uso</a>
 </nav>
 <main>
   <section class="hero">
-    <img class="app-icon" src="../apple-touch-icon.png" alt="IeKan: cuidar la casa familiar" width="96" height="96"/>
+    <img class="app-icon" src="../apple-touch-icon.png" alt="実家管理 IeKan-親の家を家族で見守る" width="96" height="96"/>
     <h1>Soporte</h1>
-    <p class="subtitle">IeKan: cuidar la casa familiar</p>
+    <p class="subtitle">実家管理 IeKan-親の家を家族で見守る</p>
   </section>
-  <section class="desc">
-    <p><a href="mailto:chenyangli123@gmail.com" style="color:#34C759;font-weight:600">chenyangli123@gmail.com</a></p>
-    <p style="margin-top:20px"><a href="https://freetokyo.github.io/web/iekan/support.html" style="color:#34C759">🇯🇵 日本語サポートページ</a></p>
-    <p><a href="https://apps.apple.com/app/id6764244913" rel="noopener" style="color:#34C759">App Store</a></p>
-  </section>
+  <div class="content">
+    
+    <div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-q">¿Cómo empiezo a usar gratis?</div>
+    <div class="faq-a">Descarga IeKan desde el App Store. No se requiere registro de cuenta. Para la función de compartir con familia, inicia sesión en iCloud.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">¿Cómo invito a miembros de la familia?</div>
+    <div class="faq-a">Ve a Configuración → Invitar familia para obtener un código de invitación de 6 caracteres. Compártelo por mensaje. Los familiares se unen ingresando el código en Unirse con código de invitación en la app.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">¿Cómo registro una propiedad?</div>
+    <div class="faq-a">Toca + en la esquina superior derecha de la pantalla de inicio. Ingresa el nombre de la propiedad, la dirección y el año de construcción. Plan gratuito: 1 propiedad; varias propiedades requieren un plan premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">No puedo subir fotos</div>
+    <div class="faq-a">El plan gratuito permite hasta 50 fotos por propiedad. Elimina fotos antiguas o actualiza al premium para almacenamiento ilimitado. El espacio de almacenamiento bajo del dispositivo también puede impedir las subidas.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">¿Cómo funciona la comparación antes/después?</div>
+    <div class="faq-a">En la pantalla de línea de tiempo de fotos, selecciona 2 fotos para compararlas una al lado de la otra. Esto te ayuda a rastrear cambios a lo largo del tiempo.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">¿Cómo elimino una foto?</div>
+    <div class="faq-a">Mantén pulsada una foto en la pantalla de línea de tiempo para ver el menú de eliminación. Las fotos eliminadas no se pueden restaurar.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">¿Cómo uso las listas de verificación estacionales?</div>
+    <div class="faq-a">La pestaña de lista de verificación tiene plantillas preestablecidas para Primavera, Verano, Otoño, Invierno y Mensual. Toca cada casilla de verificación para marcarla como completada. El historial se registra para 24 sesiones y se puede ver como gráfico.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">¿Puedo agregar elementos personalizados a la lista de verificación?</div>
+    <div class="faq-a">Sí. Toca el botón + en la pantalla de lista de verificación. Plan gratuito: hasta 5 elementos personalizados; plan premium: ilimitados.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">OCR no lee bien</div>
+    <div class="faq-a">Prueba: fotografiar con luz brillante, ajustar la distancia para que el documento completo aparezca en pantalla, mantener el documento plano, sostener el dispositivo firmemente. El texto y las fechas extraídas por OCR son solo de referencia — siempre verifica tú mismo.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">He alcanzado el límite mensual de 3 escaneos</div>
+    <div class="faq-a">El plan gratuito permite 3 escaneos de documentos al mes. El límite se restablece al inicio del próximo mes. Actualiza al premium para escaneos ilimitados.</div>
+  </div>
+</div>
+    <div class="contact-box">
+      <p>Contacto</p>
+      <a href="mailto:chenyangli123@gmail.com">chenyangli123@gmail.com</a>
+    </div>
+  </div>
 </main>
 <footer>© freetokyo · <a href="https://apps.apple.com/app/id6764244913" rel="noopener">App Store</a></footer>
 </body>
