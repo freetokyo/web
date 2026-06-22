@@ -37,7 +37,7 @@
     "@type": "MobileApplication",
     "name": "Trero",
     "alternateName": ["トレロ", "Trero: Workout Log & Goals"],
-    "operatingSystem": "iOS 16.4+",
+    "operatingSystem": "iOS 17.0+",
     "applicationCategory": "HealthApplication",
     "applicationSubCategory": "Fitness",
     "description": "Treroは、ワークアウト記録、目標管理、進捗分析、体組成管理をひとつにまとめたiPhone向けトレーニング管理アプリです。",
@@ -45,7 +45,7 @@
     "url": "https://freetokyo.github.io/web/trero/",
     "downloadUrl": "https://apps.apple.com/app/id6760746164",
     "installUrl":  "https://apps.apple.com/app/id6760746164",
-    "softwareVersion": "1.1",
+    "softwareVersion": "1.2",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -403,6 +403,38 @@
       .hero p { font-size: 16px; }
     }
   </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Як працює інтеграція з Apple Health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Вагу та відсоток жиру можна записати в Apple Health при збереженні. Імпорт виконується вручну з екрана запису параметрів тіла."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Що вміє Apple Watch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Можна записувати підходи з Apple Watch і відображати їх в історії iPhone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Що змінюється в безкоштовному плані?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Безкоштовний план включає обмеження на діапазон історії, кількість користувацьких вправ та активні цілі. Експорт CSV, калькулятор млинців і рейтинг 1ПМ — функції Pro."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav>
