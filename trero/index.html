@@ -6,6 +6,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index,follow" name="robots"/>
 <title>Trero | 筋トレ・ワークアウト管理アプリ for iPhone</title>
 <meta content="Treroは、前回記録を見ながらワークアウトを記録し、目標管理、進捗分析、体組成管理までまとめて行えるiPhone向け筋トレ管理アプリです。v1.1 でホーム画面ウィジェット・Live Activity・Siri 対応。" name="description"/>
 <meta content="筋トレ,ワークアウト記録,筋トレアプリ,トレーニング記録,体組成,重量記録,セット,レップス,目標管理,フィットネス,ジム,筋肉,1RM,Apple Watch,HealthKit,iPhone" name="keywords"/>
@@ -48,8 +49,8 @@
     "en"
   ],
   "url": "https://freetokyo.github.io/web/trero/",
-  "downloadUrl": "https://apps.apple.com/app/id/6760746164",
-  "installUrl": "https://apps.apple.com/app/id/6760746164",
+  "downloadUrl": "https://apps.apple.com/app/id6760746164",
+  "installUrl": "https://apps.apple.com/app/id6760746164",
   "softwareVersion": "1.2",
   "offers": {
     "@type": "Offer",
@@ -59,13 +60,13 @@
   },
   "author": {
     "@type": "Organization",
-    "name": "Trero",
-    "url": "https://freetokyo.github.io/web/trero/"
+    "name": "freetokyo",
+    "url": "https://freetokyo.github.io/web/"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Trero",
-    "url": "https://freetokyo.github.io/web/trero/"
+    "name": "freetokyo",
+    "url": "https://freetokyo.github.io/web/"
   },
   "featureList": [
     "重量・回数・セットのワークアウト記録",
@@ -410,12 +411,18 @@
       h1 { font-size: 36px; }
       .hero p { font-size: 16px; }
     }
+    .ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}
+    .ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}
+    .ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}
+    .ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}
+    .ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}
+    .fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}
   </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "アプリの使い方",
+    "name": "Treroの使い方（3ステップ）",
     "step": [
       {
         "@type": "HowToStep",
@@ -458,6 +465,38 @@
     ]
   }
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Apple Healthとはどう連携しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "体重と体脂肪率は保存時にApple Healthへ書き出せます。取り込みは体組成画面から手動で行います。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apple Watchで何ができますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apple Watchからセットを記録し、iPhone側の履歴へ反映できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無料プランの違いは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "履歴表示期間やカスタム種目数、同時目標数に制限があります。CSVエクスポート、プレート計算機、推定1RMランクはPro機能です。"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav>
@@ -487,7 +526,7 @@
         Treroは、ジムで前回の重量や回数を確認しながら、その日の記録を素早く残せる筋トレ管理アプリです。目標設定、進捗分析、体組成管理、Apple Watch記録、フレンド機能までひとつにまとまっているので、記録の手間を増やさず継続しやすくなります。
       </p>
 <div class="cta-row">
-<a class="appstore-badge" href="https://apps.apple.com/app/id/6760746164" rel="noopener">
+<a class="appstore-badge" href="https://apps.apple.com/app/id6760746164" rel="noopener">
 <span>
 <span class="badge-sub" data-en="Download on the" data-ja="App Store でダウンロード">App Store でダウンロード</span>
 <span class="badge-main">App Store</span>
@@ -528,7 +567,6 @@
     <li>セット・重量を記録する</li>
     <li>進捗と体組成を分析する</li>
   </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
 </section>
 <h2 class="section-title" data-en="What You Can Do" data-ja="できること一覧" id="features-heading">できること一覧</h2>
 <p class="section-lead" data-en="The main features people often check before installing are organised by the situations where they are actually useful. Instead of only listing features, this section explains which actions reduce which kinds of friction." data-ja="購入前に確認したい主要機能を、使う場面ごとに整理しています。機能の有無だけでなく、どの操作がどの負担を減らすのかが分かる構成です。">
