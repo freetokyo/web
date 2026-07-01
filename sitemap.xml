@@ -79,4 +79,14 @@
     <lastmod>2026-06-17</lastmod>
   </sitemap>
 
+  <!-- Japanese-only, no i18n subfolders yet -->
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/yuzuri/sitemap.xml</loc>
+    <lastmod>2026-07-01</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/hitorilog/sitemap.xml</loc>
+    <lastmod>2026-07-01</lastmod>
+  </sitemap>
+
 </sitemapindex>
