@@ -131,30 +131,48 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">최종 업데이트: 2026 / 개발자: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay and Japan income walls based on the 2026 system. No ads, no data sales. All input data is processed on-device only; nothing sent to external servers.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions, municipality (premium), scenario names. Auto-collected: install date/launch count (on-device), subscription status (StoreKit). NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation and take-home display; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only in UserDefaults and FileManager. No backend server, no Firebase, no API calls. iCloud/CloudKit not used for sync. iCloud backup inclusion follows Apple&#x27;s device backup specs.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple services only: StoreKit/App Store (subscriptions); UserNotifications (wall-approach alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted. iCloud backup per Apple policy.</p>
-<h2>7. Your Rights</h2>
-<p>No export function currently. Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over. We do not knowingly collect from under-13s.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations. Not guaranteed to match actual tax filing or social insurance determination. Consult a tax/legal professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. 시작하며</h2>
+<p>HomeNet Navi(&quot;본 앱&quot;)는 2026년 제도에 대응한 &quot;소득 기준선&quot; 시뮬레이터 iOS 앱입니다. 본 개인정보 처리방침은 본 앱 이용 시 취급하는 정보의 종류, 이용 목적, 저장 방법 및 귀하의 권리에 대해 설명합니다. 본 앱은 광고를 표시하지 않으며 귀하의 정보를 제3자에게 판매하지 않습니다. 입력된 소득·공제 등의 정보는 기기 내에서만 처리되며 개발자의 서버로는 일절 전송되지 않습니다.</p>
+<h2>2. 취급하는 정보</h2>
+<p>2-1.</p>
+<p>귀하가 입력하는 정보 • 가구주·배우자의 연간 소득(급여·사업소득) • 부양가족 수·연령구분 • 각종 소득공제(의료비·사회보험료·소규모기업공제 등) • 주민세 지방자치단체 구분(프리미엄 기능) • 저장된 시나리오의 이름·메모 2-2.</p>
+<p>자동으로 수집되는 정보 • 앱 최초 설치 일시·실행 횟수(기능 이용 현황 파악을 위해, 기기 내에서만) • 구독 구매 상태(Apple StoreKit이 판정) 2-3.</p>
+<p>수집하지 않는 정보 • 성명·주소·전화번호·이메일 주소 등 개인 식별 정보 • GPS 위치 정보 • 연락처·주소록 • 광고 식별자(IDFA) • 생체 인증 데이터 • 열람 이력·타 앱 이용 현황 • 클라우드 동기화 데이터(본 앱은 서버 전송을 수행하지 않음)</p>
+<h2>3. 정보의 이용 목적</h2>
+<p>취급하는 정보는 다음 목적으로만 사용합니다. • 2026년 제도에 기반한 소득세·주민세·사회보험료 계산 및 실수령액 제시 • 가구 기준 시나리오 비교·저장 • &quot;소득 기준선&quot; 접근 시 로컬 알림 • 구독 적용 판정(StoreKit 경유)</p>
+<h2>4. 데이터 저장 위치</h2>
+<p>귀하의 데이터는 다음 위치에 저장됩니다.</p>
+<p>• 사용자의 기기 내에만: 입력값·저장된 시나리오는 UserDefaults 및 FileManager(기기 내 로컬 저장소)에 저장됩니다.</p>
+<p>• 서버 전송 없음: 본 앱은 자체 백엔드 서버를 보유하지 않습니다.</p>
+<p>Firebase나 자체 API로의 전송은 일절 없습니다.</p>
+<p>• iCloud / CloudKit: 본 앱은 가족 공유나 기기 간 동기화를 제공하지 않으므로 CloudKit을 사용하지 않습니다.</p>
+<p>본 앱의 데이터가 iCloud 백업에 포함되는지 여부는 Apple의 기기 백업 사양을 따릅니다.</p>
+<p>개발자의 서버로는 데이터를 일절 전송하지 않습니다.</p>
+<p>본 앱의 PrivacyInfo.</p>
+<p>xcprivacy에는 추적(NSPrivacyTracking) 없음이 선언되어 있으며, 제3자 추적도 수행하지 않습니다.</p>
+<h2>5. 제3자 서비스</h2>
+<p>본 앱이 이용하는 제3자 서비스는 다음과 같습니다.</p>
+<p>모두 Apple Inc.</p>
+<p>가 제공하는 서비스입니다.</p>
+<p>서비스 | 제공자 | 목적 / StoreKit / App Store | Apple Inc.</p>
+<p>| 구독 구매 처리 / UserNotifications | Apple Inc.</p>
+<p>| &quot;기준선&quot; 접근 시 로컬 알림(기기 내 처리) 본 앱은 외부 제도 페이지(국세청, 일본연금기구 등)로의 링크를 제공하지만, 링크 대상 사이트에서의 동작은 각 사이트의 개인정보 처리방침을 따릅니다.</p>
+<p>Apple의 개인정보 처리방침은 apple.</p>
+<p>com/jp/legal/privacy를 참조하세요.</p>
+<h2>6. 데이터 보유 기간</h2>
+<p>입력값·저장된 시나리오는 본 앱을 기기에서 삭제할 때까지 기기 내에 보유됩니다. 앱을 삭제하면 모든 로컬 데이터가 삭제됩니다(iCloud 백업에 포함된 경우는 제외).</p>
+<h2>7. 귀하의 권리</h2>
+<p>데이터 삭제 앱 내 &quot;설정&quot;에서 각 시나리오를 삭제할 수 있습니다. 앱 자체를 삭제하면 기기 내 모든 로컬 데이터가 삭제됩니다. GDPR에 기반한 권리(EU 거주자) EU 거주자는 개인 데이터에 대한 접근권·정정권·삭제권·처리 제한권·이동권을 가집니다. 본 앱은 개인을 식별할 수 있는 데이터를 취득하지 않으므로 통상 해당되지 않지만, 질문이 있으시면 아래 문의처로 연락해 주세요. 개인정보보호법에 기반한 권리(일본 거주자) 개인정보의 공개·정정·이용 정지 등의 청구는 아래 문의처로 연락해 주세요.</p>
+<h2>8. 아동 개인정보 보호</h2>
+<p>본 앱은 13세 이상의 주부/주부(主夫) 및 맞벌이 가구를 대상으로 합니다. 13세 미만 아동으로부터 의도적으로 개인정보를 수집하지 않습니다.</p>
+<h2>9. 계산 결과의 취급에 관하여</h2>
+<p>본 앱이 제시하는 실수령액·세액은 공표된 2026년 제도에 기반한 시뮬레이션 결과이며, 세무사·사회보험노무사에 의한 공식적인 세액 확정이 아닙니다. 실제 확정신고·연말정산·사회보험 적용 판정에는 반드시 공적 기관 또는 전문가에게 확인하시기 바랍니다.</p>
+<h2>10. 문의</h2>
+<p>본 개인정보 처리방침에 관한 질문, 개인정보에 관한 청구는 아래로 연락해 주세요.</p>
+<h2>11. 방침의 개정</h2>
+<p>본 개인정보 처리방침은 필요에 따라 개정될 수 있습니다. 중요한 변경이 있는 경우 앱 내 알림 또는 본 페이지 게재를 통해 공지합니다.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>문의</p>

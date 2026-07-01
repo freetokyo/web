@@ -131,30 +131,60 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Last updated: 2026 / Developer: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay and Japan income walls based on the 2026 system. No ads, no data sales. All input data is processed on-device only; nothing sent to external servers.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions, municipality (premium), scenario names. Auto-collected: install date/launch count (on-device), subscription status (StoreKit). NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation and take-home display; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only in UserDefaults and FileManager. No backend server, no Firebase, no API calls. iCloud/CloudKit not used for sync. iCloud backup inclusion follows Apple&#x27;s device backup specs.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple services only: StoreKit/App Store (subscriptions); UserNotifications (wall-approach alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted. iCloud backup per Apple policy.</p>
-<h2>7. Your Rights</h2>
-<p>No export function currently. Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over. We do not knowingly collect from under-13s.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations. Not guaranteed to match actual tax filing or social insurance determination. Consult a tax/legal professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. Uvod</h2>
+<p>HomeNet Navi (&quot;ova aplikacija&quot;) je iOS aplikacija simulatora &quot;dohodovnog praga&quot; koja podržava sustav za 2026.</p>
+<p>Ova politika privatnosti objašnjava vrste informacija koje se obrađuju pri korištenju ove aplikacije, svrhe korištenja, način pohrane i vaša prava.</p>
+<p>Ova aplikacija ne prikazuje oglase i ne prodaje vaše informacije trećim stranama.</p>
+<p>Informacije o prihodima, odbicima i druge informacije koje unesete obrađuju se samo na uređaju i nikada se ne prenose na poslužitelj razvijatelja.</p>
+<h2>2. Informacije koje obrađujemo</h2>
+<p>2-1.</p>
+<p>Informacije koje unosite • Godišnji prihod glave kućanstva i bračnog druga (plaća/poslovni prihod) • Broj i dobna kategorija uzdržavanih osoba • Razni odbici prihoda (medicinski troškovi, doprinosi za socijalno osiguranje, uzajamna pomoć malih poduzeća itd.</p>
+<p>) • Klasifikacija općine za gradski porez (Premium značajka) • Nazivi/bilješke spremljenih scenarija 2-2.</p>
+<p>Automatski prikupljene informacije • Datum prve instalacije/broj pokretanja aplikacije (za razumijevanje korištenja značajki, samo na uređaju) • Status kupnje pretplate (određuje Apple StoreKit) 2-3.</p>
+<p>Informacije koje se ne prikupljaju • Osobno prepoznatljive informacije poput imena, adrese, telefonskog broja, adrese e-pošte • Podaci o GPS lokaciji • Kontakti/adresar • Oglasni identifikator (IDFA) • Biometrijski podaci • Povijest pregledavanja / korištenje drugih aplikacija • Podaci sinkronizirani u oblak (ova aplikacija ne obavlja nikakav prijenos na poslužitelj)</p>
+<h2>3. Svrha korištenja informacija</h2>
+<p>Obrađene informacije koriste se samo u sljedeće svrhe.</p>
+<p>• Izračun i prikaz poreza na dohodak, gradskog poreza i doprinosa za socijalno osiguranje na temelju sustava za 2026.</p>
+<p>te prikaz neto plaće • Usporedba i spremanje scenarija na temelju kućanstva • Lokalne obavijesti pri približavanju &quot;dohodovnom pragu&quot; • Određivanje primjene pretplate (putem StoreKita)</p>
+<h2>4. Gdje se pohranjuju podaci</h2>
+<p>Vaši podaci pohranjuju se na sljedećim mjestima.</p>
+<p>• Samo na vašem uređaju: unesene vrijednosti i spremljeni scenariji pohranjuju se u UserDefaults i FileManager (lokalna pohrana na uređaju).</p>
+<p>• Bez prijenosa na poslužitelj: ova aplikacija nema vlastiti pozadinski poslužitelj.</p>
+<p>Ne postoji nikakav prijenos na Firebase ili bilo koji vlasnički API.</p>
+<p>• iCloud / CloudKit: budući da ova aplikacija ne nudi obiteljsko dijeljenje ili sinkronizaciju između uređaja, ne koristi CloudKit.</p>
+<p>Uključuju li se podaci ove aplikacije u iCloud sigurnosnu kopiju, ovisi o Appleovim specifikacijama sigurnosne kopije uređaja.</p>
+<p>Nikakvi se podaci nikada ne prenose na poslužitelj razvijatelja.</p>
+<p>PrivacyInfo.</p>
+<p>xcprivacy ove aplikacije izjavljuje da nema praćenja (NSPrivacyTracking) i ne provodi nikakvo praćenje trećih strana.</p>
+<h2>5. Usluge trećih strana</h2>
+<p>Usluge trećih strana koje koristi ova aplikacija su sljedeće.</p>
+<p>Sve su usluge koje pruža Apple Inc.</p>
+<p>Usluga | Pružatelj | Svrha / StoreKit / App Store | Apple Inc.</p>
+<p>| Obrada kupnje pretplate / UserNotifications | Apple Inc.</p>
+<p>| Lokalne obavijesti pri približavanju &quot;pragu&quot; (obrada na uređaju) Ova aplikacija pruža poveznice na vanjske stranice sustava (Nacionalna porezna agencija, Japanska mirovinska služba itd.</p>
+<p>), ali ponašanje na tim povezanim web-mjestima uređeno je vlastitom politikom privatnosti svake stranice.</p>
+<p>Za Appleovu politiku privatnosti pogledajte apple.</p>
+<p>com/jp/legal/privacy.</p>
+<h2>6. Razdoblje zadržavanja podataka</h2>
+<p>Unesene vrijednosti i spremljeni scenariji zadržavaju se na uređaju sve dok se ova aplikacija ne izbriše s vašeg uređaja. Brisanjem aplikacije brišu se svi lokalni podaci (osim kada su uključeni u iCloud sigurnosnu kopiju).</p>
+<h2>7. Vaša prava</h2>
+<p>Brisanje podataka Svaki scenarij možete izbrisati iz &quot;Postavki&quot; unutar aplikacije.</p>
+<p>Brisanjem same aplikacije brišu se svi lokalni podaci na uređaju.</p>
+<p>Prava prema GDPR-u (za stanovnike EU) Stanovnici EU imaju pravo pristupa, ispravka, brisanja, ograničenja obrade i prenosivosti svojih osobnih podataka.</p>
+<p>Budući da ova aplikacija ne dobiva osobno prepoznatljive podatke, ovo pravo općenito ne vrijedi, ali ako imate pitanja, obratite nam se putem podataka u nastavku.</p>
+<p>Prava prema Zakonu o zaštiti osobnih podataka (za stanovnike Japana) Za zahtjeve u vezi s otkrivanjem, ispravkom ili prestankom korištenja osobnih podataka, obratite nam se putem podataka u nastavku.</p>
+<h2>8. Privatnost djece</h2>
+<p>Ova aplikacija namijenjena je domaćicama/domaćinima od 13 godina i starijima te kućanstvima s dvostrukim prihodom. Svjesno ne prikupljamo osobne podatke od djece mlađe od 13 godina.</p>
+<h2>9. O postupanju s rezultatima izračuna</h2>
+<p>Neto plaća i porezni iznosi koje predstavlja ova aplikacija rezultati su simulacije temeljeni na javno objavljenom sustavu za 2026.</p>
+<p>i nisu službeno porezno utvrđivanje od strane poreznog savjetnika ili odvjetnika za socijalno osiguranje i rad.</p>
+<p>Uvijek provjerite s javnom institucijom ili stručnjakom za stvarnu poreznu prijavu, godišnje porezno usklađivanje ili utvrđivanje prihvatljivosti za socijalno osiguranje.</p>
+<h2>10. Kontaktirajte nas</h2>
+<p>Za pitanja o ovoj politici privatnosti ili zahtjeve u vezi s osobnim podacima, obratite nam se u nastavku.</p>
+<h2>11. Promjene ove politike</h2>
+<p>Ova politika privatnosti može se revidirati prema potrebi. Značajne promjene bit će objavljene putem obavijesti unutar aplikacije ili objave na ovoj stranici.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontakt</p>

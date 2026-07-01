@@ -131,38 +131,58 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Zuletzt aktualisiert: 2026 / Entwickler: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>The app calculates household take-home pay based on Japan&#x27;s 2026 tax system.</p>
-<p>All data is stored on-device only; no data is sent to external servers.</p>
-<p>The app uses Apple StoreKit for subscriptions and UserNotifications for wall-approach alerts (on-device).</p>
-<p>No advertising, no third-party tracking, no personal data collection.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household and spouse annual income; number and age category of dependents; various income deductions; municipality category (premium); saved scenario names and memos.</p>
-<p>Auto-collected: first install date and launch count (on-device only); subscription status (via Apple StoreKit).</p>
-<p>NOT collected: personal identifying information (name, address, phone, email); GPS location; contacts or address book; advertising identifier (IDFA); biometric data; browsing history or other app usage; cloud sync data (no server transmission).</p>
-<h2>3. How Information Is Used</h2>
-<p>Information is used solely for: calculating income tax, resident tax, and social insurance based on the 2026 system and displaying take-home amounts; household scenario comparison and saving; local notifications for wall approach (premium); subscription determination via StoreKit.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On your device only: input values and saved scenarios are stored in UserDefaults and FileManager (local storage on-device).</p>
-<p>No server transmission: the app has no backend server and makes no Firebase or API calls.</p>
-<p>iCloud / CloudKit: not used for family sharing or cross-device sync.</p>
-<p>Whether iCloud backup includes app data follows Apple&#x27;s device backup specifications.</p>
-<h2>5. Third-Party Services</h2>
-<p>The app uses Apple-provided services only: StoreKit / App Store (subscription billing); UserNotifications (wall-approach local notifications, on-device only). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
-<h2>6. Data Retention</h2>
-<p>Data is retained on your device until the app is deleted. iCloud backup data follows Apple&#x27;s data retention policy. All local data is deleted when you delete the app.</p>
-<h2>7. Your Rights</h2>
-<p>Data export: no export function is currently available (view and copy from the screen). Data deletion: deleting the app removes all local data. EU residents: GDPR rights apply. Japan residents: Personal Information Protection Act rights apply. Contact us below for assistance.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>This app is for users aged 13 and over. We do not knowingly collect information from children under 13.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations based on published system information. They are not guaranteed to match actual tax filing, year-end adjustment, or social insurance determination results. For important decisions, consult a tax accountant, social insurance labor consultant, or financial planner.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, please contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>This policy may be revised as needed. Significant changes will be communicated via app update or this page.</p>
+<h2>1. Einleitung</h2>
+<p>HomeNet Navi (&quot;diese App&quot;) ist eine iOS-&quot;Einkommensschwellen&quot;-Simulator-App, die das System für 2026 unterstützt.</p>
+<p>Diese Datenschutzerklärung erklärt die Arten von Informationen, die bei der Nutzung dieser App verarbeitet werden, die Verwendungszwecke, die Art der Speicherung und deine Rechte.</p>
+<p>Diese App zeigt keine Werbung an und verkauft deine Informationen nicht an Dritte.</p>
+<p>Einkommens-, Abzugs- und andere Informationen, die du eingibst, werden nur auf dem Gerät verarbeitet und niemals an den Server des Entwicklers übertragen.</p>
+<h2>2. Informationen, die wir verarbeiten</h2>
+<p>2-1.</p>
+<p>Informationen, die du eingibst • Jahreseinkommen des Haushaltsvorstands und des Ehepartners (Gehalt/Geschäftseinkommen) • Anzahl und Altersklasse der Angehörigen • Verschiedene Einkommensabzüge (Arztkosten, Sozialversicherungsbeiträge, Kleinunternehmens-Gegenseitigkeitsversicherung usw.</p>
+<p>) • Gemeindeklassifizierung für die Gemeindesteuer (Premium-Funktion) • Namen/Notizen gespeicherter Szenarien 2-2.</p>
+<p>Automatisch erfasste Informationen • Datum der Erstinstallation/Anzahl der App-Starts (zum Verständnis der Funktionsnutzung, nur auf dem Gerät) • Status des Abonnementkaufs (bestimmt durch Apple StoreKit) 2-3.</p>
+<p>Nicht erfasste Informationen • Personenbezogene Daten wie Name, Adresse, Telefonnummer, E-Mail-Adresse • GPS-Standortdaten • Kontakte/Adressbuch • Werbekennung (IDFA) • Biometrische Daten • Browserverlauf / Nutzung anderer Apps • In der Cloud synchronisierte Daten (diese App führt keine Serverübertragung durch)</p>
+<h2>3. Verwendungszweck der Informationen</h2>
+<p>Die verarbeiteten Informationen werden nur für folgende Zwecke verwendet.</p>
+<p>• Berechnung und Darstellung von Einkommensteuer, Gemeindesteuer und Sozialversicherungsbeiträgen basierend auf dem System für 2026 sowie Anzeige des Nettolohns • Haushaltsbasierter Szenarienvergleich und -speicherung • Lokale Benachrichtigungen bei Annäherung an eine &quot;Einkommensschwelle&quot; • Bestimmung der Abonnementanwendung (über StoreKit)</p>
+<h2>4. Wo Daten gespeichert werden</h2>
+<p>Deine Daten werden an folgenden Orten gespeichert.</p>
+<p>• Nur auf deinem Gerät: eingegebene Werte und gespeicherte Szenarien werden in UserDefaults und FileManager (lokaler Speicher auf dem Gerät) gespeichert.</p>
+<p>• Keine Serverübertragung: diese App hat keinen eigenen Backend-Server.</p>
+<p>Es erfolgt keinerlei Übertragung an Firebase oder eine eigene API.</p>
+<p>• iCloud / CloudKit: da diese App keine Familienfreigabe oder geräteübergreifende Synchronisierung bietet, verwendet sie kein CloudKit.</p>
+<p>Ob die Daten dieser App in einem iCloud-Backup enthalten sind, richtet sich nach Apples Geräte-Backup-Spezifikationen.</p>
+<p>Es werden niemals Daten an den Server des Entwicklers übertragen.</p>
+<p>Die PrivacyInfo.</p>
+<p>xcprivacy dieser App erklärt kein Tracking (NSPrivacyTracking), und sie führt kein Tracking durch Dritte durch.</p>
+<h2>5. Dienste von Drittanbietern</h2>
+<p>Die von dieser App verwendeten Dienste von Drittanbietern sind wie folgt.</p>
+<p>Alle sind Dienste von Apple Inc.</p>
+<p>Dienst | Anbieter | Zweck / StoreKit / App Store | Apple Inc.</p>
+<p>| Verarbeitung des Abonnementkaufs / UserNotifications | Apple Inc.</p>
+<p>| Lokale Benachrichtigungen bei Annäherung an eine &quot;Schwelle&quot; (Verarbeitung auf dem Gerät) Diese App bietet Links zu externen Systemseiten (Nationale Steuerbehörde, Japanische Rentenversicherung usw.</p>
+<p>), aber das Verhalten auf diesen verlinkten Seiten unterliegt der jeweiligen Datenschutzerklärung der jeweiligen Website.</p>
+<p>Bitte beziehe dich auf apple.</p>
+<p>com/jp/legal/privacy für Apples Datenschutzerklärung.</p>
+<h2>6. Aufbewahrungsdauer der Daten</h2>
+<p>Eingegebene Werte und gespeicherte Szenarien werden auf dem Gerät aufbewahrt, bis diese App von deinem Gerät gelöscht wird. Das Löschen der App löscht alle lokalen Daten (außer wenn sie in einem iCloud-Backup enthalten sind).</p>
+<h2>7. Deine Rechte</h2>
+<p>Löschung von Daten Du kannst jedes Szenario über &quot;Einstellungen&quot; innerhalb der App löschen.</p>
+<p>Das Löschen der App selbst löscht alle lokalen Daten auf dem Gerät.</p>
+<p>Rechte gemäß DSGVO (für EU-Bewohner) EU-Bewohner haben das Recht auf Zugang, Berichtigung, Löschung, Einschränkung der Verarbeitung und Übertragbarkeit ihrer personenbezogenen Daten.</p>
+<p>Da diese App keine personenbezogenen Daten erhebt, gilt dieses Recht im Allgemeinen nicht, aber bei Fragen kontaktiere uns bitte über die untenstehenden Informationen.</p>
+<p>Rechte gemäß dem Gesetz zum Schutz personenbezogener Informationen (für Bewohner Japans) Für Anfragen zur Offenlegung, Berichtigung oder Beendigung der Verwendung personenbezogener Informationen kontaktiere uns bitte über die untenstehenden Informationen.</p>
+<h2>8. Datenschutz von Kindern</h2>
+<p>Diese App richtet sich an Haushaltsführende ab 13 Jahren und Doppelverdiener-Haushalte. Wir sammeln nicht wissentlich personenbezogene Daten von Kindern unter 13 Jahren.</p>
+<h2>9. Zum Umgang mit Berechnungsergebnissen</h2>
+<p>Der von dieser App dargestellte Nettolohn und die Steuerbeträge sind Simulationsergebnisse basierend auf dem öffentlich angekündigten System für 2026 und stellen keine offizielle steuerliche Feststellung durch einen Steuerberater oder Sozialversicherungs- und Arbeitsanwalt dar.</p>
+<p>Bitte überprüfe für die tatsächliche Steuererklärung, den Jahresausgleich oder die Feststellung der Sozialversicherungsberechtigung immer bei einer öffentlichen Institution oder einem Fachmann nach.</p>
+<h2>10. Kontakt</h2>
+<p>Bei Fragen zu dieser Datenschutzerklärung oder Anfragen bezüglich personenbezogener Daten kontaktiere uns bitte unten.</p>
+<h2>11. Änderungen dieser Richtlinie</h2>
+<p>Diese Datenschutzerklärung kann bei Bedarf überarbeitet werden. Wesentliche Änderungen werden über eine In-App-Benachrichtigung oder Veröffentlichung auf dieser Seite bekannt gegeben.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontakt</p>

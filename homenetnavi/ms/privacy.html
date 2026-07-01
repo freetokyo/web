@@ -131,30 +131,58 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Last updated: 2026 / Developer: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay and Japan income walls based on the 2026 system. No ads, no data sales. All input data is processed on-device only; nothing sent to external servers.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions, municipality (premium), scenario names. Auto-collected: install date/launch count (on-device), subscription status (StoreKit). NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation and take-home display; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only in UserDefaults and FileManager. No backend server, no Firebase, no API calls. iCloud/CloudKit not used for sync. iCloud backup inclusion follows Apple&#x27;s device backup specs.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple services only: StoreKit/App Store (subscriptions); UserNotifications (wall-approach alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted. iCloud backup per Apple policy.</p>
-<h2>7. Your Rights</h2>
-<p>No export function currently. Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over. We do not knowingly collect from under-13s.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations. Not guaranteed to match actual tax filing or social insurance determination. Consult a tax/legal professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. Pengenalan</h2>
+<p>HomeNet Navi (&quot;aplikasi ini&quot;) ialah aplikasi simulator &quot;ambang pendapatan&quot; iOS yang menyokong sistem 2026.</p>
+<p>Dasar Privasi ini menerangkan jenis maklumat yang dikendalikan semasa menggunakan aplikasi ini, tujuan penggunaan, cara ia disimpan, dan hak anda.</p>
+<p>Aplikasi ini tidak memaparkan sebarang iklan dan tidak menjual maklumat anda kepada pihak ketiga.</p>
+<p>Maklumat pendapatan, potongan, dan lain-lain yang anda masukkan diproses hanya pada peranti dan tidak pernah dihantar ke pelayan pemaju.</p>
+<h2>2. Maklumat yang Kami Kendalikan</h2>
+<p>2-1.</p>
+<p>Maklumat yang anda masukkan • Pendapatan tahunan ketua isi rumah dan pasangan (gaji/pendapatan perniagaan) • Bilangan dan kategori umur tanggungan • Pelbagai potongan pendapatan (perbelanjaan perubatan, premium insurans sosial, bantuan bersama perniagaan kecil, dll.</p>
+<p>) • Klasifikasi perbandaran cukai perbandaran (ciri Premium) • Nama/nota senario yang disimpan 2-2.</p>
+<p>Maklumat yang dikumpul secara automatik • Tarikh pemasangan pertama/bilangan pelancaran aplikasi (untuk memahami penggunaan ciri, hanya pada peranti) • Status pembelian langganan (ditentukan oleh Apple StoreKit) 2-3.</p>
+<p>Maklumat yang tidak dikumpul • Maklumat yang boleh dikenal pasti secara peribadi seperti nama, alamat, nombor telefon, alamat e-mel • Data lokasi GPS • Kenalan/buku alamat • Pengecam pengiklanan (IDFA) • Data biometrik • Sejarah pelayaran / penggunaan aplikasi lain • Data disegerakkan ke awan (aplikasi ini tidak melakukan sebarang penghantaran pelayan)</p>
+<h2>3. Tujuan Penggunaan Maklumat</h2>
+<p>Maklumat yang dikendalikan digunakan hanya untuk tujuan berikut.</p>
+<p>• Mengira dan membentangkan cukai pendapatan, cukai perbandaran, dan premium insurans sosial berdasarkan sistem 2026, dan memaparkan gaji bersih • Perbandingan dan penyimpanan senario berasaskan isi rumah • Pemberitahuan tempatan apabila menghampiri &quot;ambang pendapatan&quot; • Penentuan penggunaan langganan (melalui StoreKit)</p>
+<h2>4. Di Mana Data Disimpan</h2>
+<p>Data anda disimpan di lokasi berikut.</p>
+<p>• Hanya pada peranti anda: nilai yang dimasukkan dan senario yang disimpan disimpan dalam UserDefaults dan FileManager (storan tempatan pada peranti).</p>
+<p>• Tiada penghantaran pelayan: aplikasi ini tiada pelayan bahagian belakang sendiri.</p>
+<p>Tiada sebarang penghantaran ke Firebase atau mana-mana API proprietari.</p>
+<p>• iCloud / CloudKit: memandangkan aplikasi ini tidak menyediakan perkongsian keluarga atau penyegerakan silang peranti, ia tidak menggunakan CloudKit.</p>
+<p>Sama ada data aplikasi ini disertakan dalam sandaran iCloud mengikut spesifikasi sandaran peranti Apple.</p>
+<p>Tiada data dihantar ke pelayan pemaju.</p>
+<p>PrivacyInfo.</p>
+<p>xcprivacy aplikasi ini mengisytiharkan tiada penjejakan (NSPrivacyTracking), dan ia tidak melakukan sebarang penjejakan pihak ketiga.</p>
+<h2>5. Perkhidmatan Pihak Ketiga</h2>
+<p>Perkhidmatan pihak ketiga yang digunakan oleh aplikasi ini adalah seperti berikut.</p>
+<p>Semuanya adalah perkhidmatan yang disediakan oleh Apple Inc.</p>
+<p>Perkhidmatan | Penyedia | Tujuan / StoreKit / App Store | Apple Inc.</p>
+<p>| Pemprosesan pembelian langganan / UserNotifications | Apple Inc.</p>
+<p>| Pemberitahuan tempatan apabila menghampiri &quot;ambang&quot; (pemprosesan pada peranti) Aplikasi ini menyediakan pautan ke halaman sistem luaran (Agensi Cukai Kebangsaan, Perkhidmatan Pencen Jepun, dll.</p>
+<p>), tetapi tingkah laku di laman yang dipautkan tersebut tertakluk kepada dasar privasi laman masing-masing.</p>
+<p>Sila rujuk apple.</p>
+<p>com/jp/legal/privacy untuk dasar privasi Apple.</p>
+<h2>6. Tempoh Simpanan Data</h2>
+<p>Nilai yang dimasukkan dan senario yang disimpan dikekalkan pada peranti sehingga aplikasi ini dipadamkan daripada peranti anda. Memadam aplikasi memadamkan semua data tempatan (kecuali apabila disertakan dalam sandaran iCloud).</p>
+<h2>7. Hak Anda</h2>
+<p>Pemadaman data Anda boleh memadam setiap senario daripada &quot;Tetapan&quot; dalam aplikasi.</p>
+<p>Memadam aplikasi itu sendiri memadamkan semua data tempatan pada peranti.</p>
+<p>Hak di bawah GDPR (untuk penduduk EU) Penduduk EU mempunyai hak untuk mengakses, membetulkan, memadam, menghadkan pemprosesan, dan memindahkan data peribadi mereka.</p>
+<p>Memandangkan aplikasi ini tidak memperoleh data yang boleh dikenal pasti secara peribadi, hak ini secara amnya tidak terpakai, tetapi jika anda mempunyai soalan, sila hubungi kami menggunakan maklumat di bawah.</p>
+<p>Hak di bawah Akta Perlindungan Maklumat Peribadi (untuk penduduk Jepun) Untuk permintaan berkaitan pendedahan, pembetulan, atau penghentian penggunaan maklumat peribadi, sila hubungi kami menggunakan maklumat di bawah.</p>
+<h2>8. Privasi Kanak-kanak</h2>
+<p>Aplikasi ini bertujuan untuk suri/ketua rumah tangga berusia 13 tahun ke atas dan isi rumah berpendapatan berganda. Kami tidak sengaja mengumpul maklumat peribadi daripada kanak-kanak bawah umur 13 tahun.</p>
+<h2>9. Mengenai Pengendalian Hasil Pengiraan</h2>
+<p>Gaji bersih dan jumlah cukai yang dibentangkan oleh aplikasi ini adalah hasil simulasi berdasarkan sistem 2026 yang diumumkan secara umum, dan bukan penentuan cukai rasmi oleh akauntan cukai atau peguam insurans sosial dan buruh.</p>
+<p>Sentiasa semak dengan institusi awam atau profesional untuk pemfailan cukai sebenar, pelarasan cukai akhir tahun, atau penentuan kelayakan insurans sosial.</p>
+<h2>10. Hubungi Kami</h2>
+<p>Untuk soalan mengenai Dasar Privasi ini, atau permintaan berkaitan maklumat peribadi, sila hubungi kami di bawah.</p>
+<h2>11. Perubahan pada Dasar Ini</h2>
+<p>Dasar Privasi ini boleh disemak semula mengikut keperluan. Perubahan material akan diumumkan melalui pemberitahuan dalam aplikasi atau penyiaran di halaman ini.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Hubungi</p>

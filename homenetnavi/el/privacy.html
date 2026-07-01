@@ -131,38 +131,60 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Τελευταία ενημέρωση: 2026 / Προγραμματιστής: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>The app calculates household take-home pay based on Japan&#x27;s 2026 tax system.</p>
-<p>All data is stored on-device only; no data is sent to external servers.</p>
-<p>The app uses Apple StoreKit for subscriptions and UserNotifications for wall-approach alerts (on-device).</p>
-<p>No advertising, no third-party tracking, no personal data collection.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household and spouse annual income; number and age category of dependents; various income deductions; municipality category (premium); saved scenario names and memos.</p>
-<p>Auto-collected: first install date and launch count (on-device only); subscription status (via Apple StoreKit).</p>
-<p>NOT collected: personal identifying information (name, address, phone, email); GPS location; contacts or address book; advertising identifier (IDFA); biometric data; browsing history or other app usage; cloud sync data (no server transmission).</p>
-<h2>3. How Information Is Used</h2>
-<p>Information is used solely for: calculating income tax, resident tax, and social insurance based on the 2026 system and displaying take-home amounts; household scenario comparison and saving; local notifications for wall approach (premium); subscription determination via StoreKit.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On your device only: input values and saved scenarios are stored in UserDefaults and FileManager (local storage on-device).</p>
-<p>No server transmission: the app has no backend server and makes no Firebase or API calls.</p>
-<p>iCloud / CloudKit: not used for family sharing or cross-device sync.</p>
-<p>Whether iCloud backup includes app data follows Apple&#x27;s device backup specifications.</p>
-<h2>5. Third-Party Services</h2>
-<p>The app uses Apple-provided services only: StoreKit / App Store (subscription billing); UserNotifications (wall-approach local notifications, on-device only). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
-<h2>6. Data Retention</h2>
-<p>Data is retained on your device until the app is deleted. iCloud backup data follows Apple&#x27;s data retention policy. All local data is deleted when you delete the app.</p>
-<h2>7. Your Rights</h2>
-<p>Data export: no export function is currently available (view and copy from the screen). Data deletion: deleting the app removes all local data. EU residents: GDPR rights apply. Japan residents: Personal Information Protection Act rights apply. Contact us below for assistance.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>This app is for users aged 13 and over. We do not knowingly collect information from children under 13.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations based on published system information. They are not guaranteed to match actual tax filing, year-end adjustment, or social insurance determination results. For important decisions, consult a tax accountant, social insurance labor consultant, or financial planner.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, please contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>This policy may be revised as needed. Significant changes will be communicated via app update or this page.</p>
+<h2>1. Εισαγωγή</h2>
+<p>Το HomeNet Navi (&quot;αυτή η εφαρμογή&quot;) είναι μια εφαρμογή προσομοιωτή &quot;ορίου εισοδήματος&quot; για iOS που υποστηρίζει το σύστημα του 2026.</p>
+<p>Αυτή η Πολιτική Απορρήτου εξηγεί τους τύπους πληροφοριών που διαχειρίζονται κατά τη χρήση αυτής της εφαρμογής, τους σκοπούς χρήσης, τον τρόπο αποθήκευσης και τα δικαιώματά σας.</p>
+<p>Αυτή η εφαρμογή δεν εμφανίζει διαφημίσεις και δεν πωλεί τις πληροφορίες σας σε τρίτους.</p>
+<p>Οι πληροφορίες εισοδήματος, εκπτώσεων και άλλες που εισάγετε επεξεργάζονται μόνο εντός της συσκευής και δεν μεταδίδονται ποτέ στον διακομιστή του προγραμματιστή.</p>
+<h2>2. Πληροφορίες που διαχειριζόμαστε</h2>
+<p>2-1.</p>
+<p>Πληροφορίες που εισάγετε • Ετήσιο εισόδημα του αρχηγού του νοικοκυριού και του/της συζύγου (μισθός/επιχειρηματικό εισόδημα) • Αριθμός και ηλικιακή κατηγορία εξαρτώμενων μελών • Διάφορες εκπτώσεις εισοδήματος (ιατρικά έξοδα, εισφορές κοινωνικής ασφάλισης, αμοιβαία βοήθεια μικρών επιχειρήσεων κ.</p>
+<p>λπ.</p>
+<p>) • Ταξινόμηση δήμου δημοτικού φόρου (λειτουργία Premium) • Ονόματα/σημειώσεις αποθηκευμένων σεναρίων 2-2.</p>
+<p>Πληροφορίες που συλλέγονται αυτόματα • Ημερομηνία πρώτης εγκατάστασης/αριθμός εκκινήσεων της εφαρμογής (για την κατανόηση της χρήσης λειτουργιών, μόνο εντός της συσκευής) • Κατάσταση αγοράς συνδρομής (καθορίζεται από το Apple StoreKit) 2-3.</p>
+<p>Πληροφορίες που δεν συλλέγονται • Προσωπικά αναγνωρίσιμες πληροφορίες όπως όνομα, διεύθυνση, τηλέφωνο, διεύθυνση email • Δεδομένα τοποθεσίας GPS • Επαφές/βιβλίο διευθύνσεων • Αναγνωριστικό διαφήμισης (IDFA) • Βιομετρικά δεδομένα • Ιστορικό περιήγησης / χρήση άλλων εφαρμογών • Δεδομένα συγχρονισμένα στο cloud (αυτή η εφαρμογή δεν πραγματοποιεί καμία μετάδοση σε διακομιστή)</p>
+<h2>3. Σκοπός χρήσης πληροφοριών</h2>
+<p>Οι πληροφορίες που διαχειριζόμαστε χρησιμοποιούνται μόνο για τους ακόλουθους σκοπούς.</p>
+<p>• Υπολογισμός και παρουσίαση φόρου εισοδήματος, δημοτικού φόρου και εισφορών κοινωνικής ασφάλισης με βάση το σύστημα του 2026, και εμφάνιση καθαρού μισθού • Σύγκριση και αποθήκευση σεναρίων με βάση το νοικοκυριό • Τοπικές ειδοποιήσεις κατά την προσέγγιση ενός &quot;ορίου εισοδήματος&quot; • Καθορισμός εφαρμογής συνδρομής (μέσω StoreKit)</p>
+<h2>4. Πού αποθηκεύονται τα δεδομένα</h2>
+<p>Τα δεδομένα σας αποθηκεύονται στις ακόλουθες τοποθεσίες.</p>
+<p>• Μόνο στη συσκευή σας: οι τιμές που εισάγατε και τα αποθηκευμένα σενάρια αποθηκεύονται στο UserDefaults και το FileManager (τοπική αποθήκευση εντός συσκευής).</p>
+<p>• Χωρίς μετάδοση σε διακομιστή: αυτή η εφαρμογή δεν έχει δικό της διακομιστή backend.</p>
+<p>Δεν υπάρχει καμία μετάδοση στο Firebase ή σε οποιοδήποτε ιδιόκτητο API.</p>
+<p>• iCloud / CloudKit: δεδομένου ότι αυτή η εφαρμογή δεν παρέχει οικογενειακή κοινή χρήση ή συγχρονισμό μεταξύ συσκευών, δεν χρησιμοποιεί το CloudKit.</p>
+<p>Το αν τα δεδομένα αυτής της εφαρμογής περιλαμβάνονται σε αντίγραφο ασφαλείας iCloud ακολουθεί τις προδιαγραφές αντιγράφων ασφαλείας συσκευών της Apple.</p>
+<p>Κανένα δεδομένο δεν μεταδίδεται ποτέ στον διακομιστή του προγραμματιστή.</p>
+<p>Το PrivacyInfo.</p>
+<p>xcprivacy αυτής της εφαρμογής δηλώνει καμία παρακολούθηση (NSPrivacyTracking), και δεν πραγματοποιεί καμία παρακολούθηση τρίτων.</p>
+<h2>5. Υπηρεσίες τρίτων</h2>
+<p>Οι υπηρεσίες τρίτων που χρησιμοποιεί αυτή η εφαρμογή είναι οι εξής.</p>
+<p>Όλες είναι υπηρεσίες που παρέχονται από την Apple Inc.</p>
+<p>Υπηρεσία | Πάροχος | Σκοπός / StoreKit / App Store | Apple Inc.</p>
+<p>| Επεξεργασία αγοράς συνδρομής / UserNotifications | Apple Inc.</p>
+<p>| Τοπικές ειδοποιήσεις κατά την προσέγγιση ενός &quot;ορίου&quot; (επεξεργασία εντός συσκευής) Αυτή η εφαρμογή παρέχει συνδέσμους σε εξωτερικές σελίδες συστήματος (Εθνική Φορολογική Υπηρεσία, Ιαπωνική Υπηρεσία Συντάξεων κ.</p>
+<p>λπ.</p>
+<p>), αλλά η συμπεριφορά σε αυτούς τους συνδεδεμένους ιστότοπους διέπεται από την πολιτική απορρήτου κάθε ιστότοπου.</p>
+<p>Ανατρέξτε στο apple.</p>
+<p>com/jp/legal/privacy για την πολιτική απορρήτου της Apple.</p>
+<h2>6. Περίοδος διατήρησης δεδομένων</h2>
+<p>Οι τιμές που εισάγατε και τα αποθηκευμένα σενάρια διατηρούνται εντός της συσκευής μέχρι να διαγραφεί αυτή η εφαρμογή από τη συσκευή σας. Η διαγραφή της εφαρμογής διαγράφει όλα τα τοπικά δεδομένα (εκτός αν περιλαμβάνονται σε αντίγραφο ασφαλείας iCloud).</p>
+<h2>7. Τα δικαιώματά σας</h2>
+<p>Διαγραφή δεδομένων Μπορείτε να διαγράψετε κάθε σενάριο από τις &quot;Ρυθμίσεις&quot; εντός της εφαρμογής.</p>
+<p>Η διαγραφή της ίδιας της εφαρμογής διαγράφει όλα τα τοπικά δεδομένα στη συσκευή.</p>
+<p>Δικαιώματα σύμφωνα με τον GDPR (για κατοίκους ΕΕ) Οι κάτοικοι της ΕΕ έχουν δικαίωμα πρόσβασης, διόρθωσης, διαγραφής, περιορισμού της επεξεργασίας και φορητότητας των προσωπικών τους δεδομένων.</p>
+<p>Δεδομένου ότι αυτή η εφαρμογή δεν λαμβάνει προσωπικά αναγνωρίσιμα δεδομένα, αυτό το δικαίωμα γενικά δεν ισχύει, αλλά αν έχετε ερωτήσεις, επικοινωνήστε μαζί μας χρησιμοποιώντας τις παρακάτω πληροφορίες.</p>
+<p>Δικαιώματα σύμφωνα με τον Νόμο για την Προστασία Προσωπικών Πληροφοριών (για κατοίκους Ιαπωνίας) Για αιτήματα σχετικά με τη γνωστοποίηση, διόρθωση ή διακοπή χρήσης προσωπικών πληροφοριών, επικοινωνήστε μαζί μας χρησιμοποιώντας τις παρακάτω πληροφορίες.</p>
+<h2>8. Απόρρητο παιδιών</h2>
+<p>Αυτή η εφαρμογή προορίζεται για νοικοκυρές/νοικοκύρηδες ηλικίας 13 ετών και άνω και νοικοκυριά με δύο εισοδήματα. Δεν συλλέγουμε εν γνώσει μας προσωπικές πληροφορίες από παιδιά κάτω των 13 ετών.</p>
+<h2>9. Σχετικά με τη διαχείριση των αποτελεσμάτων υπολογισμού</h2>
+<p>Ο καθαρός μισθός και τα φορολογικά ποσά που παρουσιάζει αυτή η εφαρμογή είναι αποτελέσματα προσομοίωσης βάσει του δημόσια ανακοινωμένου συστήματος του 2026, και δεν αποτελούν επίσημο φορολογικό προσδιορισμό από λογιστή ή δικηγόρο κοινωνικής ασφάλισης και εργασίας.</p>
+<p>Ελέγχετε πάντα με δημόσιο φορέα ή επαγγελματία για την πραγματική φορολογική δήλωση, την ετήσια φορολογική προσαρμογή ή τον προσδιορισμό επιλεξιμότητας κοινωνικής ασφάλισης.</p>
+<h2>10. Επικοινωνία</h2>
+<p>Για ερωτήσεις σχετικά με αυτή την Πολιτική Απορρήτου, ή αιτήματα σχετικά με προσωπικές πληροφορίες, επικοινωνήστε μαζί μας παρακάτω.</p>
+<h2>11. Αλλαγές σε αυτή την πολιτική</h2>
+<p>Αυτή η Πολιτική Απορρήτου ενδέχεται να αναθεωρηθεί όπως απαιτείται. Σημαντικές αλλαγές θα ανακοινώνονται μέσω ειδοποίησης εντός της εφαρμογής ή δημοσίευσης σε αυτή τη σελίδα.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Επικοινωνία</p>

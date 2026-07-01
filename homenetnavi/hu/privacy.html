@@ -131,30 +131,59 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Last updated: 2026 / Fejlesztő: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay and Japan income walls based on the 2026 system. No ads, no data sales. All input data is processed on-device only; nothing sent to external servers.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions, municipality (premium), scenario names. Auto-collected: install date/launch count (on-device), subscription status (StoreKit). NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation and take-home display; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only in UserDefaults and FileManager. No backend server, no Firebase, no API calls. iCloud/CloudKit not used for sync. iCloud backup inclusion follows Apple&#x27;s device backup specs.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple services only: StoreKit/App Store (subscriptions); UserNotifications (wall-approach alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted. iCloud backup per Apple policy.</p>
-<h2>7. Your Rights</h2>
-<p>No export function currently. Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over. We do not knowingly collect from under-13s.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations. Not guaranteed to match actual tax filing or social insurance determination. Consult a tax/legal professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. Bevezetés</h2>
+<p>A HomeNet Navi (&quot;ez az alkalmazás&quot;) egy iOS &quot;jövedelemhatár&quot; szimulátor alkalmazás, amely támogatja a 2026-os rendszert.</p>
+<p>Ez az adatvédelmi szabályzat elmagyarázza az ezen alkalmazás használata során kezelt információk típusait, a felhasználás céljait, a tárolás módját és az Ön jogait.</p>
+<p>Ez az alkalmazás nem jelenít meg reklámokat, és nem adja el az Ön adatait harmadik feleknek.</p>
+<p>Az Ön által megadott jövedelem-, levonás- és egyéb információk csak az eszközön kerülnek feldolgozásra, és soha nem kerülnek továbbításra a fejlesztő szerverére.</p>
+<h2>2. Az általunk kezelt információk</h2>
+<p>2-1.</p>
+<p>Az Ön által megadott információk • A háztartásfő és a házastárs éves jövedelme (fizetés/üzleti jövedelem) • Az eltartottak száma és korkategóriája • Különböző jövedelemlevonások (orvosi költségek, társadalombiztosítási járulékok, kisvállalkozói kölcsönös segítségnyújtás stb.</p>
+<p>) • Helyi adó önkormányzati besorolása (Premium funkció) • Mentett forgatókönyvek nevei/jegyzetei 2-2.</p>
+<p>Automatikusan gyűjtött információk • Az első telepítés dátuma/az alkalmazás indításainak száma (a funkcióhasználat megértéséhez, csak az eszközön) • Előfizetés-vásárlási állapot (az Apple StoreKit határozza meg) 2-3.</p>
+<p>Nem gyűjtött információk • Személyazonosításra alkalmas információk, mint például név, cím, telefonszám, e-mail cím • GPS helyadatok • Kapcsolatok/címjegyzék • Hirdetési azonosító (IDFA) • Biometrikus adatok • Böngészési előzmények / más alkalmazások használata • Felhőben szinkronizált adatok (ez az alkalmazás nem végez semmilyen szerverátvitelt)</p>
+<h2>3. Az információk felhasználásának célja</h2>
+<p>A kezelt információkat kizárólag a következő célokra használjuk fel.</p>
+<p>• Jövedelemadó, helyi adó és társadalombiztosítási járulékok kiszámítása és bemutatása a 2026-os rendszer alapján, valamint a nettó fizetés megjelenítése • Háztartás alapú forgatókönyv-összehasonlítás és -mentés • Helyi értesítések egy &quot;jövedelemhatár&quot; megközelítésekor • Az előfizetés alkalmazásának meghatározása (StoreKiten keresztül)</p>
+<h2>4. Hol tárolódnak az adatok</h2>
+<p>Az Ön adatai a következő helyeken tárolódnak.</p>
+<p>• Csak az Ön eszközén: a megadott értékek és mentett forgatókönyvek a UserDefaults és a FileManager (eszközön lévő helyi tárhely) formájában tárolódnak.</p>
+<p>• Nincs szerverátvitel: ennek az alkalmazásnak nincs saját háttérszervere.</p>
+<p>Egyáltalán nincs átvitel a Firebase-be vagy bármely saját API-ba.</p>
+<p>• iCloud / CloudKit: mivel ez az alkalmazás nem kínál családi megosztást vagy eszközök közötti szinkronizálást, nem használ CloudKitet.</p>
+<p>Az, hogy ennek az alkalmazásnak az adatai szerepelnek-e az iCloud biztonsági mentésben, az Apple eszközbiztonsági mentési specifikációit követi.</p>
+<p>Az adatok soha nem kerülnek továbbításra a fejlesztő szerverére.</p>
+<p>Ennek az alkalmazásnak a PrivacyInfo.</p>
+<p>xcprivacy fájlja nem jelent be nyomon követést (NSPrivacyTracking), és nem végez semmilyen harmadik féltől származó nyomon követést.</p>
+<h2>5. Harmadik féltől származó szolgáltatások</h2>
+<p>Az ezen alkalmazás által használt harmadik féltől származó szolgáltatások a következők.</p>
+<p>Mindegyik az Apple Inc.</p>
+<p>által nyújtott szolgáltatás.</p>
+<p>Szolgáltatás | Szolgáltató | Cél / StoreKit / App Store | Apple Inc.</p>
+<p>| Előfizetés-vásárlás feldolgozása / UserNotifications | Apple Inc.</p>
+<p>| Helyi értesítések egy &quot;határ&quot; megközelítésekor (eszközön történő feldolgozás) Ez az alkalmazás linkeket biztosít külső rendszeroldalakhoz (Nemzeti Adóhivatal, Japán Nyugdíjszolgálat stb.</p>
+<p>), de az ezeken a linkelt oldalakon tanúsított viselkedést az egyes oldalak saját adatvédelmi szabályzata szabályozza.</p>
+<p>Az Apple adatvédelmi szabályzatáért kérjük, tekintse meg az apple.</p>
+<p>com/jp/legal/privacy oldalt.</p>
+<h2>6. Adatmegőrzési időszak</h2>
+<p>A megadott értékek és mentett forgatókönyvek az eszközön maradnak, amíg ezt az alkalmazást törlik az eszközéről. Az alkalmazás törlése törli az összes helyi adatot (kivéve, ha az iCloud biztonsági mentésben szerepel).</p>
+<h2>7. Az Ön jogai</h2>
+<p>Adattörlés Az egyes forgatókönyveket törölheti az alkalmazáson belüli &quot;Beállítások&quot; menüpontból.</p>
+<p>Magának az alkalmazásnak a törlése törli az eszközön lévő összes helyi adatot.</p>
+<p>GDPR szerinti jogok (EU-lakosok számára) Az EU-lakosoknak joguk van a személyes adataikhoz való hozzáféréshez, azok helyesbítéséhez, törléséhez, a feldolgozás korlátozásához és az adatok hordozhatóságához.</p>
+<p>Mivel ez az alkalmazás nem szerez személyazonosításra alkalmas adatokat, ez a jog általában nem alkalmazandó, de ha kérdése van, kérjük, vegye fel velünk a kapcsolatot az alábbi információk segítségével.</p>
+<p>A Személyes Információk Védelméről szóló törvény szerinti jogok (Japán lakosai számára) A személyes információk közzétételével, helyesbítésével vagy felhasználásának megszüntetésével kapcsolatos kérésekért kérjük, vegye fel velünk a kapcsolatot az alábbi információk segítségével.</p>
+<h2>8. Gyermekek adatvédelme</h2>
+<p>Ez az alkalmazás 13 éves és idősebb háztartásvezetőknek, valamint kettős keresetű háztartásoknak szól. Tudatosan nem gyűjtünk személyes információkat 13 év alatti gyermekektől.</p>
+<h2>9. A számítási eredmények kezeléséről</h2>
+<p>Az ezen alkalmazás által bemutatott nettó fizetés és adóösszegek a nyilvánosan bejelentett 2026-os rendszeren alapuló szimulációs eredmények, és nem minősülnek hivatalos adómegállapításnak adótanácsadó vagy társadalombiztosítási és munkajogi ügyvéd részéről.</p>
+<p>Mindig ellenőrizze egy állami intézménynél vagy szakembernél a tényleges adóbevallás, az év végi adóelszámolás vagy a társadalombiztosítási jogosultság megállapítása érdekében.</p>
+<h2>10. Kapcsolatfelvétel</h2>
+<p>Az ezen adatvédelmi szabályzattal kapcsolatos kérdésekért vagy a személyes információkkal kapcsolatos kérésekért kérjük, vegye fel velünk a kapcsolatot alább.</p>
+<h2>11. E szabályzat módosításai</h2>
+<p>Ez az adatvédelmi szabályzat szükség szerint felülvizsgálható. A lényeges változásokról az alkalmazáson belüli értesítés vagy az ezen az oldalon való közzététel útján tájékoztatjuk.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kapcsolat</p>

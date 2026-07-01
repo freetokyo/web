@@ -131,38 +131,58 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Päivitetty viimeksi: 2026 / Kehittäjä: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>The app calculates household take-home pay based on Japan&#x27;s 2026 tax system.</p>
-<p>All data is stored on-device only; no data is sent to external servers.</p>
-<p>The app uses Apple StoreKit for subscriptions and UserNotifications for wall-approach alerts (on-device).</p>
-<p>No advertising, no third-party tracking, no personal data collection.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household and spouse annual income; number and age category of dependents; various income deductions; municipality category (premium); saved scenario names and memos.</p>
-<p>Auto-collected: first install date and launch count (on-device only); subscription status (via Apple StoreKit).</p>
-<p>NOT collected: personal identifying information (name, address, phone, email); GPS location; contacts or address book; advertising identifier (IDFA); biometric data; browsing history or other app usage; cloud sync data (no server transmission).</p>
-<h2>3. How Information Is Used</h2>
-<p>Information is used solely for: calculating income tax, resident tax, and social insurance based on the 2026 system and displaying take-home amounts; household scenario comparison and saving; local notifications for wall approach (premium); subscription determination via StoreKit.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On your device only: input values and saved scenarios are stored in UserDefaults and FileManager (local storage on-device).</p>
-<p>No server transmission: the app has no backend server and makes no Firebase or API calls.</p>
-<p>iCloud / CloudKit: not used for family sharing or cross-device sync.</p>
-<p>Whether iCloud backup includes app data follows Apple&#x27;s device backup specifications.</p>
-<h2>5. Third-Party Services</h2>
-<p>The app uses Apple-provided services only: StoreKit / App Store (subscription billing); UserNotifications (wall-approach local notifications, on-device only). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
-<h2>6. Data Retention</h2>
-<p>Data is retained on your device until the app is deleted. iCloud backup data follows Apple&#x27;s data retention policy. All local data is deleted when you delete the app.</p>
-<h2>7. Your Rights</h2>
-<p>Data export: no export function is currently available (view and copy from the screen). Data deletion: deleting the app removes all local data. EU residents: GDPR rights apply. Japan residents: Personal Information Protection Act rights apply. Contact us below for assistance.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>This app is for users aged 13 and over. We do not knowingly collect information from children under 13.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations based on published system information. They are not guaranteed to match actual tax filing, year-end adjustment, or social insurance determination results. For important decisions, consult a tax accountant, social insurance labor consultant, or financial planner.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, please contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>This policy may be revised as needed. Significant changes will be communicated via app update or this page.</p>
+<h2>1. Johdanto</h2>
+<p>HomeNet Navi (&quot;tämä sovellus&quot;) on iOS-&quot;tulorajan&quot; simulaattorisovellus, joka tukee vuoden 2026 järjestelmää.</p>
+<p>Tämä tietosuojakäytäntö selittää tämän sovelluksen käytön yhteydessä käsiteltävien tietojen tyypit, käyttötarkoitukset, säilytystavan ja oikeutesi.</p>
+<p>Tämä sovellus ei näytä mainoksia eikä myy tietojasi kolmansille osapuolille.</p>
+<p>Syöttämäsi tulo-, vähennys- ja muut tiedot käsitellään vain laitteella, eikä niitä koskaan lähetetä kehittäjän palvelimelle.</p>
+<h2>2. Käsittelemämme tiedot</h2>
+<p>2-1.</p>
+<p>Syöttämäsi tiedot • Talouden pään ja puolison vuositulot (palkka/yritystulo) • Huollettavien lukumäärä ja ikäluokka • Erilaiset tulovähennykset (sairauskulut, sosiaalivakuutusmaksut, pienyritysten keskinäinen apu jne.</p>
+<p>) • Kunnallisveron kuntaluokitus (Premium-ominaisuus) • Tallennettujen skenaarioiden nimet/muistiinpanot 2-2.</p>
+<p>Automaattisesti kerätyt tiedot • Ensimmäinen asennuspäivä/sovelluksen käynnistysten määrä (ominaisuuksien käytön ymmärtämiseksi, vain laitteella) • Tilauksen ostotila (Apple StoreKit määrittää) 2-3.</p>
+<p>Tiedot, joita ei kerätä • Henkilökohtaisesti tunnistettavat tiedot, kuten nimi, osoite, puhelinnumero, sähköpostiosoite • GPS-sijaintitiedot • Yhteystiedot/osoitekirja • Mainostunniste (IDFA) • Biometriset tiedot • Selaushistoria / muiden sovellusten käyttö • Pilveen synkronoidut tiedot (tämä sovellus ei suorita mitään palvelinlähetystä)</p>
+<h2>3. Tietojen käyttötarkoitus</h2>
+<p>Käsiteltyjä tietoja käytetään vain seuraaviin tarkoituksiin.</p>
+<p>• Tuloveron, kunnallisveron ja sosiaalivakuutusmaksujen laskeminen ja esittäminen vuoden 2026 järjestelmän perusteella sekä nettopalkan näyttäminen • Talouspohjainen skenaarioiden vertailu ja tallennus • Paikalliset ilmoitukset lähestyttäessä &quot;tulorajaa&quot; • Tilauksen soveltamisen määrittäminen (StoreKitin kautta)</p>
+<h2>4. Missä tietoja säilytetään</h2>
+<p>Tietosi säilytetään seuraavissa paikoissa.</p>
+<p>• Vain laitteellasi: syötetyt arvot ja tallennetut skenaariot säilytetään UserDefaultsissa ja FileManagerissa (laitteen paikallinen tallennustila).</p>
+<p>• Ei palvelinlähetystä: tällä sovelluksella ei ole omaa taustapalvelinta.</p>
+<p>Firebaseen tai mihinkään omaan API:iin ei lähetetä mitään.</p>
+<p>• iCloud / CloudKit: koska tämä sovellus ei tarjoa perheen jakamista tai laitteiden välistä synkronointia, se ei käytä CloudKitiä.</p>
+<p>Sisältyykö tämän sovelluksen tiedot iCloud-varmuuskopioon, noudattaa Applen laitteiden varmuuskopiointimääritelmiä.</p>
+<p>Mitään tietoja ei koskaan lähetetä kehittäjän palvelimelle.</p>
+<p>Tämän sovelluksen PrivacyInfo.</p>
+<p>xcprivacy ilmoittaa, ettei seurantaa (NSPrivacyTracking) tapahdu, eikä se suorita mitään kolmannen osapuolen seurantaa.</p>
+<h2>5. Kolmansien osapuolten palvelut</h2>
+<p>Tämän sovelluksen käyttämät kolmansien osapuolten palvelut ovat seuraavat.</p>
+<p>Kaikki ovat Apple Inc:n tarjoamia palveluita.</p>
+<p>Palvelu | Tarjoaja | Tarkoitus / StoreKit / App Store | Apple Inc.</p>
+<p>| Tilauksen ostokäsittely / UserNotifications | Apple Inc.</p>
+<p>| Paikalliset ilmoitukset lähestyttäessä &quot;rajaa&quot; (käsittely laitteella) Tämä sovellus tarjoaa linkkejä ulkoisiin järjestelmäsivuihin (Kansallinen verovirasto, Japanin eläkepalvelu jne.</p>
+<p>), mutta käyttäytyminen näillä linkitetyillä sivustoilla noudattaa kunkin sivuston omaa tietosuojakäytäntöä.</p>
+<p>Katso Applen tietosuojakäytäntö osoitteesta apple.</p>
+<p>com/jp/legal/privacy.</p>
+<h2>6. Tietojen säilytysaika</h2>
+<p>Syötetyt arvot ja tallennetut skenaariot säilytetään laitteella, kunnes tämä sovellus poistetaan laitteeltasi. Sovelluksen poistaminen poistaa kaikki paikalliset tiedot (paitsi kun ne sisältyvät iCloud-varmuuskopioon).</p>
+<h2>7. Oikeutesi</h2>
+<p>Tietojen poistaminen Voit poistaa kunkin skenaarion sovelluksen sisäisistä &quot;Asetuksista&quot;.</p>
+<p>Itse sovelluksen poistaminen poistaa kaikki paikalliset tiedot laitteella.</p>
+<p>Oikeudet GDPR:n mukaisesti (EU:n asukkaille) EU:n asukkailla on oikeus käyttää, korjata, poistaa, rajoittaa käsittelyä ja siirtää henkilötietojaan.</p>
+<p>Koska tämä sovellus ei hanki henkilökohtaisesti tunnistettavia tietoja, tämä oikeus ei yleensä sovellu, mutta jos sinulla on kysyttävää, ota meihin yhteyttä alla olevilla tiedoilla.</p>
+<p>Oikeudet henkilötietojen suojaa koskevan lain mukaisesti (Japanin asukkaille) Henkilötietojen paljastamista, korjaamista tai käytön lopettamista koskevia pyyntöjä varten ota meihin yhteyttä alla olevilla tiedoilla.</p>
+<h2>8. Lasten tietosuoja</h2>
+<p>Tämä sovellus on tarkoitettu 13-vuotiaille ja sitä vanhemmille kodinhoitajille sekä kaksituloisille kotitalouksille. Emme tarkoituksellisesti kerää henkilötietoja alle 13-vuotiailta lapsilta.</p>
+<h2>9. Laskentatulosten käsittelystä</h2>
+<p>Tämän sovelluksen esittämät nettopalkka ja verosummat ovat simulointituloksia, jotka perustuvat julkisesti ilmoitettuun vuoden 2026 järjestelmään, eivätkä ne ole veroneuvojan tai sosiaaliturva- ja työoikeusasianajajan virallinen verotuspäätös.</p>
+<p>Tarkista aina julkiselta laitokselta tai ammattilaiselta todellista veroilmoitusta, vuoden lopun verotasausta tai sosiaalivakuutuskelpoisuuden määrittämistä varten.</p>
+<h2>10. Ota yhteyttä</h2>
+<p>Jos sinulla on kysyttävää tästä tietosuojakäytännöstä tai henkilötietoihin liittyviä pyyntöjä, ota meihin yhteyttä alla.</p>
+<h2>11. Muutokset tähän käytäntöön</h2>
+<p>Tätä tietosuojakäytäntöä voidaan tarkistaa tarpeen mukaan. Olennaisista muutoksista ilmoitetaan sovelluksen sisäisellä ilmoituksella tai julkaisemalla tällä sivulla.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Yhteystiedot</p>

@@ -131,30 +131,60 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Cập nhật lần cuối: 2026 / Nhà phát triển: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay based on Japan&#x27;s 2026 system. No ads, no data sales. All input processed on-device only.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions. Auto-collected: install date/launch count (on-device), subscription status. NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only (UserDefaults, FileManager). No backend server, no Firebase. iCloud/CloudKit not used for sync.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple only: StoreKit/App Store (subscriptions); UserNotifications (wall alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted.</p>
-<h2>7. Your Rights</h2>
-<p>Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Results are simulations, not guaranteed to match actual tax filing. Consult a professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>Contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. Giới thiệu</h2>
+<p>HomeNet Navi (&quot;ứng dụng này&quot;) là một ứng dụng mô phỏng &quot;ngưỡng thu nhập&quot; iOS hỗ trợ hệ thống năm 2026.</p>
+<p>Chính sách quyền riêng tư này giải thích các loại thông tin được xử lý khi sử dụng ứng dụng này, mục đích sử dụng, cách thức lưu trữ và quyền của bạn.</p>
+<p>Ứng dụng này không hiển thị quảng cáo và không bán thông tin của bạn cho bên thứ ba.</p>
+<p>Thông tin về thu nhập, khấu trừ và thông tin khác mà bạn nhập chỉ được xử lý trên thiết bị và không bao giờ được truyền đến máy chủ của nhà phát triển.</p>
+<h2>2. Thông tin chúng tôi xử lý</h2>
+<p>2-1.</p>
+<p>Thông tin bạn nhập • Thu nhập hàng năm của chủ hộ và vợ/chồng (lương/thu nhập kinh doanh) • Số lượng và độ tuổi của người phụ thuộc • Các khoản khấu trừ thu nhập khác nhau (chi phí y tế, phí bảo hiểm xã hội, hỗ trợ tương hỗ doanh nghiệp nhỏ, v.</p>
+<p>v.</p>
+<p>) • Phân loại thành phố cho thuế địa phương (tính năng Premium) • Tên/ghi chú của các kịch bản đã lưu 2-2.</p>
+<p>Thông tin được thu thập tự động • Ngày cài đặt đầu tiên/số lần khởi chạy ứng dụng (để hiểu việc sử dụng tính năng, chỉ trên thiết bị) • Trạng thái mua đăng ký (được xác định bởi Apple StoreKit) 2-3.</p>
+<p>Thông tin không được thu thập • Thông tin nhận dạng cá nhân như tên, địa chỉ, số điện thoại, địa chỉ email • Dữ liệu vị trí GPS • Danh bạ/sổ địa chỉ • Mã định danh quảng cáo (IDFA) • Dữ liệu sinh trắc học • Lịch sử duyệt web / sử dụng ứng dụng khác • Dữ liệu được đồng bộ hóa lên đám mây (ứng dụng này không thực hiện bất kỳ việc truyền tải máy chủ nào)</p>
+<h2>3. Mục đích sử dụng thông tin</h2>
+<p>Thông tin được xử lý chỉ được sử dụng cho các mục đích sau.</p>
+<p>• Tính toán và trình bày thuế thu nhập, thuế địa phương và phí bảo hiểm xã hội dựa trên hệ thống năm 2026, và hiển thị lương thực nhận • So sánh và lưu kịch bản dựa trên hộ gia đình • Thông báo cục bộ khi tiếp cận &quot;ngưỡng thu nhập&quot; • Xác định việc áp dụng đăng ký (thông qua StoreKit)</p>
+<h2>4. Dữ liệu được lưu trữ ở đâu</h2>
+<p>Dữ liệu của bạn được lưu trữ tại các vị trí sau.</p>
+<p>• Chỉ trên thiết bị của bạn: các giá trị đã nhập và kịch bản đã lưu được lưu trữ trong UserDefaults và FileManager (lưu trữ cục bộ trên thiết bị).</p>
+<p>• Không có truyền tải máy chủ: ứng dụng này không có máy chủ backend riêng.</p>
+<p>Không có bất kỳ việc truyền tải nào đến Firebase hoặc bất kỳ API độc quyền nào.</p>
+<p>• iCloud / CloudKit: vì ứng dụng này không cung cấp chia sẻ gia đình hoặc đồng bộ hóa đa thiết bị, nó không sử dụng CloudKit.</p>
+<p>Việc dữ liệu của ứng dụng này có được bao gồm trong bản sao lưu iCloud hay không tuân theo các thông số kỹ thuật sao lưu thiết bị của Apple.</p>
+<p>Không có dữ liệu nào từng được truyền đến máy chủ của nhà phát triển.</p>
+<p>Tệp PrivacyInfo.</p>
+<p>xcprivacy của ứng dụng này khai báo không có theo dõi (NSPrivacyTracking), và nó không thực hiện bất kỳ việc theo dõi bên thứ ba nào.</p>
+<h2>5. Dịch vụ của bên thứ ba</h2>
+<p>Các dịch vụ của bên thứ ba được sử dụng bởi ứng dụng này như sau.</p>
+<p>Tất cả đều là các dịch vụ được cung cấp bởi Apple Inc.</p>
+<p>Dịch vụ | Nhà cung cấp | Mục đích / StoreKit / App Store | Apple Inc.</p>
+<p>| Xử lý mua đăng ký / UserNotifications | Apple Inc.</p>
+<p>| Thông báo cục bộ khi tiếp cận &quot;ngưỡng&quot; (xử lý trên thiết bị) Ứng dụng này cung cấp các liên kết đến các trang hệ thống bên ngoài (Cục Thuế Quốc gia, Dịch vụ Lương hưu Nhật Bản, v.</p>
+<p>v.</p>
+<p>), nhưng hành vi trên các trang web được liên kết đó tuân theo chính sách quyền riêng tư riêng của từng trang web.</p>
+<p>Vui lòng tham khảo apple.</p>
+<p>com/jp/legal/privacy để biết chính sách quyền riêng tư của Apple.</p>
+<h2>6. Thời gian lưu giữ dữ liệu</h2>
+<p>Các giá trị đã nhập và kịch bản đã lưu được giữ lại trên thiết bị cho đến khi ứng dụng này bị xóa khỏi thiết bị của bạn. Xóa ứng dụng sẽ xóa tất cả dữ liệu cục bộ (trừ khi được bao gồm trong bản sao lưu iCloud).</p>
+<h2>7. Quyền của bạn</h2>
+<p>Xóa dữ liệu Bạn có thể xóa từng kịch bản từ &quot;Cài đặt&quot; trong ứng dụng.</p>
+<p>Việc xóa chính ứng dụng sẽ xóa tất cả dữ liệu cục bộ trên thiết bị.</p>
+<p>Quyền theo GDPR (dành cho cư dân EU) Cư dân EU có quyền truy cập, sửa chữa, xóa, hạn chế xử lý và chuyển giao dữ liệu cá nhân của họ.</p>
+<p>Vì ứng dụng này không thu thập dữ liệu nhận dạng cá nhân, quyền này thường không áp dụng, nhưng nếu bạn có thắc mắc, vui lòng liên hệ với chúng tôi bằng thông tin bên dưới.</p>
+<p>Quyền theo Đạo luật Bảo vệ Thông tin Cá nhân (dành cho cư dân Nhật Bản) Đối với các yêu cầu liên quan đến việc tiết lộ, sửa chữa hoặc ngừng sử dụng thông tin cá nhân, vui lòng liên hệ với chúng tôi bằng thông tin bên dưới.</p>
+<h2>8. Quyền riêng tư của trẻ em</h2>
+<p>Ứng dụng này dành cho những người nội trợ từ 13 tuổi trở lên và các hộ gia đình có thu nhập kép. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi.</p>
+<h2>9. Về việc xử lý kết quả tính toán</h2>
+<p>Lương thực nhận và số tiền thuế được trình bày bởi ứng dụng này là kết quả mô phỏng dựa trên hệ thống năm 2026 được công bố công khai, và không phải là quyết định thuế chính thức của kế toán thuế hoặc luật sư an sinh xã hội và lao động.</p>
+<p>Luôn kiểm tra với một tổ chức công hoặc chuyên gia đối với việc khai thuế thực tế, điều chỉnh thuế cuối năm, hoặc xác định đủ điều kiện bảo hiểm xã hội.</p>
+<h2>10. Liên hệ với chúng tôi</h2>
+<p>Đối với các câu hỏi về Chính sách quyền riêng tư này, hoặc các yêu cầu liên quan đến thông tin cá nhân, vui lòng liên hệ với chúng tôi bên dưới.</p>
+<h2>11. Thay đổi đối với Chính sách này</h2>
+<p>Chính sách quyền riêng tư này có thể được sửa đổi khi cần thiết. Các thay đổi quan trọng sẽ được thông báo thông qua thông báo trong ứng dụng hoặc đăng trên trang này.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Liên hệ</p>

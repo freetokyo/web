@@ -131,38 +131,58 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Dernière mise à jour : 2026 / Développeur : CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
 <h2>1. Introduction</h2>
-<p>The app calculates household take-home pay based on Japan&#x27;s 2026 tax system.</p>
-<p>All data is stored on-device only; no data is sent to external servers.</p>
-<p>The app uses Apple StoreKit for subscriptions and UserNotifications for wall-approach alerts (on-device).</p>
-<p>No advertising, no third-party tracking, no personal data collection.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household and spouse annual income; number and age category of dependents; various income deductions; municipality category (premium); saved scenario names and memos.</p>
-<p>Auto-collected: first install date and launch count (on-device only); subscription status (via Apple StoreKit).</p>
-<p>NOT collected: personal identifying information (name, address, phone, email); GPS location; contacts or address book; advertising identifier (IDFA); biometric data; browsing history or other app usage; cloud sync data (no server transmission).</p>
-<h2>3. How Information Is Used</h2>
-<p>Information is used solely for: calculating income tax, resident tax, and social insurance based on the 2026 system and displaying take-home amounts; household scenario comparison and saving; local notifications for wall approach (premium); subscription determination via StoreKit.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On your device only: input values and saved scenarios are stored in UserDefaults and FileManager (local storage on-device).</p>
-<p>No server transmission: the app has no backend server and makes no Firebase or API calls.</p>
-<p>iCloud / CloudKit: not used for family sharing or cross-device sync.</p>
-<p>Whether iCloud backup includes app data follows Apple&#x27;s device backup specifications.</p>
-<h2>5. Third-Party Services</h2>
-<p>The app uses Apple-provided services only: StoreKit / App Store (subscription billing); UserNotifications (wall-approach local notifications, on-device only). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
-<h2>6. Data Retention</h2>
-<p>Data is retained on your device until the app is deleted. iCloud backup data follows Apple&#x27;s data retention policy. All local data is deleted when you delete the app.</p>
-<h2>7. Your Rights</h2>
-<p>Data export: no export function is currently available (view and copy from the screen). Data deletion: deleting the app removes all local data. EU residents: GDPR rights apply. Japan residents: Personal Information Protection Act rights apply. Contact us below for assistance.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>This app is for users aged 13 and over. We do not knowingly collect information from children under 13.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations based on published system information. They are not guaranteed to match actual tax filing, year-end adjustment, or social insurance determination results. For important decisions, consult a tax accountant, social insurance labor consultant, or financial planner.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, please contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>This policy may be revised as needed. Significant changes will be communicated via app update or this page.</p>
+<p>HomeNet Navi (&quot;cette application&quot;) est une application de simulation de &quot;seuil de revenu&quot; pour iOS prenant en charge le système 2026.</p>
+<p>Cette politique de confidentialité explique les types d&#x27;informations traitées lors de l&#x27;utilisation de cette application, les finalités d&#x27;utilisation, la manière dont elles sont stockées et vos droits.</p>
+<p>Cette application n&#x27;affiche aucune publicité et ne vend pas vos informations à des tiers.</p>
+<p>Les informations sur le revenu, les déductions et autres que vous saisissez sont traitées uniquement sur l&#x27;appareil et ne sont jamais transmises au serveur du développeur.</p>
+<h2>2. Informations que nous traitons</h2>
+<p>2-1.</p>
+<p>Informations que vous saisissez • Revenu annuel du chef de famille et du conjoint (salaire/revenu d&#x27;entreprise) • Nombre et catégorie d&#x27;âge des personnes à charge • Diverses déductions de revenu (frais médicaux, cotisations de sécurité sociale, entraide des petites entreprises, etc.</p>
+<p>) • Classification de la municipalité pour l&#x27;impôt municipal (fonctionnalité Premium) • Noms/notes des scénarios enregistrés 2-2.</p>
+<p>Informations collectées automatiquement • Date de la première installation/nombre de lancements de l&#x27;application (pour comprendre l&#x27;utilisation des fonctionnalités, uniquement sur l&#x27;appareil) • État d&#x27;achat de l&#x27;abonnement (déterminé par Apple StoreKit) 2-3.</p>
+<p>Informations non collectées • Informations personnellement identifiables telles que le nom, l&#x27;adresse, le téléphone, l&#x27;adresse e-mail • Données de localisation GPS • Contacts/carnet d&#x27;adresses • Identifiant publicitaire (IDFA) • Données biométriques • Historique de navigation / utilisation d&#x27;autres applications • Données synchronisées dans le cloud (cette application n&#x27;effectue aucune transmission au serveur)</p>
+<h2>3. Finalité de l&#x27;utilisation des informations</h2>
+<p>Les informations traitées sont utilisées uniquement aux fins suivantes.</p>
+<p>• Calcul et présentation de l&#x27;impôt sur le revenu, de l&#x27;impôt municipal et des cotisations de sécurité sociale basés sur le système 2026, et affichage du salaire net • Comparaison et enregistrement de scénarios basés sur le foyer • Notifications locales lors de l&#x27;approche d&#x27;un &quot;seuil de revenu&quot; • Détermination de l&#x27;application de l&#x27;abonnement (via StoreKit)</p>
+<h2>4. Où les données sont stockées</h2>
+<p>Vos données sont stockées aux endroits suivants.</p>
+<p>• Uniquement sur votre appareil : les valeurs saisies et les scénarios enregistrés sont stockés dans UserDefaults et FileManager (stockage local sur l&#x27;appareil).</p>
+<p>• Aucune transmission au serveur : cette application n&#x27;a pas de serveur backend propriétaire.</p>
+<p>Il n&#x27;y a aucune transmission à Firebase ou à toute API propriétaire.</p>
+<p>• iCloud / CloudKit : étant donné que cette application ne propose pas de partage familial ni de synchronisation entre appareils, elle n&#x27;utilise pas CloudKit.</p>
+<p>Le fait que les données de cette application soient incluses dans une sauvegarde iCloud suit les spécifications de sauvegarde d&#x27;appareil d&#x27;Apple.</p>
+<p>Aucune donnée n&#x27;est jamais transmise au serveur du développeur.</p>
+<p>Le PrivacyInfo.</p>
+<p>xcprivacy de cette application déclare l&#x27;absence de suivi (NSPrivacyTracking), et elle n&#x27;effectue aucun suivi tiers.</p>
+<h2>5. Services tiers</h2>
+<p>Les services tiers utilisés par cette application sont les suivants.</p>
+<p>Tous sont des services fournis par Apple Inc.</p>
+<p>Service | Fournisseur | Finalité / StoreKit / App Store | Apple Inc.</p>
+<p>| Traitement de l&#x27;achat d&#x27;abonnement / UserNotifications | Apple Inc.</p>
+<p>| Notifications locales lors de l&#x27;approche d&#x27;un &quot;seuil&quot; (traitement sur l&#x27;appareil) Cette application fournit des liens vers des pages système externes (Agence nationale des impôts, Service des pensions du Japon, etc.</p>
+<p>), mais le comportement sur ces sites liés est régi par la propre politique de confidentialité de chaque site.</p>
+<p>Veuillez consulter apple.</p>
+<p>com/jp/legal/privacy pour la politique de confidentialité d&#x27;Apple.</p>
+<h2>6. Durée de conservation des données</h2>
+<p>Les valeurs saisies et les scénarios enregistrés sont conservés sur l&#x27;appareil jusqu&#x27;à ce que cette application soit supprimée de votre appareil. La suppression de l&#x27;application supprime toutes les données locales (sauf si elles sont incluses dans une sauvegarde iCloud).</p>
+<h2>7. Vos droits</h2>
+<p>Suppression des données Vous pouvez supprimer chaque scénario depuis les &quot;Réglages&quot; au sein de l&#x27;application.</p>
+<p>La suppression de l&#x27;application elle-même supprime toutes les données locales sur l&#x27;appareil.</p>
+<p>Droits au titre du RGPD (pour les résidents de l&#x27;UE) Les résidents de l&#x27;UE ont le droit d&#x27;accéder, de corriger, de supprimer, de restreindre le traitement et de porter leurs données personnelles.</p>
+<p>Étant donné que cette application n&#x27;obtient pas de données personnellement identifiables, ce droit ne s&#x27;applique généralement pas, mais si vous avez des questions, veuillez nous contacter en utilisant les informations ci-dessous.</p>
+<p>Droits au titre de la loi sur la protection des informations personnelles (pour les résidents du Japon) Pour les demandes concernant la divulgation, la correction ou l&#x27;arrêt de l&#x27;utilisation d&#x27;informations personnelles, veuillez nous contacter en utilisant les informations ci-dessous.</p>
+<h2>8. Confidentialité des mineurs</h2>
+<p>Cette application est destinée aux personnes gérant un foyer âgées de 13 ans et plus et aux foyers à double revenu. Nous ne collectons pas intentionnellement d&#x27;informations personnelles auprès d&#x27;enfants de moins de 13 ans.</p>
+<h2>9. Concernant le traitement des résultats de calcul</h2>
+<p>Le salaire net et les montants d&#x27;impôts présentés par cette application sont des résultats de simulation basés sur le système 2026 annoncé publiquement, et ne constituent pas une détermination fiscale officielle par un expert-comptable ou un avocat spécialisé en sécurité sociale et droit du travail.</p>
+<p>Veuillez toujours vérifier auprès d&#x27;une institution publique ou d&#x27;un professionnel pour la déclaration d&#x27;impôts réelle, l&#x27;ajustement fiscal de fin d&#x27;année, ou la détermination de l&#x27;éligibilité à la sécurité sociale.</p>
+<h2>10. Nous contacter</h2>
+<p>Pour toute question concernant cette politique de confidentialité, ou toute demande concernant des informations personnelles, veuillez nous contacter ci-dessous.</p>
+<h2>11. Modifications de cette politique</h2>
+<p>Cette politique de confidentialité peut être révisée si nécessaire. Les changements substantiels seront annoncés via une notification dans l&#x27;application ou une publication sur cette page.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Contact</p>

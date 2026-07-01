@@ -131,38 +131,58 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Poslední aktualizace: 2026 / Vývojář: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>The app calculates household take-home pay based on Japan&#x27;s 2026 tax system.</p>
-<p>All data is stored on-device only; no data is sent to external servers.</p>
-<p>The app uses Apple StoreKit for subscriptions and UserNotifications for wall-approach alerts (on-device).</p>
-<p>No advertising, no third-party tracking, no personal data collection.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household and spouse annual income; number and age category of dependents; various income deductions; municipality category (premium); saved scenario names and memos.</p>
-<p>Auto-collected: first install date and launch count (on-device only); subscription status (via Apple StoreKit).</p>
-<p>NOT collected: personal identifying information (name, address, phone, email); GPS location; contacts or address book; advertising identifier (IDFA); biometric data; browsing history or other app usage; cloud sync data (no server transmission).</p>
-<h2>3. How Information Is Used</h2>
-<p>Information is used solely for: calculating income tax, resident tax, and social insurance based on the 2026 system and displaying take-home amounts; household scenario comparison and saving; local notifications for wall approach (premium); subscription determination via StoreKit.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On your device only: input values and saved scenarios are stored in UserDefaults and FileManager (local storage on-device).</p>
-<p>No server transmission: the app has no backend server and makes no Firebase or API calls.</p>
-<p>iCloud / CloudKit: not used for family sharing or cross-device sync.</p>
-<p>Whether iCloud backup includes app data follows Apple&#x27;s device backup specifications.</p>
-<h2>5. Third-Party Services</h2>
-<p>The app uses Apple-provided services only: StoreKit / App Store (subscription billing); UserNotifications (wall-approach local notifications, on-device only). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
-<h2>6. Data Retention</h2>
-<p>Data is retained on your device until the app is deleted. iCloud backup data follows Apple&#x27;s data retention policy. All local data is deleted when you delete the app.</p>
-<h2>7. Your Rights</h2>
-<p>Data export: no export function is currently available (view and copy from the screen). Data deletion: deleting the app removes all local data. EU residents: GDPR rights apply. Japan residents: Personal Information Protection Act rights apply. Contact us below for assistance.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>This app is for users aged 13 and over. We do not knowingly collect information from children under 13.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations based on published system information. They are not guaranteed to match actual tax filing, year-end adjustment, or social insurance determination results. For important decisions, consult a tax accountant, social insurance labor consultant, or financial planner.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, please contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>This policy may be revised as needed. Significant changes will be communicated via app update or this page.</p>
+<h2>1. Úvod</h2>
+<p>HomeNet Navi (&quot;tato aplikace&quot;) je simulátor &quot;příjmového prahu&quot; pro iOS podporující systém pro rok 2026.</p>
+<p>Tyto zásady ochrany osobních údajů vysvětlují typy informací zpracovávaných při používání této aplikace, účely použití, způsob uložení a vaše práva.</p>
+<p>Tato aplikace nezobrazuje žádné reklamy a neprodává vaše informace třetím stranám.</p>
+<p>Informace o příjmech, odpočtech a další, které zadáte, jsou zpracovávány pouze v zařízení a nikdy nejsou přenášeny na server vývojáře.</p>
+<h2>2. Informace, se kterými nakládáme</h2>
+<p>2-1.</p>
+<p>Informace, které zadáváte • Roční příjem hlavy domácnosti a manžela/manželky (mzda/podnikatelský příjem) • Počet a věková kategorie vyživovaných osob • Různé odpočty z příjmu (lékařské výdaje, příspěvky na sociální pojištění, vzájemná pomoc malých podniků atd.</p>
+<p>) • Klasifikace obce pro obecní daň (funkce Premium) • Názvy/poznámky uložených scénářů 2-2.</p>
+<p>Automaticky shromažďované informace • Datum první instalace/počet spuštění aplikace (pro pochopení používání funkcí, pouze v zařízení) • Stav nákupu předplatného (určuje Apple StoreKit) 2-3.</p>
+<p>Informace, které nejsou shromažďovány • Osobně identifikovatelné informace jako jméno, adresa, telefonní číslo, e-mailová adresa • Údaje o poloze GPS • Kontakty/adresář • Reklamní identifikátor (IDFA) • Biometrická data • Historie prohlížení / používání jiných aplikací • Data synchronizovaná do cloudu (tato aplikace neprovádí žádný přenos na server)</p>
+<h2>3. Účel použití informací</h2>
+<p>Zpracovávané informace se používají pouze pro následující účely.</p>
+<p>• Výpočet a prezentace daně z příjmu, obecní daně a příspěvků na sociální pojištění na základě systému pro rok 2026 a zobrazení čisté mzdy • Porovnávání a ukládání scénářů na základě domácnosti • Místní upozornění při přiblížení se k &quot;příjmovému prahu&quot; • Určení uplatnění předplatného (přes StoreKit)</p>
+<h2>4. Kde jsou data uložena</h2>
+<p>Vaše data jsou uložena na následujících místech.</p>
+<p>• Pouze na vašem zařízení: zadané hodnoty a uložené scénáře jsou uloženy v UserDefaults a FileManager (lokální úložiště v zařízení).</p>
+<p>• Žádný přenos na server: tato aplikace nemá žádný vlastní backendový server.</p>
+<p>Neexistuje žádný přenos do Firebase ani do žádného vlastního API.</p>
+<p>• iCloud / CloudKit: jelikož tato aplikace neposkytuje sdílení v rodině ani synchronizaci mezi zařízeními, nepoužívá CloudKit.</p>
+<p>Zda jsou data této aplikace zahrnuta do zálohy iCloud, se řídí specifikacemi zálohování zařízení Apple.</p>
+<p>Žádná data nejsou nikdy přenášena na server vývojáře.</p>
+<p>Soubor PrivacyInfo.</p>
+<p>xcprivacy této aplikace deklaruje žádné sledování (NSPrivacyTracking) a neprovádí žádné sledování třetích stran.</p>
+<h2>5. Služby třetích stran</h2>
+<p>Služby třetích stran používané touto aplikací jsou následující.</p>
+<p>Všechny jsou služby poskytované společností Apple Inc.</p>
+<p>Služba | Poskytovatel | Účel / StoreKit / App Store | Apple Inc.</p>
+<p>| Zpracování nákupu předplatného / UserNotifications | Apple Inc.</p>
+<p>| Místní upozornění při přiblížení se k &quot;prahu&quot; (zpracování v zařízení) Tato aplikace poskytuje odkazy na externí systémové stránky (Národní daňová agentura, Japonská penzijní služba atd.</p>
+<p>), ale chování na těchto propojených webech se řídí vlastními zásadami ochrany osobních údajů každého webu.</p>
+<p>Zásady ochrany osobních údajů společnosti Apple naleznete na apple.</p>
+<p>com/jp/legal/privacy.</p>
+<h2>6. Doba uchovávání dat</h2>
+<p>Zadané hodnoty a uložené scénáře jsou uchovávány v zařízení, dokud tuto aplikaci neodstraníte ze svého zařízení. Odstranění aplikace smaže všechna lokální data (kromě případů, kdy jsou zahrnuta v záloze iCloud).</p>
+<h2>7. Vaše práva</h2>
+<p>Smazání dat Každý scénář můžete smazat z &quot;Nastavení&quot; v rámci aplikace.</p>
+<p>Odstranění samotné aplikace smaže všechna lokální data v zařízení.</p>
+<p>Práva podle GDPR (pro rezidenty EU) Rezidenti EU mají právo na přístup, opravu, smazání, omezení zpracování a přenositelnost svých osobních údajů.</p>
+<p>Jelikož tato aplikace nezískává osobně identifikovatelná data, toto právo se obecně neuplatňuje, ale pokud máte dotazy, kontaktujte nás pomocí níže uvedených informací.</p>
+<p>Práva podle zákona o ochraně osobních údajů (pro rezidenty Japonska) V případě žádostí o zveřejnění, opravu nebo ukončení používání osobních údajů nás kontaktujte pomocí níže uvedených informací.</p>
+<h2>8. Ochrana soukromí dětí</h2>
+<p>Tato aplikace je určena hospodyňkám/hospodářům ve věku 13 let a starším a domácnostem s dvojím příjmem. Vědomě neshromažďujeme osobní údaje od dětí mladších 13 let.</p>
+<h2>9. Ohledně nakládání s výsledky výpočtu</h2>
+<p>Čistá mzda a daňové částky prezentované touto aplikací jsou výsledky simulace založené na veřejně oznámeném systému pro rok 2026 a nejsou oficiálním daňovým stanovením daňovým poradcem nebo právníkem specializujícím se na sociální zabezpečení a práci.</p>
+<p>Pro skutečné daňové přiznání, roční zúčtování daně nebo určení nároku na sociální pojištění se vždy poraďte s veřejnou institucí nebo odborníkem.</p>
+<h2>10. Kontaktujte nás</h2>
+<p>S dotazy ohledně těchto zásad ochrany osobních údajů nebo žádostmi ohledně osobních údajů nás prosím kontaktujte níže.</p>
+<h2>11. Změny těchto zásad</h2>
+<p>Tyto zásady ochrany osobních údajů mohou být podle potřeby revidovány. Podstatné změny budou oznámeny prostřednictvím oznámení v aplikaci nebo zveřejněním na této stránce.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontakt</p>

@@ -131,30 +131,58 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Last updated: 2026 / Developer: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay and Japan income walls based on the 2026 system. No ads, no data sales. All input data is processed on-device only; nothing sent to external servers.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions, municipality (premium), scenario names. Auto-collected: install date/launch count (on-device), subscription status (StoreKit). NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation and take-home display; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only in UserDefaults and FileManager. No backend server, no Firebase, no API calls. iCloud/CloudKit not used for sync. iCloud backup inclusion follows Apple&#x27;s device backup specs.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple services only: StoreKit/App Store (subscriptions); UserNotifications (wall-approach alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted. iCloud backup per Apple policy.</p>
-<h2>7. Your Rights</h2>
-<p>No export function currently. Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over. We do not knowingly collect from under-13s.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations. Not guaranteed to match actual tax filing or social insurance determination. Consult a tax/legal professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. Pendahuluan</h2>
+<p>HomeNet Navi (&quot;aplikasi ini&quot;) adalah aplikasi simulator &quot;ambang batas pendapatan&quot; iOS yang mendukung sistem 2026.</p>
+<p>Kebijakan Privasi ini menjelaskan jenis informasi yang ditangani saat menggunakan aplikasi ini, tujuan penggunaan, cara penyimpanannya, dan hak Anda.</p>
+<p>Aplikasi ini tidak menampilkan iklan dan tidak menjual informasi Anda kepada pihak ketiga.</p>
+<p>Informasi pendapatan, pengurangan, dan lainnya yang Anda masukkan hanya diproses di perangkat dan tidak pernah dikirimkan ke server pengembang.</p>
+<h2>2. Informasi yang Kami Tangani</h2>
+<p>2-1.</p>
+<p>Informasi yang Anda masukkan • Pendapatan tahunan kepala rumah tangga dan pasangan (gaji/pendapatan bisnis) • Jumlah dan kategori usia tanggungan • Berbagai pengurangan pendapatan (biaya medis, premi asuransi sosial, bantuan timbal balik usaha kecil, dll.</p>
+<p>) • Klasifikasi kotamadya pajak daerah (fitur Premium) • Nama/catatan skenario yang disimpan 2-2.</p>
+<p>Informasi yang dikumpulkan secara otomatis • Tanggal instalasi pertama/jumlah peluncuran aplikasi (untuk memahami penggunaan fitur, hanya di perangkat) • Status pembelian langganan (ditentukan oleh Apple StoreKit) 2-3.</p>
+<p>Informasi yang tidak dikumpulkan • Informasi identitas pribadi seperti nama, alamat, nomor telepon, alamat email • Data lokasi GPS • Kontak/buku alamat • Pengenal iklan (IDFA) • Data biometrik • Riwayat penjelajahan / penggunaan aplikasi lain • Data yang disinkronkan ke cloud (aplikasi ini tidak melakukan transmisi server apa pun)</p>
+<h2>3. Tujuan Penggunaan Informasi</h2>
+<p>Informasi yang ditangani hanya digunakan untuk tujuan berikut.</p>
+<p>• Menghitung dan menyajikan pajak penghasilan, pajak daerah, dan premi asuransi sosial berdasarkan sistem 2026, dan menampilkan gaji bersih • Perbandingan dan penyimpanan skenario berbasis rumah tangga • Notifikasi lokal saat mendekati &quot;ambang batas pendapatan&quot; • Menentukan penerapan langganan (melalui StoreKit)</p>
+<h2>4. Di Mana Data Disimpan</h2>
+<p>Data Anda disimpan di lokasi berikut.</p>
+<p>• Hanya di perangkat Anda: nilai yang dimasukkan dan skenario yang disimpan disimpan di UserDefaults dan FileManager (penyimpanan lokal di perangkat).</p>
+<p>• Tidak ada transmisi server: aplikasi ini tidak memiliki server backend sendiri.</p>
+<p>Tidak ada transmisi ke Firebase atau API milik sendiri apa pun.</p>
+<p>• iCloud / CloudKit: karena aplikasi ini tidak menyediakan berbagi keluarga atau sinkronisasi lintas perangkat, aplikasi ini tidak menggunakan CloudKit.</p>
+<p>Apakah data aplikasi ini disertakan dalam cadangan iCloud mengikuti spesifikasi cadangan perangkat Apple.</p>
+<p>Tidak ada data yang pernah dikirimkan ke server pengembang.</p>
+<p>PrivacyInfo.</p>
+<p>xcprivacy aplikasi ini menyatakan tidak ada pelacakan (NSPrivacyTracking), dan tidak melakukan pelacakan pihak ketiga apa pun.</p>
+<h2>5. Layanan Pihak Ketiga</h2>
+<p>Layanan pihak ketiga yang digunakan oleh aplikasi ini adalah sebagai berikut.</p>
+<p>Semuanya adalah layanan yang disediakan oleh Apple Inc.</p>
+<p>Layanan | Penyedia | Tujuan / StoreKit / App Store | Apple Inc.</p>
+<p>| Pemrosesan pembelian langganan / UserNotifications | Apple Inc.</p>
+<p>| Notifikasi lokal saat mendekati &quot;ambang batas&quot; (pemrosesan di perangkat) Aplikasi ini menyediakan tautan ke halaman sistem eksternal (Badan Pajak Nasional, Layanan Pensiun Jepang, dll.</p>
+<p>), tetapi perilaku di situs tertaut tersebut diatur oleh kebijakan privasi masing-masing situs.</p>
+<p>Silakan merujuk ke apple.</p>
+<p>com/jp/legal/privacy untuk kebijakan privasi Apple.</p>
+<h2>6. Periode Retensi Data</h2>
+<p>Nilai yang dimasukkan dan skenario yang disimpan disimpan di perangkat hingga aplikasi ini dihapus dari perangkat Anda. Menghapus aplikasi akan menghapus semua data lokal (kecuali jika disertakan dalam cadangan iCloud).</p>
+<h2>7. Hak Anda</h2>
+<p>Penghapusan data Anda dapat menghapus setiap skenario dari &quot;Pengaturan&quot; dalam aplikasi.</p>
+<p>Menghapus aplikasi itu sendiri akan menghapus semua data lokal di perangkat.</p>
+<p>Hak berdasarkan GDPR (untuk penduduk UE) Penduduk UE memiliki hak untuk mengakses, mengoreksi, menghapus, membatasi pemrosesan, dan memindahkan data pribadi mereka.</p>
+<p>Karena aplikasi ini tidak memperoleh data yang dapat diidentifikasi secara pribadi, hak ini umumnya tidak berlaku, tetapi jika Anda memiliki pertanyaan, silakan hubungi kami menggunakan informasi di bawah ini.</p>
+<p>Hak berdasarkan Undang-Undang Perlindungan Informasi Pribadi (untuk penduduk Jepang) Untuk permintaan terkait pengungkapan, koreksi, atau penghentian penggunaan informasi pribadi, silakan hubungi kami menggunakan informasi di bawah ini.</p>
+<h2>8. Privasi Anak-anak</h2>
+<p>Aplikasi ini dimaksudkan untuk ibu/bapak rumah tangga berusia 13 tahun ke atas dan rumah tangga berpenghasilan ganda. Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak di bawah 13 tahun.</p>
+<h2>9. Mengenai Penanganan Hasil Perhitungan</h2>
+<p>Gaji bersih dan jumlah pajak yang disajikan oleh aplikasi ini adalah hasil simulasi berdasarkan sistem 2026 yang diumumkan secara publik, dan bukan penentuan pajak resmi oleh akuntan pajak atau pengacara jaminan sosial dan tenaga kerja.</p>
+<p>Selalu periksa dengan lembaga publik atau profesional untuk pengajuan pajak yang sebenarnya, penyesuaian pajak akhir tahun, atau penentuan kelayakan asuransi sosial.</p>
+<h2>10. Hubungi Kami</h2>
+<p>Untuk pertanyaan tentang Kebijakan Privasi ini, atau permintaan terkait informasi pribadi, silakan hubungi kami di bawah ini.</p>
+<h2>11. Perubahan pada Kebijakan Ini</h2>
+<p>Kebijakan Privasi ini dapat direvisi sesuai kebutuhan. Perubahan material akan diumumkan melalui notifikasi dalam aplikasi atau posting di halaman ini.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontak</p>

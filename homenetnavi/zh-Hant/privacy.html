@@ -131,30 +131,41 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">最後更新：2026年 / 開發者：CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay based on Japan&#x27;s 2026 system. No ads, no data sales. All input processed on-device only.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions. Auto-collected: install date/launch count (on-device), subscription status. NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only (UserDefaults, FileManager). No backend server, no Firebase. iCloud/CloudKit not used for sync.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple only: StoreKit/App Store (subscriptions); UserNotifications (wall alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted.</p>
-<h2>7. Your Rights</h2>
-<p>Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Results are simulations, not guaranteed to match actual tax filing. Consult a professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>Contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. 引言</h2>
+<p>HomeNet Navi(以下簡稱「本應用程式」)是一款支援 2026 年制度的 iOS「收入門檻」模擬應用程式。本隱私政策說明使用本應用程式時處理的資訊類型、使用目的、儲存方式以及您的權利。本應用程式不顯示廣告,也不會將您的資訊出售給第三方。您輸入的收入、扣除等資訊僅在裝置端處理,絕不會傳輸到開發者的伺服器。</p>
+<h2>2. 我們處理的資訊</h2>
+<p>2-1.</p>
+<p>您輸入的資訊 • 戶主及配偶的年收入(薪資/營業收入) • 扶養家屬的人數及年齡 • 各種所得扣除(醫療費、社會保險費、小規模企業共濟等) • 地方稅的城市分類(高級功能) • 已儲存方案的名稱/備註 2-2.</p>
+<p>自動收集的資訊 • 首次安裝日期/應用程式啟動次數(用於了解功能使用情況,僅限裝置端) • 訂閱購買狀態(由 Apple StoreKit 判定) 2-3.</p>
+<p>不會收集的資訊 • 姓名、地址、電話號碼、電子郵件地址等個人身份資訊 • GPS 位置資料 • 通訊錄/地址簿 • 廣告識別碼(IDFA) • 生物識別資料 • 瀏覽歷史/其他應用程式使用歷史 • 同步到雲端的資料(本應用程式不進行任何伺服器傳輸)</p>
+<h2>3. 資訊的使用目的</h2>
+<p>所處理的資訊僅用於以下目的。 • 基於 2026 年制度計算並顯示所得稅、地方稅及社會保險費,以及顯示實領工資 • 按家庭進行方案的比較與儲存 • 接近「收入門檻」時發出本地通知 • 判定訂閱的適用情況(透過 StoreKit)</p>
+<h2>4. 資料儲存位置</h2>
+<p>您的資料儲存在以下位置。</p>
+<p>• 僅限您的裝置:輸入的值和已儲存的方案儲存在 UserDefaults 和 FileManager(裝置本機儲存)中。</p>
+<p>• 無伺服器傳輸:本應用程式沒有專屬的後端伺服器。</p>
+<p>不會向 Firebase 或任何專有 API 進行任何傳輸。</p>
+<p>• iCloud / CloudKit:由於本應用程式不提供家庭共享或跨裝置同步,因此不使用 CloudKit。</p>
+<p>本應用程式的資料是否包含在 iCloud 備份中,取決於 Apple 的裝置備份規範。</p>
+<p>從未有任何資料傳輸到開發者的伺服器。</p>
+<p>本應用程式的 PrivacyInfo.</p>
+<p>xcprivacy 檔案聲明不進行追蹤(NSPrivacyTracking),也不進行任何第三方追蹤。</p>
+<h2>5. 第三方服務</h2>
+<p>本應用程式使用的第三方服務如下。均為 Apple Inc. 提供的服務。 服務 | 提供商 | 用途 StoreKit / App Store | Apple Inc. | 處理訂閱購買 UserNotifications | Apple Inc. | 接近「門檻」時的本地通知(裝置端處理) 本應用程式提供指向外部制度網站(國稅廳、日本年金機構等)的連結,但這些連結網站上的行為遵循各自網站獨立的隱私政策。有關 Apple 的隱私政策,請參閱 apple.com/jp/legal/privacy。</p>
+<h2>6. 資料保留期限</h2>
+<p>輸入的值和已儲存的方案會在裝置上保留,直至本應用程式從您的裝置中被刪除。刪除應用程式會刪除所有本機資料(除非包含在 iCloud 備份中)。</p>
+<h2>7. 您的權利</h2>
+<p>資料刪除 您可以從應用程式內的「設定」中刪除各個方案。刪除應用程式本身會刪除裝置上的所有本機資料。 GDPR 下的權利(適用於歐盟居民) 歐盟居民有權存取、更正、刪除、限制處理及轉移其個人資料。由於本應用程式不收集個人身份資訊,此權利通常不適用,但如有疑問,請透過下方聯絡方式與我們聯繫。 個人資訊保護法下的權利(適用於日本居民) 有關個人資訊揭露、更正或停止使用的請求,請透過下方聯絡方式與我們聯繫。</p>
+<h2>8. 兒童隱私</h2>
+<p>本應用程式面向 13 歲以上的家庭主要負責人及雙薪家庭。我們不會故意收集 13 歲以下兒童的個人資訊。</p>
+<h2>9. 關於計算結果的處理</h2>
+<p>本應用程式顯示的實領工資和稅額是基於公開發布的 2026 年制度的模擬結果,並非稅理士或社會保險勞務士的正式稅務判定。實際的報稅、年終調整或社會保險資格判定,請務必向公共機構或專家核實。</p>
+<h2>10. 聯絡我們</h2>
+<p>有關本隱私政策的問題或有關個人資訊的請求,請透過下方與我們聯繫。</p>
+<h2>11. 本政策的變更</h2>
+<p>本隱私政策可能會根據需要進行修訂。重大變更將透過應用程式內通知或在本頁面上發布來告知。</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>聯絡</p>

@@ -131,30 +131,38 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Last updated: 2026 / Developer: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>HomeNet Navi is an iOS app simulating household take-home pay and Japan income walls based on the 2026 system. No ads, no data sales. All input data is processed on-device only; nothing sent to external servers.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household/spouse income, dependents, deductions, municipality (premium), scenario names. Auto-collected: install date/launch count (on-device), subscription status (StoreKit). NOT collected: personal ID, GPS, contacts, IDFA, biometrics, browsing history.</p>
-<h2>3. How Information Is Used</h2>
-<p>Only for: income/tax/social insurance calculation and take-home display; scenario comparison; wall-approach notifications; subscription determination.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On-device only in UserDefaults and FileManager. No backend server, no Firebase, no API calls. iCloud/CloudKit not used for sync. iCloud backup inclusion follows Apple&#x27;s device backup specs.</p>
-<h2>5. Third-Party Services</h2>
-<p>Apple services only: StoreKit/App Store (subscriptions); UserNotifications (wall-approach alerts, on-device). See apple.com/legal/privacy.</p>
-<h2>6. Data Retention</h2>
-<p>Data retained on-device until app is deleted. iCloud backup per Apple policy.</p>
-<h2>7. Your Rights</h2>
-<p>No export function currently. Deleting the app removes all local data. EU residents: GDPR rights. Japan residents: Personal Information Protection Act rights.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>App is for users 13 and over. We do not knowingly collect from under-13s.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations. Not guaranteed to match actual tax filing or social insurance determination. Consult a tax/legal professional for important decisions.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>May be revised as needed. Significant changes communicated via app update or this page.</p>
+<h2>1. परिचय</h2>
+<p>HomeNet Navi (&quot;यह ऐप&quot;) 2026 प्रणाली का समर्थन करने वाला एक iOS &quot;आय सीमा&quot; सिम्युलेटर ऐप है। यह गोपनीयता नीति इस ऐप का उपयोग करते समय संभाली जाने वाली जानकारी के प्रकार, उपयोग के उद्देश्यों, इसे कैसे संग्रहीत किया जाता है, और आपके अधिकारों की व्याख्या करती है। यह ऐप कोई विज्ञापन प्रदर्शित नहीं करता है और आपकी जानकारी को तीसरे पक्षों को नहीं बेचता है। आपके द्वारा दर्ज की गई आय, कटौती, और अन्य जानकारी केवल डिवाइस पर संसाधित होती है और कभी भी डेवलपर के सर्वर पर प्रेषित नहीं होती है।</p>
+<h2>2. हम जो जानकारी संभालते हैं</h2>
+<p>2-1.</p>
+<p>आप जो जानकारी दर्ज करते हैं • परिवार के मुखिया और जीवनसाथी की वार्षिक आय (वेतन/व्यावसायिक आय) • आश्रितों की संख्या और आयु श्रेणी • विभिन्न आय कटौतियां (चिकित्सा व्यय, सामाजिक बीमा प्रीमियम, लघु व्यवसाय पारस्परिक सहायता, आदि) • निवासी कर नगर पालिका वर्गीकरण (प्रीमियम सुविधा) • सहेजे गए परिदृश्यों के नाम/नोट्स 2-2.</p>
+<p>स्वचालित रूप से एकत्रित जानकारी • पहली इंस्टॉलेशन तिथि/ऐप लॉन्च की संख्या (सुविधा उपयोग को समझने के लिए, केवल डिवाइस पर) • सदस्यता खरीद स्थिति (Apple StoreKit द्वारा निर्धारित) 2-3.</p>
+<p>जानकारी जो एकत्रित नहीं की जाती • नाम, पता, फोन नंबर, ईमेल पता जैसी व्यक्तिगत रूप से पहचान योग्य जानकारी • GPS स्थान डेटा • संपर्क/पता पुस्तिका • विज्ञापन पहचानकर्ता (IDFA) • बायोमेट्रिक डेटा • ब्राउज़िंग इतिहास / अन्य ऐप्स का उपयोग • क्लाउड में सिंक किया गया डेटा (यह ऐप कोई सर्वर ट्रांसमिशन नहीं करता है)</p>
+<h2>3. जानकारी के उपयोग का उद्देश्य</h2>
+<p>संभाली गई जानकारी का उपयोग केवल निम्नलिखित उद्देश्यों के लिए किया जाता है। • 2026 प्रणाली के आधार पर आयकर, निवासी कर, और सामाजिक बीमा प्रीमियम की गणना और प्रस्तुति, और टेक-होम पे का प्रदर्शन • परिवार-आधारित परिदृश्य तुलना और सहेजना • &quot;आय सीमा&quot; के निकट आने पर स्थानीय सूचनाएं • सदस्यता आवेदन का निर्धारण (StoreKit के माध्यम से)</p>
+<h2>4. डेटा कहां संग्रहीत है</h2>
+<p>आपका डेटा निम्नलिखित स्थानों में संग्रहीत है। • केवल आपके डिवाइस पर: दर्ज किए गए मान और सहेजे गए परिदृश्य UserDefaults और FileManager (डिवाइस पर स्थानीय भंडारण) में संग्रहीत हैं। • कोई सर्वर ट्रांसमिशन नहीं: इस ऐप का अपना कोई बैकएंड सर्वर नहीं है। Firebase या किसी स्वामित्व वाले API में कोई ट्रांसमिशन बिल्कुल नहीं है। • iCloud / CloudKit: चूंकि यह ऐप कोई पारिवारिक साझाकरण या क्रॉस-डिवाइस सिंक प्रदान नहीं करता है, यह CloudKit का उपयोग नहीं करता है। क्या इस ऐप का डेटा iCloud बैकअप में शामिल है, यह Apple के डिवाइस बैकअप विनिर्देशों का पालन करता है। कोई भी डेटा कभी भी डेवलपर के सर्वर पर प्रेषित नहीं होता है। इस ऐप का PrivacyInfo.</p>
+<p>xcprivacy किसी ट्रैकिंग (NSPrivacyTracking) की घोषणा नहीं करता है, और यह कोई तृतीय-पक्ष ट्रैकिंग नहीं करता है।</p>
+<h2>5. तृतीय-पक्ष सेवाएं</h2>
+<p>इस ऐप द्वारा उपयोग की जाने वाली तृतीय-पक्ष सेवाएं इस प्रकार हैं। सभी Apple Inc.</p>
+<p>द्वारा प्रदान की गई सेवाएं हैं। सेवा | प्रदाता | उद्देश्य / StoreKit / App Store | Apple Inc.</p>
+<p>| सदस्यता खरीद प्रसंस्करण / UserNotifications | Apple Inc.</p>
+<p>| &quot;सीमा&quot; के निकट आने पर स्थानीय सूचनाएं (डिवाइस पर प्रसंस्करण) यह ऐप बाहरी सिस्टम पृष्ठों (राष्ट्रीय कर एजेंसी, जापान पेंशन सेवा, आदि) के लिंक प्रदान करता है, लेकिन उन लिंक की गई साइटों पर व्यवहार प्रत्येक साइट की अपनी गोपनीयता नीति द्वारा शासित होता है। Apple की गोपनीयता नीति के लिए कृपया apple.</p>
+<p>com/jp/legal/privacy देखें।</p>
+<h2>6. डेटा प्रतिधारण अवधि</h2>
+<p>दर्ज किए गए मान और सहेजे गए परिदृश्य डिवाइस पर तब तक बरकरार रहते हैं जब तक कि यह ऐप आपके डिवाइस से हटाया न जाए। ऐप को हटाने से सभी स्थानीय डेटा हट जाता है (जब तक कि यह iCloud बैकअप में शामिल न हो)।</p>
+<h2>7. आपके अधिकार</h2>
+<p>डेटा हटाना आप ऐप के भीतर &quot;सेटिंग्स&quot; से प्रत्येक परिदृश्य को हटा सकते हैं। स्वयं ऐप को हटाने से डिवाइस पर सभी स्थानीय डेटा हट जाता है। GDPR के तहत अधिकार (EU निवासियों के लिए) EU के निवासियों को अपने व्यक्तिगत डेटा तक पहुंचने, सही करने, हटाने, प्रसंस्करण को प्रतिबंधित करने, और पोर्ट करने का अधिकार है। चूंकि यह ऐप व्यक्तिगत रूप से पहचान योग्य डेटा प्राप्त नहीं करता है, यह अधिकार आम तौर पर लागू नहीं होता है, लेकिन यदि आपके कोई प्रश्न हैं, तो कृपया नीचे दी गई जानकारी का उपयोग करके हमसे संपर्क करें। व्यक्तिगत जानकारी संरक्षण अधिनियम के तहत अधिकार (जापान के निवासियों के लिए) व्यक्तिगत जानकारी के प्रकटीकरण, सुधार, या उपयोग बंद करने से संबंधित अनुरोधों के लिए, कृपया नीचे दी गई जानकारी का उपयोग करके हमसे संपर्क करें।</p>
+<h2>8. बच्चों की गोपनीयता</h2>
+<p>यह ऐप 13 वर्ष और उससे अधिक आयु के गृहणियों/गृहस्वामियों और दोहरी आय वाले परिवारों के लिए है। हम जानबूझकर 13 वर्ष से कम उम्र के बच्चों से व्यक्तिगत जानकारी एकत्र नहीं करते हैं।</p>
+<h2>9. गणना परिणामों के संचालन के संबंध में</h2>
+<p>इस ऐप द्वारा प्रस्तुत टेक-होम पे और कर राशियां सार्वजनिक रूप से घोषित 2026 प्रणाली पर आधारित सिमुलेशन परिणाम हैं, और कर लेखाकार या सामाजिक सुरक्षा और श्रम वकील द्वारा आधिकारिक कर निर्धारण नहीं हैं। वास्तविक कर दाखिल करने, वर्ष के अंत की कर समायोजन, या सामाजिक बीमा पात्रता निर्धारण के लिए हमेशा किसी सार्वजनिक संस्था या पेशेवर से जांच करें।</p>
+<h2>10. हमसे संपर्क करें</h2>
+<p>इस गोपनीयता नीति के बारे में प्रश्नों, या व्यक्तिगत जानकारी के संबंध में अनुरोधों के लिए, कृपया नीचे हमसे संपर्क करें।</p>
+<h2>11. इस नीति में परिवर्तन</h2>
+<p>इस गोपनीयता नीति को आवश्यकतानुसार संशोधित किया जा सकता है। महत्वपूर्ण परिवर्तनों की घोषणा ऐप के भीतर सूचना या इस पृष्ठ पर पोस्टिंग के माध्यम से की जाएगी।</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>संपर्क</p>

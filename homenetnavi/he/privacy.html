@@ -131,38 +131,54 @@ footer{text-align:center;padding:24px 20px;font-size:12px;
     <p class="subtitle">HomeNet Navi - 世帯手取ナビ</p>
   </section>
   <div class="content">
-    <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">עדכון אחרון: 2026 / מפתח: CHEN YANGLI (freetokyo)</p>
+    
     <div class="legal-content">
-<h2>1. Introduction</h2>
-<p>The app calculates household take-home pay based on Japan&#x27;s 2026 tax system.</p>
-<p>All data is stored on-device only; no data is sent to external servers.</p>
-<p>The app uses Apple StoreKit for subscriptions and UserNotifications for wall-approach alerts (on-device).</p>
-<p>No advertising, no third-party tracking, no personal data collection.</p>
-<h2>2. Information We Handle</h2>
-<p>User-entered: household and spouse annual income; number and age category of dependents; various income deductions; municipality category (premium); saved scenario names and memos.</p>
-<p>Auto-collected: first install date and launch count (on-device only); subscription status (via Apple StoreKit).</p>
-<p>NOT collected: personal identifying information (name, address, phone, email); GPS location; contacts or address book; advertising identifier (IDFA); biometric data; browsing history or other app usage; cloud sync data (no server transmission).</p>
-<h2>3. How Information Is Used</h2>
-<p>Information is used solely for: calculating income tax, resident tax, and social insurance based on the 2026 system and displaying take-home amounts; household scenario comparison and saving; local notifications for wall approach (premium); subscription determination via StoreKit.</p>
-<h2>4. Where Data Is Stored</h2>
-<p>On your device only: input values and saved scenarios are stored in UserDefaults and FileManager (local storage on-device).</p>
-<p>No server transmission: the app has no backend server and makes no Firebase or API calls.</p>
-<p>iCloud / CloudKit: not used for family sharing or cross-device sync.</p>
-<p>Whether iCloud backup includes app data follows Apple&#x27;s device backup specifications.</p>
-<h2>5. Third-Party Services</h2>
-<p>The app uses Apple-provided services only: StoreKit / App Store (subscription billing); UserNotifications (wall-approach local notifications, on-device only). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
-<h2>6. Data Retention</h2>
-<p>Data is retained on your device until the app is deleted. iCloud backup data follows Apple&#x27;s data retention policy. All local data is deleted when you delete the app.</p>
-<h2>7. Your Rights</h2>
-<p>Data export: no export function is currently available (view and copy from the screen). Data deletion: deleting the app removes all local data. EU residents: GDPR rights apply. Japan residents: Personal Information Protection Act rights apply. Contact us below for assistance.</p>
-<h2>8. Children&#x27;s Privacy</h2>
-<p>This app is for users aged 13 and over. We do not knowingly collect information from children under 13.</p>
-<h2>9. Handling of Calculation Results</h2>
-<p>Calculation results are simulations based on published system information. They are not guaranteed to match actual tax filing, year-end adjustment, or social insurance determination results. For important decisions, consult a tax accountant, social insurance labor consultant, or financial planner.</p>
-<h2>10. Contact</h2>
-<p>For privacy questions, please contact us via the support page.</p>
-<h2>11. Changes to This Policy</h2>
-<p>This policy may be revised as needed. Significant changes will be communicated via app update or this page.</p>
+<h2>1. מבוא</h2>
+<p>HomeNet Navi (&quot;אפליקציה זו&quot;) היא אפליקציית סימולטור &quot;סף הכנסה&quot; ל-iOS התומכת במערכת 2026.</p>
+<p>מדיניות פרטיות זו מסבירה את סוגי המידע המטופלים בעת השימוש באפליקציה זו, מטרות השימוש, אופן האחסון וזכויותיכם.</p>
+<p>אפליקציה זו אינה מציגה פרסומות ואינה מוכרת את המידע שלכם לצדדים שלישיים.</p>
+<p>מידע על הכנסה, ניכויים ומידע אחר שתזינו מעובד רק במכשיר ולעולם אינו מועבר לשרת המפתח.</p>
+<h2>2. מידע שאנו מטפלים בו</h2>
+<p>2-1.</p>
+<p>מידע שאתם מזינים • הכנסה שנתית של ראש משק הבית ובן/בת הזוג (משכורת/הכנסה עסקית) • מספר וקטגוריית גיל של תלויים • ניכויי הכנסה שונים (הוצאות רפואיות, תשלומי ביטוח סוציאלי, עזרה הדדית לעסקים קטנים וכו&#x27;) • סיווג עיריית מס תושבים (תכונת Premium) • שמות/הערות של תרחישים שמורים 2-2.</p>
+<p>מידע שנאסף אוטומטית • תאריך ההתקנה הראשונה/מספר הפעלות האפליקציה (להבנת השימוש בתכונות, במכשיר בלבד) • מצב רכישת המנוי (נקבע על ידי Apple StoreKit) 2-3.</p>
+<p>מידע שאינו נאסף • מידע מזהה אישית כגון שם, כתובת, מספר טלפון, כתובת דוא&quot;ל • נתוני מיקום GPS • אנשי קשר/פנקס כתובות • מזהה פרסומי (IDFA) • נתונים ביומטריים • היסטוריית גלישה / שימוש באפליקציות אחרות • נתונים המסונכרנים לענן (אפליקציה זו אינה מבצעת שום שליחה לשרת)</p>
+<h2>3. מטרת השימוש במידע</h2>
+<p>המידע המטופל משמש רק למטרות הבאות. • חישוב והצגת מס הכנסה, מס תושבים ותשלומי ביטוח סוציאלי בהתבסס על מערכת 2026, והצגת שכר נטו • השוואה ושמירה של תרחישים על בסיס משק בית • התראות מקומיות בעת התקרבות ל&quot;סף הכנסה&quot; • קביעת יישום המנוי (דרך StoreKit)</p>
+<h2>4. היכן נשמרים הנתונים</h2>
+<p>הנתונים שלכם נשמרים במיקומים הבאים.</p>
+<p>• רק במכשיר שלכם: הערכים שהוזנו והתרחישים השמורים נשמרים ב-UserDefaults וב-FileManager (אחסון מקומי במכשיר).</p>
+<p>• ללא שליחה לשרת: לאפליקציה זו אין שרת backend משלה.</p>
+<p>אין שום שליחה ל-Firebase או לכל API קנייני.</p>
+<p>• iCloud / CloudKit: מכיוון שאפליקציה זו אינה מספקת שיתוף משפחתי או סנכרון בין מכשירים, היא אינה משתמשת ב-CloudKit.</p>
+<p>האם נתוני אפליקציה זו כלולים בגיבוי iCloud תלוי במפרטי גיבוי המכשיר של Apple.</p>
+<p>שום נתונים אינם נשלחים אף פעם לשרת המפתח.</p>
+<p>קובץ PrivacyInfo.</p>
+<p>xcprivacy של אפליקציה זו מצהיר על העדר מעקב (NSPrivacyTracking), והיא אינה מבצעת שום מעקב צד שלישי.</p>
+<h2>5. שירותי צד שלישי</h2>
+<p>שירותי צד שלישי המשמשים אפליקציה זו הם כדלקמן.</p>
+<p>כולם שירותים המסופקים על ידי Apple Inc.</p>
+<p>שירות | ספק | מטרה / StoreKit / App Store | Apple Inc.</p>
+<p>| עיבוד רכישת מנוי / UserNotifications | Apple Inc.</p>
+<p>| התראות מקומיות בעת התקרבות ל&quot;סף&quot; (עיבוד במכשיר) אפליקציה זו מספקת קישורים לדפי מערכת חיצוניים (רשות המסים הלאומית, שירות הפנסיה היפני וכו&#x27;), אך ההתנהגות באתרים המקושרים הללו כפופה למדיניות הפרטיות של כל אתר בנפרד.</p>
+<p>עיינו ב-apple.</p>
+<p>com/jp/legal/privacy למדיניות הפרטיות של Apple.</p>
+<h2>6. תקופת שמירת הנתונים</h2>
+<p>הערכים שהוזנו והתרחישים השמורים נשמרים במכשיר עד שאפליקציה זו נמחקת מהמכשיר שלכם. מחיקת האפליקציה מוחקת את כל הנתונים המקומיים (למעט כאשר הם כלולים בגיבוי iCloud).</p>
+<h2>7. הזכויות שלכם</h2>
+<p>מחיקת נתונים ניתן למחוק כל תרחיש מ&quot;הגדרות&quot; בתוך האפליקציה.</p>
+<p>מחיקת האפליקציה עצמה מוחקת את כל הנתונים המקומיים במכשיר.</p>
+<p>זכויות תחת ה-GDPR (לתושבי האיחוד האירופי) לתושבי האיחוד האירופי יש זכות לגשת, לתקן, למחוק, להגביל עיבוד ולהעביר את הנתונים האישיים שלהם.</p>
+<p>מכיוון שאפליקציה זו אינה משיגה נתונים מזהים אישית, זכות זו בדרך כלל אינה חלה, אך אם יש לכם שאלות, אנא צרו קשר באמצעות המידע להלן.</p>
+<p>זכויות תחת חוק הגנת מידע אישי (לתושבי יפן) לבקשות בנוגע לחשיפה, תיקון או הפסקת שימוש במידע אישי, אנא צרו קשר באמצעות המידע להלן.</p>
+<h2>8. פרטיות ילדים</h2>
+<p>אפליקציה זו מיועדת לעקרות/עקרי בית בני 13 ומעלה ולמשקי בית עם שתי הכנסות. איננו אוספים במכוון מידע אישי מילדים מתחת לגיל 13.</p>
+<h2>9. לגבי טיפול בתוצאות החישוב</h2>
+<p>השכר הנטו וסכומי המס המוצגים על ידי אפליקציה זו הם תוצאות סימולציה המבוססות על המערכת שהוכרזה פומבית ל-2026, ואינם קביעת מס רשמית על ידי רואה חשבון או עורך דין ביטוח סוציאלי ועבודה. יש לבדוק תמיד עם מוסד ציבורי או איש מקצוע לגבי דיווח מס בפועל, תיאום מס בסוף שנה, או קביעת זכאות לביטוח סוציאלי.</p>
+<h2>10. צרו קשר</h2>
+<p>לשאלות בנוגע למדיניות פרטיות זו, או בקשות בנוגע למידע אישי, אנא צרו איתנו קשר להלן.</p>
+<h2>11. שינויים במדיניות זו</h2>
+<p>מדיניות פרטיות זו עשויה להיות מתוקנת לפי הצורך. שינויים מהותיים יוכרזו באמצעות התראה בתוך האפליקציה או פרסום בעמוד זה.</p>
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>יצירת קשר</p>
