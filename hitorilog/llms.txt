@@ -1,0 +1,21 @@
+# ヒトリログ（HitoriLog）
+
+> ひとりで介護を担う人のためのケア記録アプリ。広告なし・アカウントなし・完全オフラインで、体温・血圧・水分・食事・服薬・排泄・睡眠・気分を記録し、誰にも見せない本音メモで介護のリアルを書き留められる。対象: 在宅でひとり介護をしている人。
+
+App Store: https://apps.apple.com/app/id6785472192
+Web: https://freetokyo.github.io/web/hitorilog/
+開発者: freetokyo（CHEN YANGLI）
+対応: iOS 18.0 以降 / 価格: 基本無料（プレミアム機能は買い切り・サブスクなし）
+最終更新: 2026-07-01
+
+## 主な機能
+- 体温・血圧・水分・食事・服薬・排泄・睡眠・気分の8項目記録
+- 誰にも見せない本音メモ
+- 広告なし・アカウント不要・完全オフライン
+- PDF出力
+
+## ページ
+- 紹介: https://freetokyo.github.io/web/hitorilog/
+- サポート / FAQ: https://freetokyo.github.io/web/hitorilog/support.html
+- プライバシー: https://freetokyo.github.io/web/hitorilog/privacy.html
+- 利用規約: https://freetokyo.github.io/web/hitorilog/terms.html
