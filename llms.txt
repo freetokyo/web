@@ -2,7 +2,7 @@
 
 > 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 20 本の iOS / watchOS アプリを公開中。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 20 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 21 アプリを一覧）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
 リポジトリ: https://github.com/freetokyo/web
@@ -29,6 +29,7 @@
 - [ジツヒロ / Jitsuhiro](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。App Store: https://apps.apple.com/jp/app/id6779472712
 - [Yuzuri（ユズリ）](https://freetokyo.github.io/web/yuzuri/): 完全オフラインの終活ノート iOS アプリ。資産・保険・連絡先・想いを一冊のノートに記録。アカウント登録不要・データ収集なし・買い切り。App Store: https://apps.apple.com/app/id6784874949
 - [ヒトリログ / HitoriLog](https://freetokyo.github.io/web/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。App Store: https://apps.apple.com/app/id6785472192
+- [ザイチョウ / Zaicho](https://freetokyo.github.io/web/zaicho/): 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。App Store: https://apps.apple.com/app/id6788175241
 
 ### Work（仕事・現場）
 
@@ -62,5 +63,5 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
 - Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
 - 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
-- ルート `index.html` には CollectionPage + ItemList（全 20 アプリ）の JSON-LD あり。
+- ルート `index.html` には CollectionPage + ItemList（全 21 アプリ）の JSON-LD あり。
 - 各アプリページには MobileApplication / WebSite / HowTo / BreadcrumbList、support には FAQPage の JSON-LD を埋め込み。各アプリ `web/llms.txt`（per-app）も用意。

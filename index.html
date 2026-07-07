@@ -181,6 +181,7 @@
     .icon-koegaki      { background: linear-gradient(135deg, #7c3aed, #22d3ee); }
     .icon-yuzuri       { background: linear-gradient(135deg, #6b5b95, #b8a9c9); }
     .icon-hitorilog    { background: linear-gradient(135deg, #d1495b, #f4a261); }
+    .icon-zaicho       { background: linear-gradient(135deg, #22292E, #8A6A3F); }
     .chip-soon { background: rgba(142,142,147,0.18); color: var(--color-text-mute); }
     .card__title { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
     .card__sub   { font-size: 13px; color: var(--color-text-mute); margin-top: 2px; }
@@ -248,7 +249,7 @@
     "description": "個人開発者 freetokyo がリリースしている iOS アプリ 20 本のポートフォリオ。健康・生活・仕事の 3 カテゴリで横断的に紹介。",
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 20,
+      "numberOfItems": 21,
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "item": {"@type": "SoftwareApplication", "name": "RecoverySync", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/recoverysync/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 2, "item": {"@type": "SoftwareApplication", "name": "SaunaFlow", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/saunaflow/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
@@ -269,7 +270,8 @@
         {"@type": "ListItem", "position": 17, "item": {"@type": "SoftwareApplication", "name": "Keihiba", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/keihiba/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 18, "item": {"@type": "SoftwareApplication", "name": "Koegaki", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/koegaki/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 19, "item": {"@type": "SoftwareApplication", "name": "Yuzuri", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuzuri/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}
+        {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 21, "item": {"@type": "SoftwareApplication", "name": "Zaicho", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/zaicho/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}
       ]
     }
   }
@@ -581,6 +583,22 @@
         <div class="card__actions">
           <a class="btn btn--primary" href="./hitorilog/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6785472192" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-zaicho" aria-hidden="true">📒</div>
+          <div>
+            <h3 class="card__title">ザイチョウ（Zaicho）</h3>
+            <div class="card__sub">自分だけの財産目録・純資産・相続税概算</div>
+          </div>
+          <span class="chip chip-life" style="margin-left:auto">生活</span>
+        </div>
+        <p class="card__desc">金融機関にもクラウドにも預けない、自分だけの財産目録。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで、すべて端末内で完結。完全オフライン・買い切り・広告なし。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./zaicho/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
     </div>
