@@ -3,62 +3,274 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dartrack — Household staff records, private and offline</title>
-  <meta name="description" content="Dartrack helps households in the UAE keep private, offline records for domestic staff — visa and contract deadlines, work hours, leave and pay estimates. On-device, no account, no data collection." />
-  <meta property="og:title" content="Dartrack" />
-  <meta property="og:description" content="Private, offline records for household staff — deadlines, work hours, leave and pay." />
+  <title>Dartrack — Household staff records, private and offline (UAE)</title>
+  <meta name="description" content="Dartrack helps UAE households keep private, offline records for domestic staff — visa & contract deadlines with reminders, work hours, leave, payroll and end-of-service estimates. On-device, no account, no data collection. English, العربية, 日本語." />
+  <meta name="keywords" content="maid, driver, nanny, domestic worker, household staff, visa expiry, contract, gratuity, end of service, payroll, UAE, Dubai, Abu Dhabi" />
+  <link rel="canonical" href="https://freetokyo.github.io/web/dartrack/" />
+  <meta name="theme-color" content="#10505A" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#12181B" media="(prefers-color-scheme: dark)" />
+
+  <!-- App Store deep-link + smart banner -->
+  <meta name="apple-itunes-app" content="app-id=6788604524, app-argument=https://freetokyo.github.io/web/dartrack/" />
+  <link rel="preconnect" href="https://apps.apple.com" />
+  <link rel="dns-prefetch" href="https://apps.apple.com" />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
-  <meta name="apple-itunes-app" content="app-id=6788604524" />
+  <meta property="og:site_name" content="Dartrack" />
+  <meta property="og:title" content="Dartrack — Household staff records, private and offline" />
+  <meta property="og:description" content="Track visa & contract deadlines, work hours, leave, payroll and end-of-service — private and offline. English, العربية, 日本語." />
+  <meta property="og:url" content="https://freetokyo.github.io/web/dartrack/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dartrack — Household staff records" />
+  <meta name="twitter:description" content="Private, offline records for household staff in the UAE." />
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/" />
+  <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/dartrack/?lang=ar" />
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/dartrack/?lang=ja" />
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Dartrack",
+    "alternateName": ["Dartrack: Maid & Staff Log", "Dartrack: سجل عمال المنزل", "Dartrack: 家事スタッフ記録"],
+    "operatingSystem": "iOS 17.0 or later",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Productivity",
+    "description": "Private, offline record-keeping for UAE households that employ domestic staff — visa & contract deadlines with reminders, work hours, leave, payroll and end-of-service estimates.",
+    "inLanguage": ["en", "ar", "ja"],
+    "url": "https://freetokyo.github.io/web/dartrack/",
+    "downloadUrl": "https://apps.apple.com/app/id6788604524",
+    "installUrl": "https://apps.apple.com/app/id6788604524",
+    "softwareVersion": "1.0",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "description": "Free with an optional Dartrack Pro subscription"
+    },
+    "author": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" },
+    "publisher": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is my data private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Everything stays on your device. No account, no server sync, no data collection. Records are included in your iPhone's iCloud backup and can be exported to CSV or PDF anytime." } },
+      { "@type": "Question", "name": "Does Dartrack file visas or pay salaries?", "acceptedAnswer": { "@type": "Answer", "text": "No. Dartrack is a private record-keeping tool. It does not file visas or contracts, process wage payments (WPS), or provide legal advice. Labor values shown are adjustable references only." } },
+      { "@type": "Question", "name": "What is Dartrack Pro?", "acceptedAnswer": { "@type": "Answer", "text": "An optional monthly or yearly subscription that unlocks unlimited staff, deadline reminders, payroll and end-of-service estimates, evaluation notes and export. The free plan includes one staff member, and you keep viewing and exporting your data even after canceling." } }
+    ]
+  }
+  </script>
+
   <style>
-    :root { color-scheme: light dark; --ink:#1A2327; --teal:#10505A; --gold:#C79A4B; --bg:#F6F3EC; --surface:#fff; }
-    @media (prefers-color-scheme: dark){ :root{ --ink:#F6F3EC; --teal:#4FB3A0; --bg:#12181B; --surface:#1B2429; } }
-    *{box-sizing:border-box} body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
-    main{max-width:760px;margin:0 auto;padding:48px 20px}
-    h1{font-size:2.2rem;margin:.2em 0}
-    .tag{color:var(--teal);font-weight:600;margin-top:0}
-    ul{padding-left:1.2em} li{margin:.3em 0}
-    .card{background:var(--surface);border-radius:14px;padding:20px 24px;margin:24px 0}
+    :root {
+      color-scheme: light dark;
+      --ink:#1A2327; --teal:#10505A; --teal2:#0c3d45; --gold:#C79A4B; --danger:#B23A2E;
+      --bg:#F6F3EC; --surface:#ffffff; --muted:#5b6560; --line:rgba(16,80,90,.14);
+    }
+    @media (prefers-color-scheme: dark){ :root{
+      --ink:#F6F3EC; --teal:#4FB3A0; --teal2:#0f2a2c; --gold:#E0B968; --danger:#E5675A;
+      --bg:#12181B; --surface:#1B2429; --muted:#9fb0ab; --line:rgba(255,255,255,.10);
+    }}
+    *{box-sizing:border-box}
+    html:lang(ar){}
+    body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg)}
     a{color:var(--teal)}
-    footer{max-width:760px;margin:0 auto;padding:24px 20px;border-top:1px solid rgba(128,128,128,.25);font-size:.9rem}
-    .links a{margin-right:14px}
+    .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+    /* top bar */
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;max-width:960px;margin:0 auto}
+    .brand{font-weight:800;font-size:20px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+    .brand .mark{width:26px;height:26px;border-radius:7px;background:var(--teal);position:relative;display:inline-block}
+    .brand .mark::after{content:"";position:absolute;left:5px;right:5px;top:9px;height:2px;background:var(--gold)}
+    .langs button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:5px 11px;font-size:13px;cursor:pointer;margin-inline-start:6px}
+    .langs button[aria-current="true"]{background:var(--teal);color:#fff;border-color:var(--teal)}
+    /* hero */
+    .hero{background:linear-gradient(160deg,var(--teal) 0%,var(--teal2) 100%);color:#F6F3EC;padding:56px 0 64px;position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;left:0;right:0;top:64%;height:2px;background:var(--gold);opacity:.85}
+    .hero .sun{position:absolute;right:12%;top:calc(64% - 30px);width:60px;height:60px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 12px rgba(224,185,104,.18)}
+    html[dir="rtl"] .hero .sun{right:auto;left:12%}
+    h1{font-size:2.5rem;line-height:1.12;margin:.1em 0 .35em;letter-spacing:-.02em}
+    .hero p.lead{font-size:1.12rem;max-width:40ch;color:#dfeee9;margin:0 0 6px}
+    .free{color:#e9dcc0;font-weight:600;margin:12px 0 0}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center}
+    .appstore-badge{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;background:#fff;color:var(--ink);border-radius:14px;text-decoration:none;font-weight:800}
+    .appstore-badge svg{width:26px;height:26px}
+    .appstore-badge .badge-sub{font-size:10px;font-weight:500;opacity:.6;display:block;line-height:1}
+    .appstore-badge .badge-main{font-size:17px;font-weight:800;display:block;line-height:1.2}
+    .btn.secondary{display:inline-flex;align-items:center;padding:12px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.5);color:#F6F3EC;text-decoration:none;font-weight:700}
+    .pills{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap}
+    .pill{background:rgba(255,255,255,.12);border-radius:999px;padding:5px 12px;font-size:13px}
+    /* sections */
+    section{padding:52px 0}
+    h2{font-size:1.6rem;letter-spacing:-.01em;margin:0 0 22px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+    .card h3{margin:.1em 0 .4em;font-size:1.1rem}
+    .card p{margin:0;color:var(--muted);font-size:.96rem}
+    .ico{width:40px;height:40px;border-radius:10px;background:color-mix(in srgb,var(--teal) 14%,transparent);display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-size:20px}
+    .faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+    .faq summary{font-weight:700;cursor:pointer}
+    .faq p{color:var(--muted);margin:.6em 0 0}
+    .note{color:var(--muted);font-size:.9rem;max-width:70ch}
+    footer{border-top:1px solid var(--line);padding:30px 0 44px}
+    footer .flinks a{margin-inline-end:16px}
+    footer .foot-cta{margin:14px 0}
+    .disc{color:var(--muted);font-size:.85rem;margin-top:14px}
+    @media (max-width:520px){ h1{font-size:2rem} }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Dartrack</h1>
-    <p class="tag">A quiet, private ledger for your household staff.</p>
-    <p>Dartrack helps households in the UAE that employ domestic staff — maids, drivers, nannies, cooks, gardeners and more — keep clear, private records. Everything stays on your own device: no account, no server sync, no data collection.</p>
+  <div class="topbar">
+    <span class="brand"><span class="mark"></span>Dartrack</span>
+    <span class="langs" role="group" aria-label="Language">
+      <button data-lang="en" aria-current="true">EN</button>
+      <button data-lang="ar">العربية</button>
+      <button data-lang="ja">日本語</button>
+    </span>
+  </div>
 
-    <div class="card">
-      <strong>What you can do</strong>
-      <ul>
-        <li>Keep staff profiles: name, role and employment start date</li>
-        <li>Track visa and contract deadlines, with reminders 60, 30 and 7 days ahead (Pro)</li>
-        <li>Log work hours with a simple daily-rest and weekly-rest check</li>
-        <li>Estimate pay from an hourly or monthly rate (Pro)</li>
-        <li>Record annual and sick leave, with remaining days at a glance</li>
-        <li>Keep dated evaluation notes (Pro) and export any record to CSV or PDF (Pro)</li>
-      </ul>
+  <header class="hero">
+    <span class="sun" aria-hidden="true"></span>
+    <div class="wrap">
+      <h1 data-i18n="hero_h1">A quiet, private ledger for your household staff</h1>
+      <p class="lead" data-i18n="hero_lead">Track visa &amp; contract deadlines, work hours, leave, payroll and end-of-service — all on your device, in the UAE.</p>
+      <p class="free" data-i18n="hero_free">Free to download. Core records are free — Dartrack Pro is optional.</p>
+      <div class="cta-row">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6788604524" rel="noopener" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.417 2.2-1.25 3.02-.99.98-2.06 1.55-3.22 1.46-.14-1.13.42-2.3 1.2-3.06.87-.87 2.3-1.5 3.27-1.42zM20.5 17.2c-.6 1.37-.88 1.98-1.65 3.2-1.08 1.7-2.6 3.82-4.48 3.83-1.67.02-2.1-1.09-4.36-1.08-2.26.01-2.73 1.1-4.4 1.08-1.88-.02-3.32-1.94-4.4-3.63C-1.3 16.6-1.6 11.02.9 7.86c1.25-1.6 3.23-2.62 5.02-2.62 1.83 0 2.98 1.1 4.5 1.1 1.47 0 2.36-1.1 4.5-1.1 1.6 0 3.3.87 4.5 2.38-3.96 2.17-3.32 7.82.98 9.31z"/></svg>
+          <span>
+            <span class="badge-sub" data-i18n="badge_sub">Download on the</span>
+            <span class="badge-main">App Store</span>
+          </span>
+        </a>
+        <a class="btn secondary" href="support.html" data-i18n="hero_support">View Support</a>
+      </div>
+      <div class="pills">
+        <span class="pill">📱 iPhone &amp; iPad</span>
+        <span class="pill" data-i18n="pill_offline">✈️ Fully offline</span>
+        <span class="pill">EN · العربية · 日本語</span>
+      </div>
     </div>
+  </header>
 
-    <div class="card">
-      <strong>Private by design</strong>
-      <p>Your records are stored only on your iPhone and are included in your device's iCloud backup. The only network use is Apple's StoreKit for the optional subscription — no user records are ever transmitted.</p>
-    </div>
+  <main class="wrap">
+    <section>
+      <h2 data-i18n="feat_h2">Everything for your whole household</h2>
+      <div class="grid">
+        <div class="card"><div class="ico">🗓️</div><h3 data-i18n="f1_t">Deadlines &amp; reminders</h3><p data-i18n="f1_d">Visa, contract, Emirates ID, passport, insurance and labor-card dates — with reminders 60, 30 and 7 days ahead.</p></div>
+        <div class="card"><div class="ico">⏱️</div><h3 data-i18n="f2_t">Work hours &amp; rest check</h3><p data-i18n="f2_d">Log hours with a simple daily-rest and weekly-rest check, plus overtime and weekly totals.</p></div>
+        <div class="card"><div class="ico">💵</div><h3 data-i18n="f3_t">Payroll &amp; end-of-service</h3><p data-i18n="f3_d">Estimate monthly pay and an end-of-service (gratuity) figure from hourly or monthly rates. Estimates only.</p></div>
+        <div class="card"><div class="ico">🌴</div><h3 data-i18n="f4_t">Leave tracking</h3><p data-i18n="f4_d">Record annual and sick leave with remaining days at a glance.</p></div>
+        <div class="card"><div class="ico">🔒</div><h3 data-i18n="f5_t">Private by design</h3><p data-i18n="f5_d">No account, no server sync, no data collection. Included in your iCloud backup; export to CSV or PDF anytime.</p></div>
+        <div class="card"><div class="ico">🌐</div><h3 data-i18n="f6_t">Built for the region</h3><p data-i18n="f6_d">Full English, العربية (right-to-left) and 日本語, with adjustable labor-standard reference values.</p></div>
+      </div>
+    </section>
 
-    <div class="card">
-      <strong>Dartrack Pro</strong>
-      <p>The free plan includes one staff member and core records. Dartrack Pro (monthly or yearly subscription) unlocks unlimited staff, deadline reminders, payroll estimates, evaluation notes and export. You can keep viewing and exporting your data even after canceling.</p>
-    </div>
-
-    <p><strong>Full English, العربية (right-to-left) and 日本語.</strong></p>
-
-    <p style="font-size:.9rem;color:var(--teal)">Dartrack keeps private records. It does not file visas or contracts, process wage payments (WPS), or provide legal advice. Labor-standard values shown are adjustable references only — confirm current rules at mohre.gov.ae or with a legal professional.</p>
+    <section>
+      <h2 data-i18n="faq_h2">Frequently asked questions</h2>
+      <div class="faq">
+        <details open><summary data-i18n="q1">Is my data private?</summary><p data-i18n="a1">Yes. Everything stays on your device. No account, no server sync, no data collection. Your records are included in your iPhone's iCloud backup and can be exported to CSV or PDF anytime.</p></details>
+        <details><summary data-i18n="q2">Does Dartrack file visas or pay salaries?</summary><p data-i18n="a2">No. Dartrack is a private record-keeping tool. It does not file visas or contracts, process wage payments (WPS), or provide legal advice. Labor values shown are adjustable references only — confirm current rules at mohre.gov.ae or with a legal professional.</p></details>
+        <details><summary data-i18n="q3">What is Dartrack Pro?</summary><p data-i18n="a3">An optional monthly or yearly subscription that unlocks unlimited staff, deadline reminders, payroll and end-of-service estimates, evaluation notes and export. The free plan includes one staff member, and you keep viewing and exporting your data even after canceling.</p></details>
+      </div>
+      <p class="disc" data-i18n="disc">Dartrack keeps private records. It does not file visas or contracts, process wage payments (WPS), or provide legal advice. Labor-standard values are adjustable references only.</p>
+    </section>
   </main>
+
   <footer>
-    <p class="links"><a href="support.html">Support</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a></p>
-    <p><a href="/web/"><strong>← freetokyo apps</strong></a></p>
-    <p>© 2026 freetokyo</p>
+    <div class="wrap">
+      <div class="foot-cta">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6788604524" rel="noopener" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.417 2.2-1.25 3.02-.99.98-2.06 1.55-3.22 1.46-.14-1.13.42-2.3 1.2-3.06.87-.87 2.3-1.5 3.27-1.42zM20.5 17.2c-.6 1.37-.88 1.98-1.65 3.2-1.08 1.7-2.6 3.82-4.48 3.83-1.67.02-2.1-1.09-4.36-1.08-2.26.01-2.73 1.1-4.4 1.08-1.88-.02-3.32-1.94-4.4-3.63C-1.3 16.6-1.6 11.02.9 7.86c1.25-1.6 3.23-2.62 5.02-2.62 1.83 0 2.98 1.1 4.5 1.1 1.47 0 2.36-1.1 4.5-1.1 1.6 0 3.3.87 4.5 2.38-3.96 2.17-3.32 7.82.98 9.31z"/></svg>
+          <span><span class="badge-sub" data-i18n="badge_sub">Download on the</span><span class="badge-main">App Store</span></span>
+        </a>
+      </div>
+      <p class="flinks"><a href="support.html" data-i18n="nav_support">Support</a><a href="terms.html" data-i18n="nav_terms">Terms of Use</a><a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a></p>
+      <p><a href="/web/"><strong>← freetokyo apps</strong></a></p>
+      <p class="note">© 2026 freetokyo</p>
+    </div>
   </footer>
+
+  <script>
+    var I18N = {
+      ar: {
+        hero_h1:"سجلّ خاص وهادئ لعمّال منزلك",
+        hero_lead:"تابع مواعيد التأشيرة والعقد وساعات العمل والإجازات والرواتب ومكافأة نهاية الخدمة — كل ذلك على جهازك، في الإمارات.",
+        hero_free:"تنزيل مجاني. السجلات الأساسية مجانية — واشتراك Dartrack Pro اختياري.",
+        badge_sub:"نزّله من", hero_support:"الدعم", pill_offline:"✈️ يعمل دون إنترنت",
+        feat_h2:"كل ما يحتاجه منزلك",
+        f1_t:"المواعيد والتذكيرات", f1_d:"تواريخ التأشيرة والعقد والهوية الإماراتية وجواز السفر والتأمين وبطاقة العمل — مع تذكيرات قبل 60 و30 و7 أيام.",
+        f2_t:"ساعات العمل وفحص الراحة", f2_d:"سجّل الساعات مع فحص مبسّط للراحة اليومية والأسبوعية، مع العمل الإضافي والإجماليات الأسبوعية.",
+        f3_t:"الرواتب ونهاية الخدمة", f3_d:"قدّر الراتب الشهري ومكافأة نهاية الخدمة من أجر بالساعة أو شهري. تقديرات فقط.",
+        f4_t:"تتبّع الإجازات", f4_d:"سجّل الإجازات السنوية والمرضية مع عرض الأيام المتبقية بلمحة.",
+        f5_t:"الخصوصية أولاً", f5_d:"بدون حساب وبدون مزامنة وبدون جمع بيانات. مضمّن في نسخة iCloud الاحتياطية؛ صدّر إلى CSV أو PDF متى شئت.",
+        f6_t:"مصمَّم للمنطقة", f6_d:"دعم كامل للإنجليزية والعربية (من اليمين لليسار) واليابانية، مع قيم مرجعية قابلة للتعديل.",
+        faq_h2:"الأسئلة الشائعة",
+        q1:"هل بياناتي خاصة؟", a1:"نعم. كل شيء يبقى على جهازك. بدون حساب أو مزامنة أو جمع بيانات. سجلاتك مضمّنة في نسخة iCloud الاحتياطية ويمكن تصديرها إلى CSV أو PDF في أي وقت.",
+        q2:"هل يقدّم Dartrack التأشيرات أو الرواتب؟", a2:"لا. Dartrack أداة سجلات خاصة. لا يقدّم التأشيرات أو العقود، ولا يعالج الأجور (WPS)، ولا يقدّم استشارة قانونية. القيم المعروضة مرجعية فقط — تحقّق على mohre.gov.ae أو مع مختص قانوني.",
+        q3:"ما هو Dartrack Pro؟", a3:"اشتراك اختياري شهري أو سنوي يفتح طاقماً غير محدود والتذكيرات وتقديرات الرواتب ونهاية الخدمة وملاحظات التقييم والتصدير. الخطة المجانية تشمل فرداً واحداً، وتبقى قادراً على العرض والتصدير حتى بعد الإلغاء.",
+        disc:"يحتفظ Dartrack بسجلات خاصة. لا يقدّم التأشيرات أو العقود، ولا يعالج الأجور (WPS)، ولا يقدّم استشارة قانونية. القيم المعروضة مرجعية قابلة للتعديل فقط.",
+        nav_support:"الدعم", nav_terms:"شروط الاستخدام", nav_privacy:"سياسة الخصوصية"
+      },
+      ja: {
+        hero_h1:"家事スタッフのための、静かで私的な台帳",
+        hero_lead:"ビザ・契約の期限、勤務時間、休暇、給与、末端手当を——すべて端末内で、UAE向けに管理。",
+        hero_free:"無料ダウンロード。基本の記録は無料 — Dartrack Pro は任意です。",
+        badge_sub:"ダウンロード", hero_support:"サポート", pill_offline:"✈️ 完全オフライン",
+        feat_h2:"ご家庭のすべてを、まとめて",
+        f1_t:"期限とリマインド", f1_d:"ビザ・契約・Emirates ID・パスポート・保険・労働カードの期限を、60/30/7日前にリマインド。",
+        f2_t:"勤務時間と休息チェック", f2_d:"勤務を記録し、日次休息・週次休日の簡易チェック、残業と週合計も表示。",
+        f3_t:"給与と末端手当", f3_d:"時給/月給から月額と末端手当（EOSB）を概算。あくまで目安です。",
+        f4_t:"休暇の管理", f4_d:"年次・病気休暇を記録し、残日数を一目で確認。",
+        f5_t:"プライバシー重視", f5_d:"アカウント不要・同期なし・データ収集なし。iCloudバックアップに含まれ、CSV/PDFへいつでも書き出し。",
+        f6_t:"地域に合わせた設計", f6_d:"英語・アラビア語（右から左）・日本語に完全対応、労働基準値は編集可能な参考値。",
+        faq_h2:"よくある質問",
+        q1:"データは非公開ですか？", a1:"はい。すべて端末内に保存されます。アカウント・同期・データ収集はありません。記録は iCloud バックアップに含まれ、CSV/PDF へいつでも書き出せます。",
+        q2:"ビザ手続きや給与支払いをしますか？", a2:"いいえ。Dartrack は私的な記録ツールです。ビザ・契約の手続き、給与支払い（WPS）、法的助言は行いません。表示値は参考値のみ——最新は mohre.gov.ae または専門家にご確認ください。",
+        q3:"Dartrack Pro とは？", a3:"任意の月額/年額サブスクで、無制限のスタッフ・リマインド・給与/末端手当の概算・評価メモ・エクスポートを解放します。無料プランはスタッフ1名で、解約後もデータの閲覧・書き出しは可能です。",
+        disc:"Dartrack は私的な記録を保持します。ビザ・契約の手続き、給与支払い（WPS）、法的助言は行いません。労働基準値は編集可能な参考値のみです。",
+        nav_support:"サポート", nav_terms:"利用規約", nav_privacy:"プライバシーポリシー"
+      }
+    };
+    (function(){
+      var html=document.documentElement;
+      function apply(lang){
+        var dict = lang==='en' ? null : I18N[lang];
+        document.querySelectorAll('[data-i18n]').forEach(function(el){
+          var k=el.getAttribute('data-i18n');
+          if(dict && dict[k]!=null) el.textContent=dict[k];
+        });
+        // en: reload defaults for those we changed
+        if(!dict){ // restore English from a cached copy
+          document.querySelectorAll('[data-i18n]').forEach(function(el){
+            if(el.dataset.en!=null) el.textContent=el.dataset.en;
+          });
+        }
+        html.setAttribute('lang', lang);
+        html.setAttribute('dir', lang==='ar' ? 'rtl' : 'ltr');
+        document.querySelectorAll('.langs button').forEach(function(b){
+          b.setAttribute('aria-current', b.dataset.lang===lang ? 'true':'false');
+        });
+        try{ localStorage.setItem('dartrack_lang', lang); }catch(e){}
+      }
+      // cache English originals
+      document.querySelectorAll('[data-i18n]').forEach(function(el){ el.dataset.en=el.textContent; });
+      document.querySelectorAll('.langs button').forEach(function(b){
+        b.addEventListener('click', function(){ apply(b.dataset.lang); });
+      });
+      var saved; try{ saved=localStorage.getItem('dartrack_lang'); }catch(e){}
+      var url=new URLSearchParams(location.search).get('lang');
+      var nav=(navigator.language||'en').slice(0,2);
+      var initial = url || saved || (['ar','ja'].indexOf(nav)>=0 ? nav : 'en');
+      apply(initial);
+    })();
+  </script>
 </body>
 </html>
