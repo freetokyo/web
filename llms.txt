@@ -3,6 +3,7 @@
 > 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 22 本の iOS / watchOS アプリを公開中。
 
 サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 22 アプリを一覧）
+English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルートページ。相互に hreflang 設定済み）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
 リポジトリ: https://github.com/freetokyo/web
