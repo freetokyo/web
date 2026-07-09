@@ -104,6 +104,16 @@
     .nav__links { display: flex; gap: 20px; }
     .nav__links a { color: var(--color-text-sub); font-size: 14px; }
     @media (max-width: 600px) { .nav__links a:nth-child(n+4) { display: none; } }
+    .nav__item { position: relative; display: flex; align-items: center; height: 52px; }
+    .nav__item > a::after { content: "▾"; font-size: 9px; margin-left: 4px; opacity: .5; }
+    .nav__drop { position: absolute; top: 100%; left: 0; padding-top: 8px; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .16s ease, transform .16s ease, visibility .16s; z-index: 60; }
+    .nav__item:hover .nav__drop, .nav__item:focus-within .nav__drop { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav__drop-inner { display: grid; grid-auto-flow: column; grid-template-rows: repeat(7, auto); gap: 2px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; box-shadow: var(--color-shadow-hover); padding: 8px; }
+    .nav__drop a { display: block; padding: 7px 12px; border-radius: 9px; font-size: 13px; font-weight: 600; color: var(--color-text); line-height: 1.25; white-space: nowrap; }
+    .nav__drop a:hover { background: rgba(0,0,0,0.05); text-decoration: none; }
+    @media (prefers-color-scheme: dark) { .nav__drop a:hover { background: rgba(255,255,255,0.07); } }
+    .nav__drop a span { display: block; font-size: 11px; font-weight: 400; color: var(--color-text-mute); margin-top: 1px; }
+    @media (max-width: 600px) { .nav__item { height: auto; } .nav__drop { display: none; } }
 
     /* Hero */
     .hero { padding: var(--space-6) 0 var(--space-5); text-align: center; }
@@ -307,9 +317,45 @@
       freetokyo apps
     </a>
     <div class="nav__links">
-      <a href="#health">Health</a>
-      <a href="#life">Life</a>
-      <a href="#work">Work</a>
+      <div class="nav__item">
+        <a href="#health">Health</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="/web/recoverysync/">RecoverySync<span>Sleep &amp; HRV recovery score</span></a>
+          <a href="/web/saunaflow/">SaunaFlow<span>Apple Watch sauna timer</span></a>
+          <a href="/web/trero/">Trero<span>Strength &amp; workout tracking</span></a>
+          <a href="/web/tsukilift/">TsukiLift<span>Menstrual cycle × training</span></a>
+        </div></div>
+      </div>
+      <div class="nav__item">
+        <a href="#life">Life</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="/web/iekan/">IeKan<span>Watch over your family home</span></a>
+          <a href="/web/printmemo/">PrintSummary<span>School printouts × OCR</span></a>
+          <a href="/web/miawell/">Miawell<span>Cat-only healthcare</span></a>
+          <a href="/web/homenetnavi/">HomeNet Navi<span>“Income wall” simulator</span></a>
+          <a href="/web/mochiru/">Mochiru<span>Asset-longevity simulator</span></a>
+          <a href="/web/sukushori/">Sukushori<span>Automatic screenshot triage</span></a>
+          <a href="/web/heyalog/">Heyalog<span>Rental move-in/out records</span></a>
+          <a href="/web/jitsuhiro/">Jitsuhiro<span>Floor-plan effective area</span></a>
+          <a href="/web/yuzuri/">Yuzuri<span>End-of-life notebook</span></a>
+          <a href="/web/hitorilog/">HitoriLog<span>Solo-caregiver records</span></a>
+          <a href="/web/zaicho/">Zaicho<span>Estate inventory</span></a>
+          <a href="/web/lifeweeks/">Weekwise<span>Your life in weeks</span></a>
+          <a href="/web/jamalog/">Jamalog<span>A logbook for camels</span></a>
+        </div></div>
+      </div>
+      <div class="nav__item">
+        <a href="#work">Work</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="/web/carehours/">CareHours<span>Home-care helper payroll</span></a>
+          <a href="/web/genbalog/">Genbalog<span>On-site reports in 60s</span></a>
+          <a href="/web/hanro/">hanro<span>Delivery-driver income</span></a>
+          <a href="/web/toscore/">Toscore<span>Mini-basketball scoresheet</span></a>
+          <a href="/web/keihiba/">Keihiba<span>Expense receipts</span></a>
+          <a href="/web/koegaki/">Koegaki<span>On-device meeting notes</span></a>
+          <a href="/web/dartrack/">Dartrack<span>Household-staff records (UAE)</span></a>
+        </div></div>
+      </div>
       <a href="#concept">Philosophy</a>
       <a href="/web/" aria-label="日本語">日本語</a>
     </div>
@@ -825,5 +871,21 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  function place(){
+    document.querySelectorAll('.nav__drop').forEach(function(d){
+      d.style.left='0'; d.style.right='auto';
+      var inner=d.querySelector('.nav__drop-inner');
+      if(!inner) return;
+      var r=inner.getBoundingClientRect();
+      var vw=document.documentElement.clientWidth;
+      if(r.right > vw-12){ d.style.left='auto'; d.style.right='0'; }
+    });
+  }
+  window.addEventListener('load', place);
+  window.addEventListener('resize', place);
+})();
+</script>
 </body>
 </html>

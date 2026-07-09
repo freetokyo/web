@@ -104,6 +104,16 @@
     .nav__links { display: flex; gap: 20px; }
     .nav__links a { color: var(--color-text-sub); font-size: 14px; }
     @media (max-width: 600px) { .nav__links a:nth-child(n+4) { display: none; } }
+    .nav__item { position: relative; display: flex; align-items: center; height: 52px; }
+    .nav__item > a::after { content: "▾"; font-size: 9px; margin-left: 4px; opacity: .5; }
+    .nav__drop { position: absolute; top: 100%; left: 0; padding-top: 8px; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .16s ease, transform .16s ease, visibility .16s; z-index: 60; }
+    .nav__item:hover .nav__drop, .nav__item:focus-within .nav__drop { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav__drop-inner { display: grid; grid-auto-flow: column; grid-template-rows: repeat(7, auto); gap: 2px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; box-shadow: var(--color-shadow-hover); padding: 8px; }
+    .nav__drop a { display: block; padding: 7px 12px; border-radius: 9px; font-size: 13px; font-weight: 600; color: var(--color-text); line-height: 1.25; white-space: nowrap; }
+    .nav__drop a:hover { background: rgba(0,0,0,0.05); text-decoration: none; }
+    @media (prefers-color-scheme: dark) { .nav__drop a:hover { background: rgba(255,255,255,0.07); } }
+    .nav__drop a span { display: block; font-size: 11px; font-weight: 400; color: var(--color-text-mute); margin-top: 1px; }
+    @media (max-width: 600px) { .nav__item { height: auto; } .nav__drop { display: none; } }
 
     /* Hero */
     .hero { padding: var(--space-6) 0 var(--space-5); text-align: center; }
@@ -311,9 +321,45 @@
       freetokyo apps
     </a>
     <div class="nav__links">
-      <a href="#health">健康</a>
-      <a href="#life">生活</a>
-      <a href="#work">仕事</a>
+      <div class="nav__item">
+        <a href="#health">健康</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="./recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a>
+          <a href="./saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a>
+          <a href="./trero/">Trero<span>筋トレ・ワークアウト管理</span></a>
+          <a href="./tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a>
+        </div></div>
+      </div>
+      <div class="nav__item">
+        <a href="#life">生活</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="./iekan/">IeKan（家看）<span>実家を家族で見守る</span></a>
+          <a href="./printmemo/">PrintSummary<span>学校プリント整理 × OCR</span></a>
+          <a href="./miawell/">Miawell<span>猫専用ヘルスケア</span></a>
+          <a href="./homenetnavi/">世帯手取ナビ<span>年収の壁シミュレーター</span></a>
+          <a href="./mochiru/">Mochiru<span>資産寿命シミュレーター</span></a>
+          <a href="./sukushori/">スクショリ<span>スクショ自動仕分け</span></a>
+          <a href="./heyalog/">ヘヤログ<span>賃貸原状回復の記録</span></a>
+          <a href="./jitsuhiro/">ジツヒロ<span>間取り図の有効面積</span></a>
+          <a href="./yuzuri/">Yuzuri<span>終活ノート</span></a>
+          <a href="./hitorilog/">HitoriLog<span>ひとり介護のケア記録</span></a>
+          <a href="./zaicho/">Zaicho<span>財産目録・相続税概算</span></a>
+          <a href="./lifeweeks/">Weekwise<span>人生を週で記録</span></a>
+          <a href="./jamalog/">Jamalog<span>ラクダのための台帳</span></a>
+        </div></div>
+      </div>
+      <div class="nav__item">
+        <a href="#work">仕事</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="./carehours/">CareHours<span>訪問介護ヘルパー給与</span></a>
+          <a href="./genbalog/">Genbalog<span>60秒で現場報告書</span></a>
+          <a href="./hanro/">hanro<span>配達ドライバー収支</span></a>
+          <a href="./toscore/">Toscore<span>ミニバス スコアシート</span></a>
+          <a href="./keihiba/">Keihiba<span>経費レシート整理</span></a>
+          <a href="./koegaki/">Koegaki<span>オンデバイス議事メモ</span></a>
+          <a href="./dartrack/">Dartrack<span>家事使用人の記録（UAE）</span></a>
+        </div></div>
+      </div>
       <a href="#concept">開発思想</a>
       <a href="/web/en/" aria-label="English">English</a>
     </div>
@@ -829,5 +875,21 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  function place(){
+    document.querySelectorAll('.nav__drop').forEach(function(d){
+      d.style.left='0'; d.style.right='auto';
+      var inner=d.querySelector('.nav__drop-inner');
+      if(!inner) return;
+      var r=inner.getBoundingClientRect();
+      var vw=document.documentElement.clientWidth;
+      if(r.right > vw-12){ d.style.left='auto'; d.style.right='0'; }
+    });
+  }
+  window.addEventListener('load', place);
+  window.addEventListener('resize', place);
+})();
+</script>
 </body>
 </html>
