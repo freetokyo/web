@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekwise — Your Life in Weeks (offline weekly journal)</title>
+  <meta name="description" content="Weekwise turns your whole life into a grid of weeks and lets you write down how each week really felt. A one-time purchase, fully offline weekly journal — no subscription, no account, no data collection. Japanese and English." />
+  <link rel="canonical" href="https://freetokyo.github.io/web/lifeweeks/index.html" />
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/index.html" />
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/index.html" />
+  <meta property="og:title" content="Weekwise — Your Life in Weeks" />
+  <meta property="og:description" content="See your whole life as a grid of weeks and note how each week really felt. One-time purchase, fully offline." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://freetokyo.github.io/web/lifeweeks/index.html" />
+  <meta property="og:image" content="https://freetokyo.github.io/web/lifeweeks/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="apple-itunes-app" content="app-id=6788981648" />
+  <link rel="icon" href="favicon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Weekwise",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "downloadUrl": "https://apps.apple.com/app/id6788981648",
+    "installUrl": "https://apps.apple.com/app/id6788981648",
+    "offers": { "@type": "Offer", "price": "7.99", "priceCurrency": "USD" },
+    "description": "See your whole life as a grid of weeks and write down how each week really felt. A one-time purchase, fully offline weekly journal — no subscription, no account, no data collection.",
+    "inLanguage": ["ja", "en"]
+  }
+  </script>
+  <style>
+    :root{
+      --brand:#34406B; --accent:#E8935A; --ink:#1F2430; --slate:#5C6474;
+      --sand:#FAF9F7; --surface:#FFFFFF; --line:#E6E4DF; --success:#3E9E6E;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      color:var(--ink);background:var(--sand);line-height:1.6;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+    header.hero{background:var(--brand);color:var(--sand);padding:64px 0 56px;text-align:center}
+    .badge{display:inline-block;width:92px;height:92px;border-radius:21px;margin-bottom:18px;
+      background:linear-gradient(160deg,#3A4670,#2A3455);padding:16px}
+    .badge svg{display:block;width:100%;height:100%}
+    h1{font-size:2.5rem;letter-spacing:-.5px;margin-bottom:10px}
+    .tag{font-size:1.15rem;opacity:.92;max-width:580px;margin:0 auto}
+    .cta{margin-top:22px}
+    .cta a{display:inline-block;background:var(--accent);color:#1F2430;font-weight:700;
+      text-decoration:none;border-radius:12px;padding:12px 26px}
+    .langs{margin-top:22px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+    .langs button{border:1px solid rgba(250,249,247,.5);background:transparent;color:var(--sand);
+      border-radius:999px;padding:6px 16px;font-size:.9rem;cursor:pointer}
+    .langs button[aria-pressed="true"]{background:var(--sand);color:var(--brand);border-color:var(--sand);font-weight:600}
+    section{padding:44px 0}
+    h2{font-size:1.5rem;margin-bottom:20px;color:var(--brand)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+    .card h3{font-size:1.05rem;margin-bottom:6px}
+    .card p{font-size:.95rem;color:var(--slate)}
+    .price{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center;max-width:440px;margin:0 auto}
+    .price .amt{font-size:1.8rem;font-weight:700;color:var(--brand)}
+    .price .once{color:var(--success);font-weight:600;margin-top:4px}
+    .price ul{list-style:none;text-align:start;margin:16px auto 0;max-width:320px}
+    .price li{padding:5px 0;color:var(--slate);font-size:.95rem}
+    .price li::before{content:"✓ ";color:var(--success);font-weight:700}
+    .note{font-size:.85rem;color:var(--slate);max-width:640px;margin:18px auto 0;text-align:center}
+    a{color:var(--brand)}
+    [hidden]{display:none!important}
+    .topnav{display:flex;justify-content:space-between;align-items:center;gap:12px;
+      padding:12px 20px;background:var(--brand);position:sticky;top:0;z-index:10}
+    .topnav .brand{color:var(--sand);font-weight:700;text-decoration:none;font-size:1.05rem;letter-spacing:-.2px}
+    .appstore{display:inline-flex;flex-direction:column;line-height:1.15;text-decoration:none;
+      background:#000;color:#fff;border-radius:9px;padding:6px 14px;white-space:nowrap}
+    .appstore .as-sub{font-size:.6rem;opacity:.85}
+    .appstore .as-main{font-size:.95rem;font-weight:600}
+    .sitefoot{border-top:1px solid var(--line);margin-top:36px;padding:24px 20px;text-align:center;color:var(--slate);font-size:.9rem}
+    .sitefoot .footlinks{margin-bottom:10px}
+    .sitefoot .footlinks a{color:var(--brand);text-decoration:none;margin:0 4px}
+  </style>
+</head>
+<body>
+<nav class="topnav">
+  <a class="brand" href="index.html">Weekwise</a>
+  <a class="appstore" href="https://apps.apple.com/app/id6788981648" rel="noopener">
+    <span class="as-sub">Download on the</span><span class="as-main">App Store</span>
+  </a>
+</nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="8" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="30" y="8" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="52" y="8" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="74" y="8" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="8" y="30" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="30" y="30" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="52" y="30" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="74" y="30" width="16" height="16" rx="4" fill="#9AA3C6"/>
+          <rect x="8" y="52" width="16" height="16" rx="4" fill="#E8935A"/>
+          <rect x="30" y="52" width="16" height="16" rx="4" fill="none" stroke="#6C76A0" stroke-width="2.4"/>
+          <rect x="52" y="52" width="16" height="16" rx="4" fill="none" stroke="#6C76A0" stroke-width="2.4"/>
+          <rect x="74" y="52" width="16" height="16" rx="4" fill="none" stroke="#6C76A0" stroke-width="2.4"/>
+          <rect x="8" y="74" width="16" height="16" rx="4" fill="none" stroke="#6C76A0" stroke-width="2.4"/>
+          <rect x="30" y="74" width="16" height="16" rx="4" fill="none" stroke="#6C76A0" stroke-width="2.4"/>
+          <rect x="52" y="74" width="16" height="16" rx="4" fill="none" stroke="#6C76A0" stroke-width="2.4"/>
+          <rect x="74" y="74" width="16" height="16" rx="4" fill="none" stroke="#6C76A0" stroke-width="2.4"/>
+        </svg>
+      </div>
+      <h1 data-i18n="title">Weekwise</h1>
+      <p class="tag" data-i18n="tag">Your life in weeks. See where you are at a glance, and write down how each week really felt — private, fully offline.</p>
+      <div class="cta"><a href="https://apps.apple.com/app/id6788981648" data-i18n="download">Download on the App Store</a></div>
+      <div class="langs" role="group" aria-label="Language">
+        <button data-lang="en" aria-pressed="true">English</button>
+        <button data-lang="ja" aria-pressed="false">日本語</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section>
+      <h2 data-i18n="featuresTitle">What you can do</h2>
+      <div class="grid">
+        <div class="card"><h3 data-i18n="f1t">Life timeline</h3><p data-i18n="f1b">Your whole life as one grid of weeks — past, present and future at a glance.</p></div>
+        <div class="card"><h3 data-i18n="f2t">Weekly journal</h3><p data-i18n="f2b">Record your mood, a highlight, honest notes and photos for each week.</p></div>
+        <div class="card"><h3 data-i18n="f3t">Milestones</h3><p data-i18n="f3b">Place future plans and past turning points on your timeline.</p></div>
+        <div class="card"><h3 data-i18n="f4t">Bucket list</h3><p data-i18n="f4b">Write down the dreams you want to fulfill, and check them off.</p></div>
+        <div class="card"><h3 data-i18n="f5t">Search</h3><p data-i18n="f5b">Quickly find the notes and milestones you wrote before.</p></div>
+        <div class="card"><h3 data-i18n="f6t">Flexible grid</h3><p data-i18n="f6b">Switch between a birthday-start or January-start grid and set your first day of the week.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacyTitle">Private by design</h2>
+      <p data-i18n="privacyBody">Everything you write is stored only on your iPhone. There is no account, no server sync and no data collection. Your honest words stay on your device — the only place they live. Life expectancy is just an assumption used to draw the grid, not a prediction. Weekwise does not provide medical, health or financial advice.</p>
+    </section>
+
+    <section>
+      <h2 data-i18n="priceTitle">One purchase, every feature</h2>
+      <div class="price">
+        <div class="amt">USD 7.99<span style="font-size:1rem;font-weight:400" data-i18n="onceLabel"> · one-time</span></div>
+        <div class="once" data-i18n="noSub">No subscription · fully offline</div>
+        <ul>
+          <li data-i18n="p1">Free preview: view the full life grid</li>
+          <li data-i18n="p2">Full Access: unlimited weekly entries &amp; photos</li>
+          <li data-i18n="p3">Unlimited milestones &amp; bucket list</li>
+          <li data-i18n="p4">Search across everything you've written</li>
+        </ul>
+      </div>
+      <p class="note" data-i18n="priceNote">One-time purchase through Apple — no subscription, no recurring charges. A free preview lets you try the timeline and a limited number of entries; Full Access unlocks everything and can be restored on your devices. See the <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+
+    <section style="text-align:center">
+      <p><a href="support.html" data-i18n="support">Support</a> · <a href="terms.html" data-i18n="terms">Terms</a> · <a href="privacy.html" data-i18n="privacy">Privacy</a></p>
+    </section>
+  </div>
+
+  <footer class="sitefoot">
+    <div class="footlinks">
+      <a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a>
+    </div>
+    <p><a href="/web/"><strong>← freetokyo apps</strong></a></p>
+    <p>© 2026 freetokyo</p>
+  </footer>
+
+  <script>
+    const I18N = {
+      en: {},
+      ja: {
+        title:"Weekwise", tag:"人生を、週で。いまの現在地を一目で把握し、その週の本音を書き残す — 完全オフラインの週次ジャーナル。",
+        download:"App Store でダウンロード",
+        featuresTitle:"できること",
+        f1t:"ライフタイムライン", f1b:"人生全体を一枚の週グリッドで。過去・現在・未来が一目でわかります。",
+        f2t:"週次ジャーナル", f2b:"その週の気分・ハイライト・本音メモ・写真を記録。",
+        f3t:"マイルストーン", f3b:"将来の予定や過去の節目をタイムラインに配置。",
+        f4t:"バケットリスト", f4b:"叶えたい夢を書き出し、達成でチェック。",
+        f5t:"検索", f5b:"過去に書いた本音やマイルストーンをすぐに見つける。",
+        f6t:"柔軟なグリッド", f6b:"誕生日始まり／1月始まりの切替と、週の開始曜日を設定できます。",
+        privacyTitle:"プライバシー重視",
+        privacyBody:"書いた内容はこの iPhone にのみ保存されます。アカウント不要・同期なし・データ収集なし。本音を書ける場所は、端末の中だけ。想定寿命はグリッドを描くための前提であり、余命を予測するものではありません。医療・健康・金融上の助言は行いません。",
+        priceTitle:"一度の購入で、すべての機能を",
+        onceLabel:" ・買い切り", noSub:"サブスクなし・完全オフライン",
+        p1:"無料プレビュー：人生グリッドを閲覧",
+        p2:"フルアクセス：週次記録・写真が無制限",
+        p3:"マイルストーン・バケットリストが無制限",
+        p4:"書いた記録をまとめて検索",
+        priceNote:"Apple を通じた買い切り購入で、サブスクや継続課金はありません。無料プレビューでタイムラインと一定数の記録を試せます。フルアクセスで全機能が解放され、端末間で復元できます。<a href='terms.html'>利用規約</a>・<a href='privacy.html'>プライバシーポリシー</a>をご確認ください。",
+        support:"サポート", terms:"利用規約", privacy:"プライバシー"
+      }
+    };
+    const EN = {}; document.querySelectorAll('[data-i18n]').forEach(el=>EN[el.dataset.i18n]=el.innerHTML);
+    I18N.en = EN;
+    function setLang(l){
+      const dict = I18N[l] || EN;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{ if(dict[el.dataset.i18n]!=null) el.innerHTML = dict[el.dataset.i18n]; });
+      document.documentElement.lang = l;
+      document.querySelectorAll('.langs button').forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.lang===l)));
+    }
+    document.querySelectorAll('.langs button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+    const nav = (navigator.language||'en').slice(0,2);
+    if (nav==='ja') setLang('ja');
+  </script>
+</body>
+</html>
