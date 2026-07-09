@@ -64,9 +64,30 @@
     a{color:var(--teal)}
     [hidden]{display:none!important}
     [dir="rtl"] .price ul{text-align:right}
+  
+    .topnav{display:flex;justify-content:space-between;align-items:center;gap:12px;
+      padding:12px 20px;background:var(--teal);position:sticky;top:0;z-index:10}
+    .topnav .brand{color:var(--sand);font-weight:700;text-decoration:none;font-size:1.05rem;letter-spacing:-.2px}
+    .appstore{display:inline-flex;flex-direction:column;line-height:1.15;text-decoration:none;
+      background:#000;color:#fff;border-radius:9px;padding:6px 14px;white-space:nowrap}
+    .appstore .as-sub{font-size:.6rem;opacity:.85}
+    .appstore .as-main{font-size:.95rem;font-weight:600}
+    .sitefoot{border-top:1px solid var(--line);margin-top:36px;padding:24px 20px;text-align:center;color:var(--slate);font-size:.9rem}
+    .sitefoot .footlinks{margin-bottom:10px}
+    .sitefoot .footlinks a{color:var(--teal);text-decoration:none;margin:0 4px}
+    .sitefoot a{color:var(--teal)}
+    [dir="rtl"] .topnav{flex-direction:row-reverse}
+
   </style>
 </head>
 <body>
+<nav class="topnav">
+  <a class="brand" href="index.html">Jamalog</a>
+  <a class="appstore" href="https://apps.apple.com/app/id6788732648" rel="noopener">
+    <span class="as-sub">Download on the</span><span class="as-main">App Store</span>
+  </a>
+</nav>
+
   <header class="hero">
     <div class="wrap">
       <div class="badge" aria-hidden="true">🐫</div>
@@ -118,12 +139,13 @@
     </section>
   </div>
 
-  <footer>
-    <div class="wrap">
-      <p><a href="/web/"><strong>← freetokyo apps</strong></a></p>
-      <p>© 2026 freetokyo</p>
-    </div>
-  </footer>
+  <footer class="sitefoot">
+  <div class="footlinks">
+    <a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a>
+  </div>
+  <p><a href="/web/"><strong>← freetokyo apps</strong></a></p>
+  <p>© 2026 freetokyo</p>
+</footer>
 
   <script>
     const I18N = {
