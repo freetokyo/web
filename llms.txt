@@ -1,8 +1,8 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 24 本の iOS / watchOS アプリを公開中。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 25 本の iOS / watchOS アプリを公開中。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 24 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 25 アプリを一覧）
 English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルートページ。相互に hreflang 設定済み）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
@@ -34,6 +34,7 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 - [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。App Store: https://apps.apple.com/app/id6788604524
 - [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。日本語 / English 対応。App Store: https://apps.apple.com/app/id6788981648
 - [Jamalog](https://freetokyo.github.io/web/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。App Store: https://apps.apple.com/app/id6788732648
+- [キメカブ / Kimekabu](https://freetokyo.github.io/web/kimekabu/): 株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート iOS アプリ。損益ではなく「判断の質」を振り返り、売買ルールの再現性を高める。投資助言ではなく自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。日本語 / English 対応。App Store: https://apps.apple.com/app/id6789459452
 
 ### Work（仕事・現場）
 
@@ -67,5 +68,5 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
 - Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
 - 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
-- ルート `index.html` には CollectionPage + ItemList（全 24 アプリ）の JSON-LD あり。
+- ルート `index.html` には CollectionPage + ItemList（全 25 アプリ）の JSON-LD あり。
 - 各アプリページには MobileApplication / WebSite / HowTo / BreadcrumbList、support には FAQPage の JSON-LD を埋め込み。各アプリ `web/llms.txt`（per-app）も用意。
