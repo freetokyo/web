@@ -83,6 +83,9 @@
     "featureList": [
       "積立から取り崩しまでの資産寿命試算",
       "モンテカルロ・シミュレーション",
+      "公的年金・退職後収入の入力",
+      "目標成功率から取り崩し額を逆算",
+      "実績トラッキング（計画と実績の比較）",
       "株安×円高の相関を保持",
       "感応度分析",
       "完全オフライン動作",
@@ -108,8 +111,8 @@
         "https://github.com/freetokyo"
       ]
     },
-    "dateModified": "2026-06-15",
-    "softwareVersion": "1.0",
+    "dateModified": "2026-07-12",
+    "softwareVersion": "1.1",
     "datePublished": "2026-06-11",
     "contentRating": "4+",
     "fileSize": "1 MB"
@@ -202,7 +205,7 @@
         "https://github.com/freetokyo"
       ]
     },
-    "dateModified": "2026-06-15"
+    "dateModified": "2026-07-12"
   }
   </script>
   <script type="application/ld+json">
@@ -311,9 +314,11 @@
 </section>
   <h2>アプリの画面</h2>
   <div class="ftshot-row">
-    <figure class="ftshot-item"><img src="shots/01.png" alt="Mochiru 資産寿命シミュレーションの結果画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>資産寿命の試算</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/02.png" alt="積立・取り崩しの資産推移ダッシュボード画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>資産推移</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/03.png" alt="前提を変えた感応度分析の比較画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>感応度分析</figcaption></figure>
+    <figure class="ftshot-item"><img src="shots/01.png" alt="老後資金があと何年もつかを成功率で示す結果画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>資産寿命の試算</figcaption></figure>
+    <figure class="ftshot-item"><img src="shots/02.png" alt="年金・積立・取り崩しの前提入力画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>プラン入力（年金対応）</figcaption></figure>
+    <figure class="ftshot-item"><img src="shots/03.png" alt="取り崩し率や退職年齢の感応度分析画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>感応度分析</figcaption></figure>
+    <figure class="ftshot-item"><img src="shots/04.png" alt="目標成功率から取り崩し額を逆算する画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>逆算（v1.1）</figcaption></figure>
+    <figure class="ftshot-item"><img src="shots/05.png" alt="3つの質問で最初の試算ができるオンボーディング画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>3問クイックスタート</figcaption></figure>
   </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
@@ -329,9 +334,15 @@
     </div>
     <div class="feature-card">
       <div class="feature-icon">💧</div>
-      <h3>取り崩し戦略と積立設定</h3>
-      <p>定額・定率・動的ガードレール・床天井などの取り崩し戦略と、積立フェーズの設定を切り替えて比較できます。</p>
+      <h3>取り崩し戦略と年金入力</h3>
+      <p>定額・定率・動的ガードレール・床天井の取り崩し戦略に加え、公的年金（受給開始年齢60〜75歳）とその他の定期収入を入力できます。収入は取り崩し必要額から差し引かれます。</p>
       <span class="feature-tag">フルライフサイクル</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h3>逆算と実績トラッキング</h3>
+      <p>目標成功率（80〜95%）を満たす取り崩し額を逆算。資産総額を記録すると、計画の分布帯に実績線が重なり、計画と現実の乖離を定期的に確認できます。</p>
+      <span class="feature-tag">v1.1 新機能</span>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🧭</div>
@@ -348,7 +359,7 @@
     <div class="feature-card">
       <div class="feature-icon">🔀</div>
       <h3>シナリオの保存と横並び比較</h3>
-      <p>シナリオを無制限に保存し、前提の違いを横並びで比較。公的年金等の定期収入も手入力（簡易）できます。PDFレポートの出力にも対応。</p>
+      <p>シナリオを無制限に保存し、前提の違いを横並びで比較。結果は1枚の画像で共有（無料）でき、プレミアムではPDFレポートも出力できます。</p>
       <span class="feature-tag">比較・出力</span>
     </div>
     <div class="feature-card">
