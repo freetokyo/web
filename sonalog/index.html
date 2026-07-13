@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>ソナログ / Sonalog | 家庭の備蓄と防災カルテをひとつに</title>
+  <meta name="description" content="ソナログ（Sonalog）は、ローリングストック備蓄管理と家庭防災カルテをひとつにまとめる、完全オフライン・アカウント不要・買い切りの家庭防災アプリです。期限をお知らせし、家族の人数から必要量を計算、防災カルテはPDFで持ち出せます。">
+  <meta name="keywords" content="防災,備蓄,ローリングストック,非常食,防災グッズ,消費期限,持ち出し袋,常備薬,家庭防災カルテ,必要量,オフライン,iPhone,iOS">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/sonalog/">
+  <meta name="apple-itunes-app" content="app-id=6790403062">
+
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/">
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/">
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ソナログ / Sonalog | Home Stockpile & Emergency Card">
+  <meta property="og:description" content="Combine rolling-stock supply management with a household emergency card. Offline, no account, one-time purchase. Expiry alerts, required-amount estimates, and a PDF emergency card.">
+  <meta property="og:site_name" content="Sonalog">
+  <meta property="og:url" content="https://freetokyo.github.io/web/sonalog/">
+  <meta property="og:image" content="https://freetokyo.github.io/web/sonalog/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ソナログ / Sonalog — 家庭防災アプリ">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ソナログ / Sonalog">
+  <meta name="twitter:description" content="家族の備蓄と防災情報を、ひとつに。完全オフライン・アカウント不要・買い切り。">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/sonalog/ogp.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Sonalog",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS 17.0 以降",
+    "description": "Sonalog combines rolling-stock supply management with a household emergency card. Register stock with expiry alerts, estimate required amounts by household size, keep an emergency go-bag checklist and contacts, and export an emergency card as a PDF. Fully offline, no account.",
+    "inLanguage": ["ja", "en"],
+    "featureList": [
+      "Rolling-stock supply management",
+      "Expiry alerts (local notifications)",
+      "Required-amount guide by household size",
+      "Emergency go-bag checklist",
+      "Emergency contacts and meeting place",
+      "Emergency card PDF export"
+    ],
+    "url": "https://apps.apple.com/app/id6790403062",
+    "author": {
+      "@type": "Organization",
+      "name": "freetokyo",
+      "url": "https://freetokyo.github.io/web/",
+      "sameAs": ["https://apps.apple.com/developer/id1886058795", "https://x.com/2009CYL", "https://github.com/freetokyo"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "freetokyo",
+      "url": "https://freetokyo.github.io/web/",
+      "sameAs": ["https://apps.apple.com/developer/id1886058795", "https://x.com/2009CYL", "https://github.com/freetokyo"]
+    },
+    "datePublished": "2026-07-13",
+    "softwareVersion": "1.0",
+    "contentRating": "4+",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "freetokyo", "item": "https://freetokyo.github.io/web/" },
+      { "@type": "ListItem", "position": 2, "name": "ソナログ（Sonalog）", "item": "https://freetokyo.github.io/web/sonalog/" }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #eef2f1;
+      --surface: rgba(255, 255, 255, 0.85);
+      --surface-strong: #ffffff;
+      --text: #1c2422;
+      --muted: #5b6663;
+      --line: rgba(28, 36, 34, 0.1);
+      --accent: #14746f;
+      --accent-deep: #0e5450;
+      --accent-soft: rgba(20, 116, 111, 0.12);
+      --warm: rgba(46, 158, 107, 0.16);
+      --shadow: 0 28px 72px rgba(18, 30, 26, 0.09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--text);
+      font-family: "Avenir Next", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(20, 116, 111, 0.18), transparent 30%),
+        radial-gradient(circle at 100% 10%, var(--warm), transparent 24%),
+        linear-gradient(180deg, #f5f8f7 0%, var(--bg) 100%);
+    }
+    a { color: var(--accent-deep); }
+    main { max-width: 1140px; margin: 0 auto; padding: 28px 20px 40px; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+    .brand { font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+    .language-switch { display: inline-flex; gap: 8px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.75); border: 1px solid var(--line); backdrop-filter: blur(14px); }
+    .lang-button { border: 0; background: transparent; color: var(--muted); border-radius: 999px; padding: 10px 16px; font: inherit; cursor: pointer; }
+    .lang-button.is-active { background: var(--accent); color: #fff; }
+    .lang-panel[hidden] { display: none; }
+    .hero, .section-card { background: var(--surface); border: 1px solid rgba(255,255,255,0.7); box-shadow: var(--shadow); backdrop-filter: blur(16px); border-radius: 28px; }
+    .hero { padding: 38px; margin-bottom: 20px; overflow: hidden; position: relative; }
+    .hero::after { content: ""; position: absolute; inset: auto -60px -80px auto; width: 240px; height: 240px; border-radius: 50%; background: radial-gradient(circle, rgba(20,116,111,0.18) 0%, rgba(20,116,111,0) 68%); pointer-events: none; }
+    .hero-grid, .grid-3, .grid-2 { display: grid; gap: 18px; }
+    .hero-grid { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 18px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 18px; }
+    .section-card { padding: 24px; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.0; letter-spacing: -0.04em; margin-bottom: 16px; }
+    h2 { font-size: 1.14rem; color: var(--accent-deep); margin-bottom: 14px; }
+    p, li { font-size: 0.98rem; line-height: 1.8; }
+    ul { margin: 0; padding-left: 18px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 14px; color: var(--accent-deep); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+    .lead { font-size: 1.08rem; max-width: 56ch; color: #223029; }
+    .pill-row, .cta-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill { display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-deep); font-size: 0.9rem; }
+    .cta, .ghost { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; font-weight: 600; text-decoration: none; }
+    .cta { background: var(--accent); color: #fff; }
+    .ghost { background: rgba(255,255,255,0.74); border: 1px solid var(--line); color: var(--text); }
+    .mini { color: var(--muted); font-size: 0.92rem; }
+    .appstore-btn { display: inline-flex; align-items: center; gap: 9px; padding: 11px 20px; border-radius: 999px; background: #111; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.93rem; }
+    .stat-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+    .stat { padding: 16px; border-radius: 18px; background: var(--surface-strong); border: 1px solid var(--line); }
+    .stat strong { display: block; font-size: 0.84rem; color: var(--muted); margin-bottom: 8px; }
+    .stat span { display: block; font-size: 1.1rem; font-weight: 700; letter-spacing: -0.02em; }
+    .ftfacts { max-width: 760px; margin: 8px auto 0; }
+    .ftfacts table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+    .ftfacts th, .ftfacts td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .ftfacts th { white-space: nowrap; width: 9em; opacity: .7; font-weight: 600; }
+    .disclaimer { margin-top: 4px; padding: 16px 18px; border-radius: 16px; background: rgba(20,116,111,0.06); border: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+    footer.site { max-width: 1140px; margin: 0 auto; padding: 24px 20px 60px; color: var(--muted); font-size: 0.9rem; }
+    footer.site nav { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 10px; }
+    footer.site a { color: var(--accent-deep); text-decoration: none; }
+    @media (max-width: 900px) {
+      .hero, .section-card { border-radius: 22px; padding: 22px; }
+      .hero-grid, .grid-2, .grid-3, .stat-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <div class="brand">Sonalog · ソナログ</div>
+      <div class="language-switch" role="tablist" aria-label="Language switch">
+        <button class="lang-button" id="lang-ja-button" type="button" role="tab" aria-selected="true">日本語</button>
+        <button class="lang-button" id="lang-en-button" type="button" role="tab" aria-selected="false">English</button>
+      </div>
+    </div>
+
+    <!-- HERO JA -->
+    <section class="hero lang-panel" lang="ja">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">家庭防災 × ローリングストック</div>
+          <h1>備蓄も、家族の防災も、この1つに。</h1>
+          <p class="lead">ソナログは、消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにするアプリです。期限が近い備蓄をお知らせし、家族の人数から必要量を計算。防災カルテはPDFで持ち出せます。すべて端末内で完結し、アカウント登録は不要です。</p>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">ローリングストック</span>
+            <span class="pill">期限アラート</span>
+            <span class="pill">必要量ガイド</span>
+            <span class="pill">防災カルテPDF</span>
+            <span class="pill">完全オフライン</span>
+            <span class="pill">買い切り</span>
+          </div>
+          <div class="cta-row" style="margin-top:20px;">
+            <a class="appstore-btn" href="https://apps.apple.com/jp/app/id6790403062" target="_blank" rel="noopener">App Store でダウンロード</a>
+            <a class="cta" href="./support.html">サポート</a>
+            <a class="ghost" href="./privacy.html">プライバシー</a>
+            <a class="ghost" href="./terms.html">利用規約</a>
+          </div>
+        </div>
+        <div class="section-card" style="margin:0;">
+          <h2>アプリ概要</h2>
+          <section class="ftfacts">
+            <table>
+              <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
+              <tr><th>価格</th><td>無料（アプリ内課金 ¥600 でPDF出力を解放）</td></tr>
+              <tr><th>バージョン</th><td>1.0</td></tr>
+              <tr><th>カテゴリ</th><td>ライフスタイル</td></tr>
+              <tr><th>対象年齢</th><td>4+</td></tr>
+              <tr><th>対応言語</th><td>日本語・英語</td></tr>
+              <tr><th>データの扱い</th><td>すべて端末内・収集なし</td></tr>
+              <tr><th>開発者</th><td>freetokyo（CHEN YANGLI）</td></tr>
+            </table>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO EN -->
+    <section class="hero lang-panel" lang="en" hidden>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Home preparedness × rolling stock</div>
+          <h1>Supplies and safety, all in one.</h1>
+          <p class="lead">Sonalog combines rolling-stock supply management with a household emergency card. Get alerts as items approach expiry, estimate required amounts from your household size, and export your emergency card as a PDF. Everything stays on your device, and no account is required.</p>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">Rolling stock</span>
+            <span class="pill">Expiry alerts</span>
+            <span class="pill">Required-amount guide</span>
+            <span class="pill">Emergency card PDF</span>
+            <span class="pill">Fully offline</span>
+            <span class="pill">One-time purchase</span>
+          </div>
+          <div class="cta-row" style="margin-top:20px;">
+            <a class="appstore-btn" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">Download on the App Store</a>
+            <a class="cta" href="./support.html">Support</a>
+            <a class="ghost" href="./privacy.html">Privacy</a>
+            <a class="ghost" href="./terms.html">Terms</a>
+          </div>
+        </div>
+        <div class="section-card" style="margin:0;">
+          <h2>Overview</h2>
+          <section class="ftfacts">
+            <table>
+              <tr><th>OS</th><td>iOS 17.0 or later</td></tr>
+              <tr><th>Price</th><td>Free (in-app purchase ¥600 unlocks PDF export)</td></tr>
+              <tr><th>Version</th><td>1.0</td></tr>
+              <tr><th>Category</th><td>Lifestyle</td></tr>
+              <tr><th>Age</th><td>4+</td></tr>
+              <tr><th>Languages</th><td>Japanese, English</td></tr>
+              <tr><th>Data</th><td>On-device only, no collection</td></tr>
+              <tr><th>Developer</th><td>freetokyo (CHEN YANGLI)</td></tr>
+            </table>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <div class="grid-3">
+      <section class="section-card lang-panel" lang="ja"><h2>① 備蓄と期限アラート</h2><p>水・食料・衛生・医療・電源・情報のカテゴリで在庫と賞味／消費期限を管理。期限の30日前と7日前にローカル通知でお知らせし、消費→補充のローリングストックを続けやすくします。</p></section>
+      <section class="section-card lang-panel" lang="en" hidden><h2>① Stock &amp; expiry alerts</h2><p>Manage water, food, hygiene, medical, power, and info items with quantities and expiry dates. Local notifications 30 and 7 days before expiry make it easy to keep rolling your stock.</p></section>
+
+      <section class="section-card lang-panel" lang="ja"><h2>② 必要量ガイド</h2><p>家族の人数と年齢層から、水や食料のおおよその必要量を計算し、現在の在庫との差分を表示。内閣府・消防庁等の公的指針に基づく一般的な目安です。</p></section>
+      <section class="section-card lang-panel" lang="en" hidden><h2>② Required-amount guide</h2><p>Estimate roughly how much water and food your household needs based on the number and age of members, and see the gap versus what you have. General guidance based on Japanese public preparedness materials.</p></section>
+
+      <section class="section-card lang-panel" lang="ja"><h2>③ 防災カルテ</h2><p>非常持ち出し品のチェック、緊急連絡先・集合場所・避難所メモを記録。世帯・連絡先・集合場所・備蓄サマリを1枚のPDFにまとめ、印刷して持ち出し袋に入れられます（買い切りで解放）。</p></section>
+      <section class="section-card lang-panel" lang="en" hidden><h2>③ Emergency card</h2><p>Keep a go-bag checklist, emergency contacts, meeting place, and shelter notes. Combine household, contacts, meeting place, and stock summary into one PDF to print and carry (unlocked with a one-time purchase).</p></section>
+    </div>
+
+    <!-- PRICING + DISCLAIMER -->
+    <div class="grid-2">
+      <section class="section-card lang-panel" lang="ja">
+        <h2>価格</h2>
+        <div class="stat-grid">
+          <div class="stat"><strong>無料</strong><span>備蓄登録・期限通知・必要量ガイド・カルテ入力</span></div>
+          <div class="stat"><strong>フルアクセス</strong><span>買い切り ¥600・防災カルテのPDF出力</span></div>
+        </div>
+        <p class="mini" style="margin-top:14px;">サブスクではありません。購入・返金条件は App Store の規約に従います。設定から復元できます。</p>
+      </section>
+      <section class="section-card lang-panel" lang="en" hidden>
+        <h2>Pricing</h2>
+        <div class="stat-grid">
+          <div class="stat"><strong>Free</strong><span>Stock, alerts, required-amount guide, card input</span></div>
+          <div class="stat"><strong>Full Access</strong><span>One-time ¥600 · Emergency card PDF export</span></div>
+        </div>
+        <p class="mini" style="margin-top:14px;">Not a subscription. Purchases and refunds follow App Store terms. Restore available in Settings.</p>
+      </section>
+
+      <section class="section-card lang-panel" lang="ja">
+        <h2>ご注意</h2>
+        <div class="disclaimer">本アプリは備蓄と防災情報を記録・管理するためのものです。表示する必要量は一般的な目安であり、避難の要否や医療的な判断を行うものではありません。最終的な判断は自治体の公式情報や専門家の指針にしたがってください。</div>
+      </section>
+      <section class="section-card lang-panel" lang="en" hidden>
+        <h2>Please note</h2>
+        <div class="disclaimer">This app is for recording and managing supplies and emergency information. Required amounts are general guidance and do not determine whether to evacuate or provide medical advice. For final decisions, follow your local government's official information and professional guidance.</div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site">
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./support.html">Support</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
+    </nav>
+    <p><a href="/web/">← freetokyo apps</a></p>
+    <p>© 2026 freetokyo (CHEN YANGLI)</p>
+  </footer>
+
+  <script>
+    (function () {
+      const buttons = { ja: document.getElementById('lang-ja-button'), en: document.getElementById('lang-en-button') };
+      const panels = Array.from(document.querySelectorAll('.lang-panel'));
+      function setLanguage(lang) {
+        const next = lang === 'en' ? 'en' : 'ja';
+        document.documentElement.lang = next;
+        Object.entries(buttons).forEach(([key, b]) => { const a = key === next; b.classList.toggle('is-active', a); b.setAttribute('aria-selected', String(a)); });
+        panels.forEach((p) => { p.hidden = p.getAttribute('lang') !== next; });
+      }
+      buttons.ja.addEventListener('click', () => setLanguage('ja'));
+      buttons.en.addEventListener('click', () => setLanguage('en'));
+      const q = new URLSearchParams(location.search).get('lang');
+      const bl = (navigator.language || '').toLowerCase();
+      setLanguage(q === 'en' || (q !== 'ja' && bl.startsWith('en')) ? 'en' : 'ja');
+    }());
+  </script>
+</body>
+</html>
