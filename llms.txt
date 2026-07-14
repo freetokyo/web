@@ -1,13 +1,13 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・生活（Life）・仕事（Work）の 3 カテゴリで、合計 25 本の iOS / watchOS アプリを公開中。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 28 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・生活・仕事の 3 カテゴリで全 25 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・くらし・おかね・しごとの 4 カテゴリで全 28 アプリを一覧）
 English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルートページ。相互に hreflang 設定済み）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
 リポジトリ: https://github.com/freetokyo/web
-最終更新: 2026-07-09
+最終更新: 2026-07
 
 ## Apps
 
@@ -18,32 +18,38 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 - [Trero](https://freetokyo.github.io/web/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。38 言語対応のフラッグシップアプリ。App Store: https://apps.apple.com/app/id6760746164
 - [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。App Store: https://apps.apple.com/app/id6767084251
 
-### Life（生活・家族）
+### Life（くらし・家族）
 
 - [IeKan（家看）](https://freetokyo.github.io/web/iekan/): 離れて暮らす家族で実家を見守る iOS アプリ。写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。App Store: https://apps.apple.com/app/id6764244913
 - [PrintSummary / プリサマ](https://freetokyo.github.io/web/printmemo/): 学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理する iOS アプリ。家族カレンダー連携対応。App Store: https://apps.apple.com/app/id6761879860
 - [Miawell](https://freetokyo.github.io/web/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。App Store: https://apps.apple.com/jp/app/miawell/id6774019571
-- [世帯手取ナビ / HomeNet Navi](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。App Store: https://apps.apple.com/jp/app/id6772911843
-- [Mochiru](https://freetokyo.github.io/web/mochiru/): 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。App Store: https://apps.apple.com/jp/app/id6778235888
 - [スクショリ / Sukushori](https://freetokyo.github.io/web/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、完全オフライン・買い切り・広告なし。App Store: https://apps.apple.com/jp/app/id6778336001
 - [ヘヤログ / Heyalog](https://freetokyo.github.io/web/heyalog/): 賃貸住宅の入居・退去時の部屋状態を写真で記録し、国土交通省「原状回復をめぐるトラブルとガイドライン」準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で敷金トラブルを防ぐ。完全オフライン・買い切り 600 円・広告なし。App Store: https://apps.apple.com/jp/app/id6778713193
 - [ジツヒロ / Jitsuhiro](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。App Store: https://apps.apple.com/jp/app/id6779472712
 - [Yuzuri（ユズリ）](https://freetokyo.github.io/web/yuzuri/): 完全オフラインの終活ノート iOS アプリ。資産・保険・連絡先・想いを一冊のノートに記録。アカウント登録不要・データ収集なし・買い切り。App Store: https://apps.apple.com/app/id6784874949
 - [ヒトリログ / HitoriLog](https://freetokyo.github.io/web/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。App Store: https://apps.apple.com/app/id6785472192
-- [ザイチョウ / Zaicho](https://freetokyo.github.io/web/zaicho/): 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。App Store: https://apps.apple.com/app/id6788175241
-- [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。App Store: https://apps.apple.com/app/id6788604524
 - [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。日本語 / English 対応。App Store: https://apps.apple.com/app/id6788981648
 - [Jamalog](https://freetokyo.github.io/web/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。App Store: https://apps.apple.com/app/id6788732648
+- [Saqrlog（サクルログ）](https://freetokyo.github.io/web/saqrlog/): 鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。App Store: https://apps.apple.com/app/id6789535072
+- [Muddah（ムッダ）](https://freetokyo.github.io/web/muddah/): GCC 駐在家族のための完全オフライン書類期限ボルト iOS アプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。App Store: https://apps.apple.com/app/id6790558814
+- [ソナログ / Sonalog](https://freetokyo.github.io/web/sonalog/): 消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにする iOS アプリ。期限が近い備蓄を通知し、家族の人数から必要量を計算、防災カルテは PDF で持ち出せる。完全オフライン・アカウント不要・買い切り。日本語 / English 対応。App Store: https://apps.apple.com/app/id6790403062
+
+### Money（おかね・家計）
+
+- [世帯手取ナビ / HomeNet Navi](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。App Store: https://apps.apple.com/jp/app/id6772911843
+- [Mochiru](https://freetokyo.github.io/web/mochiru/): 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。App Store: https://apps.apple.com/jp/app/id6778235888
+- [ザイチョウ / Zaicho](https://freetokyo.github.io/web/zaicho/): 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。App Store: https://apps.apple.com/app/id6788175241
+- [ケイヒバ / Keihiba](https://freetokyo.github.io/web/keihiba/): 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。App Store: https://apps.apple.com/jp/app/id6779895529
 - [キメカブ / Kimekabu](https://freetokyo.github.io/web/kimekabu/): 株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート iOS アプリ。損益ではなく「判断の質」を振り返り、売買ルールの再現性を高める。投資助言ではなく自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。日本語 / English 対応。App Store: https://apps.apple.com/app/id6789459452
 
-### Work（仕事・現場）
+### Work（しごと・現場）
 
 - [CareHours](https://freetokyo.github.io/web/carehours/): 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力。App Store: https://apps.apple.com/app/id6769304063
 - [Genbalog](https://freetokyo.github.io/web/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。App Store: https://apps.apple.com/app/id6770864162
 - [hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。App Store: https://apps.apple.com/app/id6771629040
 - [Toscore](https://freetokyo.github.io/web/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。App Store: https://apps.apple.com/jp/app/toscore/id6776913396
-- [ケイヒバ / Keihiba](https://freetokyo.github.io/web/keihiba/): 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。App Store: https://apps.apple.com/jp/app/id6779895529
 - [コエガキ / Koegaki](https://freetokyo.github.io/web/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。App Store: https://apps.apple.com/jp/app/id6780139132
+- [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。App Store: https://apps.apple.com/app/id6788604524
 
 ## Pages
 
@@ -59,8 +65,9 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 ## Design Principles
 
 - **健康**: スコアは目安。データに振り回されず、体感と並べて長く続けられる行動を選ぶための補助線として設計。
-- **生活**: ひとりに負担が偏らないよう、共有・記録・確認の流れを誰でも追えるシンプルな形にまとめる。
-- **仕事**: 現場で働く人が休憩 1 分でひと作業終えられる軽さ。オフライン優先、紙とハンコの代わりになる。
+- **くらし**: ひとりに負担が偏らないよう、共有・記録・確認の流れを誰でも追えるシンプルな形にまとめる。実家・介護・書類・防災、そして海外のくらしまで。
+- **おかね**: 口座に接続せず、端末内の試算だけで家計・資産の意思決定を助ける。投資助言ではなく、自分で考えるための道具。
+- **しごと**: 現場で働く人が休憩 1 分でひと作業終えられる軽さ。オフライン優先、紙とハンコの代わりになる。
 - 共通: 多くのアプリは完全オフライン or iCloud のみ利用。サーバー側でユーザーデータを収集しない方針。基本機能は無料、サブスク／買い切りは任意。
 
 ## Optional
@@ -68,5 +75,5 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
 - Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
 - 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
-- ルート `index.html` には CollectionPage + ItemList（全 25 アプリ）の JSON-LD あり。
+- ルート `index.html` には CollectionPage + ItemList（全 28 アプリ）の JSON-LD あり。
 - 各アプリページには MobileApplication / WebSite / HowTo / BreadcrumbList、support には FAQPage の JSON-LD を埋め込み。各アプリ `web/llms.txt`（per-app）も用意。

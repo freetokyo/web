@@ -4,9 +4,9 @@
 
 App Store: https://apps.apple.com/jp/app/id6770408873
 Web: https://freetokyo.github.io/web/recoverysync/
-Developer: freetokyo (YANGLI CHEN)
+Developer: freetokyo
 Version: 1.0 / Requires: iOS 17.0 or later / Price: Free (with in-app purchase)
-Updated: 2026-06-15
+Updated: 2026-06
 
 ## Features
 - Single recovery score from Apple Watch

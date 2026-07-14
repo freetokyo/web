@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>freetokyo apps — 健康・生活・仕事に効く iOS アプリ集</title>
-  <meta name="description" content="個人開発者 freetokyo がつくる、健康・生活・仕事に役立つ iOS アプリのポートフォリオ。睡眠リカバリー、サウナタイマー、筋トレ、実家見守り、学校プリント整理、猫ヘルスケア、年収の壁シミュレーター、資産寿命シミュレーター、スクショ自動仕分け、賃貸入退去の原状回復記録、訪問介護給与、現場報告書、配達ドライバー収支、ミニバススコアシート、間取り図の有効面積、経費レシート整理、オンデバイス議事メモ、終活ノート、ひとり介護のケア記録、財産目録・相続税概算、家事使用人記録、人生の週次ジャーナル、ラクダ台帳、株の売買判断ノートまで、25 の道具をひとつのページで紹介。">
+  <title>freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集</title>
+  <meta name="description" content="個人開発者 freetokyo がつくる、端末内で完結する小さな iOS アプリの道具箱。健康・くらし・おかね・しごとの 4 領域で 28 本。睡眠リカバリー、サウナ、筋トレ、生理周期、実家見守り、学校プリント整理、猫ヘルスケア、スクショ仕分け、賃貸原状回復、間取り有効面積、終活ノート、ひとり介護、週次ジャーナル、ラクダ台帳、鷹匠記録、駐在家族の書類期限、家庭防災、年収の壁、資産寿命、財産目録・相続税、経費レシート、株の売買判断、訪問介護給与、現場報告書、配達収支、議事メモ、ミニバススコア、家事使用人記録まで。多くが完全オフライン・アカウント不要・買い切り。">
   <meta name="theme-color" content="#0A84FF">
   <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://freetokyo.github.io/web/">
@@ -15,8 +15,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="freetokyo apps">
-  <meta property="og:title" content="freetokyo apps — 健康・生活・仕事に効く iOS アプリ集">
-  <meta property="og:description" content="あなたの毎日を少しだけ軽くする 25 の iOS アプリ。健康・生活・仕事の 3 軸でまとめたポートフォリオサイト。">
+  <meta property="og:title" content="freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集">
+  <meta property="og:description" content="端末内で完結する小さな iOS アプリの道具箱。健康・くらし・おかね・しごとの 4 軸で 28 本。多くが完全オフライン・アカウント不要・買い切り。">
   <meta property="og:url" content="https://freetokyo.github.io/web/">
   <meta property="og:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
   <meta property="og:locale" content="ja_JP">
@@ -24,8 +24,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="freetokyo apps — 健康・生活・仕事に効く iOS アプリ集">
-  <meta name="twitter:description" content="あなたの毎日を少しだけ軽くする 25 の iOS アプリ。">
+  <meta name="twitter:title" content="freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集">
+  <meta name="twitter:description" content="端末内で完結する 28 の小さな iOS アプリ。健康・くらし・おかね・しごとの 4 軸で。">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
 
   <!-- Favicon (emoji as SVG) -->
@@ -43,6 +43,7 @@
       --color-shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 16px 40px rgba(0,0,0,0.12);
       --color-health: #34C759;
       --color-life:   #FF9F0A;
+      --color-money:  #5E5CE6;
       --color-work:   #0A84FF;
       --color-accent: #0A84FF;
       --radius-sm: 12px;
@@ -100,10 +101,10 @@
     .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 52px; }
     .nav__brand { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-text); }
     .nav__brand:hover { text-decoration: none; }
-    .nav__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, #0A84FF 0%, #34C759 50%, #FF9F0A 100%); display: grid; place-items: center; color: white; font-weight: 700; font-size: 14px; }
-    .nav__links { display: flex; gap: 20px; }
+    .nav__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, #0A84FF 0%, #34C759 40%, #5E5CE6 70%, #FF9F0A 100%); display: grid; place-items: center; color: white; font-weight: 700; font-size: 14px; }
+    .nav__links { display: flex; gap: 18px; }
     .nav__links a { color: var(--color-text-sub); font-size: 14px; }
-    @media (max-width: 600px) { .nav__links a:nth-child(n+4) { display: none; } }
+    @media (max-width: 720px) { .nav__links a:nth-child(n+5) { display: none; } }
     .nav__item { position: relative; display: flex; align-items: center; height: 52px; }
     .nav__item > a::after { content: "▾"; font-size: 9px; margin-left: 4px; opacity: .5; }
     .nav__drop { position: absolute; top: 100%; left: 0; padding-top: 8px; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .16s ease, transform .16s ease, visibility .16s; z-index: 60; }
@@ -113,7 +114,7 @@
     .nav__drop a:hover { background: rgba(0,0,0,0.05); text-decoration: none; }
     @media (prefers-color-scheme: dark) { .nav__drop a:hover { background: rgba(255,255,255,0.07); } }
     .nav__drop a span { display: block; font-size: 11px; font-weight: 400; color: var(--color-text-mute); margin-top: 1px; }
-    @media (max-width: 600px) { .nav__item { height: auto; } .nav__drop { display: none; } }
+    @media (max-width: 720px) { .nav__item { height: auto; } .nav__drop { display: none; } }
 
     /* Hero */
     .hero { padding: var(--space-6) 0 var(--space-5); text-align: center; }
@@ -123,7 +124,7 @@
       line-height: 1.1; letter-spacing: -0.02em; font-weight: 700;
       margin: var(--space-3) 0 var(--space-2);
     }
-    .hero__sub { font-size: clamp(17px, 2.2vw, 21px); color: var(--color-text-sub); max-width: 640px; margin: 0 auto; }
+    .hero__sub { font-size: clamp(17px, 2.2vw, 21px); color: var(--color-text-sub); max-width: 660px; margin: 0 auto; }
     .stats { display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap; margin-top: var(--space-4); }
     .stat { background: var(--color-surface); border-radius: var(--radius-md); padding: 16px 24px; box-shadow: var(--color-shadow); min-width: 140px; }
     .stat__num { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
@@ -134,9 +135,10 @@
     .section__head { margin-bottom: var(--space-4); }
     .section__eyebrow { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
     .section__title { font-size: clamp(28px, 4vw, 40px); letter-spacing: -0.02em; font-weight: 700; margin-top: 6px; }
-    .section__lead { font-size: 17px; color: var(--color-text-sub); margin-top: 8px; max-width: 640px; }
+    .section__lead { font-size: 17px; color: var(--color-text-sub); margin-top: 8px; max-width: 660px; }
     .eyebrow-health { color: var(--color-health); }
     .eyebrow-life   { color: var(--color-life); }
+    .eyebrow-money  { color: var(--color-money); }
     .eyebrow-work   { color: var(--color-work); }
 
     /* Pickup (Today-style large card) */
@@ -200,15 +202,20 @@
     .icon-lifeweeks    { background: linear-gradient(135deg, #34406B, #E8935A); }
     .icon-jamalog      { background: linear-gradient(135deg, #2C6E63, #D99A4E); }
     .icon-kimekabu     { background: linear-gradient(135deg, #2C3040, #C9A227); }
+    .icon-saqrlog      { background: linear-gradient(135deg, #7a5230, #c67a32); }
+    .icon-muddah       { background: linear-gradient(135deg, #475569, #C9A24B); }
+    .icon-sonalog      { background: linear-gradient(135deg, #2f8f6b, #eab308); }
     .chip-soon { background: rgba(142,142,147,0.18); color: var(--color-text-mute); }
     .card__title { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
     .card__sub   { font-size: 13px; color: var(--color-text-mute); margin-top: 2px; }
     .chip { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.06em; }
     .chip-health { background: rgba(52,199,89,0.14); color: var(--color-health); }
     .chip-life   { background: rgba(255,159,10,0.16); color: #b3650a; }
+    .chip-money  { background: rgba(94,92,230,0.14); color: var(--color-money); }
     .chip-work   { background: rgba(10,132,255,0.12); color: var(--color-work); }
     @media (prefers-color-scheme: dark) {
-      .chip-life { color: #ffb84d; }
+      .chip-life  { color: #ffb84d; }
+      .chip-money { color: #a5a3ff; }
     }
     .card__desc { color: var(--color-text-sub); font-size: 15px; flex-grow: 1; }
     .card__actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
@@ -223,7 +230,7 @@
     .btn--primary:hover { opacity: 0.85; background: var(--color-text); }
 
     /* Concept / FAQ */
-    .concept { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-bottom: var(--space-4); }
+    .concept { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: var(--space-4); }
     .concept__item { background: var(--color-surface); padding: var(--space-3); border-radius: var(--radius-md); box-shadow: var(--color-shadow); }
     .concept__icon { font-size: 28px; }
     .concept__title { font-size: 18px; font-weight: 700; margin: 10px 0 6px; }
@@ -249,7 +256,7 @@
     "name": "freetokyo apps",
     "url": "https://freetokyo.github.io/web/",
     "logo": "https://freetokyo.github.io/web/iekan/ogp.png",
-    "description": "個人開発者 freetokyo がつくる、健康・生活・仕事に役立つ iOS アプリのポートフォリオ。",
+    "description": "個人開発者 freetokyo がつくる、端末内で完結する iOS アプリの道具箱。健康・くらし・おかね・しごとの 4 領域。",
     "sameAs": [
       "https://github.com/freetokyo"
     ]
@@ -261,13 +268,13 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "freetokyo apps — 健康・生活・仕事に効く iOS アプリ集",
+    "name": "freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集",
     "url": "https://freetokyo.github.io/web/",
     "inLanguage": "ja",
-    "description": "個人開発者 freetokyo がリリースしている iOS アプリ 25 本のポートフォリオ。健康・生活・仕事の 3 カテゴリで横断的に紹介。",
+    "description": "個人開発者 freetokyo がリリースしている iOS アプリ 28 本のポートフォリオ。健康・くらし・おかね・しごとの 4 カテゴリで横断的に紹介。",
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 25,
+      "numberOfItems": 28,
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "item": {"@type": "SoftwareApplication", "name": "RecoverySync", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/recoverysync/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 2, "item": {"@type": "SoftwareApplication", "name": "SaunaFlow", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/saunaflow/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
@@ -276,24 +283,27 @@
         {"@type": "ListItem", "position": 5, "item": {"@type": "SoftwareApplication", "name": "IeKan", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/iekan/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 6, "item": {"@type": "SoftwareApplication", "name": "PrintSummary", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/printmemo/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 7, "item": {"@type": "SoftwareApplication", "name": "Miawell", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/miawell/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "HomeNetNavi", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/homenetnavi/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "CareHours", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/carehours/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 10, "item": {"@type": "SoftwareApplication", "name": "Genbalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/genbalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 11, "item": {"@type": "SoftwareApplication", "name": "hanro", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hanro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 12, "item": {"@type": "SoftwareApplication", "name": "Mochiru", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/mochiru/", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 13, "item": {"@type": "SoftwareApplication", "name": "Sukushori", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sukushori/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 14, "item": {"@type": "SoftwareApplication", "name": "Toscore", "applicationCategory": "SportsApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/toscore/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 15, "item": {"@type": "SoftwareApplication", "name": "Heyalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/heyalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 16, "item": {"@type": "SoftwareApplication", "name": "Jitsuhiro", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jitsuhiro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 17, "item": {"@type": "SoftwareApplication", "name": "Keihiba", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/keihiba/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 18, "item": {"@type": "SoftwareApplication", "name": "Koegaki", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/koegaki/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 19, "item": {"@type": "SoftwareApplication", "name": "Yuzuri", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuzuri/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 21, "item": {"@type": "SoftwareApplication", "name": "Zaicho", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/zaicho/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 22, "item": {"@type": "SoftwareApplication", "name": "Dartrack", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/dartrack/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 23, "item": {"@type": "SoftwareApplication", "name": "Weekwise", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lifeweeks/", "offers": {"@type": "Offer", "price": "7.99", "priceCurrency": "USD"}}},
-        {"@type": "ListItem", "position": 24, "item": {"@type": "SoftwareApplication", "name": "Jamalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jamalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 25, "item": {"@type": "SoftwareApplication", "name": "Kimekabu", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kimekabu/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}
+        {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "Sukushori", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sukushori/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "Heyalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/heyalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 10, "item": {"@type": "SoftwareApplication", "name": "Jitsuhiro", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jitsuhiro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 11, "item": {"@type": "SoftwareApplication", "name": "Yuzuri", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuzuri/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 12, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 13, "item": {"@type": "SoftwareApplication", "name": "Weekwise", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lifeweeks/", "offers": {"@type": "Offer", "price": "7.99", "priceCurrency": "USD"}}},
+        {"@type": "ListItem", "position": 14, "item": {"@type": "SoftwareApplication", "name": "Jamalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jamalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 15, "item": {"@type": "SoftwareApplication", "name": "Saqrlog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/saqrlog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 16, "item": {"@type": "SoftwareApplication", "name": "Muddah", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/muddah/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 17, "item": {"@type": "SoftwareApplication", "name": "Sonalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sonalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 18, "item": {"@type": "SoftwareApplication", "name": "HomeNetNavi", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/homenetnavi/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 19, "item": {"@type": "SoftwareApplication", "name": "Mochiru", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/mochiru/", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "Zaicho", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/zaicho/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 21, "item": {"@type": "SoftwareApplication", "name": "Keihiba", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/keihiba/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 22, "item": {"@type": "SoftwareApplication", "name": "Kimekabu", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kimekabu/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 23, "item": {"@type": "SoftwareApplication", "name": "CareHours", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/carehours/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 24, "item": {"@type": "SoftwareApplication", "name": "Genbalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/genbalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 25, "item": {"@type": "SoftwareApplication", "name": "hanro", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hanro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 26, "item": {"@type": "SoftwareApplication", "name": "Toscore", "applicationCategory": "SportsApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/toscore/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 27, "item": {"@type": "SoftwareApplication", "name": "Koegaki", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/koegaki/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 28, "item": {"@type": "SoftwareApplication", "name": "Dartrack", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/dartrack/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}
       ]
     }
   }
@@ -305,9 +315,10 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "freetokyo apps とは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "個人開発者 freetokyo がつくっている iOS アプリの集合体です。健康・生活・仕事の 3 つの領域で、日々の手間を少し軽くする小さな道具を提供しています。"}},
-      {"@type": "Question", "name": "健康カテゴリにはどんなアプリがありますか？", "acceptedAnswer": {"@type": "Answer", "text": "リカバリースコアを記録する RecoverySync、サウナ・水風呂タイマーの SaunaFlow、筋トレ記録の Trero、生理周期と筋トレを一緒に管理する TsukiLift の 4 つがあります。"}},
-      {"@type": "Question", "name": "無料で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "基本機能はすべて無料で使えます。継続的な開発・運用・サポートを支えるため、コーヒー一杯前後の価格でサブスクリプションまたは買い切りのプレミアム機能を提供しているアプリがあります。プレミアムにしなくても日常利用に十分な体験ができるよう設計しています。"}}
+      {"@type": "Question", "name": "freetokyo apps とは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "個人開発者 freetokyo がつくっている iOS アプリの集合体です。健康・くらし・おかね・しごとの 4 つの領域で、日々の手間を少し軽くする小さな道具を 28 本提供しています。多くが完全オフラインで、アカウント登録もデータ収集もありません。"}},
+      {"@type": "Question", "name": "どんなカテゴリがありますか？", "acceptedAnswer": {"@type": "Answer", "text": "健康（リカバリー・サウナ・筋トレ・生理周期）、くらし・家族（実家見守り・猫・書類・賃貸・終活・介護・防災・海外のくらし）、おかね（年収の壁・資産寿命・財産目録・経費・株の判断）、しごと（訪問介護・現場報告・配達・議事録・スコアシート）の 4 カテゴリです。"}},
+      {"@type": "Question", "name": "無料で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "基本機能はすべて無料で使えます。継続的な開発・運用・サポートを支えるため、コーヒー一杯前後の価格で買い切り、または一部サブスクのプレミアム機能を提供しているアプリがあります。プレミアムにしなくても日常利用に十分な体験ができるよう設計しています。"}},
+      {"@type": "Question", "name": "データのプライバシーはどうなっていますか？", "acceptedAnswer": {"@type": "Answer", "text": "多くのアプリが完全オフライン、あるいは iCloud などユーザー本人のクラウドのみを利用する設計で、開発者のサーバーへデータを送信しません。詳細は各アプリのプライバシーポリシーをご確認ください。"}}
     ]
   }
   </script>
@@ -333,32 +344,40 @@
         </div></div>
       </div>
       <div class="nav__item">
-        <a href="#life">生活</a>
+        <a href="#life">くらし</a>
         <div class="nav__drop"><div class="nav__drop-inner">
           <a href="./iekan/">IeKan（家看）<span>実家を家族で見守る</span></a>
           <a href="./printmemo/">PrintSummary<span>学校プリント整理 × OCR</span></a>
           <a href="./miawell/">Miawell<span>猫専用ヘルスケア</span></a>
-          <a href="./homenetnavi/">世帯手取ナビ<span>年収の壁シミュレーター</span></a>
-          <a href="./mochiru/">Mochiru<span>資産寿命シミュレーター</span></a>
           <a href="./sukushori/">スクショリ<span>スクショ自動仕分け</span></a>
           <a href="./heyalog/">ヘヤログ<span>賃貸原状回復の記録</span></a>
           <a href="./jitsuhiro/">ジツヒロ<span>間取り図の有効面積</span></a>
           <a href="./yuzuri/">Yuzuri<span>終活ノート</span></a>
           <a href="./hitorilog/">HitoriLog<span>ひとり介護のケア記録</span></a>
-          <a href="./zaicho/">Zaicho<span>財産目録・相続税概算</span></a>
           <a href="./lifeweeks/">Weekwise<span>人生を週で記録</span></a>
           <a href="./jamalog/">Jamalog<span>ラクダのための台帳</span></a>
+          <a href="./saqrlog/">Saqrlog<span>鷹匠のための記録</span></a>
+          <a href="./muddah/">Muddah<span>駐在家族の書類期限（GCC）</span></a>
+          <a href="./sonalog/">ソナログ<span>家庭防災 × 備蓄</span></a>
+        </div></div>
+      </div>
+      <div class="nav__item">
+        <a href="#money">おかね</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="./homenetnavi/">世帯手取ナビ<span>年収の壁シミュレーター</span></a>
+          <a href="./mochiru/">Mochiru<span>資産寿命シミュレーター</span></a>
+          <a href="./zaicho/">Zaicho<span>財産目録・相続税概算</span></a>
+          <a href="./keihiba/">Keihiba<span>経費レシート整理</span></a>
           <a href="./kimekabu/">キメカブ<span>株の売買判断ノート</span></a>
         </div></div>
       </div>
       <div class="nav__item">
-        <a href="#work">仕事</a>
+        <a href="#work">しごと</a>
         <div class="nav__drop"><div class="nav__drop-inner">
           <a href="./carehours/">CareHours<span>訪問介護ヘルパー給与</span></a>
           <a href="./genbalog/">Genbalog<span>60秒で現場報告書</span></a>
           <a href="./hanro/">hanro<span>配達ドライバー収支</span></a>
           <a href="./toscore/">Toscore<span>ミニバス スコアシート</span></a>
-          <a href="./keihiba/">Keihiba<span>経費レシート整理</span></a>
           <a href="./koegaki/">Koegaki<span>オンデバイス議事メモ</span></a>
           <a href="./dartrack/">Dartrack<span>家事使用人の記録（UAE）</span></a>
         </div></div>
@@ -372,12 +391,12 @@
 <!-- ===== HERO ===== -->
 <header class="hero">
   <div class="container">
-    <span class="badge">🏋️ Trero — 筋トレ記録の決定版が新登場</span>
+    <span class="badge">🔒 ぜんぶ端末内。28 の小さな道具箱</span>
     <h1>あなたの毎日を、<br>少しだけ軽くする道具を。</h1>
-    <p class="hero__sub">睡眠も、サウナも、実家も、猫も、家計も、スクショも、賃貸も、現場も、終活も、介護も。日常のあちこちにある小さな手間を、25 の iOS アプリでまとめて整えます。</p>
+    <p class="hero__sub">睡眠も、サウナも、家族も、猫も、家計も、資産も、書類も、防災も、現場も、介護も。日常のあちこちにある小さな手間を、28 の iOS アプリで整えます。多くが完全オフライン・アカウント不要・買い切り。</p>
     <div class="stats" aria-label="サイト統計">
-      <div class="stat"><div class="stat__num">25</div><div class="stat__label">公開アプリ</div></div>
-      <div class="stat"><div class="stat__num">3</div><div class="stat__label">カテゴリ</div></div>
+      <div class="stat"><div class="stat__num">28</div><div class="stat__label">公開アプリ</div></div>
+      <div class="stat"><div class="stat__num">4</div><div class="stat__label">カテゴリ</div></div>
       <div class="stat"><div class="stat__num">iOS</div><div class="stat__label">iPhone / Apple Watch</div></div>
     </div>
   </div>
@@ -481,9 +500,9 @@
 <section class="section" id="life" aria-labelledby="life-title">
   <div class="container">
     <div class="section__head">
-      <div class="section__eyebrow eyebrow-life">Life · 生活・家族</div>
-      <h2 class="section__title" id="life-title">家のこと、家族のことを、忘れない仕組みを</h2>
-      <p class="section__lead">紙のプリント、離れた実家、書類の山、猫の体調、家計の壁、未来の資産、埋もれたスクショ、賃貸の入退去、終活、ひとり介護。家族みんなで分担しやすいかたちに整理します。</p>
+      <div class="section__eyebrow eyebrow-life">Life · くらし・家族</div>
+      <h2 class="section__title" id="life-title">家と家族のこと、暮らしの記録を、忘れない仕組みに</h2>
+      <p class="section__lead">実家、猫、書類、賃貸、終活、ひとり介護、家庭防災、そして海外のくらしまで。家族みんなで分担しやすいかたちに整理します。</p>
     </div>
     <div class="cards">
       <article class="card">
@@ -493,7 +512,7 @@
             <h3 class="card__title">IeKan（家看）</h3>
             <div class="card__sub">実家を家族みんなで見守る</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。離れて暮らす実家の状態を、家族で分担しながら見守れます。</p>
         <div class="card__actions">
@@ -509,7 +528,7 @@
             <h3 class="card__title">PrintSummary / プリサマ</h3>
             <div class="card__sub">学校プリント整理 × OCR</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理。冷蔵庫に貼られた紙の山を、家族みんなのカレンダーに変えます。</p>
         <div class="card__actions">
@@ -525,7 +544,7 @@
             <h3 class="card__title">Miawell</h3>
             <div class="card__sub">猫専用ヘルスケア × AI写真判定</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">愛猫の体調を毎日スマートに記録。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで小さな異変を見逃しません。</p>
         <div class="card__actions">
@@ -536,44 +555,12 @@
 
       <article class="card">
         <div class="card__top">
-          <div class="card__icon icon-homenetnavi" aria-hidden="true">🧮</div>
-          <div>
-            <h3 class="card__title">世帯手取ナビ（HomeNet Navi）</h3>
-            <div class="card__sub">2026年制度対応「年収の壁」シミュレーター</div>
-          </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
-        </div>
-        <p class="card__desc">2026 年制度に正確対応した年収の壁シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化し、手取り最大シナリオを提案します。</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="./homenetnavi/">詳しく見る</a>
-          <a class="btn" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
-          <div class="card__icon icon-mochiru" aria-hidden="true">📈</div>
-          <div>
-            <h3 class="card__title">Mochiru</h3>
-            <div class="card__sub">資産寿命シミュレーター × Monte Carlo</div>
-          </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
-        </div>
-        <p class="card__desc">積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算。株安×円高の同時クラッシュ相関を保持し、完全オフライン・口座連携なしで資産寿命を可視化します。</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="./mochiru/">詳しく見る</a>
-          <a class="btn" href="https://apps.apple.com/jp/app/id6778235888" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
           <div class="card__icon icon-sukushori" aria-hidden="true">📸</div>
           <div>
             <h3 class="card__title">スクショリ</h3>
             <div class="card__sub">スクショ自動仕分け × 端末内 AI</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">撮ったまま埋もれるスクリーンショットを、端末内の AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。完全オフライン・データ収集なし・買い切り・広告なし。</p>
         <div class="card__actions">
@@ -589,7 +576,7 @@
             <h3 class="card__title">ヘヤログ（Heyalog）</h3>
             <div class="card__sub">賃貸入退去の原状回復記録 × 国交省準拠 PDF</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">賃貸の入居・退去時の部屋状態を写真で記録し、国土交通省ガイドライン準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で「言った・言わない」を防ぎ、敷金を守ります。完全オフライン・買い切り。</p>
         <div class="card__actions">
@@ -605,7 +592,7 @@
             <h3 class="card__title">ジツヒロ（Jitsuhiro）</h3>
             <div class="card__sub">間取り図の本当の広さチェッカー</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具を置いて動線・クリアランスも検証できます。内見・住み替えの意思決定を、図面の数字だけに頼らず確かめられます。完全オフライン・買い切り。</p>
         <div class="card__actions">
@@ -621,7 +608,7 @@
             <h3 class="card__title">Yuzuri（ユズリ）</h3>
             <div class="card__sub">完全オフラインの終活ノート</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">資産・保険・連絡先・想いを一冊のノートに残せる終活ノートアプリ。アカウント登録不要、データ収集なし、完全オフラインで完結。家族に伝えたい情報を自分のペースで整理できます。買い切り。</p>
         <div class="card__actions">
@@ -637,7 +624,7 @@
             <h3 class="card__title">ヒトリログ（HitoriLog）</h3>
             <div class="card__sub">ひとり介護者のためのケア記録</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">誰にも見せない本音メモで、介護のリアルを記録。広告なし・アカウント不要・完全オフラインで、ひとりで介護を担う人の毎日に寄り添うケア記録アプリ。買い切り・サブスクなし。</p>
         <div class="card__actions">
@@ -648,28 +635,12 @@
 
       <article class="card">
         <div class="card__top">
-          <div class="card__icon icon-zaicho" aria-hidden="true">📒</div>
-          <div>
-            <h3 class="card__title">ザイチョウ（Zaicho）</h3>
-            <div class="card__sub">自分だけの財産目録・純資産・相続税概算</div>
-          </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
-        </div>
-        <p class="card__desc">金融機関にもクラウドにも預けない、自分だけの財産目録。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで、すべて端末内で完結。完全オフライン・買い切り・広告なし。</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="./zaicho/">詳しく見る</a>
-          <a class="btn" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
           <div class="card__icon icon-lifeweeks" aria-hidden="true">🗓️</div>
           <div>
             <h3 class="card__title">Weekwise</h3>
             <div class="card__sub">人生を週で記録する週次ジャーナル</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">人生全体を週のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル。過去・現在・未来を一目で把握し、マイルストーン・バケットリスト・検索も。サブスクなし・買い切り・アカウント不要。日本語 / English 対応。</p>
         <div class="card__actions">
@@ -685,7 +656,7 @@
             <h3 class="card__title">Jamalog</h3>
             <div class="card__sub">ラクダのための完全オフライン台帳</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
         <p class="card__desc">ラクダの飼い主のための、完全オフラインの台帳アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。</p>
         <div class="card__actions">
@@ -696,12 +667,136 @@
 
       <article class="card">
         <div class="card__top">
+          <div class="card__icon icon-saqrlog" aria-hidden="true">🦅</div>
+          <div>
+            <h3 class="card__title">Saqrlog（サクルログ）</h3>
+            <div class="card__sub">鷹匠のための完全オフライン記録</div>
+          </div>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
+        </div>
+        <p class="card__desc">鷹匠のための完全オフライン台帳。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理します。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./saqrlog/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/app/id6789535072" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-muddah" aria-hidden="true">🛂</div>
+          <div>
+            <h3 class="card__title">Muddah（ムッダ）</h3>
+            <div class="card__sub">駐在家族の書類期限ボルト（GCC）</div>
+          </div>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
+        </div>
+        <p class="card__desc">GCC 駐在家族のための完全オフラインの書類期限ボルト。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぎます。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./muddah/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/app/id6790558814" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-sonalog" aria-hidden="true">🧯</div>
+          <div>
+            <h3 class="card__title">ソナログ（Sonalog）</h3>
+            <div class="card__sub">備蓄ローリングストック × 家庭防災カルテ</div>
+          </div>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
+        </div>
+        <p class="card__desc">消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつに。期限が近い備蓄を通知し、家族の人数から必要量を計算。防災カルテは PDF で持ち出せます。完全オフライン・アカウント不要・買い切り。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./sonalog/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MONEY ===== -->
+<section class="section" id="money" aria-labelledby="money-title">
+  <div class="container">
+    <div class="section__head">
+      <div class="section__eyebrow eyebrow-money">Money · おかね・家計</div>
+      <h2 class="section__title" id="money-title">お金の不安を、手元の数字で見える化する</h2>
+      <p class="section__lead">年収の壁、資産寿命、財産目録、経費、株の判断。口座に接続せず、端末内の試算だけで家計と資産の意思決定を助けます。投資助言ではなく、あくまで自分で考えるための道具です。</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-homenetnavi" aria-hidden="true">🧮</div>
+          <div>
+            <h3 class="card__title">世帯手取ナビ（HomeNet Navi）</h3>
+            <div class="card__sub">2026年制度対応「年収の壁」シミュレーター</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
+        </div>
+        <p class="card__desc">2026 年制度に正確対応した年収の壁シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化し、手取り最大シナリオを提案します。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./homenetnavi/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-mochiru" aria-hidden="true">📈</div>
+          <div>
+            <h3 class="card__title">Mochiru</h3>
+            <div class="card__sub">資産寿命シミュレーター × Monte Carlo</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
+        </div>
+        <p class="card__desc">積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算。株安×円高の同時クラッシュ相関を保持し、完全オフライン・口座連携なしで資産寿命を可視化します。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./mochiru/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/jp/app/id6778235888" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-zaicho" aria-hidden="true">📒</div>
+          <div>
+            <h3 class="card__title">ザイチョウ（Zaicho）</h3>
+            <div class="card__sub">自分だけの財産目録・純資産・相続税概算</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
+        </div>
+        <p class="card__desc">金融機関にもクラウドにも預けない、自分だけの財産目録。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで、すべて端末内で完結。完全オフライン・買い切り・広告なし。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./zaicho/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-keihiba" aria-hidden="true">🧾</div>
+          <div>
+            <h3 class="card__title">ケイヒバ（Keihiba）</h3>
+            <div class="card__sub">経費レシート整理 × ローカル完結</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
+        </div>
+        <p class="card__desc">レシート撮影と電子取引データの取り込みから、端末内 OCR で日付・金額・取引先を抽出。月次集計と CSV／PDF 書き出しで、会計ソフトの前段整理を片づけます。電子帳簿保存法への対応を支援。完全オフライン・買い切り。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./keihiba/">詳しく見る</a>
+          <a class="btn" href="https://apps.apple.com/jp/app/id6779895529" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
           <div class="card__icon icon-kimekabu" aria-hidden="true">🧭</div>
           <div>
             <h3 class="card__title">キメカブ（Kimekabu）</h3>
             <div class="card__sub">株の「売買判断」を記録するトレードノート</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">生活</span>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
         </div>
         <p class="card__desc">株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート。損益ではなく“判断の質”を振り返り、売買ルールの再現性を高めます。投資助言ではなく、あくまで自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。</p>
         <div class="card__actions">
@@ -717,9 +812,9 @@
 <section class="section" id="work" aria-labelledby="work-title">
   <div class="container">
     <div class="section__head">
-      <div class="section__eyebrow eyebrow-work">Work · 仕事</div>
+      <div class="section__eyebrow eyebrow-work">Work · しごと</div>
       <h2 class="section__title" id="work-title">現場で働く人の、事務作業を片づける</h2>
-      <p class="section__lead">介護、現場、配達、ミニバスの審判席。本業の合間に発生する記録・計算・報告を、スマホひとつで終わらせます。</p>
+      <p class="section__lead">介護、現場、配達、議事録、ミニバスの審判席。本業の合間に発生する記録・計算・報告を、スマホひとつで終わらせます。</p>
     </div>
     <div class="cards">
       <article class="card">
@@ -729,7 +824,7 @@
             <h3 class="card__title">CareHours</h3>
             <div class="card__sub">訪問介護ヘルパー給与管理</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">仕事</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
         <p class="card__desc">訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力まで。給与明細を見て初めて気づくミスを、リアルタイムで防ぎます。</p>
         <div class="card__actions">
@@ -745,7 +840,7 @@
             <h3 class="card__title">Genbalog</h3>
             <div class="card__sub">60秒で現場報告書</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">仕事</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
         <p class="card__desc">写真を撮るだけで A4 の PDF 報告書に整理。GPS タグ、手書きメモ、カスタムテンプレートに対応し、完全オフラインで現場のどこでも動きます。</p>
         <div class="card__actions">
@@ -761,7 +856,7 @@
             <h3 class="card__title">hanro</h3>
             <div class="card__sub">配達ドライバー収支管理</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">仕事</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
         <p class="card__desc">フードデリバリーと軽貨物の売上・経費をマルチプラットフォーム集計。自動マイレージ、AI 稼ぎ時予測、確定申告 CSV 出力まで完全オフラインで完結します。</p>
         <div class="card__actions">
@@ -777,7 +872,7 @@
             <h3 class="card__title">Toscore</h3>
             <div class="card__sub">ミニバス対応 デジタルスコアシート</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">仕事</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
         <p class="card__desc">テーブルオフィシャルズ（TO）のための iPad / iPhone スコアシート。能動的ルール検証とミニバス出場時間検証を搭載し、完全オフライン・データ収集なしで記録ミスを減らします。</p>
         <div class="card__actions">
@@ -788,28 +883,12 @@
 
       <article class="card">
         <div class="card__top">
-          <div class="card__icon icon-keihiba" aria-hidden="true">🧾</div>
-          <div>
-            <h3 class="card__title">ケイヒバ（Keihiba）</h3>
-            <div class="card__sub">経費レシート整理 × ローカル完結</div>
-          </div>
-          <span class="chip chip-work" style="margin-left:auto">仕事</span>
-        </div>
-        <p class="card__desc">レシート撮影と電子取引データの取り込みから、端末内 OCR で日付・金額・取引先を抽出。月次集計と CSV／PDF 書き出しで、会計ソフトの前段整理を片づけます。電子帳簿保存法への対応を支援。完全オフライン・買い切り。</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="./keihiba/">詳しく見る</a>
-          <a class="btn" href="https://apps.apple.com/jp/app/id6779895529" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
           <div class="card__icon icon-koegaki" aria-hidden="true">🎙️</div>
           <div>
             <h3 class="card__title">コエガキ（Koegaki）</h3>
             <div class="card__sub">完全オンデバイスの議事メモ</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">仕事</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
         <p class="card__desc">会議を録音し、端末内で文字起こし。AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成します。タイムコード tap で頭出し再生。録音も文字起こしも端末内で完結し、データ収集なし。フリーミアム（月 60 分無料）。</p>
         <div class="card__actions">
@@ -825,7 +904,7 @@
             <h3 class="card__title">Dartrack</h3>
             <div class="card__sub">家事使用人の記録をオフラインで（UAE）</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">仕事</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
         <p class="card__desc">UAE で家事使用人（メイド・ドライバー・ナニーなど）を雇う家庭向けの記録アプリ。ビザ・契約の期限管理、勤務時間、休暇、給与概算を端末内で管理し、CSV／PDF に書き出し。アカウント不要・サーバー同期なし・完全オフライン。English / العربية / 日本語対応。</p>
         <div class="card__actions">
@@ -843,39 +922,44 @@
     <div class="section__head">
       <div class="section__eyebrow">Our Philosophy</div>
       <h2 class="section__title" id="concept-title">小さな道具で、毎日を少し軽く</h2>
-      <p class="section__lead">健康・生活・仕事の 3 領域で、課金やデータ収集に頼らず、ひとりひとりの手元で完結する道具をつくっています。</p>
+      <p class="section__lead">健康・くらし・おかね・しごとの 4 領域で、課金やデータ収集に頼らず、ひとりひとりの手元で完結する道具をつくっています。</p>
     </div>
 
     <div class="concept">
       <div class="concept__item">
-        <div class="concept__icon" style="color: var(--color-health)">💚</div>
-        <div class="concept__title">健康：データに振り回されない</div>
-        <p class="concept__body">スコアは目安。自分の体感と並べて、長く続けられる行動を選ぶための補助線として設計しています。</p>
+        <div class="concept__icon">🔒</div>
+        <div class="concept__title">端末内で完結する</div>
+        <p class="concept__body">多くのアプリが完全オフライン。アカウント不要、データ収集なし。あなたの情報は、あなたの端末の中だけに置きます。</p>
       </div>
       <div class="concept__item">
-        <div class="concept__icon" style="color: var(--color-life)">🧡</div>
-        <div class="concept__title">生活：家族みんなで分担できる</div>
-        <p class="concept__body">ひとりに負担が偏らないよう、共有・記録・確認の流れを誰でも追えるシンプルな形にまとめます。</p>
+        <div class="concept__icon">☕️</div>
+        <div class="concept__title">コーヒー一杯の価格</div>
+        <p class="concept__body">基本機能は無料。プレミアムも買い切り中心で、コーヒー一杯前後。サブスク漬けにはしません。</p>
       </div>
       <div class="concept__item">
-        <div class="concept__icon" style="color: var(--color-work)">💙</div>
-        <div class="concept__title">仕事：本業の邪魔をしない</div>
-        <p class="concept__body">現場で働く人が、休憩 1 分でひと作業終えられる軽さ。オフラインでも使え、紙とハンコの代わりになります。</p>
+        <div class="concept__icon">👨‍👩‍👧</div>
+        <div class="concept__title">くらしと家族に寄り添う</div>
+        <p class="concept__body">実家、介護、家計、防災、終活。ひとりに負担が偏らないよう、共有・記録・確認の流れを誰でも追える形にします。</p>
+      </div>
+      <div class="concept__item">
+        <div class="concept__icon">🌏</div>
+        <div class="concept__title">日本から世界のくらしへ</div>
+        <p class="concept__body">日本語・English・العربية（RTL）ほか多言語に対応。GCC 圏で暮らす家族のためのアプリもつくっています。</p>
       </div>
     </div>
 
     <div class="faq" aria-label="よくある質問">
       <details>
         <summary>freetokyo apps とは何ですか？</summary>
-        <p>個人開発者 freetokyo がつくっている iOS アプリの集合体です。健康・生活・仕事の 3 つの領域で、日々の手間を少し軽くする小さな道具を提供しています。</p>
+        <p>個人開発者 freetokyo がつくっている iOS アプリの集合体です。健康・くらし・おかね・しごとの 4 つの領域で、日々の手間を少し軽くする小さな道具を 28 本提供しています。</p>
       </details>
       <details>
         <summary>無料で使えますか？</summary>
-        <p>基本機能はすべて無料で使えます。継続的な開発・運用・サポートと改善を支えるため、コーヒー一杯前後の価格でサブスクリプションまたは買い切りのプレミアム機能を提供しているアプリがあります。プレミアムにしなくても、日常利用に十分な体験ができるよう設計しています。</p>
+        <p>基本機能はすべて無料で使えます。継続的な開発・運用・サポートと改善を支えるため、コーヒー一杯前後の価格で買い切り、または一部サブスクのプレミアム機能を提供しているアプリがあります。プレミアムにしなくても、日常利用に十分な体験ができるよう設計しています。</p>
       </details>
       <details>
         <summary>個人情報やデータの扱いはどうなっていますか？</summary>
-        <p>多くのアプリが完全オフライン、あるいは iCloud などユーザー本人のクラウドのみを利用する設計です。詳細は各アプリのプライバシーポリシーをご確認ください。</p>
+        <p>多くのアプリが完全オフライン、あるいは iCloud などユーザー本人のクラウドのみを利用する設計で、開発者のサーバーへデータを送信しません。詳細は各アプリのプライバシーポリシーをご確認ください。</p>
       </details>
     </div>
   </div>

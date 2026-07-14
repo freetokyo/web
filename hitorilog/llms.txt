@@ -4,9 +4,9 @@
 
 App Store: https://apps.apple.com/app/id6785472192
 Web: https://freetokyo.github.io/web/hitorilog/
-開発者: freetokyo（CHEN YANGLI）
+開発者: freetokyo
 対応: iOS 18.0 以降 / 価格: 基本無料（プレミアム機能は買い切り・サブスクなし）
-最終更新: 2026-07-01
+最終更新: 2026-07
 
 ## 主な機能
 - 体温・血圧・水分・食事・服薬・排泄・睡眠・気分の8項目記録

@@ -4,9 +4,9 @@
 
 App Store: https://apps.apple.com/jp/app/id6770864162
 Web: https://freetokyo.github.io/web/genbalog/
-開発者: freetokyo（YANGLI CHEN）
+開発者: freetokyo
 バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06-15
+最終更新: 2026-06
 
 ## 主な機能
 - 現場写真をワンタップでPDF化

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>freetokyo apps — iOS apps for health, life &amp; work</title>
-  <meta name="description" content="A portfolio of iOS apps by indie developer freetokyo. Sleep recovery, sauna timer, strength training, watching over a family home, school-printout organizing, cat healthcare, income-threshold simulator, asset-longevity simulator, screenshot triage, rental move-in/out records, home-care payroll, on-site reports, delivery-driver income, mini-basketball scoresheet, floor-plan effective area, expense receipts, on-device meeting notes, end-of-life notebook, solo-caregiver logs, estate inventory and household-staff records — 25 small tools on one page.">
+  <title>freetokyo apps — iOS apps for health, life, money &amp; work</title>
+  <meta name="description" content="A portfolio of 28 iOS apps by indie developer freetokyo — small tools that stay on your device. Across health, life, money and work: sleep recovery, sauna timer, strength training, menstrual-cycle training, family-home watch, school-printout OCR, cat healthcare, screenshot triage, rental move-in/out records, floor-plan effective area, end-of-life notebook, solo-caregiver logs, weekly journal, camel logbook, falconry records, GCC family document-expiry vault, household disaster-prep, income-threshold simulator, asset-longevity simulator, estate inventory, expense receipts, stock trade-decision journal, home-care payroll, on-site reports, delivery income, meeting notes, mini-basketball scoresheet and household-staff records. Most are fully offline, no account, one-time purchase.">
   <meta name="theme-color" content="#0A84FF">
   <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://freetokyo.github.io/web/en/">
@@ -15,8 +15,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="freetokyo apps">
-  <meta property="og:title" content="freetokyo apps — iOS apps for health, life &amp; work">
-  <meta property="og:description" content="25 iOS apps that make your everyday a little lighter. A portfolio across three axes: health, life and work.">
+  <meta property="og:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
+  <meta property="og:description" content="28 iOS apps that make your everyday a little lighter. A portfolio across four axes: health, life, money and work. Most are fully offline, no account, one-time purchase.">
   <meta property="og:url" content="https://freetokyo.github.io/web/en/">
   <meta property="og:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
   <meta property="og:locale" content="en_US">
@@ -24,8 +24,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="freetokyo apps — iOS apps for health, life &amp; work">
-  <meta name="twitter:description" content="25 iOS apps that make your everyday a little lighter.">
+  <meta name="twitter:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
+  <meta name="twitter:description" content="28 iOS apps that make your everyday a little lighter — across health, life, money and work.">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
 
   <!-- Favicon (emoji as SVG) -->
@@ -43,6 +43,7 @@
       --color-shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 16px 40px rgba(0,0,0,0.12);
       --color-health: #34C759;
       --color-life:   #FF9F0A;
+      --color-money:  #5E5CE6;
       --color-work:   #0A84FF;
       --color-accent: #0A84FF;
       --radius-sm: 12px;
@@ -100,10 +101,10 @@
     .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 52px; }
     .nav__brand { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-text); }
     .nav__brand:hover { text-decoration: none; }
-    .nav__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, #0A84FF 0%, #34C759 50%, #FF9F0A 100%); display: grid; place-items: center; color: white; font-weight: 700; font-size: 14px; }
-    .nav__links { display: flex; gap: 20px; }
+    .nav__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, #0A84FF 0%, #34C759 40%, #5E5CE6 70%, #FF9F0A 100%); display: grid; place-items: center; color: white; font-weight: 700; font-size: 14px; }
+    .nav__links { display: flex; gap: 18px; }
     .nav__links a { color: var(--color-text-sub); font-size: 14px; }
-    @media (max-width: 600px) { .nav__links a:nth-child(n+4) { display: none; } }
+    @media (max-width: 720px) { .nav__links a:nth-child(n+5) { display: none; } }
     .nav__item { position: relative; display: flex; align-items: center; height: 52px; }
     .nav__item > a::after { content: "▾"; font-size: 9px; margin-left: 4px; opacity: .5; }
     .nav__drop { position: absolute; top: 100%; left: 0; padding-top: 8px; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .16s ease, transform .16s ease, visibility .16s; z-index: 60; }
@@ -113,7 +114,7 @@
     .nav__drop a:hover { background: rgba(0,0,0,0.05); text-decoration: none; }
     @media (prefers-color-scheme: dark) { .nav__drop a:hover { background: rgba(255,255,255,0.07); } }
     .nav__drop a span { display: block; font-size: 11px; font-weight: 400; color: var(--color-text-mute); margin-top: 1px; }
-    @media (max-width: 600px) { .nav__item { height: auto; } .nav__drop { display: none; } }
+    @media (max-width: 720px) { .nav__item { height: auto; } .nav__drop { display: none; } }
 
     /* Hero */
     .hero { padding: var(--space-6) 0 var(--space-5); text-align: center; }
@@ -123,7 +124,7 @@
       line-height: 1.1; letter-spacing: -0.02em; font-weight: 700;
       margin: var(--space-3) 0 var(--space-2);
     }
-    .hero__sub { font-size: clamp(17px, 2.2vw, 21px); color: var(--color-text-sub); max-width: 640px; margin: 0 auto; }
+    .hero__sub { font-size: clamp(17px, 2.2vw, 21px); color: var(--color-text-sub); max-width: 660px; margin: 0 auto; }
     .stats { display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap; margin-top: var(--space-4); }
     .stat { background: var(--color-surface); border-radius: var(--radius-md); padding: 16px 24px; box-shadow: var(--color-shadow); min-width: 140px; }
     .stat__num { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
@@ -134,9 +135,10 @@
     .section__head { margin-bottom: var(--space-4); }
     .section__eyebrow { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
     .section__title { font-size: clamp(28px, 4vw, 40px); letter-spacing: -0.02em; font-weight: 700; margin-top: 6px; }
-    .section__lead { font-size: 17px; color: var(--color-text-sub); margin-top: 8px; max-width: 640px; }
+    .section__lead { font-size: 17px; color: var(--color-text-sub); margin-top: 8px; max-width: 660px; }
     .eyebrow-health { color: var(--color-health); }
     .eyebrow-life   { color: var(--color-life); }
+    .eyebrow-money  { color: var(--color-money); }
     .eyebrow-work   { color: var(--color-work); }
 
     /* Pickup (Today-style large card) */
@@ -200,15 +202,20 @@
     .icon-lifeweeks    { background: linear-gradient(135deg, #34406B, #E8935A); }
     .icon-jamalog      { background: linear-gradient(135deg, #2C6E63, #D99A4E); }
     .icon-kimekabu     { background: linear-gradient(135deg, #2C3040, #C9A227); }
+    .icon-saqrlog      { background: linear-gradient(135deg, #7a5230, #c67a32); }
+    .icon-muddah       { background: linear-gradient(135deg, #475569, #C9A24B); }
+    .icon-sonalog      { background: linear-gradient(135deg, #2f8f6b, #eab308); }
     .chip-soon { background: rgba(142,142,147,0.18); color: var(--color-text-mute); }
     .card__title { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
     .card__sub   { font-size: 13px; color: var(--color-text-mute); margin-top: 2px; }
     .chip { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.06em; }
     .chip-health { background: rgba(52,199,89,0.14); color: var(--color-health); }
     .chip-life   { background: rgba(255,159,10,0.16); color: #b3650a; }
+    .chip-money  { background: rgba(94,92,230,0.14); color: var(--color-money); }
     .chip-work   { background: rgba(10,132,255,0.12); color: var(--color-work); }
     @media (prefers-color-scheme: dark) {
-      .chip-life { color: #ffb84d; }
+      .chip-life  { color: #ffb84d; }
+      .chip-money { color: #a5a3ff; }
     }
     .card__desc { color: var(--color-text-sub); font-size: 15px; flex-grow: 1; }
     .card__actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
@@ -223,7 +230,7 @@
     .btn--primary:hover { opacity: 0.85; background: var(--color-text); }
 
     /* Concept / FAQ */
-    .concept { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-bottom: var(--space-4); }
+    .concept { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: var(--space-4); }
     .concept__item { background: var(--color-surface); padding: var(--space-3); border-radius: var(--radius-md); box-shadow: var(--color-shadow); }
     .concept__icon { font-size: 28px; }
     .concept__title { font-size: 18px; font-weight: 700; margin: 10px 0 6px; }
@@ -248,7 +255,7 @@
     "name": "freetokyo apps",
     "url": "https://freetokyo.github.io/web/",
     "logo": "https://freetokyo.github.io/web/iekan/ogp.png",
-    "description": "A portfolio of iOS apps by indie developer freetokyo, useful across health, life and work.",
+    "description": "A portfolio of iOS apps by indie developer freetokyo that stay on your device, useful across health, life, money and work.",
     "sameAs": ["https://github.com/freetokyo"]
   }
   </script>
@@ -258,13 +265,13 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "freetokyo apps — iOS apps for health, life & work",
+    "name": "freetokyo apps — iOS apps for health, life, money & work",
     "url": "https://freetokyo.github.io/web/en/",
     "inLanguage": "en",
-    "description": "A portfolio of 25 iOS apps released by indie developer freetokyo, spanning the three categories of health, life and work.",
+    "description": "A portfolio of 28 iOS apps released by indie developer freetokyo, spanning the four categories of health, life, money and work.",
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 25,
+      "numberOfItems": 28,
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "item": {"@type": "SoftwareApplication", "name": "RecoverySync", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/recoverysync/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 2, "item": {"@type": "SoftwareApplication", "name": "SaunaFlow", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/saunaflow/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
@@ -273,24 +280,27 @@
         {"@type": "ListItem", "position": 5, "item": {"@type": "SoftwareApplication", "name": "IeKan", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/iekan/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 6, "item": {"@type": "SoftwareApplication", "name": "PrintSummary", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/printmemo/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
         {"@type": "ListItem", "position": 7, "item": {"@type": "SoftwareApplication", "name": "Miawell", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/miawell/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "HomeNetNavi", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/homenetnavi/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "CareHours", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/carehours/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 10, "item": {"@type": "SoftwareApplication", "name": "Genbalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/genbalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 11, "item": {"@type": "SoftwareApplication", "name": "hanro", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hanro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 12, "item": {"@type": "SoftwareApplication", "name": "Mochiru", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/mochiru/", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 13, "item": {"@type": "SoftwareApplication", "name": "Sukushori", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sukushori/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 14, "item": {"@type": "SoftwareApplication", "name": "Toscore", "applicationCategory": "SportsApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/toscore/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 15, "item": {"@type": "SoftwareApplication", "name": "Heyalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/heyalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 16, "item": {"@type": "SoftwareApplication", "name": "Jitsuhiro", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jitsuhiro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 17, "item": {"@type": "SoftwareApplication", "name": "Keihiba", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/keihiba/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 18, "item": {"@type": "SoftwareApplication", "name": "Koegaki", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/koegaki/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 19, "item": {"@type": "SoftwareApplication", "name": "Yuzuri", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuzuri/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 21, "item": {"@type": "SoftwareApplication", "name": "Zaicho", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/zaicho/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 22, "item": {"@type": "SoftwareApplication", "name": "Dartrack", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/dartrack/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 23, "item": {"@type": "SoftwareApplication", "name": "Weekwise", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lifeweeks/", "offers": {"@type": "Offer", "price": "7.99", "priceCurrency": "USD"}}},
-        {"@type": "ListItem", "position": 24, "item": {"@type": "SoftwareApplication", "name": "Jamalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jamalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
-        {"@type": "ListItem", "position": 25, "item": {"@type": "SoftwareApplication", "name": "Kimekabu", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kimekabu/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}
+        {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "Sukushori", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sukushori/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "Heyalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/heyalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 10, "item": {"@type": "SoftwareApplication", "name": "Jitsuhiro", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jitsuhiro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 11, "item": {"@type": "SoftwareApplication", "name": "Yuzuri", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuzuri/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 12, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 13, "item": {"@type": "SoftwareApplication", "name": "Weekwise", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lifeweeks/", "offers": {"@type": "Offer", "price": "7.99", "priceCurrency": "USD"}}},
+        {"@type": "ListItem", "position": 14, "item": {"@type": "SoftwareApplication", "name": "Jamalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jamalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 15, "item": {"@type": "SoftwareApplication", "name": "Saqrlog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/saqrlog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 16, "item": {"@type": "SoftwareApplication", "name": "Muddah", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/muddah/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 17, "item": {"@type": "SoftwareApplication", "name": "Sonalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sonalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 18, "item": {"@type": "SoftwareApplication", "name": "HomeNetNavi", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/homenetnavi/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 19, "item": {"@type": "SoftwareApplication", "name": "Mochiru", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/mochiru/", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "Zaicho", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/zaicho/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 21, "item": {"@type": "SoftwareApplication", "name": "Keihiba", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/keihiba/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 22, "item": {"@type": "SoftwareApplication", "name": "Kimekabu", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kimekabu/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 23, "item": {"@type": "SoftwareApplication", "name": "CareHours", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/carehours/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 24, "item": {"@type": "SoftwareApplication", "name": "Genbalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/genbalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 25, "item": {"@type": "SoftwareApplication", "name": "hanro", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hanro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 26, "item": {"@type": "SoftwareApplication", "name": "Toscore", "applicationCategory": "SportsApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/toscore/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 27, "item": {"@type": "SoftwareApplication", "name": "Koegaki", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/koegaki/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}},
+        {"@type": "ListItem", "position": 28, "item": {"@type": "SoftwareApplication", "name": "Dartrack", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/dartrack/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}
       ]
     }
   }
@@ -302,8 +312,10 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "What is freetokyo apps?", "acceptedAnswer": {"@type": "Answer", "text": "A collection of iOS apps built by indie developer freetokyo. Across three areas — health, life and work — it offers small tools that make daily chores a little lighter."}},
-      {"@type": "Question", "name": "Is it free to use?", "acceptedAnswer": {"@type": "Answer", "text": "All core features are free. To support ongoing development, operation, support and improvement, some apps offer premium features via subscription or one-time purchase, at around the price of a cup of coffee. They are designed so you get a fully sufficient experience for everyday use without going premium."}}
+      {"@type": "Question", "name": "What is freetokyo apps?", "acceptedAnswer": {"@type": "Answer", "text": "A collection of iOS apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 28 small tools that make daily chores a little lighter. Most are fully offline, with no account and no data collection."}},
+      {"@type": "Question", "name": "What categories are there?", "acceptedAnswer": {"@type": "Answer", "text": "Health (recovery, sauna, strength, cycle), Life & Family (family home, cat, documents, rentals, end-of-life, caregiving, disaster-prep, life abroad), Money (income thresholds, asset longevity, estate inventory, expenses, trade decisions) and Work (home care, on-site reports, delivery, meeting notes, scoresheets)."}},
+      {"@type": "Question", "name": "Is it free to use?", "acceptedAnswer": {"@type": "Answer", "text": "All core features are free. To support ongoing development, operation and support, some apps offer premium features via one-time purchase, or occasionally subscription, at around the price of a cup of coffee. They are designed so you get a fully sufficient experience for everyday use without going premium."}},
+      {"@type": "Question", "name": "How is my personal information and data handled?", "acceptedAnswer": {"@type": "Answer", "text": "Many apps are fully offline, or use only your own cloud such as iCloud, and do not send data to the developer's servers. See each app's privacy policy for details."}}
     ]
   }
   </script>
@@ -334,16 +346,25 @@
           <a href="/web/iekan/">IeKan<span>Watch over your family home</span></a>
           <a href="/web/printmemo/">PrintSummary<span>School printouts × OCR</span></a>
           <a href="/web/miawell/">Miawell<span>Cat-only healthcare</span></a>
-          <a href="/web/homenetnavi/">HomeNet Navi<span>“Income wall” simulator</span></a>
-          <a href="/web/mochiru/">Mochiru<span>Asset-longevity simulator</span></a>
           <a href="/web/sukushori/">Sukushori<span>Automatic screenshot triage</span></a>
           <a href="/web/heyalog/">Heyalog<span>Rental move-in/out records</span></a>
           <a href="/web/jitsuhiro/">Jitsuhiro<span>Floor-plan effective area</span></a>
           <a href="/web/yuzuri/">Yuzuri<span>End-of-life notebook</span></a>
           <a href="/web/hitorilog/">HitoriLog<span>Solo-caregiver records</span></a>
-          <a href="/web/zaicho/">Zaicho<span>Estate inventory</span></a>
           <a href="/web/lifeweeks/">Weekwise<span>Your life in weeks</span></a>
           <a href="/web/jamalog/">Jamalog<span>A logbook for camels</span></a>
+          <a href="/web/saqrlog/">Saqrlog<span>Records for falconers</span></a>
+          <a href="/web/muddah/">Muddah<span>GCC family document vault</span></a>
+          <a href="/web/sonalog/">Sonalog<span>Home disaster-prep × supplies</span></a>
+        </div></div>
+      </div>
+      <div class="nav__item">
+        <a href="#money">Money</a>
+        <div class="nav__drop"><div class="nav__drop-inner">
+          <a href="/web/homenetnavi/">HomeNet Navi<span>“Income wall” simulator</span></a>
+          <a href="/web/mochiru/">Mochiru<span>Asset-longevity simulator</span></a>
+          <a href="/web/zaicho/">Zaicho<span>Estate inventory</span></a>
+          <a href="/web/keihiba/">Keihiba<span>Expense receipts</span></a>
           <a href="/web/kimekabu/">Kimekabu<span>Stock trade-decision journal</span></a>
         </div></div>
       </div>
@@ -354,7 +375,6 @@
           <a href="/web/genbalog/">Genbalog<span>On-site reports in 60s</span></a>
           <a href="/web/hanro/">hanro<span>Delivery-driver income</span></a>
           <a href="/web/toscore/">Toscore<span>Mini-basketball scoresheet</span></a>
-          <a href="/web/keihiba/">Keihiba<span>Expense receipts</span></a>
           <a href="/web/koegaki/">Koegaki<span>On-device meeting notes</span></a>
           <a href="/web/dartrack/">Dartrack<span>Household-staff records (UAE)</span></a>
         </div></div>
@@ -368,12 +388,12 @@
 <!-- ===== HERO ===== -->
 <header class="hero">
   <div class="container">
-    <span class="badge">🏋️ Trero — the definitive strength-training log is here</span>
+    <span class="badge">🔒 All on-device. A toolbox of 28 small apps</span>
     <h1>Small tools to make<br>your everyday a little lighter.</h1>
-    <p class="hero__sub">Sleep, sauna, your family home, your cat, household finances, screenshots, rentals, job sites, end-of-life planning, caregiving. 25 iOS apps that tidy up the small chores scattered across daily life.</p>
+    <p class="hero__sub">Sleep, sauna, family, your cat, household finances, assets, documents, disaster-prep, job sites, caregiving. 28 iOS apps that tidy up the small chores scattered across daily life — most fully offline, no account, one-time purchase.</p>
     <div class="stats" aria-label="Site stats">
-      <div class="stat"><div class="stat__num">25</div><div class="stat__label">Apps published</div></div>
-      <div class="stat"><div class="stat__num">3</div><div class="stat__label">Categories</div></div>
+      <div class="stat"><div class="stat__num">28</div><div class="stat__label">Apps published</div></div>
+      <div class="stat"><div class="stat__num">4</div><div class="stat__label">Categories</div></div>
       <div class="stat"><div class="stat__num">iOS</div><div class="stat__label">iPhone / Apple Watch</div></div>
     </div>
   </div>
@@ -479,7 +499,7 @@
     <div class="section__head">
       <div class="section__eyebrow eyebrow-life">Life &amp; Family</div>
       <h2 class="section__title" id="life-title">A system so you never forget the home and the family</h2>
-      <p class="section__lead">Paper printouts, a distant family home, piles of documents, your cat’s health, income thresholds, future assets, buried screenshots, rental move-in/out, end-of-life planning, solo caregiving — organized so the whole family can share the load.</p>
+      <p class="section__lead">Your family home, your cat, documents, rentals, end-of-life planning, solo caregiving, home disaster-prep, and life abroad — organized so the whole family can share the load.</p>
     </div>
     <div class="cards">
       <article class="card">
@@ -527,38 +547,6 @@
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/miawell/">Learn more</a>
           <a class="btn" href="https://apps.apple.com/jp/app/miawell/id6774019571" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
-          <div class="card__icon icon-homenetnavi" aria-hidden="true">🧮</div>
-          <div>
-            <h3 class="card__title">HomeNet Navi</h3>
-            <div class="card__sub">2026-ready “income wall” simulator</div>
-          </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
-        </div>
-        <p class="card__desc">An income-threshold simulator accurately updated for Japan’s 2026 rules. Visualizes the spousal-deduction, social-insurance and residence-tax thresholds on one household-level screen and suggests the take-home-maximizing scenario.</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="/web/homenetnavi/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
-          <div class="card__icon icon-mochiru" aria-hidden="true">📈</div>
-          <div>
-            <h3 class="card__title">Mochiru</h3>
-            <div class="card__sub">Asset-longevity simulator × Monte Carlo</div>
-          </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
-        </div>
-        <p class="card__desc">Simulates the full lifecycle from accumulation to drawdown with Monte Carlo, preserving the correlation of a simultaneous stock-crash-and-strong-yen shock. Fully offline, no account linking.</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="/web/mochiru/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/jp/app/id6778235888" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
 
@@ -644,22 +632,6 @@
 
       <article class="card">
         <div class="card__top">
-          <div class="card__icon icon-zaicho" aria-hidden="true">📒</div>
-          <div>
-            <h3 class="card__title">Zaicho</h3>
-            <div class="card__sub">Estate inventory · net worth · inheritance-tax estimate</div>
-          </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
-        </div>
-        <p class="card__desc">Your own estate inventory, entrusted to neither a financial institution nor the cloud. Manage financial assets, real estate and high-net-worth asset classes in a ledger; from net-worth trends to an inheritance-tax estimate and an estate-inventory PDF, everything stays on your device. Fully offline, one-time purchase, no ads.</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="/web/zaicho/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
           <div class="card__icon icon-lifeweeks" aria-hidden="true">🗓️</div>
           <div>
             <h3 class="card__title">Weekwise</h3>
@@ -692,12 +664,136 @@
 
       <article class="card">
         <div class="card__top">
+          <div class="card__icon icon-saqrlog" aria-hidden="true">🦅</div>
+          <div>
+            <h3 class="card__title">Saqrlog</h3>
+            <div class="card__sub">Fully offline records for falconers</div>
+          </div>
+          <span class="chip chip-life" style="margin-left:auto">Life</span>
+        </div>
+        <p class="card__desc">A fully offline logbook for falconers. Log daily weight, feeding, training and hunts for every bird, and manage pre-flight condition by the numbers. No account, no data collection. العربية (RTL) / اردو / English / Japanese.</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="/web/saqrlog/">Learn more</a>
+          <a class="btn" href="https://apps.apple.com/app/id6789535072" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-muddah" aria-hidden="true">🛂</div>
+          <div>
+            <h3 class="card__title">Muddah</h3>
+            <div class="card__sub">Document &amp; expiry vault for GCC families</div>
+          </div>
+          <span class="chip chip-life" style="margin-left:auto">Life</span>
+        </div>
+        <p class="card__desc">A fully offline vault for a GCC expat family’s documents — iqama, residence card, passport, insurance and more — with dual Hijri and Gregorian calendars, households and dependents, so nothing lapses. No account, no cloud sync. English / العربية (RTL) / Japanese.</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="/web/muddah/">Learn more</a>
+          <a class="btn" href="https://apps.apple.com/app/id6790558814" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-sonalog" aria-hidden="true">🧯</div>
+          <div>
+            <h3 class="card__title">Sonalog</h3>
+            <div class="card__sub">Rolling-stock supplies × household emergency card</div>
+          </div>
+          <span class="chip chip-life" style="margin-left:auto">Life</span>
+        </div>
+        <p class="card__desc">Combines rolling-stock supply management with a household emergency card. Get alerts as items approach expiry, size required amounts from your family’s headcount, and take the emergency card out as a PDF. Fully offline, no account, one-time purchase.</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="/web/sonalog/">Learn more</a>
+          <a class="btn" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MONEY ===== -->
+<section class="section" id="money" aria-labelledby="money-title">
+  <div class="container">
+    <div class="section__head">
+      <div class="section__eyebrow eyebrow-money">Money &amp; Finances</div>
+      <h2 class="section__title" id="money-title">See your money worries in the numbers in your hand</h2>
+      <p class="section__lead">Income thresholds, asset longevity, estate inventory, expenses, trade decisions. Without connecting to your bank, on-device estimates alone help you decide about your household finances and assets. Not investment advice — tools for thinking things through yourself.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-homenetnavi" aria-hidden="true">🧮</div>
+          <div>
+            <h3 class="card__title">HomeNet Navi</h3>
+            <div class="card__sub">2026-ready “income wall” simulator</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">Money</span>
+        </div>
+        <p class="card__desc">An income-threshold simulator accurately updated for Japan’s 2026 rules. Visualizes the spousal-deduction, social-insurance and residence-tax thresholds on one household-level screen and suggests the take-home-maximizing scenario.</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="/web/homenetnavi/">Learn more</a>
+          <a class="btn" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-mochiru" aria-hidden="true">📈</div>
+          <div>
+            <h3 class="card__title">Mochiru</h3>
+            <div class="card__sub">Asset-longevity simulator × Monte Carlo</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">Money</span>
+        </div>
+        <p class="card__desc">Simulates the full lifecycle from accumulation to drawdown with Monte Carlo, preserving the correlation of a simultaneous stock-crash-and-strong-yen shock. Fully offline, no account linking.</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="/web/mochiru/">Learn more</a>
+          <a class="btn" href="https://apps.apple.com/jp/app/id6778235888" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-zaicho" aria-hidden="true">📒</div>
+          <div>
+            <h3 class="card__title">Zaicho</h3>
+            <div class="card__sub">Estate inventory · net worth · inheritance-tax estimate</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">Money</span>
+        </div>
+        <p class="card__desc">Your own estate inventory, entrusted to neither a financial institution nor the cloud. Manage financial assets, real estate and high-net-worth asset classes in a ledger; from net-worth trends to an inheritance-tax estimate and an estate-inventory PDF, everything stays on your device. Fully offline, one-time purchase, no ads.</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="/web/zaicho/">Learn more</a>
+          <a class="btn" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-keihiba" aria-hidden="true">🧾</div>
+          <div>
+            <h3 class="card__title">Keihiba</h3>
+            <div class="card__sub">Expense-receipt organizing × fully local</div>
+          </div>
+          <span class="chip chip-money" style="margin-left:auto">Money</span>
+        </div>
+        <p class="card__desc">From receipt photos and imported e-transaction data, on-device OCR extracts the date, amount and payee. Monthly totals and CSV/PDF export tidy up the prep before your accounting software. Supports Japan’s electronic bookkeeping act. Fully offline, one-time purchase.</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="/web/keihiba/">Learn more</a>
+          <a class="btn" href="https://apps.apple.com/jp/app/id6779895529" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
           <div class="card__icon icon-kimekabu" aria-hidden="true">🧭</div>
           <div>
             <h3 class="card__title">Kimekabu</h3>
             <div class="card__sub">A trade-decision journal for stocks</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-money" style="margin-left:auto">Money</span>
         </div>
         <p class="card__desc">Record your stock trading decisions and reconcile them against your plan at exit. Manage the quality of your judgment, not just P/L, and make your own trading rules more repeatable. Not investment advice — a private record for your own review. No account linking, fully offline, one-time purchase.</p>
         <div class="card__actions">
@@ -715,7 +811,7 @@
     <div class="section__head">
       <div class="section__eyebrow eyebrow-work">Work &amp; On-site</div>
       <h2 class="section__title" id="work-title">Clear the paperwork for people who work on-site</h2>
-      <p class="section__lead">Caregiving, job sites, delivery, the scorer’s table at a mini-basketball game. Finish the recording, calculation and reporting that crop up between jobs with just your phone.</p>
+      <p class="section__lead">Caregiving, job sites, delivery, meeting notes, the scorer’s table at a mini-basketball game. Finish the recording, calculation and reporting that crop up between jobs with just your phone.</p>
     </div>
     <div class="cards">
       <article class="card">
@@ -784,22 +880,6 @@
 
       <article class="card">
         <div class="card__top">
-          <div class="card__icon icon-keihiba" aria-hidden="true">🧾</div>
-          <div>
-            <h3 class="card__title">Keihiba</h3>
-            <div class="card__sub">Expense-receipt organizing × fully local</div>
-          </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
-        </div>
-        <p class="card__desc">From receipt photos and imported e-transaction data, on-device OCR extracts the date, amount and payee. Monthly totals and CSV/PDF export tidy up the prep before your accounting software. Supports Japan’s electronic bookkeeping act. Fully offline, one-time purchase.</p>
-        <div class="card__actions">
-          <a class="btn btn--primary" href="/web/keihiba/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/jp/app/id6779895529" target="_blank" rel="noopener">App Store</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card__top">
           <div class="card__icon icon-koegaki" aria-hidden="true">🎙️</div>
           <div>
             <h3 class="card__title">Koegaki</h3>
@@ -839,39 +919,44 @@
     <div class="section__head">
       <div class="section__eyebrow">Our Philosophy</div>
       <h2 class="section__title" id="concept-title">Small tools, a lighter everyday</h2>
-      <p class="section__lead">Across the three areas of health, life and work, we build tools that work in your own hands — without relying on charges or data collection.</p>
+      <p class="section__lead">Across the four areas of health, life, money and work, we build tools that work in your own hands — without relying on charges or data collection.</p>
     </div>
 
     <div class="concept">
       <div class="concept__item">
-        <div class="concept__icon" style="color: var(--color-health)">💚</div>
-        <div class="concept__title">Health: don’t get ruled by data</div>
-        <p class="concept__body">Scores are a guide. Designed as a reference line for choosing sustainable habits alongside how you actually feel.</p>
+        <div class="concept__icon">🔒</div>
+        <div class="concept__title">Everything on your device</div>
+        <p class="concept__body">Many apps are fully offline. No account, no data collection. Your information stays on your device, and only there.</p>
       </div>
       <div class="concept__item">
-        <div class="concept__icon" style="color: var(--color-life)">🧡</div>
-        <div class="concept__title">Life: share the load as a family</div>
-        <p class="concept__body">So the burden doesn’t fall on one person, the flow of sharing, recording and checking is kept simple enough for anyone to follow.</p>
+        <div class="concept__icon">☕️</div>
+        <div class="concept__title">The price of a coffee</div>
+        <p class="concept__body">Core features are free. Premium is mostly one-time, around the price of a coffee — no subscription overload.</p>
       </div>
       <div class="concept__item">
-        <div class="concept__icon" style="color: var(--color-work)">💙</div>
-        <div class="concept__title">Work: never get in the way of the day job</div>
-        <p class="concept__body">Light enough for someone on-site to finish a task in a one-minute break. Works offline and replaces paper and stamps.</p>
+        <div class="concept__icon">👨‍👩‍👧</div>
+        <div class="concept__title">Close to home and family</div>
+        <p class="concept__body">Family home, caregiving, finances, disaster-prep, end-of-life. Built so the burden doesn’t fall on one person, with sharing anyone can follow.</p>
+      </div>
+      <div class="concept__item">
+        <div class="concept__icon">🌏</div>
+        <div class="concept__title">From Japan to the world</div>
+        <p class="concept__body">Japanese, English, العربية (RTL) and more. Including apps built for families living across the GCC.</p>
       </div>
     </div>
 
     <div class="faq" aria-label="Frequently asked questions">
       <details>
         <summary>What is freetokyo apps?</summary>
-        <p>A collection of iOS apps built by indie developer freetokyo. Across three areas — health, life and work — it offers small tools that make daily chores a little lighter.</p>
+        <p>A collection of iOS apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 28 small tools that make daily chores a little lighter.</p>
       </details>
       <details>
         <summary>Is it free to use?</summary>
-        <p>All core features are free. To support ongoing development, operation, support and improvement, some apps offer premium features via subscription or one-time purchase, at around the price of a cup of coffee. They are designed so you get a fully sufficient experience for everyday use without going premium.</p>
+        <p>All core features are free. To support ongoing development, operation, support and improvement, some apps offer premium features via one-time purchase, or occasionally subscription, at around the price of a cup of coffee. They are designed so you get a fully sufficient experience for everyday use without going premium.</p>
       </details>
       <details>
         <summary>How is my personal information and data handled?</summary>
-        <p>Many apps are fully offline, or use only your own cloud such as iCloud. See each app’s privacy policy for details.</p>
+        <p>Many apps are fully offline, or use only your own cloud such as iCloud, and do not send data to the developer’s servers. See each app’s privacy policy for details.</p>
       </details>
     </div>
   </div>
