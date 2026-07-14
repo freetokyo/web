@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>サポート | Nailog（ネイログ）</title>
+  <meta name="description" content="Nailog（ネイログ）のサポート。よくある質問と問い合わせ先。">
+  <link rel="canonical" href="https://freetokyo.github.io/web/nailog/support.html">
+  <meta name="apple-itunes-app" content="app-id=6790943773"><meta name="robots" content="index,follow">
+  <style>:root{--bg:#faf5f8;--surface:#fff;--text:#2a2228;--muted:#6c6069;--line:rgba(42,34,40,.12);--accent:#8a5a78;--deep:#5e3b52;--cta:#d96c8e;--tint:#f6edf2;}*{box-sizing:border-box}body{margin:0;color:var(--text);background:var(--bg);font-family:"Avenir Next","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}a{color:var(--deep)}.topnav{max-width:860px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.brand{font-weight:700;color:var(--deep);text-decoration:none;letter-spacing:.04em}.appstore{background:#111;color:#fff;padding:8px 14px;border-radius:999px;text-decoration:none;font-size:.9rem}main{max-width:860px;margin:0 auto;padding:8px 20px 40px}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 20px 50px rgba(94,59,82,.06)}h1{font-size:1.8rem;margin:0 0 6px}h2{font-size:1.1rem;color:var(--deep);margin:24px 0 8px}.lang-switch{display:inline-flex;gap:6px}.lang-switch button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;color:var(--muted)}.lang-switch button.on{background:var(--accent);color:#fff;border-color:var(--accent)}.lang-panel[hidden]{display:none}.muted{color:var(--muted)}footer.site{max-width:860px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);font-size:.9rem}footer.site nav{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:10px}footer.site a{color:var(--deep);text-decoration:none}</style>
+</head>
+<body>
+  <div class="topnav"><a class="brand" href="./index.html">Nailog · ネイログ</a><span style="display:flex;gap:12px;align-items:center"><span class="lang-switch"><button id="ja" class="on" type="button">日本語</button><button id="en" type="button">EN</button></span><a class="appstore" href="https://apps.apple.com/app/id6790943773" target="_blank" rel="noopener">App Store</a></span></div>
+  <main><div class="card">
+    <section class="lang-panel" lang="ja">
+      <h1>サポート</h1>
+      <h2>よくある質問</h2>
+      <p><strong>データはどこに保存されますか？</strong><br>すべてお使いの iPhone の中だけに保存されます。外部送信・データ収集はありません。</p>
+      <p><strong>機種変更するとデータは移せますか？</strong><br>Pro の iCloud バックアップを有効にすると、同じ Apple ID の新しい端末へ引き継げます。</p>
+      <p><strong>無料でどこまで使えますか？</strong><br>顧客30名まで、1来店あたり写真3枚まで保存できます。来店記録の作成は無制限です。</p>
+      <p><strong>購入を復元したい</strong><br>設定画面の「購入を復元」から、同じ Apple ID での購入を復元できます。</p>
+      <p><strong>トライアルの解約方法は？</strong><br>「設定 &gt; Apple ID &gt; サブスクリプション」から、期間終了の24時間前までに解約してください。</p>
+      <h2>お問い合わせ</h2><p><a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+    </section>
+    <section class="lang-panel" lang="en" hidden>
+      <h1>Support</h1>
+      <h2>FAQ</h2>
+      <p><strong>Where is my data stored?</strong><br>Only on your iPhone. Nothing is uploaded or collected.</p>
+      <p><strong>Can I move data to a new device?</strong><br>Enable Pro iCloud backup to carry data to a new device signed in with the same Apple ID.</p>
+      <p><strong>What can I do for free?</strong><br>Store up to 30 clients and 3 photos per visit. Creating visit records is unlimited.</p>
+      <p><strong>How do I restore purchases?</strong><br>Use "Restore Purchases" in Settings with the same Apple ID.</p>
+      <p><strong>How do I cancel the trial?</strong><br>Cancel in Settings &gt; Apple ID &gt; Subscriptions at least 24 hours before the trial ends.</p>
+      <h2>Contact</h2><p><a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+    </section>
+  </div></main>
+  <footer class="site"><nav><a href="./index.html">Home</a><a href="./support.html">Support</a><a href="./terms.html">Terms</a><a href="./privacy.html">Privacy</a></nav><p><a href="/web/"><strong>&larr; freetokyo apps</strong></a></p><p>&copy; 2026 freetokyo</p></footer>
+  <script>const btnJa=document.getElementById("ja"),btnEn=document.getElementById("en");const panels=document.querySelectorAll(".lang-panel");function set(l){panels.forEach(p=>p.hidden=(p.getAttribute("lang")!==l));btnJa.classList.toggle("on",l==="ja");btnEn.classList.toggle("on",l==="en");document.documentElement.lang=l;}btnJa.onclick=()=>set("ja");btnEn.onclick=()=>set("en");if((navigator.language||"").startsWith("en"))set("en");</script>
+</body></html>
