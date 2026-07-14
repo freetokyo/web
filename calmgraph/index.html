@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>Calmgraph | ストレスを、1つの数字に。</title>
+  <meta name="description" content="Calmgraph（カームグラフ）は、Apple Watch の HRV や主観チェックインから日々のストレスを0–100のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。データは端末内だけに保存します。">
+  <meta name="keywords" content="ストレス,ストレススコア,HRV,心拍変動,バーンアウト,睡眠,回復,気分記録,セルフケア,オフライン,買い切り,iPhone,iOS">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/calmgraph/">
+  <meta name="apple-itunes-app" content="app-id=6790698772">
+
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/calmgraph/">
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/calmgraph/">
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/calmgraph/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calmgraph | Your stress, as one number.">
+  <meta property="og:description" content="Turn Apple Watch HRV or quick check-ins into a daily 0–100 stress score, tag what moved it, and see a weekly insight. Offline, no account, one-time purchase.">
+  <meta property="og:site_name" content="Calmgraph">
+  <meta property="og:url" content="https://freetokyo.github.io/web/calmgraph/">
+  <meta property="og:image" content="https://freetokyo.github.io/web/calmgraph/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calmgraph">
+  <meta name="twitter:description" content="ストレスを「見える1つの数字」に。完全オフライン・アカウント不要・買い切り。">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/calmgraph/ogp.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Calmgraph",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS 26.0 以降",
+    "description": "Calmgraph turns Apple Watch HRV, resting heart rate, and sleep — or quick subjective check-ins — into a daily 0–100 stress score measured against your personal baseline, layers cause tags onto it, and shows a weekly insight of what likely moved it. Fully offline, no account, one-time purchase.",
+    "inLanguage": ["ja", "en"],
+    "featureList": [
+      "Daily stress score (0-100) from your personal baseline",
+      "Subjective 1-tap check-ins (works without Apple Watch)",
+      "Cause tags layered on the score",
+      "Day / week / month timeline",
+      "Weekly insight of what moved your score",
+      "100% on-device, no account, no ads"
+    ],
+    "url": "https://apps.apple.com/app/id6790698772",
+    "author": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" },
+    "publisher": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" },
+    "datePublished": "2026-07",
+    "softwareVersion": "1.0",
+    "contentRating": "4+",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "無料ダウンロード（買い切りProで全機能解放）" }
+  }
+  </script>
+
+  <style>
+    :root{--teal:#0E7C7B;--teal-d:#0A5A54;--calm:#2FA26B;--neutral:#E8A13D;--strain:#D4574E;
+      --bg:#F7F8F7;--card:#FFFFFF;--text:#1C2321;--sub:#5C6663;--line:#E3E7E5;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI",Roboto,sans-serif;
+      color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:var(--teal);text-decoration:none}
+    .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+    nav{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+    nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+    nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text)}
+    nav .brand img{width:30px;height:30px;border-radius:7px}
+    .badge{display:inline-block;background:var(--teal);color:#fff;padding:8px 16px;border-radius:10px;font-weight:600;font-size:14px}
+    header.hero{background:linear-gradient(160deg,var(--teal),var(--teal-d));color:#fff;padding:72px 0 64px}
+    header.hero h1{font-size:40px;margin:0 0 12px;letter-spacing:-.5px}
+    header.hero p.lead{font-size:19px;opacity:.95;margin:0 0 28px;max-width:620px}
+    header.hero .badge{background:#fff;color:var(--teal-d)}
+    section{padding:56px 0}
+    h2{font-size:27px;margin:0 0 8px}
+    .muted{color:var(--sub)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:28px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--sub);font-size:15px}
+    table.compare{width:100%;border-collapse:collapse;margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    table.compare th,table.compare td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
+    table.compare th:not(:first-child),table.compare td:not(:first-child){text-align:center;width:120px}
+    table.compare thead th{background:var(--bg);font-size:15px}
+    table.compare .pro{color:var(--teal);font-weight:700}
+    .steps{counter-reset:s;margin-top:24px;padding:0;list-style:none}
+    .steps li{counter-increment:s;position:relative;padding:8px 0 8px 44px;color:var(--sub)}
+    .steps li::before{content:counter(s);position:absolute;left:0;top:6px;width:30px;height:30px;border-radius:50%;
+      background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:700}
+    .steps li strong{color:var(--text)}
+    .faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-top:12px}
+    .faq summary{font-weight:600;cursor:pointer}
+    .faq p{color:var(--sub)}
+    .disclaimer{background:#fff8ef;border:1px solid #f0d9b5;border-radius:12px;padding:16px 18px;color:#7a5b1f;font-size:14px}
+    .en{color:var(--sub);font-size:14px;border-top:1px dashed var(--line);margin-top:10px;padding-top:10px}
+    footer{background:var(--card);border-top:1px solid var(--line);padding:32px 0;color:var(--sub);font-size:14px}
+    footer .links{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:12px}
+    @media (prefers-color-scheme:dark){
+      :root{--bg:#101413;--card:#1A201F;--text:#E8ECEB;--sub:#9AA5A2;--line:#2A312F}
+      .disclaimer{background:#241d10;border-color:#4a3c1e;color:#e6c98a}
+    }
+  </style>
+</head>
+<body>
+  <nav><div class="wrap">
+    <a class="brand" href="index.html"><img src="apple-touch-icon.png" alt="Calmgraph">Calmgraph</a>
+    <a class="badge" href="https://apps.apple.com/app/id6790698772">App Store で見る</a>
+  </div></nav>
+
+  <header class="hero"><div class="wrap">
+    <h1>ストレスを、1つの数字に。</h1>
+    <p class="lead">Calmgraph は、Apple Watch の HRV や主観チェックインから日々のストレスを 0–100 のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。</p>
+    <a class="badge" href="https://apps.apple.com/app/id6790698772">App Store でダウンロード</a>
+  </div></header>
+
+  <section><div class="wrap">
+    <h2>できること</h2>
+    <p class="muted">単発の数値ではなく「あなたの平常（ベースライン）との差」で見るから、日々の揺らぎに惑わされません。</p>
+    <div class="grid">
+      <div class="card"><h3>デイリースコア</h3><p>HRV・安静時心拍・睡眠から、個人ベースライン基準の 0–100 スコアを算出。最初の14日は較正期間として暫定表示します。</p></div>
+      <div class="card"><h3>原因タグ</h3><p>仕事・睡眠・運動・カフェインなどをスコアに重ねて記録。何が状態を動かしたのかを後から振り返れます。</p></div>
+      <div class="card"><h3>推移グラフ</h3><p>日／週／月でスコアの推移を確認。タグを付けた日は大きな点で表示されます。</p></div>
+      <div class="card"><h3>週次インサイト</h3><p>「今週スコアを動かした要因候補」を提示。相関の傾向であり、断定ではありません。</p></div>
+      <div class="card"><h3>Watch がなくても</h3><p>主観チェックイン（5段階・1タップ）で、同じ可視化が使えます。</p></div>
+      <div class="card"><h3>完全オフライン</h3><p>すべて端末内で処理。アカウント不要・データ外部送信なし・広告なし。</p></div>
+    </div>
+  </div></section>
+
+  <section style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+    <h2>使い方</h2>
+    <ol class="steps">
+      <li><strong>はじめる</strong> — ヘルスケアと連携するか、主観モードを選びます（あとから変更可）。</li>
+      <li><strong>記録する</strong> — 朝にスコアを確認し、原因タグを1タップ。1日の操作は30秒以内が目安。</li>
+      <li><strong>振り返る</strong> — 週末に週次インサイトで「何がスコアを動かしたか」を確認します。</li>
+    </ol>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>料金</h2>
+    <p class="muted">買い切り（サブスクなし）。一度購入すればずっと使えます。</p>
+    <table class="compare">
+      <thead><tr><th>機能</th><th>無料</th><th class="pro">Pro ¥1,500</th></tr></thead>
+      <tbody>
+        <tr><td>今日のスコア</td><td>✓</td><td>✓</td></tr>
+        <tr><td>主観チェックイン</td><td>✓</td><td>✓</td></tr>
+        <tr><td>履歴グラフ</td><td>7日</td><td>無制限</td></tr>
+        <tr><td>原因タグ</td><td>3種</td><td>8種＋カスタム</td></tr>
+        <tr><td>週次インサイト</td><td>冒頭1行</td><td>全文</td></tr>
+      </tbody>
+    </table>
+  </div></section>
+
+  <section style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap faq">
+    <h2>よくある質問</h2>
+    <details><summary>Apple Watch は必須ですか？</summary><p>いいえ。主観チェックイン（1タップ）だけでも同じ可視化が使えます。Watch があれば HRV などから自動でスコアを算出します。</p></details>
+    <details><summary>データはどこに保存されますか？</summary><p>すべて端末内です。外部送信・データ収集・広告利用はありません。アカウントも不要で、機内モードでも全機能が動作します。</p></details>
+    <details><summary>なぜ最初の14日は暫定表示なのですか？</summary><p>スコアはあなた個人の平常（ベースライン）を基準に測ります。学習が進むほど精度が上がるため、最初の14日間は較正期間としています。</p></details>
+    <details><summary>サブスクですか？</summary><p>いいえ。買い切り（¥1,500）です。無料でも今日のスコアと直近の推移は使えます。</p></details>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="disclaimer">
+      Calmgraph は医療機器ではなく、病気の診断・治療・予防を目的とするものではありません。表示されるスコアは個人のベースラインに対する相対的な傾向であり、絶対的な健康状態を示すものではありません。健康上の懸念がある場合は、医療専門家にご相談ください。
+    </div>
+    <p class="en">Calmgraph turns Apple Watch HRV, resting heart rate, and sleep — or quick 1-tap check-ins — into a daily 0–100 stress score measured against your personal baseline, with cause tags and a weekly insight of what moved it. Fully offline, no account, one-time purchase (¥1,500 / US$9.99). Calmgraph is not a medical device and does not diagnose or treat any condition.</p>
+  </div></section>
+
+  <footer><div class="wrap">
+    <div class="links">
+      <a href="index.html">ホーム</a>
+      <a href="support.html">サポート</a>
+      <a href="terms.html">利用規約</a>
+      <a href="privacy.html">プライバシー</a>
+      <a href="https://apps.apple.com/app/id6790698772">App Store</a>
+    </div>
+    <p><a href="/web/"><strong>← freetokyo apps（アプリ一覧へ）</strong></a></p>
+    <p>© 2026 freetokyo</p>
+  </div></footer>
+</body>
+</html>
