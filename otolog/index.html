@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>オトログ | ピアノ・音楽教室の生徒進度管理（完全オフライン）</title>
+  <meta name="description" content="オトログは、ピアノ・音楽教室の個人講師のための生徒カルテアプリ。教則本の進度・課題曲・レッスンメモ・月謝の受領を、生徒の情報を端末の外に出さずに管理。登録不要・データ収集ゼロ・買い切り。">
+  <link rel="canonical" href="https://freetokyo.github.io/web/otolog/index.html">
+  <meta name="apple-itunes-app" content="app-id=6791038062">
+  <meta name="robots" content="index,follow">
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/index.html">
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/index.html">
+  <meta property="og:title" content="オトログ | ピアノ・音楽教室の生徒進度管理">
+  <meta property="og:description" content="教則本の進度・課題曲・月謝メモを完全オフラインで。生徒の情報を端末の外に出さない、個人音楽講師のための生徒カルテ。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freetokyo.github.io/web/otolog/index.html">
+  <meta property="og:image" content="https://freetokyo.github.io/web/otolog/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"オトログ","alternateName":"Otolog","operatingSystem":"iOS 26","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"description":"ピアノ・音楽教室の個人講師のための生徒カルテアプリ。教則本の進度・課題曲・レッスンメモ・月謝の受領を完全オフラインで管理。","url":"https://freetokyo.github.io/web/otolog/index.html"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"生徒の情報はどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"お使いのiPhone・iPadの中だけに保存されます。開発者や第三者に送信されることはありません。アカウント登録も不要です。"}},
+    {"@type":"Question","name":"機種変更するとデータはどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"設定の「暗号化バックアップ」からパスワード付きファイルに書き出し、新しい端末で読み込めます。この機能は無料でお使いいただけます。"}},
+    {"@type":"Question","name":"サブスクリプションですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。オトログ Proは買い切り（¥2,000）です。一度購入すればずっとお使いいただけます。"}}
+  ]}
+  </script>
+  <style>
+    :root{--bg:#faf7f2;--surface:#fff;--text:#26282b;--muted:#6b6e73;--line:rgba(38,40,43,.12);--accent:#1f3a5f;--deep:#1f3a5f;--cta:#1f3a5f;--tint:#f2efe9;--maru:#d6453f;}
+    *{box-sizing:border-box}body{margin:0;color:var(--text);background:var(--bg);font-family:"Avenir Next","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}
+    a{color:var(--deep)}
+    .topnav{max-width:900px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .brand{font-weight:700;color:var(--deep);text-decoration:none;letter-spacing:.04em}
+    .appstore{background:#111;color:#fff;padding:8px 16px;border-radius:999px;text-decoration:none;font-size:.9rem}
+    .lang-switch{display:inline-flex;gap:6px}.lang-switch button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;color:var(--muted)}
+    .lang-switch button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+    main{max-width:900px;margin:0 auto;padding:8px 20px 40px}
+    .hero{text-align:center;padding:40px 20px 20px}
+    .hero .logo{width:96px;height:96px;border-radius:22px;box-shadow:0 14px 40px rgba(31,58,95,.28)}
+    .hero h1{font-size:2rem;margin:18px 0 6px}
+    .hero .tag{color:var(--muted);font-size:1.05rem;margin:0}
+    .hero .cta{display:inline-block;margin-top:22px;background:var(--cta);color:#fff;padding:13px 28px;border-radius:14px;text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:14px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 16px 40px rgba(31,58,95,.06)}
+    .card h3{margin:0 0 6px;color:var(--deep);font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .price{background:var(--tint);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:24px}
+    .price h2{margin:0 0 12px;color:var(--deep);font-size:1.2rem}.price ul{margin:0;padding-left:1.1em}.price li{margin:6px 0}
+    .lang-panel[hidden]{display:none}.muted{color:var(--muted)}
+    .note{border-left:3px solid var(--maru);padding-left:14px;margin-top:26px;color:var(--muted);font-size:.95rem}
+    footer.site{max-width:900px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);font-size:.9rem}
+    footer.site nav{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:10px}footer.site a{color:var(--deep);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="brand" href="./index.html">オトログ · Otolog</a>
+    <span style="display:flex;gap:12px;align-items:center">
+      <span class="lang-switch"><button id="ja" class="on" type="button">日本語</button><button id="en" type="button">EN</button></span>
+      <a class="appstore" href="https://apps.apple.com/app/id6791038062" target="_blank" rel="noopener">App Store</a>
+    </span>
+  </div>
+
+  <main>
+    <section class="lang-panel" lang="ja">
+      <div class="hero">
+        <img class="logo" src="apple-touch-icon.png" alt="オトログ アイコン">
+        <h1>生徒の上達を、先生の手の中に。</h1>
+        <p class="tag">ピアノ・音楽教室の個人講師のための生徒カルテ。教則本の進度も、月謝も、端末の中だけで。</p>
+        <a class="cta" href="https://apps.apple.com/app/id6791038062" target="_blank" rel="noopener">App Store でダウンロード</a>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>教則本の進度が一目で</h3><p>バイエル・ブルグミュラー25・ツェルニー30/40・ハノン・ソナチネ アルバム・バーナム・ギロックをプリセット収録。曲番号をタップするだけで合格を記録でき、「何番までやったか」が進度バーで分かります。教則本は自由に追加もできます。</p></div>
+        <div class="card"><h3>月謝の受領チェック</h3><p>生徒×月のグリッドで、タップ1回で受領を記録。未受領の生徒が何人いるかはホームにも表示されるので、集計の手間も付け忘れもありません。</p></div>
+        <div class="card"><h3>課題曲とレッスンメモ</h3><p>発表会やコンクールの曲も含めて、課題曲と合格履歴を記録。レッスン後に一行残しておけば、次回すぐ続きから始められます。</p></div>
+        <div class="card"><h3>今日のレッスン</h3><p>起動するとその日と翌日の生徒が、前回のメモ付きで並びます。レッスン直前の数秒で思い出せます。</p></div>
+        <div class="card"><h3>生徒の情報を、外に出さない</h3><p>生徒の多くは未成年です。オトログはサーバーを持たず、アカウント登録もありません。入力した情報は端末の中だけに保存され、開発者や第三者に送信されることはありません。</p></div>
+        <div class="card"><h3>ロックとバックアップは無料</h3><p>Face ID・Touch ID・パスコードによるアプリロックと、パスワード付きの暗号化バックアップは無料の範囲に含まれています。安全に関わる機能を有料にはしません。</p></div>
+      </div>
+      <div class="price">
+        <h2>料金</h2>
+        <ul>
+          <li><strong>無料</strong>：生徒3人まで、カスタム教則本1冊まで。進度・課題曲・メモ・月謝・アプリロック・暗号化バックアップはすべて使えます。</li>
+          <li><strong>オトログ Pro（買い切り ¥2,000）</strong>：生徒とカスタム教則本が無制限になります。<strong>サブスクリプションではありません。</strong>一度購入すればずっとお使いいただけます。</li>
+        </ul>
+      </div>
+      <p class="note">iPhone と iPad に対応（iOS 26 以降）。日本語・英語ほか36言語で表示できます。</p>
+    </section>
+
+    <section class="lang-panel" lang="en" hidden>
+      <div class="hero">
+        <img class="logo" src="apple-touch-icon.png" alt="Otolog icon">
+        <h1>Every student's progress, in your hand.</h1>
+        <p class="tag">A student record app for independent music teachers. Method book progress and tuition — all on your device.</p>
+        <a class="cta" href="https://apps.apple.com/app/id6791038062" target="_blank" rel="noopener">Download on the App Store</a>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Method book progress at a glance</h3><p>Beyer, Burgmüller 25, Czerny 30/40, Hanon, Sonatina Album, Burnam, and Gillock come built in. Tap a piece number to mark it passed and see how far each student has come. Add your own books freely.</p></div>
+        <div class="card"><h3>Tuition tracking</h3><p>A student-by-month grid: one tap records a payment. The number of unpaid students also appears on Home, so nothing slips through.</p></div>
+        <div class="card"><h3>Pieces and lesson notes</h3><p>Track current pieces and a history of what they've passed, including recital and competition repertoire. One line after each lesson is enough to pick up where you left off.</p></div>
+        <div class="card"><h3>Today's lessons</h3><p>Open the app and today's and tomorrow's students are listed with their last note — everything you need in the seconds before a lesson.</p></div>
+        <div class="card"><h3>Your students' data stays put</h3><p>Most students are minors. Otolog has no server and no account. What you enter is stored only on your device and is never sent to the developer or any third party.</p></div>
+        <div class="card"><h3>Lock and backup are free</h3><p>App lock (Face ID, Touch ID, or passcode) and password-protected encrypted backup are included in the free version. Safety features shouldn't sit behind a paywall.</p></div>
+      </div>
+      <div class="price">
+        <h2>Pricing</h2>
+        <ul>
+          <li><strong>Free</strong>: up to 3 students and 1 custom method book. Progress, pieces, notes, tuition, app lock, and encrypted backup are all included.</li>
+          <li><strong>Otolog Pro (one-time, ¥2,000)</strong>: unlimited students and custom method books. <strong>Not a subscription.</strong> Buy once, keep it forever.</li>
+        </ul>
+      </div>
+      <p class="note">For iPhone and iPad (iOS 26 or later). Available in 36 languages including English and Japanese.</p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./support.html">Support</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+    </nav>
+    <p><a href="/web/"><strong>&larr; freetokyo apps</strong></a></p>
+    <p>&copy; 2026 freetokyo</p>
+  </footer>
+
+  <script>
+    const btnJa=document.getElementById('ja'),btnEn=document.getElementById('en');
+    const panels=document.querySelectorAll('.lang-panel');
+    function set(lang){panels.forEach(p=>p.hidden=(p.getAttribute('lang')!==lang));
+      btnJa.classList.toggle('on',lang==='ja');btnEn.classList.toggle('on',lang==='en');
+      document.documentElement.lang=lang;}
+    btnJa.onclick=()=>set('ja');btnEn.onclick=()=>set('en');
+    if((navigator.language||'').startsWith('en'))set('en');
+  </script>
+</body>
+</html>
