@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://freetokyo.github.io/web/hazelog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hazelog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hazelog/en/"/>
+    <lastmod>2026-07-16</lastmod><priority>1.0</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hazelog/en/</loc><lastmod>2026-07-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hazelog/support.html</loc><lastmod>2026-07-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hazelog/en/support.html</loc><lastmod>2026-07-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hazelog/privacy.html</loc><lastmod>2026-07-16</lastmod><priority>0.4</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hazelog/en/privacy.html</loc><lastmod>2026-07-16</lastmod><priority>0.4</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hazelog/terms.html</loc><lastmod>2026-07-16</lastmod><priority>0.4</priority></url>
+  <url><loc>https://freetokyo.github.io/web/hazelog/en/terms.html</loc><lastmod>2026-07-16</lastmod><priority>0.4</priority></url>
+</urlset>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HazeLog — Coffee Roast Curve Logbook for Home Roasters</title>
+<meta name="description" content="Log stovetop, hand-net and small-roaster coffee roasts as curves, then roast alongside your last one. No probe required, automatic ROR/DTR, fully offline, one-time purchase.">
+<link rel="canonical" href="https://freetokyo.github.io/web/hazelog/en/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hazelog/">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hazelog/en/">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hazelog/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HazeLog — Coffee Roast Curves">
+<meta property="og:description" content="Save the roast you got right, curve and all. Roast alongside it next time. No probe, one-time purchase, fully offline.">
+<meta property="og:url" content="https://freetokyo.github.io/web/hazelog/en/">
+<meta property="og:image" content="https://freetokyo.github.io/web/hazelog/en/og-image.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="freetokyo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HazeLog — Coffee Roast Curves">
+<meta name="twitter:description" content="Roast alongside your last one. No probe, one-time purchase, fully offline.">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/hazelog/en/og-image.png">
+<meta name="apple-itunes-app" content="app-id=6791478115">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"MobileApplication","name":"HazeLog","operatingSystem":"iOS 17.0+",
+ "applicationCategory":"FoodAndDrinkApplication",
+ "url":"https://freetokyo.github.io/web/hazelog/en/",
+ "installUrl":"https://apps.apple.com/app/id6791478115",
+ "image":"https://freetokyo.github.io/web/hazelog/en/og-image.png",
+ "description":"A roast-curve logbook for people who roast coffee on a stovetop pan, hand-net or small home roaster. No temperature probe required. Fully offline.",
+ "featureList":["Live roast logging with large one-tap buttons","Roast curve with drying/Maillard/development phase bands","Ghost curve replay of a past roast","Automatic ROR and DTR","Green bean master with automatic stock decrement","Heat and damper operation log","Batch comparison view","CSV and PDF export"],
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free to use. HazeLog Pro unlocks everything with a one-time purchase."},
+ "author":{"@type":"Organization","name":"freetokyo"}},
+{"@type":"WebSite","name":"HazeLog","url":"https://freetokyo.github.io/web/hazelog/en/",
+ "inLanguage":"en","publisher":{"@type":"Organization","name":"freetokyo"}},
+{"@type":"BreadcrumbList","itemListElement":[
+ {"@type":"ListItem","position":1,"name":"freetokyo apps","item":"https://freetokyo.github.io/web/"},
+ {"@type":"ListItem","position":2,"name":"HazeLog","item":"https://freetokyo.github.io/web/hazelog/en/"}]},
+{"@type":"HowTo","name":"Log a roast with HazeLog","inLanguage":"en","step":[
+ {"@type":"HowToStep","name":"Add a bean","text":"Register a green bean with its origin and purchased weight in the Beans tab."},
+ {"@type":"HowToStep","name":"Charge","text":"Tap Start Roasting, pick the bean and charge weight, then tap Charge to start the clock."},
+ {"@type":"HowToStep","name":"Log while roasting","text":"Tap large buttons for temperature, first crack, second crack and drop. Temperature is optional."},
+ {"@type":"HowToStep","name":"After the roast","text":"Enter the roasted weight and HazeLog computes weight loss and saves the curve."},
+ {"@type":"HowToStep","name":"Repeat it","text":"Mark a saved roast as a target profile and the ghost curve overlays your next roast."}]},
+{"@type":"FAQPage","inLanguage":"en","mainEntity":[
+ {"@type":"Question","name":"Can I use it without a thermometer?","acceptedAnswer":{"@type":"Answer","text":"Yes. Temperature is optional. Logging just first crack and drop still gives you a complete event timeline and DTR (development time ratio)."}},
+ {"@type":"Question","name":"Does it connect to a temperature probe?","acceptedAnswer":{"@type":"Answer","text":"No. HazeLog is built around manual logging. BLE probe integration is out of scope; it targets stovetop pans, hand-nets and small home roasters."}},
+ {"@type":"Question","name":"What is the ghost curve?","acceptedAnswer":{"@type":"Answer","text":"Mark a past roast as a target profile and its curve is overlaid faintly on the live screen while you roast, showing the temperature gap and the time to the next event. It is a HazeLog Pro feature."}},
+ {"@type":"Question","name":"Where is my data stored?","acceptedAnswer":{"@type":"Answer","text":"Everything stays on your device. No uploads, no tracking, no ads, and no account is required."}},
+ {"@type":"Question","name":"Is it a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. HazeLog Pro is a one-time purchase. Buy it once and keep it."}}]}
+]}
+</script>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="">HazeLog</a>
+  <a class="badge" href="https://apps.apple.com/app/id6791478115">View on the App Store</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>Roast alongside your last one.</h1>
+  <p class="lead">HazeLog is a roast-curve logbook for people who roast coffee on a stovetop pan, hand-net or small home roaster.<br>
+  Save the roast you got right, then run alongside that curve next time to recreate it.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6791478115">View on the App Store</a>
+  <div class="shots">
+    <img src="shot-live.png" alt="Live roasting screen with elapsed time, current temperature, ghost curve and large logging buttons" loading="lazy">
+    <img src="shot-analysis.png" alt="Analysis screen with the roast curve, phase bands, DTR and weight loss" loading="lazy">
+    <img src="shot-home.png" alt="Home screen listing recent roasts with DTR" loading="lazy">
+  </div>
+  <p class="note">iPhone / iOS 17.0 or later · English &amp; Japanese · fully offline</p>
+</div></header>
+
+<section><div class="wrap">
+  <h2>No probe required</h2>
+  <div class="grid">
+    <div class="card"><h3>One tap per event</h3><p>Charge, temperature, first crack, second crack and drop — each on a 64pt button, designed for one gloved hand and a glance. A mistap can be undone for five seconds.</p></div>
+    <div class="card"><h3>It becomes a curve</h3><p>What you tap turns into a time-versus-temperature roast curve, with drying / Maillard / development phase bands and event markers.</p></div>
+    <div class="card"><h3>Works with no thermometer</h3><p>Temperature is optional. Even with only first crack and drop, your event timeline and DTR still hold up as a record.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>The ghost curve — turn a record into a guide</h2>
+  <p>Mark a past roast as a target profile and its curve is overlaid faintly on the live screen.
+  While you roast, you can see how many degrees you are above target and how long until the next crack.</p>
+  <p class="note">The ghost curve, ROR/DTR analysis, batch comparison and CSV/PDF export unlock with the one-time HazeLog Pro purchase.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Free and Pro</h2>
+  <table>
+    <thead><tr><th>Feature</th><th>Free</th><th>HazeLog Pro</th></tr></thead>
+    <tbody>
+      <tr><td>Live logging, curve and saving</td><td class="y">Unlimited</td><td class="y">✓</td></tr>
+      <tr><td>Heat and damper operation log</td><td class="y">✓</td><td class="y">✓</td></tr>
+      <tr><td>Green bean master</td><td class="n">Up to 3 beans</td><td class="y">Unlimited</td></tr>
+      <tr><td>Ghost curve (replay mode)</td><td class="n">—</td><td class="y">✓</td></tr>
+      <tr><td>ROR / DTR analysis</td><td class="n">—</td><td class="y">✓</td></tr>
+      <tr><td>Batch comparison view</td><td class="n">—</td><td class="y">✓</td></tr>
+      <tr><td>CSV / PDF export</td><td class="n">—</td><td class="y">✓</td></tr>
+    </tbody>
+  </table>
+  <p class="note">HazeLog Pro is a one-time purchase, not a subscription, and can be restored at any time.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How it works</h2>
+  <ol class="plain">
+    <li>Register a green bean in the Beans tab.</li>
+    <li>Tap <strong>Start Roasting</strong>, pick the bean and charge weight, then tap <strong>Charge</strong>.</li>
+    <li>Log temperature, first crack and drop with one tap each (temperature optional).</li>
+    <li>Enter the roasted weight afterwards and weight loss is computed for you.</li>
+    <li>Mark a roast you liked as a target profile — the next roast runs alongside its ghost curve.</li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <h2>FAQ</h2>
+  <details><summary>Can I use it without a thermometer?</summary><p>Yes. Temperature is optional. Logging just first crack and drop still gives you a complete event timeline and DTR.</p></details>
+  <details><summary>Does it connect to a temperature probe?</summary><p>No. HazeLog is built around manual logging. BLE probe integration is out of scope; it targets stovetop pans, hand-nets and small home roasters.</p></details>
+  <details><summary>Can I use Fahrenheit?</summary><p>Yes. Switch between °C and °F in Settings. Readings are stored in one normalized unit internally, so past roasts stay comparable when you switch.</p></details>
+  <details><summary>Where is my data stored?</summary><p>Everything stays on your device. No uploads, no tracking, no ads, and no account. The app works in airplane mode.</p></details>
+  <details><summary>Is it a subscription?</summary><p>No. HazeLog Pro is a one-time purchase. Buy it once and keep it.</p></details>
+  <details><summary>Can I back up my roasts?</summary><p>Pro includes CSV and PDF export. iCloud sync is under consideration for a future version.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="./">Home</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="../">日本語</a>
+  </div>
+  <p class="note">Made by freetokyo · Contact: freetokyo2020@yahoo.co.jp<br>
+  <a href="/web/"><strong>← freetokyo apps</strong></a></p>
+</div></footer>
+</body>
+</html>
