@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>トレカルテ | パーソナルトレーナーの顧客カルテ（完全オフライン）</title>
+  <meta name="description" content="トレカルテは、フリーランス・個人経営のパーソナルトレーナーのための顧客カルテアプリ。セッション記録・回数券の残回数・体組成グラフを、顧客の情報を端末の外に出さずに管理。登録不要・データ収集ゼロ・買い切り。">
+  <link rel="canonical" href="https://freetokyo.github.io/web/torekarte/index.html">
+  <meta name="robots" content="index,follow">
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/torekarte/index.html">
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/torekarte/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/torekarte/index.html">
+  <meta property="og:title" content="トレカルテ | パーソナルトレーナーの顧客カルテ">
+  <meta property="og:description" content="セッション記録・回数券・体組成グラフを完全オフラインで。顧客の情報を端末の外に出さない、パーソナルトレーナーのための顧客カルテ。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freetokyo.github.io/web/torekarte/index.html">
+  <meta property="og:image" content="https://freetokyo.github.io/web/torekarte/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"トレカルテ","alternateName":"ToreKarte","operatingSystem":"iOS 18","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"description":"パーソナルトレーナーのための顧客カルテアプリ。セッション記録・回数券の残回数・体組成グラフを完全オフラインで管理。","url":"https://freetokyo.github.io/web/torekarte/index.html"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"顧客の情報はどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"お使いのiPhoneの中だけに保存されます。開発者や第三者に送信されることはありません。アカウント登録も不要です。顧客情報の取得・管理および必要な同意の取得は、ご利用になるトレーナーご自身の責任となります。"}},
+    {"@type":"Question","name":"機種変更するとデータはどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"設定の「バックアップを書き出す」からファイルに書き出し、iCloud Drive など任意の場所に保存できます。新しい端末では「バックアップから復元」でそのファイルを選びます。この機能は無料でお使いいただけます。"}},
+    {"@type":"Question","name":"回数券のお支払いは扱えますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。トレカルテは残回数・期限・未収の「記録」のみを扱います。お支払いの処理・受け取りは行いません。"}},
+    {"@type":"Question","name":"サブスクリプションですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。トレカルテ Proは買い切り（¥3,000）です。一度購入すればずっとお使いいただけます。"}}
+  ]}
+  </script>
+  <style>
+    :root{--bg:#f8faf9;--surface:#fff;--text:#1c2422;--muted:#5c6b67;--line:rgba(28,36,34,.12);--accent:#134e4a;--deep:#134e4a;--cta:#134e4a;--tint:#eef4f2;--amber:#f59e0b;}
+    *{box-sizing:border-box}body{margin:0;color:var(--text);background:var(--bg);font-family:"Avenir Next","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}
+    a{color:var(--deep)}
+    .topnav{max-width:900px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .brand{font-weight:700;color:var(--deep);text-decoration:none;letter-spacing:.04em}
+    .appstore{background:#111;color:#fff;padding:8px 16px;border-radius:999px;text-decoration:none;font-size:.9rem}
+    .appstore.pending{background:var(--tint);color:var(--muted);pointer-events:none}
+    .lang-switch{display:inline-flex;gap:6px}.lang-switch button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;color:var(--muted)}
+    .lang-switch button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+    main{max-width:900px;margin:0 auto;padding:8px 20px 40px}
+    .hero{text-align:center;padding:40px 20px 20px}
+    .hero .logo{width:96px;height:96px;border-radius:22px;box-shadow:0 14px 40px rgba(19,78,74,.28)}
+    .hero h1{font-size:2rem;margin:18px 0 6px}
+    .hero .tag{color:var(--muted);font-size:1.05rem;margin:0}
+    .hero .cta{display:inline-block;margin-top:22px;background:var(--cta);color:#fff;padding:13px 28px;border-radius:14px;text-decoration:none;font-weight:600}
+    .hero .cta.pending{background:var(--tint);color:var(--muted);pointer-events:none}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:14px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 16px 40px rgba(19,78,74,.06)}
+    .card h3{margin:0 0 6px;color:var(--deep);font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .price{background:var(--tint);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:24px}
+    .price h2{margin:0 0 12px;color:var(--deep);font-size:1.2rem}.price ul{margin:0;padding-left:1.1em}.price li{margin:6px 0}
+    .lang-panel[hidden]{display:none}.muted{color:var(--muted)}
+    .note{border-left:3px solid var(--amber);padding-left:14px;margin-top:26px;color:var(--muted);font-size:.95rem}
+    footer.site{max-width:900px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);font-size:.9rem}
+    footer.site nav{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:10px}footer.site a{color:var(--deep);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="brand" href="./index.html">トレカルテ · ToreKarte</a>
+    <span style="display:flex;gap:12px;align-items:center">
+      <span class="lang-switch"><button id="ja" class="on" type="button">日本語</button><button id="en" type="button">EN</button></span>
+      <!-- 公開後に scripts/set_app_store_id.py が href と apple-itunes-app メタを差し込む -->
+      <a class="appstore" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">App Store</a>
+    </span>
+  </div>
+
+  <main>
+    <section class="lang-panel" lang="ja">
+      <div class="hero">
+        <img class="logo" src="apple-touch-icon.png" alt="トレカルテ アイコン">
+        <h1>顧客の記録が、指導の武器になる。</h1>
+        <p class="tag">パーソナルトレーナーのための顧客カルテ。セッション記録も回数券も、端末の中だけで。</p>
+        <a class="cta" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">App Store でダウンロード</a>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>前回の記録が、すぐ出る</h3><p>「今日」画面に当日のセッションと、直近の顧客が前回の種目付きで並びます。タップして記録を始めると、前回の重量・回数がそのまま初期値になります。変わっていなければ入力は要りません。</p></div>
+        <div class="card"><h3>回数券の残回数を自動で減算</h3><p>セッションを保存すると、紐づけた回数券の残回数が1つ減ります。残りわずか（2回以下）や期限間近（14日以内）はバッジの色と文言の両方で示すので、消化ミスと請求漏れを防げます。</p></div>
+        <div class="card"><h3>体組成の変化をグラフで</h3><p>体重・体脂肪率・周囲径（胸/腹/臀/大腿/上腕）を記録すると、期間ごとの推移と変化量がグラフで見えます。成果を顧客に見せる材料になります。</p></div>
+        <div class="card"><h3>顧客カルテに注意事項も</h3><p>目標と注意事項（「右肩に違和感。オーバーヘッド動作は控えめに」など）をカルテに残せます。「今日」画面にも表示されるので、現場で思い出せます。</p></div>
+        <div class="card"><h3>種目プリセットとテンプレート</h3><p>ベンチプレス・スクワット・デッドリフトなど17種目を部位別に収録。よく使う構成はテンプレートに保存して一括で追加できます（無料は3個まで、Pro で無制限）。</p></div>
+        <div class="card"><h3>顧客の情報を、外に出さない</h3><p>トレカルテはサーバーを持たず、アカウント登録もありません。入力した情報は端末の中だけに保存され、開発者や第三者に送信されることはありません。</p></div>
+        <div class="card"><h3>ロックとバックアップは無料</h3><p>Face ID・Touch ID・パスコードによるアプリロックと、バックアップの書き出し・復元は無料の範囲に含まれています。安全とデータ保全に関わる機能を有料にはしません。</p></div>
+        <div class="card"><h3>次回セッションの通知</h3><p>記録時に次回の予定を入れておくと、開始1時間前にこの端末で通知します。準備のリマインドに使えます。</p></div>
+      </div>
+      <div class="price">
+        <h2>料金</h2>
+        <ul>
+          <li><strong>無料</strong>：顧客3名まで、テンプレート3個まで。セッション記録・体組成グラフ・回数券・アプリロック・通知・バックアップはすべて使えます。</li>
+          <li><strong>トレカルテ Pro（買い切り ¥3,000）</strong>：顧客とテンプレートが無制限になり、顧客に渡せる<strong>PDF進捗レポート</strong>、<strong>CSVエクスポート</strong>、<strong>月次サマリー</strong>（実施セッション数・売上見込み）が使えます。<strong>サブスクリプションではありません。</strong>一度購入すればずっとお使いいただけます。</li>
+        </ul>
+      </div>
+      <p class="note">iPhone 専用（iOS 18 以降）。日本語・英語で表示できます。トレカルテは記録のためのツールであり、医療上の助言や診断は行いません。回数券は残回数・未収の記録のみを扱い、お支払いの処理は行いません。</p>
+    </section>
+
+    <section class="lang-panel" lang="en" hidden>
+      <div class="hero">
+        <img class="logo" src="apple-touch-icon.png" alt="ToreKarte icon">
+        <h1>Your records are your coaching edge.</h1>
+        <p class="tag">A client chart for personal trainers. Sessions and prepaid passes — all on your device.</p>
+        <a class="cta" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">Download on the App Store</a>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Last session, right there</h3><p>The Today screen lists your sessions for the day, plus recent clients with what they did last time. Start recording and their previous weights and reps are already filled in — leave them as-is if nothing changed.</p></div>
+        <div class="card"><h3>Passes count themselves down</h3><p>Saving a session uses one session from the linked pass. Low balance (2 or fewer) and near expiry (within 14 days) are shown by both colour and wording, so nothing gets missed or billed twice.</p></div>
+        <div class="card"><h3>See the change as a chart</h3><p>Record weight, body fat, and girth (chest, waist, hip, thigh, arm) and see the trend and net change over any period — something concrete to show your client.</p></div>
+        <div class="card"><h3>Notes you need on the floor</h3><p>Keep each client's goal and things to watch ("right shoulder discomfort; go easy on overhead work") on their chart. They show up on the Today screen too.</p></div>
+        <div class="card"><h3>Presets and templates</h3><p>17 exercises grouped by body part come built in. Save the sets you use often as a template and add them all at once (3 on the free tier, unlimited with Pro).</p></div>
+        <div class="card"><h3>Your clients' data stays put</h3><p>ToreKarte has no server and no account. What you enter is stored only on your device and is never sent to the developer or any third party.</p></div>
+        <div class="card"><h3>Lock and backup are free</h3><p>App lock (Face ID, Touch ID, or passcode) and backup export/restore are included in the free version. Safety and data-protection features shouldn't sit behind a paywall.</p></div>
+        <div class="card"><h3>Session reminders</h3><p>Set the next session when you record, and this device reminds you an hour before.</p></div>
+      </div>
+      <div class="price">
+        <h2>Pricing</h2>
+        <ul>
+          <li><strong>Free</strong>: up to 3 clients and 3 templates. Session records, charts, passes, app lock, reminders, and backup are all included.</li>
+          <li><strong>ToreKarte Pro (one-time, ¥3,000)</strong>: unlimited clients and templates, plus a <strong>PDF progress report</strong> to hand to clients, <strong>CSV export</strong>, and a <strong>monthly summary</strong> (sessions delivered and estimated revenue). <strong>Not a subscription.</strong> Buy once, keep it forever.</li>
+        </ul>
+      </div>
+      <p class="note">iPhone only (iOS 18 or later). Available in Japanese and English. ToreKarte is a record-keeping tool; it does not provide medical advice or diagnosis. Passes record sessions left and unpaid status only — no payments are handled.</p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./support.html">Support</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+    </nav>
+    <p><a href="/web/"><strong>&larr; freetokyo apps</strong></a></p>
+    <p>&copy; 2026 freetokyo</p>
+  </footer>
+
+  <script>
+    const btnJa=document.getElementById('ja'),btnEn=document.getElementById('en');
+    const panels=document.querySelectorAll('.lang-panel');
+    function set(lang){panels.forEach(p=>p.hidden=(p.getAttribute('lang')!==lang));
+      btnJa.classList.toggle('on',lang==='ja');btnEn.classList.toggle('on',lang==='en');
+      document.documentElement.lang=lang;}
+    btnJa.onclick=()=>set('ja');btnEn.onclick=()=>set('en');
+    if((navigator.language||'').startsWith('en'))set('en');
+  </script>
+</body>
+</html>

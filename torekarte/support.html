@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>サポート | トレカルテ</title>
+  <meta name="description" content="トレカルテのサポート。使い方・よくある質問・お問い合わせ先。回数券の消化、バックアップ、購入の復元について。">
+  <link rel="canonical" href="https://freetokyo.github.io/web/torekarte/support.html">
+  <meta name="apple-itunes-app" content="app-id=6791176557">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root{--bg:#f8faf9;--surface:#fff;--text:#1c2422;--muted:#5c6b67;--line:rgba(28,36,34,.12);--deep:#134e4a;--tint:#eef4f2;--amber:#f59e0b;}
+    *{box-sizing:border-box}body{margin:0;color:var(--text);background:var(--bg);font-family:"Avenir Next","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.9}
+    a{color:var(--deep)}
+    .topnav{max-width:820px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .brand{font-weight:700;color:var(--deep);text-decoration:none;letter-spacing:.04em}
+    .appstore{background:#111;color:#fff;padding:8px 16px;border-radius:999px;text-decoration:none;font-size:.9rem}
+    .appstore.pending{background:var(--tint);color:var(--muted);pointer-events:none}
+    .lang-switch{display:inline-flex;gap:6px}.lang-switch button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;color:var(--muted)}
+    .lang-switch button.on{background:var(--deep);color:#fff;border-color:var(--deep)}
+    main{max-width:820px;margin:0 auto;padding:8px 20px 40px}
+    h1{font-size:1.7rem;margin:24px 0 6px}h2{font-size:1.15rem;color:var(--deep);margin:28px 0 6px}
+    .contact{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:12px;padding:16px 20px;margin:22px 0}
+    details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+    details summary{cursor:pointer;font-weight:600;color:var(--deep)}
+    details p{color:var(--muted);margin:10px 0 0}
+    .lang-panel[hidden]{display:none}
+    footer.site{max-width:820px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);font-size:.9rem}
+    footer.site nav{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:10px}footer.site a{color:var(--deep);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="brand" href="./index.html">トレカルテ · ToreKarte</a>
+    <span style="display:flex;gap:12px;align-items:center">
+      <span class="lang-switch"><button id="ja" class="on" type="button">日本語</button><button id="en" type="button">EN</button></span>
+      <a class="appstore" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">App Store</a>
+    </span>
+  </div>
+
+  <main>
+    <section class="lang-panel" lang="ja">
+      <h1>サポート</h1>
+
+      <div class="contact">
+        <p style="margin:0"><strong>お問い合わせ</strong>：<a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+        <p style="margin:6px 0 0;font-size:.92rem;color:var(--muted)">個人開発のため、返信までお時間をいただく場合があります。ご不便をおかけします。</p>
+      </div>
+
+      <h2>よくある質問</h2>
+
+      <details>
+        <summary>回数券の残回数はいつ減りますか？</summary>
+        <p>セッションを保存したときに1つ減ります。記録画面で使用する回数券を選び、「保存時に1回消化する」がオンになっていることをご確認ください。期限切れ・使い切りの回数券は残回数が減らず、その旨をお知らせします。</p>
+      </details>
+
+      <details>
+        <summary>間違えて消化した回数券を戻せますか？</summary>
+        <p>そのセッションを削除すると、消化した1回分が戻ります。また、回数券の編集画面で「消化済み」の回数を直接修正することもできます。</p>
+      </details>
+
+      <details>
+        <summary>機種変更するときはどうすればいいですか？</summary>
+        <p>設定 →「バックアップを書き出す」でファイルを書き出し、iCloud Drive など新しい端末からもアクセスできる場所に保存してください。新しい端末でトレカルテをインストールし、設定 →「バックアップから復元」でそのファイルを選びます。この機能は無料でお使いいただけます。</p>
+      </details>
+
+      <details>
+        <summary>復元すると今のデータはどうなりますか？</summary>
+        <p>復元すると、その端末の現在のデータはバックアップの内容にすべて置き換わります。この操作は取り消せないため、確認ダイアログでご確認のうえ実行してください。</p>
+      </details>
+
+      <details>
+        <summary>購入したのに Pro になりません／機種変更後に Pro が消えました</summary>
+        <p>設定 →「購入を復元」をタップしてください。購入時と同じ Apple Account でサインインしている必要があります。</p>
+      </details>
+
+      <details>
+        <summary>無料でどこまで使えますか？</summary>
+        <p>顧客3名まで・テンプレート3個までの範囲で、セッション記録・体組成グラフ・回数券・アプリロック・通知・バックアップがすべてお使いいただけます。セッションの記録数に制限はありません。</p>
+      </details>
+
+      <details>
+        <summary>サブスクリプションですか？</summary>
+        <p>いいえ。トレカルテ Pro は買い切り（¥3,000）です。自動更新はありません。</p>
+      </details>
+
+      <details>
+        <summary>お支払いを受け取る機能はありますか？</summary>
+        <p>ありません。回数券は残回数・期限・未収の「記録」のみを扱います。お支払いの処理・受け取りは行いません。</p>
+      </details>
+
+      <details>
+        <summary>顧客の情報は安全ですか？</summary>
+        <p>入力した情報は端末の中だけに保存され、開発者や第三者に送信されることはありません。アカウント登録もありません。設定からアプリロック（Face ID / Touch ID / パスコード）を有効にすると、アプリを開くときに認証を求められます。</p>
+      </details>
+
+      <details>
+        <summary>PDFレポートに透かしが入ります</summary>
+        <p>無料版のプレビューには「サンプル」の透かしが入ります。透かしなしでの共有・保存はトレカルテ Pro の機能です。</p>
+      </details>
+
+      <details>
+        <summary>Apple Watch や iPad に対応していますか？</summary>
+        <p>現在は iPhone 専用です（iOS 18 以降）。</p>
+      </details>
+
+      <details>
+        <summary>通知が届きません</summary>
+        <p>設定 →「通知の許可」の状態をご確認ください。「許可されていません」の場合は「iOS の設定を開く」から通知を有効にしてください。通知は次回セッションの1時間前に届きます。</p>
+      </details>
+    </section>
+
+    <section class="lang-panel" lang="en" hidden>
+      <h1>Support</h1>
+
+      <div class="contact">
+        <p style="margin:0"><strong>Contact</strong>: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+        <p style="margin:6px 0 0;font-size:.92rem;color:var(--muted)">This is a solo project, so replies may take a little time. Thanks for your patience.</p>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <details>
+        <summary>When does a pass get used up?</summary>
+        <p>One session is deducted when you save a session. On the record screen, pick the pass to use and make sure "Use one session when saving" is on. Expired or fully used passes are never deducted, and the app tells you when that happens.</p>
+      </details>
+
+      <details>
+        <summary>Can I undo a session that was deducted by mistake?</summary>
+        <p>Deleting that session returns the one session to the pass. You can also edit the "Used" count directly on the pass.</p>
+      </details>
+
+      <details>
+        <summary>How do I move to a new phone?</summary>
+        <p>Go to Settings → "Export backup" and save the file somewhere your new phone can reach, such as iCloud Drive. On the new phone, install ToreKarte and use Settings → "Restore from backup" to pick that file. This feature is free.</p>
+      </details>
+
+      <details>
+        <summary>What happens to my current data when I restore?</summary>
+        <p>Restoring replaces all current data on that device with the backup's contents. It can't be undone, so confirm carefully in the dialog before proceeding.</p>
+      </details>
+
+      <details>
+        <summary>I purchased Pro but don't have it / it disappeared after switching phones</summary>
+        <p>Tap Settings → "Restore purchase". You need to be signed in with the same Apple Account used for the purchase.</p>
+      </details>
+
+      <details>
+        <summary>What do I get for free?</summary>
+        <p>Within the limits of 3 clients and 3 templates, you get session records, charts, passes, app lock, reminders, and backup. There's no limit on how many sessions you record.</p>
+      </details>
+
+      <details>
+        <summary>Is this a subscription?</summary>
+        <p>No. ToreKarte Pro is a one-time purchase (¥3,000). Nothing auto-renews.</p>
+      </details>
+
+      <details>
+        <summary>Does it handle payments or collection?</summary>
+        <p>No. Passes only record sessions left, expiry, and unpaid status. No payments are handled.</p>
+      </details>
+
+      <details>
+        <summary>Is my clients' information safe?</summary>
+        <p>What you enter is stored only on your device and is never sent to the developer or any third party. There's no account. Turn on the app lock (Face ID, Touch ID, or passcode) in Settings to require authentication when opening the app.</p>
+      </details>
+
+      <details>
+        <summary>My PDF report has a watermark</summary>
+        <p>Free previews carry a "SAMPLE" watermark. Sharing or saving without it is a ToreKarte Pro feature.</p>
+      </details>
+
+      <details>
+        <summary>Is there an Apple Watch or iPad version?</summary>
+        <p>Not currently — ToreKarte is iPhone only (iOS 18 or later).</p>
+      </details>
+
+      <details>
+        <summary>I'm not getting reminders</summary>
+        <p>Check Settings → "Permission". If it says "Not allowed", tap "Open iOS Settings" and enable notifications. Reminders arrive one hour before the next session.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site">
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./support.html">Support</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+    </nav>
+    <p><a href="/web/"><strong>&larr; freetokyo apps</strong></a></p>
+    <p>&copy; 2026 freetokyo</p>
+  </footer>
+
+  <script>
+    const btnJa=document.getElementById('ja'),btnEn=document.getElementById('en');
+    const panels=document.querySelectorAll('.lang-panel');
+    function set(lang){panels.forEach(p=>p.hidden=(p.getAttribute('lang')!==lang));
+      btnJa.classList.toggle('on',lang==='ja');btnEn.classList.toggle('on',lang==='en');
+      document.documentElement.lang=lang;}
+    btnJa.onclick=()=>set('ja');btnEn.onclick=()=>set('en');
+    if((navigator.language||'').startsWith('en'))set('en');
+  </script>
+</body>
+</html>

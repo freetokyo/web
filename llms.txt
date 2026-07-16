@@ -1,8 +1,8 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 28 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 33 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・くらし・おかね・しごとの 4 カテゴリで全 28 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・くらし・おかね・しごとの 4 カテゴリで全 33 アプリを一覧）
 English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルートページ。相互に hreflang 設定済み）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
@@ -17,6 +17,8 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 - [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。App Store: https://apps.apple.com/app/id6761906547
 - [Trero](https://freetokyo.github.io/web/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。38 言語対応のフラッグシップアプリ。App Store: https://apps.apple.com/app/id6760746164
 - [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。App Store: https://apps.apple.com/app/id6767084251
+
+- [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。※近日公開。
 
 ### Life（くらし・家族）
 
@@ -34,6 +36,8 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 - [Muddah（ムッダ）](https://freetokyo.github.io/web/muddah/): GCC 駐在家族のための完全オフライン書類期限ボルト iOS アプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。App Store: https://apps.apple.com/app/id6790558814
 - [ソナログ / Sonalog](https://freetokyo.github.io/web/sonalog/): 消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにする iOS アプリ。期限が近い備蓄を通知し、家族の人数から必要量を計算、防災カルテは PDF で持ち出せる。完全オフライン・アカウント不要・買い切り。日本語 / English 対応。App Store: https://apps.apple.com/app/id6790403062
 
+- [ハゼログ / HazeLog](https://freetokyo.github.io/web/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。※近日公開。
+
 ### Money（おかね・家計）
 
 - [世帯手取ナビ / HomeNet Navi](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。App Store: https://apps.apple.com/jp/app/id6772911843
@@ -50,6 +54,10 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 - [Toscore](https://freetokyo.github.io/web/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。App Store: https://apps.apple.com/jp/app/toscore/id6776913396
 - [コエガキ / Koegaki](https://freetokyo.github.io/web/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。App Store: https://apps.apple.com/jp/app/id6780139132
 - [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。App Store: https://apps.apple.com/app/id6788604524
+
+- [ネイログ / Nailog](https://freetokyo.github.io/web/nailog/): ネイリスト向けの顧客カルテ iOS アプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、アイテムマスタ・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。※近日公開。
+- [オトログ / Otolog](https://freetokyo.github.io/web/otolog/): ピアノ・音楽教室の個人講師向け生徒カルテ iOS アプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。※近日公開。
+- [トレカルテ / ToreKarte](https://freetokyo.github.io/web/torekarte/): パーソナルトレーナー向けの顧客カルテ iOS アプリ。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。※近日公開。
 
 ## Pages
 
@@ -75,5 +83,5 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
 - Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
 - 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
-- ルート `index.html` には CollectionPage + ItemList（全 28 アプリ）の JSON-LD あり。
+- ルート `index.html` には CollectionPage + ItemList（全 33 アプリ）の JSON-LD あり。
 - 各アプリページには MobileApplication / WebSite / HowTo / BreadcrumbList、support には FAQPage の JSON-LD を埋め込み。各アプリ `web/llms.txt`（per-app）も用意。
