@@ -1,0 +1,53 @@
+/* SakuLog web — docs/specs/brand-system.md のカラーに準拠（Terracotta / Coral / Kraft）
+   文字色は §2-A の「文字用トークン」を使う（ブランド色をそのまま文字にすると AA 不合格） */
+:root{
+  --terracotta:#B4472B;   /* ブランド色の文字用暗色版（Kraft 上 5.03:1） */
+  --coral:#C4522A;        /* CTA 塗り（白文字で 4.58:1） */
+  --keep:#3E7A57; --pending:#9B6627; --released:#776D63;
+  --bg:#FAF6F0; --card:#FFFFFF; --ink:#3A322C; --ink2:#6E645A; --line:#E8E0D5;
+}
+@media (prefers-color-scheme: dark){
+  /* アプリ本体はライト固定だが、Web は OS 設定に従う（読み手の環境を尊重する） */
+  :root{ --terracotta:#E89478; --coral:#E8734A; --keep:#6FB98B; --pending:#E0A657; --released:#A79B8D;
+         --bg:#1C1815; --card:#262019; --ink:#F2EDE6; --ink2:#B9AC9C; --line:#3A3129; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",Segoe UI,Roboto,sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--terracotta);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+nav.top{border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:10}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--terracotta);font-size:19px}
+.brand img{width:32px;height:32px;border-radius:8px}
+.badge{display:inline-block;background:var(--coral);color:#fff;padding:8px 16px;border-radius:999px;
+  font-weight:600;font-size:14px;white-space:nowrap}
+.badge:hover{text-decoration:none;filter:brightness(.94)}
+header.hero{padding:56px 0 40px;text-align:center}
+header.hero h1{font-size:34px;line-height:1.45;margin:0 0 12px;color:var(--terracotta)}
+header.hero p.lead{font-size:18px;color:var(--ink2);margin:0 auto 24px;max-width:640px}
+.shots{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:28px 0}
+.shots img{width:210px;border-radius:14px;border:1px solid var(--line);background:var(--card)}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font-size:24px;color:var(--terracotta);margin:0 0 14px}
+h3{font-size:17px;margin:22px 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.card h3{margin-top:0;color:var(--terracotta)}
+.card p{margin:6px 0 0;color:var(--ink2);font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:15px;overflow-x:auto;display:block}
+th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left}
+th{color:var(--ink2);font-weight:600}
+td.y{color:var(--keep);font-weight:700}
+td.n{color:var(--ink2)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--ink2);margin:8px 0 0}
+.note{font-size:13px;color:var(--ink2)}
+footer{border-top:1px solid var(--line);padding:28px 0 44px;background:var(--card);margin-top:20px}
+footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+footer .links a{color:var(--ink2)}
+ul.plain,ol.plain{padding-left:20px;color:var(--ink2)}
+ul.plain li,ol.plain li{margin:6px 0}
