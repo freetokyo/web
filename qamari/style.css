@@ -1,0 +1,67 @@
+/* Qamari web — docs/specs/brand-system.md §2 のカラートークンに準拠。
+   ブランド色（#C99A3F）をそのまま文字にすると白背景で AA を割るため、
+   文字には §2 の「文字用トークン」brandGoldText #8A6420 を使う（アプリ本体と同じ判断）。 */
+:root{
+  --night:#101C3A;      /* brandNight: 見出し・ブランド基調 */
+  --gold:#C99A3F;       /* brandGold: CTA 塗り */
+  --goldtext:#8A6420;   /* brandGoldText: 白背景上の金系文字（5.35:1） */
+  --teal:#1D6E67;       /* todayTeal: 「あり」の印 */
+  --amber:#A34A25;      /* adjustAmber の文字用: 補正の強調 */
+  --bg:#FBF8F1; --card:#FFFFFF; --ink:#1E2433; --ink2:#5C6478; --line:#E4E0D6;
+}
+@media (prefers-color-scheme: dark){
+  /* アプリ本体もライト/ダーク両対応なので、Web も OS 設定に従う。 */
+  :root{ --night:#C8D4F0; --gold:#E8B85C; --goldtext:#E8B85C; --teal:#4FB3A8; --amber:#E88B5F;
+         --bg:#0D1426; --card:#161E33; --ink:#EDF1F8; --ink2:#9AA5BE; --line:#2A3450; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Noto Sans Arabic",Segoe UI,Roboto,sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--goldtext);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+nav.top{border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:10}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--night);font-size:19px}
+.brand img{width:32px;height:32px;border-radius:8px}
+.badge{display:inline-block;background:var(--gold);color:#1A1204;padding:8px 16px;border-radius:999px;
+  font-weight:600;font-size:14px;white-space:nowrap}
+.badge:hover{text-decoration:none;filter:brightness(.94)}
+header.hero{padding:56px 0 40px;text-align:center}
+header.hero h1{font-size:34px;line-height:1.45;margin:0 0 12px;color:var(--night)}
+header.hero p.lead{font-size:18px;color:var(--ink2);margin:0 auto 24px;max-width:640px}
+.shots{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:28px 0}
+.shots img{width:210px;border-radius:14px;border:1px solid var(--line);background:var(--card)}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font-size:24px;color:var(--night);margin:0 0 14px}
+h3{font-size:17px;margin:22px 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.card h3{margin-top:0;color:var(--goldtext)}
+.card p{margin:6px 0 0;color:var(--ink2);font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:15px;overflow-x:auto;display:block}
+th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:start}
+th{color:var(--ink2);font-weight:600}
+td.y{color:var(--teal);font-weight:700}
+td.n{color:var(--ink2)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--ink2);margin:8px 0 0}
+.note{font-size:13px;color:var(--ink2)}
+.callout{background:var(--card);border:1px solid var(--line);border-inline-start:3px solid var(--amber);
+  border-radius:12px;padding:14px 18px;margin:16px 0}
+.callout p{margin:0;color:var(--ink2);font-size:15px}
+footer{border-top:1px solid var(--line);padding:28px 0 44px;background:var(--card);margin-top:20px}
+footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+footer .links a{color:var(--ink2)}
+ul.plain,ol.plain{padding-inline-start:20px;color:var(--ink2)}
+ul.plain li,ol.plain li{margin:6px 0}
+main.doc{max-width:760px;margin:0 auto;padding:32px 20px 56px}
+main.doc h1{font-size:28px;color:var(--night)}
+main.doc h2{font-size:19px;margin-top:28px}
+main.doc p,main.doc li{color:var(--ink2)}
+
+/* RTL（ar）。論理プロパティ（start/end・padding-inline-*）で組んであるので、
+   dir="rtl" だけで反転する。物理方向（left/right）は使わない — アプリ本体の RTL 方針と同じ。 */
+[dir="rtl"] body{font-family:-apple-system,"SF Arabic","Noto Sans Arabic","Geeza Pro",Segoe UI,sans-serif}

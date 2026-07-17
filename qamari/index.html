@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qamari — ヒジュラ暦を「第一の暦」として使うカレンダー</title>
+<meta name="description" content="ヒジュラ暦を大きく、西暦を併記。毎ヒジュラ年・毎ヒジュラ月で繰り返すリマインダーと、地域の実見発表に合わせると登録済みの通知がすべて自動追従する実見補正。完全オフライン・アカウント不要・買い切り。">
+<link rel="canonical" href="https://freetokyo.github.io/web/qamari/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/qamari/">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/qamari/en/">
+<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/qamari/ar/">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/qamari/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Qamari — 月の暦で、暮らしを刻む。">
+<meta property="og:description" content="ヒジュラ暦が主役のカレンダー。ヒジュラ暦で繰り返すリマインダーと、地域の実見発表に通知が自動追従する補正。完全オフライン。">
+<meta property="og:url" content="https://freetokyo.github.io/web/qamari/">
+<meta property="og:image" content="https://freetokyo.github.io/web/qamari/ogp.png">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:site_name" content="freetokyo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Qamari — 月の暦で、暮らしを刻む。">
+<meta name="twitter:description" content="ヒジュラ暦を第一の暦として扱うカレンダー。実見発表に合わせると通知がすべて追従します。完全オフライン・買い切り。">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/qamari/ogp.png">
+<meta name="apple-itunes-app" content="app-id=6791838601">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"MobileApplication","name":"Qamari - ヒジュラ暦カレンダー","alternateName":["Qamari","قمري"],
+ "operatingSystem":"iOS 26.0+","applicationCategory":"ProductivityApplication",
+ "url":"https://freetokyo.github.io/web/qamari/",
+ "installUrl":"https://apps.apple.com/jp/app/id6791838601",
+ "image":"https://freetokyo.github.io/web/qamari/ogp.png",
+ "description":"ヒジュラ暦を第一の暦として扱い、西暦を常に併記するカレンダー・リマインダーアプリ。ヒジュラ暦での繰り返しと、地域の実見発表に合わせる補正に対応します。完全にオフラインで動作し、データは端末内にのみ保存されます。",
+ "featureList":["ヒジュラ暦を主・西暦を従で併記するデュアル暦カレンダー（月表示・週表示）","ワンタップでの主従入れ替え","毎ヒジュラ年・毎ヒジュラ月・特定の月日・毎週の繰り返しリマインダー","実見補正（全体オフセットと月別の個別補正）","補正に登録済みリマインダーが自動追従","イスラム記念日の個別 ON/OFF","断食日プリセット（白い日・月木・シャウワール月の6日間）","ウィジェット（今日のヒジュラ日付／次の記念日）","書き出し（.ics ファイル／カレンダーへ西暦換算で追加）","文章で書いた日付をフォームに反映（端末内で処理）","ヒジュラ暦での経過年数の表示","ウンム・アルクラー暦／民用／表形式 の切替","アラビア・インド数字（٤٥٦）と算用数字の切替","週の開始曜日・週末の設定","ライト／ダーク対応、日本語・英語・アラビア語（右から左）","完全オフライン・アカウント不要・データ収集ゼロ"],
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"JPY","description":"基本無料。買い切りの Pro（¥1,500）でリマインダー無制限・記念日の無期限展開・月別の実見補正・全断食日プリセット・ウィジェット・書き出し・文章入力が解放されます。サブスクリプションではありません。"},
+ "author":{"@type":"Organization","name":"freetokyo"}},
+{"@type":"WebSite","name":"Qamari","url":"https://freetokyo.github.io/web/qamari/",
+ "inLanguage":"ja","publisher":{"@type":"Organization","name":"freetokyo"}},
+{"@type":"BreadcrumbList","itemListElement":[
+ {"@type":"ListItem","position":1,"name":"freetokyo apps","item":"https://freetokyo.github.io/web/"},
+ {"@type":"ListItem","position":2,"name":"Qamari","item":"https://freetokyo.github.io/web/qamari/"}]},
+{"@type":"HowTo","name":"Qamari でヒジュラ暦の予定を管理する","inLanguage":"ja","step":[
+ {"@type":"HowToStep","name":"地域を選ぶ","text":"最初に地域プリセットを選びます。週の開始曜日・週末・暦の計算方式が地域に合わせて設定されます。"},
+ {"@type":"HowToStep","name":"記念日を選ぶ","text":"記念日タブで、ご自身が参照する記念日だけを個別に ON にします。日付や呼称は地域・学派によって異なるため、既定ではまとめて有効にはしません。"},
+ {"@type":"HowToStep","name":"リマインダーを作る","text":"カレンダー右上の + から、タイトルと日付を入れ、繰り返しルールに「毎ヒジュラ年」などを選んで保存します。"},
+ {"@type":"HowToStep","name":"実見に合わせる","text":"設定 → 暦 → 実見補正で、お住まいの地域の発表に合わせて全体オフセットを設定します。登録済みのリマインダーはすべて自動で追従します。"},
+ {"@type":"HowToStep","name":"ホーム画面に置く","text":"ウィジェットで、今日のヒジュラ日付と次の記念日をホーム画面から確認できます。"}]},
+{"@type":"FAQPage","inLanguage":"ja","mainEntity":[
+ {"@type":"Question","name":"標準のカレンダーアプリと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"2点あります。ひとつは「毎ヒジュラ年に繰り返す」予定が作れること。太陰年は西暦では毎年約11日ずつ前倒しになるため、西暦ベースのカレンダーでは表現できません。もうひとつは実見補正で、地域の月の実見発表に合わせて日付をずらすと、登録済みのリマインダーがすべて自動で追従します。"}},
+ {"@type":"Question","name":"計算による暦と、地域の発表がずれたときはどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"実見補正で調整できます。全体オフセットは -2 〜 +2 日の範囲で設定でき、Pro では特定の月だけを個別に補正することもできます。補正するとカレンダーの表示と、登録済みリマインダーの発生日がすべて追従します。"}},
+ {"@type":"Question","name":"どの暦の計算方式に対応していますか？","acceptedAnswer":{"@type":"Answer","text":"ウンム・アルクラー暦（既定）・民用暦・表形式暦を設定から切り替えられます。ウンム・アルクラー暦はサウジアラビアの公式暦です。方式によって1〜2日異なることがあります。"}},
+ {"@type":"Question","name":"データはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"すべて端末内にのみ保存されます。アカウント登録は不要で、外部への送信は一切ありません。広告もトラッキングもなく、機内モードでもすべての機能が動作します。"}},
+ {"@type":"Question","name":"サブスクリプションですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。Pro は買い切り（¥1,500）です。一度購入すれば追加の料金はかかりません。設定と Paywall の両方から復元できます。"}},
+ {"@type":"Question","name":"宗教的な判断をアプリが示すことはありますか？","acceptedAnswer":{"@type":"Answer","text":"ありません。Qamari は日付の管理のみを行います。記念日の日付や呼称は地域・学派によって異なるため、ご自身が参照するものだけを選べる設計にしています。「正しい日付」を主張することはなく、最終的な判断は各自の学派・地域の当局にお任せしています。"}}]}
+]}
+</script>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="">Qamari</a>
+  <a class="badge" href="https://apps.apple.com/jp/app/id6791838601">App Store で見る</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>月の暦で、暮らしを刻む。</h1>
+  <p class="lead">ヒジュラ暦（イスラム暦）を「第一の暦」として扱うカレンダーです。西暦は常に併記します。<br>
+  ヒジュラ暦で繰り返す予定と、地域の実見発表に通知が追従する補正 —— 標準のカレンダーではできない2つを担います。</p>
+  <a class="badge" href="https://apps.apple.com/jp/app/id6791838601">App Store で見る</a>
+  <div class="shots">
+    <img src="shots/ja/calendar.png" alt="カレンダー画面。ヒジュラ暦の日付が大きく、西暦が小さく併記されている" loading="lazy">
+    <img src="shots/ja/holidays.png" alt="記念日画面。イスラム記念日が一覧され、個別にオン・オフできる" loading="lazy">
+    <img src="shots/ja/adjust.png" alt="実見補正画面。全体オフセットと月別の個別補正、暦の計算方式の設定" loading="lazy">
+  </div>
+  <p class="note">iPhone / iOS 26.0 以降・日本語 / English / العربية・アカウント登録不要</p>
+</div></header>
+
+<section><div class="wrap">
+  <h2>ヒジュラ暦が主役、西暦はいつも隣に</h2>
+  <div class="grid">
+    <div class="card"><h3>大きくヒジュラ暦、小さく西暦</h3><p>月表示でも週表示でも、ヒジュラ暦の日付が主役です。西暦はその下に小さく併記されるので、周囲の予定と突き合わせるときにも困りません。</p></div>
+    <div class="card"><h3>ワンタップで主従を入れ替え</h3><p>月表示のヘッダーをタップすると、ヒジュラ暦と西暦の主従が入れ替わります。西暦で考えたいときだけ切り替えて、また戻せます。</p></div>
+    <div class="card"><h3>数字も、週も、地域に合わせて</h3><p>アラビア・インド数字（٤٥٦）と算用数字を切り替えられます。週の開始曜日（土曜／日曜）と週末（金土／土日）も地域プリセットに連動し、設定から変更できます。</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>ヒジュラ暦で繰り返す、という当たり前</h2>
+  <p>太陰年は西暦より約11日短いため、<strong>ヒジュラ暦の記念日は西暦では毎年前倒しになります</strong>。
+  西暦ベースのカレンダーで「毎年」を設定しても、それはヒジュラ暦の「毎年」ではありません。</p>
+  <div class="grid">
+    <div class="card"><h3>毎ヒジュラ年</h3><p>ヒジュラ暦の同じ月日に、ちょうど1年ごとに巡ってきます。西暦での日付は毎年変わりますが、設定は一度きりです。</p></div>
+    <div class="card"><h3>毎ヒジュラ月・特定の月日</h3><p>毎月同じヒジュラ日、あるいは「ラマダーン月の1日」のような特定の月日を指定できます。毎週の繰り返しにも対応します。</p></div>
+    <div class="card"><h3>先の日付が見える</h3><p>作成中に、その繰り返しが西暦のいつに当たるかをプレビューできます。「来年のラマダーンは西暦で何月か」がその場で分かります。</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>実見発表に、通知が自動で追従</h2>
+  <p>計算による暦と、お住まいの地域の月の実見発表は<strong>1〜2日ずれることがあります</strong>。
+  そのたびに登録済みの予定を1件ずつ直すのは現実的ではありません。</p>
+  <div class="grid">
+    <div class="card"><h3>全体オフセット</h3><p>地域の発表に合わせて -2 〜 +2 日を設定すると、カレンダーの表示と<strong>登録済みリマインダーの発生日がすべて自動で追従</strong>します。手直しは要りません。</p></div>
+    <div class="card"><h3>月別の個別補正（Pro）</h3><p>「ラマダーンやイードだけがずれた」という場合には、その月だけを個別に補正できます。月別補正は全体オフセットより優先されます。</p></div>
+    <div class="card"><h3>計算方式も選べる</h3><p>ウンム・アルクラー暦（既定・サウジアラビアの公式暦）／民用暦／表形式暦を切り替えられます。</p></div>
+  </div>
+  <div class="callout"><p>Qamari は「正しい日付」を主張しません。どの発表に合わせるかを決めるのは、いつでもあなたです。</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>記念日と断食日は、あなたが選ぶ</h2>
+  <p>記念日の<strong>日付や呼称は地域・学派によって異なります</strong>。そのため Qamari は、記念日をまとめて有効にはしません。
+  一覧から、ご自身が参照するものだけを個別に ON にしてください。断定的な解釈は一切表示しません。</p>
+  <div class="grid">
+    <div class="card"><h3>主要な記念日</h3><p>ヒジュラ新年・アーシューラー・イード・ラマダーン開始など。ON にしたものだけがカレンダーと通知に出ます。</p></div>
+    <div class="card"><h3>断食日プリセット</h3><p>白い日（毎月13・14・15日）は無料で使えます。Pro では月曜・木曜、シャウワール月の6日間のプリセットも購読できます。</p></div>
+    <div class="card"><h3>ヒジュラ暦での経過年数</h3><p>記念日に、ヒジュラ暦で何年経ったかを表示できます。西暦での年数とは異なります。</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>データは、あなたの端末だけに</h2>
+  <p>Qamari は<strong>完全にオフラインで動作します</strong>。アカウント登録は不要で、
+  予定も記念日の設定も、すべて端末内にのみ保存されます。開発者のサーバーに送信されることは一切ありません。
+  通知はローカル通知のみで、機内モードでもすべての機能が動作します。</p>
+  <p class="note">広告はありません。トラッキングもしません。App Privacy は「データを収集しません」です。</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>無料と Pro</h2>
+  <table>
+    <thead><tr><th>機能</th><th>無料</th><th>Pro</th></tr></thead>
+    <tbody>
+      <tr><td>デュアル暦カレンダー</td><td class="y">全機能</td><td class="y">✓</td></tr>
+      <tr><td>イスラム記念日</td><td class="n">当年分</td><td class="y">無期限</td></tr>
+      <tr><td>ヒジュラ暦リマインダー</td><td class="n">3件まで</td><td class="y">無制限</td></tr>
+      <tr><td>実見補正</td><td class="n">全体のみ</td><td class="y">月別も</td></tr>
+      <tr><td>断食日プリセット</td><td class="n">白い日のみ</td><td class="y">全て</td></tr>
+      <tr><td>ウィジェット</td><td class="n">—</td><td class="y">✓</td></tr>
+      <tr><td>書き出し・カレンダー連携</td><td class="n">—</td><td class="y">✓</td></tr>
+      <tr><td>文章から入力</td><td class="n">—</td><td class="y">✓</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Pro は買い切り（¥1,500）です。サブスクリプションではありません。いつでも復元できます。</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>使い方</h2>
+  <ol class="plain">
+    <li>最初に<strong>地域プリセット</strong>を選びます。週の開始曜日・週末・暦の計算方式が地域に合わせて設定されます。</li>
+    <li>記念日タブで、ご自身が参照する記念日だけを ON にします。</li>
+    <li>カレンダー右上の <strong>+</strong> から予定を作り、繰り返しルールに「毎ヒジュラ年」などを選びます。</li>
+    <li>設定 → 暦 → <strong>実見補正</strong>で、お住まいの地域の発表に合わせます。登録済みの通知はすべて追従します。</li>
+    <li>ウィジェットで、今日のヒジュラ日付と次の記念日をホーム画面から確認できます。</li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <h2>よくある質問</h2>
+  <details><summary>標準のカレンダーアプリと何が違いますか？</summary><p>2点あります。ひとつは「毎ヒジュラ年に繰り返す」予定が作れること。太陰年は西暦では毎年約11日ずつ前倒しになるため、西暦ベースのカレンダーでは表現できません。もうひとつは実見補正で、地域の実見発表に合わせて日付をずらすと、登録済みのリマインダーがすべて自動で追従します。</p></details>
+  <details><summary>計算による暦と、地域の発表がずれたときはどうなりますか？</summary><p>実見補正で調整できます。全体オフセットは -2 〜 +2 日の範囲で設定でき、Pro では特定の月だけを個別に補正することもできます。補正するとカレンダーの表示と、登録済みリマインダーの発生日がすべて追従します。</p></details>
+  <details><summary>どの暦の計算方式に対応していますか？</summary><p>ウンム・アルクラー暦（既定）・民用暦・表形式暦を設定から切り替えられます。ウンム・アルクラー暦はサウジアラビアの公式暦です。方式によって1〜2日異なることがあります。</p></details>
+  <details><summary>データはどこに保存されますか？</summary><p>すべて端末内にのみ保存されます。アカウント登録は不要で、外部への送信は一切ありません。広告もトラッキングもなく、機内モードでもすべての機能が動作します。</p></details>
+  <details><summary>通知はいくつまで登録できますか？</summary><p>iOS の仕様上、アプリが同時に予約できる通知は 64 件までです。Qamari は直近の 50 件を常に保持し、通知が消化されるたびに先の分を自動で補充します。予定そのものの件数に上限はありません（Pro）。</p></details>
+  <details><summary>サブスクリプションですか？</summary><p>いいえ。Pro は買い切り（¥1,500）です。一度購入すれば追加の料金はかかりません。設定と Paywall の両方から復元できます。</p></details>
+  <details><summary>宗教的な判断をアプリが示すことはありますか？</summary><p>ありません。Qamari は日付の管理のみを行います。記念日の日付や呼称は地域・学派によって異なるため、ご自身が参照するものだけを選べる設計にしています。「正しい日付」を主張することはなく、最終的な判断は各自の学派・地域の当局にお任せしています。</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="./">ホーム</a><a href="support.html">サポート</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシーポリシー</a><a href="en/">English</a><a href="ar/">العربية</a>
+  </div>
+  <p class="note">開発: freetokyo ／ お問い合わせ: freetokyo2020@yahoo.co.jp<br>
+  <a href="/web/"><strong>← freetokyo apps</strong></a></p>
+</div></footer>
+</body>
+</html>

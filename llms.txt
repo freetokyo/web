@@ -38,6 +38,8 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 
 - [ハゼログ / HazeLog](https://freetokyo.github.io/web/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。※近日公開。
 
+- [قمري / Qamari（カマリ）](https://freetokyo.github.io/web/qamari/): ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。※近日公開。
+
 ### Money（おかね・家計）
 
 - [世帯手取ナビ / HomeNet Navi](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。App Store: https://apps.apple.com/jp/app/id6772911843
