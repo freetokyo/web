@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>freetokyo apps — iOS apps for health, life, money &amp; work</title>
-  <meta name="description" content="A portfolio of 39 iOS apps by indie developer freetokyo — small tools that stay on your device. Across health, life, money and work: sleep recovery, sauna timer, strength training, menstrual-cycle training, family-home watch, school-printout OCR, cat healthcare, screenshot triage, rental move-in/out records, floor-plan effective area, end-of-life notebook, solo-caregiver logs, weekly journal, camel logbook, falconry records, GCC family document-expiry vault, household disaster-prep, income-threshold simulator, asset-longevity simulator, estate inventory, expense receipts, stock trade-decision journal, home-care payroll, on-site reports, delivery income, meeting notes, mini-basketball scoresheet household-staff records, stress scoring, coffee-roast logging and client charts for nail, music-lesson and personal-training professionals. Most are fully offline, no account, one-time purchase.">
+  <title>freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集</title>
+  <meta name="description" content="個人開発者 freetokyo がつくる、端末内で完結する小さな iOS アプリの道具箱。健康・くらし・おかね・しごとの 4 領域で 39 本。睡眠リカバリー、サウナ、筋トレ、生理周期、実家見守り、学校プリント整理、猫ヘルスケア、スクショ仕分け、賃貸原状回復、間取り有効面積、終活ノート、ひとり介護、週次ジャーナル、ラクダ台帳、鷹匠記録、駐在家族の書類期限、家庭防災、年収の壁、資産寿命、財産目録・相続税、経費レシート、株の売買判断、訪問介護給与、現場報告書、配達収支、議事メモ、ミニバススコア、家事使用人記録、ストレススコア可視化、コーヒー焙煎ログ、ネイル・音楽レッスン・パーソナルトレーニング・彫師の顧客カルテ、こどもの作品整理、馬主の管理台帳、市民農園の栽培記録、更年期の症状記録まで。多くが完全オフライン・アカウント不要・買い切り。">
   <meta name="theme-color" content="#0A84FF">
   <meta name="format-detection" content="telephone=no">
-  <link rel="canonical" href="https://freetokyo.github.io/web/en/">
+  <link rel="canonical" href="https://freetokyo.github.io/web/">
   <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/">
   <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/en/">
   <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/">
@@ -15,23 +15,23 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="freetokyo apps">
-  <meta property="og:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
-  <meta property="og:description" content="39 iOS apps that make your everyday a little lighter. A portfolio across four axes: health, life, money and work. Most are fully offline, no account, one-time purchase.">
-  <meta property="og:url" content="https://freetokyo.github.io/web/en/">
+  <meta property="og:title" content="freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集">
+  <meta property="og:description" content="端末内で完結する小さな iOS アプリの道具箱。健康・くらし・おかね・しごとの 4 軸で 39 本。多くが完全オフライン・アカウント不要・買い切り。">
+  <meta property="og:url" content="https://freetokyo.github.io/web/">
   <meta property="og:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
-  <meta name="twitter:description" content="39 iOS apps that make your everyday a little lighter — across health, life, money and work.">
+  <meta name="twitter:title" content="freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集">
+  <meta name="twitter:description" content="端末内で完結する 39 の小さな iOS アプリ。健康・くらし・おかね・しごとの 4 軸で。">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
 
   <!-- Favicon (emoji as SVG) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
 
-<style>
+  <style>
     :root {
       --color-bg: #f5f5f7;
       --color-surface: #ffffff;
@@ -204,13 +204,13 @@
     .icon-kimekabu     { background: linear-gradient(135deg, #2C3040, #C9A227); }
     .icon-calmgraph    { background: linear-gradient(135deg, #0A5A54, #0E7C7B); }
     .icon-hazelog      { background: linear-gradient(135deg, #6F4E37, #C08552); }
+    .icon-qamari       { background: linear-gradient(135deg, #101C3A, #C99A3F); }
     .icon-nailog       { background: linear-gradient(135deg, #8a5a78, #d96c8e); }
     .icon-otolog       { background: linear-gradient(135deg, #1f3a5f, #d6453f); }
     .icon-torekarte    { background: linear-gradient(135deg, #134e4a, #f59e0b); }
     .icon-saqrlog      { background: linear-gradient(135deg, #7a5230, #c67a32); }
     .icon-muddah       { background: linear-gradient(135deg, #475569, #C9A24B); }
     .icon-sonalog      { background: linear-gradient(135deg, #2f8f6b, #eab308); }
-    .icon-qamari       { background: linear-gradient(135deg, #101C3A, #C99A3F); }
     .icon-inkarte      { background: linear-gradient(135deg, #16161A, #E0492F); }
     .icon-sakulog      { background: linear-gradient(135deg, #d96c8e, #f2b8c6); }
     .icon-khaylog      { background: linear-gradient(135deg, #3B2F2F, #8A6D3B); }
@@ -259,6 +259,7 @@
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
     .footer a { color: var(--color-text-sub); margin: 0 8px; }
   </style>
+
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
   {
@@ -267,8 +268,10 @@
     "name": "freetokyo apps",
     "url": "https://freetokyo.github.io/web/",
     "logo": "https://freetokyo.github.io/web/iekan/ogp.png",
-    "description": "A portfolio of iOS apps by indie developer freetokyo that stay on your device, useful across health, life, money and work.",
-    "sameAs": ["https://github.com/freetokyo"]
+    "description": "個人開発者 freetokyo がつくる、端末内で完結する iOS アプリの道具箱。健康・くらし・おかね・しごとの 4 領域。",
+    "sameAs": [
+      "https://github.com/freetokyo"
+    ]
   }
   </script>
 
@@ -277,10 +280,10 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "freetokyo apps — iOS apps for health, life, money & work",
-    "url": "https://freetokyo.github.io/web/en/",
-    "inLanguage": "en",
-    "description": "A portfolio of 39 iOS apps released by indie developer freetokyo, spanning the four categories of health, life, money and work.",
+    "name": "freetokyo apps — 健康・くらし・おかね・しごとに効く iOS アプリ集",
+    "url": "https://freetokyo.github.io/web/",
+    "inLanguage": "ja",
+    "description": "個人開発者 freetokyo がリリースしている iOS アプリ 39 本のポートフォリオ。健康・くらし・おかね・しごとの 4 カテゴリで横断的に紹介。",
     "mainEntity": {
       "@type": "ItemList",
       "numberOfItems": 33,
@@ -335,10 +338,10 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "What is freetokyo apps?", "acceptedAnswer": {"@type": "Answer", "text": "A collection of iOS apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 39 small tools that make daily chores a little lighter. Most are fully offline, with no account and no data collection."}},
-      {"@type": "Question", "name": "What categories are there?", "acceptedAnswer": {"@type": "Answer", "text": "Health (recovery, sauna, strength, cycle), Life & Family (family home, cat, documents, rentals, end-of-life, caregiving, disaster-prep, life abroad), Money (income thresholds, asset longevity, estate inventory, expenses, trade decisions) and Work (home care, on-site reports, delivery, meeting notes, scoresheets)."}},
-      {"@type": "Question", "name": "Is it free to use?", "acceptedAnswer": {"@type": "Answer", "text": "All core features are free. To support ongoing development, operation and support, some apps offer premium features via one-time purchase, or occasionally subscription, at around the price of a cup of coffee. They are designed so you get a fully sufficient experience for everyday use without going premium."}},
-      {"@type": "Question", "name": "How is my personal information and data handled?", "acceptedAnswer": {"@type": "Answer", "text": "Many apps are fully offline, or use only your own cloud such as iCloud, and do not send data to the developer's servers. See each app's privacy policy for details."}}
+      {"@type": "Question", "name": "freetokyo apps とは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "個人開発者 freetokyo がつくっている iOS アプリの集合体です。健康・くらし・おかね・しごとの 4 つの領域で、日々の手間を少し軽くする小さな道具を 39 本提供しています。多くが完全オフラインで、アカウント登録もデータ収集もありません。"}},
+      {"@type": "Question", "name": "どんなカテゴリがありますか？", "acceptedAnswer": {"@type": "Answer", "text": "健康（リカバリー・サウナ・筋トレ・生理周期）、くらし・家族（実家見守り・猫・書類・賃貸・終活・介護・防災・海外のくらし）、おかね（年収の壁・資産寿命・財産目録・経費・株の判断）、しごと（訪問介護・現場報告・配達・議事録・スコアシート）の 4 カテゴリです。"}},
+      {"@type": "Question", "name": "無料で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "基本機能はすべて無料で使えます。継続的な開発・運用・サポートを支えるため、コーヒー一杯前後の価格で買い切り、または一部サブスクのプレミアム機能を提供しているアプリがあります。プレミアムにしなくても日常利用に十分な体験ができるよう設計しています。"}},
+      {"@type": "Question", "name": "データのプライバシーはどうなっていますか？", "acceptedAnswer": {"@type": "Answer", "text": "多くのアプリが完全オフライン、あるいは iCloud などユーザー本人のクラウドのみを利用する設計で、開発者のサーバーへデータを送信しません。詳細は各アプリのプライバシーポリシーをご確認ください。"}}
     ]
   }
   </script>
@@ -347,74 +350,74 @@
 <body>
 
 <!-- ===== NAV ===== -->
-<nav class="nav" aria-label="Global">
+<nav class="nav" aria-label="グローバル">
   <div class="container nav__inner">
-    <a class="nav__brand" href="/web/en/">
+    <a class="nav__brand" href="/web/">
       <span class="nav__logo" aria-hidden="true">ft</span>
       freetokyo apps
     </a>
     <div class="nav__links">
       <div class="nav__item">
-        <a href="#health">Health</a>
+        <a href="#health">健康</a>
         <div class="nav__drop"><div class="nav__drop-inner">
-          <a href="/web/recoverysync/">RecoverySync<span>Sleep &amp; HRV recovery score</span></a>
-          <a href="/web/saunaflow/">SaunaFlow<span>Apple Watch sauna timer</span></a>
-          <a href="/web/trero/">Trero<span>Strength &amp; workout tracking</span></a>
-          <a href="/web/tsukilift/">TsukiLift<span>Menstrual cycle × training</span></a>
-          <a href="/web/calmgraph/">Calmgraph<span>Stress as one number</span></a>
-          <a href="/web/yuralog/en/">Yuralog<span>Menopause symptom log</span></a>
+          <a href="./recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a>
+          <a href="./saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a>
+          <a href="./trero/">Trero<span>筋トレ・ワークアウト管理</span></a>
+          <a href="./tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a>
+          <a href="./calmgraph/">Calmgraph<span>ストレスを1つの数字に</span></a>
+          <a href="./yuralog/">Yuralog<span>更年期の症状記録</span></a>
         </div></div>
       </div>
       <div class="nav__item">
-        <a href="#life">Life</a>
+        <a href="#life">くらし</a>
         <div class="nav__drop"><div class="nav__drop-inner">
-          <a href="/web/iekan/">IeKan<span>Watch over your family home</span></a>
-          <a href="/web/printmemo/">PrintSummary<span>School printouts × OCR</span></a>
-          <a href="/web/miawell/">Miawell<span>Cat-only healthcare</span></a>
-          <a href="/web/sukushori/">Sukushori<span>Automatic screenshot triage</span></a>
-          <a href="/web/heyalog/">Heyalog<span>Rental move-in/out records</span></a>
-          <a href="/web/jitsuhiro/">Jitsuhiro<span>Floor-plan effective area</span></a>
-          <a href="/web/yuzuri/">Yuzuri<span>End-of-life notebook</span></a>
-          <a href="/web/hitorilog/">HitoriLog<span>Solo-caregiver records</span></a>
-          <a href="/web/lifeweeks/">Weekwise<span>Your life in weeks</span></a>
-          <a href="/web/jamalog/">Jamalog<span>A logbook for camels</span></a>
-          <a href="/web/saqrlog/">Saqrlog<span>Records for falconers</span></a>
-          <a href="/web/muddah/">Muddah<span>GCC family document vault</span></a>
-          <a href="/web/sonalog/">Sonalog<span>Home disaster-prep × supplies</span></a>
-          <a href="/web/hazelog/">HazeLog<span>Coffee roast-curve log</span></a>
-          <a href="/web/qamari/en/">Qamari<span>Hijri-first calendar</span></a>
-          <a href="/web/sakulog/en/">SakuLog<span>Kids’ artwork archive</span></a>
-          <a href="/web/khaylog/en/">Khaylog<span>Horse care &amp; records</span></a>
-          <a href="/web/unelog/en/">Unelog<span>Allotment garden log</span></a>
+          <a href="./iekan/">IeKan（家看）<span>実家を家族で見守る</span></a>
+          <a href="./printmemo/">PrintSummary<span>学校プリント整理 × OCR</span></a>
+          <a href="./miawell/">Miawell<span>猫専用ヘルスケア</span></a>
+          <a href="./sukushori/">スクショリ<span>スクショ自動仕分け</span></a>
+          <a href="./heyalog/">ヘヤログ<span>賃貸原状回復の記録</span></a>
+          <a href="./jitsuhiro/">ジツヒロ<span>間取り図の有効面積</span></a>
+          <a href="./yuzuri/">Yuzuri<span>終活ノート</span></a>
+          <a href="./hitorilog/">HitoriLog<span>ひとり介護のケア記録</span></a>
+          <a href="./lifeweeks/">Weekwise<span>人生を週で記録</span></a>
+          <a href="./jamalog/">Jamalog<span>ラクダのための台帳</span></a>
+          <a href="./saqrlog/">Saqrlog<span>鷹匠のための記録</span></a>
+          <a href="./muddah/">Muddah<span>駐在家族の書類期限（GCC）</span></a>
+          <a href="./sonalog/">ソナログ<span>家庭防災 × 備蓄</span></a>
+          <a href="./hazelog/">ハゼログ<span>コーヒー焙煎の記録</span></a>
+          <a href="./qamari/">قمري / Qamari<span>ヒジュラ暦のカレンダー</span></a>
+          <a href="./sakulog/">SakuLog<span>こどもの作品アーカイブ</span></a>
+          <a href="./khaylog/">Khaylog<span>馬主のための馬管理台帳</span></a>
+          <a href="./unelog/">Unelog<span>市民農園の区画栽培カルテ</span></a>
         </div></div>
       </div>
       <div class="nav__item">
-        <a href="#money">Money</a>
+        <a href="#money">おかね</a>
         <div class="nav__drop"><div class="nav__drop-inner">
-          <a href="/web/homenetnavi/">HomeNet Navi<span>“Income wall” simulator</span></a>
-          <a href="/web/mochiru/">Mochiru<span>Asset-longevity simulator</span></a>
-          <a href="/web/zaicho/">Zaicho<span>Estate inventory</span></a>
-          <a href="/web/keihiba/">Keihiba<span>Expense receipts</span></a>
-          <a href="/web/kimekabu/">Kimekabu<span>Stock trade-decision journal</span></a>
+          <a href="./homenetnavi/">世帯手取ナビ<span>年収の壁シミュレーター</span></a>
+          <a href="./mochiru/">Mochiru<span>資産寿命シミュレーター</span></a>
+          <a href="./zaicho/">Zaicho<span>財産目録・相続税概算</span></a>
+          <a href="./keihiba/">Keihiba<span>経費レシート整理</span></a>
+          <a href="./kimekabu/">キメカブ<span>株の売買判断ノート</span></a>
         </div></div>
       </div>
       <div class="nav__item">
-        <a href="#work">Work</a>
+        <a href="#work">しごと</a>
         <div class="nav__drop"><div class="nav__drop-inner">
-          <a href="/web/carehours/">CareHours<span>Home-care helper payroll</span></a>
-          <a href="/web/genbalog/">Genbalog<span>On-site reports in 60s</span></a>
-          <a href="/web/hanro/">hanro<span>Delivery-driver income</span></a>
-          <a href="/web/toscore/">Toscore<span>Mini-basketball scoresheet</span></a>
-          <a href="/web/koegaki/">Koegaki<span>On-device meeting notes</span></a>
-          <a href="/web/dartrack/">Dartrack<span>Household-staff records (UAE)</span></a>
-          <a href="/web/nailog/">Nailog<span>Nail-tech client charts</span></a>
-          <a href="/web/otolog/">Otolog<span>Music-lesson student charts</span></a>
-          <a href="/web/torekarte/">ToreKarte<span>Personal-trainer client charts</span></a>
-          <a href="/web/inkarte/en/">Inkarte<span>Tattoo-artist client &amp; consent</span></a>
+          <a href="./carehours/">CareHours<span>訪問介護ヘルパー給与</span></a>
+          <a href="./genbalog/">Genbalog<span>60秒で現場報告書</span></a>
+          <a href="./hanro/">hanro<span>配達ドライバー収支</span></a>
+          <a href="./toscore/">Toscore<span>ミニバス スコアシート</span></a>
+          <a href="./koegaki/">Koegaki<span>オンデバイス議事メモ</span></a>
+          <a href="./dartrack/">Dartrack<span>家事使用人の記録（UAE）</span></a>
+          <a href="./nailog/">ネイログ<span>ネイリストの顧客カルテ</span></a>
+          <a href="./otolog/">オトログ<span>音楽教室の生徒カルテ</span></a>
+          <a href="./torekarte/">トレカルテ<span>トレーナーの顧客カルテ</span></a>
+          <a href="./inkarte/">Inkarte<span>彫師の顧客カルテ・同意書</span></a>
         </div></div>
       </div>
-      <a href="#concept">Philosophy</a>
-      <a href="/web/" aria-label="日本語">日本語</a>
+      <a href="#concept">開発思想</a>
+      <a href="/web/en/" aria-label="English">English</a>
     </div>
   </div>
 </nav>
@@ -422,30 +425,30 @@
 <!-- ===== HERO ===== -->
 <header class="hero">
   <div class="container">
-    <span class="badge">🔒 All on-device. A toolbox of 39 small apps</span>
-    <h1>Small tools to make<br>your everyday a little lighter.</h1>
-    <p class="hero__sub">Sleep, sauna, stress, family, your cat, household finances, assets, documents, disaster-prep, coffee roasting, job sites, caregiving, client charts. 39 iOS apps that tidy up the small chores scattered across daily life — most fully offline, no account, one-time purchase.</p>
-    <div class="stats" aria-label="Site stats">
-      <div class="stat"><div class="stat__num">39</div><div class="stat__label">Apps published</div></div>
-      <div class="stat"><div class="stat__num">4</div><div class="stat__label">Categories</div></div>
+    <span class="badge">🔒 ぜんぶ端末内。39 の小さな道具箱</span>
+    <h1>あなたの毎日を、<br>少しだけ軽くする道具を。</h1>
+    <p class="hero__sub">睡眠も、サウナも、ストレスも、家族も、猫も、家計も、資産も、書類も、防災も、焙煎も、現場も、介護も、顧客カルテも。日常のあちこちにある小さな手間を、39 の iOS アプリで整えます。多くが完全オフライン・アカウント不要・買い切り。</p>
+    <div class="stats" aria-label="サイト統計">
+      <div class="stat"><div class="stat__num">39</div><div class="stat__label">公開アプリ</div></div>
+      <div class="stat"><div class="stat__num">4</div><div class="stat__label">カテゴリ</div></div>
       <div class="stat"><div class="stat__num">iOS</div><div class="stat__label">iPhone / Apple Watch</div></div>
     </div>
   </div>
 </header>
 
-<!-- ===== PICKUP ===== -->
-<section class="section" aria-label="This month's pick">
+<!-- ===== PICKUP (Today-style) ===== -->
+<section class="section" aria-label="今月の一押し">
   <div class="container">
     <div class="section__head">
       <div class="section__eyebrow">Flagship App</div>
-      <h2 class="section__title">This month’s pick: Trero</h2>
+      <h2 class="section__title">今月の一押し、Trero</h2>
     </div>
     <div class="pickup">
-      <a class="pickup-card pickup-card--trero" href="/web/trero/">
-        <div class="pickup-card__eyebrow">Health — Strength Training</div>
-        <div class="pickup-card__title">Trero<br>Get stronger, calmly and surely.</div>
-        <p class="pickup-card__desc">A simple strength-training and workout logger you can fill in at a glance against last time’s numbers. Goals, progress analysis, body composition and Apple Watch support — in 38 languages.</p>
-        <span class="pickup-card__cta">View app →</span>
+      <a class="pickup-card pickup-card--trero" href="./trero/">
+        <div class="pickup-card__eyebrow">健康 — Strength Training</div>
+        <div class="pickup-card__title">Trero<br>淡々と、確実に強くなる。</div>
+        <p class="pickup-card__desc">前回値を見ながらサッと記録できる、シンプルな筋トレ・ワークアウト管理アプリ。目標管理、進捗分析、体組成、Apple Watch 対応まで網羅し、38 言語に対応しています。</p>
+        <span class="pickup-card__cta">アプリを見る →</span>
       </a>
     </div>
   </div>
@@ -455,9 +458,9 @@
 <section class="section" id="health" aria-labelledby="health-title">
   <div class="container">
     <div class="section__head">
-      <div class="section__eyebrow eyebrow-health">Health</div>
-      <h2 class="section__title" id="health-title">See your body and mind’s condition at a glance</h2>
-      <p class="section__lead">Recovery, sauna, strength, cycle. Apps for finding your own rhythm without being ruled by the data.</p>
+      <div class="section__eyebrow eyebrow-health">Health · 健康</div>
+      <h2 class="section__title" id="health-title">体と心のコンディションを、見える化する</h2>
+      <p class="section__lead">回復、サウナ、筋トレ、周期。データに振り回されず、自分のリズムを掴むためのアプリ群です。</p>
     </div>
     <div class="cards">
       <article class="card">
@@ -465,13 +468,13 @@
           <div class="card__icon icon-recoverysync" aria-hidden="true">💤</div>
           <div>
             <h3 class="card__title">RecoverySync</h3>
-            <div class="card__sub">Sleep &amp; HRV recovery score</div>
+            <div class="card__sub">睡眠・HRV リカバリースコア</div>
           </div>
-          <span class="chip chip-health" style="margin-left:auto">Health</span>
+          <span class="chip chip-health" style="margin-left:auto">健康</span>
         </div>
-        <p class="card__desc">Calculates a daily recovery score from your Apple Watch sleep, heart-rate variability and resting heart rate. No subscription, no account — all data stays on your device.</p>
+        <p class="card__desc">Apple Watch の睡眠・心拍変動・安静時心拍から、毎朝のリカバリースコアを算出。サブスクなし、アカウント不要、データはすべて端末内で完結します。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/recoverysync/">Learn more</a>
+          <a class="btn btn--primary" href="./recoverysync/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6770408873" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -481,13 +484,13 @@
           <div class="card__icon icon-saunaflow" aria-hidden="true">🧖</div>
           <div>
             <h3 class="card__title">SaunaFlow</h3>
-            <div class="card__sub">Apple Watch sauna timer</div>
+            <div class="card__sub">Apple Watch サウナタイマー</div>
           </div>
-          <span class="chip chip-health" style="margin-left:auto">Health</span>
+          <span class="chip chip-health" style="margin-left:auto">健康</span>
         </div>
-        <p class="card__desc">Runs your sauna, cold-plunge and rest on Apple Watch, recording a “totonoi” score and history. One-time premium, fully offline.</p>
+        <p class="card__desc">サウナ・水風呂・休憩を Apple Watch で進行し、ととのいスコアと履歴を記録。買い切りプレミアム、完全オフラインで安心して使えます。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/saunaflow/">Learn more</a>
+          <a class="btn btn--primary" href="./saunaflow/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6761906547" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -497,13 +500,13 @@
           <div class="card__icon icon-trero" aria-hidden="true">🏋️</div>
           <div>
             <h3 class="card__title">Trero</h3>
-            <div class="card__sub">Strength &amp; workout tracking</div>
+            <div class="card__sub">筋トレ・ワークアウト管理</div>
           </div>
-          <span class="chip chip-health" style="margin-left:auto">Health</span>
+          <span class="chip chip-health" style="margin-left:auto">健康</span>
         </div>
-        <p class="card__desc">A strength-training app you can log calmly against last time’s numbers. Goals, progress analysis, body composition and Apple Watch support — in 38 languages.</p>
+        <p class="card__desc">前回値を見ながら淡々と記録できる筋トレアプリ。目標管理、進捗分析、体組成、Apple Watch 対応まで網羅し、38 言語に対応しています。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/trero/">Learn more</a>
+          <a class="btn btn--primary" href="./trero/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6760746164" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -513,13 +516,13 @@
           <div class="card__icon icon-tsukilift" aria-hidden="true">🌙</div>
           <div>
             <h3 class="card__title">TsukiLift</h3>
-            <div class="card__sub">Menstrual cycle × strength training</div>
+            <div class="card__sub">生理周期 × 筋トレ</div>
           </div>
-          <span class="chip chip-health" style="margin-left:auto">Health</span>
+          <span class="chip chip-health" style="margin-left:auto">健康</span>
         </div>
-        <p class="card__desc">A women’s fitness app that manages your menstrual cycle and training together. Phase-matched recommendations help you get stronger in tune with your rhythm. HealthKit integration.</p>
+        <p class="card__desc">生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。フェーズに合った推奨で、自分のリズムに沿って強くなれます。HealthKit 連携対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/tsukilift/">Learn more</a>
+          <a class="btn btn--primary" href="./tsukilift/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6767084251" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -527,30 +530,31 @@
         <div class="card__top">
           <div class="card__icon icon-calmgraph" aria-hidden="true">🧘</div>
           <div>
-            <h3 class="card__title">Calmgraph</h3>
-            <div class="card__sub">Stress, as a single number</div>
+            <h3 class="card__title">Calmgraph（カームグラフ）</h3>
+            <div class="card__sub">ストレスを、1 つの数字に</div>
           </div>
-          <span class="chip chip-health" style="margin-left:auto">Health</span>
+          <span class="chip chip-health" style="margin-left:auto">健康</span>
         </div>
-        <p class="card__desc">Turns Apple Watch HRV — or a few taps — into a daily 0–100 stress score. Tag what moved it and see a weekly insight into your trend. Fully offline, no account, one-time purchase.</p>
+        <p class="card__desc">Apple Watch の HRV、または数タップのチェックインから、その日のストレスを 0–100 のスコアに。何が効いたかを原因タグで振り返り、週次インサイトで傾向を掴めます。完全オフライン・アカウント不要・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/calmgraph/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./calmgraph/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
+
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-yuralog" aria-hidden="true">🌸</div>
           <div>
-            <h3 class="card__title">Yuralog</h3>
-            <div class="card__sub">Menopause symptom log</div>
+            <h3 class="card__title">Yuralog（ユラログ）</h3>
+            <div class="card__sub">更年期の症状記録・受診メモ</div>
           </div>
-          <span class="chip chip-health" style="margin-left:auto">Health</span>
+          <span class="chip chip-health" style="margin-left:auto">健康</span>
         </div>
-        <p class="card__desc">Record and visualize your fluctuating daily symptoms — hot flashes, mood, body and sleep — without any of it leaving your device, then hand a PDF straight to your doctor at your next visit. It does not judge; it records. Fully on-device, no account, one-time purchase.</p>
+        <p class="card__desc">ゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化。ほてり・気分・からだ・睡眠を毎日かんたんに残し、受診のときはそのまま PDF で医師へ。判断はせず、記録に徹します。完全ローカル・アカウント不要・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/yuralog/en/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./yuralog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
     </div>
@@ -561,23 +565,23 @@
 <section class="section" id="life" aria-labelledby="life-title">
   <div class="container">
     <div class="section__head">
-      <div class="section__eyebrow eyebrow-life">Life &amp; Family</div>
-      <h2 class="section__title" id="life-title">A system so you never forget the home and the family</h2>
-      <p class="section__lead">Your family home, your cat, documents, rentals, end-of-life planning, solo caregiving, home disaster-prep, and life abroad — organized so the whole family can share the load.</p>
+      <div class="section__eyebrow eyebrow-life">Life · くらし・家族</div>
+      <h2 class="section__title" id="life-title">家と家族のこと、暮らしの記録を、忘れない仕組みに</h2>
+      <p class="section__lead">実家、猫、書類、賃貸、終活、ひとり介護、家庭防災、そして海外のくらしまで。家族みんなで分担しやすいかたちに整理します。</p>
     </div>
     <div class="cards">
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-iekan" aria-hidden="true">🏠</div>
           <div>
-            <h3 class="card__title">IeKan</h3>
-            <div class="card__sub">Watch over your family home, together</div>
+            <h3 class="card__title">IeKan（家看）</h3>
+            <div class="card__sub">実家を家族みんなで見守る</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Photo timeline, seasonal checklists, document scanning, family sharing and a simple mode. Keep an eye on a distant family home, sharing the work across the family.</p>
+        <p class="card__desc">写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。離れて暮らす実家の状態を、家族で分担しながら見守れます。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/iekan/">Learn more</a>
+          <a class="btn btn--primary" href="./iekan/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6764244913" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -586,14 +590,14 @@
         <div class="card__top">
           <div class="card__icon icon-printmemo" aria-hidden="true">📄</div>
           <div>
-            <h3 class="card__title">PrintSummary</h3>
-            <div class="card__sub">School printouts × OCR</div>
+            <h3 class="card__title">PrintSummary / プリサマ</h3>
+            <div class="card__sub">学校プリント整理 × OCR</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Just photograph a school printout and OCR reads it, tracking deadlines and submission status together. Turns the pile of paper on the fridge into the whole family’s calendar.</p>
+        <p class="card__desc">学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理。冷蔵庫に貼られた紙の山を、家族みんなのカレンダーに変えます。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/printmemo/">Learn more</a>
+          <a class="btn btn--primary" href="./printmemo/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6761879860" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -603,13 +607,13 @@
           <div class="card__icon icon-miawell" aria-hidden="true">🐱</div>
           <div>
             <h3 class="card__title">Miawell</h3>
-            <div class="card__sub">Cat-only healthcare × AI photo analysis</div>
+            <div class="card__sub">猫専用ヘルスケア × AI写真判定</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Log your cat’s health smartly every day. AI photo analysis reads changes in expression and posture, and daily records plus behavior coaching help you catch small changes.</p>
+        <p class="card__desc">愛猫の体調を毎日スマートに記録。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで小さな異変を見逃しません。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/miawell/">Learn more</a>
+          <a class="btn btn--primary" href="./miawell/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/miawell/id6774019571" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -618,14 +622,14 @@
         <div class="card__top">
           <div class="card__icon icon-sukushori" aria-hidden="true">📸</div>
           <div>
-            <h3 class="card__title">Sukushori</h3>
-            <div class="card__sub">Automatic screenshot triage × on-device AI</div>
+            <h3 class="card__title">スクショリ</h3>
+            <div class="card__sub">スクショ自動仕分け × 端末内 AI</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">On-device AI automatically sorts the screenshots that pile up unseen into “places to go”, “plans”, “things I want” and more. Fully offline, no data collection, one-time purchase, no ads.</p>
+        <p class="card__desc">撮ったまま埋もれるスクリーンショットを、端末内の AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。完全オフライン・データ収集なし・買い切り・広告なし。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/sukushori/">Learn more</a>
+          <a class="btn btn--primary" href="./sukushori/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/id6778336001" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -634,14 +638,14 @@
         <div class="card__top">
           <div class="card__icon icon-heyalog" aria-hidden="true">🏘️</div>
           <div>
-            <h3 class="card__title">Heyalog</h3>
-            <div class="card__sub">Rental move-in/out records × ministry-compliant PDF</div>
+            <h3 class="card__title">ヘヤログ（Heyalog）</h3>
+            <div class="card__sub">賃貸入退去の原状回復記録 × 国交省準拠 PDF</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Photograph the room’s condition at move-in and move-out and generate a checklist and PDF report compliant with Japan’s MLIT restoration guidelines. Same-angle comparison shots prevent “he-said-she-said” and protect your deposit. Fully offline, one-time purchase.</p>
+        <p class="card__desc">賃貸の入居・退去時の部屋状態を写真で記録し、国土交通省ガイドライン準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で「言った・言わない」を防ぎ、敷金を守ります。完全オフライン・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/heyalog/">Learn more</a>
+          <a class="btn btn--primary" href="./heyalog/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/id6778713193" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -650,30 +654,30 @@
         <div class="card__top">
           <div class="card__icon icon-jitsuhiro" aria-hidden="true">📐</div>
           <div>
-            <h3 class="card__title">Jitsuhiro</h3>
-            <div class="card__sub">The true-size checker for floor plans</div>
+            <h3 class="card__title">ジツヒロ（Jitsuhiro）</h3>
+            <div class="card__sub">間取り図の本当の広さチェッカー</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Import a resale-condo floor plan and compute the “net effective area” with columns and beams subtracted, plus the tatami-mat difference. Place furniture to check flow lines and clearances, so you can decide on viewings and moves without relying on the drawing’s numbers alone. Fully offline, one-time purchase.</p>
+        <p class="card__desc">中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具を置いて動線・クリアランスも検証できます。内見・住み替えの意思決定を、図面の数字だけに頼らず確かめられます。完全オフライン・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/jitsuhiro/">Learn more</a>
+          <a class="btn btn--primary" href="./jitsuhiro/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/id6779472712" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
 
       <article class="card">
         <div class="card__top">
-          <div class="card__icon icon-yuzuri" aria-hidden="true">🕊️</div>
+          <div class="card__icon icon-yuzuri" aria-hidden="true">📔</div>
           <div>
-            <h3 class="card__title">Yuzuri</h3>
-            <div class="card__sub">Fully offline end-of-life notebook</div>
+            <h3 class="card__title">Yuzuri（ユズリ）</h3>
+            <div class="card__sub">完全オフラインの終活ノート</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Record assets, insurance, contacts and your wishes in a single notebook. No account, no data collection, fully offline. One-time purchase.</p>
+        <p class="card__desc">資産・保険・連絡先・想いを一冊のノートに残せる終活ノートアプリ。アカウント登録不要、データ収集なし、完全オフラインで完結。家族に伝えたい情報を自分のペースで整理できます。買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/yuzuri/">Learn more</a>
+          <a class="btn btn--primary" href="./yuzuri/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6784874949" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -682,14 +686,14 @@
         <div class="card__top">
           <div class="card__icon icon-hitorilog" aria-hidden="true">📝</div>
           <div>
-            <h3 class="card__title">HitoriLog</h3>
-            <div class="card__sub">Care records for solo caregivers</div>
+            <h3 class="card__title">ヒトリログ（HitoriLog）</h3>
+            <div class="card__sub">ひとり介護者のためのケア記録</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Record the reality of caregiving in honest notes no one else sees. No ads, no account, fully offline — a care-logging app for people caring alone. One-time purchase, no subscription.</p>
+        <p class="card__desc">誰にも見せない本音メモで、介護のリアルを記録。広告なし・アカウント不要・完全オフラインで、ひとりで介護を担う人の毎日に寄り添うケア記録アプリ。買い切り・サブスクなし。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/hitorilog/">Learn more</a>
+          <a class="btn btn--primary" href="./hitorilog/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6785472192" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -699,13 +703,13 @@
           <div class="card__icon icon-lifeweeks" aria-hidden="true">🗓️</div>
           <div>
             <h3 class="card__title">Weekwise</h3>
-            <div class="card__sub">Your life in weeks — a weekly journal</div>
+            <div class="card__sub">人生を週で記録する週次ジャーナル</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">A fully offline weekly journal that turns your whole life into a grid of weeks and lets you note how each week really felt. See past, present and future at a glance, with milestones, a bucket list and search. No subscription, one-time purchase, no account. Japanese / English.</p>
+        <p class="card__desc">人生全体を週のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル。過去・現在・未来を一目で把握し、マイルストーン・バケットリスト・検索も。サブスクなし・買い切り・アカウント不要。日本語 / English 対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/lifeweeks/">Learn more</a>
+          <a class="btn btn--primary" href="./lifeweeks/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6788981648" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -715,13 +719,13 @@
           <div class="card__icon icon-jamalog" aria-hidden="true">🐪</div>
           <div>
             <h3 class="card__title">Jamalog</h3>
-            <div class="card__sub">A fully offline logbook for camels</div>
+            <div class="card__sub">ラクダのための完全オフライン台帳</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">A private, fully offline logbook for camel owners. Keep profiles, health records, pedigree, races, documents and reminders — all on your device. No account, no data collection. Arabic (RTL) / English / Japanese.</p>
+        <p class="card__desc">ラクダの飼い主のための、完全オフラインの台帳アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/jamalog/">Learn more</a>
+          <a class="btn btn--primary" href="./jamalog/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6788732648" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -730,14 +734,14 @@
         <div class="card__top">
           <div class="card__icon icon-saqrlog" aria-hidden="true">🦅</div>
           <div>
-            <h3 class="card__title">Saqrlog</h3>
-            <div class="card__sub">Fully offline records for falconers</div>
+            <h3 class="card__title">Saqrlog（サクルログ）</h3>
+            <div class="card__sub">鷹匠のための完全オフライン記録</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">A fully offline logbook for falconers. Log daily weight, feeding, training and hunts for every bird, and manage pre-flight condition by the numbers. No account, no data collection. العربية (RTL) / اردو / English / Japanese.</p>
+        <p class="card__desc">鷹匠のための完全オフライン台帳。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理します。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/saqrlog/">Learn more</a>
+          <a class="btn btn--primary" href="./saqrlog/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6789535072" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -746,14 +750,14 @@
         <div class="card__top">
           <div class="card__icon icon-muddah" aria-hidden="true">🛂</div>
           <div>
-            <h3 class="card__title">Muddah</h3>
-            <div class="card__sub">Document &amp; expiry vault for GCC families</div>
+            <h3 class="card__title">Muddah（ムッダ）</h3>
+            <div class="card__sub">駐在家族の書類期限ボルト（GCC）</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">A fully offline vault for a GCC expat family’s documents — iqama, residence card, passport, insurance and more — with dual Hijri and Gregorian calendars, households and dependents, so nothing lapses. No account, no cloud sync. English / العربية (RTL) / Japanese.</p>
+        <p class="card__desc">GCC 駐在家族のための完全オフラインの書類期限ボルト。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぎます。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/muddah/">Learn more</a>
+          <a class="btn btn--primary" href="./muddah/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6790558814" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -762,14 +766,14 @@
         <div class="card__top">
           <div class="card__icon icon-sonalog" aria-hidden="true">🧯</div>
           <div>
-            <h3 class="card__title">Sonalog</h3>
-            <div class="card__sub">Rolling-stock supplies × household emergency card</div>
+            <h3 class="card__title">ソナログ（Sonalog）</h3>
+            <div class="card__sub">備蓄ローリングストック × 家庭防災カルテ</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Combines rolling-stock supply management with a household emergency card. Get alerts as items approach expiry, size required amounts from your family’s headcount, and take the emergency card out as a PDF. Fully offline, no account, one-time purchase.</p>
+        <p class="card__desc">消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつに。期限が近い備蓄を通知し、家族の人数から必要量を計算。防災カルテは PDF で持ち出せます。完全オフライン・アカウント不要・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/sonalog/">Learn more</a>
+          <a class="btn btn--primary" href="./sonalog/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -777,75 +781,78 @@
         <div class="card__top">
           <div class="card__icon icon-hazelog" aria-hidden="true">☕️</div>
           <div>
-            <h3 class="card__title">HazeLog</h3>
-            <div class="card__sub">Coffee roast-curve log for home roasters</div>
+            <h3 class="card__title">ハゼログ（HazeLog）</h3>
+            <div class="card__sub">コーヒー自家焙煎のロースト曲線記録</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Save the roast that went right, curve and all, then run the next one alongside that ghost curve. Works with a hand net, pan or small roaster — no temperature probe required. Fully offline, one-time purchase. Japanese / English.</p>
+        <p class="card__desc">「うまく焼けた一回」を曲線ごと保存し、次の焙煎は前回のゴースト曲線と並走しながら再現。手網・手鍋・小型焙煎機に対応し、温度プローブがなくても使えます。完全オフライン・買い切り。日本語 / English 対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/hazelog/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./hazelog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-qamari" aria-hidden="true">🌙</div>
           <div>
-            <h3 class="card__title">Qamari</h3>
-            <div class="card__sub">A Hijri-first calendar</div>
+            <h3 class="card__title">قمري / Qamari（カマリ）</h3>
+            <div class="card__sub">ヒジュラ暦を「第一の暦」として使うカレンダー</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">A calendar that puts the Hijri date first with the Gregorian date alongside. It handles the two things a standard calendar can’t — events that repeat “every Hijri year,” and a sighting correction that shifts all your saved reminders to match the local moon-sighting announcement. It only manages dates and makes no religious rulings. Fully offline, one-time purchase. العربية (RTL) / English / Japanese.</p>
+        <p class="card__desc">ヒジュラ暦を大きく、西暦を併記するカレンダー。標準のカレンダーにできない2つ ——「毎ヒジュラ年」で繰り返す予定と、地域の実見発表に合わせると登録済みの通知がすべて自動で追従する実見補正 —— を担います。日付の管理のみを行い、宗教的な断定はしません。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/qamari/en/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./qamari/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
+
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-sakulog" aria-hidden="true">🎨</div>
           <div>
-            <h3 class="card__title">SakuLog</h3>
-            <div class="card__sub">Kids’ artwork archive × letting go</div>
+            <h3 class="card__title">SakuLog（サクログ）</h3>
+            <div class="card__sub">こどもの作品アーカイブ × 手放す判断</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">Just photograph your child’s drawings and crafts — SakuLog straightens them and sorts them by age automatically. A swipe-to-decide sorting mode helps you keep or let go, so you can part with the physical originals with peace of mind. Data stays in your own iCloud, no account, one-time purchase.</p>
+        <p class="card__desc">こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せます。データはあなたの iCloud だけ・アカウント不要・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/sakulog/en/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./sakulog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
+
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-khaylog" aria-hidden="true">🐎</div>
           <div>
-            <h3 class="card__title">Khaylog</h3>
-            <div class="card__sub">A ledger for horse owners</div>
+            <h3 class="card__title">Khaylog（ハイログ）</h3>
+            <div class="card__sub">馬主のための馬管理台帳</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">A fully offline horse-care ledger for owners. Due-date alerts for farrier visits and vaccinations, costs totalled per currency, plus 5-generation pedigree, shows and breeding — all in one place. No account, one-time purchase. Japanese / English / العربية (RTL).</p>
+        <p class="card__desc">馬主のための完全オフライン馬管理台帳。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台に。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/khaylog/en/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./khaylog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
+
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-unelog" aria-hidden="true">🌱</div>
           <div>
-            <h3 class="card__title">Unelog</h3>
-            <div class="card__sub">Allotment garden plot log</div>
+            <h3 class="card__title">Unelog（ウネログ）</h3>
+            <div class="card__sub">市民農園・貸し農園の区画栽培カルテ</div>
           </div>
-          <span class="chip chip-life" style="margin-left:auto">Life</span>
+          <span class="chip chip-life" style="margin-left:auto">くらし</span>
         </div>
-        <p class="card__desc">A fully offline planting chart built around the “plot” of an allotment or rented garden, managing everything from contract to harvest. Track plantings per ridge, plot-visit logs, contract-renewal reminders and crop-rotation checks. No account, one-time purchase.</p>
+        <p class="card__desc">市民農園・貸し農園の「区画」に特化した、契約から収穫まで 1 つで管理する完全オフラインの栽培カルテ。畝ごとの作付け・訪園ログ・契約リマインド・連作チェック。アカウント不要・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/unelog/en/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./unelog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
     </div>
@@ -856,23 +863,23 @@
 <section class="section" id="money" aria-labelledby="money-title">
   <div class="container">
     <div class="section__head">
-      <div class="section__eyebrow eyebrow-money">Money &amp; Finances</div>
-      <h2 class="section__title" id="money-title">See your money worries in the numbers in your hand</h2>
-      <p class="section__lead">Income thresholds, asset longevity, estate inventory, expenses, trade decisions. Without connecting to your bank, on-device estimates alone help you decide about your household finances and assets. Not investment advice — tools for thinking things through yourself.</p>
+      <div class="section__eyebrow eyebrow-money">Money · おかね・家計</div>
+      <h2 class="section__title" id="money-title">お金の不安を、手元の数字で見える化する</h2>
+      <p class="section__lead">年収の壁、資産寿命、財産目録、経費、株の判断。口座に接続せず、端末内の試算だけで家計と資産の意思決定を助けます。投資助言ではなく、あくまで自分で考えるための道具です。</p>
     </div>
     <div class="cards">
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-homenetnavi" aria-hidden="true">🧮</div>
           <div>
-            <h3 class="card__title">HomeNet Navi</h3>
-            <div class="card__sub">2026-ready “income wall” simulator</div>
+            <h3 class="card__title">世帯手取ナビ（HomeNet Navi）</h3>
+            <div class="card__sub">2026年制度対応「年収の壁」シミュレーター</div>
           </div>
-          <span class="chip chip-money" style="margin-left:auto">Money</span>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
         </div>
-        <p class="card__desc">An income-threshold simulator accurately updated for Japan’s 2026 rules. Visualizes the spousal-deduction, social-insurance and residence-tax thresholds on one household-level screen and suggests the take-home-maximizing scenario.</p>
+        <p class="card__desc">2026 年制度に正確対応した年収の壁シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化し、手取り最大シナリオを提案します。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/homenetnavi/">Learn more</a>
+          <a class="btn btn--primary" href="./homenetnavi/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -882,13 +889,13 @@
           <div class="card__icon icon-mochiru" aria-hidden="true">📈</div>
           <div>
             <h3 class="card__title">Mochiru</h3>
-            <div class="card__sub">Asset-longevity simulator × Monte Carlo</div>
+            <div class="card__sub">資産寿命シミュレーター × Monte Carlo</div>
           </div>
-          <span class="chip chip-money" style="margin-left:auto">Money</span>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
         </div>
-        <p class="card__desc">Simulates the full lifecycle from accumulation to drawdown with Monte Carlo, preserving the correlation of a simultaneous stock-crash-and-strong-yen shock. Fully offline, no account linking.</p>
+        <p class="card__desc">積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算。株安×円高の同時クラッシュ相関を保持し、完全オフライン・口座連携なしで資産寿命を可視化します。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/mochiru/">Learn more</a>
+          <a class="btn btn--primary" href="./mochiru/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/id6778235888" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -897,14 +904,14 @@
         <div class="card__top">
           <div class="card__icon icon-zaicho" aria-hidden="true">📒</div>
           <div>
-            <h3 class="card__title">Zaicho</h3>
-            <div class="card__sub">Estate inventory · net worth · inheritance-tax estimate</div>
+            <h3 class="card__title">ザイチョウ（Zaicho）</h3>
+            <div class="card__sub">自分だけの財産目録・純資産・相続税概算</div>
           </div>
-          <span class="chip chip-money" style="margin-left:auto">Money</span>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
         </div>
-        <p class="card__desc">Your own estate inventory, entrusted to neither a financial institution nor the cloud. Manage financial assets, real estate and high-net-worth asset classes in a ledger; from net-worth trends to an inheritance-tax estimate and an estate-inventory PDF, everything stays on your device. Fully offline, one-time purchase, no ads.</p>
+        <p class="card__desc">金融機関にもクラウドにも預けない、自分だけの財産目録。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで、すべて端末内で完結。完全オフライン・買い切り・広告なし。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/zaicho/">Learn more</a>
+          <a class="btn btn--primary" href="./zaicho/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -913,14 +920,14 @@
         <div class="card__top">
           <div class="card__icon icon-keihiba" aria-hidden="true">🧾</div>
           <div>
-            <h3 class="card__title">Keihiba</h3>
-            <div class="card__sub">Expense-receipt organizing × fully local</div>
+            <h3 class="card__title">ケイヒバ（Keihiba）</h3>
+            <div class="card__sub">経費レシート整理 × ローカル完結</div>
           </div>
-          <span class="chip chip-money" style="margin-left:auto">Money</span>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
         </div>
-        <p class="card__desc">From receipt photos and imported e-transaction data, on-device OCR extracts the date, amount and payee. Monthly totals and CSV/PDF export tidy up the prep before your accounting software. Supports Japan’s electronic bookkeeping act. Fully offline, one-time purchase.</p>
+        <p class="card__desc">レシート撮影と電子取引データの取り込みから、端末内 OCR で日付・金額・取引先を抽出。月次集計と CSV／PDF 書き出しで、会計ソフトの前段整理を片づけます。電子帳簿保存法への対応を支援。完全オフライン・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/keihiba/">Learn more</a>
+          <a class="btn btn--primary" href="./keihiba/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/id6779895529" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -929,14 +936,14 @@
         <div class="card__top">
           <div class="card__icon icon-kimekabu" aria-hidden="true">🧭</div>
           <div>
-            <h3 class="card__title">Kimekabu</h3>
-            <div class="card__sub">A trade-decision journal for stocks</div>
+            <h3 class="card__title">キメカブ（Kimekabu）</h3>
+            <div class="card__sub">株の「売買判断」を記録するトレードノート</div>
           </div>
-          <span class="chip chip-money" style="margin-left:auto">Money</span>
+          <span class="chip chip-money" style="margin-left:auto">おかね</span>
         </div>
-        <p class="card__desc">Record your stock trading decisions and reconcile them against your plan at exit. Manage the quality of your judgment, not just P/L, and make your own trading rules more repeatable. Not investment advice — a private record for your own review. No account linking, fully offline, one-time purchase.</p>
+        <p class="card__desc">株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート。損益ではなく“判断の質”を振り返り、売買ルールの再現性を高めます。投資助言ではなく、あくまで自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/kimekabu/">Learn more</a>
+          <a class="btn btn--primary" href="./kimekabu/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6789459452" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -948,9 +955,9 @@
 <section class="section" id="work" aria-labelledby="work-title">
   <div class="container">
     <div class="section__head">
-      <div class="section__eyebrow eyebrow-work">Work &amp; On-site</div>
-      <h2 class="section__title" id="work-title">Clear the paperwork for people who work on-site</h2>
-      <p class="section__lead">Caregiving, job sites, delivery, meeting notes, the scorer’s table at a mini-basketball game. Finish the recording, calculation and reporting that crop up between jobs with just your phone.</p>
+      <div class="section__eyebrow eyebrow-work">Work · しごと</div>
+      <h2 class="section__title" id="work-title">現場で働く人の、事務作業を片づける</h2>
+      <p class="section__lead">介護、現場、配達、議事録、ミニバスの審判席。本業の合間に発生する記録・計算・報告を、スマホひとつで終わらせます。</p>
     </div>
     <div class="cards">
       <article class="card">
@@ -958,13 +965,13 @@
           <div class="card__icon icon-carehours" aria-hidden="true">🩺</div>
           <div>
             <h3 class="card__title">CareHours</h3>
-            <div class="card__sub">Home-care helper payroll</div>
+            <div class="card__sub">訪問介護ヘルパー給与管理</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Visit records, automatic night-shift and specified-office premium calculation, and monthly PDF reports. Prevents in real time the mistakes you’d otherwise only notice on the payslip.</p>
+        <p class="card__desc">訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力まで。給与明細を見て初めて気づくミスを、リアルタイムで防ぎます。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/carehours/">Learn more</a>
+          <a class="btn btn--primary" href="./carehours/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6769304063" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -974,13 +981,13 @@
           <div class="card__icon icon-genbalog" aria-hidden="true">🔨</div>
           <div>
             <h3 class="card__title">Genbalog</h3>
-            <div class="card__sub">On-site reports in 60 seconds</div>
+            <div class="card__sub">60秒で現場報告書</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Just take photos and they’re organized into an A4 PDF report. GPS tags, handwritten notes and custom templates, working anywhere on-site, fully offline.</p>
+        <p class="card__desc">写真を撮るだけで A4 の PDF 報告書に整理。GPS タグ、手書きメモ、カスタムテンプレートに対応し、完全オフラインで現場のどこでも動きます。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/genbalog/">Learn more</a>
+          <a class="btn btn--primary" href="./genbalog/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6770864162" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -990,13 +997,13 @@
           <div class="card__icon icon-hanro" aria-hidden="true">🛵</div>
           <div>
             <h3 class="card__title">hanro</h3>
-            <div class="card__sub">Delivery-driver income &amp; expense tracking</div>
+            <div class="card__sub">配達ドライバー収支管理</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Aggregates food-delivery and light-cargo sales and expenses across platforms. Automatic mileage, AI peak-earning prediction and tax-filing CSV export, all fully offline.</p>
+        <p class="card__desc">フードデリバリーと軽貨物の売上・経費をマルチプラットフォーム集計。自動マイレージ、AI 稼ぎ時予測、確定申告 CSV 出力まで完全オフラインで完結します。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/hanro/">Learn more</a>
+          <a class="btn btn--primary" href="./hanro/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6771629040" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -1006,13 +1013,13 @@
           <div class="card__icon icon-toscore" aria-hidden="true">🏀</div>
           <div>
             <h3 class="card__title">Toscore</h3>
-            <div class="card__sub">Mini-basketball digital scoresheet</div>
+            <div class="card__sub">ミニバス対応 デジタルスコアシート</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">A scoresheet for table officials (TO) on iPad / iPhone. Built-in active rule checking and mini-basketball playing-time validation reduce recording errors, fully offline with no data collection.</p>
+        <p class="card__desc">テーブルオフィシャルズ（TO）のための iPad / iPhone スコアシート。能動的ルール検証とミニバス出場時間検証を搭載し、完全オフライン・データ収集なしで記録ミスを減らします。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/toscore/">Learn more</a>
+          <a class="btn btn--primary" href="./toscore/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/toscore/id6776913396" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -1021,14 +1028,14 @@
         <div class="card__top">
           <div class="card__icon icon-koegaki" aria-hidden="true">🎙️</div>
           <div>
-            <h3 class="card__title">Koegaki</h3>
-            <div class="card__sub">Fully on-device meeting notes</div>
+            <h3 class="card__title">コエガキ（Koegaki）</h3>
+            <div class="card__sub">完全オンデバイスの議事メモ</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Record a meeting and transcribe it on-device; AI summarizes it into “key points, decisions, to-dos” and generates a title automatically. Tap a timecode to jump-and-play. Recording and transcription both stay on-device, with no data collection. Freemium (60 free minutes/month).</p>
+        <p class="card__desc">会議を録音し、端末内で文字起こし。AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成します。タイムコード tap で頭出し再生。録音も文字起こしも端末内で完結し、データ収集なし。フリーミアム（月 60 分無料）。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/koegaki/">Learn more</a>
+          <a class="btn btn--primary" href="./koegaki/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/jp/app/id6780139132" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -1038,13 +1045,13 @@
           <div class="card__icon icon-dartrack" aria-hidden="true">🗂️</div>
           <div>
             <h3 class="card__title">Dartrack</h3>
-            <div class="card__sub">Household-staff records, offline (UAE)</div>
+            <div class="card__sub">家事使用人の記録をオフラインで（UAE）</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">A records app for households in the UAE that employ domestic staff — maids, drivers, nannies and more. Manage visa and contract deadlines, work hours, leave and pay estimates on-device, and export to CSV/PDF. No account, no server sync, fully offline. English / العربية / 日本語.</p>
+        <p class="card__desc">UAE で家事使用人（メイド・ドライバー・ナニーなど）を雇う家庭向けの記録アプリ。ビザ・契約の期限管理、勤務時間、休暇、給与概算を端末内で管理し、CSV／PDF に書き出し。アカウント不要・サーバー同期なし・完全オフライン。English / العربية / 日本語対応。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/dartrack/">Learn more</a>
+          <a class="btn btn--primary" href="./dartrack/">詳しく見る</a>
           <a class="btn" href="https://apps.apple.com/app/id6788604524" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
@@ -1052,60 +1059,61 @@
         <div class="card__top">
           <div class="card__icon icon-nailog" aria-hidden="true">💅</div>
           <div>
-            <h3 class="card__title">Nailog</h3>
-            <div class="card__sub">Client charts for nail technicians</div>
+            <h3 class="card__title">ネイログ（Nailog）</h3>
+            <div class="card__sub">ネイリストの顧客カルテ・施術記録</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Treatment history, photos, cautions and products used — managed fully offline in a client chart built for nail techs. Product master, CSV/PDF export and iPad support. No sign-up, zero data collection.</p>
+        <p class="card__desc">施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理する、ネイリストのための顧客カルテ。アイテムマスタ、CSV／PDF 出力、iPad にも対応。登録不要・データ収集ゼロ。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/nailog/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./nailog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-otolog" aria-hidden="true">🎹</div>
           <div>
-            <h3 class="card__title">Otolog</h3>
-            <div class="card__sub">Student charts for music teachers</div>
+            <h3 class="card__title">オトログ（Otolog）</h3>
+            <div class="card__sub">ピアノ・音楽教室の生徒カルテ</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Track method-book progress, repertoire and tuition notes fully offline — a student chart for independent piano and music teachers. Your students' details never leave the device. One-time purchase.</p>
+        <p class="card__desc">教則本の進度・課題曲・月謝メモを完全オフラインで記録する、個人の音楽講師のための生徒カルテ。生徒の情報を端末の外に出しません。完全オフライン・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/otolog/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./otolog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-torekarte" aria-hidden="true">💪</div>
           <div>
-            <h3 class="card__title">ToreKarte</h3>
-            <div class="card__sub">Client charts for personal trainers</div>
+            <h3 class="card__title">トレカルテ（ToreKarte）</h3>
+            <div class="card__sub">パーソナルトレーナーの顧客カルテ</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Session logs, session-pass balances and body-composition graphs, fully offline — a client chart for personal trainers. Your clients' details never leave the device. One-time purchase.</p>
+        <p class="card__desc">セッション記録・回数券・体組成グラフを完全オフラインで管理する、パーソナルトレーナーのための顧客カルテ。顧客の情報を端末の外に出しません。完全オフライン・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/torekarte/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./torekarte/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
+
       <article class="card">
         <div class="card__top">
           <div class="card__icon icon-inkarte" aria-hidden="true">🩸</div>
           <div>
-            <h3 class="card__title">Inkarte</h3>
-            <div class="card__sub">Tattoo-artist client charts &amp; consent</div>
+            <h3 class="card__title">Inkarte（インカルテ）</h3>
+            <div class="card__sub">彫師のための顧客カルテ・同意書</div>
           </div>
-          <span class="chip chip-work" style="margin-left:auto">Work</span>
+          <span class="chip chip-work" style="margin-left:auto">しごと</span>
         </div>
-        <p class="card__desc">Client records, booking, session history and consent forms for tattoo artists — from the first consult to a consent form with a handwritten signature, all in one app. Your clients’ information never leaves the device. Fully offline, one-time purchase.</p>
+        <p class="card__desc">タトゥーアーティスト（彫師）のための顧客カルテ・予約・施術記録・同意書アプリ。カウンセリングから電子署名付き同意書まで一台で。顧客情報は端末の外に出しません。完全オフライン・買い切り。</p>
         <div class="card__actions">
-          <a class="btn btn--primary" href="/web/inkarte/en/">Learn more</a>
-          <span class="btn btn--soon">Coming soon</span>
+          <a class="btn btn--primary" href="./inkarte/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
         </div>
       </article>
     </div>
@@ -1117,45 +1125,45 @@
   <div class="container">
     <div class="section__head">
       <div class="section__eyebrow">Our Philosophy</div>
-      <h2 class="section__title" id="concept-title">Small tools, a lighter everyday</h2>
-      <p class="section__lead">Across the four areas of health, life, money and work, we build tools that work in your own hands — without relying on charges or data collection.</p>
+      <h2 class="section__title" id="concept-title">小さな道具で、毎日を少し軽く</h2>
+      <p class="section__lead">健康・くらし・おかね・しごとの 4 領域で、課金やデータ収集に頼らず、ひとりひとりの手元で完結する道具をつくっています。</p>
     </div>
 
     <div class="concept">
       <div class="concept__item">
         <div class="concept__icon">🔒</div>
-        <div class="concept__title">Everything on your device</div>
-        <p class="concept__body">Many apps are fully offline. No account, no data collection. Your information stays on your device, and only there.</p>
+        <div class="concept__title">端末内で完結する</div>
+        <p class="concept__body">多くのアプリが完全オフライン。アカウント不要、データ収集なし。あなたの情報は、あなたの端末の中だけに置きます。</p>
       </div>
       <div class="concept__item">
         <div class="concept__icon">☕️</div>
-        <div class="concept__title">The price of a coffee</div>
-        <p class="concept__body">Core features are free. Premium is mostly one-time, around the price of a coffee — no subscription overload.</p>
+        <div class="concept__title">コーヒー一杯の価格</div>
+        <p class="concept__body">基本機能は無料。プレミアムも買い切り中心で、コーヒー一杯前後。サブスク漬けにはしません。</p>
       </div>
       <div class="concept__item">
         <div class="concept__icon">👨‍👩‍👧</div>
-        <div class="concept__title">Close to home and family</div>
-        <p class="concept__body">Family home, caregiving, finances, disaster-prep, end-of-life. Built so the burden doesn’t fall on one person, with sharing anyone can follow.</p>
+        <div class="concept__title">くらしと家族に寄り添う</div>
+        <p class="concept__body">実家、介護、家計、防災、終活。ひとりに負担が偏らないよう、共有・記録・確認の流れを誰でも追える形にします。</p>
       </div>
       <div class="concept__item">
         <div class="concept__icon">🌏</div>
-        <div class="concept__title">From Japan to the world</div>
-        <p class="concept__body">Japanese, English, العربية (RTL) and more. Including apps built for families living across the GCC.</p>
+        <div class="concept__title">日本から世界のくらしへ</div>
+        <p class="concept__body">日本語・English・العربية（RTL）ほか多言語に対応。GCC 圏で暮らす家族のためのアプリもつくっています。</p>
       </div>
     </div>
 
-    <div class="faq" aria-label="Frequently asked questions">
+    <div class="faq" aria-label="よくある質問">
       <details>
-        <summary>What is freetokyo apps?</summary>
-        <p>A collection of iOS apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 39 small tools that make daily chores a little lighter.</p>
+        <summary>freetokyo apps とは何ですか？</summary>
+        <p>個人開発者 freetokyo がつくっている iOS アプリの集合体です。健康・くらし・おかね・しごとの 4 つの領域で、日々の手間を少し軽くする小さな道具を 39 本提供しています。</p>
       </details>
       <details>
-        <summary>Is it free to use?</summary>
-        <p>All core features are free. To support ongoing development, operation, support and improvement, some apps offer premium features via one-time purchase, or occasionally subscription, at around the price of a cup of coffee. They are designed so you get a fully sufficient experience for everyday use without going premium.</p>
+        <summary>無料で使えますか？</summary>
+        <p>基本機能はすべて無料で使えます。継続的な開発・運用・サポートと改善を支えるため、コーヒー一杯前後の価格で買い切り、または一部サブスクのプレミアム機能を提供しているアプリがあります。プレミアムにしなくても、日常利用に十分な体験ができるよう設計しています。</p>
       </details>
       <details>
-        <summary>How is my personal information and data handled?</summary>
-        <p>Many apps are fully offline, or use only your own cloud such as iCloud, and do not send data to the developer’s servers. See each app’s privacy policy for details.</p>
+        <summary>個人情報やデータの扱いはどうなっていますか？</summary>
+        <p>多くのアプリが完全オフライン、あるいは iCloud などユーザー本人のクラウドのみを利用する設計で、開発者のサーバーへデータを送信しません。詳細は各アプリのプライバシーポリシーをご確認ください。</p>
       </details>
     </div>
   </div>
@@ -1166,10 +1174,10 @@
   <div class="container">
     <p>© 2026 freetokyo apps</p>
     <p style="margin-top:8px">
-      <a href="/web/">日本語</a>
+      <a href="/web/en/">English</a>
       <a href="https://github.com/freetokyo/web" target="_blank" rel="noopener">GitHub</a>
-      <a href="/web/sitemap.xml">Sitemap</a>
-      <a href="/web/llms.txt">llms.txt</a>
+      <a href="./sitemap.xml">Sitemap</a>
+      <a href="./llms.txt">llms.txt</a>
     </p>
   </div>
 </footer>
