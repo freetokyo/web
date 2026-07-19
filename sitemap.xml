@@ -148,5 +148,25 @@
     <loc>https://freetokyo.github.io/web/en/sitemap.xml</loc>
     <lastmod>2026-07-08</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/inkarte/sitemap.xml</loc>
+    <lastmod>2026-07-19</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/sakulog/sitemap.xml</loc>
+    <lastmod>2026-07-19</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/khaylog/sitemap.xml</loc>
+    <lastmod>2026-07-19</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/unelog/sitemap.xml</loc>
+    <lastmod>2026-07-19</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/yuralog/sitemap.xml</loc>
+    <lastmod>2026-07-19</lastmod>
+  </sitemap>
 
 </sitemapindex>
