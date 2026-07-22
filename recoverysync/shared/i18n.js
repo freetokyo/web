@@ -117,7 +117,7 @@ const TRANSLATIONS = {
     "support.faq.a1":  "Your recovery score is calculated from three metrics read from Apple Watch: Heart Rate Variability (HRV, RMSSD) accounts for 50%, Resting Heart Rate accounts for 30%, and Sleep Duration accounts for 20%. Each metric is compared to your personal 28-day baseline (established after a 14-day calibration period) to produce a score from 0–100. HIGH is 76–100, MODERATE is 51–75, and LOW is 0–50.",
 
     "support.faq.q2":  "Why is my score showing \"—\" (dash)?",
-    "support.faq.a2":  "The app needs at least 7 nights of Apple Watch sleep data to begin calibration. During the initial calibration period (up to 14 days), the score will display \"—\". Make sure to wear your Apple Watch while sleeping every night to speed up calibration.",
+    "support.faq.a2":  "A dash (—) means RecoverySync has no data for last night yet — not that the app is still calibrating; a score appears from your very first night of data. In the Health app, make sure Sleep, Heart Rate Variability and Resting Heart Rate are all allowed for RecoverySync, and turn on sleep tracking in the Watch app so your Apple Watch records sleep overnight.",
 
     "support.faq.q3":  "Does RecoverySync work without an Apple Watch?",
     "support.faq.a3":  "No. RecoverySync requires Apple Watch (Series 4 or later) to record the HRV, resting heart rate, and sleep data used for score calculation. The iPhone app displays and analyzes the data, but the Apple Watch is the required data source.",
@@ -303,7 +303,7 @@ const TRANSLATIONS = {
     "support.faq.a1":  "リカバリースコアはApple Watchから取得した3つの指標をもとに算出されます。心拍変動（HRV、RMSSD）が50%、安静時心拍数が30%、睡眠時間が20%の割合で計算されます。各指標はお客様個人の28日間移動平均（14日間の較正期間後に確立）と比較され、0〜100のスコアが算出されます。76〜100がHIGH、51〜75がMODERATE、0〜50がLOWです。",
 
     "support.faq.q2":  "スコアが「—」（ダッシュ）と表示されるのはなぜですか？",
-    "support.faq.a2":  "アプリの較正を開始するために、少なくとも7泊分のApple Watchによる睡眠データが必要です。初期較正期間（最大14日間）中は「—」と表示されます。較正を早めるために、毎晩Apple Watchを装着して就寝してください。",
+    "support.faq.a2":  "「—」は、まだ前夜のデータが取得できていないサインです（較正中という意味ではありません。データがあれば初日からスコアが表示されます）。ヘルスケアAppで「睡眠」「心拍変動」「安静時心拍数」がRecoverySyncに許可されているか、またWatch Appで睡眠の記録がオンになっていて夜間にApple Watchが睡眠を記録しているかをご確認ください。",
 
     "support.faq.q3":  "Apple Watchなしで使用できますか？",
     "support.faq.a3":  "使用できません。RecoverySyncはスコア計算に使用するHRV・安静時心拍数・睡眠データを記録するためにApple Watch（Series 4以降）が必要です。iPhoneアプリはデータの表示と分析を行いますが、Apple Watchが必須のデータソースです。",
