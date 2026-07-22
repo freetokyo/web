@@ -216,6 +216,7 @@
     .icon-khaylog      { background: linear-gradient(135deg, #3B2F2F, #8A6D3B); }
     .icon-unelog       { background: linear-gradient(135deg, #4E8035, #DD8A2E); }
     .icon-yuralog      { background: linear-gradient(135deg, #6D5A73, #E39A5B); }
+    .icon-atamalog     { background: linear-gradient(135deg, #2E3D5C, #E2A14E); }
     .chip-soon { background: rgba(142,142,147,0.18); color: var(--color-text-mute); }
     .btn--soon { background: rgba(142,142,147,0.18); color: var(--color-text-mute); border-color: transparent; cursor: default; }
     .card__title { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
@@ -326,7 +327,8 @@
         {"@type": "ListItem", "position": 36, "item": {"@type": "SoftwareApplication", "name": "Khaylog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/khaylog/"}},
         {"@type": "ListItem", "position": 37, "item": {"@type": "SoftwareApplication", "name": "Unelog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/unelog/"}},
         {"@type": "ListItem", "position": 38, "item": {"@type": "SoftwareApplication", "name": "Yuralog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuralog/"}},
-        {"@type": "ListItem", "position": 39, "item": {"@type": "SoftwareApplication", "name": "Inkarte", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/inkarte/"}}
+        {"@type": "ListItem", "position": 39, "item": {"@type": "SoftwareApplication", "name": "Inkarte", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/inkarte/"}},
+        {"@type": "ListItem", "position": 40, "item": {"@type": "SoftwareApplication", "name": "Atamalog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/atamalog/"}}
       ]
     }
   }
@@ -366,6 +368,7 @@
           <a href="./tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a>
           <a href="./calmgraph/">Calmgraph<span>ストレスを1つの数字に</span></a>
           <a href="./yuralog/">Yuralog<span>更年期の症状記録</span></a>
+          <a href="./atamalog/">Atamalog<span>頭痛 × 気圧の記録と分析</span></a>
         </div></div>
       </div>
       <div class="nav__item">
@@ -554,6 +557,22 @@
         <p class="card__desc">ゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化。ほてり・気分・からだ・睡眠を毎日かんたんに残し、受診のときはそのまま PDF で医師へ。判断はせず、記録に徹します。完全ローカル・アカウント不要・買い切り。</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="./yuralog/">詳しく見る</a>
+          <span class="btn btn--soon">近日公開</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
+          <div class="card__icon icon-atamalog" aria-hidden="true">🌤</div>
+          <div>
+            <h3 class="card__title">Atamalog（アタマログ）</h3>
+            <div class="card__sub">頭痛 × 気圧 × からだの記録と分析</div>
+          </div>
+          <span class="chip chip-health" style="margin-left:auto">健康</span>
+        </div>
+        <p class="card__desc">その日の体調を記録すると、気圧の変化・睡眠・心拍といった条件との重なりを 0〜100 の指数で可視化。分析はすべて端末の中で行い、条件別の傾向は日数で示します。症状を予測するアプリではありません。アカウント不要・買い切り。</p>
+        <div class="card__actions">
+          <a class="btn btn--primary" href="./atamalog/">詳しく見る</a>
           <span class="btn btn--soon">近日公開</span>
         </div>
       </article>

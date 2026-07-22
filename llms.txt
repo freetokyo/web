@@ -20,6 +20,7 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 
 - [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。※近日公開。
 - [Yuralog（ユラログ）](https://freetokyo.github.io/web/yuralog/): 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。※近日公開。
+- [Atamalog（アタマログ）](https://freetokyo.github.io/web/atamalog/): 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。※近日公開。
 
 ### Life（くらし・家族）
 

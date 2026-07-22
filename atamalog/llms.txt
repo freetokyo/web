@@ -1,0 +1,46 @@
+# Atamalog (アタマログ)
+
+> An app that turns "today feels heavy" into something you can actually look at: how much the conditions overlap.
+
+Developer: freetokyo
+Platform: iPhone (iOS 26+), Apple Watch (optional)
+Languages: 36
+Pricing: free to use; Full Access is a one-time purchase ($9.99 / ¥1,500), not a subscription.
+App Store: https://apps.apple.com/app/id6793514760
+
+## What it is
+Pick one of four levels and note whether you took medication. Pressure, sleep and heart data are collected for you and treated as that day's conditions. As entries add up, you see — in days, not percentages — which conditions line up with how you feel.
+
+Atamalog is a wellness app, not a medical device. It does not diagnose, treat, or predict
+illness. The index it shows (0-100) indicates how much the day's conditions overlap; it is not a
+probability of symptoms.
+
+## Free features
+- Record how you feel (unlimited)
+- Today's index and conditions
+- Last 7 days
+- Widget and morning reminder
+
+## Full Access features
+- Trends by condition (90 days)
+- Tomorrow's condition score
+- Written summary
+- 30 days to 1 year, by season
+- PDF / CSV export
+- Apple Watch app
+
+## Privacy
+Your entries and health data stay on your device and are never sent anywhere. Only weather data is fetched, from Apple's weather service.
+Health data is read only and is never written, used for advertising, or shared. The only network
+service contacted is Apple's WeatherKit, for weather data.
+
+## Pages
+- Home (ja): https://freetokyo.github.io/web/atamalog/
+- Home (en): https://freetokyo.github.io/web/atamalog/en/
+- Support: https://freetokyo.github.io/web/atamalog/en/support.html
+- Terms: https://freetokyo.github.io/web/atamalog/en/terms.html
+- Privacy: https://freetokyo.github.io/web/atamalog/en/privacy.html
+
+## 日本語概要
+「今日はなんとなく重い」を、条件の重なりとして見えるようにするアプリです。
+本アプリは、ご自身の記録と気象・健康データの関連を可視化するウェルネス用途のアプリです。病気の診断・治療を目的としたものではなく、医学的な助言を提供するものでもありません。表示される指数は起こりやすさを断定するものではなく、条件の重なりの目安です。体調に不安があるときは医療機関にご相談ください。
