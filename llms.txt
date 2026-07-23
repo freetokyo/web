@@ -18,7 +18,7 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 - [Trero](https://freetokyo.github.io/web/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。38 言語対応のフラッグシップアプリ。App Store: https://apps.apple.com/app/id6760746164
 - [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。App Store: https://apps.apple.com/app/id6767084251
 
-- [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。※近日公開。
+- [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。App Store: https://apps.apple.com/app/id6790698772
 - [Yuralog（ユラログ）](https://freetokyo.github.io/web/yuralog/): 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。※近日公開。
 - [Atamalog（アタマログ）](https://freetokyo.github.io/web/atamalog/): 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。※近日公開。
 
@@ -40,10 +40,10 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 
 - [ハゼログ / HazeLog](https://freetokyo.github.io/web/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。App Store: https://apps.apple.com/app/id6791478115
 
-- [قمري / Qamari（カマリ）](https://freetokyo.github.io/web/qamari/): ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。※近日公開。
-- [SakuLog（サクログ）](https://freetokyo.github.io/web/sakulog/): こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。※近日公開。
+- [قمري / Qamari（カマリ）](https://freetokyo.github.io/web/qamari/): ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。App Store: https://apps.apple.com/app/id6791838601
+- [SakuLog（サクログ）](https://freetokyo.github.io/web/sakulog/): こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。App Store: https://apps.apple.com/app/id6791827004
 - [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。※近日公開。
-- [Unelog（ウネログ）](https://freetokyo.github.io/web/unelog/): 市民農園・貸し農園の「区画」に特化した完全オフラインの区画栽培カルテ iOS アプリ。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。※近日公開。
+- [Unelog（ウネログ）](https://freetokyo.github.io/web/unelog/): 市民農園・貸し農園の「区画」に特化した完全オフラインの区画栽培カルテ iOS アプリ。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。App Store: https://apps.apple.com/app/id6792154276
 
 ### Money（おかね・家計）
 
