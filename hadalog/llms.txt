@@ -13,7 +13,7 @@ Tap through three questions — tightness, oiliness, unsettledness — on a five
 
 Hadalog is a wellness app, not a medical device. It does not diagnose, treat, or predict
 illness. The index it shows (0-100) indicates how much the day's conditions overlap; it is not a
-probability of symptoms.
+probability of a skin problem.
 
 ## Free features
 - Today's skin condition index
