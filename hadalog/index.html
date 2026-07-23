@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ハダログ｜頭痛・気圧・体調の記録と分析</title>
+<meta name="description" content="「なぜ今日は調子が違うのか」を、天気と生活の重なりとして見えるようにするアプリです。カメラで肌を撮る必要はありません。">
+<link rel="canonical" href="https://freetokyo.github.io/web/hadalog/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ハダログ｜頭痛・気圧・体調の記録と分析">
+<meta property="og:description" content="「なぜ今日は調子が違うのか」を、天気と生活の重なりとして見えるようにするアプリです。カメラで肌を撮る必要はありません。">
+<meta property="og:url" content="https://freetokyo.github.io/web/hadalog/">
+<meta property="og:image" content="https://freetokyo.github.io/web/hadalog/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6793892712">
+<style>
+:root{--bg:#F3F4F1;--surface:#fff;--ink:#23262E;--sub:#6B7280;--brand:#2E3D5C;--cta:#E2A14E;--line:#e5e7eb}
+@media (prefers-color-scheme:dark){:root{--bg:#14161C;--surface:#1E2129;--ink:#E8E8E4;--sub:#9CA3AF;--brand:#8FA3C9;--line:#2b2f3a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif}
+a{color:var(--brand)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+nav{border-bottom:1px solid var(--line);background:var(--surface)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+nav .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+.badge{display:inline-block;background:var(--brand);color:#fff;padding:8px 14px;border-radius:10px;text-decoration:none;font-size:14px}
+header{padding:56px 0 32px;text-align:center}
+h1{font-size:30px;margin:0 0 8px}
+.lead{color:var(--sub);margin:0 auto;max-width:36em}
+h2{font-size:20px;margin:40px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:16px;margin:24px 0 8px}
+ul{padding-inline-start:1.2em}
+li{margin:6px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin:16px 0}
+.cta{display:inline-block;background:var(--cta);color:#3A2C14;padding:14px 28px;border-radius:14px;text-decoration:none;font-weight:700;margin-top:20px}
+.note{color:var(--sub);font-size:14px}
+table{width:100%;border-collapse:collapse;margin:12px 0}
+th,td{text-align:start;padding:10px 8px;border-bottom:1px solid var(--line);font-size:15px}
+th:not(:first-child),td:not(:first-child){text-align:center;width:22%}
+footer{margin-top:56px;border-top:1px solid var(--line);background:var(--surface)}
+footer .wrap{padding-block:24px;font-size:14px;color:var(--sub)}
+footer a{margin-inline-end:14px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "ハダログ",
+  "alternateName": "Hadalog",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "iOS 26.0+",
+  "url": "https://freetokyo.github.io/web/hadalog/",
+  "inLanguage": "ja",
+  "description": "「なぜ今日は調子が違うのか」を、天気と生活の重なりとして見えるようにするアプリです。カメラで肌を撮る必要はありません。",
+  "featureList": [
+    "当日の肌コンディション指数",
+    "当日のケアアドバイス",
+    "デイリー入力・記録（無制限）",
+    "夕方フィードバック",
+    "明日の予測指数と予防アドバイス",
+    "履歴・相関分析・周期フェーズ別傾向",
+    "PDF エクスポート",
+    "ローカルバックアップ"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY",
+    "description": "基本機能は無料。フルアクセスは買い切り ¥1,500。"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "freetokyo"
+  }
+}
+</script>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="index.html">ハダログ</a>
+  <a class="badge" href="https://apps.apple.com/app/id6793892712">App Store で見る</a>
+</div></nav>
+<div class="wrap">
+<header>
+  <h1>ハダログ</h1>
+  <p class="lead">「なぜ今日は調子が違うのか」を、天気と生活の重なりとして見えるようにするアプリです。カメラで肌を撮る必要はありません。</p>
+  <a class="cta" href="https://apps.apple.com/app/id6793892712">App Store でダウンロード</a>
+</header>
+
+<h2>使い方</h2>
+<p>突っ張り感・ベタつき・ゆらぎの3問を5段階でタップするだけ、15秒ほどで終わります。肌水分計をお持ちなら数値を直接入力することもできます。天気（湿度・気温・UV・風）とヘルスケア（睡眠・歩数・水分・周期）は許可した項目だけが自動で集まり、その日の材料として扱われます。夕方に「実際はどうだったか」をワンタップで答えると、予測があなたの傾向に近づいていきます。記録が14日たまると、一般的な傾向ではなくあなた自身の傾向を反映した予測に切り替わります。</p>
+
+<h2>できること</h2>
+<table>
+  <thead><tr><th>機能</th><th>無料</th><th>フルアクセス</th></tr></thead>
+  <tbody>
+    <tr><td>当日の肌コンディション指数</td><td>✓</td><td>✓</td></tr>
+    <tr><td>当日のケアアドバイス</td><td>✓</td><td>✓</td></tr>
+    <tr><td>デイリー入力・記録（無制限）</td><td>✓</td><td>✓</td></tr>
+    <tr><td>夕方フィードバック</td><td>✓</td><td>✓</td></tr>
+    <tr><td>明日の予測指数と予防アドバイス</td><td>—</td><td>✓</td></tr>
+    <tr><td>履歴・相関分析・周期フェーズ別傾向</td><td>—</td><td>✓</td></tr>
+    <tr><td>PDF エクスポート</td><td>—</td><td>✓</td></tr>
+    <tr><td>ローカルバックアップ</td><td>—</td><td>✓</td></tr>
+  </tbody>
+</table>
+<p class="note">フルアクセスは買い切り ¥1,500 です。サブスクリプションではありません。</p>
+
+<h2>データの扱い</h2>
+<div class="card">
+  <p>記録もヘルスケアのデータも、端末の外に出ません。アカウント登録も不要です。天気を取得するときだけ、現在地が Apple に送られます。</p>
+  <p class="note">ヘルスケアのデータは<strong>読み取りのみ</strong>で、書き込みは行いません。
+  通知の文面には症状名を含めません（ロック画面で第三者に見えないようにするためです）。</p>
+</div>
+
+<h2>ご利用にあたって</h2>
+<div class="card">
+  <p>ハダログは自己管理のための記録アプリです。医学的な診断や治療の代わりになるものではありません。気になる状態が続くときは皮膚科の専門医にご相談ください。</p>
+  <p class="note">指数は、あなたの入力と天気・生活習慣から算出した自己管理のための目安です。</p>
+</div>
+
+<p class="note">対応: iPhone（iOS 26 以降）／ Apple Watch（任意）。表示言語は 36 言語。</p>
+
+</div>
+<footer><div class="wrap">
+  <p>
+    <a href="index.html">ホーム</a>
+    <a href="support.html">サポート</a>
+    <a href="terms.html">利用規約</a>
+    <a href="privacy.html">プライバシー</a>
+    <a href="en/index.html">English</a>
+  </p>
+  <p><a href="/web/"><strong>&larr; freetokyo apps</strong></a></p>
+  <p>&copy; 2026 freetokyo</p>
+</div></footer>
+</body>
+</html>

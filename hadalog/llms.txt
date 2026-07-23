@@ -1,0 +1,44 @@
+# Hadalog (ハダログ)
+
+> Hadalog makes "why is my skin different today?" visible as an overlap of weather and daily habits. No camera, no photos of your face.
+
+Developer: freetokyo
+Platform: iPhone (iOS 26+), Apple Watch (optional)
+Languages: 36
+Pricing: free to use; Full Access is a one-time purchase ($9.99 / ¥1,500), not a subscription.
+App Store: https://apps.apple.com/app/id6793892712
+
+## What it is
+Tap through three questions — tightness, oiliness, unsettledness — on a five-point scale. It takes about fifteen seconds. If you own a moisture meter, you can enter its readings instead. Weather (humidity, temperature, UV, wind) and Health (sleep, steps, water, cycle) are gathered automatically for the items you allow, and treated as that day's inputs. In the evening, one tap tells the app how it actually went, and the forecast moves closer to your own patterns. After fourteen days of records, it switches from general patterns to your own.
+
+Hadalog is a wellness app, not a medical device. It does not diagnose, treat, or predict
+illness. The index it shows (0-100) indicates how much the day's conditions overlap; it is not a
+probability of symptoms.
+
+## Free features
+- Today's skin condition index
+- Today's care suggestions
+- Daily entries and records (unlimited)
+- Evening check-back
+
+## Full Access features
+- Tomorrow's forecast and suggestions
+- History, correlations, cycle-phase trends
+- PDF export
+- Local backup
+
+## Privacy
+Your records and Health data never leave your device, and no account is needed. Only when fetching the weather is your location sent to Apple.
+Health data is read only and is never written, used for advertising, or shared. The only network
+service contacted is Apple's WeatherKit, for weather data.
+
+## Pages
+- Home (ja): https://freetokyo.github.io/web/hadalog/
+- Home (en): https://freetokyo.github.io/web/hadalog/en/
+- Support: https://freetokyo.github.io/web/hadalog/en/support.html
+- Terms: https://freetokyo.github.io/web/hadalog/en/terms.html
+- Privacy: https://freetokyo.github.io/web/hadalog/en/privacy.html
+
+## 日本語概要
+「なぜ今日は調子が違うのか」を、天気と生活の重なりとして見えるようにするアプリです。カメラで肌を撮る必要はありません。
+ハダログは自己管理のための記録アプリです。医学的な診断や治療の代わりになるものではありません。気になる状態が続くときは皮膚科の専門医にご相談ください。
