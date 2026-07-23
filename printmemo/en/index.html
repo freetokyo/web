@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <title>PrintSummary | Organize School Handouts with OCR and Deadline Tracking</title>
+  <meta name="description" content="PrintSummary organizes school handouts just by snapping a photo. OCR reads the subject, document type, deadline, and items to bring, then tracks submission status and review sets — all on your device.">
+  <meta name="keywords" content="school handouts,paper organizer,notices,PTA,OCR,deadline tracking,parenting,parents,document scanner,paperless,reminders,iPhone,iOS">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/printmemo/en/index.html">
+  <meta name="apple-itunes-app" content="app-id=6761879860">
+
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/index.html" />
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/index.html" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PrintSummary | Organize School Handouts with OCR">
+  <meta property="og:description" content="Scan school handouts, extract text with OCR, and manage deadlines, submission status, and review reminders in one place.">
+  <meta property="og:site_name" content="PrintSummary">
+  <meta property="og:url" content="https://freetokyo.github.io/web/printmemo/en/index.html">
+  <meta property="og:image" content="https://freetokyo.github.io/web/printmemo/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PrintSummary — School handout OCR app">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrintSummary">
+  <meta name="twitter:description" content="School handout OCR, deadline tracking, submission status, and review reminders in one app.">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/printmemo/ogp.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "PrintSummary",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "iOS 17.6 or later",
+    "description": "PrintSummary helps users capture school handouts, extract text with OCR, organize deadlines, manage submission status, and revisit handouts for review.",
+    "inLanguage": [
+      "en",
+      "ja"
+    ],
+    "featureList": [
+      "School handout OCR",
+      "Deadline tracking",
+      "Submission status management",
+      "Review reminders",
+      "On-device oriented workflow"
+    ],
+    "url": "https://apps.apple.com/app/id6761879860",
+    "author": {
+      "@type": "Organization",
+      "name": "freetokyo",
+      "url": "https://freetokyo.github.io/web/",
+      "sameAs": [
+        "https://apps.apple.com/developer/id1886058795",
+        "https://x.com/2009CYL",
+        "https://github.com/freetokyo"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "freetokyo",
+      "url": "https://freetokyo.github.io/web/",
+      "sameAs": [
+        "https://apps.apple.com/developer/id1886058795",
+        "https://x.com/2009CYL",
+        "https://github.com/freetokyo"
+      ]
+    },
+    "dateModified": "2026-06-15",
+    "softwareVersion": "1.1",
+    "datePublished": "2026-05-28",
+    "contentRating": "4+",
+    "fileSize": "4 MB",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #efe8db;
+      --surface: rgba(255, 255, 255, 0.82);
+      --surface-strong: #ffffff;
+      --text: #16211d;
+      --muted: #5f6f67;
+      --line: rgba(22, 33, 29, 0.1);
+      --accent: #0f6f5b;
+      --accent-deep: #0b5142;
+      --accent-soft: rgba(15, 111, 91, 0.12);
+      --warm: rgba(203, 129, 76, 0.2);
+      --shadow: 0 28px 72px rgba(18, 30, 26, 0.09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(15, 111, 91, 0.2), transparent 30%),
+        radial-gradient(circle at 100% 10%, var(--warm), transparent 24%),
+        linear-gradient(180deg, #f7f0e5 0%, var(--bg) 100%);
+    }
+    a { color: var(--accent-deep); }
+    main { max-width: 1140px; margin: 0 auto; padding: 28px 20px 80px; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .lang-button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .lang-button.is-active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .lang-panel[hidden] { display: none; }
+    .hero, .section-card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      border-radius: 30px;
+    }
+    .hero {
+      padding: 38px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -60px -80px auto;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15, 111, 91, 0.18) 0%, rgba(15, 111, 91, 0) 68%);
+      pointer-events: none;
+    }
+    .hero-grid, .grid-3, .grid-2 {
+      display: grid;
+      gap: 18px;
+    }
+    .hero-grid { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 18px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 18px; }
+    .section-card { padding: 24px; }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5.2rem);
+      line-height: 0.96;
+      letter-spacing: -0.05em;
+      margin-bottom: 16px;
+      max-width: 9ch;
+    }
+    h2 {
+      font-size: 1.14rem;
+      color: var(--accent-deep);
+      margin-bottom: 14px;
+    }
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      color: var(--accent-deep);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+    .lead {
+      font-size: 1.08rem;
+      max-width: 56ch;
+      color: #223029;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 16px;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 16px;
+      border-radius: 20px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+    }
+    .stat strong {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .stat span {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+    .pill-row, .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      font-size: 0.9rem;
+    }
+    .cta, .ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .cta { background: var(--accent); color: #fff; }
+    .ghost {
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--line);
+      color: var(--text);
+    }
+    .strategy-card {
+      position: relative;
+      overflow: hidden;
+    }
+    .strategy-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent) 0%, rgba(203, 129, 76, 0.86) 100%);
+    }
+    .mini {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .appstore-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.93rem;
+    }
+    .footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 18px;
+    }
+    @media (max-width: 900px) {
+      .hero, .section-card { border-radius: 22px; padding: 22px; }
+      .hero-grid, .grid-2, .grid-3, .stat-grid { grid-template-columns: 1fr; }
+      h1 { max-width: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://freetokyo.github.io/web/printmemo/en/index.html",
+    "name": "PrintSummary",
+    "inLanguage": [
+      "en",
+      "ja"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "freetokyo",
+      "url": "https://freetokyo.github.io/web/",
+      "sameAs": [
+        "https://apps.apple.com/developer/id1886058795",
+        "https://x.com/2009CYL",
+        "https://github.com/freetokyo"
+      ]
+    },
+    "dateModified": "2026-06-15"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to use the app",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Photograph the handout",
+        "text": "Photograph the handout"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Let OCR extract the details and the deadline",
+        "text": "Let OCR extract the details and the deadline"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Stay on top of it with reminders and search",
+        "text": "Stay on top of it with reminders and search"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "freetokyo",
+        "item": "https://freetokyo.github.io/web/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "PrintSummary",
+        "item": "https://freetokyo.github.io/web/printmemo/en/index.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <div class="brand">PrintSummary</div>
+      <div class="language-switch" aria-label="Language switch">
+        <a class="lang-button" style="text-decoration:none;" href="../index.html" hreflang="ja">日本語</a>
+        <a class="lang-button is-active" style="text-decoration:none;" href="./index.html" hreflang="en" aria-current="page">English</a>
+      </div>
+    </div>
+
+    <section class="hero" lang="en">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">School Handout OCR</div>
+          <h1>Capture. Organize. Stop missing handouts.</h1>
+          <p class="lead">PrintSummary organizes school handouts and notices just by snapping a photo. OCR reads the subject, document type, deadline, and items to bring, then keeps deadlines, submission status, and review sets in one place — so you spend less time searching, miss fewer turn-ins, and revise better before tests.</p>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">School handout OCR</span>
+            <span class="pill">Deadline tracking</span>
+            <span class="pill">Submission visibility</span>
+            <span class="pill">Review workflow</span>
+            <span class="pill">No account required</span>
+          </div>
+          <div class="cta-row" style="margin-top:20px;">
+            <a class="appstore-btn" href="https://apps.apple.com/app/id6761879860" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 814 1000" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="white" d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-27.8-155.5-127.4C46.7 790.7 0 663 0 541.8c0-207.5 135.4-317.3 269-317.3 70.1 0 128.4 46.4 172.5 46.4 42.1 0 108.6-49 191.4-49 30.8 0 134.2 2.6 198.3 99zM549.5 148.3c22.7-31.2 39.2-74.5 39.2-117.8 0-6.1-.5-12.2-1.6-17.3-37 1.4-81.2 24.7-107.3 56.6-20.2 24.1-40.1 64.6-40.1 108.4 0 6.7 1.1 13.4 1.6 15.5 2.7.5 7.2 1.1 11.1 1.1 33.5 0 75.2-22.4 97.1-46.5z"/></svg> Download on the App Store</a>
+            <a class="cta" href="./support.html">Support</a>
+            <a class="ghost" href="./privacy.html">Privacy Policy</a>
+            <a class="ghost" href="./terms.html">Terms</a>
+          </div>
+        </div>
+        <div class="section-card" style="margin:0;">
+
+<section class="ftshot-gallery" aria-label="App screenshots">
+
+<section class="ftfacts" aria-label="App overview">
+  <h2>App overview</h2>
+  <table>
+    <tr><th>Requires</th><td>iOS 17.6 or later</td></tr>
+    <tr><th>Price</th><td>Free (In-App Purchases)</td></tr>
+    <tr><th>Version</th><td>1.1</td></tr>
+    <tr><th>Size</th><td>About 4 MB</td></tr>
+    <tr><th>Category</th><td>Education</td></tr>
+    <tr><th>Age rating</th><td>4+</td></tr>
+    <tr><th>Made for</th><td>Parents managing school handouts</td></tr>
+    <tr><th>Data handling</th><td>Core processing stays on device</td></tr>
+    <tr><th>Developer</th><td>freetokyo</td></tr>
+    <tr><th>Last updated</th><td>2026-05-28</td></tr>
+  </table>
+</section>
+<section class="fthowto" aria-label="How to use it (3 steps)">
+  <h2>How to use it (3 steps)</h2>
+  <ol>
+    <li>Photograph the handout</li>
+    <li>Let OCR extract the details and the deadline</li>
+    <li>Stay on top of it with reminders and search</li>
+  </ol>
+  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
+</section>
+  <h2>Inside the app</h2>
+  <div class="ftshot-row">
+    <figure class="ftshot-item"><img src="../shots/01.png" alt="PrintSummary timeline list of school handouts" width="360" height="782" loading="lazy" decoding="async"><figcaption>Handout list</figcaption></figure>
+    <figure class="ftshot-item"><img src="../shots/02.png" alt="Photographing a handout and organizing it with OCR" width="360" height="782" loading="lazy" decoding="async"><figcaption>Snap and organize</figcaption></figure>
+    <figure class="ftshot-item"><img src="../shots/03.png" alt="Deadline extraction and handout search screen" width="360" height="782" loading="lazy" decoding="async"><figcaption>Deadlines and search</figcaption></figure>
+  </div>
+  <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
+</section>
+          <h2>Product summary</h2>
+          <div class="stat-grid">
+            <div class="stat"><strong>User pain point</strong><span>Paper handout overload</span></div>
+            <div class="stat"><strong>Primary value</strong><span>Fewer missed deadlines</span></div>
+            <div class="stat"><strong>Input</strong><span>Camera capture and photo import</span></div>
+            <div class="stat"><strong>Positioning</strong><span>Built around school handouts</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-3">
+      <section class="section-card" lang="en">
+        <h2>① Capture</h2>
+        <p>Photograph school handouts on the spot or import them from your photo library. No account required.</p>
+      </section>
+
+      <section class="section-card" lang="en">
+        <h2>② Organize with OCR</h2>
+        <p>Text is extracted automatically to sort out deadlines, subjects, and items to bring. All processing stays on device — nothing is sent to external servers.</p>
+      </section>
+
+      <section class="section-card" lang="en">
+        <h2>③ Never miss a deadline</h2>
+        <p>Get local reminders before due dates. Saved handouts stay searchable so you can revisit them any time for review.</p>
+      </section>
+    </div>
+
+    <div class="grid-2">
+      <section class="section-card" lang="en">
+        <h2>Core product message</h2>
+        <ul>
+          <li>Capture paper school handouts the moment they are received.</li>
+          <li>Use OCR to extract text and support deadline or submission review.</li>
+          <li>Search, revisit, and reuse saved handouts for study and follow-up.</li>
+          <li>Within the verified implementation scope, the core workflow is designed around on-device processing.</li>
+        </ul>
+      </section>
+
+      <section class="section-card" lang="en">
+        <h2>Pricing</h2>
+        <div class="stat-grid">
+          <div class="stat"><strong>Free</strong><span>Save a set number of handouts per month</span></div>
+          <div class="stat"><strong>Premium</strong><span>One-time purchase, no save limit</span></div>
+        </div>
+        <p class="mini" style="margin-top:14px;">Premium purchases and refunds follow App Store terms.</p>
+      </section>
+    </div>
+
+    <p class="footer-note">PrintSummary Marketing Page · <a href="https://freetokyo.github.io/web/">freetokyo</a></p>
+  </main>
+</body>
+</html>

@@ -1,8 +1,8 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 40 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 41 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
 
-サイトトップ: https://freetokyo.github.io/web/ （健康・くらし・おかね・しごとの 4 カテゴリで全 40 アプリを一覧）
+サイトトップ: https://freetokyo.github.io/web/ （健康・くらし・おかね・しごとの 4 カテゴリで全 41 アプリを一覧）
 English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルートページ。相互に hreflang 設定済み）
 
 開発者: freetokyo（個人開発者・iOS / watchOS）
@@ -20,7 +20,8 @@ English portfolio page: https://freetokyo.github.io/web/en/ （英語版ルー�
 
 - [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。App Store: https://apps.apple.com/app/id6790698772
 - [Yuralog（ユラログ）](https://freetokyo.github.io/web/yuralog/): 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。※近日公開。
-- [Atamalog（アタマログ）](https://freetokyo.github.io/web/atamalog/): 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。※近日公開。
+- [Atamalog（アタマログ）](https://freetokyo.github.io/web/atamalog/): 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。App Store: https://apps.apple.com/app/id6793514760
+- [Hadalog（ハダログ）](https://freetokyo.github.io/web/hadalog/): 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。※近日公開。
 
 ### Life（くらし・家族）
 
@@ -91,5 +92,5 @@ TsukiLift には追加で `/tsukilift/tokushoho.html`（特定商取引法表記
 - Sitemap: https://freetokyo.github.io/web/sitemap.xml
 - Trero 多言語サブサイトマップ: https://freetokyo.github.io/web/trero/sitemap.xml
 - 各アプリの構造化データ（JSON-LD MobileApplication / SoftwareApplication / Organization / FAQPage）はページ HTML に埋め込み済み。
-- ルート `index.html` には CollectionPage + ItemList（全 40 アプリ）の JSON-LD あり。
+- ルート `index.html` には CollectionPage + ItemList（全 41 アプリ）の JSON-LD あり。
 - 各アプリページには MobileApplication / WebSite / HowTo / BreadcrumbList、support には FAQPage の JSON-LD を埋め込み。各アプリ `web/llms.txt`（per-app）も用意。

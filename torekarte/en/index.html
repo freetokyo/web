@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <title>ToreKarte | Client Charts for Personal Trainers (Fully Offline)</title>
+  <meta name="description" content="ToreKarte is a client chart app for freelance and independent personal trainers. Manage session logs, remaining sessions on prepaid packages and body-composition charts without your clients&#x27; information ever leaving your device. No account, zero data collection, one-time purchase.">
+  <link rel="canonical" href="https://freetokyo.github.io/web/torekarte/en/index.html">
+  <meta name="robots" content="index,follow">
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/torekarte/index.html" />
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/torekarte/en/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/torekarte/index.html" />
+  <meta property="og:title" content="ToreKarte | Client Charts for Personal Trainers">
+  <meta property="og:description" content="Session logs, prepaid packages and body-composition charts, fully offline. A client chart for personal trainers that keeps client information on your device.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freetokyo.github.io/web/torekarte/en/index.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://freetokyo.github.io/web/torekarte/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MobileApplication","name":"ToreKarte","alternateName":"ToreKarte - Trainer Client Log","operatingSystem":"iOS 18","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"A client chart app for personal trainers. Manage session logs, remaining sessions on prepaid packages and body-composition charts fully offline.","url":"https://freetokyo.github.io/web/torekarte/en/index.html"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Where is my clients' information stored?","acceptedAnswer":{"@type":"Answer","text":"Only on your iPhone. It is never sent to the developer or any third party, and no account is required. Obtaining and managing your clients' personal information, and getting any consent required, is your responsibility as the trainer."}},
+    {"@type":"Question","name":"What happens to my data when I change devices?","acceptedAnswer":{"@type":"Answer","text":"Use \"Export backup\" in Settings to save a file anywhere you like, such as iCloud Drive. On the new device, choose that file with \"Restore from backup\". This feature is free."}},
+    {"@type":"Question","name":"Does it handle payments for prepaid packages?","acceptedAnswer":{"@type":"Answer","text":"No. ToreKarte only records sessions left, expiry and unpaid status. It does not process or receive payments."}},
+    {"@type":"Question","name":"Is this a subscription?","acceptedAnswer":{"@type":"Answer","text":"No. ToreKarte Pro is a one-time purchase (¥3,000). Buy it once and keep it forever."}}
+  ]}
+  </script>
+  <style>
+    :root{--bg:#f8faf9;--surface:#fff;--text:#1c2422;--muted:#5c6b67;--line:rgba(28,36,34,.12);--accent:#134e4a;--deep:#134e4a;--cta:#134e4a;--tint:#eef4f2;--amber:#f59e0b;}
+    *{box-sizing:border-box}body{margin:0;color:var(--text);background:var(--bg);font-family:"Avenir Next","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}
+    a{color:var(--deep)}
+    .topnav{max-width:900px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .brand{font-weight:700;color:var(--deep);text-decoration:none;letter-spacing:.04em}
+    .appstore{background:#111;color:#fff;padding:8px 16px;border-radius:999px;text-decoration:none;font-size:.9rem}
+    .appstore.pending{background:var(--tint);color:var(--muted);pointer-events:none}
+    .lang-switch{display:inline-flex;gap:6px}.lang-switch button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit;color:var(--muted)}
+    .lang-switch button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+    main{max-width:900px;margin:0 auto;padding:8px 20px 40px}
+    .hero{text-align:center;padding:40px 20px 20px}
+    .hero .logo{width:96px;height:96px;border-radius:22px;box-shadow:0 14px 40px rgba(19,78,74,.28)}
+    .hero h1{font-size:2rem;margin:18px 0 6px}
+    .hero .tag{color:var(--muted);font-size:1.05rem;margin:0}
+    .hero .cta{display:inline-block;margin-top:22px;background:var(--cta);color:#fff;padding:13px 28px;border-radius:14px;text-decoration:none;font-weight:600}
+    .hero .cta.pending{background:var(--tint);color:var(--muted);pointer-events:none}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:14px}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 16px 40px rgba(19,78,74,.06)}
+    .card h3{margin:0 0 6px;color:var(--deep);font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .price{background:var(--tint);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:24px}
+    .price h2{margin:0 0 12px;color:var(--deep);font-size:1.2rem}.price ul{margin:0;padding-left:1.1em}.price li{margin:6px 0}
+    .lang-panel[hidden]{display:none}.muted{color:var(--muted)}
+    .note{border-left:3px solid var(--amber);padding-left:14px;margin-top:26px;color:var(--muted);font-size:.95rem}
+    footer.site{max-width:900px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);font-size:.9rem}
+    footer.site nav{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:10px}footer.site a{color:var(--deep);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="brand" href="./index.html">トレカルテ · ToreKarte</a>
+    <span style="display:flex;gap:12px;align-items:center">
+      <span class="lang-switch"><button id="ja" type="button">日本語</button><button id="en" class="on" type="button">EN</button></span>
+      <a class="appstore" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">App Store</a>
+    </span>
+  </div>
+
+  <main>
+    <section class="lang-panel" lang="en">
+      <div class="hero">
+        <img class="logo" src="../apple-touch-icon.png" alt="ToreKarte icon">
+        <h1>Your records are your coaching edge.</h1>
+        <p class="tag">A client chart for personal trainers. Session logs and prepaid packages — all on your device.</p>
+        <a class="cta" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">Download on the App Store</a>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Last session, right there</h3><p>The Today screen lists your sessions for the day, plus recent clients with what they did last time. Start recording and their previous weights and reps are already filled in — leave them as-is if nothing changed.</p></div>
+        <div class="card"><h3>Passes count themselves down</h3><p>Saving a session uses one session from the linked pass. Low balance (2 or fewer) and near expiry (within 14 days) are shown by both colour and wording, so nothing gets missed or billed twice.</p></div>
+        <div class="card"><h3>See the change as a chart</h3><p>Record weight, body fat, and girth (chest, waist, hip, thigh, arm) and see the trend and net change over any period — something concrete to show your client.</p></div>
+        <div class="card"><h3>Notes you need on the floor</h3><p>Keep each client&#x27;s goal and things to watch (&quot;right shoulder discomfort; go easy on overhead work&quot;) on their chart. They show up on the Today screen too.</p></div>
+        <div class="card"><h3>Presets and templates</h3><p>17 exercises grouped by body part — bench press, squat, deadlift and more — come built in. Save the sets you use often as a template and add them all at once (3 on the free tier, unlimited with Pro).</p></div>
+        <div class="card"><h3>Your clients&#x27; data stays put</h3><p>ToreKarte has no server and no account. What you enter is stored only on your device and is never sent to the developer or any third party.</p></div>
+        <div class="card"><h3>Lock and backup are free</h3><p>App lock (Face ID, Touch ID, or passcode) and backup export/restore are included in the free version. Safety and data-protection features shouldn&#x27;t sit behind a paywall.</p></div>
+        <div class="card"><h3>Session reminders</h3><p>Set the next session when you record, and this device reminds you an hour before.</p></div>
+      </div>
+      <div class="price">
+        <h2>Pricing</h2>
+        <ul>
+          <li><strong>Free</strong>: up to 3 clients and 3 templates. Session records, charts, passes, app lock, reminders, and backup are all included.</li>
+          <li><strong>ToreKarte Pro (one-time, ¥3,000)</strong>: unlimited clients and templates, plus a <strong>PDF progress report</strong> to hand to clients, <strong>CSV export</strong>, and a <strong>monthly summary</strong> (sessions delivered and estimated revenue). <strong>Not a subscription.</strong> Buy once, keep it forever.</li>
+        </ul>
+      </div>
+      <p class="note">iPhone only (iOS 18 or later). Available in Japanese and English. ToreKarte is a record-keeping tool; it does not provide medical advice or diagnosis. Passes record sessions left, expiry and unpaid status only — no payments are handled.</p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./support.html">Support</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+    </nav>
+    <p><a href="https://freetokyo.github.io/web/"><strong>&larr; freetokyo apps</strong></a></p>
+    <p>&copy; 2026 freetokyo</p>
+  </footer>
+
+  <script>
+    document.getElementById('ja').onclick=()=>{location.href='../index.html';};
+    document.getElementById('en').onclick=()=>{location.href='./index.html';};
+  </script>
+</body>
+</html>

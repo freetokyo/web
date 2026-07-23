@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <title>Support &amp; FAQ | PrintSummary (School Handout Organizer)</title>
+
+  <meta name="description" content="Support page for PrintSummary, the school handout organizer. Frequently asked questions, basic usage, how to report a bug or request a feature, and how to get in touch.">
+  <meta name="keywords" content="PrintSummary support,PrintSummary FAQ,school handout organizer help,help,contact">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/printmemo/en/support.html">
+
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/support.html" />
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/support.html" />
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/support.html" />
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PrintSummary">
+  <meta property="og:title" content="Support &amp; FAQ | PrintSummary (School Handout Organizer)">
+  <meta property="og:description" content="Support information for PrintSummary: school handout OCR, deadline organization, notifications, Premium, data deletion, and permission settings.">
+  <meta property="og:url" content="https://freetokyo.github.io/web/printmemo/en/support.html">
+  <meta property="og:image" content="https://freetokyo.github.io/web/printmemo/ogp.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrintSummary Support">
+  <meta name="twitter:description" content="Support for school handout OCR, deadline tracking, notifications, and Premium.">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/printmemo/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6761879860, app-argument=https://freetokyo.github.io/web/printmemo/en/support.html">
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --bg-soft: #fbf8f2;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-strong: #ffffff;
+      --text: #1d2a25;
+      --muted: #607168;
+      --line: rgba(29, 42, 37, 0.1);
+      --accent: #0e6b57;
+      --accent-strong: #0a4f40;
+      --accent-soft: rgba(14, 107, 87, 0.12);
+      --shadow: 0 24px 60px rgba(18, 34, 29, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(14, 107, 87, 0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(212, 124, 72, 0.15), transparent 24%),
+        linear-gradient(180deg, #f7f2e8 0%, var(--bg) 100%);
+    }
+    a { color: var(--accent-strong); }
+    main { max-width: 1080px; margin: 0 auto; padding: 28px 20px 72px; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .lang-button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .lang-button.is-active {
+      color: #fff;
+      background: var(--accent);
+    }
+    .lang-panel[hidden] { display: none; }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      border-radius: 28px;
+    }
+    .hero {
+      padding: 34px;
+      margin-bottom: 20px;
+    }
+    .hero-grid, .grid {
+      display: grid;
+      gap: 18px;
+    }
+    .hero-grid { grid-template-columns: 1.3fr 0.9fr; align-items: start; }
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 18px; }
+    .card { padding: 24px; }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      color: var(--accent-strong);
+      margin-bottom: 14px;
+    }
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 0.98rem;
+      line-height: 1.78;
+      color: var(--text);
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      color: var(--accent-strong);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+    .meta, .mini {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .pill-row, .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+      font-size: 0.9rem;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 11px 14px;
+      border-radius: 16px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      text-decoration: none;
+    }
+    .faq-item + .faq-item {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .footer-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 18px;
+    }
+    @media (max-width: 820px) {
+      .hero, .card { border-radius: 22px; }
+      .hero, .card { padding: 22px; }
+      .hero-grid, .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Camera or Photos are unavailable",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to iPhone / iPad Settings > Privacy & Security > Camera (or Photos ) and enable PrintSummary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Notifications do not arrive",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to Settings > Notifications > PrintSummary > Allow Notifications and make sure it is on. Also check that the handout has a deadline set and is not already marked as submitted."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "OCR or deadline extraction looks inaccurate",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Try recapturing in bright light, holding the camera parallel to the paper. You can re-run OCR from the handout detail screen inside the app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Save Limit",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The free version has a monthly limit for new saves. After that, wait until the next month or consider Premium."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Delete Data",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "From Settings > Delete Data, you can remove saved handouts, OCR results, stored images, extraction issue samples, added vocabulary, and recent history."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Privacy Posture",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Within the scope verified in the current implementation, core processing is intended to remain on-device. See the Privacy Policy for details."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "freetokyo",
+        "item": "https://freetokyo.github.io/web/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "PrintSummary",
+        "item": "https://freetokyo.github.io/web/printmemo/en/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Support",
+        "item": "https://freetokyo.github.io/web/printmemo/en/support.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <div class="brand">PrintSummary Support</div>
+      <div class="language-switch" aria-label="Language switch">
+        <a class="lang-button" style="text-decoration:none;" href="../support.html" hreflang="ja">日本語</a>
+        <a class="lang-button is-active" style="text-decoration:none;" href="./support.html" hreflang="en" aria-current="page">English</a>
+      </div>
+    </div>
+
+    <section class="hero" lang="en">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Support for Students</div>
+          <h1>PrintSummary Support</h1>
+          <p style="margin-top:14px;">PrintSummary helps you photograph school handouts, extract their text with OCR, organize deadlines and submission status, and revisit important pages for review. This page collects what to know before you start, the checks that resolve most issues, and how to reach us.</p>
+          <div class="pill-row" style="margin-top:18px;">
+            <span class="pill">School handout OCR</span>
+            <span class="pill">Deadline tracking</span>
+            <span class="pill">Submission status</span>
+            <span class="pill">Local reminders</span>
+          </div>
+        </div>
+        <div class="card" style="margin:0;">
+          <h2>Quick checklist</h2>
+          <ul>
+            <li>Granting Camera, Photos, and Notifications permissions enables all features.</li>
+            <li>Capturing in bright light with the camera held parallel to the paper improves OCR accuracy.</li>
+            <li>The free plan has a monthly save limit. Premium (a one-time purchase) removes it.</li>
+          </ul>
+          <div class="link-row" style="margin-top:16px;">
+            <a class="cta" href="mailto:freetokyo2020@yahoo.co.jp">Contact support</a>
+            <a class="link-chip" href="https://apps.apple.com/app/id6761879860" target="_blank" rel="noopener">App Store</a>
+            <a class="link-chip" href="./privacy.html">Privacy Policy</a>
+            <a class="link-chip" href="./terms.html">Terms</a>
+            <a class="link-chip" href="./index.html">About</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card" lang="en">
+        <h2>Common checks</h2>
+        <div class="faq-item">
+          <h3>Camera or Photos are unavailable</h3>
+          <p>Go to iPhone / iPad <strong>Settings &gt; Privacy &amp; Security &gt; Camera</strong> (or <strong>Photos</strong>) and enable PrintSummary.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Notifications do not arrive</h3>
+          <p>Go to <strong>Settings &gt; Notifications &gt; PrintSummary &gt; Allow Notifications</strong> and make sure it is on. Also check that the handout has a deadline set and is not already marked as submitted.</p>
+        </div>
+        <div class="faq-item">
+          <h3>OCR or deadline extraction looks inaccurate</h3>
+          <p>Try recapturing in bright light, holding the camera parallel to the paper. You can <strong>re-run OCR</strong> from the handout detail screen inside the app.</p>
+        </div>
+      </section>
+
+      <section class="card" lang="en">
+        <h2>Key policies</h2>
+        <div class="faq-item">
+          <h3>Save limit</h3>
+          <p>The free version has a monthly limit for new saves. Once you reach it, wait until the next month or consider Premium.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Delete data</h3>
+          <p>From <strong>Settings &gt; Delete Data</strong> you can remove saved handouts, OCR results, stored images, extraction issue samples, added vocabulary, and recent history.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Privacy posture</h3>
+          <p>Within the scope verified in the current implementation, core processing is intended to remain on-device. See the Privacy Policy for details.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="card" lang="en">
+      <h2>Contact</h2>
+      <p>Support email: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+      <p class="mini" style="margin-top:10px;">This page is structured to work well as an App Store Support URL, a social profile support link, and a search result landing page.</p>
+    </section>
+
+    <p class="footer-note">PrintSummary Support · <a href="https://freetokyo.github.io/web/">freetokyo</a></p>
+  </main>
+</body>
+</html>

@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/nailog/index.html</loc><lastmod>2026-07-15</lastmod><priority>1.0</priority></url>
-  <url><loc>https://freetokyo.github.io/web/nailog/privacy.html</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/nailog/terms.html</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://freetokyo.github.io/web/nailog/support.html</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-</urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://freetokyo.github.io/web/nailog/</loc></url><url><loc>https://freetokyo.github.io/web/nailog/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/nailog/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/nailog/support.html</loc></url><url><loc>https://freetokyo.github.io/web/nailog/en/</loc></url><url><loc>https://freetokyo.github.io/web/nailog/en/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/nailog/en/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/nailog/en/support.html</loc></url></urlset>

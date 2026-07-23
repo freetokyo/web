@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <title>Privacy Policy | PrintSummary (School Handout Organizer)</title>
+
+  <meta name="description" content="Privacy policy for PrintSummary, the school handout organizer. What the app handles — handout images, OCR text, deadlines, notification settings, purchase status — where it is stored, and what is never transmitted externally.">
+  <meta name="keywords" content="PrintSummary,privacy policy,school handout organizer,data protection,personal information">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://freetokyo.github.io/web/printmemo/en/privacy.html">
+
+  <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/privacy.html" />
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PrintSummary">
+  <meta property="og:title" content="Privacy Policy | PrintSummary (School Handout Organizer)">
+  <meta property="og:description" content="What information PrintSummary handles, where it is stored, and what is never sent outside your device.">
+  <meta property="og:url" content="https://freetokyo.github.io/web/printmemo/en/privacy.html">
+  <meta property="og:image" content="https://freetokyo.github.io/web/printmemo/ogp.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrintSummary Privacy Policy">
+  <meta name="twitter:description" content="How PrintSummary handles images, OCR text, notifications, and purchase information.">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/printmemo/ogp.png">
+  <meta name="apple-itunes-app" content="app-id=6761879860, app-argument=https://freetokyo.github.io/web/printmemo/en/privacy.html">
+  <style>
+    :root {
+      --bg: #f3efe8;
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-strong: #ffffff;
+      --text: #1d2623;
+      --muted: #5f6d68;
+      --line: rgba(29, 38, 35, 0.11);
+      --accent: #0e6b57;
+      --accent-soft: rgba(14, 107, 87, 0.1);
+      --accent-warm: rgba(204, 122, 69, 0.16);
+      --shadow: 0 22px 58px rgba(21, 35, 30, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Avenir Next", "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top left, var(--accent-soft), transparent 32%),
+        radial-gradient(circle at top right, var(--accent-warm), transparent 24%),
+        linear-gradient(180deg, #f7f4ed 0%, var(--bg) 100%);
+    }
+    main { max-width: 1040px; margin: 0 auto; padding: 28px 20px 72px; }
+    a { color: var(--accent); }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .lang-button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .lang-button.is-active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .lang-panel[hidden] { display: none; }
+    .hero, .card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      border-radius: 28px;
+    }
+    .hero { padding: 34px; margin-bottom: 20px; }
+    .card { padding: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3, p { margin: 0; }
+    h1 {
+      font-size: clamp(2.1rem, 5vw, 3.7rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 1.12rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 0.96rem;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 0.98rem;
+      line-height: 1.78;
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+    .meta, .mini {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .summary {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .summary-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+    }
+    .section + .section {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 820px) {
+      .hero, .card { border-radius: 22px; padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "freetokyo",
+        "item": "https://freetokyo.github.io/web/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "PrintSummary",
+        "item": "https://freetokyo.github.io/web/printmemo/en/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Privacy Policy",
+        "item": "https://freetokyo.github.io/web/printmemo/en/privacy.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <div class="brand">PrintSummary Privacy</div>
+      <div class="language-switch" aria-label="Language switch">
+        <a class="lang-button" style="text-decoration:none;" href="../privacy.html" hreflang="ja">日本語</a>
+        <a class="lang-button is-active" style="text-decoration:none;" href="./privacy.html" hreflang="en" aria-current="page">English</a>
+      </div>
+    </div>
+
+    <section class="hero" lang="en">
+      <div class="eyebrow">Privacy and Data Handling</div>
+      <h1>PrintSummary Privacy Policy</h1>
+      <p class="meta" style="margin-top:10px;">Last updated: May 2026</p>
+      <p style="margin-top:10px;">PrintSummary helps you capture school handouts, extract text with OCR, organize deadlines, and manage submission status. This page explains what information the app handles, where it is stored, what is never transmitted externally, and what you can delete.</p>
+      <div class="summary">
+        <div class="summary-item"><strong>Core posture:</strong> Images and OCR text are not sent to external servers. Core processing stays on device.</div>
+        <div class="summary-item"><strong>Handled data:</strong> Images, OCR text, deadline candidates, submission status, review-related data, notification settings, and purchase status.</div>
+        <div class="summary-item"><strong>No external transmission:</strong> The app does not use proprietary cloud sync, ad SDKs, or third-party analytics SDKs.</div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card" lang="en">
+        <h2>How data is handled</h2>
+        <div class="section">
+          <h3>1. Information the app handles</h3>
+          <ul>
+            <li>School handout images captured or imported by the user</li>
+            <li>Text extracted through OCR</li>
+            <li>Organizing data such as deadlines, items to bring, subjects, submission status, and review tags</li>
+            <li>On-device settings such as notifications, added vocabulary, recent history, and purchase status</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>2. Purpose of use</h3>
+          <ul>
+            <li>To read text from handout images and organize deadlines and items to bring</li>
+            <li>To search, revisit, and re-run OCR on saved handouts</li>
+            <li>To display local reminders before deadlines</li>
+            <li>To manage the free quota and Premium status on the device</li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>3. Permissions</h3>
+          <ul>
+            <li>Camera: Used for capturing school handouts and running OCR on device.</li>
+            <li>Photos: Used for importing existing images and running OCR on device.</li>
+            <li>Notifications: Used for local reminders before deadlines.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card" lang="en">
+        <h2>Storage, sharing, and deletion</h2>
+        <div class="section">
+          <h3>4. Storage location</h3>
+          <p>Images are stored under the app&#x27;s Application Support directory, OCR text and extraction candidates are stored in the on-device data store, and some settings are stored in UserDefaults. None of this leaves your device.</p>
+        </div>
+        <div class="section">
+          <h3>5. External transmission and sharing</h3>
+          <p>Images used for OCR and the resulting OCR text are not sent to external APIs. Manual backup can export JSON, but only when you explicitly choose to share it.</p>
+        </div>
+        <div class="section">
+          <h3>6. Data deletion and contact</h3>
+          <p>From <strong>Settings &gt; Delete Data</strong> you can remove local data including saved handouts, OCR results, stored images, extraction issue samples, added vocabulary, and recent history.</p>
+          <p style="margin-top:10px;">Contact: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
+          <p style="margin-top:8px;"><a href="./support.html">Support</a> / <a href="./terms.html">Terms of Use</a> / <a href="./index.html">About</a> / <a href="https://freetokyo.github.io/web/">freetokyo</a></p>
+        </div>
+      </section>
+    </div>
+
+  </main>
+</body>
+</html>
