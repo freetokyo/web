@@ -84,12 +84,14 @@
       "en"
     ],
     "featureList": [
-      "施工前・施工中・施工後のセクション別写真整理",
-      "ワンタップ A4 PDF 生成（60 秒で完成）",
-      "写真への手書きメモ・キャプション追加",
-      "GPS タグの自動記録",
-      "会社ロゴ・色のブランディング設定",
-      "カスタム報告書テンプレート",
+      "施工前・施工中・施工後のセクション別写真整理（セクションの追加・変更も自由）",
+      "ワンタップ A4 PDF 生成（2×2・大判・写真台帳の3レイアウト）",
+      "矢印・丸・四角・番号・文字での写真注釈とピンチズーム、手書き対応",
+      "電子黒板風オーバーレイ（工事名・工種・日時・場所を写真に表示）",
+      "GPS タグ・撮影日時の自動記録と焼き込みオプション",
+      "クイック撮影・ロック画面ウィジェット・ショートカット起動",
+      "写真込みバックアップ（全案件を ZIP で書き出し）と CSV 出力",
+      "暗所向けライトとズーム撮影",
       "完全オフライン動作・登録不要"
     ],
     "offers": {
@@ -118,8 +120,8 @@
         "https://github.com/freetokyo"
       ]
     },
-    "dateModified": "2026-06-15",
-    "softwareVersion": "1.0",
+    "dateModified": "2026-07-24",
+    "softwareVersion": "1.2",
     "datePublished": "2026-05-20",
     "contentRating": "4+",
     "fileSize": "1 MB"
@@ -352,7 +354,7 @@
         "https://github.com/freetokyo"
       ]
     },
-    "dateModified": "2026-06-15"
+    "dateModified": "2026-07-24"
   }
   </script>
   <script type="application/ld+json">
@@ -438,16 +440,16 @@
 <section class="ftfacts" aria-label="アプリ概要">
   <h2>アプリ概要</h2>
   <table>
-    <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
+    <tr><th>対応OS</th><td>iOS 17.0 以降（iPhone・iPad）</td></tr>
     <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
-    <tr><th>バージョン</th><td>1.0</td></tr>
-    <tr><th>サイズ</th><td>約 1 MB</td></tr>
+    <tr><th>バージョン</th><td>1.2</td></tr>
+    <tr><th>サイズ</th><td>約 2 MB</td></tr>
     <tr><th>カテゴリ</th><td>ビジネス</td></tr>
     <tr><th>対象年齢</th><td>4+</td></tr>
     <tr><th>対象ユーザー</th><td>建設現場の職人・施工管理</td></tr>
     <tr><th>データの扱い</th><td>完全オフライン・登録不要・データ収集なし</td></tr>
     <tr><th>開発者</th><td>freetokyo</td></tr>
-    <tr><th>最終更新</th><td>2026-05-20</td></tr>
+    <tr><th>最終更新</th><td>2026年7月</td></tr>
   </table>
 </section>
 <section class="fthowto" aria-label="使い方（3ステップ）">
@@ -474,33 +476,33 @@
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon">📸</div>
-      <h3 data-i18n="f1.title">現場写真の整理</h3>
-      <p data-i18n="f1.desc">施工前・施工中・施工後などのセクション別に写真を整理。GPSタグも自動記録。</p>
+      <h3 data-i18n="f1.title">現場写真をセクション整理</h3>
+      <p data-i18n="f1.desc">施工前・施工中・施工後に自動整理。セクションの追加・変更も自由。GPS・撮影日時も自動記録。</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">📄</div>
-      <h3 data-i18n="f2.title">ワンタップPDF生成</h3>
-      <p data-i18n="f2.desc">写真とキャプションをA4 PDFにまとめるのに60秒。メール・LINEで即共有。</p>
+      <h3 data-i18n="f2.title">60秒でPDF報告書</h3>
+      <p data-i18n="f2.desc">2×2・大判・写真台帳の3レイアウトから選択。メール・LINEで即共有、ファイルにも保存。</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">✏️</div>
-      <h3 data-i18n="f3.title">写真にメモ・手書き</h3>
-      <p data-i18n="f3.desc">指やApple Pencilで写真に直接書き込み。音声入力でキャプションも素早く。</p>
+      <h3 data-i18n="f3.title">矢印・丸・文字で注釈</h3>
+      <p data-i18n="f3.desc">図形・番号・テキストをワンタップ配置。ピンチで細部も正確に。指やApple Pencilの手書きも対応。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏗️</div>
+      <h3 data-i18n="f4.title">電子黒板オーバーレイ</h3>
+      <p data-i18n="f4.desc">工事名・工種・撮影日時・場所を黒板風に写真へ表示。原本は変更せずPDF出力時に合成。</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">📡</div>
-      <h3 data-i18n="f4.title">完全オフライン対応</h3>
-      <p data-i18n="f4.desc">電波のない現場でも動作。データはすべて端末内に保存。外部サーバー不要。</p>
+      <h3 data-i18n="f5.title">完全オフライン＋バックアップ</h3>
+      <p data-i18n="f5.desc">電波のない現場でも動作。データは端末内のみ。全案件を写真込みZIPで書き出して端末紛失にも備えられます。</p>
     </div>
     <div class="feature-card">
-      <div class="feature-icon">🏢</div>
-      <h3 data-i18n="f5.title">会社ブランディング</h3>
-      <p data-i18n="f5.desc">会社ロゴ・社名をPDFヘッダーに自動挿入。プロフェッショナルな印象を。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📁</div>
-      <h3 data-i18n="f6.title">カスタムテンプレート</h3>
-      <p data-i18n="f6.desc">業種に合わせた独自のセクション構成を作成。最大6タブのオリジナルテンプレート。</p>
+      <div class="feature-icon">⚡</div>
+      <h3 data-i18n="f6.title">クイック撮影・ウィジェット</h3>
+      <p data-i18n="f6.desc">起動して1タップで連続撮影。暗所はライト、細部はズーム。ロック画面ウィジェット・ショートカット対応。</p>
     </div>
   </div>
 </section>
@@ -626,12 +628,12 @@ const i18n = {
     "features.label": "機能",
     "features.title": "現場のすべてを、その場で記録",
     "features.sub": "煩雑な書類作業をアプリ一つで完結。移動中でも、現場でも、いつでも使えます。",
-    "f1.title": "現場写真の整理", "f1.desc": "施工前・施工中・施工後などのセクション別に写真を整理。GPSタグも自動記録。",
-    "f2.title": "ワンタップPDF生成", "f2.desc": "写真とキャプションをA4 PDFにまとめるのに60秒。メール・LINEで即共有。",
-    "f3.title": "写真にメモ・手書き", "f3.desc": "指やApple Pencilで写真に直接書き込み。音声入力でキャプションも素早く。",
-    "f4.title": "完全オフライン対応", "f4.desc": "電波のない現場でも動作。データはすべて端末内に保存。外部サーバー不要。",
-    "f5.title": "会社ブランディング", "f5.desc": "会社ロゴ・社名をPDFヘッダーに自動挿入。プロフェッショナルな印象を。",
-    "f6.title": "カスタムテンプレート", "f6.desc": "業種に合わせた独自のセクション構成を作成。最大6タブのオリジナルテンプレート。",
+    "f1.title": "現場写真をセクション整理", "f1.desc": "施工前・施工中・施工後に自動整理。セクションの追加・変更も自由。GPS・撮影日時も自動記録。",
+    "f2.title": "60秒でPDF報告書", "f2.desc": "2×2・大判・写真台帳の3レイアウトから選択。メール・LINEで即共有、ファイルにも保存。",
+    "f3.title": "矢印・丸・文字で注釈", "f3.desc": "図形・番号・テキストをワンタップ配置。ピンチで細部も正確に。指やApple Pencilの手書きも対応。",
+    "f4.title": "電子黒板オーバーレイ", "f4.desc": "工事名・工種・撮影日時・場所を黒板風に写真へ表示。原本は変更せずPDF出力時に合成。",
+    "f5.title": "完全オフライン＋バックアップ", "f5.desc": "電波のない現場でも動作。データは端末内のみ。全案件を写真込みZIPで書き出して端末紛失にも備えられます。",
+    "f6.title": "クイック撮影・ウィジェット", "f6.desc": "起動して1タップで連続撮影。暗所はライト、細部はズーム。ロック画面ウィジェット・ショートカット対応。",
     "steps.label": "使い方", "steps.title": "3ステップで完成",
     "step1.title": "案件を作成", "step1.desc": "案件名・住所・顧客名を入力。テンプレートを選択するだけ。",
     "step2.title": "写真を撮影", "step2.desc": "カメラで撮影またはライブラリから選択。キャプションや手書きメモを追加。",
@@ -675,12 +677,12 @@ const i18n = {
     "features.label": "Features",
     "features.title": "Everything you need on-site",
     "features.sub": "Complete your paperwork with one app — from the job site, on the road, anytime.",
-    "f1.title": "Organize Site Photos", "f1.desc": "Sort photos by section: Before / During / After. GPS tags recorded automatically.",
-    "f2.title": "One-Tap PDF", "f2.desc": "Turn photos and captions into a professional A4 PDF in 60 seconds. Share via email or messaging.",
-    "f3.title": "Annotate Photos", "f3.desc": "Draw directly on photos with your finger or Apple Pencil. Use voice input for captions.",
-    "f4.title": "Fully Offline", "f4.desc": "Works anywhere, even without signal. All data stored locally — no external server needed.",
-    "f5.title": "Company Branding", "f5.desc": "Add your company logo and name to every PDF header. Make a professional impression.",
-    "f6.title": "Custom Templates", "f6.desc": "Create templates tailored to your trade. Up to 6 custom section tabs per template.",
+    "f1.title": "Organize Photos by Section", "f1.desc": "Auto-sorted into Before / During / After — add or rename sections freely. GPS and timestamps recorded automatically.",
+    "f2.title": "PDF Report in 60 Seconds", "f2.desc": "Choose 2×2, large, or ledger layouts. Share via email or messaging, or Save to Files.",
+    "f3.title": "Arrows, Circles & Text", "f3.desc": "Place shapes, numbers, and text labels in one tap. Pinch to zoom for fine detail. Freehand with finger or Apple Pencil too.",
+    "f4.title": "Blackboard Overlay", "f4.desc": "Show project name, work type, date, and location as a jobsite blackboard on photos — composited only in the PDF, originals untouched.",
+    "f5.title": "Fully Offline + Backup", "f5.desc": "Works without signal. Data stays on your device. Export every project as a ZIP with photos to guard against device loss.",
+    "f6.title": "Quick Capture & Widgets", "f6.desc": "Launch and shoot continuously in one tap. Flashlight for dark spots, zoom for detail. Lock Screen widget and Shortcuts supported.",
     "steps.label": "How it works", "steps.title": "3 Simple Steps",
     "step1.title": "Create a Project", "step1.desc": "Enter the project name, address, and client. Choose a template and you're ready.",
     "step2.title": "Take Photos", "step2.desc": "Shoot with the camera or import from your library. Add captions and hand-drawn notes.",
