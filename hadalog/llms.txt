@@ -20,10 +20,11 @@ probability of a skin problem.
 - Today's care suggestions
 - Daily entries and records (unlimited)
 - Evening check-back
+- Calendar and 7-day trend
 
 ## Full Access features
 - Tomorrow's forecast and suggestions
-- History, correlations, cycle-phase trends
+- Long-range trends, factor correlations, cycle phase
 - PDF export
 - Local backup
 
