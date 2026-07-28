@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hanro - Delivery Driver Earnings</title>
-<meta name="description" content="The all-in-one earnings tracker for gig delivery drivers. Multi-platform support, automatic mileage tracking, AI peak-time prediction, tax-ready CSV export. Fully offline.">
+<meta name="description" content="The all-in-one earnings tracker for gig delivery drivers. Multi-platform support, screenshot earnings import, take-home simulation, tax-ready CSV export. Fully offline.">
 <style>
   :root { --navy: #0A0E14; --amber: #F59E0B; --green: #10B981; --text: #1F2937; --muted: #6B7280; --bg: #FFFFFF; --card: #F9FAFB; }
   * { box-sizing: border-box; }
@@ -37,7 +37,7 @@
   <div class="lang-switch"><a href="index.html">日本語</a></div>
   <div class="logo">Hanro</div>
   <div class="tagline">See your daily earnings instantly</div>
-  <p class="sub">The all-in-one earnings tracker for gig delivery drivers. Multi-platform support, automatic mileage tracking, AI peak-time prediction, and tax-ready data export — all running fully on-device.</p>
+  <p class="sub">The all-in-one earnings tracker for gig delivery drivers. Multi-platform support, screenshot earnings import, take-home simulation, and tax-ready data export — all running fully on-device.</p>
   <a class="badge" href="https://apps.apple.com/app/id6771629040">View on App Store</a>
 </header>
 
@@ -45,27 +45,31 @@
   <h2>Key Features</h2>
   <div class="grid">
     <div class="card"><h4>Multi-platform Support</h4><p>Track earnings across Uber Eats, Wolt, menu, Amazon Flex, and any custom service in one place.</p></div>
-    <div class="card"><h4>Auto Mileage Tracking</h4><p>Core Motion + Core Location + vehicle Bluetooth automatically detects driving and splits business/personal km.</p></div>
-    <div class="card"><h4>AI Peak-time Prediction</h4><p>Apple Intelligence analyzes day-of-week × time-of-day × weather to suggest high-yield slots.</p></div>
-    <div class="card"><h4>Tax-ready Data Export</h4><p>CSV formats for Japanese tax software (freee, MoneyForward, Yayoi). Automatic household-allocation.</p></div>
-    <div class="card"><h4>Receipt OCR</h4><p>Scan receipts → VisionKit + Foundation Models auto-categorize. Monthly PDF reports per expense category.</p></div>
-    <div class="card"><h4>Fully Offline</h4><p>All processing on-device. No data leaves your device. Optional iCloud Private DB sync.</p></div>
+    <div class="card"><h4>Screenshot Earnings Import</h4><p>Share an earnings screenshot from your delivery app and Hanro reads the amount and logs it — no retyping.</p></div>
+    <div class="card"><h4>Mileage Tracking</h4><p>Core Motion + Core Location measure distance from work start to end. Swipe to classify each session as business or personal. Automatic drive detection can be switched on in Settings (Premium).</p></div>
+    <div class="card"><h4>Take-home Simulation</h4><p>Estimates income tax, resident tax, national health insurance and pension from this year's records, then shows your gross and take-home hourly rate side by side.</p></div>
+    <div class="card"><h4>Peak-time Insights</h4><p>Estimates your hourly rate for the current weekday and time slot from your own past records, plus an earnings map of where you did well (Premium).</p></div>
+    <div class="card"><h4>Tax-ready Data Export</h4><p>CSV formats for Japanese tax software (freee, MoneyForward, Yayoi). Pick the target year so previous years never leak in. Automatic household-allocation.</p></div>
+    <div class="card"><h4>Receipt OCR</h4><p>Scan a receipt to read the amount and store and pre-select the expense category (Premium). Monthly PDF reports per expense category.</p></div>
+    <div class="card"><h4>Statutory Driving Records</h4><p>Daily driving report PDF in Japan's MLIT format, plus accident / near-miss report PDFs with a quick check on whether filing is required.</p></div>
+    <div class="card"><h4>Vehicle Management</h4><p>Local reminders for inspection and oil-change due dates. Fuel economy and average fuel price computed from your refuelling log.</p></div>
+    <div class="card"><h4>Fully Offline</h4><p>All processing on-device. Nothing is sent to our servers. If you are signed in to iCloud, your data syncs across your devices.</p></div>
     <div class="card"><h4>Apple Watch</h4><p>Log deliveries with one tap from your wrist. Large buttons designed for use while driving.</p></div>
-    <div class="card"><h4>Widgets & Live Activities</h4><p>Today's earnings and monthly goal on Home Screen. Active sessions on Lock Screen.</p></div>
+    <div class="card"><h4>Widgets, Live Activities & Siri</h4><p>Today's earnings and monthly goal on Home Screen. Active sessions on the Lock Screen and in Control Center. Start a shift by asking Siri.</p></div>
   </div>
 
   <h2>Subscriptions</h2>
   <div class="price-grid">
-    <div class="price-card"><div class="name">Premium Monthly</div><div class="price">JPY 490 / mo</div><div class="desc">Unlimited features · 30-day free trial</div></div>
-    <div class="price-card"><div class="name">Premium Yearly</div><div class="price">JPY 4,900 / yr</div><div class="desc">Save 2 months vs monthly</div></div>
+    <div class="price-card"><div class="name">Free</div><div class="price">Free</div><div class="desc">Up to 20 delivery records per month, tax CSV / monthly PDF / driving and safety report export, take-home simulation, screenshot import, widgets</div></div>
+    <div class="price-card"><div class="name">Premium</div><div class="price">Monthly / Yearly</div><div class="desc">Unlimited delivery records, receipt scanning, peak-time insights, automatic drive detection, monthly summary generation</div></div>
   </div>
-  <p style="margin-top:16px;color:var(--muted);font-size:14px;">Cancel anytime from your Apple ID settings. No charge if canceled during the free trial.</p>
+  <p style="margin-top:16px;color:var(--muted);font-size:14px;">Premium is available as a monthly or yearly plan — see the plan screen in the app for current pricing. Cancel anytime from your Apple ID settings.</p>
 
   <h2>Requirements</h2>
   <ul>
     <li>iPhone / iPad on iOS 17.0 or later</li>
     <li>Apple Watch on watchOS 10.0 or later (optional)</li>
-    <li>Apple Intelligence: iPhone with A17 Pro or later (AI features)</li>
+    <li>Location permission is required for mileage tracking</li>
   </ul>
 
   <h2>Contact</h2>
