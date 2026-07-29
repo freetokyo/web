@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru 資產壽命模擬器 — 從累積到退休提領，用Monte Carlo試算您的資產還能撐幾年。感應度分析確認提領率、退休年齡、股票比例的影響。考量股…</title>
-<meta name="description" content="從累積到退休提領，用Monte Carlo試算您的資產還能撐幾年。感應度分析確認提領率、退休年齡、股票比例的影響。考量股市下跌與匯率升值同步衝擊。完全離線，零資料收集。"/>
+<meta name="description" content="你的退休金還能撐多少年？用 Monte Carlo 從累積推算到提領，並計入年金。可從目標成功率反推可用金額，並比較固定金額、固定比率、動態護欄、上下限四種提領策略。完全離線，零資料收集。"/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/zh-Hant/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru 資產壽命模擬器"/>
 <meta property="og:title" content="Mochiru 資產壽命模擬器 — 從累積到退休提領，用Monte Carlo試算您的資產還能撐幾年。感應度分析確認提領率、退休年齡、股票比例的影響。考量股…"/>
-<meta property="og:description" content="從累積到退休提領，用Monte Carlo試算您的資產還能撐幾年。感應度分析確認提領率、退休年齡、股票比例的影響。考量股市下跌與匯率升值同步衝擊。完全離線，零資料收集。"/>
+<meta property="og:description" content="你的退休金還能撐多少年？用 Monte Carlo 從累積推算到提領，並計入年金。可從目標成功率反推可用金額，並比較固定金額、固定比率、動態護欄、上下限四種提領策略。完全離線，零資料收集。"/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/zh-Hant/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="zh_TW"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru 資產壽命模擬器 — 從累積到退休提領，用Monte Carlo試算您的資產還能撐幾年。感應度分析確認提領率、退休年齡、股票比例的影響。考量股…"/>
-<meta name="twitter:description" content="從累積到退休提領，用Monte Carlo試算您的資產還能撐幾年。感應度分析確認提領率、退休年齡、股票比例的影響。考量股市下跌與匯率升值同步衝擊。完全離線，零資料收集。"/>
+<meta name="twitter:description" content="你的退休金還能撐多少年？用 Monte Carlo 從累積推算到提領，並計入年金。可從目標成功率反推可用金額，並比較固定金額、固定比率、動態護欄、上下限四種提領策略。完全離線，零資料收集。"/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -139,23 +139,31 @@ footer{text-align:center;padding:20px;font-size:12px;
   </section>
   <section class="desc">
 <p>Mochiru是一款完全離線的資產壽命模擬器，涵蓋從資產累積到退休後提領的完整生命週期。針對「我的資金能撐到最後嗎？」這個問題，透過Monte Carlo模擬給出解答。</p>
-<h3>主要功能</h3>
+<p>主要功能</p>
 <ul>
 <li>以扇形圖呈現成功率、耗盡概率、資產壽命及期末資產分佈</li>
 <li>切換比較多種提領策略：定額、定率、動態護欄、地板與天花板</li>
 <li>感應度分析（調整提領率、退休年齡、股票比例，確認成功率變化）</li>
 <li>升級Premium後可解鎖：報酬序列風險、匯率避險比較、歷史回測、無限情境儲存與並排比較、PDF輸出</li>
 </ul>
-<h3>特色</h3>
+<p>特色</p>
 <ul>
 <li>針對以日圓計價、持有美元美股的投資人，保留股市下跌與日圓升值同步削減資產的崩盤相關性，揭示一般「預期報酬±風險」工具容易忽略的風險。</li>
 <li>支援參數化假設及歷史區塊自助抽樣法。</li>
 </ul>
-<h3>隱私保護</h3>
+<p>隱私保護</p>
 <ul>
-<li>完全離線運作。零外部通訊、零資料收集、無帳戶連結、無需註冊。所有計算均在裝置本機完成。</li>
+<li>計算、輸入與紀錄全部在裝置內完成，不會外傳。只有在購買、回復購買以及開啟法律頁面時才會使用網路。</li>
 </ul>
-<h3>注意事項</h3>
+<p>本版本包含</p>
+<ul>
+<li>公共年金（起領 60-75 歲）與其他定期收入；收入優先抵充，僅不足部分從資產提領</li>
+<li>反推：達成目標成功率（80-95%）的年度可用金額</li>
+<li>實際值追蹤、結果一鍵分享為圖片（免費）、三個問題快速開始、Siri 捷徑</li>
+<li>所有金額皆以日圓（JPY）計。美股以美元持有，換算成日圓後試算</li>
+<li>「歷史」模式使用的序列為 App 內建樣本（合成資料），並非真實市場資料</li>
+</ul>
+<p>注意事項</p>
 <p>本應用程式僅供一般資訊提供及學習用途之模擬，不構成特定金融商品之推薦、招攬或買賣時機建議。試算結果係依據所輸入之假設進行計算，不保證未來實際投資績效。最終決策請依您自身判斷及責任為之。</p>
   </section>
 </main>

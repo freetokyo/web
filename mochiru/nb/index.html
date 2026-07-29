@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru – Pensjonssimulator — Simuler hvor lenge sparepengene varer med Monte Carlo. Sensi…</title>
-<meta name="description" content="Simuler hvor lenge sparepengene varer med Monte Carlo. Sensitivitetsanalyse for uttaksrate og pensjonsalder. Fullt frakoblet, ingen datainnsamling."/>
+<meta name="description" content="Hvor lenge varer formuen din? Monte Carlo fra sparing til uttak, med pensjonen regnet inn. Helt offline, ingen datainnsamling."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/nb/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru – Pensjonssimulator"/>
 <meta property="og:title" content="Mochiru – Pensjonssimulator — Simuler hvor lenge sparepengene varer med Monte Carlo. Sensi…"/>
-<meta property="og:description" content="Simuler hvor lenge sparepengene varer med Monte Carlo. Sensitivitetsanalyse for uttaksrate og pensjonsalder. Fullt frakoblet, ingen datainnsamling."/>
+<meta property="og:description" content="Hvor lenge varer formuen din? Monte Carlo fra sparing til uttak, med pensjonen regnet inn. Helt offline, ingen datainnsamling."/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/nb/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="nb_NO"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru – Pensjonssimulator — Simuler hvor lenge sparepengene varer med Monte Carlo. Sensi…"/>
-<meta name="twitter:description" content="Simuler hvor lenge sparepengene varer med Monte Carlo. Sensitivitetsanalyse for uttaksrate og pensjonsalder. Fullt frakoblet, ingen datainnsamling."/>
+<meta name="twitter:description" content="Hvor lenge varer formuen din? Monte Carlo fra sparing til uttak, med pensjonen regnet inn. Helt offline, ingen datainnsamling."/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -139,23 +139,30 @@ footer{text-align:center;padding:20px;font-size:12px;
   </section>
   <section class="desc">
 <p>Mochiru er en komplett, frakoblet simulator for formueslevetid – fra sparefasen til uttak i pensjon. Den svarer på spørsmålet: «Holder pengene mine til slutten?» ved hjelp av Monte Carlo-simulering.</p>
-<h3>Funksjoner</h3>
+<p>Funksjoner</p>
 <ul>
 <li>Visualiser sannsynlighet for suksess, uttømmingssannsynlighet, median formueslevetid og sluttformue med viftegrafer</li>
 <li>Sammenlign uttaksstrategier: fast beløp, fast rate, dynamisk guardrail og gulv/tak-metoden</li>
 <li>Sensitivitetsanalyse: se hvordan uttaksrate, pensjonsalder og aksjeandel påvirker suksessraten</li>
 <li>Premium låser opp sekvensrisiko-analyse, valutahedge-sammenligning, historisk backtest, ubegrenset scenariolagring og PDF-rapport</li>
 </ul>
-<h3>Særtrekk</h3>
+<p>Særtrekk</p>
 <ul>
 <li>Modellerer korrelasjonen mellom børsfall og styrkelse av yen (for japanske investorer i USD-aksjer) – en risiko mange standard verktøy overser</li>
-<li>Støtter både parametrisk analyse og historisk blokk-bootstrap</li>
 </ul>
-<h3>Personvern</h3>
+<p>Personvern</p>
 <ul>
-<li>Fullt frakoblet – ingen ekstern kommunikasjon, ingen datainnsamling, ingen kontoforbindelse, ingen kontoregistrering. Alle beregninger skjer lokalt på enheten.</li>
+<li>Beregninger, inndata og registreringer blir på enheten din og sendes aldri videre. Nettverket brukes bare til kjøp, gjenoppretting av kjøp og til å åpne de juridiske sidene.</li>
 </ul>
-<h3>Viktig merknad</h3>
+<p>I denne versjonen</p>
+<ul>
+<li>Folketrygd (uttaksalder 60-75) og andre løpende inntekter; inntekten brukes først, og bare differansen tas fra formuen</li>
+<li>Tilbakeregning: årsbeløpet som klarer en ønsket suksessrate (80-95%)</li>
+<li>Registrering av faktiske tall, deling av resultatet som bilde (gratis), rask start med tre spørsmål og Siri-snarveier</li>
+<li>Alle beløp er i japanske yen (JPY). Amerikanske aksjer holdes i USD og regnes om til yen i simuleringen</li>
+<li>Serien i modusen &quot;Historisk&quot; er et medfølgende utvalg (syntetiske data), ikke ekte markedsdata</li>
+</ul>
+<p>Viktig merknad</p>
 <p>Mochiru er et generelt simulerings- og læringsverktøy. Det anbefaler eller selger ingen finansielle produkter, og gir ingen investeringsråd om timing. Simuleringsresultater er basert på dine egne forutsetninger og garanterer ikke fremtidig avkastning. Alle beslutninger tas på eget ansvar.</p>
   </section>
 </main>

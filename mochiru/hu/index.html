@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru – Vagyonélettartam — Monte Carlo megmutatja, meddig tart ki vagyonod. Érzékenység…</title>
-<meta name="description" content="Monte Carlo megmutatja, meddig tart ki vagyonod. Érzékenységi elemzés, kivonási stratégiák, valuta-fedezeti vizsgálat, backtest. Teljes offline – nulla adatgyűjtés."/>
+<meta name="description" content="Hány évig tart ki a vagyonod? Monte Carlo a megtakarítástól a kivonásig, a nyugdíjaddal. Teljesen offline, adatgyűjtés nélkül."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/hu/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru – Vagyonélettartam"/>
 <meta property="og:title" content="Mochiru – Vagyonélettartam — Monte Carlo megmutatja, meddig tart ki vagyonod. Érzékenység…"/>
-<meta property="og:description" content="Monte Carlo megmutatja, meddig tart ki vagyonod. Érzékenységi elemzés, kivonási stratégiák, valuta-fedezeti vizsgálat, backtest. Teljes offline – nulla adatgyűjtés."/>
+<meta property="og:description" content="Hány évig tart ki a vagyonod? Monte Carlo a megtakarítástól a kivonásig, a nyugdíjaddal. Teljesen offline, adatgyűjtés nélkül."/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/hu/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="hu_HU"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru – Vagyonélettartam — Monte Carlo megmutatja, meddig tart ki vagyonod. Érzékenység…"/>
-<meta name="twitter:description" content="Monte Carlo megmutatja, meddig tart ki vagyonod. Érzékenységi elemzés, kivonási stratégiák, valuta-fedezeti vizsgálat, backtest. Teljes offline – nulla adatgyűjtés."/>
+<meta name="twitter:description" content="Hány évig tart ki a vagyonod? Monte Carlo a megtakarítástól a kivonásig, a nyugdíjaddal. Teljesen offline, adatgyűjtés nélkül."/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -139,23 +139,30 @@ footer{text-align:center;padding:20px;font-size:12px;
   </section>
   <section class="desc">
 <p>Mochiru a felhalmozástól a nyugdíjas kivonásig szimulálja vagyonod teljes életciklusát – teljesen offline, adatgyűjtés nélkül.</p>
-<h3>Mire képes?</h3>
+<p>Mire képes?</p>
 <ul>
 <li>Sikeres ráta, elégülési valószínűség, vagyonélettartam és végső vagyon eloszlása legyeződiagramon</li>
 <li>Több kivonási stratégia összehasonlítása: fix összeg, fix ráta, dinamikus korlát (guardrail), padló-mennyezet</li>
 <li>Érzékenységi elemzés: kivonási ráta, nyugdíjba vonulás kora és részvényarány hatása a sikerességre</li>
 <li>Premium: sorozatkockázat, valuta-fedezeti összehasonlítás, historikus backtest, korlátlan forgatókönyv-mentés és egymás melletti összehasonlítás, PDF-export</li>
 </ul>
-<h3>Kiemelő jellemzők</h3>
+<p>Kiemelő jellemzők</p>
 <ul>
 <li>Japán jenes befektetők USD-eszközeinél a részvényárfolyam- és jen-erősödés egyidejű hatását (crash-korreláció) is figyelembe veszi – amit az egyszerű «várható hozam ± szórás» modellek figyelmen kívül hagynak.</li>
-<li>Paraméteres feltételezések mellett historikus blokk-bootstrap módszert is alkalmaz.</li>
 </ul>
-<h3>Adatvédelem</h3>
+<p>Adatvédelem</p>
 <ul>
-<li>Teljesen offline. Nulla külső kommunikáció, nulla adatgyűjtés, nincs bankkapcsolat, nincs regisztráció. Minden számítás az eszközön belül történik.</li>
+<li>A számítások, a beírt adatok és a feljegyzések a készülékén maradnak, és soha nem kerülnek elküldésre. A hálózatot csak a vásárláshoz, annak visszaállításához és a jogi oldalak megnyitásához használjuk.</li>
 </ul>
-<h3>Jogi tájékoztató</h3>
+<p>Ebben a verzióban</p>
+<ul>
+<li>Állami nyugdíj (igénybevétel 60-75 év) és egyéb rendszeres jövedelem; a jövedelem számít be először, és a vagyonból csak a különbözet kerül kivonásra</li>
+<li>Visszaszámolás: az az éves összeg, amely teljesíti a cél sikerarányt (80-95%)</li>
+<li>Tényadatok követése, az eredmény megosztása képként (ingyenes), gyors indítás három kérdéssel és Siri-parancsok</li>
+<li>Minden összeg japán jenben (JPY) értendő. Az amerikai részvényeket USD-ben tartjuk és jenre váltjuk</li>
+<li>A „Történeti” mód idősora mellékelt minta (szintetikus adat), nem valós piaci adat</li>
+</ul>
+<p>Jogi tájékoztató</p>
 <p>Ez az alkalmazás általános tájékoztatási és oktatási célú szimulációs eszköz. Nem minősül befektetési tanácsadásnak, pénzügyi termék ajánlásának vagy adásvételi ügylet kezdeményezésének. A szimulációs eredmények kizárólag a megadott feltételek alapján számított becslések, és nem garantálják a jövőbeli hozamokat. A végső döntés minden esetben a felhasználó saját felelőssége.</p>
   </section>
 </main>

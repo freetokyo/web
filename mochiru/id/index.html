@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru Simulasi Umur Aset — Berapa lama aset Anda cukup? Monte Carlo menghitung keberhas…</title>
-<meta name="description" content="Berapa lama aset Anda cukup? Monte Carlo menghitung keberhasilan &amp; peluang kehabisan aset. Analisis sensitivitas, strategi penarikan, hedge. Offline penuh, tanpa data."/>
+<meta name="description" content="Berapa tahun aset Anda akan bertahan? Monte Carlo dari menabung sampai penarikan, termasuk pensiun. Sepenuhnya offline, tanpa pengumpulan data."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/id/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru Simulasi Umur Aset"/>
 <meta property="og:title" content="Mochiru Simulasi Umur Aset — Berapa lama aset Anda cukup? Monte Carlo menghitung keberhas…"/>
-<meta property="og:description" content="Berapa lama aset Anda cukup? Monte Carlo menghitung keberhasilan &amp; peluang kehabisan aset. Analisis sensitivitas, strategi penarikan, hedge. Offline penuh, tanpa data."/>
+<meta property="og:description" content="Berapa tahun aset Anda akan bertahan? Monte Carlo dari menabung sampai penarikan, termasuk pensiun. Sepenuhnya offline, tanpa pengumpulan data."/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/id/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="id_ID"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru Simulasi Umur Aset — Berapa lama aset Anda cukup? Monte Carlo menghitung keberhas…"/>
-<meta name="twitter:description" content="Berapa lama aset Anda cukup? Monte Carlo menghitung keberhasilan &amp; peluang kehabisan aset. Analisis sensitivitas, strategi penarikan, hedge. Offline penuh, tanpa data."/>
+<meta name="twitter:description" content="Berapa tahun aset Anda akan bertahan? Monte Carlo dari menabung sampai penarikan, termasuk pensiun. Sepenuhnya offline, tanpa pengumpulan data."/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -139,23 +139,30 @@ footer{text-align:center;padding:20px;font-size:12px;
   </section>
   <section class="desc">
 <p>Mochiru adalah simulasi umur aset yang sepenuhnya offline, mencakup seluruh siklus hidup keuangan Anda — dari fase akumulasi hingga penarikan dana pensiun. Jawab pertanyaan &quot;Apakah uang saya cukup hingga akhir hayat?&quot; dengan simulasi Monte Carlo.</p>
-<h3>Fitur Utama</h3>
+<p>Fitur Utama</p>
 <ul>
 <li>Visualisasi tingkat keberhasilan, probabilitas kehabisan aset, umur aset median, dan distribusi aset akhir dalam fan chart</li>
 <li>Bandingkan berbagai strategi penarikan: jumlah tetap, persentase tetap, dynamic guardrail, floor-ceiling</li>
 <li>Analisis sensitivitas: lihat bagaimana tingkat keberhasilan berubah saat mengubah tingkat penarikan, usia pensiun, atau alokasi saham</li>
 <li>Premium membuka: analisis risiko sequence-of-returns, perbandingan hedging mata uang, historical backtest, penyimpanan skenario tak terbatas, perbandingan side-by-side, dan ekspor PDF</li>
 </ul>
-<h3>Keunggulan</h3>
+<p>Keunggulan</p>
 <ul>
 <li>Mempertahankan korelasi crash antara penurunan saham dan penguatan mata uang asing yang secara bersamaan menggerus aset — risiko yang sering diabaikan oleh kalkulator sederhana.</li>
-<li>Mendukung asumsi parametrik dan historical block bootstrap.</li>
 </ul>
-<h3>Privasi</h3>
+<p>Privasi</p>
 <ul>
-<li>Sepenuhnya offline. Nol komunikasi eksternal, nol pengumpulan data, tanpa sinkronisasi akun, tanpa registrasi. Semua kalkulasi selesai di dalam perangkat Anda.</li>
+<li>Perhitungan, masukan, dan catatan tetap berada di perangkat Anda dan tidak pernah dikirim ke mana pun. Jaringan hanya dipakai untuk membeli, memulihkan pembelian, dan membuka halaman hukum.</li>
 </ul>
-<h3>Perhatian Penting</h3>
+<p>Di versi ini</p>
+<ul>
+<li>Pensiun negara (mulai usia 60-75) dan pendapatan rutin lain; pendapatan dipakai lebih dulu dan hanya selisihnya yang ditarik dari aset</li>
+<li>Perhitungan balik: jumlah tahunan yang memenuhi target tingkat keberhasilan (80-95%)</li>
+<li>Pelacakan nilai aktual, berbagi hasil sebagai gambar (gratis), mulai cepat dengan tiga pertanyaan, dan Pintasan Siri</li>
+<li>Semua jumlah dalam yen Jepang (JPY). Saham AS dipegang dalam USD dan dikonversi ke yen</li>
+<li>Deret pada mode &quot;Historis&quot; adalah sampel bawaan (data sintetis), bukan data pasar sungguhan</li>
+</ul>
+<p>Perhatian Penting</p>
 <p>Aplikasi ini adalah alat simulasi untuk tujuan informasi dan edukasi umum. Ini bukan rekomendasi, ajakan, atau saran investasi untuk produk keuangan tertentu. Hasil simulasi didasarkan pada asumsi yang Anda masukkan dan tidak menjamin hasil investasi di masa depan. Semua keputusan adalah tanggung jawab Anda sendiri.</p>
   </section>
 </main>

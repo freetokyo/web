@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru Emeklilik Simülatörü — Monte Carlo ile paranızın kaç yıl yeteceğini simüle edin. Çe…</title>
-<meta name="description" content="Monte Carlo ile paranızın kaç yıl yeteceğini simüle edin. Çekim oranı, emeklilik yaşı ve hisse senedi analizleri. Tamamen çevrimdışı, veri toplanmaz."/>
+<meta name="description" content="Varlığınız kaç yıl yeter? Birikimden çekime Monte Carlo, emekli maaşınız dahil. Tamamen çevrimdışı, veri toplamadan."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/tr/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru Emeklilik Simülatörü"/>
 <meta property="og:title" content="Mochiru Emeklilik Simülatörü — Monte Carlo ile paranızın kaç yıl yeteceğini simüle edin. Çe…"/>
-<meta property="og:description" content="Monte Carlo ile paranızın kaç yıl yeteceğini simüle edin. Çekim oranı, emeklilik yaşı ve hisse senedi analizleri. Tamamen çevrimdışı, veri toplanmaz."/>
+<meta property="og:description" content="Varlığınız kaç yıl yeter? Birikimden çekime Monte Carlo, emekli maaşınız dahil. Tamamen çevrimdışı, veri toplamadan."/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/tr/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="tr_TR"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru Emeklilik Simülatörü — Monte Carlo ile paranızın kaç yıl yeteceğini simüle edin. Çe…"/>
-<meta name="twitter:description" content="Monte Carlo ile paranızın kaç yıl yeteceğini simüle edin. Çekim oranı, emeklilik yaşı ve hisse senedi analizleri. Tamamen çevrimdışı, veri toplanmaz."/>
+<meta name="twitter:description" content="Varlığınız kaç yıl yeter? Birikimden çekime Monte Carlo, emekli maaşınız dahil. Tamamen çevrimdışı, veri toplamadan."/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -139,21 +139,28 @@ footer{text-align:center;padding:20px;font-size:12px;
   </section>
   <section class="desc">
 <p>Mochiru, birikimden emeklilik sonrası varlık çekimine kadar tüm finansal yaşam döngünüzü simüle eden, tamamen çevrimdışı bir varlık ömrü simülatörüdür. &quot;Paramız ömür boyu yeter mi?&quot; sorusunu Monte Carlo simülasyonuyla yanıtlar.</p>
-<h3>Neler Yapabilirsiniz</h3>
+<p>Neler Yapabilirsiniz</p>
 <ul>
 <li>Başarı oranı, tükenme olasılığı, varlık ömrü ve nihai varlık dağılımını fan grafiğiyle görselleştirin</li>
 <li>Sabit tutar, sabit oran, dinamik bariyer ve taban-tavan stratejileri dahil birden fazla çekim stratejisini karşılaştırın</li>
 <li>Duyarlılık analizi ile çekim oranı, emeklilik yaşı ve hisse senedi oranını değiştirerek başarı oranı değişimlerini inceleyin</li>
 <li>Premium ile sıra riski (sequence-of-returns risk), döviz koruması karşılaştırması, tarihsel geriye dönük test, sınırsız senaryo kaydetme ve PDF dışa aktarma özelliklerini açın</li>
 </ul>
-<h3>Özellikler</h3>
+<p>Özellikler</p>
 <ul>
 <li>JPY yatırımcısının USD hissesi tuttuğu varsayımıyla, düşen borsa ve yükselen doların aynı anda varlığı erittiği çöküş korelasyonu hesaba katılır. Genel &quot;beklenen getiri ± risk&quot; araçlarının gözden kaçırdığı tehlikeleri ortaya koyar.</li>
-<li>Parametrik yöntemin yanı sıra tarihsel blok önyükleme (historical block bootstrap) yöntemini de destekler.</li>
 </ul>
-<h3>Gizlilik</h3>
-<p>Tamamen çevrimdışı. Harici bağlantı yok, veri toplanmaz, hesap bağlantısı yok, kayıt gerekmez. Tüm hesaplamalar cihazınızda gerçekleşir.</p>
-<h3>Önemli Uyarı</h3>
+<p>Gizlilik</p>
+<p>Hesaplamalar, girdiler ve kayıtlar cihazınızda kalır ve hiçbir yere gönderilmez. Ağ yalnızca satın alma, satın alımı geri yükleme ve yasal sayfaları açmak için kullanılır.</p>
+<p>Bu sürümde</p>
+<ul>
+<li>Kamu emekli maaşı (başlangıç 60-75 yaş) ve diğer düzenli gelirler; gelir önce kullanılır, varlıktan yalnızca fark çekilir</li>
+<li>Ters hesaplama: hedef başarı oranını (80-95%) sağlayan yıllık tutar</li>
+<li>Gerçekleşen değerlerin takibi, sonucu görsel olarak paylaşma (ücretsiz), üç soruyla hızlı başlangıç ve Siri kısayolları</li>
+<li>Tüm tutarlar Japon yeni (JPY) cinsindendir. ABD hisseleri USD olarak tutulur ve yene çevrilir</li>
+<li>&quot;Geçmiş&quot; modundaki seri birlikte gelen bir örnektir (sentetik veri), gerçek piyasa verisi değildir</li>
+</ul>
+<p>Önemli Uyarı</p>
 <p>Bu uygulama yalnızca genel bilgi ve eğitim amaçlı simülasyon sunar. Belirli bir finansal ürünü tavsiye etmez veya alım satım zamanlamasıyla ilgili yönlendirme yapmaz. Simülasyon sonuçları girilen varsayımlara dayanan hesaplamalardır; gelecekteki yatırım getirilerini garanti etmez. Tüm kararlar yalnızca kullanıcının sorumluluğundadır.</p>
   </section>
 </main>

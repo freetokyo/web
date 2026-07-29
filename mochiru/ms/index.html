@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru Simulasi Aset Bersara — Berapa lama aset anda bertahan selepas bersara? Mochiru simu…</title>
-<meta name="description" content="Berapa lama aset anda bertahan selepas bersara? Mochiru simulasi Monte Carlo — strategi pengeluaran pelbagai, analisis sensitiviti, laporan PDF. Luar talian sepenuhnya."/>
+<meta name="description" content="Berapa tahun aset anda akan bertahan? Monte Carlo dari simpanan hingga pengeluaran, termasuk pencen. Sepenuhnya luar talian, tanpa data."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/ms/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru Simulasi Aset Bersara"/>
 <meta property="og:title" content="Mochiru Simulasi Aset Bersara — Berapa lama aset anda bertahan selepas bersara? Mochiru simu…"/>
-<meta property="og:description" content="Berapa lama aset anda bertahan selepas bersara? Mochiru simulasi Monte Carlo — strategi pengeluaran pelbagai, analisis sensitiviti, laporan PDF. Luar talian sepenuhnya."/>
+<meta property="og:description" content="Berapa tahun aset anda akan bertahan? Monte Carlo dari simpanan hingga pengeluaran, termasuk pencen. Sepenuhnya luar talian, tanpa data."/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/ms/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="ms_MY"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru Simulasi Aset Bersara — Berapa lama aset anda bertahan selepas bersara? Mochiru simu…"/>
-<meta name="twitter:description" content="Berapa lama aset anda bertahan selepas bersara? Mochiru simulasi Monte Carlo — strategi pengeluaran pelbagai, analisis sensitiviti, laporan PDF. Luar talian sepenuhnya."/>
+<meta name="twitter:description" content="Berapa tahun aset anda akan bertahan? Monte Carlo dari simpanan hingga pengeluaran, termasuk pencen. Sepenuhnya luar talian, tanpa data."/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -139,23 +139,30 @@ footer{text-align:center;padding:20px;font-size:12px;
   </section>
   <section class="desc">
 <p>Mochiru ialah simulator jangka hayat aset sepenuhnya luar talian yang merangkumi keseluruhan kitaran hayat kewangan anda — daripada fasa pengumpulan sehinggalah pengeluaran semasa persaraan. Ia menjawab soalan penting: &quot;Adakah wang saya mencukupi sehingga hujung hayat?&quot;</p>
-<h3>Fungsi Utama</h3>
+<p>Fungsi Utama</p>
 <ul>
 <li>Visualisasikan kadar kejayaan, kebarangkalian kehabisan aset, jangka hayat aset median, dan agihan aset akhir melalui carta kipas (fan chart)</li>
 <li>Bandingkan pelbagai strategi pengeluaran: tetap (fixed amount), kadar tetap (fixed rate), guardrail dinamik, dan strategi lantai-siling (floor-ceiling)</li>
 <li>Analisis sensitiviti — semak bagaimana kadar pengeluaran, umur persaraan, dan nisbah ekuiti mempengaruhi kadar kejayaan</li>
 <li>Versi Premium membuka: analisis risiko urutan pulangan (sequence-of-returns risk), perbandingan lindung nilai mata wang, backtesting sejarah, simpanan senario tanpa had, perbandingan senario bersebelahan, dan eksport laporan PDF</li>
 </ul>
-<h3>Kelebihan Khusus</h3>
+<p>Kelebihan Khusus</p>
 <ul>
 <li>Mengambil kira korelasi jatuh serentak antara penurunan saham dan kenaikan yen bagi pelabur yang memegang saham USD — risiko yang sering diabaikan oleh alat simulasi biasa.</li>
-<li>Menyokong anggaran parametrik dan bootstrap blok sejarah (historical block bootstrap).</li>
 </ul>
-<h3>Privasi</h3>
+<p>Privasi</p>
 <ul>
-<li>Sepenuhnya luar talian. Tiada komunikasi luaran, tiada pengumpulan data, tiada penyambungan akaun, tiada pendaftaran diperlukan. Semua pengiraan dilakukan sepenuhnya dalam peranti anda.</li>
+<li>Pengiraan, input dan rekod kekal pada peranti anda dan tidak pernah dihantar ke mana-mana. Rangkaian hanya digunakan untuk membeli, memulihkan pembelian dan membuka halaman undang-undang.</li>
 </ul>
-<h3>Penafian Penting</h3>
+<p>Dalam versi ini</p>
+<ul>
+<li>Pencen kerajaan (mula umur 60-75) dan pendapatan tetap lain; pendapatan digunakan dahulu dan hanya bakinya dikeluarkan daripada aset</li>
+<li>Pengiraan songsang: jumlah tahunan yang mencapai sasaran kadar kejayaan (80-95%)</li>
+<li>Penjejakan nilai sebenar, berkongsi keputusan sebagai imej (percuma), permulaan pantas dengan tiga soalan dan Pintasan Siri</li>
+<li>Semua jumlah dalam yen Jepun (JPY). Saham AS dipegang dalam USD dan ditukar kepada yen</li>
+<li>Siri dalam mod &quot;Sejarah&quot; ialah sampel yang disertakan (data sintetik), bukan data pasaran sebenar</li>
+</ul>
+<p>Penafian Penting</p>
 <p>Aplikasi ini adalah alat simulasi untuk tujuan maklumat umum dan pembelajaran sahaja. Ia bukan nasihat kewangan, bukan cadangan atau pelawaan untuk membeli atau menjual sebarang instrumen kewangan, dan bukan panduan masa untuk urusniaga. Hasil simulasi adalah berdasarkan andaian yang dimasukkan dan tidak menjamin prestasi pelaburan masa hadapan. Semua keputusan muktamad adalah tanggungjawab pengguna sepenuhnya.</p>
   </section>
 </main>

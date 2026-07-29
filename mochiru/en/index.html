@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru: Asset Longevity Sim — How long will your money last? Monte Carlo from accumulation…</title>
-<meta name="description" content="How long will your money last? Monte Carlo from accumulation to drawdown. Sensitivity analysis, currency hedge, historical backtest. Fully offline, no data collected."/>
+<meta name="description" content="How long will your money last? Monte Carlo from saving through drawdown, with your pension included. Fully offline, no data collected."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/en/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru: Asset Longevity Sim"/>
 <meta property="og:title" content="Mochiru: Asset Longevity Sim — How long will your money last? Monte Carlo from accumulation…"/>
-<meta property="og:description" content="How long will your money last? Monte Carlo from accumulation to drawdown. Sensitivity analysis, currency hedge, historical backtest. Fully offline, no data collected."/>
+<meta property="og:description" content="How long will your money last? Monte Carlo from saving through drawdown, with your pension included. Fully offline, no data collected."/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/en/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="en_US"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru: Asset Longevity Sim — How long will your money last? Monte Carlo from accumulation…"/>
-<meta name="twitter:description" content="How long will your money last? Monte Carlo from accumulation to drawdown. Sensitivity analysis, currency hedge, historical backtest. Fully offline, no data collected."/>
+<meta name="twitter:description" content="How long will your money last? Monte Carlo from saving through drawdown, with your pension included. Fully offline, no data collected."/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -138,21 +138,49 @@ footer{text-align:center;padding:20px;font-size:12px;
     <a class="btn-dl" href="https://apps.apple.com/app/id6778235888" rel="noopener">Download on the App Store</a>
   </section>
   <section class="desc">
-<p>Mochiru is a fully offline retirement asset longevity simulator covering your money&#x27;s entire lifecycle, from accumulation to retirement drawdown. It answers the question everyone dreads: &quot;Will my money last?&quot;</p>
-<p>What you can do</p>
+<p>Mochiru is a fully offline retirement asset longevity simulator covering your whole financial lifecycle: accumulation, retirement, and drawdown. It answers one question with Monte Carlo simulation: how long will your money last?</p>
+<p>WHO IT IS FOR</p>
 <ul>
-<li>Visualize success rate, depletion probability, asset life median, and terminal wealth via fan chart</li>
-<li>Switch and compare withdrawal strategies: fixed rate, fixed amount, dynamic guardrail, floor-ceiling</li>
-<li>Run sensitivity analysis: vary withdrawal rate, retirement age, and equity allocation to see how success rate shifts</li>
-<li>Unlock with Premium: sequence-of-returns risk view, currency-hedge comparison, historical block-bootstrap backtest, unlimited scenario saves with side-by-side comparison, and PDF report export</li>
+<li>You want to see, in numbers, how many years your retirement assets will last</li>
+<li>You are planning FIRE / early retirement and want distributions, not a single optimistic line</li>
+<li>You want a drawdown plan that includes your pension, on your own assumptions</li>
+<li>You want everything on-device: no account linking, no sign-up</li>
 </ul>
-<p>What makes Mochiru different</p>
-<p>Mochiru models the crash correlation that hits yen-based investors holding USD equities hardest: falling stock prices and a strengthening yen striking simultaneously. Most tools that use a simple expected-return +/- risk model miss this. Mochiru keeps it real.</p>
-<p>In addition to parametric assumptions, Mochiru supports historical block-bootstrap simulation for a data-grounded view of uncertainty.</p>
-<p>Privacy</p>
-<p>Completely offline. Zero external network calls. Zero data collection. No account required. No brokerage integration. Every calculation happens on your device.</p>
-<p>Disclaimer</p>
-<p>Mochiru is a general-purpose educational simulation tool. It does not recommend or solicit any specific financial product, nor does it advise on the timing of any investment transaction. Simulation results are based solely on the assumptions you enter and do not guarantee future investment performance. All decisions are your own responsibility.</p>
+<p>WHAT YOU CAN DO</p>
+<ul>
+<li>Visualize success rate, depletion probability, asset longevity, and terminal wealth as a fan chart</li>
+<li>Enter your public pension (claiming age 60-75) and other regular income; income is deducted from required withdrawals</li>
+<li>Switch between four withdrawal strategies: fixed amount, fixed rate, dynamic guardrail, floor and ceiling</li>
+<li>Inverse analysis: solve the withdrawal amount that meets a target success rate (80-95%)</li>
+<li>Sensitivity analysis: sweep withdrawal rate, retirement age, and equity ratio</li>
+<li>Actuals tracking: log your total assets and compare reality with the plan</li>
+<li>Share your result as a single image (free)</li>
+<li>3-question quick start gets you to your first result in seconds</li>
+<li>Siri Shortcuts to check your success rate or rerun the simulation</li>
+</ul>
+<p>PREMIUM (one-time purchase, no subscription)</p>
+<ul>
+<li>Sequence-of-returns risk analysis, currency-hedge comparison, historical backtest</li>
+<li>Unlimited scenario saving and side-by-side comparison, PDF report export, higher simulation path counts</li>
+</ul>
+<p>WHY MOCHIRU</p>
+<ul>
+<li>Built for JPY-based investors holding USD equities: it preserves the crash correlation where falling stocks and a strengthening yen hit your assets at the same time - a risk that simple &quot;expected return plus risk&quot; tools often miss</li>
+</ul>
+<p>PRIVACY</p>
+<ul>
+<li>Calculations, inputs and records stay on your device and are never sent anywhere. The network is used only to buy or restore the purchase and to open the legal pages.</li>
+</ul>
+<p>IN THIS VERSION</p>
+<ul>
+<li>Public pension (claiming age 60-75) and other regular income; income is applied first and only the shortfall is withdrawn</li>
+<li>Solver: find the annual amount you can spend for a target success rate (80-95%)</li>
+<li>Actuals tracking, one-image sharing (free), a three-question quick start and Siri Shortcuts</li>
+<li>All amounts are in Japanese yen (JPY). US equities are held in USD and converted to yen for the simulation</li>
+<li>The series used in &quot;Historical&quot; mode is a bundled sample (synthetic data), not real market data</li>
+</ul>
+<p>NOTE</p>
+<p>This app is a simulation for general information and learning purposes. It does not recommend specific financial products or advise on the timing of trades. Results are calculations based on the assumptions you enter and do not guarantee future investment performance.</p>
   </section>
 </main>
 <div class="legal-links">

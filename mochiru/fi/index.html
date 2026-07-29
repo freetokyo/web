@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Mochiru – Eläkevarallisuussim. — Kuinka kauan varasi riittävät? Monte Carlo näyttää onnistumi…</title>
-<meta name="description" content="Kuinka kauan varasi riittävät? Monte Carlo näyttää onnistumistodennäköisyyden. Herkkyysanalyysi, valuuttasuojaus, historialliset backtestit. Offline – ei tiedonkeruuta."/>
+<meta name="description" content="Kuinka kauan varasi riittävät? Monte Carlo säästämisestä nostoihin, eläke mukaan luettuna. Täysin offline, ei tiedonkeruuta."/>
 <meta name="robots" content="index,follow,max-image-preview:large"/>
 <link rel="canonical" href="https://freetokyo.github.io/web/mochiru/fi/"/>
 <link rel="icon" type="image/png" href="../favicon.png"/>
@@ -55,7 +55,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Mochiru – Eläkevarallisuussim."/>
 <meta property="og:title" content="Mochiru – Eläkevarallisuussim. — Kuinka kauan varasi riittävät? Monte Carlo näyttää onnistumi…"/>
-<meta property="og:description" content="Kuinka kauan varasi riittävät? Monte Carlo näyttää onnistumistodennäköisyyden. Herkkyysanalyysi, valuuttasuojaus, historialliset backtestit. Offline – ei tiedonkeruuta."/>
+<meta property="og:description" content="Kuinka kauan varasi riittävät? Monte Carlo säästämisestä nostoihin, eläke mukaan luettuna. Täysin offline, ei tiedonkeruuta."/>
 <meta property="og:url" content="https://freetokyo.github.io/web/mochiru/fi/"/>
 <meta property="og:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <meta property="og:image:width" content="1200"/>
@@ -63,7 +63,7 @@
 <meta property="og:locale" content="fi_FI"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mochiru – Eläkevarallisuussim. — Kuinka kauan varasi riittävät? Monte Carlo näyttää onnistumi…"/>
-<meta name="twitter:description" content="Kuinka kauan varasi riittävät? Monte Carlo näyttää onnistumistodennäköisyyden. Herkkyysanalyysi, valuuttasuojaus, historialliset backtestit. Offline – ei tiedonkeruuta."/>
+<meta name="twitter:description" content="Kuinka kauan varasi riittävät? Monte Carlo säästämisestä nostoihin, eläke mukaan luettuna. Täysin offline, ei tiedonkeruuta."/>
 <meta name="twitter:image" content="https://freetokyo.github.io/web/mochiru/ogp.png"/>
 <script type="application/ld+json">
 {
@@ -139,23 +139,30 @@ footer{text-align:center;padding:20px;font-size:12px;
   </section>
   <section class="desc">
 <p>Mochiru on täysin offline-toimiva eläkevarallisuussimulaattori, joka laskee varojesi koko elinkaaren – kertymisestä eläkevarojen nostoihin. Monte Carlo -simulaatio vastaa kysymykseen: riittävätkö rahani loppuun saakka?</p>
-<h3>Mitä voit tehdä</h3>
+<p>Mitä voit tehdä</p>
 <ul>
 <li>Visualisoi onnistumisaste, varojen ehtymistodennäköisyys, varallisuuden elinikä ja loppuvarallisuuden jakauma tuuliviuhkakaaviolla</li>
 <li>Vertaile useita nostostrategioita: kiinteä summa, kiinteä prosentti, dynaaminen guardrail sekä lattia–katto-malli</li>
 <li>Herkkyysanalyysi: tutki, miten nostoprosentti, eläköitymisikä tai osakepainotus vaikuttaa onnistumisasteeseen</li>
 <li>Premium avaa: sekvenssiriskin analyysin, valuuttasuojausvertailun, historiallisen backtestin, rajoittamattoman skenaarioiden tallennuksen ja rinnakkaisen vertailun sekä PDF-raportin</li>
 </ul>
-<h3>Erityispiirteet</h3>
+<p>Erityispiirteet</p>
 <ul>
 <li>Huomioi JPY-sijoittajalle tyypillisen tilanteen: kun USD-osakkeet laskevat ja jeni vahvistuu samanaikaisesti, varallisuus supistuu kahdesta suunnasta. Tavallisten &#x27;tuotto ± riski&#x27; -työkalujen ohittama riski on nyt mukana.</li>
-<li>Parametrinen malli sekä historiallinen lohko-bootstrap-menetelmä.</li>
 </ul>
-<h3>Tietosuoja</h3>
+<p>Tietosuoja</p>
 <ul>
-<li>Täysin offline. Ei ulkoisia yhteyksiä, ei tiedonkeruuta, ei tiliyhteyksiä, ei rekisteröitymistä. Kaikki laskelmat tehdään laitteella.</li>
+<li>Laskennat, syötteet ja merkinnät pysyvät laitteessasi eikä niitä lähetetä minnekään. Verkkoa käytetään vain ostoon, oston palauttamiseen ja juridisten sivujen avaamiseen.</li>
 </ul>
-<h3>Huomautus</h3>
+<p>Tässä versiossa</p>
+<ul>
+<li>Työeläke (alkamisikä 60-75) ja muut säännölliset tulot; tulot käytetään ensin ja varoista nostetaan vain erotus</li>
+<li>Takaisinlaskenta: vuosisumma, joka täyttää tavoiteonnistumisprosentin (80-95%)</li>
+<li>Toteumien seuranta, tuloksen jakaminen kuvana (maksutta), pikakäynnistys kolmella kysymyksellä ja Siri-oikopolut</li>
+<li>Kaikki summat ovat Japanin jeneinä (JPY). Yhdysvaltain osakkeita pidetään dollareissa ja muunnetaan jeneiksi</li>
+<li>Historiallisen tilan sarja on mukana tuleva näyte (synteettistä dataa), ei todellista markkinadataa</li>
+</ul>
+<p>Huomautus</p>
 <p>Tämä sovellus on tarkoitettu yleiseen tiedotukseen ja oppimiseen. Se ei suosittele tai tarjoa mitään rahoitusinstrumentteja eikä neuvoa osto- tai myyntiajankohtia. Simulaatiotulokset perustuvat käyttäjän syöttämiin lähtöarvoihin, eivätkä ne takaa tulevaa tuottoa. Käyttäjä vastaa omista päätöksistään.</p>
   </section>
 </main>
