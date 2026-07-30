@@ -6,8 +6,8 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>Calmgraph | ストレスを、1つの数字に。</title>
-  <meta name="description" content="Calmgraph（カームグラフ）は、Apple Watch の HRV や主観チェックインから日々のストレスを0–100のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。データは端末内だけに保存します。">
-  <meta name="keywords" content="ストレス,ストレススコア,HRV,心拍変動,バーンアウト,睡眠,回復,気分記録,セルフケア,オフライン,買い切り,iPhone,iOS">
+  <meta name="description" content="Calmgraph（カームグラフ）は、Apple Watch の HRV や主観チェックインから日々のストレスを0–100のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。カレンダーで過去日も編集でき、タグ相関で要因が見えます。データは端末内だけに保存します。">
+  <meta name="keywords" content="ストレス,ストレススコア,HRV,心拍変動,自律神経,バーンアウト,睡眠,回復,気分記録,セルフケア,オフライン,買い切り,Apple Watch,iPhone,iOS">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://freetokyo.github.io/web/calmgraph/">
   <meta name="apple-itunes-app" content="app-id=6790698772">
@@ -38,22 +38,30 @@
     "@type": "MobileApplication",
     "name": "Calmgraph",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "iOS 26.0 以降",
+    "operatingSystem": "iOS 26.0 以降 / watchOS 26.0 以降",
     "description": "Calmgraph turns Apple Watch HRV, resting heart rate, and sleep — or quick subjective check-ins — into a daily 0–100 stress score measured against your personal baseline, layers cause tags onto it, and shows a weekly insight of what likely moved it. Fully offline, no account, one-time purchase.",
     "inLanguage": ["ja", "en"],
     "featureList": [
       "Daily stress score (0-100) from your personal baseline",
-      "Subjective 1-tap check-ins (works without Apple Watch)",
+      "Subjective 1-tap check-ins with an optional note (works without Apple Watch)",
       "Cause tags layered on the score",
-      "Day / week / month timeline",
+      "Calendar heatmap with past-day editing",
+      "7 / 30 / 90 day timeline with a period summary",
       "Weekly insight of what moved your score",
+      "Tag correlation report across your whole history (Pro)",
+      "Apple Watch app and complication",
+      "Home and Lock Screen widgets (Pro)",
+      "Breathing guide (1 / 3 / 5 minutes)",
+      "Optional reminders and lower-than-usual day notices",
+      "CSV / PDF export and JSON backup and restore (Pro)",
+      "Control Center and Shortcuts check-in",
       "100% on-device, no account, no ads"
     ],
     "url": "https://apps.apple.com/app/id6790698772",
     "author": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" },
     "publisher": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" },
     "datePublished": "2026-07",
-    "softwareVersion": "1.0",
+    "softwareVersion": "1.1",
     "contentRating": "4+",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "無料ダウンロード（買い切りProで全機能解放）" }
   }
@@ -129,10 +137,13 @@
     <div class="grid">
       <div class="card"><h3>デイリースコア</h3><p>HRV・安静時心拍・睡眠から、個人ベースライン基準の 0–100 スコアを算出。最初の14日は較正期間として暫定表示します。</p></div>
       <div class="card"><h3>原因タグ</h3><p>仕事・睡眠・運動・カフェインなどをスコアに重ねて記録。何が状態を動かしたのかを後から振り返れます。</p></div>
-      <div class="card"><h3>推移グラフ</h3><p>日／週／月でスコアの推移を確認。タグを付けた日は大きな点で表示されます。</p></div>
+      <div class="card"><h3>カレンダーと過去日の編集</h3><p>月ごとのヒートマップで1か月を色で俯瞰。過去の日をタップして、タグやチェックインを後から直せます。</p></div>
+      <div class="card"><h3>推移グラフと期間サマリ</h3><p>7／30／90日でスコアの推移を確認。平均・最も高い日・最も低い日・帯ごとの日数も並べて表示します。</p></div>
       <div class="card"><h3>週次インサイト</h3><p>「今週スコアを動かした要因候補」を提示。相関の傾向であり、断定ではありません。</p></div>
-      <div class="card"><h3>Watch がなくても</h3><p>主観チェックイン（5段階・1タップ）で、同じ可視化が使えます。</p></div>
-      <div class="card"><h3>完全オフライン</h3><p>すべて端末内で処理。アカウント不要・データ外部送信なし・広告なし。</p></div>
+      <div class="card"><h3>タグ相関レポート（Pro）</h3><p>全期間で「タグを付けた日」と「付けなかった日」の平均を比較。母数（日数）も必ず併記します。</p></div>
+      <div class="card"><h3>Apple Watch とウィジェット</h3><p>Watch アプリとコンプリケーションで文字盤からスコアを確認し、そのままチェックイン（無料）。ホーム・ロック画面ウィジェットは Pro。</p></div>
+      <div class="card"><h3>呼吸ガイドと通知</h3><p>1・3・5分の呼吸ガイド。記録リマインド、週次の振り返り、低めの日のお知らせは任意でオンにできます。</p></div>
+      <div class="card"><h3>完全オフライン・バックアップ</h3><p>すべて端末内で処理。クラウド同期はしませんが、バックアップを1ファイルに書き出して別の端末へ復元できます。</p></div>
     </div>
   </div></section>
 
@@ -141,7 +152,7 @@
     <ol class="steps">
       <li><strong>はじめる</strong> — ヘルスケアと連携するか、主観モードを選びます（あとから変更可）。</li>
       <li><strong>記録する</strong> — 朝にスコアを確認し、原因タグを1タップ。1日の操作は30秒以内が目安。</li>
-      <li><strong>振り返る</strong> — 週末に週次インサイトで「何がスコアを動かしたか」を確認します。</li>
+      <li><strong>振り返る</strong> — 週末に週次インサイトで「何がスコアを動かしたか」を確認します。記録がたまるとタグ相関レポート（Pro）で全期間の傾向も見られます。</li>
     </ol>
   </div></section>
 
@@ -153,9 +164,17 @@
       <tbody>
         <tr><td>今日のスコア</td><td>✓</td><td>✓</td></tr>
         <tr><td>主観チェックイン</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Watch アプリ・コンプリケーション</td><td>✓</td><td>✓</td></tr>
+        <tr><td>通知・リマインド</td><td>✓</td><td>✓</td></tr>
         <tr><td>履歴グラフ</td><td>7日</td><td>無制限</td></tr>
+        <tr><td>カレンダー表示・過去日の編集</td><td>✓</td><td>✓</td></tr>
         <tr><td>原因タグ</td><td>3種</td><td>8種＋カスタム</td></tr>
         <tr><td>週次インサイト</td><td>冒頭1行</td><td>全文</td></tr>
+        <tr><td>タグ相関レポート</td><td>—</td><td>✓</td></tr>
+        <tr><td>ウィジェット</td><td>—</td><td>✓</td></tr>
+        <tr><td>呼吸ガイド</td><td>1種</td><td>3種</td></tr>
+        <tr><td>書き出し（CSV／PDF）</td><td>—</td><td>✓</td></tr>
+        <tr><td>バックアップ・復元</td><td>—</td><td>✓</td></tr>
       </tbody>
     </table>
   </div></section>
@@ -166,6 +185,9 @@
     <details><summary>データはどこに保存されますか？</summary><p>すべて端末内です。外部送信・データ収集・広告利用はありません。アカウントも不要で、機内モードでも全機能が動作します。</p></details>
     <details><summary>なぜ最初の14日は暫定表示なのですか？</summary><p>スコアはあなた個人の平常（ベースライン）を基準に測ります。学習が進むほど精度が上がるため、最初の14日間は較正期間としています。</p></details>
     <details><summary>サブスクですか？</summary><p>いいえ。買い切り（¥1,500）です。無料でも今日のスコアと直近の推移は使えます。</p></details>
+    <details><summary>Apple Watch アプリはありますか？</summary><p>あります。Watch アプリとコンプリケーションでスコアを文字盤から確認でき、手首からチェックインもできます。Watch 側の表示は無料です。</p></details>
+    <details><summary>タグを付け忘れた日は直せますか？</summary><p>直せます。推移タブのカレンダー表示で過去の日をタップすると、その日のタグやチェックインを後から編集・削除できます。</p></details>
+    <details><summary>端末を買い替えるときデータはどうなりますか？</summary><p>クラウド同期は行わないため、設定の「バックアップと復元」で1つのファイルに書き出し、新しい端末で読み込んでください（Pro）。</p></details>
   </div></section>
 
   <section><div class="wrap">

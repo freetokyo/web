@@ -38,22 +38,30 @@
     "@type": "MobileApplication",
     "name": "Calmgraph",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "iOS 26.0 or later",
+    "operatingSystem": "iOS 26.0 or later / watchOS 26.0 or later",
     "description": "Calmgraph turns Apple Watch HRV, resting heart rate, and sleep — or quick subjective check-ins — into a daily 0–100 stress score measured against your personal baseline, layers cause tags onto it, and shows a weekly insight of what likely moved it. Fully offline, no account, one-time purchase.",
     "inLanguage": ["en", "ja"],
     "featureList": [
       "Daily stress score (0-100) from your personal baseline",
-      "Subjective 1-tap check-ins (works without Apple Watch)",
+      "Subjective 1-tap check-ins with an optional note (works without Apple Watch)",
       "Cause tags layered on the score",
-      "Day / week / month timeline",
+      "Calendar heatmap with past-day editing",
+      "7 / 30 / 90 day timeline with a period summary",
       "Weekly insight of what moved your score",
+      "Tag correlation report across your whole history (Pro)",
+      "Apple Watch app and complication",
+      "Home and Lock Screen widgets (Pro)",
+      "Breathing guide (1 / 3 / 5 minutes)",
+      "Optional reminders and lower-than-usual day notices",
+      "CSV / PDF export and JSON backup and restore (Pro)",
+      "Control Center and Shortcuts check-in",
       "100% on-device, no account, no ads"
     ],
     "url": "https://apps.apple.com/app/id6790698772",
     "author": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" },
     "publisher": { "@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/" },
     "datePublished": "2026-07",
-    "softwareVersion": "1.0",
+    "softwareVersion": "1.1",
     "contentRating": "4+",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free download (one-time Pro unlocks all features)" }
   }
@@ -128,10 +136,13 @@
     <div class="grid">
       <div class="card"><h3>Daily score</h3><p>A 0–100 score from HRV, resting heart rate, and sleep, relative to your personal baseline. The first 14 days are a calibration period shown as provisional.</p></div>
       <div class="card"><h3>Cause tags</h3><p>Tag work, sleep, exercise, caffeine and more onto your score, and look back at what may have moved it.</p></div>
-      <div class="card"><h3>Timeline</h3><p>See your score over day / week / month. Days with tags show as larger points.</p></div>
+      <div class="card"><h3>Calendar and past-day editing</h3><p>A month at a glance as a colour heatmap. Tap any past day to fix its tags or check-in after the fact.</p></div>
+      <div class="card"><h3>Timeline and period summary</h3><p>See your score over 7 / 30 / 90 days, with the average, highest and lowest day, and days per band.</p></div>
       <div class="card"><h3>Weekly insight</h3><p>See what likely moved your score each week. These are correlations, not conclusions.</p></div>
-      <div class="card"><h3>No Apple Watch? No problem</h3><p>Quick 1-tap check-ins (5 levels) give you the same visualization.</p></div>
-      <div class="card"><h3>Fully on-device</h3><p>Everything is processed on your device. No account, no data sent off-device, no ads.</p></div>
+      <div class="card"><h3>Tag correlations (Pro)</h3><p>Across your whole history, compare your average on days with a tag against days without it. The sample size is always shown.</p></div>
+      <div class="card"><h3>Apple Watch and widgets</h3><p>The Watch app and complication put your score on your watch face and let you check in from your wrist — free. Home and Lock Screen widgets are part of Pro.</p></div>
+      <div class="card"><h3>Breathing guide and reminders</h3><p>A 1, 3, or 5 minute breathing guide. Logging reminders, a weekly review, and lower-than-usual day notices are all optional.</p></div>
+      <div class="card"><h3>Fully on-device, with backup</h3><p>Everything is processed on your device. There is no cloud sync, but you can export a backup to one file and restore it on another device.</p></div>
     </div>
   </div></section>
 
@@ -152,9 +163,17 @@
       <tbody>
         <tr><td>Today's score</td><td>✓</td><td>✓</td></tr>
         <tr><td>Quick check-ins</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Watch app &amp; complication</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Reminders</td><td>✓</td><td>✓</td></tr>
         <tr><td>History graph</td><td>7 days</td><td>Unlimited</td></tr>
+        <tr><td>Calendar &amp; past-day editing</td><td>✓</td><td>✓</td></tr>
         <tr><td>Cause tags</td><td>3 tags</td><td>8 + custom</td></tr>
         <tr><td>Weekly insight</td><td>First line</td><td>Full</td></tr>
+        <tr><td>Tag correlations</td><td>—</td><td>✓</td></tr>
+        <tr><td>Widgets</td><td>—</td><td>✓</td></tr>
+        <tr><td>Breathing guide</td><td>1 pattern</td><td>3 patterns</td></tr>
+        <tr><td>Export (CSV / PDF)</td><td>—</td><td>✓</td></tr>
+        <tr><td>Backup &amp; restore</td><td>—</td><td>✓</td></tr>
       </tbody>
     </table>
   </div></section>
@@ -165,6 +184,9 @@
     <details><summary>Where is my data stored?</summary><p>Everything stays on your device. Nothing is sent off-device, collected, or used for advertising. No account is needed, and every feature works in airplane mode.</p></details>
     <details><summary>Why are the first 14 days provisional?</summary><p>Your score is measured against your personal baseline. It grows more accurate as it learns, so the first 14 days are a calibration period.</p></details>
     <details><summary>Is it a subscription?</summary><p>No. It's a one-time purchase (US$9.99). Today's score and your recent timeline are available for free.</p></details>
+    <details><summary>Is there an Apple Watch app?</summary><p>Yes. The Watch app and complication show your score on your watch face and let you check in from your wrist. The Watch side is free.</p></details>
+    <details><summary>Can I fix a day I forgot to tag?</summary><p>Yes. In the trend tab, switch to the calendar and tap any past day to edit or delete its tags and check-in.</p></details>
+    <details><summary>What happens to my data when I change devices?</summary><p>There is no cloud sync, so use Settings › Backup &amp; restore to export a single file and read it back on the new device (Pro).</p></details>
   </div></section>
 
   <section><div class="wrap">
