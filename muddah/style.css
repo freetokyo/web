@@ -1,0 +1,115 @@
+/* Muddah web — shared stylesheet.
+ *
+ * v1.0 は 4 ページすべてに同じ CSS をインラインで持っていた。ar 版を足すと
+ * 8 ページに同じものが重複するので外出しした。RTL の調整も 1 箇所で済む。
+ *
+ * ⚠️ 方向に依存する指定は margin-left/right ではなく **論理プロパティ**
+ *    （margin-inline-start など）を使う。ar 版で左右を打ち消す上書きが要らなくなる。
+ */
+
+:root {
+  --teal: #0F5E63;
+  --gold: #8A6A16;      /* 文字に使える濃さ。ブランドの #C9A24B は白地 2.4:1 で読めない */
+  --ink: #0F172A;
+  --slate: #475569;
+  --bg: #F8FAFC;
+  --surface: #fff;
+  --line: #E2E8F0;
+  --success: #2E9E5B;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* アラビア語は同じ級数だと小さく見えるので少し上げ、行間も広げる。 */
+html[lang="ar"] body {
+  font-family: -apple-system, "Geeza Pro", "Noto Naskh Arabic", sans-serif;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+a { color: var(--teal); }
+
+.wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 10;
+}
+nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+nav .brand {
+  font-weight: 800; font-size: 22px; color: var(--teal);
+  text-decoration: none; letter-spacing: .5px;
+}
+
+.badge {
+  display: inline-block; background: var(--ink); color: #fff;
+  padding: 8px 16px; border-radius: 10px;
+  font-size: 14px; font-weight: 600; text-decoration: none;
+}
+
+header { text-align: center; padding: 70px 0 50px; }
+header h1 { font-size: clamp(32px, 6vw, 52px); color: var(--teal); margin-bottom: 14px; }
+header p.lead { font-size: 20px; color: var(--slate); max-width: 640px; margin: 0 auto 28px; }
+
+/* 言語切替。RTL でも並び順は論理方向に従う。 */
+.langs { font-size: 14px; color: var(--slate); margin-top: 14px; }
+.langs a { text-decoration: none; margin-inline: 6px; }
+.langs a[aria-current="true"] { font-weight: 700; text-decoration: underline; }
+
+.cta {
+  display: inline-block; background: var(--teal); color: #fff;
+  padding: 14px 32px; border-radius: 12px;
+  font-weight: 700; font-size: 17px; text-decoration: none;
+}
+
+section { padding: 44px 0; }
+h2 { font-size: 28px; color: var(--teal); margin-bottom: 22px; text-align: center; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 14px; padding: 22px;
+}
+.card h3 { color: var(--ink); font-size: 18px; margin-bottom: 8px; }
+.card p { color: var(--slate); font-size: 15px; }
+
+table.plans {
+  width: 100%; border-collapse: collapse; background: var(--surface);
+  border-radius: 14px; overflow: hidden; border: 1px solid var(--line);
+}
+table.plans th, table.plans td {
+  padding: 13px 16px; text-align: center;
+  border-bottom: 1px solid var(--line); font-size: 15px;
+}
+table.plans th { background: var(--bg); color: var(--teal); }
+/* 機能名の列だけは行頭寄せ。RTL では自動的に右寄せになる。 */
+table.plans td:first-child, table.plans th:first-child { text-align: start; }
+
+.yes { color: var(--success); font-weight: 700; }
+.no { color: var(--slate); }
+
+.note { font-size: 13px; color: var(--slate); text-align: center; margin-top: 16px; }
+
+/* 本文ページ（利用規約・プライバシー・サポート） */
+article { padding: 36px 0 10px; }
+article h1 { font-size: 32px; color: var(--teal); margin-bottom: 6px; }
+article h2 { font-size: 20px; text-align: start; margin: 28px 0 8px; }
+article p { color: var(--slate); margin-bottom: 10px; }
+article .updated { font-size: 14px; color: var(--slate); margin-bottom: 20px; }
+article ul { color: var(--slate); padding-inline-start: 22px; margin-bottom: 12px; }
+
+footer {
+  background: var(--surface); border-top: 1px solid var(--line);
+  padding: 30px 0; margin-top: 30px;
+  text-align: center; font-size: 14px; color: var(--slate);
+}
+footer a { margin: 0 8px; text-decoration: none; }
+footer .hub { display: block; margin-top: 14px; }

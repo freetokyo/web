@@ -1,101 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muddah — Offline document &amp; expiry vault for GCC families</title>
-<meta name="description" content="Muddah keeps every document expiry for your whole family in one fully offline vault — dual Hijri (Umm al-Qura) and Gregorian calendars, presets for iqama, istimara, Emirates ID, Fahes, passports and insurance. No account, no cloud. English, Arabic (RTL) & Japanese.">
-<link rel="canonical" href="https://freetokyo.github.io/web/muddah/index.html">
-<meta name="apple-itunes-app" content="app-id=6790558814">
+<title>Muddah — Offline document and expiry vault for GCC families</title>
+<meta name="description" content="Muddah keeps every document expiry for your whole family in one fully offline vault — dual Hijri (Umm al-Qura) and Gregorian dates, presets for iqama, istimara, Emirates ID, Fahes, passports and insurance, and one tap to carry an expiry forward when you renew. No account, no cloud.">
+<link rel="canonical" href="https://freetokyo.github.io/web/muddah/">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/muddah/">
+<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/muddah/ar/">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/muddah/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Muddah — Offline document &amp; expiry vault for GCC families">
-<meta property="og:description" content="Every family document expiry in one offline vault. Dual Hijri/Gregorian calendars. No account, no cloud. EN · AR · JA.">
-<meta property="og:url" content="https://freetokyo.github.io/web/muddah/index.html">
+<meta property="og:title" content="Muddah — Offline document and expiry vault for GCC families">
+<meta property="og:description" content="Muddah keeps every document expiry for your whole family in one fully offline vault — dual Hijri (Umm al-Qura) and Gregorian dates, presets for iqama, istimara, Emirates ID, Fahes, passports and insurance, and one tap to carry an expiry forward when you renew. No account, no cloud.">
+<meta property="og:url" content="https://freetokyo.github.io/web/muddah/">
 <meta property="og:image" content="https://freetokyo.github.io/web/muddah/og-image.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:site_name" content="freetokyo">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Muddah — Offline document and expiry vault for GCC families">
+<meta name="twitter:description" content="Muddah keeps every document expiry for your whole family in one fully offline vault — dual Hijri (Umm al-Qura) and Gregorian dates, presets for iqama, istimara, Emirates ID, Fahes, passports and insurance, and one tap to carry an expiry forward when you renew. No account, no cloud.">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/muddah/og-image.png">
+<meta name="apple-itunes-app" content="app-id=6790558814">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"Muddah","operatingSystem":"iOS 18.0+","applicationCategory":"ProductivityApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Fully offline document expiry tracker for GCC expat families: dual Hijri (Umm al-Qura) and Gregorian calendars, presets for iqama, istimara, Emirates ID, Fahes, passports and insurance, household view, multi-stage on-device reminders. No account, works offline. Free for 5 documents and 2 members; a one-time Pro purchase unlocks unlimited."}
+{"@context":"https://schema.org","@graph":[{"@type":"MobileApplication","name":"Muddah","alternateName":["مدة","Muddah"],"operatingSystem":"iOS 18.0+","applicationCategory":"ProductivityApplication","url":"https://freetokyo.github.io/web/muddah/","installUrl":"https://apps.apple.com/app/id6790558814","image":"https://freetokyo.github.io/web/muddah/og-image.png","inLanguage":["en","ar","ja","hi","ur"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Muddah keeps every document expiry for your whole family in one fully offline vault — dual Hijri (Umm al-Qura) and Gregorian dates, presets for iqama, istimara, Emirates ID, Fahes, passports and insurance, and one tap to carry an expiry forward when you renew. No account, no cloud.","featureList":["Two calendars, side by side","One tap when you renew","Presets for local documents","Your whole family","Reminders and a widget","Renewal checklists","Scan and read the date","Fully offline and private"],"author":{"@type":"Organization","name":"freetokyo","url":"https://freetokyo.github.io/"}},{"@type":"WebSite","name":"Muddah","url":"https://freetokyo.github.io/web/muddah/","inLanguage":"en","publisher":{"@type":"Organization","name":"freetokyo"}}]}
 </script>
-<style>
-:root{--teal:#0F5E63;--gold:#C9A24B;--ink:#0F172A;--slate:#475569;--bg:#F8FAFC;--surface:#fff;--line:#E2E8F0;--success:#2E9E5B}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-a{color:var(--teal)}
-.wrap{max-width:900px;margin:0 auto;padding:0 20px}
-nav{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-nav .brand{font-weight:800;font-size:22px;color:var(--teal);text-decoration:none;letter-spacing:.5px}
-.badge{display:inline-block;background:var(--ink);color:#fff;padding:8px 16px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none}
-header{text-align:center;padding:70px 0 50px}
-header h1{font-size:clamp(32px,6vw,52px);color:var(--teal);margin-bottom:14px}
-header p.lead{font-size:20px;color:var(--slate);max-width:640px;margin:0 auto 28px}
-.langs{font-size:14px;color:var(--slate);margin-top:10px}
-.cta{display:inline-block;background:var(--teal);color:#fff;padding:14px 32px;border-radius:12px;font-weight:700;font-size:17px;text-decoration:none}
-section{padding:44px 0}
-h2{font-size:28px;color:var(--teal);margin-bottom:22px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
-.card h3{color:var(--ink);font-size:18px;margin-bottom:8px}
-.card p{color:var(--slate);font-size:15px}
-table.plans{width:100%;border-collapse:collapse;background:var(--surface);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-table.plans th,table.plans td{padding:13px 16px;text-align:center;border-bottom:1px solid var(--line);font-size:15px}
-table.plans th{background:var(--bg);color:var(--teal)}
-table.plans td:first-child,table.plans th:first-child{text-align:left}
-.yes{color:var(--success);font-weight:700}.no{color:var(--slate)}
-.note{font-size:13px;color:var(--slate);text-align:center;margin-top:16px}
-footer{background:var(--surface);border-top:1px solid var(--line);padding:30px 0;margin-top:30px;text-align:center;font-size:14px;color:var(--slate)}
-footer a{margin:0 8px;text-decoration:none}
-footer .hub{display:block;margin-top:14px}
-</style>
 </head>
 <body>
-<nav><div class="wrap"><a class="brand" href="index.html">Muddah</a><a class="badge" href="https://apps.apple.com/app/id6790558814">App Store</a></div></nav>
-
-<header>
-<div class="wrap">
+<nav><div class="wrap">
+<a class="brand" href="index.html">Muddah</a>
+<a class="badge" href="https://apps.apple.com/app/id6790558814">App Store</a>
+</div></nav>
+<header><div class="wrap">
 <h1>Every expiry, one safe place.</h1>
-<p class="lead">A fully offline vault for your family's documents — iqama, istimara, Emirates ID, passports and insurance — with dual Hijri and Gregorian dates. No account, no cloud.</p>
+<p class="lead">A fully offline vault for your family&#x27;s documents — iqama, istimara, Emirates ID, passports and insurance — with dual Hijri and Gregorian dates.</p>
 <a class="cta" href="https://apps.apple.com/app/id6790558814">Download on the App Store</a>
-<p class="langs">English · العربية · 日本語 — full right-to-left support</p>
-</div>
-</header>
+<p class="langs"><a href="https://freetokyo.github.io/web/muddah/" hreflang="en" lang="en" aria-current="true">English</a> · <a href="https://freetokyo.github.io/web/muddah/ar/" hreflang="ar" lang="ar">العربية</a></p>
+<p class="langs">Languages in the app: English · العربية · 日本語 · हिन्दी · اردو — full right-to-left support</p>
+</div></header>
 
-<section>
-<div class="wrap">
+<section><div class="wrap">
 <h2>Built for GCC households</h2>
 <div class="grid">
-<div class="card"><h3>Two calendars, side by side</h3><p>Your iqama expires on a Hijri (Umm al-Qura) date, your passport on a Gregorian one. Muddah shows both together, so a conversion mistake never costs you a renewal.</p></div>
-<div class="card"><h3>Presets for local documents</h3><p>Iqama, visa, Emirates ID, istimara, Fahes, driving license, passport and health, car &amp; home insurance — ready to add in a tap.</p></div>
-<div class="card"><h3>Your whole family</h3><p>Track documents for yourself, your spouse, children and household workers — all sorted by what expires next, in one dashboard.</p></div>
-<div class="card"><h3>Reminders before it's late</h3><p>Multi-stage on-device reminders as each expiry approaches. Names can be hidden from lock-screen notifications for privacy.</p></div>
-<div class="card"><h3>Fully offline &amp; private</h3><p>Everything stays on your device. No account, no sync, no data collection. Protect the app with Face ID.</p></div>
-<div class="card"><h3>Renewal checklists</h3><p>Some renewals need prerequisites first — Fahes and insurance before istimara. Muddah flags them so nothing surprises you at the window.</p></div>
+<div class="card"><h3>Two calendars, side by side</h3><p>Your iqama expires on a Hijri (Umm al-Qura) date, your passport on a Gregorian one. Muddah shows both together and converts between them, so a reading mistake never costs you a renewal.</p></div>
+<div class="card"><h3>One tap when you renew</h3><p>Renewed something? Tap once and Muddah works out the new expiry on the calendar that document actually uses. A Hijri year is about 354 days, not 365, so you do not have to count it yourself. Every renewal is kept as history.</p></div>
+<div class="card"><h3>Presets for local documents</h3><p>Iqama, visa, Emirates ID, istimara, Fahes, driving license, passport and health, car or home insurance — ready to add in a tap.</p></div>
+<div class="card"><h3>Your whole family</h3><p>Track documents for yourself, your spouse, children and household workers — all sorted by what expires next. Search, filter by status, and archive what you no longer need.</p></div>
+<div class="card"><h3>Reminders and a widget</h3><p>Multi-stage on-device reminders warn you before each expiry, at the time of day you choose. Names can be hidden from lock-screen notifications. A Home Screen widget shows what expires next without opening the app.</p></div>
+<div class="card"><h3>Renewal checklists</h3><p>Some renewals need things in order first — Fahes, insurance and traffic fines before istimara. Muddah keeps them as a personal checklist so nothing surprises you at the window.</p></div>
+<div class="card"><h3>Scan and read the date</h3><p>Scan a document to a multi-page PDF and let Muddah read the expiry date off it, in either calendar, for you to confirm. It all happens on your device.</p></div>
+<div class="card"><h3>Fully offline and private</h3><p>Everything stays on your device. No account, no sync, no data collection. Protect the app with Face ID.</p></div>
 </div>
-</div>
-</section>
+</div></section>
 
-<section>
-<div class="wrap">
-<h2>Free &amp; Pro</h2>
+<section><div class="wrap">
+<h2>Free and Pro</h2>
 <table class="plans">
 <tr><th>Feature</th><th>Free</th><th>Pro</th></tr>
 <tr><td>Documents</td><td>Up to 5</td><td>Unlimited</td></tr>
 <tr><td>Family members</td><td>Up to 2</td><td>Unlimited</td></tr>
-<tr><td>Dual Hijri / Gregorian calendars</td><td class="yes">✓</td><td class="yes">✓</td></tr>
 <tr><td>Reminder stages</td><td>2 stages</td><td>All stages</td></tr>
-<tr><td>Renewal checklists</td><td class="no">—</td><td class="yes">✓</td></tr>
-<tr><td>Data export (JSON)</td><td class="no">—</td><td class="yes">✓</td></tr>
+<tr><td>Dual Hijri / Gregorian calendars</td><td>✓</td><td>✓</td></tr>
+<tr><td>Photo attachments</td><td>✓</td><td>✓</td></tr>
+<tr><td>Face ID lock</td><td>✓</td><td>✓</td></tr>
+<tr><td>Multi-page scanning</td><td>—</td><td>✓</td></tr>
+<tr><td>Read expiry from a scan</td><td>—</td><td>✓</td></tr>
+<tr><td>Renewal checklists</td><td>—</td><td>✓</td></tr>
+<tr><td>Export and import (JSON)</td><td>—</td><td>✓</td></tr>
 </table>
-<p class="note">Muddah Pro is a one-time purchase (no subscription) and works with Family Sharing. Muddah is a personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice.</p>
-</div>
-</section>
+<p class="note">Muddah Pro is a one-time purchase (no subscription) and works with Family Sharing.</p>
+<p class="note">Muddah is a personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice.</p>
+</div></section>
 
-<footer>
-<div class="wrap">
-<a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a>
-<a class="hub" href="/web/">← freetokyo apps</a>
-<p style="margin-top:10px">© 2026 freetokyo</p>
-</div>
-</footer>
+<footer><div class="wrap">
+<a href="index.html">Home</a> ·
+<a href="support.html">Support</a> ·
+<a href="terms.html">Terms</a> ·
+<a href="privacy.html">Privacy</a>
+<a class="hub" href="https://freetokyo.github.io/">← freetokyo apps</a>
+<div>© 2026 freetokyo</div>
+</div></footer>
 </body>
 </html>
