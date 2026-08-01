@@ -326,11 +326,14 @@
 <div class="topnav">
     <a class="brand" href="./index.html">Sonalog · ソナログ</a>
     <span style="display:flex;gap:12px;align-items:center">
-      <span class="lang-switch"><button id="ja" class="on" type="button">日本語</button><button id="en" type="button">EN</button></span>
+      <div class="language-switch" aria-label="Language switch">
+        <a class="lang-button is-active" href="./privacy.html" hreflang="ja" aria-current="page">日本語</a>
+        <a class="lang-button" href="./en/privacy.html" hreflang="en">English</a>
+      </div>
       <a class="appstore" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
     </span>
   </div>
-  <main>
+  
     <div class="card">
       <section class="lang-panel" lang="ja">
         <h1>プライバシーポリシー</h1>
@@ -350,26 +353,8 @@
         <h2>7. お問い合わせ</h2>
         <p>本ポリシーに関するお問い合わせは <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a> までご連絡ください。</p>
       </section>
-      <section class="lang-panel" lang="en" hidden>
-        <h1>Privacy Policy</h1>
-        <p class="muted">Last updated: July 2026</p>
-        <h2>1. Our approach</h2>
-        <p>Sonalog (the "App") respects your privacy. All data you enter (household members, stock items, expiry dates, emergency contacts, meeting place, go-bag items, and so on) is stored only on your device.</p>
-        <h2>2. Information we collect</h2>
-        <p>The App does not collect or transmit any data, including personal information. Neither the developer nor any third party can access your data. No account is required.</p>
-        <h2>3. Network</h2>
-        <p>The App works fully offline. Network activity only occurs for in-app purchase processing (buying or restoring Full Access) via Apple's StoreKit, which follows Apple's privacy policy.</p>
-        <h2>4. Notifications</h2>
-        <p>Expiry alerts use on-device local notifications. Their contents are never sent externally.</p>
-        <h2>5. Third-party services</h2>
-        <p>The App uses no analytics SDKs, advertising SDKs, or tracking.</p>
-        <h2>6. Deleting data</h2>
-        <p>Deleting the App removes all data stored on your device.</p>
-        <h2>7. Contact</h2>
-        <p>For questions about this policy, contact <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>.</p>
-      </section>
+      
     </div>
-  </main>
 </main>
 <footer class="footer">
   <div class="container">

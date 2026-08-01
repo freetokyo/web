@@ -323,12 +323,11 @@
   </div>
 </nav>
 <main class="ftbody">
-<main>
-    <div class="topbar">
+<div class="topbar">
       <div class="brand">PrintSummary</div>
-      <div class="language-switch" role="tablist" aria-label="Language switch">
-        <button class="lang-button" id="lang-ja-button" type="button" role="tab" aria-selected="true" aria-controls="lang-ja">日本語</button>
-        <button class="lang-button" id="lang-en-button" type="button" role="tab" aria-selected="false" aria-controls="lang-en">English</button>
+      <div class="language-switch" aria-label="Language switch">
+        <a class="lang-button is-active" href="./index.html" hreflang="ja" aria-current="page">日本語</a>
+        <a class="lang-button" href="./en/index.html" hreflang="en">English</a>
       </div>
     </div>
 
@@ -399,37 +398,7 @@
       </div>
     </section>
 
-    <section class="hero lang-panel" id="lang-en" lang="en" hidden>
-      <div class="hero-grid">
-        <div>
-          <div class="eyebrow">School Handout OCR</div>
-          <h1>Capture. Organize. Stop missing handouts.</h1>
-          <p class="lead">PrintSummary, also referred to in Japanese as Purisama, helps users capture school handouts, extract text with OCR, and keep deadlines, submission status, and review flow in one place. It is designed for students and families who need a simpler way to manage paper-based school communication.</p>
-          <div class="pill-row" style="margin-top:18px;">
-            <span class="pill">School handout OCR</span>
-            <span class="pill">Deadline tracking</span>
-            <span class="pill">Submission visibility</span>
-            <span class="pill">Review workflow</span>
-            <span class="pill">No account required</span>
-          </div>
-          <div class="cta-row" style="margin-top:20px;">
-            <a class="appstore-btn" href="https://apps.apple.com/app/id6761879860" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 814 1000" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="white" d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-27.8-155.5-127.4C46.7 790.7 0 663 0 541.8c0-207.5 135.4-317.3 269-317.3 70.1 0 128.4 46.4 172.5 46.4 42.1 0 108.6-49 191.4-49 30.8 0 134.2 2.6 198.3 99zM549.5 148.3c22.7-31.2 39.2-74.5 39.2-117.8 0-6.1-.5-12.2-1.6-17.3-37 1.4-81.2 24.7-107.3 56.6-20.2 24.1-40.1 64.6-40.1 108.4 0 6.7 1.1 13.4 1.6 15.5 2.7.5 7.2 1.1 11.1 1.1 33.5 0 75.2-22.4 97.1-46.5z"/></svg> Download on the App Store</a>
-            <a class="cta" href="./support.html">Support</a>
-            <a class="ghost" href="./privacy.html">Privacy Policy</a>
-            <a class="ghost" href="./terms.html">Terms</a>
-          </div>
-        </div>
-        <div class="section-card" style="margin:0;">
-          <h2>Product Summary</h2>
-          <div class="stat-grid">
-            <div class="stat"><strong>User pain point</strong><span>Paper handout overload</span></div>
-            <div class="stat"><strong>Primary value</strong><span>Fewer missed deadlines</span></div>
-            <div class="stat"><strong>Input</strong><span>Camera capture and photo import</span></div>
-            <div class="stat"><strong>Positioning</strong><span>Built around school handouts</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <div class="grid-3">
       <section class="section-card lang-panel" lang="ja">
@@ -437,30 +406,21 @@
         <p>学校から配られたプリントをその場でカメラ撮影するか、既存の写真から読み込みます。アカウント登録は不要です。</p>
       </section>
 
-      <section class="section-card lang-panel" lang="en" hidden>
-        <h2>① Capture</h2>
-        <p>Photograph school handouts on the spot or import from your photo library. No account required.</p>
-      </section>
+      
 
       <section class="section-card lang-panel" lang="ja">
         <h2>② OCR で整理する</h2>
         <p>文字を自動抽出して締切日・科目・持ち物の候補を整理します。処理はすべて端末内で行われ、外部サーバーには送信しません。</p>
       </section>
 
-      <section class="section-card lang-panel" lang="en" hidden>
-        <h2>② Organize with OCR</h2>
-        <p>Extract text automatically to sort out deadlines, subjects, and required items. All processing stays on-device — nothing is sent to external servers.</p>
-      </section>
+      
 
       <section class="section-card lang-panel" lang="ja">
         <h2>③ 見逃さない</h2>
         <p>締切前にローカル通知でお知らせ。保存したプリントはいつでも検索・再確認・復習に使えます。</p>
       </section>
 
-      <section class="section-card lang-panel" lang="en" hidden>
-        <h2>③ Never miss a deadline</h2>
-        <p>Get local reminders before due dates. Saved handouts are always searchable and available to revisit for review.</p>
-      </section>
+      
     </div>
 
     <div class="grid-2">
@@ -474,15 +434,7 @@
         </ul>
       </section>
 
-      <section class="section-card lang-panel" lang="en" hidden>
-        <h2>Core Product Message</h2>
-        <ul>
-          <li>Capture paper school handouts the moment they are received.</li>
-          <li>Use OCR to extract text and support deadline or submission review.</li>
-          <li>Search, revisit, and reuse saved handouts for study and follow-up.</li>
-          <li>Within the verified implementation scope, the core workflow is designed around on-device processing.</li>
-        </ul>
-      </section>
+      
 
       <section class="section-card lang-panel" lang="ja">
         <h2>価格</h2>
@@ -493,18 +445,11 @@
         <p class="mini" style="margin-top:14px;">Premium の購入・返金条件は App Store の規約に従います。</p>
       </section>
 
-      <section class="section-card lang-panel" lang="en" hidden>
-        <h2>Pricing</h2>
-        <div class="stat-grid">
-          <div class="stat"><strong>Free</strong><span>Save a set number of handouts per month</span></div>
-          <div class="stat"><strong>Premium</strong><span>One-time purchase, no save limit</span></div>
-        </div>
-        <p class="mini" style="margin-top:14px;">Premium purchases and refunds follow App Store terms.</p>
-      </section>
+      
     </div>
 
     <p class="footer-note">PrintSummary Marketing Page</p>
-  </main>
+  
 
   
 <p style="margin-top:1rem"><a href="/web/">← freetokyo apps（アプリ一覧へ）</a></p>

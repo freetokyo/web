@@ -323,12 +323,11 @@
   </div>
 </nav>
 <main class="ftbody">
-<main>
-    <div class="topbar">
+<div class="topbar">
       <div class="brand">PrintSummary Privacy</div>
-      <div class="language-switch" role="tablist" aria-label="Language switch">
-        <button class="lang-button" id="lang-ja-button" type="button" role="tab" aria-selected="true" aria-controls="lang-ja">日本語</button>
-        <button class="lang-button" id="lang-en-button" type="button" role="tab" aria-selected="false" aria-controls="lang-en">English</button>
+      <div class="language-switch" aria-label="Language switch">
+        <a class="lang-button is-active" href="./privacy.html" hreflang="ja" aria-current="page">日本語</a>
+        <a class="lang-button" href="./en/privacy.html" hreflang="en">English</a>
       </div>
     </div>
 
@@ -344,17 +343,7 @@
       </div>
     </section>
 
-    <section class="hero lang-panel" id="lang-en" lang="en" hidden>
-      <div class="eyebrow">Privacy and Data Handling</div>
-      <h1>PrintSummary / Purisama Privacy Policy</h1>
-      <p class="meta" style="margin-top:10px;">Last updated: May 2026</p>
-      <p style="margin-top:10px;">PrintSummary, also referred to in Japanese as Purisama, helps users capture school handouts, extract text with OCR, organize deadlines, and manage submission status. This page explains what information the app handles, where it is stored, what is not transmitted externally, and what users can delete.</p>
-      <div class="summary">
-        <div class="summary-item"><strong>Core posture:</strong> Images and OCR text are not sent to external servers. Core processing stays on-device.</div>
-        <div class="summary-item"><strong>Handled data:</strong> Images, OCR text, deadline candidates, submission status, review-related data, notification settings, and purchase status.</div>
-        <div class="summary-item"><strong>No external transmission:</strong> The app does not use proprietary cloud sync, ad SDKs, or third-party analytics SDKs.</div>
-      </div>
-    </section>
+    
 
     <div class="grid">
       <section class="card lang-panel" lang="ja">
@@ -387,35 +376,7 @@
         </div>
       </section>
 
-      <section class="card lang-panel" lang="en" hidden>
-        <h2>How Data Is Handled</h2>
-        <div class="section">
-          <h3>1. Information the app handles</h3>
-          <ul>
-            <li>School handout images captured or imported by the user</li>
-            <li>Text extracted through OCR</li>
-            <li>Organizing data such as deadlines, required items, subjects, submission status, and review tags</li>
-            <li>On-device settings such as notifications, added vocabulary, recent history, and purchase status</li>
-          </ul>
-        </div>
-        <div class="section">
-          <h3>2. Purpose of use</h3>
-          <ul>
-            <li>To read text from handout images and organize deadlines or required items</li>
-            <li>To search, revisit, and reprocess saved handouts</li>
-            <li>To display local reminders before deadlines</li>
-            <li>To manage the free quota and Premium status on the device</li>
-          </ul>
-        </div>
-        <div class="section">
-          <h3>3. Permissions</h3>
-          <ul>
-            <li>Camera: Used for capturing school handouts and running OCR on-device.</li>
-            <li>Photos: Used for importing existing images and running OCR on-device.</li>
-            <li>Notifications: Used for local reminders before deadlines.</li>
-          </ul>
-        </div>
-      </section>
+      
 
       <section class="card lang-panel" lang="ja">
         <h2>保存・共有・削除</h2>
@@ -435,26 +396,8 @@
         </div>
       </section>
 
-      <section class="card lang-panel" lang="en" hidden>
-        <h2>Storage, Sharing, and Deletion</h2>
-        <div class="section">
-          <h3>4. Storage location</h3>
-          <p>Images are stored under Application Support, OCR text and extraction candidates are stored in the on-device data store, and some settings are stored in UserDefaults. None of this leaves the device.</p>
-        </div>
-        <div class="section">
-          <h3>5. External transmission and sharing</h3>
-          <p>OCR images and OCR text are not sent to external APIs. Manual backup can export JSON, but only when the user explicitly chooses to share it.</p>
-        </div>
-        <div class="section">
-          <h3>6. Data deletion and contact</h3>
-          <p>From Settings &gt; Delete Data, users can remove local data including saved handouts, OCR results, stored images, extraction issue samples, added vocabulary, and recent history.</p>
-          <p style="margin-top:10px;">Contact: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
-          <p style="margin-top:8px;"><a href="./support.html">Support</a> / <a href="./terms.html">Terms of Use</a> / <a href="./index.html">About</a></p>
-        </div>
-      </section>
+      
     </div>
-
-  </main>
 </main>
 <footer class="footer">
   <div class="container">
