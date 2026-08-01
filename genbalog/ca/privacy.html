@@ -324,6 +324,16 @@
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
 .ftlangs a{margin:0}
+
+/* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
+   カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
+   狭い画面ではブランドと CTA だけ残す。 */
+@media (max-width: 720px){
+  .nav__links{display:none}
+  .nav__brand{white-space:nowrap;font-size:15px}
+  .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
+  .nav__inner{gap:8px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Genbalog", "description": "現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/genbalog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770864162"}</script>
 </head>

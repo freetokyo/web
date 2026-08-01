@@ -324,6 +324,16 @@
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
 .ftlangs a{margin:0}
+
+/* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
+   カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
+   狭い画面ではブランドと CTA だけ残す。 */
+@media (max-width: 720px){
+  .nav__links{display:none}
+  .nav__brand{white-space:nowrap;font-size:15px}
+  .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
+  .nav__inner{gap:8px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Miawell", "description": "猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/miawell/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6774019571"}</script>
 </head>

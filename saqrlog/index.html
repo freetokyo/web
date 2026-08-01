@@ -291,6 +291,16 @@
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
 .ftlangs a{margin:0}
+
+/* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
+   カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
+   狭い画面ではブランドと CTA だけ残す。 */
+@media (max-width: 720px){
+  .nav__links{display:none}
+  .nav__brand{white-space:nowrap;font-size:15px}
+  .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
+  .nav__inner{gap:8px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Saqrlog（サクルログ）", "description": "鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/saqrlog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6789535072"}</script>
 </head>

@@ -324,6 +324,16 @@
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
 .ftlangs a{margin:0}
+
+/* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
+   カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
+   狭い画面ではブランドと CTA だけ残す。 */
+@media (max-width: 720px){
+  .nav__links{display:none}
+  .nav__brand{white-space:nowrap;font-size:15px}
+  .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
+  .nav__inner{gap:8px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Trero", "description": "iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。38 言語対応のフラッグシップアプリ。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/trero/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6760746164"}</script>
 </head>

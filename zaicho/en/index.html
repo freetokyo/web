@@ -292,6 +292,16 @@
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
 .ftlangs a{margin:0}
+
+/* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
+   カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
+   狭い画面ではブランドと CTA だけ残す。 */
+@media (max-width: 720px){
+  .nav__links{display:none}
+  .nav__brand{white-space:nowrap;font-size:15px}
+  .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
+  .nav__inner{gap:8px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "ザイチョウ（Zaicho）", "description": "完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/zaicho/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6788175241"}</script>
 </head>
