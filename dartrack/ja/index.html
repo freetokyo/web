@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TsukiLift — Move with your moon.</title>
-<meta name="description" content="Track your menstrual cycle and strength training in one app. Phase-aware training suggestions help you build strength at your own rhythm — all stored on your device.">
-<link rel="canonical" href="https://freetokyo.github.io/web/tsukilift/en/index.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tsukilift/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tsukilift/en/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tsukilift/">
+<title>Dartrack — 家事スタッフのための、静かで私的な台帳（UAE・完全オフライン）</title>
+<meta name="description" content="UAE で家事スタッフを雇う世帯向けの完全オフライン台帳。ビザ・契約の期限、勤務時間、休暇、給与、末端手当を端末内で管理し CSV / PDF に書き出し。アカウント不要・データ収集なし。">
+<link rel="canonical" href="https://freetokyo.github.io/web/dartrack/ja/index.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/">
+<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/dartrack/ar/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/dartrack/ja/">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="TsukiLift — Move with your moon.">
-<meta property="og:description" content="Track your menstrual cycle and strength training in one app. Phase-aware training suggestions help you build strength at your own rhythm — all stored on your device.">
-<meta property="og:url" content="https://freetokyo.github.io/web/tsukilift/en/index.html">
+<meta property="og:title" content="Dartrack — 家事スタッフのための、静かで私的な台帳（UAE・完全オフライン）">
+<meta property="og:description" content="UAE で家事スタッフを雇う世帯向けの完全オフライン台帳。ビザ・契約の期限、勤務時間、休暇、給与、末端手当を端末内で管理し CSV / PDF に書き出し。アカウント不要・データ収集なし。">
+<meta property="og:url" content="https://freetokyo.github.io/web/dartrack/ja/index.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="apple-itunes-app" content="app-id=6767084251">
-<style>:root{--brand-1:#4a1a6b;--brand-2:#ff5fa2}
+<meta name="apple-itunes-app" content="app-id=6788604524">
+<style>:root{--brand-1:#10505A;--brand-2:#C79A4B}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -305,276 +306,82 @@
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "TsukiLift", "description": "生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/tsukilift/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6767084251"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Dartrack", "description": "UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/dartrack/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6788604524"}</script>
 </head>
 <body>
 
-<nav class="nav" aria-label="Global">
+<nav class="nav" aria-label="グローバル">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../">
       <span class="nav__logo" aria-hidden="true">ft</span>
       freetokyo apps
     </a>
-    <a class="nav__here" href="../../tsukilift/">TsukiLift</a>
+    <a class="nav__here" href="../../dartrack/">Dartrack</a>
     <div class="nav__links">
-      <div class="nav__item"><a href="../../#health">Health</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../../#life">Life</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../../#money">Money</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../../#work">Work</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a></div></div></div>
+      <div class="nav__item"><a href="../../#health">健康</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../../#life">くらし</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../../#money">おかね</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../../#work">しごと</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a></div></div></div>
     </div>
-    <a class="nav__cta" href="https://apps.apple.com/app/id6767084251" target="_blank" rel="noopener">View on the App Store</a>
+    <a class="nav__cta" href="https://apps.apple.com/app/id6788604524" target="_blank" rel="noopener">App Store で見る</a>
   </div>
 </nav>
 <main class="ftbody">
-<header class="tl-header">
-  <div class="tl-header-inner">
-    <a class="tl-logo" href="index.html">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.91-.1-1.36A5.5 5.5 0 0 1 12 8.5 5.5 5.5 0 0 1 7.36 3.1 9.08 9.08 0 0 0 12 3z" fill="currentColor" opacity="0.85"/>
-        <path d="M15 14h-2v-2a1 1 0 0 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2z" fill="currentColor"/>
-      </svg>
-      TsukiLift
-    </a>
+<div class="topbar">
+    <span class="brand"><span class="mark"></span>Dartrack</span>
     
   </div>
-</header>
 
-<main>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-icon" aria-hidden="true">
-      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
-        <circle cx="40" cy="40" r="38" fill="var(--color-surface-raised)"/>
-        <path d="M40 10a30 30 0 1 0 30 30c0-1.54-.13-3.04-.38-4.5A18.33 18.33 0 0 1 40 31.67 18.33 18.33 0 0 1 24.54 10.4 30.27 30.27 0 0 0 40 10z" fill="var(--color-primary)" opacity="0.85"/>
-        <rect x="31" y="46" width="18" height="3.5" rx="1.75" fill="var(--color-accent)"/>
-        <rect x="28" y="44" width="4" height="7.5" rx="2" fill="var(--color-accent)"/>
-        <rect x="48" y="44" width="4" height="7.5" rx="2" fill="var(--color-accent)"/>
-        <rect x="38.25" y="36" width="3.5" height="16" rx="1.75" fill="var(--color-accent)"/>
-      </svg>
-    </div>
-    <h1>TsukiLift</h1>
-    <p class="hero-tagline">Move with your moon.</p>
-    <a href="https://apps.apple.com/app/id6767084251" class="tl-btn tl-btn-primary" target="_blank" rel="noopener noreferrer">
-      &#x2B07;&#xFE0F; Download on the App Store
-    </a>
-    <div class="hero-badges">
-      <span class="tl-badge tl-badge-primary">iOS 17+</span>
-      <span class="tl-badge tl-badge-vitality">English</span>
-      <span class="tl-badge tl-badge-accent">Free</span>
-    </div>
-  </section>
-
-  <!-- Brand story -->
-  <section class="brand-story">
-    <div class="tl-section">
-      <p>Just as the moon moves the tides, your own monthly rhythm moves your body. Understanding that natural cycle and putting it to work in the gym — that is the idea behind TsukiLift. With records and trends that follow your rhythm, get the most out of the person you are today.</p>
-    </div>
-  </section>
-
-  <!-- Screenshots -->
-  <section class="screenshot-section">
-    <div class="tl-section">
-
-<section class="ftfacts" aria-label="App overview">
-  <h2>App overview</h2>
-  <table>
-    <tr><th>Requires</th><td>iOS 17.0 or later</td></tr>
-    <tr><th>Price</th><td>Free (In-App Purchases)</td></tr>
-    <tr><th>Version</th><td>1.1</td></tr>
-    <tr><th>Size</th><td>About 2 MB</td></tr>
-    <tr><th>Category</th><td>Health &amp; Fitness</td></tr>
-    <tr><th>Age rating</th><td>12+</td></tr>
-    <tr><th>Made for</th><td>Women who lift</td></tr>
-    <tr><th>Data handling</th><td>No account; data stays on your device</td></tr>
-    <tr><th>Developer</th><td>freetokyo</td></tr>
-    <tr><th>Last updated</th><td>2026-05-26</td></tr>
-  </table>
-</section>
-<section class="fthowto" aria-label="How to use it (3 steps)">
-  <h2>How to use it (3 steps)</h2>
-  <ol>
-    <li>Log your cycle</li>
-    <li>Check the training that suits the phase</li>
-    <li>Log your workouts and review the trends</li>
-  </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
-</section>
-      <h2>Inside the app</h2>
-    </div>
-    <div class="screenshot-gallery">
-      <div class="screenshot-item">
-        <img src="../img/01_home.png" alt="Home screen: today's phase and training suggestion" loading="lazy">
-        <p class="screenshot-caption">Today's phase &amp; suggestion</p>
+  <header class="hero">
+    <span class="sun" aria-hidden="true"></span>
+    <div class="wrap">
+      <h1>家事スタッフのための、静かで私的な台帳</h1>
+      <p class="lead">ビザ・契約の期限、勤務時間、休暇、給与、末端手当を——すべて端末内で、UAE向けに管理。</p>
+      <p class="free">無料ダウンロード。基本の記録は無料 — Dartrack Pro は任意です。</p>
+      <div class="cta-row">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6788604524" rel="noopener" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.417 2.2-1.25 3.02-.99.98-2.06 1.55-3.22 1.46-.14-1.13.42-2.3 1.2-3.06.87-.87 2.3-1.5 3.27-1.42zM20.5 17.2c-.6 1.37-.88 1.98-1.65 3.2-1.08 1.7-2.6 3.82-4.48 3.83-1.67.02-2.1-1.09-4.36-1.08-2.26.01-2.73 1.1-4.4 1.08-1.88-.02-3.32-1.94-4.4-3.63C-1.3 16.6-1.6 11.02.9 7.86c1.25-1.6 3.23-2.62 5.02-2.62 1.83 0 2.98 1.1 4.5 1.1 1.47 0 2.36-1.1 4.5-1.1 1.6 0 3.3.87 4.5 2.38-3.96 2.17-3.32 7.82.98 9.31z"/></svg>
+          <span>
+            <span class="badge-sub">ダウンロード</span>
+            <span class="badge-main">App Store</span>
+          </span>
+        </a>
+        <a class="btn secondary" href="../support.html">サポート</a>
       </div>
-      <div class="screenshot-item">
-        <img src="../img/02_calendar.png" alt="Calendar screen: period, symptoms and workouts at a glance" loading="lazy">
-        <p class="screenshot-caption">Color calendar</p>
-      </div>
-      <div class="screenshot-item">
-        <img src="../img/03_analytics.png" alt="Analytics screen: performance trends by cycle phase" loading="lazy">
-        <p class="screenshot-caption">Analysis by phase</p>
-      </div>
-      <div class="screenshot-item">
-        <img src="../img/04_record.png" alt="Logging screen: period, symptoms, workouts, body composition and temperature" loading="lazy">
-        <p class="screenshot-caption">Five kinds of records</p>
+      <div class="pills">
+        <span class="pill">📱 iPhone &amp; iPad</span>
+        <span class="pill">✈️ 完全オフライン</span>
+        <span class="pill">EN · العربية · 日本語</span>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Features -->
-  <section class="feature-section">
-    <div class="tl-section">
-      <h2>Key features that link your cycle and your training</h2>
-      <div class="feature-grid">
-
-        <div class="feature-card">
-          <div class="feature-card-icon">🌸</div>
-          <div class="feature-card-body">
-            <span class="tl-badge tl-badge-period">Cycle</span>
-            <h3>Cycle tracking</h3>
-            <p>Log start and end dates, flow, and pain in a few taps. Your past records show you the shape of your cycle.</p>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card-icon">💪</div>
-          <div class="feature-card-body">
-            <span class="tl-badge tl-badge-primary">Training</span>
-            <h3>Workout logging</h3>
-            <p>Record exercise, weight, reps, and RPE set by set. Estimated 1RM and workout templates keep sessions efficient.</p>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card-icon">🌡️</div>
-          <div class="feature-card-body">
-            <span class="tl-badge tl-badge-vitality">BBT</span>
-            <h3>Basal body temperature</h3>
-            <p>Log your temperature each morning and see how it shifts across the cycle on a clear graph.</p>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card-icon">📊</div>
-          <div class="feature-card-body">
-            <span class="tl-badge tl-badge-lilac">Body</span>
-            <h3>Body composition &amp; condition</h3>
-            <p>Track weight, body fat, and skeletal muscle mass, along with mood, energy, and sleep.</p>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card-icon">❤️</div>
-          <div class="feature-card-body">
-            <span class="tl-badge tl-badge-vitality">HealthKit</span>
-            <h3>HealthKit integration</h3>
-            <p>Connect to Apple Health to bring your existing health data into TsukiLift (entirely optional).</p>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card-icon">✦</div>
-          <div class="feature-card-body">
-            <span class="tl-badge tl-badge-accent">Premium</span>
-            <h3>Advanced analysis</h3>
-            <p>Performance trends by cycle phase and deeper insights to fine-tune your training.</p>
-          </div>
-        </div>
-
+  <main class="wrap">
+    <section>
+      <h2>ご家庭のすべてを、まとめて</h2>
+      <div class="grid">
+        <div class="card"><div class="ico">🗓️</div><h3>期限とリマインド</h3><p>ビザ・契約・Emirates ID・パスポート・保険・労働カードの期限を、60/30/7日前にリマインド。</p></div>
+        <div class="card"><div class="ico">⏱️</div><h3>勤務時間と休息チェック</h3><p>勤務を記録し、日次休息・週次休日の簡易チェック、残業と週合計も表示。</p></div>
+        <div class="card"><div class="ico">💵</div><h3>給与と末端手当</h3><p>時給/月給から月額と末端手当（EOSB）を概算。あくまで目安です。</p></div>
+        <div class="card"><div class="ico">🌴</div><h3>休暇の管理</h3><p>年次・病気休暇を記録し、残日数を一目で確認。</p></div>
+        <div class="card"><div class="ico">🔒</div><h3>プライバシー重視</h3><p>アカウント不要・同期なし・データ収集なし。iCloudバックアップに含まれ、CSV/PDFへいつでも書き出し。</p></div>
+        <div class="card"><div class="ico">🌐</div><h3>地域に合わせた設計</h3><p>英語・アラビア語（右から左）・日本語に完全対応、労働基準値は編集可能な参考値。</p></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Who it's for -->
-  <section class="for-you-section">
-    <div class="tl-section">
-      <h2>Who it&#x27;s for</h2>
-      <div class="for-you-grid">
-        <div class="for-you-card">
-          <div class="for-you-icon">🌸</div>
-          <div>
-            <h3>If your condition shifts with your cycle</h3>
-            <p>Record and review how you feel in each phase, and get to know your own rhythm.</p>
-          </div>
-        </div>
-        <div class="for-you-card">
-          <div class="for-you-icon">💪</div>
-          <div>
-            <h3>If you want to log training and keep it up</h3>
-            <p>Manage weight, reps, and RPE set by set. Estimated 1RM makes your progress visible.</p>
-          </div>
-        </div>
-        <div class="for-you-card">
-          <div class="for-you-icon">🔒</div>
-          <div>
-            <h3>If privacy matters to you</h3>
-            <p>All data is stored on your device only. Nothing is ever sent to the cloud or an external server.</p>
-          </div>
-        </div>
-        <div class="for-you-card">
-          <div class="for-you-icon">📱</div>
-          <div>
-            <h3>If you want one app for everything</h3>
-            <p>Period, BBT, symptoms, workouts, and body composition in a single app — with optional HealthKit integration.</p>
-          </div>
-        </div>
+    <section>
+      <h2>よくある質問</h2>
+      <div class="faq">
+        <details open><summary>データは非公開ですか？</summary><p>はい。すべて端末内に保存されます。アカウント・同期・データ収集はありません。記録は iCloud バックアップに含まれ、CSV/PDF へいつでも書き出せます。</p></details>
+        <details><summary>ビザ手続きや給与支払いをしますか？</summary><p>いいえ。Dartrack は私的な記録ツールです。ビザ・契約の手続き、給与支払い（WPS）、法的助言は行いません。表示値は参考値のみ——最新は mohre.gov.ae または専門家にご確認ください。</p></details>
+        <details><summary>Dartrack Pro とは？</summary><p>任意の月額/年額サブスクで、無制限のスタッフ・リマインド・給与/末端手当の概算・評価メモ・エクスポートを解放します。無料プランはスタッフ1名で、解約後もデータの閲覧・書き出しは可能です。</p></details>
       </div>
-    </div>
-  </section>
-
-  <!-- Privacy promise -->
-  <section>
-    <div class="tl-section">
-      <div class="privacy-promise">
-        <div style="font-size:2rem;margin-bottom:0.5rem;">🔒</div>
-        <h2>Your data is yours alone</h2>
-        <ul>
-          <li>All data is stored on your device only</li>
-          <li>Nothing is sent to external servers or the cloud</li>
-          <li>HealthKit integration is optional — every feature works without it</li>
-        </ul>
-        <p class="mt-sm" style="font-size:0.85rem;color:var(--color-text-secondary);">
-          <a href="privacy.html">Read the privacy policy →</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Premium -->
-  <section>
-    <div class="tl-section">
-      <div class="premium-section">
-        <h2>✦ Go deeper with Premium</h2>
-        <div class="premium-price">¥290 <span>/ month (incl. tax)</span></div>
-        <div class="premium-price-annual">Better value at ¥2,380 / year (incl. tax)</div>
-        <ul class="premium-features">
-          <li>Detailed analysis (performance by phase, estimated 1RM trends per exercise)</li>
-          <li>Unlimited workout templates</li>
-          <li>Long-term graphs (look back across your entire history)</li>
-          <li>Symptom patterns (see trends in symptoms that recur)</li>
-        </ul>
-        <p style="font-size:0.8rem;color:var(--color-text-secondary);margin-top:0.5rem;">
-          All core logging features are free to use
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer CTA -->
-  <section style="padding:var(--space-lg) 0;text-align:center;">
-    <a href="https://apps.apple.com/app/id6767084251" class="tl-btn tl-btn-primary" target="_blank" rel="noopener noreferrer">
-      &#x2B07;&#xFE0F; Download on the App Store
-    </a>
-    <p style="margin-top:var(--space-sm);color:var(--color-text-secondary);font-size:0.85rem;">Free · iOS 17 or later / iPhone</p>
-  </section>
-
-</main>
-
-<section style="max-width:720px;margin:0 auto;padding:8px 24px 28px"><p style="font-size:13px;line-height:1.8;opacity:.75;border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:12px 16px;margin:0"><strong>Please note:</strong> This app is not a medical device and is not intended for diagnosis, treatment, contraception, or any other medical decision. Cycle predictions are reference information only. If you have concerns about your health, please consult a doctor.</p></section>
+      <p class="disc">Dartrack は私的な記録を保持します。ビザ・契約の手続き、給与支払い（WPS）、法的助言は行いません。労働基準値は編集可能な参考値のみです。</p>
+    </section>
+  </main>
 </main>
 <footer class="footer">
   <div class="container">
-    <p><a href="index.html">Home</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="../../">← freetokyo apps</a></p>
-    <p class="ftlangs" style="margin-top:8px"><a href="../index.html" hreflang="ja">日本語</a> · <strong>English</strong></p>
-    <p style="margin-top:8px"><a href="mailto:freetokyo2020@yahoo.co.jp">Contact: freetokyo2020@yahoo.co.jp</a></p>
+    <p><a href="index.html">ホーム</a><a href="../support.html">サポート</a><a href="../terms.html">利用規約</a><a href="../privacy.html">プライバシー</a><a href="../../">← freetokyo apps（アプリ一覧）</a></p>
+    <p class="ftlangs" style="margin-top:8px"><a href="../index.html" hreflang="en">English</a> · <a href="../ar/index.html" hreflang="ar">العربية</a> · <strong>日本語</strong></p>
+    <p style="margin-top:8px"><a href="mailto:freetokyo2020@yahoo.co.jp">お問い合わせ: freetokyo2020@yahoo.co.jp</a></p>
     <p style="margin-top:8px">&copy; 2026 freetokyo apps</p>
   </div>
 </footer>
