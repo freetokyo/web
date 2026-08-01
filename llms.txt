@@ -84,7 +84,7 @@
   - App Store: https://apps.apple.com/app/id6788604524
 - [Genbalog](https://freetokyo.github.io/web/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。
   - App Store: https://apps.apple.com/app/id6770864162
-- [hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。
+- [Hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。
   - App Store: https://apps.apple.com/app/id6771629040
 - [Inkarte（インカルテ）](https://freetokyo.github.io/web/inkarte/): タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書 iOS / iPadOS アプリ。カウンセリングから電子署名付き同意書（PDF）まで一台で管理し、顧客情報を端末の外に出さない。完全オフライン・買い切り。※
   - 近日公開 / coming soon
