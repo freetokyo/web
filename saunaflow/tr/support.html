@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">SaunaFlow&#x27;u kullanmak için ne gerekli?</div>
-    <div class="faq-a">iPhone (iOS 17 veya üzeri) ve Apple Watch (watchOS 10 veya üzeri) gereklidir. iPhone&#x27;da önayarlar oluşturun ve Apple Watch&#x27;ta seansları çalıştırın.</div>
+    <div class="faq-q">SaunaFlow'u kullanmak için neye ihtiyacım var?</div>
+    <div class="faq-a">Bir iPhone (iOS 17 veya sonrası) ve bir Apple Watch (watchOS 10 veya sonrası) gerekir. Ön ayarları iPhone'da oluşturur, seansları Apple Watch'ta başlatırsınız.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Watch uygulaması iPhone ile senkronize olmuyor.</div>
-    <div class="faq-a">SaunaFlow&#x27;u hem iPhone&#x27;da hem de Apple Watch&#x27;ta açın ve önayar listesini Watch tarafında görünür tutun. iPhone&#x27;da bir önayarı kaydederek veya düzenleyerek senkronizasyon başlar.</div>
+    <div class="faq-q">Bir ön ayarda neleri belirleyebilirim?</div>
+    <div class="faq-a">Sauna, soğuk havuz, dinlenme ve geçiş aşamalarını, sürelerini ve set sayısını belirleyebilirsiniz. Sık kullandığınız akışı kaydedip tekrar kullanabilirsiniz.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Yalnızca Apple Watch üzerinden kullanabilir miyim?</div>
+    <div class="faq-a">Seans sırasındaki temel kontroller Apple Watch'ta. Ön ayar oluşturma ve geçmişi inceleme iPhone tarafında yapılır.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Watch uygulaması iPhone ile eşitlenmiyor.</div>
+    <div class="faq-a">SaunaFlow'u hem iPhone'da hem Apple Watch'ta açın ve Watch'ta ön ayar listesini ekranda bırakın. iPhone'da bir ön ayarı kaydettiğinizde veya düzenlediğinizde eşitleme başlar. Bluetooth bağlantısını da kontrol edin.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Digital Crown nasıl kullanılıyor?</div>
+    <div class="faq-a">Seans sırasında aşamaları yönetmek için Digital Crown'u çevirin. Ekrana dokunarak duraklatma da desteklenir.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Totonoi Score neyi gösteriyor?</div>
+    <div class="faq-a">Tamamlanan set oranı, aşamalar arasındaki denge ve seans süresinden hesaplanan 0–100 arası bir göstergedir. Tıbbi bir değer değildir ve durumunuz hakkında hiçbir şeyi garanti etmez.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Geçmişi ve notları saklayabilir miyim?</div>
+    <div class="faq-a">Evet, seanslar kaydedilir ve not ekleyebilirsiniz. Önceki seansı yeniden çalıştırmak Premium kapsamındadır.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Tesis ve sıcaklıkları kaydedebilir miyim?</div>
+    <div class="faq-a">Sürüm 1.2'den itibaren tesis adını, sauna sıcaklığını, soğuk havuz sıcaklığını, dış hava sıcaklığını ve löyly yapılıp yapılmadığını kaydedebilirsiniz. Seansın hemen ardından ya da sonradan geçmiş ayrıntılarından girip düzenleyebilir, geçmişi tesise göre süzebilirsiniz.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Watch yanımda değilken kayıt yapabilir miyim?</div>
+    <div class="faq-a">Evet. Geçmiş ekranının sağ üstündeki « + » düğmesine dokunarak seansı elle ekleyebilirsiniz (bu durumda nabız kaydedilmez). « Hey Siri, SaunaFlow'a seans kaydet » de diyebilirsiniz.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">İlerleme sekmesi ve seri hatırlatıcısı nedir?</div>
+    <div class="faq-a">İlerleme sekmesinde haftalık seriyi, kilometre taşı rozetlerini ve ayın özetini görürsünüz. Ayarlardan seri hatırlatıcısını açarsanız cumartesi akşamı yalnızca bir bildirim alırsınız, o da yalnızca o hafta hiç seans kaydedilmediyse.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Premium bir abonelik mi?</div>
-    <div class="faq-a">Hayır. SaunaFlow&#x27;un premiumu tek seferlik bir satın almadır.</div>
+    <div class="faq-a">Hayır. SaunaFlow'un Premium'u tek seferlik satın almadır, yinelenen ücret yoktur.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Verilerim nerede depolanıyor?</div>
-    <div class="faq-a">Önayarlar, geçmiş ve notlar gibi veriler cihazda depolanır ve harici sunuculara gönderilmez.</div>
+    <div class="faq-q">Satın alımımı nasıl geri yüklerim?</div>
+    <div class="faq-a">iPhone uygulamasındaki Premium ekranını açıp « Satın Alımları Geri Yükle » seçeneğini kullanın. Aynı Apple Kimliği ile alındıysa geri yüklenir.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Verilerim nerede saklanıyor?</div>
+    <div class="faq-a">Ön ayarlar, geçmiş ve notlar cihazda kalır. Bu sitede dış sunuculara gönderim anlatılmamaktadır. Ayrıntılar için gizlilik politikasına bakın.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Destekle nasıl iletişime geçerim?</div>
+    <div class="faq-a">Destek e-posta ile veriliyor. freetokyo2020@yahoo.co.jp adresine yazın.</div>
   </div>
 </div>
     <div class="contact-box">

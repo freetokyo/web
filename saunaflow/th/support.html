@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">ต้องการอะไรในการใช้ SaunaFlow?</div>
-    <div class="faq-a">ต้องมี iPhone (iOS 17 ขึ้นไป) และ Apple Watch (watchOS 10 ขึ้นไป) สร้างพรีเซ็ตบน iPhone และรันเซสชันบน Apple Watch</div>
+    <div class="faq-q">ต้องมีอะไรบ้างจึงจะใช้ SaunaFlow ได้</div>
+    <div class="faq-a">ต้องมี iPhone (iOS 17 ขึ้นไป) และ Apple Watch (watchOS 10 ขึ้นไป) โดยสร้างพรีเซ็ตบน iPhone และเริ่มเซสชันบน Apple Watch</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">แอป Watch ไม่ซิงค์กับ iPhone</div>
-    <div class="faq-a">เปิด SaunaFlow ทั้งบน iPhone และ Apple Watch พร้อมกัน โดยให้รายการพรีเซ็ตแสดงบน Watch การซิงค์จะเริ่มเมื่อบันทึกหรือแก้ไขพรีเซ็ตบน iPhone</div>
+    <div class="faq-q">ในพรีเซ็ตตั้งค่าอะไรได้บ้าง</div>
+    <div class="faq-a">ตั้งค่าช่วงซาวน่า แช่น้ำเย็น พัก และช่วงเดิน พร้อมระยะเวลาและจำนวนเซ็ตได้ ลำดับที่ใช้บ่อยบันทึกไว้ใช้ซ้ำได้</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">พรีเมียมเป็นการสมัครสมาชิกหรือไม่?</div>
-    <div class="faq-a">ไม่ พรีเมียมของ SaunaFlow เป็นการซื้อครั้งเดียว</div>
+    <div class="faq-q">ใช้จาก Apple Watch อย่างเดียวได้ไหม</div>
+    <div class="faq-a">ระหว่างเซสชัน การควบคุมหลักอยู่ที่ Apple Watch ส่วนการสร้างพรีเซ็ตและดูประวัติทำบน iPhone</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">ข้อมูลของฉันถูกเก็บไว้ที่ไหน?</div>
-    <div class="faq-a">ข้อมูลเช่นพรีเซ็ต ประวัติ และบันทึกย่อถูกเก็บในอุปกรณ์และไม่ส่งไปยังเซิร์ฟเวอร์ภายนอก</div>
+    <div class="faq-q">แอปบน Watch ไม่ซิงก์กับ iPhone</div>
+    <div class="faq-a">เปิด SaunaFlow ทั้งบน iPhone และ Apple Watch โดยให้ฝั่ง Watch ค้างอยู่ที่รายการพรีเซ็ต การซิงก์จะเริ่มเมื่อคุณบันทึกหรือแก้ไขพรีเซ็ตบน iPhone และโปรดตรวจสอบการเชื่อมต่อ Bluetooth ด้วย</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Digital Crown ใช้อย่างไร</div>
+    <div class="faq-a">ระหว่างเซสชัน หมุน Digital Crown เพื่อควบคุมช่วงต่าง ๆ ได้ และรองรับการแตะหน้าจอเพื่อหยุดชั่วคราวด้วย</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Totonoi Score บอกอะไร</div>
+    <div class="faq-a">เป็นค่าระหว่าง 0 ถึง 100 ที่คำนวณจากอัตราเซ็ตที่ทำครบ ความสมดุลของแต่ละช่วง และระยะเวลาของเซสชัน ไม่ใช่ค่าทางการแพทย์ และไม่ได้รับรองสภาพร่างกายของคุณแต่อย่างใด</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">บันทึกประวัติและโน้ตได้ไหม</div>
+    <div class="faq-a">ได้ เซสชันจะถูกบันทึกไว้และเพิ่มโน้ตได้ ส่วนการเรียกเซสชันครั้งก่อนมาทำซ้ำเป็นฟีเจอร์ของพรีเมียม</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">บันทึกสถานที่และอุณหภูมิได้ไหม</div>
+    <div class="faq-a">ตั้งแต่ v1.2 บันทึกชื่อสถานที่ อุณหภูมิห้องซาวน่า อุณหภูมิน้ำเย็น อุณหภูมิภายนอก และการทำ löyly ได้ กรอกได้ทันทีหลังจบเซสชัน หรือเพิ่มและแก้ไขภายหลังจากรายละเอียดประวัติ ทั้งยังกรองประวัติตามสถานที่ได้</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">วันที่ไม่ได้พก Watch บันทึกได้ไหม</div>
+    <div class="faq-a">ได้ แตะ « + » ที่มุมขวาบนของหน้าประวัติเพื่อเพิ่มด้วยตนเอง (จะไม่มีการบันทึกอัตราการเต้นของหัวใจ) หรือพูดว่า « หวัดดี Siri บันทึกเซสชันใน SaunaFlow » ก็เพิ่มได้เช่นกัน</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">แท็บความคืบหน้าและการเตือนสตรีคคืออะไร</div>
+    <div class="faq-a">แท็บความคืบหน้าแสดงสตรีครายสัปดาห์ เหรียญหมุดหมาย และสรุปของเดือนนี้ หากเปิดการเตือนสตรีคในการตั้งค่า จะแจ้งเตือนเพียงครั้งเดียวในเย็นวันเสาร์ และเฉพาะเมื่อสัปดาห์นั้นยังไม่มีการบันทึกเซสชัน</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">พรีเมียมเป็นแบบสมัครสมาชิกหรือไม่</div>
+    <div class="faq-a">ไม่ใช่ พรีเมียมของ SaunaFlow เป็นการซื้อครั้งเดียว ไม่มีการเรียกเก็บเงินต่อเนื่อง</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">จะกู้คืนการซื้อได้อย่างไร</div>
+    <div class="faq-a">เปิดหน้าพรีเมียมในแอปบน iPhone แล้วเลือก « กู้คืนการซื้อ » หากซื้อด้วย Apple ID เดียวกันก็จะกู้คืนได้</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">ข้อมูลถูกเก็บไว้ที่ไหน</div>
+    <div class="faq-a">พรีเซ็ต ประวัติ และโน้ต จะถูกเก็บไว้ในเครื่อง เว็บไซต์นี้ไม่ได้ระบุการส่งข้อมูลไปยังเซิร์ฟเวอร์ภายนอก รายละเอียดโปรดดูนโยบายความเป็นส่วนตัว</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">ติดต่อสอบถามได้ที่ไหน</div>
+    <div class="faq-a">เราให้บริการผ่านอีเมล หากต้องการความช่วยเหลือ กรุณาติดต่อ freetokyo2020@yahoo.co.jp</div>
   </div>
 </div>
     <div class="contact-box">

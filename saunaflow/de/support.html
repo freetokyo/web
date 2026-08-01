@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -370,33 +375,62 @@
 
       <section class="section">
         <p class="section-title">Erste Schritte</p>
-        <div class="faq-item"><div class="faq-q">Was benötige ich für SaunaFlow?</div><div class="faq-a">Du benötigst ein iPhone mit iOS 17 oder neuer und eine Apple Watch mit watchOS 10 oder neuer. Presets werden auf dem iPhone erstellt, Einheiten auf der Watch gestartet.</div></div>
-        <div class="faq-item"><div class="faq-q">Was lässt sich in einem Preset konfigurieren?</div><div class="faq-a">Sauna-, Kaltbad-, Ruhe- und Bewegungsphasen sowie Dauer und Anzahl der Sets.</div></div>
-        <div class="faq-item"><div class="faq-q">Kann ich die App hauptsächlich auf der Watch nutzen?</div><div class="faq-a">Die Sitzungssteuerung ist watch-zentriert. Preset-Bearbeitung und Verlaufsansicht laufen über das iPhone.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Sync & Steuerung</p>
-        <div class="faq-item"><div class="faq-q">Die Watch synchronisiert nicht mit dem iPhone.</div><div class="faq-a">Öffne SaunaFlow auf beiden Geräten, lasse die Watch auf der Preset-Liste und speichere oder bearbeite ein Preset auf dem iPhone. Prüfe zusätzlich Bluetooth.</div></div>
-        <div class="faq-item"><div class="faq-q">Wie funktioniert die Digital Crown?</div><div class="faq-a">Während einer Einheit dient die Digital Crown zur Phasensteuerung, zusätzlich kann der Bildschirm pausieren.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Totonoi-Score & Verlauf</p>
-        <div class="faq-item"><div class="faq-q">Was bedeutet der Totonoi-Score?</div><div class="faq-a">Es ist eine Zusammenfassung von 0 bis 100 auf Basis von Abschlussrate, Phasenbalance und Dauer. Kein medizinischer Wert.</div></div>
-        <div class="faq-item"><div class="faq-q">Kann ich Verlauf und Notizen speichern?</div><div class="faq-a">Ja. SaunaFlow unterstützt Verlauf und Notizen. Das erneute Starten der letzten Einheit gehört zum Premium-Angebot.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Premium</p>
-        <div class="faq-item"><div class="faq-q">Ist Premium ein Abonnement?</div><div class="faq-a">Nein. Premium wird als Einmalkauf beschrieben.</div></div>
-        <div class="faq-item"><div class="faq-q">Wie stelle ich meinen Kauf wieder her?</div><div class="faq-a">Nutze die Funktion zum Wiederherstellen des Kaufs im Premium-Bereich der iPhone-App mit derselben Apple ID.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Datenschutz & Kontakt</p>
-        <div class="faq-item"><div class="faq-q">Wo werden meine Daten gespeichert?</div><div class="faq-a">Die Seite beschreibt Presets, Verlauf und Notizen als lokal auf dem Gerät gespeichert. Details stehen in der Datenschutzrichtlinie.</div></div>
-        <div class="faq-item"><div class="faq-q">Wie kontaktiere ich den Support?</div><div class="faq-a">Support-Anfragen sollen per E-Mail an freetokyo2020@yahoo.co.jp gesendet werden.</div></div>
+        <div class="faq-item">
+          <div class="faq-q">Was benötige ich, um SaunaFlow zu nutzen?</div>
+          <div class="faq-a">Sie benötigen ein iPhone (iOS 17 oder neuer) und eine Apple Watch (watchOS 10 oder neuer). Presets erstellen Sie auf dem iPhone, die Session starten Sie auf der Apple Watch.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Was kann ich in einem Preset einstellen?</div>
+          <div class="faq-a">Sie können die Phasen Sauna, Kaltwasser, Pause und Übergang sowie deren Dauer und Anzahl der Sets festlegen. Häufig genutzte Abläufe lassen sich speichern und wiederverwenden.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Kann ich SaunaFlow nur mit der Apple Watch bedienen?</div>
+          <div class="faq-a">Die Hauptbedienung während einer laufenden Session erfolgt über die Apple Watch. Das Erstellen von Presets und die Einsicht in den Verlauf erfolgen auf dem iPhone.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Die Watch-App synchronisiert sich nicht mit dem iPhone.</div>
+          <div class="faq-a">Öffnen Sie SaunaFlow sowohl auf dem iPhone als auch auf der Apple Watch, und lassen Sie auf der Watch die Preset-Liste angezeigt. Sobald Sie auf dem iPhone ein Preset speichern oder bearbeiten, beginnt die Synchronisierung. Prüfen Sie außerdem die Bluetooth-Verbindung.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Wie verwende ich die Digital Crown?</div>
+          <div class="faq-a">Während einer Session können Sie mit der Digital Crown die Phasen steuern. Eine Pause per Tippen auf den Bildschirm ist ebenfalls möglich.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Was zeigt der Totonoi Score an?</div>
+          <div class="faq-a">Der Totonoi Score (ein Maß für das entspannte „Totonoi“-Gefühl nach der Sauna) ist ein Wert von 0 bis 100, der sich aus der Abschlussquote der Sets, der Balance der Phasen und der Dauer der Session ergibt. Er ist kein medizinisch geprüfter Wert für Ihr Wohlbefinden.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Kann ich Verlauf und Notizen speichern?</div>
+          <div class="faq-a">Ja, Sie können den Sessionverlauf speichern und Notizen hinzufügen. Die Funktion zum erneuten Ausführen der letzten Session ist Premium-Nutzern vorbehalten.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Kann ich Ort und Temperatur festhalten?</div>
+          <div class="faq-a">Seit v1.2 können Sie den Namen der Einrichtung, die Saunatemperatur, die Kaltwassertemperatur, die Außentemperatur und ob ein Aufguss stattfand, festhalten. Sie können dies direkt nach Abschluss der Session im angezeigten Bogen oder später in den Verlaufsdetails ergänzen und bearbeiten. Der Verlauf lässt sich zudem nach Einrichtung filtern.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Kann ich auch ohne Apple Watch etwas festhalten?</div>
+          <div class="faq-a">Ja. Über das „+“ oben rechts im Verlaufsbildschirm können Sie eine Sauna-Session manuell eintragen (die Herzfrequenz wird dabei nicht erfasst). Auch mit „Hey Siri, Sauna-Session in SaunaFlow aufzeichnen“ können Sie sie hinzufügen.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Was sind der Fortschritts-Tab und die Streak-Erinnerung?</div>
+          <div class="faq-a">Im Fortschritts-Tab sehen Sie Ihre wöchentliche Streak, Meilenstein-Abzeichen und eine Zusammenfassung des aktuellen Monats. Wenn Sie die Streak-Erinnerung in den Einstellungen aktivieren, erhalten Sie nur dann eine einmalige Benachrichtigung am Samstagabend, wenn Sie in dieser Woche keine Sauna-Session hatten.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Ist Premium ein Abonnement?</div>
+          <div class="faq-a">Nein. Premium bei SaunaFlow ist ein einmaliger Kauf, kein Abonnement.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Wie stelle ich einen Kauf wieder her?</div>
+          <div class="faq-a">Wählen Sie im Premium-Bildschirm der iPhone-App „Käufe wiederherstellen“. Wenn Sie mit derselben Apple ID gekauft haben, wird der Kauf wiederhergestellt.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Wo werden meine Daten gespeichert?</div>
+          <div class="faq-a">Presets, Verlauf, Notizen und weitere Daten werden auf Ihrem Gerät gespeichert. Diese Seite enthält keine Angaben zu einer Übertragung an externe Server. Weitere Details finden Sie in der Datenschutzerklärung.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Wie erreiche ich den Support?</div>
+          <div class="faq-a">Der Kontakt erfolgt per E-Mail. Bei Supportanfragen wenden Sie sich bitte an freetokyo2020@yahoo.co.jp.</div>
+        </div>
         <div class="contact">
           <p>Support-Kontakt:</p>
           <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>

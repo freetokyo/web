@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Apa yang saya perlukan untuk menggunakan SaunaFlow?</div>
-    <div class="faq-a">iPhone (iOS 17 atau lebih baru) dan Apple Watch (watchOS 10 atau lebih baru) diperlukan. Buat pratetap di iPhone dan jalankan sesi di Apple Watch.</div>
+    <div class="faq-q">Apakah yang saya perlukan untuk menggunakan SaunaFlow?</div>
+    <div class="faq-a">Anda memerlukan iPhone (iOS 17 atau lebih baharu) dan Apple Watch (watchOS 10 atau lebih baharu). Praset dibuat pada iPhone dan sesi dimulakan pada Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Aplikasi Watch tidak mahu disegerakkan dengan iPhone.</div>
-    <div class="faq-a">Buka SaunaFlow di iPhone dan Apple Watch secara serentak, biarkan senarai pratetap kelihatan di sebelah Watch. Penyegerakan bermula apabila anda menyimpan atau mengedit pratetap di iPhone.</div>
+    <div class="faq-q">Apakah yang boleh saya tetapkan dalam satu praset?</div>
+    <div class="faq-a">Anda boleh menetapkan fasa sauna, rendaman sejuk, rehat dan perpindahan berserta tempohnya dan bilangan set. Rutin yang kerap digunakan boleh disimpan dan digunakan semula.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Adakah premium langganan?</div>
-    <div class="faq-a">Tidak. Premium SaunaFlow adalah pembelian sekali sahaja.</div>
+    <div class="faq-q">Bolehkah saya menggunakannya dari Apple Watch sahaja?</div>
+    <div class="faq-a">Semasa sesi berjalan, kawalan utama berada pada Apple Watch. Pembuatan praset dan semakan sejarah dilakukan pada iPhone.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Di mana data saya disimpan?</div>
-    <div class="faq-a">Data seperti pratetap, sejarah dan nota disimpan pada peranti dan tidak dihantar ke pelayan luaran.</div>
+    <div class="faq-q">Aplikasi Watch tidak menyegerak dengan iPhone.</div>
+    <div class="faq-a">Buka SaunaFlow pada iPhone dan Apple Watch, dan biarkan senarai praset dipaparkan pada Watch. Penyegerakan bermula apabila anda menyimpan atau menyunting praset pada iPhone. Semak juga sambungan Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Bagaimanakah Digital Crown digunakan?</div>
+    <div class="faq-a">Semasa sesi, putarkan Digital Crown untuk mengawal fasa. Jeda dengan mengetik skrin turut disokong.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Apakah yang ditunjukkan oleh Totonoi Score?</div>
+    <div class="faq-a">Ia satu penunjuk 0 hingga 100 yang dikira daripada kadar set yang disiapkan, keseimbangan antara fasa dan tempoh sesi. Ia bukan nilai perubatan dan tidak menjamin apa-apa tentang keadaan anda.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Bolehkah sejarah dan nota disimpan?</div>
+    <div class="faq-a">Boleh. Sesi disimpan dan anda boleh menambah nota. Menjalankan semula sesi terdahulu termasuk dalam Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Bolehkah saya merekod kemudahan dan suhu?</div>
+    <div class="faq-a">Mulai versi 1.2 anda boleh merekod nama kemudahan, suhu bilik sauna, suhu rendaman sejuk, suhu luar dan sama ada terdapat löyly. Isikan sebaik sesi tamat atau tambah kemudian daripada butiran sejarah, dan sejarah boleh ditapis mengikut kemudahan.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Bolehkah saya merekod tanpa Watch?</div>
+    <div class="faq-a">Boleh. Ketik « + » di penjuru kanan atas skrin sejarah untuk menambah sesi secara manual (kadar denyutan jantung tidak direkodkan). Anda juga boleh berkata: « Hai Siri, rekod sesi dalam SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Apakah tab Kemajuan dan peringatan rentetan?</div>
+    <div class="faq-a">Dalam tab Kemajuan anda melihat rentetan mingguan, lencana pencapaian dan ringkasan bulan ini. Jika peringatan rentetan dihidupkan dalam tetapan, anda menerima satu pemberitahuan pada Sabtu petang, dan hanya jika tiada sesi direkodkan pada minggu tersebut.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Adakah Premium satu langganan?</div>
+    <div class="faq-a">Tidak. Premium SaunaFlow ialah pembelian sekali sahaja, tanpa caj berulang.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Bagaimanakah saya memulihkan pembelian?</div>
+    <div class="faq-a">Buka skrin Premium dalam aplikasi iPhone dan pilih « Pulihkan Pembelian ». Pembelian dipulihkan jika anda menggunakan Apple ID yang sama.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Di manakah data saya disimpan?</div>
+    <div class="faq-a">Praset, sejarah dan nota kekal dalam peranti. Laman ini tidak menerangkan sebarang penghantaran ke pelayan luar. Sila rujuk dasar privasi untuk butiran.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Bagaimanakah saya menghubungi sokongan?</div>
+    <div class="faq-a">Sokongan disediakan melalui e-mel. Sila tulis ke freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

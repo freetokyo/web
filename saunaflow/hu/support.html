@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -365,19 +370,59 @@
     <div class="faq-section">
   <div class="faq-item">
     <div class="faq-q">Mire van szükségem a SaunaFlow használatához?</div>
-    <div class="faq-a">iPhone (iOS 17 vagy újabb) és Apple Watch (watchOS 10 vagy újabb) szükséges. Hozzon létre előbeállításokat az iPhone-on, és futtasson munkameneteket az Apple Watchon.</div>
+    <div class="faq-a">Egy iPhone (iOS 17 vagy újabb) és egy Apple Watch (watchOS 10 vagy újabb) szükséges. Az előbeállításokat iPhone-on hozod létre, a foglalkozásokat pedig Apple Watchon indítod.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">A Watch alkalmazás nem szinkronizálódik az iPhone-nal.</div>
-    <div class="faq-a">Nyissa meg a SaunaFlow-t iPhone-on és Apple Watchon egyszerre, az előbeállítás-listát a Watch oldalán láthatóan tartva. A szinkronizálás akkor kezdődik, amikor menti vagy szerkeszti az előbeállítást az iPhone-on.</div>
+    <div class="faq-q">Mit állíthatok be egy előbeállításban?</div>
+    <div class="faq-a">Megadhatod a szauna, a hideg merülés, a pihenés és az átvonulás fázisait, azok hosszát és a körök számát. A gyakran használt menetet elmentheted és újra felhasználhatod.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">A prémium előfizetés?</div>
-    <div class="faq-a">Nem. A SaunaFlow prémiumja egyszeri vásárlás.</div>
+    <div class="faq-q">Használhatom csak az Apple Watchról?</div>
+    <div class="faq-a">A foglalkozás közbeni fő vezérlés az Apple Watchon történik. Az előbeállítások létrehozása és az előzmények megtekintése iPhone-on zajlik.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">A Watch-alkalmazás nem szinkronizál az iPhone-nal.</div>
+    <div class="faq-a">Nyisd meg a SaunaFlow-t az iPhone-on és az Apple Watchon is, a Watchon hagyd az előbeállítások listáját a képernyőn. A szinkronizálás akkor indul, amikor iPhone-on mentesz vagy szerkesztesz egy előbeállítást. Ellenőrizd a Bluetooth-kapcsolatot is.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hogyan működik a Digital Crown?</div>
+    <div class="faq-a">Foglalkozás közben a Digital Crown forgatásával válthatsz fázist. A képernyő megérintésével történő szüneteltetés is működik.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mit jelent a Totonoi Score?</div>
+    <div class="faq-a">0–100 közötti mutató, amelyet a teljesített körök aránya, a fázisok egyensúlya és a foglalkozás hossza alapján számolunk. Nem orvosi érték, és semmit nem igazol az állapotodról.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Menthetek előzményeket és jegyzeteket?</div>
+    <div class="faq-a">Igen, a foglalkozások mentődnek, és jegyzetet is fűzhetsz hozzájuk. Az előző foglalkozás újrafuttatása a Premium része.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Rögzíthetem a helyszínt és a hőmérsékleteket?</div>
+    <div class="faq-a">Az 1.2-es verziótól rögzítheted a helyszín nevét, a szauna hőmérsékletét, a hideg merülőét, a külső hőmérsékletet és azt, hogy volt-e löyly. Közvetlenül a foglalkozás után vagy később, az előzmények részleteinél töltheted ki, és az előzményeket helyszín szerint szűrheted.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Rögzíthetek Watch nélkül is?</div>
+    <div class="faq-a">Igen. Koppints az előzmények jobb felső sarkában a « + » gombra, és vedd fel kézzel a foglalkozást (a pulzus ilyenkor nem kerül rögzítésre). Azt is mondhatod: « Szia Siri, rögzíts egy foglalkozást a SaunaFlow-ban ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mi a Haladás fül és a sorozat-emlékeztető?</div>
+    <div class="faq-a">A Haladás fülön látod a heti sorozatot, a mérföldkő-jelvényeket és a havi összegzést. Ha a beállításokban bekapcsolod a sorozat-emlékeztetőt, szombat este egyetlen értesítést kapsz, és csak akkor, ha azon a héten nem rögzítettél foglalkozást.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">A Premium előfizetés?</div>
+    <div class="faq-a">Nem. A SaunaFlow Premium egyszeri vásárlás, nincs ismétlődő díj.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hogyan állíthatom vissza a vásárlásomat?</div>
+    <div class="faq-a">Nyisd meg a Premium képernyőt az iPhone-alkalmazásban, és válaszd a « Vásárlások visszaállítása » lehetőséget. A vásárlás visszaáll, ha ugyanazt az Apple ID-t használod.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Hol tárolódnak az adataim?</div>
-    <div class="faq-a">Az előbeállítások, az előzmények és a jegyzetek az eszközön tárolódnak, és nem kerülnek külső szerverekre.</div>
+    <div class="faq-a">Az előbeállítások, az előzmények és a jegyzetek a készüléken maradnak. Ez az oldal semmilyen külső kiszolgálóra küldést nem ír le. A részletekért olvasd el az adatvédelmi tájékoztatót.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hogyan érhetem el a támogatást?</div>
+    <div class="faq-a">A támogatás e-mailben működik. Írj a freetokyo2020@yahoo.co.jp címre.</div>
   </div>
 </div>
     <div class="contact-box">

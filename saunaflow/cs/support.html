@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -365,19 +370,59 @@
     <div class="faq-section">
   <div class="faq-item">
     <div class="faq-q">Co potřebuji k používání SaunaFlow?</div>
-    <div class="faq-a">Je vyžadován iPhone (iOS 17 nebo novější) a Apple Watch (watchOS 10 nebo novější). Vytvořte předvolby na iPhone a spusťte sezení na Apple Watch.</div>
+    <div class="faq-a">Potřebujete iPhone (s iOS 17 nebo novějším) a Apple Watch (s watchOS 10 nebo novějším). Předvolby se vytvářejí na iPhonu a relace se spouštějí na Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Aplikace Watch se nesynchronizuje s iPhone.</div>
-    <div class="faq-a">Otevřete SaunaFlow na iPhone i Apple Watch a ponechte na Watch zobrazeném seznam předvoleb. Synchronizace se spustí při uložení nebo úpravě předvolby na iPhone.</div>
+    <div class="faq-q">Co lze nastavit v předvolbě?</div>
+    <div class="faq-a">Můžete nastavit fáze sauny, studené koupele, odpočinku a přesunu, včetně jejich délky a počtu kol. Často používané postupy si můžete uložit a znovu použít.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Je premium předplatné?</div>
-    <div class="faq-a">Ne. Premium SaunaFlow je jednorázový nákup.</div>
+    <div class="faq-q">Dá se ovládat pouze pomocí Apple Watch?</div>
+    <div class="faq-a">Hlavní ovládání během relace probíhá na Apple Watch. Vytváření předvoleb a prohlížení historie se řeší na iPhonu.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Kde jsou uložena moje data?</div>
-    <div class="faq-a">Data jako předvolby, historie a poznámky jsou uložena v zařízení a nejsou odesílána na externí servery.</div>
+    <div class="faq-q">Aplikace Watch se nesynchronizuje s iPhonem.</div>
+    <div class="faq-a">Otevřete SaunaFlow na iPhonu i na Apple Watch a nechte na Watch zobrazený seznam předvoleb. Synchronizace se spustí, jakmile na iPhonu uložíte nebo upravíte předvolbu. Zkontrolujte také připojení Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Jak se používá Digital Crown?</div>
+    <div class="faq-a">Během relace můžete otáčením Digital Crown ovládat fáze. Pozastavení funguje i klepnutím na displej.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Co znázorňuje Totonoi Score?</div>
+    <div class="faq-a">Jde o ukazatel na škále 0 až 100 bodů, vypočtený z míry dokončení kol, vyváženosti fází a délky trvání relace. Nejde o hodnotu, která by lékařsky garantovala samotný zážitek.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Dá se uchovávat historie a poznámky?</div>
+    <div class="faq-a">Historii relací si můžete ukládat a přidávat k ní poznámky. Funkce opětovného spuštění poslední relace je dostupná pouze v Premium verzi.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Dá se zaznamenat zařízení a teplota?</div>
+    <div class="faq-a">Od verze v1.2 lze zaznamenat název zařízení, teplotu v sauně, teplotu studené koupele, venkovní teplotu a zda proběhl löyly. Údaje můžete doplnit nebo upravit hned po dokončení relace nebo v detailu historie a historii lze filtrovat podle zařízení.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Dá se zaznamenat návštěva i ve dnech, kdy nenosím Watch?</div>
+    <div class="faq-a">Ano. Relaci můžete ručně zaznamenat pomocí tlačítka „+“ vpravo nahoře na obrazovce historie (tepová frekvence se nezaznamená). Přidat ji lze i příkazem „Hey Siri, zaznamenej saunování v SaunaFlow“.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Co jsou záložka Postup a připomínka série?</div>
+    <div class="faq-a">Na záložce Postup najdete týdenní sérii, odznaky za milníky a měsíční přehled. Po zapnutí připomínky série v nastavení dostanete v sobotu večer jedno upozornění, ale pouze pokud jste ten týden neměli žádnou relaci.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Je Premium předplatné?</div>
+    <div class="faq-a">Ne. Premium verze SaunaFlow je jednorázový nákup, nejde o opakovanou platbu.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Jak obnovím nákup?</div>
+    <div class="faq-a">Na obrazovce Premium v aplikaci na iPhonu vyberte „Obnovit nákupy“. Pokud jste nakupovali se stejným Apple ID, nákup se obnoví.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kde se ukládají data?</div>
+    <div class="faq-a">Data jako předvolby, historie a poznámky se ukládají v zařízení. Na těchto stránkách není uvedeno, že by se odesílala na externí server. Podrobnosti najdete v zásadách ochrany osobních údajů.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Na koho se mohu obrátit?</div>
+    <div class="faq-a">Kontaktovat nás můžete e-mailem. Pokud potřebujete podporu, napište na freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

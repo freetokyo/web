@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Mitä tarvitsen SaunaFlow&#x27;n käyttämiseen?</div>
-    <div class="faq-a">Tarvitset iPhone-laitteen (iOS 17 tai uudempi) ja Apple Watchin (watchOS 10 tai uudempi). Luo esiasetukset iPhonella ja suorita istunnot Apple Watchilla.</div>
+    <div class="faq-q">Mitä tarvitsen SaunaFlow'n käyttöön?</div>
+    <div class="faq-a">Tarvitset iPhonen (iOS 17 tai uudempi) ja Apple Watchin (watchOS 10 tai uudempi). Luot esiasetukset iPhonella ja aloitat sessiot Apple Watchilla.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mitä esiasetuksessa voi määrittää?</div>
+    <div class="faq-a">Voit määrittää saunan, kylmävesialtaan, tauon ja siirtymän vaiheet sekä niiden keston ja settien määrän. Usein käytetyt kulut voi tallentaa ja käyttää uudelleen.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Voinko käyttää SaunaFlow'ta pelkällä Apple Watchilla?</div>
+    <div class="faq-a">Session aikaiset pääasialliset toiminnot hoituvat Apple Watchilla. Esiasetusten luominen ja historian tarkastelu tehdään iPhonella.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Watch-sovellus ei synkronoidu iPhonen kanssa.</div>
-    <div class="faq-a">Avaa SaunaFlow sekä iPhonessa että Apple Watchissa pitäen esiasetusluettelo näkyvissä Watch-puolella. Synkronointi alkaa, kun tallennat tai muokkaat esiasetusta iPhonessa.</div>
+    <div class="faq-a">Avaa SaunaFlow sekä iPhonella että Apple Watchilla ja pidä esiasetusluettelo näkyvissä Watchilla. Synkronointi käynnistyy, kun tallennat tai muokkaat esiasetusta iPhonella. Tarkista myös Bluetooth-yhteys.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Onko premium tilaus?</div>
-    <div class="faq-a">Ei. SaunaFlow&#x27;n premium on kertaosto.</div>
+    <div class="faq-q">Miten Digital Crownia käytetään?</div>
+    <div class="faq-a">Session aikana voit kääntää Digital Crownia vaiheiden hallintaan. Myös näytön napauttaminen tauon pitämiseksi toimii.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Missä tietoni tallennetaan?</div>
-    <div class="faq-a">Tiedot kuten esiasetukset, historia ja muistiinpanot tallennetaan laitteelle eikä niitä lähetetä ulkoisille palvelimille.</div>
+    <div class="faq-q">Mitä Totonoi Score kertoo?</div>
+    <div class="faq-a">Totonoi Score (mittari, joka kuvaa saunomisen jälkeistä rentoutunutta ”totonoi”-oloa) on 0–100 pisteen luku, joka perustuu settien suoritusprosenttiin, vaiheiden tasapainoon ja session kestoon. Se ei ole lääketieteellinen mittari kokemuksestasi.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Voinko tallentaa historiaa ja muistiinpanoja?</div>
+    <div class="faq-a">Kyllä, voit tallentaa session historian ja lisätä muistiinpanoja. Edellisen session toistaminen on Premium-ominaisuus.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Voinko tallentaa paikan ja lämpötilat?</div>
+    <div class="faq-a">Versiosta 1.2 alkaen voit tallentaa paikan nimen, saunan lämpötilan, kylmävesialtaan lämpötilan, ulkolämpötilan sekä sen, heitettiinkö löylyä. Voit lisätä tai muokata näitä heti session päätyttyä näkyvästä lomakkeesta tai historian tiedoista, ja historiaa voi suodattaa paikan mukaan.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Voinko tallentaa saunareissun ilman Watchia?</div>
+    <div class="faq-a">Kyllä. Historianäkymän oikeasta yläkulmasta löytyvästä ”+”-painikkeesta voit lisätä saunareissun manuaalisesti (sykettä ei tällöin tallenneta). Voit lisätä sen myös sanomalla ”Hei Siri, tallenna saunareissu SaunaFlow'hun”.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mitä ovat Edistyminen-välilehti ja putken muistutus?</div>
+    <div class="faq-a">Edistyminen-välilehdeltä näet viikoittaisen putken, virstanpylväsmerkit ja kuukauden yhteenvedon. Kun otat asetuksista putken muistutuksen käyttöön, saat vain yhden ilmoituksen lauantai-iltana, jos et ole sinä viikkona käynyt saunassa.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Onko Premium tilaus?</div>
+    <div class="faq-a">Ei. SaunaFlow'n Premium on kertaostos, ei jatkuva tilaus.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Miten palautan ostoksen?</div>
+    <div class="faq-a">Valitse iPhone-sovelluksen Premium-näytöstä ”Palauta ostokset”. Jos olet ostanut samalla Apple ID:llä, ostos palautuu.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Missä tietoni säilytetään?</div>
+    <div class="faq-a">Esiasetukset, historia, muistiinpanot ja muu data tallennetaan laitteellesi. Tällä sivulla ei kerrota tietojen lähettämisestä ulkoisille palvelimille. Katso lisätiedot tietosuojakäytännöstä.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mistä saan tukea?</div>
+    <div class="faq-a">Yhteydenotot hoidetaan sähköpostitse. Jos tarvitset tukea, ota yhteyttä osoitteeseen freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

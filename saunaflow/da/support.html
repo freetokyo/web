@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Hvad har jeg brug for at bruge SaunaFlow?</div>
-    <div class="faq-a">En iPhone (iOS 17 eller nyere) og Apple Watch (watchOS 10 eller nyere) er påkrævet. Opret forudindstillinger på iPhone og kør sessioner på Apple Watch.</div>
+    <div class="faq-q">Hvad skal jeg bruge for at bruge SaunaFlow?</div>
+    <div class="faq-a">Du skal bruge en iPhone (med iOS 17 eller nyere) og et Apple Watch (med watchOS 10 eller nyere). Forudindstillinger oprettes på iPhone, og sessioner startes fra Apple Watch.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hvad kan man indstille i en forudindstilling?</div>
+    <div class="faq-a">Du kan indstille faserne for sauna, koldt bad, pause og forflytning samt varighed og antal omgange. Du kan gemme forløb, du bruger ofte, og genbruge dem.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan man betjene appen kun med Apple Watch?</div>
+    <div class="faq-a">De primære betjeninger under en session foregår på Apple Watch. Oprettelse af forudindstillinger og gennemgang af historik foregår på iPhone.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Watch-appen synkroniserer ikke med iPhone.</div>
-    <div class="faq-a">Åbn SaunaFlow på både iPhone og Apple Watch med listen over forudindstillinger synlig på Watch. Synkroniseringen starter, når du gemmer eller redigerer en forudindstilling på iPhone.</div>
+    <div class="faq-a">Åbn SaunaFlow på både iPhone og Apple Watch, og lad listen over forudindstillinger stå fremme på Watch. Synkroniseringen starter, når du gemmer eller redigerer en forudindstilling på iPhone. Tjek også Bluetooth-forbindelsen.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Er premium et abonnement?</div>
-    <div class="faq-a">Nej. SaunaFlow&#x27;s premium er et engangskøb.</div>
+    <div class="faq-q">Hvordan bruger jeg Digital Crown?</div>
+    <div class="faq-a">Under en session kan du dreje på Digital Crown for at styre faserne. Du kan også sætte på pause ved at trykke på skærmen.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Hvor gemmes mine data?</div>
-    <div class="faq-a">Data som forudindstillinger, historik og noter gemmes på enheden og sendes ikke til eksterne servere.</div>
+    <div class="faq-q">Hvad viser Totonoi Score?</div>
+    <div class="faq-a">Det er en indikator på en skala fra 0 til 100 point, beregnet ud fra andelen af gennemførte omgange, balancen mellem faserne og sessionens varighed. Det er ikke et tal, der medicinsk garanterer selve oplevelsen.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan jeg gemme historik og noter?</div>
+    <div class="faq-a">Du kan gemme sessionshistorik og tilføje noter. Funktionen til at gentage den seneste session er forbeholdt Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan jeg registrere sted og temperatur?</div>
+    <div class="faq-a">Fra v1.2 kan du registrere stedets navn, saunatemperatur, temperatur i det kolde bad, udetemperatur samt om der har været löyly. Du kan tilføje eller redigere det lige efter en session eller fra historikdetaljerne, og du kan filtrere historikken efter sted.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan jeg registrere en session på dage, hvor jeg ikke har Watch på?</div>
+    <div class="faq-a">Ja. Du kan registrere en session manuelt via »+« øverst til højre på historikskærmen (puls registreres ikke). Du kan også tilføje den ved at sige »Hey Siri, registrer en saunasession i SaunaFlow«.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hvad er fanen Fremskridt og streak-påmindelsen?</div>
+    <div class="faq-a">På fanen Fremskridt kan du se din ugentlige streak, milepælsbadges og en opsummering af måneden. Hvis du slår streak-påmindelsen til i indstillingerne, får du én notifikation lørdag aften, men kun hvis du ikke har haft en session i den uge.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Er Premium et abonnement?</div>
+    <div class="faq-a">Nej. Premium i SaunaFlow er et engangskøb og ikke et løbende abonnement.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hvordan gendanner jeg mit køb?</div>
+    <div class="faq-a">Vælg »Gendan køb« på Premium-skærmen i iPhone-appen. Hvis du har købt med samme Apple ID, bliver det gendannet.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hvor gemmes dataene?</div>
+    <div class="faq-a">Data som forudindstillinger, historik og noter gemmes på enheden. Der er ikke noget på denne side, der beskriver, at data sendes til en ekstern server. Se privatlivspolitikken for flere detaljer.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hvor kan jeg henvende mig?</div>
+    <div class="faq-a">Du kan kontakte os via e-mail. Hvis du har brug for support, kan du skrive til freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

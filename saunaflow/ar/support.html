@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -365,19 +370,59 @@
     <div class="faq-section">
   <div class="faq-item">
     <div class="faq-q">ما الذي أحتاجه لاستخدام SaunaFlow؟</div>
-    <div class="faq-a">يلزم وجود iPhone (iOS 17 أو أحدث) وApple Watch (watchOS 10 أو أحدث). أنشئ الإعدادات المسبقة على iPhone وشغّل الجلسات على Apple Watch.</div>
+    <div class="faq-a">تحتاج إلى iPhone (بنظام iOS 17 أو أحدث) و Apple Watch (بنظام watchOS 10 أو أحدث). يتم إنشاء الإعدادات المسبقة على iPhone، بينما تبدأ الجلسات من Apple Watch.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">ما الذي يمكن ضبطه في الإعدادات المسبقة؟</div>
+    <div class="faq-a">يمكنك ضبط مراحل الساونا، وحمام الماء البارد، والراحة، والتنقل، بالإضافة إلى المدة الزمنية وعدد المجموعات لكل مرحلة. يمكنك حفظ التسلسلات التي تستخدمها كثيرًا لإعادة استخدامها.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">هل يمكن التشغيل باستخدام Apple Watch فقط؟</div>
+    <div class="faq-a">يتم تنفيذ العمليات الرئيسية أثناء الجلسة على Apple Watch. أما إنشاء الإعدادات المسبقة ومراجعة السجل فتتم من خلال iPhone.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">تطبيق Watch لا يتزامن مع iPhone.</div>
-    <div class="faq-a">افتح SaunaFlow على iPhone وApple Watch في الوقت ذاته، مع إبقاء قائمة الإعدادات المسبقة ظاهرة على Watch. سيبدأ التزامن عند حفظ إعداد مسبق أو تعديله على iPhone.</div>
+    <div class="faq-a">افتح SaunaFlow على كل من iPhone و Apple Watch، واترك قائمة الإعدادات المسبقة ظاهرة على الـ Watch. عند حفظ أو تعديل إعداد مسبق على iPhone، تبدأ عملية المزامنة. تأكد أيضًا من اتصال Bluetooth.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">هل الميزات المدفوعة اشتراك؟</div>
-    <div class="faq-a">لا. الميزات المدفوعة في SaunaFlow عبارة عن شراء لمرة واحدة.</div>
+    <div class="faq-q">كيف أستخدم Digital Crown؟</div>
+    <div class="faq-a">يمكنك تدوير Digital Crown أثناء الجلسة للتحكم في المراحل. كما يمكنك الإيقاف المؤقت عن طريق النقر على الشاشة.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">أين يتم تخزين بياناتي؟</div>
-    <div class="faq-a">يتم تخزين البيانات مثل الإعدادات المسبقة والسجل والملاحظات على الجهاز، ولا يتم إرسالها إلى خوادم خارجية.</div>
+    <div class="faq-q">ما الذي تمثله Totonoi Score (نتيجة التوتونوي)؟</div>
+    <div class="faq-a">هي مؤشر مرئي من 0 إلى 100 نقطة، يُحسب بناءً على معدل إكمال المجموعات، وتوازن المراحل، ومدة استمرار الجلسة. وهي ليست رقمًا يضمن التجربة نفسها من الناحية الطبية.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">هل يمكنني الاحتفاظ بالسجل والملاحظات؟</div>
+    <div class="faq-a">يمكنك حفظ سجل الجلسات وإضافة ملاحظات إليها. ميزة إعادة تنفيذ الجلسة السابقة متاحة فقط في النسخة المميزة (Premium).</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">هل يمكن تسجيل المنشأة ودرجة الحرارة؟</div>
+    <div class="faq-a">بدءًا من الإصدار v1.2، يمكنك تسجيل اسم المنشأة، ودرجة حرارة غرفة الساونا، ودرجة حرارة حمام الماء البارد، ودرجة حرارة الهواء الخارجي، ووجود اللويلي (Löyly) من عدمه. يمكنك إضافة هذه المعلومات أو تعديلها من الشاشة التي تظهر مباشرة بعد انتهاء الجلسة أو من تفاصيل السجل، كما يمكنك تصفية السجل حسب المنشأة.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">هل يمكنني التسجيل في الأيام التي لا أرتدي فيها الـ Watch؟</div>
+    <div class="faq-a">نعم. يمكنك تسجيل جلسة ساونا يدويًا من زر «+» أعلى يمين شاشة السجل (لن يتم تسجيل معدل ضربات القلب). يمكنك أيضًا الإضافة عبر قول «Hey Siri، سجّل جلسة ساونا في SaunaFlow».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">ما هي علامة التقدم وتذكير التتابع (Streak Reminder)؟</div>
+    <div class="faq-a">في علامة التقدم يمكنك الاطلاع على التتابع الأسبوعي، وشارات الإنجاز، وملخص الشهر الحالي. عند تفعيل تذكير التتابع من الإعدادات، سيصلك إشعار واحد فقط مساء يوم السبت في حال عدم وجود جلسة ساونا خلال ذلك الأسبوع.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">هل النسخة المميزة (Premium) اشتراك؟</div>
+    <div class="faq-a">لا. النسخة المميزة في SaunaFlow هي عملية شراء لمرة واحدة، وليست اشتراكًا متكررًا.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">كيف يمكنني استعادة عملية الشراء؟</div>
+    <div class="faq-a">اختر «استعادة المشتريات» من شاشة النسخة المميزة داخل تطبيق iPhone. إذا كنت قد قمت بالشراء باستخدام نفس Apple ID، ستتم استعادته.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">أين يتم حفظ البيانات؟</div>
+    <div class="faq-a">يتم حفظ البيانات مثل الإعدادات المسبقة والسجل والملاحظات داخل الجهاز. لا يوجد في هذا الموقع ما يشير إلى إرسالها إلى خوادم خارجية. للمزيد من التفاصيل، يُرجى مراجعة سياسة الخصوصية.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">كيف يمكنني التواصل معكم؟</div>
+    <div class="faq-a">يمكنك التواصل معنا عبر البريد الإلكتروني. إذا كنت بحاجة إلى الدعم، يُرجى التواصل عبر freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

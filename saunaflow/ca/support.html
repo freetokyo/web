@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Què necessito per usar SaunaFlow?</div>
-    <div class="faq-a">Cal un iPhone (iOS 17 o posterior) i un Apple Watch (watchOS 10 o posterior). Crea presets a l&#x27;iPhone i executa les sessions a l&#x27;Apple Watch.</div>
+    <div class="faq-q">Què necessito per utilitzar SaunaFlow?</div>
+    <div class="faq-a">Necessites un iPhone (amb iOS 17 o posterior) i un Apple Watch (amb watchOS 10 o posterior). Els preajustaments es creen a l'iPhone i les sessions s'inicien des de l'Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">L&#x27;app Watch no es sincronitza amb l&#x27;iPhone.</div>
-    <div class="faq-a">Obre SaunaFlow tant a l&#x27;iPhone com a l&#x27;Apple Watch, mantenint la llista de presets visible al Watch. En desar o editar un preset a l&#x27;iPhone s&#x27;inicia la sincronització.</div>
+    <div class="faq-q">Què es pot configurar en un preajustament?</div>
+    <div class="faq-a">Pots configurar les fases de sauna, bany fred, descans i desplaçament, així com la seva durada i el nombre de tandes. Pots desar les seqüències que fas servir sovint per reutilitzar-les.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">El premium és una subscripció?</div>
-    <div class="faq-a">No. El premium de SaunaFlow és una compra única.</div>
+    <div class="faq-q">Es pot fer servir només amb l'Apple Watch?</div>
+    <div class="faq-a">Les operacions principals durant la sessió es fan des de l'Apple Watch. La creació de preajustaments i la consulta de l'historial es fan des de l'iPhone.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">On es guarden les meves dades?</div>
-    <div class="faq-a">Les dades com els presets, l&#x27;historial i les notes es guarden al dispositiu i no s&#x27;envien a servidors externs.</div>
+    <div class="faq-q">L'app de Watch no se sincronitza amb l'iPhone.</div>
+    <div class="faq-a">Obre SaunaFlow tant a l'iPhone com a l'Apple Watch, i deixa la llista de preajustaments oberta al Watch. La sincronització comença quan desis o editis un preajustament a l'iPhone. Comprova també la connexió Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Com es fa servir el Digital Crown?</div>
+    <div class="faq-a">Durant la sessió, pots girar el Digital Crown per controlar les fases. També pots posar en pausa tocant la pantalla.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Què representa el Totonoi Score?</div>
+    <div class="faq-a">És un indicador visual, de 0 a 100 punts, calculat a partir del percentatge de tandes completades, l'equilibri entre fases i la durada de la sessió. No és una xifra que garanteixi l'experiència des d'un punt de vista mèdic.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puc conservar l'historial i les notes?</div>
+    <div class="faq-a">Pots desar l'historial de sessions i afegir-hi notes. La funció per repetir l'última sessió és exclusiva de la versió Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Es poden registrar l'establiment i la temperatura?</div>
+    <div class="faq-a">Des de la v1.2 pots registrar el nom de l'establiment, la temperatura de la sauna, la temperatura del bany fred, la temperatura exterior i si hi ha hagut löyly. Ho pots afegir o editar just després d'acabar la sessió o des del detall de l'historial, i pots filtrar l'historial per establiment.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puc registrar una sessió els dies que no porto el Watch?</div>
+    <div class="faq-a">Sí. Pots registrar una sessió manualment des del botó «+» a la part superior dreta de la pantalla d'historial (no es registrarà el ritme cardíac). També pots afegir-la dient «Hey Siri, registra una sessió a SaunaFlow».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Què són la pestanya de progrés i el recordatori de ratxa?</div>
+    <div class="faq-a">A la pestanya de progrés pots consultar la ratxa setmanal, les insígnies de fites i el resum del mes. Si actives el recordatori de ratxa a la configuració, rebràs una única notificació el dissabte a la tarda, només si aquella setmana no has registrat cap sessió.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">La versió Premium és una subscripció?</div>
+    <div class="faq-a">No. La versió Premium de SaunaFlow és una compra única. No és un pagament recurrent.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Com puc restaurar una compra?</div>
+    <div class="faq-a">Selecciona «Restaura les compres» a la pantalla Premium dins de l'app de l'iPhone. Si vas fer la compra amb el mateix Apple ID, es restaurarà.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">On es guarden les dades?</div>
+    <div class="faq-a">Les dades com els preajustaments, l'historial i les notes es guarden al dispositiu. Aquest lloc no indica que s'enviïn a cap servidor extern. Consulta la política de privacitat per a més detalls.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">On puc contactar amb vosaltres?</div>
+    <div class="faq-a">Pots contactar-nos per correu electrònic. Si necessites assistència, escriu a freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

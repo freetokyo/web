@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">使用SaunaFlow需要什麼？</div>
-    <div class="faq-a">需要iPhone（iOS 17或更高版本）和Apple Watch（watchOS 10或更高版本）。在iPhone上建立預設，在Apple Watch上執行訓練。</div>
+    <div class="faq-q">使用 SaunaFlow 需要什麼？</div>
+    <div class="faq-a">需要 iPhone（iOS 17 或以上）與 Apple Watch（watchOS 10 或以上）。預設組合在 iPhone 上建立，流程則在 Apple Watch 上開始。</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Watch應用程式無法與iPhone同步。</div>
-    <div class="faq-a">同時在iPhone和Apple Watch上開啟SaunaFlow，保持Watch端預設清單可見。在iPhone上儲存或編輯預設即可開始同步。</div>
+    <div class="faq-q">預設組合可以設定哪些項目？</div>
+    <div class="faq-a">可以設定三溫暖、冷水池、休息、移動等各階段及其時間與組數。常用的流程可以儲存起來重複使用。</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">高級版是訂閱制嗎？</div>
-    <div class="faq-a">不是。SaunaFlow的高級版是一次性購買。</div>
+    <div class="faq-q">只用 Apple Watch 就能操作嗎？</div>
+    <div class="faq-a">流程進行中的主要操作在 Apple Watch 上完成。建立預設組合與查看紀錄則在 iPhone 上進行。</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">我的資料存放在哪裡？</div>
-    <div class="faq-a">預設、歷史記錄和備註等資料儲存在裝置上，不會傳送至外部伺服器。</div>
+    <div class="faq-q">Watch App 無法與 iPhone 同步。</div>
+    <div class="faq-a">請在 iPhone 與 Apple Watch 上同時開啟 SaunaFlow，並讓 Watch 停留在預設組合清單。在 iPhone 上儲存或編輯預設組合後就會開始同步。也請確認藍牙連線。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Digital Crown 怎麼使用？</div>
+    <div class="faq-a">流程進行中轉動 Digital Crown 即可切換階段。也支援輕點螢幕暫停。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Totonoi Score（整備分數）代表什麼？</div>
+    <div class="faq-a">這是依據完成組數比例、各階段的平衡以及流程時間換算出的 0～100 分指標。它並非醫學數值，不對你的身體狀態作任何保證。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以保留紀錄與筆記嗎？</div>
+    <div class="faq-a">可以，流程紀錄會保存下來，也能寫下筆記。重新執行上一次流程屬於進階版功能。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以記錄場館與溫度嗎？</div>
+    <div class="faq-a">自 v1.2 起可記錄場館名稱、三溫暖室溫、冷水池水溫、戶外氣溫以及是否有 löyly。可在流程結束後的表單填寫，也可以之後從紀錄詳情補充與修改，紀錄還能依場館篩選。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">沒戴 Watch 的日子也能記錄嗎？</div>
+    <div class="faq-a">可以。在紀錄畫面右上角點一下「+」即可手動新增（此時不會記錄心率）。也可以說「嘿 Siri，用 SaunaFlow 記錄一次」來新增。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">進度標籤頁與連續紀錄提醒是什麼？</div>
+    <div class="faq-a">進度標籤頁可查看每週連續紀錄、里程碑徽章與本月摘要。在設定中開啟連續紀錄提醒後，只有當週沒有紀錄時，才會在週六傍晚提醒一次。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">進階版是訂閱制嗎？</div>
+    <div class="faq-a">不是。SaunaFlow 的進階版為一次買斷，沒有週期性扣款。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">要如何回復購買項目？</div>
+    <div class="faq-a">請在 iPhone App 的進階版頁面選擇「回復購買項目」。若曾以相同的 Apple ID 購買即可回復。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">資料儲存在哪裡？</div>
+    <div class="faq-a">預設組合、紀錄、筆記等資料儲存在裝置內。本網站並未說明任何傳送至外部伺服器的行為。詳情請參閱隱私權政策。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">聯絡方式為何？</div>
+    <div class="faq-a">我們透過電子郵件提供支援。需要協助時請聯絡 freetokyo2020@yahoo.co.jp。</div>
   </div>
 </div>
     <div class="contact-box">

@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -365,19 +370,59 @@
     <div class="faq-section">
   <div class="faq-item">
     <div class="faq-q">Vad behöver jag för att använda SaunaFlow?</div>
-    <div class="faq-a">En iPhone (iOS 17 eller senare) och Apple Watch (watchOS 10 eller senare) krävs. Skapa förinställningar på iPhone och kör sessioner på Apple Watch.</div>
+    <div class="faq-a">Du behöver en iPhone (iOS 17 eller senare) och en Apple Watch (watchOS 10 eller senare). Du skapar förinställningar på iPhone och startar pass på Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Watch-appen synkroniseras inte med iPhone.</div>
-    <div class="faq-a">Öppna SaunaFlow på både iPhone och Apple Watch med förinställningslistan synlig på Watch-sidan. Synkroniseringen startar när du sparar eller redigerar en förinställning på iPhone.</div>
+    <div class="faq-q">Vad kan jag ställa in i en förinställning?</div>
+    <div class="faq-a">Du anger faserna bastu, kallbad, vila och förflyttning med deras längd och antal set. Rutiner du använder ofta kan sparas och återanvändas.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Är premium en prenumeration?</div>
-    <div class="faq-a">Nej. SaunaFlow-premiumet är ett engångsköp.</div>
+    <div class="faq-q">Kan jag sköta allt från Apple Watch?</div>
+    <div class="faq-a">Under passet sker huvudstyrningen på Apple Watch. Att skapa förinställningar och gå igenom historiken görs på iPhone.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Watch-appen synkar inte med min iPhone.</div>
+    <div class="faq-a">Öppna SaunaFlow på både iPhone och Apple Watch och låt listan med förinställningar ligga framme på klockan. Synkningen startar när du sparar eller ändrar en förinställning på iPhone. Kontrollera även Bluetooth-anslutningen.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hur fungerar Digital Crown?</div>
+    <div class="faq-a">Vrid på Digital Crown under passet för att styra faserna. Du kan även pausa genom att trycka på skärmen.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Vad står Totonoi Score för?</div>
+    <div class="faq-a">Det är ett värde mellan 0 och 100 som räknas fram från andelen avklarade set, balansen mellan faserna och passets längd. Det är inget medicinskt mått och säger inget säkert om ditt tillstånd.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan jag spara historik och anteckningar?</div>
+    <div class="faq-a">Ja, passen sparas och du kan lägga till anteckningar. Att köra om förra passet ingår i Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan jag notera anläggning och temperaturer?</div>
+    <div class="faq-a">Från version 1.2 kan du notera anläggningens namn, bastuns temperatur, kallbadets, utomhustemperaturen och om det förekom löyly. Du fyller i det direkt efter passet eller senare i historikens detaljvy, och historiken kan filtreras per anläggning.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kan jag registrera ett pass utan klockan?</div>
+    <div class="faq-a">Ja. Tryck på « + » uppe till höger i historiken för att lägga till ett pass manuellt (pulsen registreras då inte). Du kan även säga: « Hej Siri, registrera ett pass i SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Vad är fliken Framsteg och svit-påminnelsen?</div>
+    <div class="faq-a">På fliken Framsteg ser du veckans svit, milstolpsmärken och månadens sammanfattning. Slår du på svit-påminnelsen i inställningarna får du en enda avisering på lördagskvällen, och bara om inget pass registrerats den veckan.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Är Premium en prenumeration?</div>
+    <div class="faq-a">Nej. Premium i SaunaFlow är ett engångsköp utan återkommande avgifter.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hur återställer jag mitt köp?</div>
+    <div class="faq-a">Öppna Premium-vyn i iPhone-appen och välj « Återställ köp ». Köpet återställs om du använder samma Apple-ID.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Var lagras mina data?</div>
-    <div class="faq-a">Data som förinställningar, historik och anteckningar lagras på enheten och skickas inte till externa servrar.</div>
+    <div class="faq-a">Förinställningar, historik och anteckningar stannar på enheten. Den här webbplatsen beskriver ingen överföring till externa servrar. Läs integritetspolicyn för detaljerna.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Hur kontaktar jag supporten?</div>
+    <div class="faq-a">Supporten sköts via e-post. Skriv till freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

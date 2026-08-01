@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Tôi cần gì để sử dụng SaunaFlow?</div>
-    <div class="faq-a">Cần có iPhone (iOS 17 trở lên) và Apple Watch (watchOS 10 trở lên). Tạo cài đặt sẵn trên iPhone và chạy các phiên trên Apple Watch.</div>
+    <div class="faq-q">Tôi cần gì để dùng SaunaFlow?</div>
+    <div class="faq-a">Bạn cần một chiếc iPhone (iOS 17 trở lên) và một chiếc Apple Watch (watchOS 10 trở lên). Bạn tạo cấu hình sẵn trên iPhone và bắt đầu buổi tập trên Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Ứng dụng Watch không đồng bộ với iPhone.</div>
-    <div class="faq-a">Mở SaunaFlow trên cả iPhone và Apple Watch đồng thời, giữ danh sách cài đặt sẵn hiển thị ở phía Watch. Quá trình đồng bộ bắt đầu khi bạn lưu hoặc chỉnh sửa cài đặt sẵn trên iPhone.</div>
+    <div class="faq-q">Tôi cài được những gì trong một cấu hình sẵn?</div>
+    <div class="faq-a">Bạn đặt được các giai đoạn xông hơi, ngâm lạnh, nghỉ và di chuyển cùng thời lượng và số hiệp. Trình tự hay dùng có thể lưu lại để dùng tiếp.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Gói cao cấp có phải đăng ký không?</div>
-    <div class="faq-a">Không. Gói cao cấp của SaunaFlow là mua một lần.</div>
+    <div class="faq-q">Tôi có thể chỉ dùng trên Apple Watch không?</div>
+    <div class="faq-a">Trong buổi xông, thao tác chính nằm ở Apple Watch. Việc tạo cấu hình sẵn và xem lịch sử thực hiện trên iPhone.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Ứng dụng trên Watch không đồng bộ với iPhone.</div>
+    <div class="faq-a">Hãy mở SaunaFlow trên cả iPhone lẫn Apple Watch, và để nguyên danh sách cấu hình sẵn trên màn hình Watch. Đồng bộ bắt đầu khi bạn lưu hoặc sửa một cấu hình trên iPhone. Hãy kiểm tra cả kết nối Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Digital Crown dùng thế nào?</div>
+    <div class="faq-a">Trong buổi xông, xoay Digital Crown để chuyển giai đoạn. Bạn cũng có thể chạm màn hình để tạm dừng.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Totonoi Score thể hiện điều gì?</div>
+    <div class="faq-a">Đó là chỉ số từ 0 đến 100, tính từ tỉ lệ hiệp hoàn thành, sự cân bằng giữa các giai đoạn và thời lượng buổi xông. Đây không phải chỉ số y tế và không khẳng định điều gì về tình trạng sức khỏe của bạn.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Tôi lưu được lịch sử và ghi chú không?</div>
+    <div class="faq-a">Có. Các buổi xông được lưu lại và bạn có thể thêm ghi chú. Chạy lại buổi gần nhất là tính năng của bản Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Tôi ghi được cơ sở và nhiệt độ không?</div>
+    <div class="faq-a">Từ phiên bản 1.2, bạn ghi được tên cơ sở, nhiệt độ phòng xông, nhiệt độ bể lạnh, nhiệt độ ngoài trời và có löyly hay không. Bạn điền ngay sau buổi xông hoặc bổ sung sau trong phần chi tiết lịch sử, và có thể lọc lịch sử theo cơ sở.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Không mang Watch thì ghi lại được không?</div>
+    <div class="faq-a">Được. Chạm « + » ở góc trên bên phải màn hình lịch sử để thêm thủ công (khi đó nhịp tim không được ghi). Bạn cũng có thể nói: « Này Siri, ghi lại một buổi xông trong SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Thẻ Tiến độ và nhắc chuỗi ngày là gì?</div>
+    <div class="faq-a">Thẻ Tiến độ cho bạn xem chuỗi theo tuần, huy hiệu cột mốc và tóm tắt tháng này. Nếu bật nhắc chuỗi trong cài đặt, bạn nhận đúng một thông báo vào tối thứ Bảy, và chỉ khi tuần đó chưa ghi buổi nào.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Premium có phải gói thuê bao không?</div>
+    <div class="faq-a">Không. Premium của SaunaFlow là mua một lần, không có phí định kỳ.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Khôi phục giao dịch mua bằng cách nào?</div>
+    <div class="faq-a">Mở màn hình Premium trong ứng dụng iPhone và chọn « Khôi phục giao dịch mua ». Giao dịch sẽ được khôi phục nếu bạn dùng cùng một Apple ID.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Dữ liệu của tôi được lưu ở đâu?</div>
-    <div class="faq-a">Dữ liệu như cài đặt sẵn, lịch sử và ghi chú được lưu trữ trên thiết bị và không gửi đến máy chủ bên ngoài.</div>
+    <div class="faq-a">Cấu hình sẵn, lịch sử và ghi chú nằm trong máy. Trang này không mô tả bất kỳ việc gửi dữ liệu nào ra máy chủ bên ngoài. Chi tiết xin xem chính sách quyền riêng tư.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Liên hệ hỗ trợ ở đâu?</div>
+    <div class="faq-a">Hỗ trợ qua email. Hãy viết cho freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

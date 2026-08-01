@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">使用SaunaFlow需要什么？</div>
-    <div class="faq-a">需要iPhone（iOS 17或更高版本）和Apple Watch（watchOS 10或更高版本）。在iPhone上创建预设，在Apple Watch上运行训练。</div>
+    <div class="faq-q">使用 SaunaFlow 需要什么？</div>
+    <div class="faq-a">需要 iPhone（iOS 17 或更高版本）和 Apple Watch（watchOS 10 或更高版本）。预设在 iPhone 上创建，会话在 Apple Watch 上开始。</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Watch应用无法与iPhone同步。</div>
-    <div class="faq-a">同时在iPhone和Apple Watch上打开SaunaFlow，保持Watch端预设列表可见。在iPhone上保存或编辑预设即可开始同步。</div>
+    <div class="faq-q">预设里可以设置哪些内容？</div>
+    <div class="faq-a">可以设置桑拿、冷水浴、休息、移动各个阶段及其时长和组数。常用的流程可以保存下来反复使用。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">只用 Apple Watch 可以操作吗？</div>
+    <div class="faq-a">会话进行中的主要操作在 Apple Watch 上完成。创建预设和查看历史记录则在 iPhone 上进行。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Watch 应用无法与 iPhone 同步。</div>
+    <div class="faq-a">请在 iPhone 和 Apple Watch 上同时打开 SaunaFlow，并让 Watch 停留在预设列表页面。在 iPhone 上保存或编辑预设后同步就会开始。也请确认蓝牙连接。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Digital Crown 怎么用？</div>
+    <div class="faq-a">会话中转动 Digital Crown 即可切换阶段。也支持轻点屏幕暂停。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Totonoi Score（整备分数）表示什么？</div>
+    <div class="faq-a">这是根据完成组数比例、各阶段的平衡以及会话时长换算出的 0～100 分指标。它并非医学数值，不对你的身体状态作任何保证。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以保存历史记录和备注吗？</div>
+    <div class="faq-a">可以，会话历史会保存下来，也可以写备注。重跑上一次会话属于高级版功能。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以记录场所和温度吗？</div>
+    <div class="faq-a">从 v1.2 起可以记录场所名称、桑拿室温度、冷水池温度、室外气温以及是否有 löyly。可在会话结束后的表单中填写，也可以之后从历史详情补充和修改，历史记录还能按场所筛选。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">没戴 Watch 的日子也能记录吗？</div>
+    <div class="faq-a">可以。在历史页面右上角点按「+」即可手动添加（此时不会记录心率）。也可以说「嘿 Siri，用 SaunaFlow 记录一次桑拿」来添加。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">进度标签页和连续记录提醒是什么？</div>
+    <div class="faq-a">进度标签页可以查看每周连续记录、里程碑徽章和本月汇总。在设置中打开连续记录提醒后，只有当周没有记录时，才会在周六傍晚提醒一次。</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">高级版是订阅制吗？</div>
-    <div class="faq-a">不是。SaunaFlow的高级版是一次性购买。</div>
+    <div class="faq-a">不是。SaunaFlow 的高级版为一次买断，没有周期扣费。</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">我的数据存储在哪里？</div>
-    <div class="faq-a">预设、历史记录和备注等数据存储在设备上，不会发送到外部服务器。</div>
+    <div class="faq-q">如何恢复购买？</div>
+    <div class="faq-a">请在 iPhone 应用的高级版页面选择「恢复购买」。若使用同一 Apple ID 购买过即可恢复。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">数据保存在哪里？</div>
+    <div class="faq-a">预设、历史记录、备注等数据保存在设备内。本站没有任何将数据发送至外部服务器的说明。详情请查看隐私政策。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">联系方式是什么？</div>
+    <div class="faq-a">我们通过邮件提供支持。需要帮助时请联系 freetokyo2020@yahoo.co.jp。</div>
   </div>
 </div>
     <div class="contact-box">

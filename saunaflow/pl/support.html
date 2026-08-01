@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Czego potrzebuję, aby używać SaunaFlow?</div>
-    <div class="faq-a">Wymagany jest iPhone (iOS 17 lub nowszy) i Apple Watch (watchOS 10 lub nowszy). Utwórz ustawienia wstępne na iPhonie i uruchamiaj sesje na Apple Watchu.</div>
+    <div class="faq-q">Czego potrzebuję, żeby korzystać z SaunaFlow?</div>
+    <div class="faq-a">Potrzebujesz iPhone'a (iOS 17 lub nowszy) i Apple Watcha (watchOS 10 lub nowszy). Ustawienia tworzysz na iPhonie, a sesje uruchamiasz na Apple Watchu.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Aplikacja Watch nie synchronizuje się z iPhone&#x27;em.</div>
-    <div class="faq-a">Otwórz SaunaFlow zarówno na iPhonie, jak i na Apple Watchu, trzymając listę ustawień wstępnych widoczną po stronie Watch. Synchronizacja rozpoczyna się po zapisaniu lub edycji ustawienia wstępnego na iPhonie.</div>
+    <div class="faq-q">Co mogę ustawić w profilu sesji?</div>
+    <div class="faq-a">Możesz określić fazy sauny, zimnej kąpieli, odpoczynku i przejścia wraz z ich czasem oraz liczbą serii. Często używane układy można zapisać i wykorzystywać ponownie.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Czy premium to subskrypcja?</div>
-    <div class="faq-a">Nie. Premium SaunaFlow to jednorazowy zakup.</div>
+    <div class="faq-q">Czy mogę obsługiwać wszystko z Apple Watcha?</div>
+    <div class="faq-a">W trakcie sesji główna obsługa odbywa się na Apple Watchu. Tworzenie profili i przeglądanie historii dzieje się na iPhonie.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Gdzie są przechowywane moje dane?</div>
-    <div class="faq-a">Dane takie jak ustawienia wstępne, historia i notatki są przechowywane na urządzeniu i nie są wysyłane na zewnętrzne serwery.</div>
+    <div class="faq-q">Aplikacja na Watchu nie synchronizuje się z iPhonem.</div>
+    <div class="faq-a">Otwórz SaunaFlow na iPhonie i na Apple Watchu, zostawiając na Watchu widoczną listę profili. Synchronizacja rusza, gdy zapiszesz lub zmienisz profil na iPhonie. Sprawdź też połączenie Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Jak działa Digital Crown?</div>
+    <div class="faq-a">W trakcie sesji obracaj Digital Crown, aby sterować fazami. Obsługiwana jest też pauza przez dotknięcie ekranu.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Co oznacza Totonoi Score?</div>
+    <div class="faq-a">To wskaźnik od 0 do 100 wyliczany z odsetka ukończonych serii, równowagi faz i długości sesji. Nie jest to wartość medyczna i niczego nie potwierdza w kwestii Twojego stanu zdrowia.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Czy mogę zapisywać historię i notatki?</div>
+    <div class="faq-a">Tak, sesje są zapisywane i możesz dodawać do nich notatki. Powtórzenie poprzedniej sesji należy do funkcji Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Czy mogę zapisać obiekt i temperatury?</div>
+    <div class="faq-a">Od wersji 1.2 możesz zapisać nazwę obiektu, temperaturę sauny, zimnej kąpieli, temperaturę zewnętrzną oraz to, czy był löyly. Uzupełnisz je tuż po sesji albo później w szczegółach historii, którą można filtrować według obiektu.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Czy mogę zapisać sesję bez Watcha?</div>
+    <div class="faq-a">Tak. Dotknij « + » w prawym górnym rogu historii, aby dodać sesję ręcznie (tętno nie jest wtedy zapisywane). Możesz też powiedzieć: « Hej Siri, zapisz sesję w SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Czym są zakładka Postępy i przypomnienie o serii?</div>
+    <div class="faq-a">W zakładce Postępy zobaczysz tygodniową serię, odznaki za kamienie milowe i podsumowanie miesiąca. Po włączeniu przypomnienia o serii w ustawieniach dostaniesz jedno powiadomienie w sobotę wieczorem, i tylko wtedy, gdy w danym tygodniu nie zapisałeś żadnej sesji.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Czy Premium to subskrypcja?</div>
+    <div class="faq-a">Nie. Premium w SaunaFlow to zakup jednorazowy, bez opłat cyklicznych.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Jak przywrócić zakup?</div>
+    <div class="faq-a">Otwórz ekran Premium w aplikacji na iPhonie i wybierz « Przywróć zakupy ». Zakup zostanie przywrócony, jeśli korzystasz z tego samego Apple ID.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Gdzie przechowywane są moje dane?</div>
+    <div class="faq-a">Profile, historia i notatki pozostają na urządzeniu. Ta strona nie opisuje żadnego wysyłania danych na zewnętrzne serwery. Szczegóły znajdziesz w polityce prywatności.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Jak skontaktować się z pomocą?</div>
+    <div class="faq-a">Pomoc działa przez e-mail. Napisz na freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

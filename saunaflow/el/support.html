@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -365,19 +370,59 @@
     <div class="faq-section">
   <div class="faq-item">
     <div class="faq-q">Τι χρειάζομαι για να χρησιμοποιήσω το SaunaFlow;</div>
-    <div class="faq-a">Απαιτείται iPhone (iOS 17 ή νεότερο) και Apple Watch (watchOS 10 ή νεότερο). Δημιουργήστε προρυθμίσεις στο iPhone και εκτελέστε συνεδρίες στο Apple Watch.</div>
+    <div class="faq-a">Χρειάζεστε ένα iPhone (iOS 17 ή νεότερο) και ένα Apple Watch (watchOS 10 ή νεότερο). Τα presets δημιουργούνται στο iPhone και οι συνεδρίες ξεκινούν στο Apple Watch.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Τι μπορώ να ρυθμίσω σε ένα preset;</div>
+    <div class="faq-a">Μπορείτε να ρυθμίσετε τις φάσεις σάουνας, κρύου νερού, ξεκούρασης και μετάβασης, καθώς και τη διάρκειά τους και τον αριθμό των σετ. Μπορείτε να αποθηκεύσετε μια ροή που χρησιμοποιείτε συχνά και να την επαναχρησιμοποιήσετε.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Μπορώ να το χειρίζομαι μόνο με το Apple Watch;</div>
+    <div class="faq-a">Ο βασικός χειρισμός κατά τη διάρκεια μιας συνεδρίας γίνεται από το Apple Watch. Η δημιουργία presets και η προβολή του ιστορικού γίνονται από το iPhone.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Η εφαρμογή Watch δεν συγχρονίζεται με το iPhone.</div>
-    <div class="faq-a">Ανοίξτε το SaunaFlow και στο iPhone και στο Apple Watch, κρατώντας ορατή τη λίστα προρυθμίσεων στο Watch. Ο συγχρονισμός ξεκινά όταν αποθηκεύετε ή επεξεργάζεστε μια προρύθμιση στο iPhone.</div>
+    <div class="faq-a">Ανοίξτε το SaunaFlow τόσο στο iPhone όσο και στο Apple Watch και αφήστε στο Watch τη λίστα των presets ανοιχτή. Ο συγχρονισμός ξεκινά μόλις αποθηκεύσετε ή επεξεργαστείτε ένα preset στο iPhone. Ελέγξτε επίσης τη σύνδεση Bluetooth.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Είναι το premium συνδρομή;</div>
-    <div class="faq-a">Όχι. Το premium του SaunaFlow είναι εφάπαξ αγορά.</div>
+    <div class="faq-q">Πώς χρησιμοποιώ το Digital Crown;</div>
+    <div class="faq-a">Κατά τη διάρκεια μιας συνεδρίας, μπορείτε να περιστρέψετε το Digital Crown για να ελέγξετε τις φάσεις. Υποστηρίζεται επίσης η παύση με άγγιγμα στην οθόνη.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Τι δείχνει το Totonoi Score (βαθμολογία ευεξίας);</div>
+    <div class="faq-a">Είναι ένας δείκτης από 0 έως 100 βαθμούς, βασισμένος στο ποσοστό ολοκλήρωσης των σετ, την ισορροπία των φάσεων και τη διάρκεια της συνεδρίας. Δεν πρόκειται για ιατρικά επιβεβαιωμένη τιμή της εμπειρίας σας.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Μπορώ να αποθηκεύσω ιστορικό και σημειώσεις;</div>
+    <div class="faq-a">Μπορείτε να αποθηκεύσετε το ιστορικό των συνεδριών σας και να προσθέσετε σημειώσεις. Η δυνατότητα επανάληψης της τελευταίας συνεδρίας είναι διαθέσιμη μόνο στην premium έκδοση.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Μπορώ να καταγράφω εγκατάσταση και θερμοκρασίες;</div>
+    <div class="faq-a">Από την έκδοση v1.2 μπορείτε να καταγράφετε το όνομα της εγκατάστασης, τη θερμοκρασία της σάουνας, τη θερμοκρασία του κρύου νερού, την εξωτερική θερμοκρασία και αν έγινε löyly (ρίψη νερού). Μπορείτε να προσθέσετε ή να επεξεργαστείτε αυτά τα στοιχεία αμέσως μετά την ολοκλήρωση της συνεδρίας ή από τις λεπτομέρειες του ιστορικού, και να φιλτράρετε το ιστορικό ανά εγκατάσταση.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Μπορώ να καταγράφω κάτι και τις μέρες χωρίς Apple Watch;</div>
+    <div class="faq-a">Ναι. Από το «+» πάνω δεξιά στην οθόνη ιστορικού μπορείτε να καταγράψετε χειροκίνητα μια συνεδρία σάουνας (ο καρδιακός ρυθμός δεν καταγράφεται). Μπορείτε επίσης να πείτε: «Hey Siri, κατέγραψε μια συνεδρία σάουνας στο SaunaFlow».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Τι είναι η καρτέλα Πρόοδος και η υπενθύμιση σερί;</div>
+    <div class="faq-a">Στην καρτέλα Πρόοδος μπορείτε να δείτε το εβδομαδιαίο σερί, τα διάσημα ορόσημα και τη σύνοψη του μήνα. Αν ενεργοποιήσετε την υπενθύμιση σερί στις ρυθμίσεις, θα λάβετε ειδοποίηση μία μόνο φορά, το Σάββατο απόγευμα, μόνο αν δεν είχατε συνεδρία σάουνας εκείνη την εβδομάδα.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Το premium είναι συνδρομή;</div>
+    <div class="faq-a">Όχι. Το premium του SaunaFlow είναι εφάπαξ αγορά. Δεν πρόκειται για επαναλαμβανόμενη χρέωση.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Πώς μπορώ να επαναφέρω μια αγορά;</div>
+    <div class="faq-a">Επιλέξτε «Επαναφορά αγορών» από την οθόνη premium στην εφαρμογή του iPhone. Αν έχετε αγοράσει με το ίδιο Apple ID, η αγορά θα επαναφερθεί.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Πού αποθηκεύονται τα δεδομένα μου;</div>
-    <div class="faq-a">Τα δεδομένα όπως οι προρυθμίσεις, το ιστορικό και οι σημειώσεις αποθηκεύονται στη συσκευή και δεν αποστέλλονται σε εξωτερικούς διακομιστές.</div>
+    <div class="faq-a">Δεδομένα όπως presets, ιστορικό και σημειώσεις αποθηκεύονται στη συσκευή. Αυτή η σελίδα δεν αναφέρει αποστολή δεδομένων σε εξωτερικούς διακομιστές. Για λεπτομέρειες, ανατρέξτε στην Πολιτική Απορρήτου.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Πού μπορώ να επικοινωνήσω;</div>
+    <div class="faq-a">Η επικοινωνία γίνεται μέσω email. Αν χρειάζεστε υποστήριξη, επικοινωνήστε στο freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

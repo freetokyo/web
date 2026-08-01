@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">מה אני צריך כדי להשתמש ב-SaunaFlow?</div>
-    <div class="faq-a">נדרשים iPhone (iOS 17 ומעלה) ו-Apple Watch (watchOS 10 ומעלה). צור הגדרות מוגדרות מראש ב-iPhone והפעל סשנים ב-Apple Watch.</div>
+    <div class="faq-q">מה צריך כדי להשתמש ב-SaunaFlow?</div>
+    <div class="faq-a">דרושים iPhone (עם iOS 17 ואילך) ו-Apple Watch (עם watchOS 10 ואילך). את הקביעות המוגדרות יוצרים ב-iPhone, ואת המפגשים מפעילים ב-Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">אפליקציית Watch לא מסתנכרנת עם iPhone.</div>
-    <div class="faq-a">פתח את SaunaFlow גם ב-iPhone וגם ב-Apple Watch, תוך שמירת רשימת ההגדרות המוגדרות מראש גלויה ב-Watch. הסנכרון יתחיל בעת שמירה או עריכת הגדרה ב-iPhone.</div>
+    <div class="faq-q">מה אפשר להגדיר בקביעה מוגדרת מראש?</div>
+    <div class="faq-a">אפשר להגדיר את שלבי הסאונה, הטבילה הקרה, המנוחה והמעבר, את משך כל שלב ואת מספר הסבבים. רצף שחוזר על עצמו אפשר לשמור ולהשתמש בו שוב.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">אפשר לתפעל הכול מה-Apple Watch בלבד?</div>
+    <div class="faq-a">במהלך המפגש התפעול העיקרי נעשה ב-Apple Watch. יצירת קביעות וצפייה בהיסטוריה נעשות ב-iPhone.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">אפליקציית ה-Watch לא מסתנכרנת עם ה-iPhone.</div>
+    <div class="faq-a">פתחו את SaunaFlow גם ב-iPhone וגם ב-Apple Watch, והשאירו בשעון את רשימת הקביעות פתוחה. הסנכרון מתחיל כששומרים או עורכים קביעה ב-iPhone. בדקו גם את חיבור ה-Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">איך משתמשים ב-Digital Crown?</div>
+    <div class="faq-a">במהלך המפגש אפשר לסובב את ה-Digital Crown כדי לשלוט בשלבים. יש גם תמיכה בהשהיה בנגיעה במסך.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">מה מייצג ה-Totonoi Score?</div>
+    <div class="faq-a">זהו מדד בין 0 ל-100 המחושב לפי שיעור הסבבים שהושלמו, האיזון בין השלבים ומשך המפגש. אין זה ערך רפואי והוא אינו מאשר דבר לגבי מצבכם.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">אפשר לשמור היסטוריה והערות?</div>
+    <div class="faq-a">כן, המפגשים נשמרים ואפשר להוסיף להם הערות. הרצה חוזרת של המפגש הקודם נכללת בגרסת הפרימיום.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">אפשר לתעד את המתקן ואת הטמפרטורות?</div>
+    <div class="faq-a">החל מגרסה 1.2 אפשר לתעד את שם המתקן, את טמפרטורת חדר הסאונה, את טמפרטורת הטבילה הקרה, את טמפרטורת החוץ והאם היה löyly. אפשר למלא מיד בתום המפגש או להוסיף ולערוך מאוחר יותר מפרטי ההיסטוריה, ואפשר לסנן את ההיסטוריה לפי מתקן.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">אפשר לתעד גם ביום שאין איתי שעון?</div>
+    <div class="faq-a">כן. הקישו על « + » בפינה הימנית העליונה של מסך ההיסטוריה כדי להוסיף מפגש ידנית (הדופק לא ייקלט). אפשר גם לומר: « היי Siri, תעד מפגש ב-SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">מהם לשונית ההתקדמות ותזכורת הרצף?</div>
+    <div class="faq-a">בלשונית ההתקדמות רואים את הרצף השבועי, תגי אבני דרך וסיכום החודש. אם מפעילים את תזכורת הרצף בהגדרות, מתקבלת התראה אחת בלבד בשבת בערב, ורק אם באותו שבוע לא תועד אף מפגש.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">האם הפרימיום הוא מנוי?</div>
-    <div class="faq-a">לא. הפרימיום של SaunaFlow הוא רכישה חד-פעמית.</div>
+    <div class="faq-a">לא. הפרימיום של SaunaFlow הוא רכישה חד-פעמית, ללא חיוב חוזר.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">היכן מאוחסנים הנתונים שלי?</div>
-    <div class="faq-a">נתונים כמו הגדרות מוגדרות מראש, היסטוריה והערות מאוחסנים במכשיר ואינם נשלחים לשרתים חיצוניים.</div>
+    <div class="faq-q">איך משחזרים רכישה?</div>
+    <div class="faq-a">פתחו את מסך הפרימיום באפליקציית ה-iPhone ובחרו « שחזור רכישות ». הרכישה תשוחזר אם אתם משתמשים באותו Apple ID.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">היכן נשמרים הנתונים שלי?</div>
+    <div class="faq-a">הקביעות, ההיסטוריה וההערות נשמרות במכשיר עצמו. באתר זה אין תיאור של שליחה לשרתים חיצוניים. לפרטים ראו את מדיניות הפרטיות.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">לאן פונים לתמיכה?</div>
+    <div class="faq-a">התמיכה ניתנת בדואר אלקטרוני. אם דרושה עזרה, כתבו אל freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Что нужно для использования SaunaFlow?</div>
-    <div class="faq-a">Требуется iPhone (iOS 17 или новее) и Apple Watch (watchOS 10 или новее). Создавайте пресеты на iPhone и запускайте сессии на Apple Watch.</div>
+    <div class="faq-q">Что нужно для работы с SaunaFlow?</div>
+    <div class="faq-a">Понадобятся iPhone (iOS 17 или новее) и Apple Watch (watchOS 10 или новее). Пресеты создаются на iPhone, а сессии запускаются на Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Watch-приложение не синхронизируется с iPhone.</div>
-    <div class="faq-a">Откройте SaunaFlow на обоих устройствах — iPhone и Apple Watch — оставив список пресетов видимым на Watch. Синхронизация начнётся при сохранении или редактировании пресета на iPhone.</div>
+    <div class="faq-q">Что можно настроить в пресете?</div>
+    <div class="faq-a">Можно задать фазы парения, купели, отдыха и перехода, их длительность и число подходов. Часто используемый порядок можно сохранить и применять снова.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Премиум — это подписка?</div>
-    <div class="faq-a">Нет. Премиум SaunaFlow — это разовая покупка.</div>
+    <div class="faq-q">Можно ли пользоваться только с Apple Watch?</div>
+    <div class="faq-a">Во время сессии основное управление идёт с Apple Watch. Создание пресетов и просмотр истории выполняются на iPhone.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Приложение на Watch не синхронизируется с iPhone.</div>
+    <div class="faq-a">Откройте SaunaFlow и на iPhone, и на Apple Watch, оставив на Watch список пресетов на экране. Синхронизация начнётся, когда вы сохраните или измените пресет на iPhone. Проверьте также соединение Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Как использовать Digital Crown?</div>
+    <div class="faq-a">Во время сессии поворачивайте Digital Crown для управления фазами. Пауза по касанию экрана тоже поддерживается.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Что показывает Totonoi Score?</div>
+    <div class="faq-a">Это показатель от 0 до 100, рассчитанный по доле завершённых подходов, балансу фаз и длительности сессии. Это не медицинский показатель, и он ничего не подтверждает о вашем состоянии.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Сохраняются ли история и заметки?</div>
+    <div class="faq-a">Да, сессии сохраняются, и к ним можно добавлять заметки. Повтор предыдущей сессии входит в Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Можно ли записать заведение и температуру?</div>
+    <div class="faq-a">С версии 1.2 можно записать название заведения, температуру парной, купели, температуру на улице и наличие löyly. Заполнить их можно сразу после сессии или позже в подробностях истории, которую можно отфильтровать по заведению.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Можно ли записать сессию без Watch?</div>
+    <div class="faq-a">Да. Нажмите « + » в правом верхнем углу истории и добавьте сессию вручную (пульс при этом не записывается). Можно также сказать: « Привет, Siri, запиши сессию в SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Что такое вкладка «Прогресс» и напоминание о серии?</div>
+    <div class="faq-a">На вкладке «Прогресс» видны недельная серия, значки за рубежи и сводка месяца. Если включить напоминание о серии в настройках, придёт одно уведомление вечером в субботу и только если на той неделе не записано ни одной сессии.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Premium — это подписка?</div>
+    <div class="faq-a">Нет. Premium в SaunaFlow — разовая покупка, без регулярных списаний.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Как восстановить покупку?</div>
+    <div class="faq-a">Откройте экран Premium в приложении на iPhone и выберите «Восстановить покупки». Покупка восстановится, если используется тот же Apple ID.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Где хранятся мои данные?</div>
-    <div class="faq-a">Данные — пресеты, история, заметки — хранятся на устройстве и не отправляются на внешние серверы.</div>
+    <div class="faq-a">Пресеты, история и заметки остаются на устройстве. На этом сайте не описана отправка данных на внешние серверы. Подробности — в политике конфиденциальности.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Куда обращаться за поддержкой?</div>
+    <div class="faq-a">Поддержка работает по электронной почте. Пишите на freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

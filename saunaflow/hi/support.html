@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">SaunaFlow उपयोग करने के लिए क्या चाहिए?</div>
-    <div class="faq-a">iPhone (iOS 17 या बाद का) और Apple Watch (watchOS 10 या बाद का) आवश्यक है। iPhone पर प्रीसेट बनाएं और Apple Watch पर सेशन चलाएं।</div>
+    <div class="faq-q">SaunaFlow इस्तेमाल करने के लिए क्या चाहिए?</div>
+    <div class="faq-a">एक iPhone (iOS 17 या उसके बाद का) और एक Apple Watch (watchOS 10 या उसके बाद का) चाहिए। प्रीसेट iPhone पर बनाए जाते हैं और सेशन Apple Watch पर शुरू होते हैं।</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Watch ऐप iPhone से सिंक नहीं हो रहा।</div>
-    <div class="faq-a">iPhone और Apple Watch दोनों पर SaunaFlow खोलें, Watch पर प्रीसेट सूची दिखती रहने दें। iPhone पर प्रीसेट सहेजने या संपादित करने पर सिंक शुरू होगा।</div>
+    <div class="faq-q">प्रीसेट में क्या-क्या सेट किया जा सकता है?</div>
+    <div class="faq-a">सॉना, ठंडे पानी में डुबकी, विश्राम और आवाजाही के चरण, उनका समय और सेट की संख्या तय की जा सकती है। जो क्रम आप अक्सर अपनाते हैं उसे सहेजकर दोबारा इस्तेमाल किया जा सकता है।</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">क्या प्रीमियम सब्सक्रिप्शन है?</div>
-    <div class="faq-a">नहीं। SaunaFlow का प्रीमियम एकमुश्त खरीदारी है।</div>
+    <div class="faq-q">क्या मैं सिर्फ़ Apple Watch से चला सकता हूँ?</div>
+    <div class="faq-a">सेशन के दौरान मुख्य नियंत्रण Apple Watch पर होता है। प्रीसेट बनाना और इतिहास देखना iPhone पर किया जाता है।</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">मेरा डेटा कहाँ संग्रहीत है?</div>
-    <div class="faq-a">प्रीसेट, इतिहास और नोट्स जैसा डेटा डिवाइस पर संग्रहीत होता है और बाहरी सर्वर पर नहीं भेजा जाता।</div>
+    <div class="faq-q">Watch ऐप मेरे iPhone से सिंक नहीं हो रहा।</div>
+    <div class="faq-a">iPhone और Apple Watch, दोनों पर SaunaFlow खोलें और Watch पर प्रीसेट की सूची खुली रहने दें। iPhone पर कोई प्रीसेट सहेजने या बदलने पर सिंक शुरू हो जाता है। Bluetooth कनेक्शन भी जाँच लें।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Digital Crown कैसे काम करता है?</div>
+    <div class="faq-a">सेशन के दौरान Digital Crown घुमाकर चरण बदले जा सकते हैं। स्क्रीन पर टैप करके रोकने की सुविधा भी है।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Totonoi Score क्या दर्शाता है?</div>
+    <div class="faq-a">यह 0 से 100 के बीच का एक संकेतक है, जो पूरे किए गए सेट के अनुपात, चरणों के संतुलन और सेशन की अवधि से निकाला जाता है। यह कोई चिकित्सीय माप नहीं है और आपकी स्थिति के बारे में कुछ भी प्रमाणित नहीं करता।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">क्या इतिहास और नोट सहेजे जा सकते हैं?</div>
+    <div class="faq-a">हाँ, सेशन सहेजे जाते हैं और आप उनमें नोट भी जोड़ सकते हैं। पिछला सेशन दोबारा चलाना प्रीमियम की सुविधा है।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">क्या मैं जगह और तापमान दर्ज कर सकता हूँ?</div>
+    <div class="faq-a">v1.2 से आप जगह का नाम, सॉना कक्ष का तापमान, ठंडे पानी का तापमान, बाहर का तापमान और löyly हुआ या नहीं, यह दर्ज कर सकते हैं। सेशन खत्म होते ही या बाद में इतिहास के विवरण से जोड़ा और बदला जा सकता है, और इतिहास को जगह के हिसाब से छाना जा सकता है।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">जिस दिन Watch न हो, क्या तब भी दर्ज कर सकते हैं?</div>
+    <div class="faq-a">हाँ। इतिहास स्क्रीन के ऊपर दाईं ओर « + » दबाकर सेशन खुद जोड़ा जा सकता है (तब हृदय गति दर्ज नहीं होती)। आप यह भी कह सकते हैं: « हे Siri, SaunaFlow में सेशन दर्ज करो »।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">प्रगति टैब और स्ट्रीक रिमाइंडर क्या हैं?</div>
+    <div class="faq-a">प्रगति टैब में साप्ताहिक स्ट्रीक, मील के पत्थर वाले बैज और इस महीने का सारांश दिखता है। सेटिंग्स में स्ट्रीक रिमाइंडर चालू करने पर शनिवार शाम को सिर्फ़ एक बार सूचना आती है, वह भी तभी जब उस सप्ताह कोई सेशन दर्ज न हुआ हो।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">क्या प्रीमियम सदस्यता है?</div>
+    <div class="faq-a">नहीं। SaunaFlow का प्रीमियम एक बार की खरीद है, इसमें बार-बार शुल्क नहीं लगता।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">अपनी खरीद कैसे बहाल करूँ?</div>
+    <div class="faq-a">iPhone ऐप की प्रीमियम स्क्रीन खोलकर « खरीद बहाल करें » चुनें। यदि वही Apple ID इस्तेमाल कर रहे हैं तो खरीद बहाल हो जाएगी।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">मेरा डेटा कहाँ रखा जाता है?</div>
+    <div class="faq-a">प्रीसेट, इतिहास और नोट डिवाइस में ही रहते हैं। इस साइट पर किसी बाहरी सर्वर को भेजने का कोई विवरण नहीं है। पूरी जानकारी के लिए गोपनीयता नीति देखें।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">सहायता के लिए कहाँ संपर्क करें?</div>
+    <div class="faq-a">सहायता ईमेल से दी जाती है। ज़रूरत हो तो freetokyo2020@yahoo.co.jp पर लिखें।</div>
   </div>
 </div>
     <div class="contact-box">

@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">Što trebam za korištenje SaunaFlowa?</div>
-    <div class="faq-a">Potreban je iPhone (iOS 17 ili noviji) i Apple Watch (watchOS 10 ili noviji). Stvorite unaprijed postavljene vrijednosti na iPhoneu i pokrenite sesije na Apple Watchu.</div>
+    <div class="faq-q">Što mi treba za korištenje SaunaFlowa?</div>
+    <div class="faq-a">Potrebni su iPhone (iOS 17 ili noviji) i Apple Watch (watchOS 10 ili noviji). Predloške izrađujete na iPhoneu, a sesije pokrećete na Apple Watchu.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Watch aplikacija se ne sinkronizira s iPhoneom.</div>
-    <div class="faq-a">Otvorite SaunaFlow na iPhoneu i Apple Watchu istovremeno, ostavljajući popis unaprijed postavljenih vrijednosti vidljivim na Watchu. Sinkronizacija počinje kada spremate ili uređujete unaprijed postavljenu vrijednost na iPhoneu.</div>
+    <div class="faq-q">Što mogu postaviti u predlošku?</div>
+    <div class="faq-a">Možete odrediti faze saune, hladne kupke, odmora i premještanja te njihovo trajanje i broj serija. Rutine koje često koristite možete spremiti i ponovno upotrijebiti.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Je li premium pretplata?</div>
-    <div class="faq-a">Ne. SaunaFlowov premium je jednokratna kupnja.</div>
+    <div class="faq-q">Mogu li sve raditi samo s Apple Watcha?</div>
+    <div class="faq-a">Tijekom sesije glavno upravljanje je na Apple Watchu. Izrada predložaka i pregled povijesti obavljaju se na iPhoneu.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Aplikacija na Watchu se ne sinkronizira s iPhoneom.</div>
+    <div class="faq-a">Otvorite SaunaFlow i na iPhoneu i na Apple Watchu te na Watchu ostavite prikazan popis predložaka. Sinkronizacija počinje kada na iPhoneu spremite ili uredite predložak. Provjerite i Bluetooth vezu.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kako se koristi Digital Crown?</div>
+    <div class="faq-a">Tijekom sesije okrenite Digital Crown za upravljanje fazama. Podržana je i pauza dodirom zaslona.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Što predstavlja Totonoi Score?</div>
+    <div class="faq-a">To je pokazatelj od 0 do 100 izračunat iz udjela dovršenih serija, ravnoteže faza i trajanja sesije. Nije medicinska vrijednost i ništa ne jamči o vašem stanju.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mogu li spremiti povijest i bilješke?</div>
+    <div class="faq-a">Da, sesije se spremaju i možete im dodati bilješke. Ponavljanje prethodne sesije dio je Premiuma.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mogu li zabilježiti objekt i temperature?</div>
+    <div class="faq-a">Od verzije 1.2 možete zabilježiti naziv objekta, temperaturu saune, hladne kupke, vanjsku temperaturu i je li bilo löylyja. Unosite ih odmah nakon sesije ili kasnije iz detalja povijesti, koju možete filtrirati po objektu.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Mogu li zabilježiti sesiju bez Watcha?</div>
+    <div class="faq-a">Da. Dodirnite « + » u gornjem desnom kutu povijesti da ručno dodate sesiju (puls se tada ne bilježi). Možete reći i: « Hej Siri, zabilježi sesiju u SaunaFlowu ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Što su kartica Napredak i podsjetnik na niz?</div>
+    <div class="faq-a">Na kartici Napredak vidite tjedni niz, značke za prekretnice i sažetak mjeseca. Uključite li podsjetnik na niz u postavkama, dobit ćete jednu obavijest u subotu navečer, i to samo ako tog tjedna niste zabilježili nijednu sesiju.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Je li Premium pretplata?</div>
+    <div class="faq-a">Ne. Premium u SaunaFlowu jednokratna je kupnja, bez ponavljajućeg naplaćivanja.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kako vratiti kupnju?</div>
+    <div class="faq-a">Otvorite zaslon Premium u aplikaciji na iPhoneu i odaberite « Vrati kupnje ». Kupnja se vraća ako koristite isti Apple ID.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Gdje se pohranjuju moji podaci?</div>
-    <div class="faq-a">Podaci kao što su unaprijed postavljene vrijednosti, povijest i bilješke pohranjuju se na uređaju i ne šalju se na vanjske poslužitelje.</div>
+    <div class="faq-a">Predlošci, povijest i bilješke ostaju na uređaju. Ova stranica ne opisuje nikakvo slanje na vanjske poslužitelje. Pojedinosti pogledajte u pravilima privatnosti.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kako kontaktirati podršku?</div>
+    <div class="faq-a">Podrška se odvija e-poštom. Pišite na freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

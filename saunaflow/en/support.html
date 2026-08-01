@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -370,33 +375,62 @@
 
       <section class="section">
         <p class="section-title">Getting Started</p>
-        <div class="faq-item"><div class="faq-q">What do I need to use SaunaFlow?</div><div class="faq-a">You need an iPhone running iOS 17 or later and an Apple Watch running watchOS 10 or later. Create presets on iPhone and run sessions on Apple Watch.</div></div>
-        <div class="faq-item"><div class="faq-q">What can I configure in a preset?</div><div class="faq-a">You can define sauna, cold plunge, rest, and move phases, along with duration and number of sets.</div></div>
-        <div class="faq-item"><div class="faq-q">Can I use SaunaFlow mainly from Apple Watch?</div><div class="faq-a">Session control is designed around Apple Watch. Preset editing and history review are handled on iPhone.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Sync & Controls</p>
-        <div class="faq-item"><div class="faq-q">My Watch app is not syncing with iPhone.</div><div class="faq-a">Open SaunaFlow on both devices, keep the Watch app on the preset list, and save or edit a preset on iPhone. That should trigger sync. Check Bluetooth as well.</div></div>
-        <div class="faq-item"><div class="faq-q">How does the Digital Crown work?</div><div class="faq-a">During a session, the Digital Crown is used for phase control, and screen tap can also pause the session.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Totonoi Score & History</p>
-        <div class="faq-item"><div class="faq-q">What does Totonoi Score represent?</div><div class="faq-a">It is a 0-100 session summary based on completion rate, phase balance, and session duration. It is not a medical metric.</div></div>
-        <div class="faq-item"><div class="faq-q">Can I save history and notes?</div><div class="faq-a">Yes. SaunaFlow supports session history and notes. Rerunning the last session is part of the premium offering.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Premium</p>
-        <div class="faq-item"><div class="faq-q">Is Premium a subscription?</div><div class="faq-a">No. Premium is described as a one-time purchase.</div></div>
-        <div class="faq-item"><div class="faq-q">How do I restore my purchase?</div><div class="faq-a">Use the restore purchase option on the premium screen inside the iPhone app while signed into the same Apple ID.</div></div>
-      </section>
-
-      <section class="section">
-        <p class="section-title">Privacy & Contact</p>
-        <div class="faq-item"><div class="faq-q">Where is my data stored?</div><div class="faq-a">The site describes presets, history, and notes as on-device data. See the Privacy Policy for the full statement.</div></div>
-        <div class="faq-item"><div class="faq-q">How can I contact support?</div><div class="faq-a">Support inquiries should be sent by email to freetokyo2020@yahoo.co.jp.</div></div>
+        <div class="faq-item">
+          <div class="faq-q">What do I need to use SaunaFlow?</div>
+          <div class="faq-a">You need an iPhone (iOS 17 or later) and an Apple Watch (watchOS 10 or later). You create presets on your iPhone and start sessions on your Apple Watch.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What can I set up in a preset?</div>
+          <div class="faq-a">You can set the sauna, cold plunge, rest, and transition phases, along with their duration and number of sets. You can save routines you use often and reuse them.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I operate SaunaFlow with just the Apple Watch?</div>
+          <div class="faq-a">The main controls during a session are on the Apple Watch. Creating presets and checking your history are done on the iPhone.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">My Watch app isn't syncing with my iPhone.</div>
+          <div class="faq-a">Open SaunaFlow on both your iPhone and Apple Watch, and keep the preset list displayed on the Watch. Syncing starts once you save or edit a preset on the iPhone. Also check your Bluetooth connection.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I use the Digital Crown?</div>
+          <div class="faq-a">During a session, you can turn the Digital Crown to control phases. Tapping the screen to pause is also supported.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What does the Totonoi Score show?</div>
+          <div class="faq-a">The Totonoi Score (a measure of the relaxed “totonoi” feeling after a sauna) is a 0–100 rating based on set completion rate, phase balance, and session duration. It's not a medical guarantee of your experience.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I keep a history and notes?</div>
+          <div class="faq-a">Yes, you can save your session history and add notes. Replaying your last session is a Premium feature.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I record the facility and temperatures?</div>
+          <div class="faq-a">Since v1.2, you can record the facility name, sauna room temperature, cold plunge temperature, outside temperature, and whether löyly (steam) was used. You can add or edit these right after finishing a session or from the history details, and you can filter your history by facility.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I log a session on days I don't have my Watch?</div>
+          <div class="faq-a">Yes. Tap “+” at the top right of the history screen to log a sauna session manually (heart rate won't be recorded). You can also say “Hey Siri, log a sauna session in SaunaFlow.”</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What are the Progress tab and Streak Reminder?</div>
+          <div class="faq-a">The Progress tab shows your weekly streak, milestone badges, and a summary for the month. Turn on Streak Reminder in Settings to get a single notification on Saturday evening, only if you haven't had a sauna session that week.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is Premium a subscription?</div>
+          <div class="faq-a">No. SaunaFlow Premium is a one-time purchase, not a recurring subscription.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I restore my purchase?</div>
+          <div class="faq-a">Choose “Restore Purchases” on the Premium screen in the iPhone app. If you purchased with the same Apple ID, it will be restored.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Where is my data stored?</div>
+          <div class="faq-a">Data such as presets, history, and notes are stored on your device. This site makes no claims about sending data to external servers. Please check the Privacy Policy for details.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do I contact support?</div>
+          <div class="faq-a">Contact is by email. If you need support, please reach out at freetokyo2020@yahoo.co.jp.</div>
+        </div>
         <div class="contact">
           <p>Support contact:</p>
           <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>

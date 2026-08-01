@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -365,19 +370,59 @@
     <div class="faq-section">
   <div class="faq-item">
     <div class="faq-q">De quoi ai-je besoin pour utiliser SaunaFlow ?</div>
-    <div class="faq-a">Un iPhone (iOS 17 ou ultérieur) et une Apple Watch (watchOS 10 ou ultérieur) sont nécessaires. Créez des préréglages sur l&#x27;iPhone et exécutez les séances sur l&#x27;Apple Watch.</div>
+    <div class="faq-a">Un iPhone (iOS 17 ou ultérieur) et une Apple Watch (watchOS 10 ou ultérieur) sont nécessaires. Créez vos préréglages sur l'iPhone et lancez les séances sur l'Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">L&#x27;app Watch ne se synchronise pas avec l&#x27;iPhone.</div>
-    <div class="faq-a">Ouvrez SaunaFlow à la fois sur l&#x27;iPhone et l&#x27;Apple Watch, en gardant la liste des préréglages visible sur la Watch. La synchronisation démarre lors de l&#x27;enregistrement ou de la modification d&#x27;un préréglage sur l&#x27;iPhone.</div>
+    <div class="faq-q">Que puis-je configurer dans un préréglage ?</div>
+    <div class="faq-a">Vous pouvez définir les phases sauna, bain froid, repos et déplacement, ainsi que leur durée et le nombre de séries. Enregistrez vos enchaînements habituels pour les réutiliser.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Le premium est-il un abonnement ?</div>
-    <div class="faq-a">Non. Le premium de SaunaFlow est un achat unique.</div>
+    <div class="faq-q">Puis-je tout piloter depuis l'Apple Watch ?</div>
+    <div class="faq-a">Pendant une séance, les commandes principales se font sur l'Apple Watch. La création des préréglages et la consultation de l'historique se font sur l'iPhone.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Où sont stockées mes données ?</div>
-    <div class="faq-a">Les données telles que les préréglages, l&#x27;historique et les notes sont stockées sur l&#x27;appareil et ne sont pas envoyées à des serveurs externes.</div>
+    <div class="faq-q">L'app Watch ne se synchronise pas avec l'iPhone.</div>
+    <div class="faq-a">Ouvrez SaunaFlow sur l'iPhone et sur l'Apple Watch, en laissant la liste des préréglages affichée côté Watch. La synchronisation démarre lorsque vous enregistrez ou modifiez un préréglage sur l'iPhone. Vérifiez aussi la connexion Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Comment fonctionne la Digital Crown ?</div>
+    <div class="faq-a">Pendant une séance, tournez la Digital Crown pour changer de phase. La pause par appui sur l'écran est également prise en charge.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Que représente le Totonoi Score ?</div>
+    <div class="faq-a">C'est un indicateur de 0 à 100 calculé à partir du taux de séries terminées, de l'équilibre des phases et de la durée de la séance. Ce n'est pas une valeur médicale et il ne garantit rien sur votre état.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puis-je conserver un historique et des notes ?</div>
+    <div class="faq-a">Oui, les séances sont enregistrées et vous pouvez y ajouter des notes. La relance de la séance précédente fait partie de l'offre Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puis-je noter l'établissement et les températures ?</div>
+    <div class="faq-a">Depuis la version 1.2, vous pouvez enregistrer le nom de l'établissement, la température du sauna, celle du bain froid, la température extérieure et la présence de löyly. Ces informations s'ajoutent ou se modifient juste après la séance ou depuis le détail de l'historique, que vous pouvez filtrer par établissement.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Puis-je enregistrer une séance sans ma Watch ?</div>
+    <div class="faq-a">Oui. Appuyez sur « + » en haut à droite de l'historique pour ajouter une séance manuellement (la fréquence cardiaque n'est alors pas enregistrée). Vous pouvez aussi dire « Dis Siri, enregistre une séance dans SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">À quoi servent l'onglet Progression et le rappel de série ?</div>
+    <div class="faq-a">L'onglet Progression affiche votre série hebdomadaire, vos badges d'étape et le résumé du mois. Si vous activez le rappel de série dans les réglages, vous recevez une seule notification le samedi en fin de journée, et uniquement si aucune séance n'a été enregistrée cette semaine-là.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Premium est-il un abonnement ?</div>
+    <div class="faq-a">Non. Le Premium de SaunaFlow est un achat unique, sans facturation récurrente.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Comment restaurer mon achat ?</div>
+    <div class="faq-a">Ouvrez l'écran Premium dans l'app iPhone et choisissez « Restaurer les achats ». L'achat est restauré si vous utilisez le même identifiant Apple.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Où mes données sont-elles stockées ?</div>
+    <div class="faq-a">Les préréglages, l'historique et les notes sont stockés sur l'appareil. Ce site ne décrit aucun envoi vers un serveur externe. Consultez la politique de confidentialité pour le détail.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Comment contacter l'assistance ?</div>
+    <div class="faq-a">L'assistance se fait par e-mail. Écrivez-nous à freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">

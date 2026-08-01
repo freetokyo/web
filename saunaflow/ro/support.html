@@ -299,6 +299,11 @@
 .ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
   border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
 .ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
 .ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
@@ -364,20 +369,60 @@
     
     <div class="faq-section">
   <div class="faq-item">
-    <div class="faq-q">De ce am nevoie pentru a folosi SaunaFlow?</div>
-    <div class="faq-a">Sunt necesare un iPhone (iOS 17 sau mai nou) și Apple Watch (watchOS 10 sau mai nou). Creați presetări pe iPhone și rulați sesiuni pe Apple Watch.</div>
+    <div class="faq-q">De ce am nevoie ca să folosesc SaunaFlow?</div>
+    <div class="faq-a">Îți trebuie un iPhone (iOS 17 sau mai nou) și un Apple Watch (watchOS 10 sau mai nou). Presetările se creează pe iPhone, iar sesiunile pornesc de pe Apple Watch.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Aplicația Watch nu se sincronizează cu iPhone-ul.</div>
-    <div class="faq-a">Deschideți SaunaFlow atât pe iPhone cât și pe Apple Watch, menținând lista de presetări vizibilă pe Watch. Sincronizarea începe când salvați sau editați o presetare pe iPhone.</div>
+    <div class="faq-q">Ce pot configura într-o presetare?</div>
+    <div class="faq-a">Poți stabili fazele de saună, baie rece, odihnă și deplasare, împreună cu durata fiecăreia și numărul de seturi. Poți salva rutinele folosite des și le poți reutiliza.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Premiumul este un abonament?</div>
-    <div class="faq-a">Nu. Premiumul SaunaFlow este o achiziție unică.</div>
+    <div class="faq-q">Pot folosi aplicația doar de pe Apple Watch?</div>
+    <div class="faq-a">În timpul sesiunii, comenzile principale sunt pe Apple Watch. Crearea presetărilor și consultarea istoricului se fac pe iPhone.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">Unde sunt stocate datele mele?</div>
-    <div class="faq-a">Datele precum presetări, istoric și note sunt stocate pe dispozitiv și nu sunt trimise la servere externe.</div>
+    <div class="faq-q">Aplicația de pe Watch nu se sincronizează cu iPhone-ul.</div>
+    <div class="faq-a">Deschide SaunaFlow atât pe iPhone, cât și pe Apple Watch, lăsând lista de presetări afișată pe Watch. Sincronizarea începe când salvezi sau modifici o presetare pe iPhone. Verifică și conexiunea Bluetooth.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Cum se folosește Digital Crown?</div>
+    <div class="faq-a">În timpul sesiunii, rotește Digital Crown pentru a controla fazele. Este acceptată și pauza prin atingerea ecranului.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Ce reprezintă Totonoi Score?</div>
+    <div class="faq-a">Este un indicator de la 0 la 100, calculat pe baza procentului de seturi finalizate, a echilibrului dintre faze și a duratei sesiunii. Nu este o valoare medicală și nu garantează nimic despre starea ta.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Pot păstra istoricul și notițele?</div>
+    <div class="faq-a">Da, sesiunile se salvează și poți adăuga notițe. Reluarea sesiunii anterioare face parte din Premium.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Pot nota locația și temperaturile?</div>
+    <div class="faq-a">Începând cu versiunea 1.2 poți nota numele locației, temperatura din saună, cea a băii reci, temperatura exterioară și dacă s-a făcut löyly. Le completezi imediat după sesiune sau ulterior, din detaliile istoricului, care poate fi filtrat după locație.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Pot înregistra o sesiune fără Watch?</div>
+    <div class="faq-a">Da. Apasă pe « + » din colțul din dreapta sus al istoricului ca să adaugi manual o sesiune (pulsul nu se înregistrează). Poți spune și « Hei Siri, înregistrează o sesiune în SaunaFlow ».</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Ce sunt fila Progres și mementoul de serie?</div>
+    <div class="faq-a">În fila Progres vezi seria săptămânală, insignele de etapă și rezumatul lunii. Dacă activezi mementoul de serie din setări, primești o singură notificare sâmbătă seara și doar dacă în acea săptămână nu ai înregistrat nicio sesiune.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Premium este un abonament?</div>
+    <div class="faq-a">Nu. Premium din SaunaFlow este o achiziție unică, fără plăți recurente.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Cum îmi restaurez achiziția?</div>
+    <div class="faq-a">Deschide ecranul Premium din aplicația de iPhone și alege « Restaurează achizițiile ». Achiziția se restaurează dacă folosești același ID Apple.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Unde îmi sunt stocate datele?</div>
+    <div class="faq-a">Presetările, istoricul și notițele rămân pe dispozitiv. Acest site nu descrie nicio trimitere către servere externe. Vezi politica de confidențialitate pentru detalii.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Cum contactez asistența?</div>
+    <div class="faq-a">Asistența se face prin e-mail. Scrie la freetokyo2020@yahoo.co.jp.</div>
   </div>
 </div>
     <div class="contact-box">
