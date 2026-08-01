@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>世帯手取ナビ（HomeNet Navi）— 2026年制度対応「年収の壁」シミュレーター</title>
   <meta name="description" content="2026年制度に正確対応した「年収の壁」シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案する iOS アプリ。">
-  <meta name="keywords" content="年収の壁,103万の壁,106万の壁,130万の壁,配偶者控除,扶養,社会保険,手取り,パート,シミュレーター,2026年制度,世帯,iPhone,iOS">
+  <meta name="keywords" content="年収の壁,106万の壁,110万の壁,123万の壁,130万の壁,160万の壁,配偶者控除,扶養控除,社会保険,手取り,パート,年末調整,2026年制度,世帯,iPhone,iOS">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#0F6E56">
   <link rel="canonical" href="https://freetokyo.github.io/web/homenetnavi/">
@@ -83,11 +83,12 @@
       "ja"
     ],
     "featureList": [
-      "2026年制度に対応した正確な手取り計算",
+      "2025年度税制改正と2026年10月の社会保険変更に対応した手取り計算",
       "配偶者控除・社会保険・住民税の壁を一画面で可視化",
-      "Swift Chartsによる年収帯ごとの手取りカーブ",
-      "複数の働き方をシナリオ比較",
-      "壁接近時の通知アラート",
+      "年収帯ごとの世帯手取りカーブと、現状との増減グラフ",
+      "毎月の給与実績からの年末着地見込みと、壁に届く月の予測",
+      "働き方シナリオの作成・保存と比較（保存はProで無制限）",
+      "手取りが実際に減る壁が近づいたときの通知（Pro）",
       "公的URL（国税庁・年金機構）への直接参照"
     ],
     "offers": {
@@ -234,8 +235,8 @@
         <div class="stat-badge__label">制度改正対応</div>
       </div>
       <div class="stat-badge">
-        <div class="stat-badge__num">5本の壁</div>
-        <div class="stat-badge__label">103・106・130・150・201万</div>
+        <div class="stat-badge__num">6本の壁</div>
+        <div class="stat-badge__label">106・110・123・130・160・201.6万</div>
       </div>
     </div>
 
@@ -358,7 +359,7 @@
         <div class="callout__title">「壁のヘコみ」を世帯ベースで可視化</div>
         <p class="callout__body">
           配偶者の年収を 0〜250万円までスライドさせると、世帯全体の手取りがリアルタイムで動きます。
-          103・106・130・150・201万の各壁を色付きで明示。「実は壁を超えた方が得」のラインも一目でわかります。
+          106・110・123・130・160・201.6万の各壁を色付きで明示。「実は壁を超えた方が得」のラインも一目でわかります。
         </p>
       </div>
 
@@ -404,7 +405,7 @@
         </div>
         <ul class="pricing-card__features">
           <li>基本の手取り計算</li>
-          <li>主要 5 本の「壁」表示</li>
+          <li>6 本の「壁」の解説</li>
           <li>1 シナリオ保存</li>
           <li>公的URLリンク</li>
         </ul>
