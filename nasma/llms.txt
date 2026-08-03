@@ -1,0 +1,13 @@
+# Nasma
+
+Nasma logs cigarettes and shisha (waterpipe) sessions in their own units, shows the money and time kept, and supports Ramadan and the Hijri calendar. Everything is stored on the device: no account, no network, no ads. One-time purchase, no subscription.
+
+- Home: https://freetokyo.github.io/web/nasma/
+- Arabic: https://freetokyo.github.io/web/nasma/ar/
+- English: https://freetokyo.github.io/web/nasma/en/
+- Privacy: https://freetokyo.github.io/web/nasma/privacy.html
+- Terms: https://freetokyo.github.io/web/nasma/terms.html
+- Support: https://freetokyo.github.io/web/nasma/support.html
+- Contact: freetokyo2020@yahoo.co.jp
+
+Health content is general information presented with sources. It is not intended for diagnosis, treatment or prevention.
