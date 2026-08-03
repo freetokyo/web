@@ -1,0 +1,13 @@
+# Kajimieru（カジミエル）
+
+Kajimieru organises 130 "invisible" household tasks — the ones that are never counted as chores but that somebody does every day — into 11 categories, and turns how a couple splits them into counts and percentages. It is a one-off stocktake, not a daily tracker: there are no checkboxes, reminders or points. Up to 28 of the 130 tasks can be marked "not applicable" (no children, no car, renting) and they drop out of the totals. The three percentages are shown as rounded and are not adjusted to sum to exactly 100%. The app makes no judgement about whether a split is appropriate. Everything is stored on the device: the app contains no networking code, requests no permissions and has no account. One-time purchase, no subscription.
+
+- Home: https://freetokyo.github.io/web/kajimieru/
+- English: https://freetokyo.github.io/web/kajimieru/en/
+- Privacy: https://freetokyo.github.io/web/kajimieru/privacy.html
+- Terms: https://freetokyo.github.io/web/kajimieru/terms.html
+- Support: https://freetokyo.github.io/web/kajimieru/support.html
+- Contact: freetokyo2020@yahoo.co.jp
+
+Free: assign all 130 tasks, overall share and chart, mark tasks as not applicable, search, backup and restore.
+Full access (one-time purchase): breakdown for all 11 categories, custom names, image sharing without a watermark, CSV export.

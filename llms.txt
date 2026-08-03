@@ -3,7 +3,7 @@
 > 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 41 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyo.github.io/web/ （日本語） / https://freetokyo.github.io/web/en/ （English）
-アプリ数: 41（健康 8 / くらし 17 / おかね 5 / しごと 11）
+アプリ数: 42（健康 8 / くらし 18 / おかね 5 / しごと 11）
 
 ## Apps
 
@@ -40,6 +40,8 @@
   - App Store: https://apps.apple.com/app/id6788732648
 - [ジツヒロ（Jitsuhiro）](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6779472712
+- [カジミエル（Kajimieru）](https://freetokyo.github.io/web/kajimieru/): 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
+  - 近日公開 / coming soon
 - [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。※
   - 近日公開 / coming soon
 - [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。日本語 / English 対応。

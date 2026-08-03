@@ -38,7 +38,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/heyalog/sitemap.xml</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-03</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/hitorilog/sitemap.xml</loc>
@@ -63,6 +63,9 @@
   <sitemap>
     <loc>https://freetokyo.github.io/web/jitsuhiro/sitemap.xml</loc>
     <lastmod>2026-08-01</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/kajimieru/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/keihiba/sitemap.xml</loc>
