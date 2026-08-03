@@ -3,7 +3,7 @@
 > 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 41 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyo.github.io/web/ （日本語） / https://freetokyo.github.io/web/en/ （English）
-アプリ数: 42（健康 8 / くらし 18 / おかね 5 / しごと 11）
+アプリ数: 43（健康 9 / くらし 18 / おかね 5 / しごと 11）
 
 ## Apps
 
@@ -15,6 +15,8 @@
   - App Store: https://apps.apple.com/app/id6790698772
 - [Hadalog（ハダログ）](https://freetokyo.github.io/web/hadalog/): 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。使ったコスメを記録すれば、使った日と使わなかった日で指数の平均がどう違ったかも見比べられる。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6793892712
+- [نسمة / Nasma（ナスマ）](https://freetokyo.github.io/web/nasma/): 紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録する iOS アプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
+  - 近日公開 / coming soon
 - [RecoverySync](https://freetokyo.github.io/web/recoverysync/): Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内で完結。
   - App Store: https://apps.apple.com/app/id6770408873
 - [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
