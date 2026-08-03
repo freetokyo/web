@@ -13,8 +13,8 @@
   - App Store: https://apps.apple.com/app/id6793514760
 - [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6790698772
-- [Hadalog（ハダログ）](https://freetokyo.github.io/web/hadalog/): 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。※
-  - 近日公開 / coming soon
+- [Hadalog（ハダログ）](https://freetokyo.github.io/web/hadalog/): 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。使ったコスメを記録すれば、使った日と使わなかった日で指数の平均がどう違ったかも見比べられる。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。
+  - App Store: https://apps.apple.com/app/id6793892712
 - [RecoverySync](https://freetokyo.github.io/web/recoverysync/): Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内で完結。
   - App Store: https://apps.apple.com/app/id6770408873
 - [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
