@@ -8,6 +8,10 @@
 <link rel="canonical" href="https://freetokyo.github.io/web/arari/en/index.html">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/">
+<link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/">
+<link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/">
+<link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/">
+<link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Arari — Know your real hourly rate | freetokyo">
@@ -368,23 +372,23 @@ a three-pane sidebar/list/detail layout with ⌘N, ⌘F and ⌘Z. One purchase c
 <table>
 <thead><tr><th>Feature</th><th>Free</th><th>Pro (yearly)</th></tr></thead>
 <tbody>
-<tr><td>Clients</td><td>5</td><td>Unlimited</td></tr>
-<tr><td>Projects</td><td>10</td><td>Unlimited</td></tr>
-<tr><td>Estimates and invoices</td><td>20 in total</td><td>Unlimited</td></tr>
-<tr><td>Delivery notes</td><td>✗</td><td>✓</td></tr>
-<tr><td>Time tracking, expenses, payments</td><td>✓</td><td>✓</td></tr>
-<tr><td>Qualified-invoice completeness check</td><td>✓</td><td>✓</td></tr>
-<tr><td>Withholding tax</td><td>✓</td><td>✓</td></tr>
-<tr><td>Gross profit history</td><td>This month</td><td>All time, with comparisons</td></tr>
-<tr><td>Alerts for projects in the red</td><td>✗</td><td>✓</td></tr>
-<tr><td>Multiple currencies</td><td>✗</td><td>✓</td></tr>
-<tr><td>Documents in your client's language</td><td>✗</td><td>✓</td></tr>
-<tr><td>Custom fields</td><td>✗</td><td>✓</td></tr>
-<tr><td>iCloud sync</td><td>✗</td><td>✓</td></tr>
-<tr><td>CSV import and export</td><td>✗</td><td>✓</td></tr>
-<tr><td>Backup export</td><td>✓</td><td>✓</td></tr>
-<tr><td>Restore from a backup</td><td>✗</td><td>✓</td></tr>
-<tr><td>Biometric lock</td><td>✓</td><td>✓</td></tr>
+<tr data-gate="clientLimit"><td>Clients</td><td>5</td><td>Unlimited</td></tr>
+<tr data-gate="projectLimit"><td>Projects</td><td>10</td><td>Unlimited</td></tr>
+<tr data-gate="documentLimit"><td>Estimates and invoices</td><td>20 in total</td><td>Unlimited</td></tr>
+<tr data-gate="deliveryNote"><td>Delivery notes</td><td>✗</td><td>✓</td></tr>
+<tr data-free><td>Time tracking, expenses, payments</td><td>✓</td><td>✓</td></tr>
+<tr data-free><td>Qualified-invoice completeness check</td><td>✓</td><td>✓</td></tr>
+<tr data-free><td>Withholding tax</td><td>✓</td><td>✓</td></tr>
+<tr data-gate="history"><td>Gross profit history</td><td>This month</td><td>All time, with comparisons</td></tr>
+<tr data-gate="lossAlert"><td>Alerts for projects in the red</td><td>✗</td><td>✓</td></tr>
+<tr data-gate="multiCurrency"><td>Multiple currencies</td><td>✗</td><td>✓</td></tr>
+<tr data-gate="documentLanguage"><td>Documents in your client's language</td><td>✗</td><td>✓</td></tr>
+<tr data-gate="customFields"><td>Custom fields</td><td>✗</td><td>✓</td></tr>
+<tr data-gate="cloudSync"><td>iCloud sync</td><td>✗</td><td>✓</td></tr>
+<tr data-gate="csv"><td>CSV import and export</td><td>✗</td><td>✓</td></tr>
+<tr data-free><td>Backup export</td><td>✓</td><td>✓</td></tr>
+<tr data-gate="backupRestore"><td>Restore from a backup</td><td>✗</td><td>✓</td></tr>
+<tr data-free><td>Biometric lock</td><td>✓</td><td>✓</td></tr>
 </tbody>
 </table>
 
@@ -411,7 +415,7 @@ and you can choose rounding down, up or to nearest. Check the requirements that 
 <footer class="footer">
   <div class="container">
     <p><a href="index.html">Home</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="../../">← freetokyo apps</a></p>
-    <p class="ftlangs" style="margin-top:8px"><a href="../index.html" hreflang="ja">日本語</a> · <strong>English</strong></p>
+    <p class="ftlangs" style="margin-top:8px"><a href="../index.html" hreflang="ja">日本語</a> · <strong>English</strong> · <a href="../es/index.html" hreflang="es">Español</a> · <a href="../de/index.html" hreflang="de">Deutsch</a> · <a href="../fr/index.html" hreflang="fr">Français</a> · <a href="../zh-Hant/index.html" hreflang="zh-Hant">繁體中文</a></p>
     <p style="margin-top:8px"><a href="mailto:freetokyo2020@yahoo.co.jp">Contact: freetokyo2020@yahoo.co.jp</a></p>
     <p style="margin-top:8px">&copy; 2026 freetokyo apps</p>
   </div>
