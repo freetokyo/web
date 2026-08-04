@@ -3,7 +3,7 @@
 > 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 41 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyo.github.io/web/ （日本語） / https://freetokyo.github.io/web/en/ （English）
-アプリ数: 43（健康 9 / くらし 18 / おかね 5 / しごと 11）
+アプリ数: 44（健康 9 / くらし 18 / おかね 5 / しごと 12）
 
 ## Apps
 
@@ -82,6 +82,8 @@
 
 ### Work（しごと）
 
+- [アラリ（Arari）](https://freetokyo.github.io/web/arari/): フリーランス・一人法人のための業務アプリ。案件ごとの粗利と実質時給を、工数と経費を差し引いたうえで表示する。見積・納品・請求の PDF は税率ごとの内訳と源泉徴収に対応し、顧客ごとの言語で出力できる。消費税の端数処理は伝票につき税率ごとに1回。為替レートは手入力で通信は行わない（iCloud 同期のみ任意）。iPhone / iPad / Mac ネイティブの3ペイン、ユニバーサル購入。
+  - 近日公開 / coming soon
 - [CareHours](https://freetokyo.github.io/web/carehours/): 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力。
   - App Store: https://apps.apple.com/app/id6769304063
 - [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。
