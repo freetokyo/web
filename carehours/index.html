@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CareHours - 訪問介護ヘルパーの給与管理アプリ</title>
-<meta name="description" content="CareHours は訪問介護の登録ヘルパー向け給与管理アプリです。訪問記録・夜間割増・特定事業所加算を自動計算し、月次PDFレポートを出力。事業所に頼らず個人で実績管理ができます。">
+<meta name="description" content="CareHours は訪問介護の登録ヘルパー向け給与計算・記録アプリです。1タップの訪問記録、夜間・休日加算の自動計算、月次PDF/CSVの書き出しに対応。事業所に頼らず個人で実績管理ができます。">
 <link rel="canonical" href="https://freetokyo.github.io/web/carehours/">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/carehours/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/carehours/ar/">
@@ -43,7 +43,7 @@
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/carehours/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="CareHours - 訪問介護ヘルパーの給与管理アプリ">
-<meta property="og:description" content="CareHours は訪問介護の登録ヘルパー向け給与管理アプリです。訪問記録・夜間割増・特定事業所加算を自動計算し、月次PDFレポートを出力。事業所に頼らず個人で実績管理ができます。">
+<meta property="og:description" content="CareHours は訪問介護の登録ヘルパー向け給与計算・記録アプリです。1タップの訪問記録、夜間・休日加算の自動計算、月次PDF/CSVの書き出しに対応。事業所に頼らず個人で実績管理ができます。">
 <meta property="og:url" content="https://freetokyo.github.io/web/carehours/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="apple-itunes-app" content="app-id=6769304063">
@@ -342,7 +342,7 @@
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "CareHours", "description": "訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/carehours/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6769304063"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "CareHours", "description": "訪問介護ヘルパー向けの給与計算・記録 iOS アプリ。1タップの訪問記録、夜間・休日加算の自動計算、月次 PDF/CSV 出力。", "featureList": ["1タップで訪問の開始・終了を記録", "夜間（22:00〜06:00）・休日加算の自動計算", "利用者ごと・サービス種別ごとの単価設定", "月次PDF実績記録表とCSVの書き出し", "複数事業所の掛け持ち集計と給与照合", "年収上限アラート", "定期訪問予定とリマインド通知", "交通費の記録と月次集計", "Live Activity・ホーム画面ウィジェット", "端末内バックアップの書き出しと復元"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}, "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/carehours/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6769304063"}</script>
 </head>
 <body>
 
@@ -368,7 +368,7 @@
 <section class="hero">
   <div class="hero-badge">訪問介護ヘルパー専用アプリ</div>
   <h1>訪問記録と給与を、<br><em>自分でかんたん管理</em></h1>
-  <p>事業所に頼らず、登録ヘルパー個人が訪問実績を記録・集計。夜間割増・特定事業所加算も自動計算します。</p>
+  <p>事業所に頼らず、登録ヘルパー個人が訪問実績を記録・集計。夜間（22:00〜06:00）・休日の加算も自動で計算します。</p>
   <div class="cta-group">
     <a href="#" class="btn-primary">App Storeでダウンロード</a>
     <a href="support.html" class="btn-outline">サポートを見る</a>
@@ -378,16 +378,16 @@
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item">
-      <div class="number">52万人</div>
-      <div class="label">登録訪問介護員（推計）</div>
+      <div class="number">1タップ</div>
+      <div class="label">訪問の開始・終了を記録</div>
     </div>
     <div class="stat-item">
       <div class="number">夜間対応</div>
       <div class="label">22:00〜06:00 自動割増計算</div>
     </div>
     <div class="stat-item">
-      <div class="number">無料</div>
-      <div class="label">基本機能すべて無料</div>
+      <div class="number">30日</div>
+      <div class="label">最初の30日間は記録が無制限</div>
     </div>
   </div>
 </div>
@@ -402,21 +402,21 @@
   <table>
     <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
     <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
-    <tr><th>バージョン</th><td>1.1</td></tr>
+    <tr><th>バージョン</th><td>1.4</td></tr>
     <tr><th>サイズ</th><td>約 1 MB</td></tr>
     <tr><th>カテゴリ</th><td>仕事効率化</td></tr>
     <tr><th>対象年齢</th><td>4+</td></tr>
     <tr><th>対象ユーザー</th><td>訪問介護の登録ヘルパー</td></tr>
-    <tr><th>データの扱い</th><td>完全オフライン・データは端末内に保存</td></tr>
+    <tr><th>データの扱い</th><td>端末内に保存（第三者送信なし）。iCloud同期はご自身のプライベートDBのみ</td></tr>
     <tr><th>開発者</th><td>freetokyo</td></tr>
-    <tr><th>最終更新</th><td>2026-06-11</td></tr>
+    <tr><th>最終更新</th><td>2026-08</td></tr>
   </table>
 </section>
 <section class="fthowto" aria-label="使い方（3ステップ）">
   <h2>使い方（3ステップ）</h2>
   <ol>
     <li>訪問を記録する</li>
-    <li>夜間割増・特定事業所加算を自動計算</li>
+    <li>夜間・休日の加算を自動計算</li>
     <li>月次PDFレポートを出力する</li>
   </ol>
   <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
@@ -425,7 +425,7 @@
   <div class="ftshot-row">
     <figure class="ftshot-item"><img src="shots/01.png" alt="CareHours 訪問介護の今日の訪問予定画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>今日の訪問</figcaption></figure>
     <figure class="ftshot-item"><img src="shots/02.png" alt="訪問介護の訪問中タイマーと実績記録画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>訪問中の記録</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/03.png" alt="夜間割増・特定事業所加算を計算した月次給与PDFレポート" width="360" height="780" loading="lazy" decoding="async"><figcaption>月次PDFレポート</figcaption></figure>
+    <figure class="ftshot-item"><img src="shots/03.png" alt="夜間・休日加算を含む月次給与PDFレポート" width="360" height="780" loading="lazy" decoding="async"><figcaption>月次PDFレポート</figcaption></figure>
   </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
@@ -455,8 +455,8 @@
     </div>
     <div class="feature-card">
       <span class="feature-icon">☁️</span>
-      <h3>iCloud同期（準備中）</h3>
-      <p>iPhoneとiPad間でデータを自動同期。機種変更しても記録がそのまま引き継がれます。</p>
+      <h3>iCloud同期</h3>
+      <p>記録はご自身のiCloudに同期され、機種変更時も引き継げます。あわせて、端末内のデータをJSONファイルに書き出して手元に保存することもできます。</p>
     </div>
     <div class="feature-card">
       <span class="feature-icon">🔒</span>
@@ -478,7 +478,7 @@
       <div class="plan-price">¥0 <span>/ 月</span></div>
       <div class="plan-desc">まずは無料でお試しください</div>
       <ul class="plan-features">
-        <li>訪問記録（月10件まで）</li>
+        <li>訪問記録（最初の30日間は無制限、以降は月10件まで）</li>
         <li>給与見込み計算（夜間・休日加算）</li>
         <li>年収の壁アラート・定期予定・給与照合</li>
         <li>PDF出力（透かし付き）</li>
@@ -504,7 +504,7 @@
       <ul class="plan-features">
         <li>プレミアムの全機能</li>
         <li>月払い比 約34%割引</li>
-        <li>優先サポート</li>
+        
       </ul>
     </div>
   </div>
