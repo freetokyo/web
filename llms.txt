@@ -3,7 +3,7 @@
 > 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 41 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyo.github.io/web/ （日本語） / https://freetokyo.github.io/web/en/ （English）
-アプリ数: 45（健康 9 / くらし 18 / おかね 5 / しごと 13）
+アプリ数: 46（健康 9 / くらし 18 / おかね 5 / しごと 14）
 
 ## Apps
 
@@ -108,6 +108,8 @@
   - App Store: https://apps.apple.com/app/id6791176557
 - [Toscore](https://freetokyo.github.io/web/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。
   - App Store: https://apps.apple.com/app/id6776913396
+- [وقتين / Waqtain（ワクタイン）](https://freetokyo.github.io/web/waqtain/): 礼拝と礼拝のあいだの「実際に使える作業時間」を可視化し、会議とタスクをその枠に収める iOS アプリ。礼拝前後のバッファを差し引いた作業ウィンドウを毎日生成し、長時間タスクは礼拝で分割する。礼拝時刻は端末内の天文計算による推定値（地元モスクの告知が基準）。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
+  - 近日公開 / coming soon
 
 ## ページ構成
 
