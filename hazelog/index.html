@@ -338,7 +338,7 @@
     <img src="shot-analysis.png" alt="分析画面。ロースト曲線とフェーズ帯、DTR・重量減率などの指標" loading="lazy">
     <img src="shot-home.png" alt="ホーム画面。直近の焙煎一覧とDTR" loading="lazy">
   </div>
-  <p class="note">iPhone / iOS 17.0 以降・日本語 / English・完全オフライン</p>
+  <p class="note">iPhone / iOS 17.0 以降・10言語対応・完全オフライン</p>
 </div></header>
 
 <section><div class="wrap">
@@ -347,6 +347,9 @@
     <div class="card"><h3>ワンタップで記録</h3><p>投入・温度・1ハゼ・2ハゼ・煎り止めを、64ptの大型ボタンでワンタップ。焙煎中は片手・グローブ・一瞥での操作を前提に設計しています。誤タップは5秒間取り消せます。</p></div>
     <div class="card"><h3>自動で曲線になる</h3><p>記録した時刻と温度が、そのまま時間×温度のロースト曲線に。乾燥／メイラード／デベロップのフェーズ帯とイベントマーカーが重なります。</p></div>
     <div class="card"><h3>温度計がなくても成立する</h3><p>温度の入力は任意です。1ハゼと煎り止めのタイミングだけでも、イベントの時系列とDTRが記録として成立します。</p></div>
+    <div class="card"><h3>中断しても続きから</h3><p>焙煎中に電話が来ても、アプリが終了しても記録は消えません。次に開いたときに「再開しますか？」と聞き、途中から続けられます。</p></div>
+    <div class="card"><h3>あとから直せる</h3><p>日時・投入量・焙煎後重量・焙煎度に加えて、イベントの時刻や温度も後から編集できます。打ち間違いが重量減率やDTRを汚したままになりません。</p></div>
+    <div class="card"><h3>写真と環境も残せる</h3><p>焙煎の写真（1回あたり3枚まで・端末内のみ）、室温・湿度・熱源・冷却方法、フレーバータグを一緒に記録できます。</p></div>
   </div>
 </div></section>
 
@@ -358,12 +361,22 @@
 </div></section>
 
 <section><div class="wrap">
+  <h2>バックアップと復元 — 無料です</h2>
+  <p>設定の「バックアップと復元」から、焙煎・生豆・イベント・メモ・環境をすべて含む1つのファイルを書き出せます。
+  新しい端末で読み込めば、そのまま元通りになります。写真を含めるかどうかも選べます。</p>
+  <p class="note">CSV / PDF は分析や共有のための書き出しで、<strong>元に戻せるのはバックアップ</strong>です。書き出しも読み込みも端末内で完結し、外部には一切送信しません。</p>
+</div></section>
+
+<section><div class="wrap">
   <h2>無料と Pro</h2>
   <table>
     <thead><tr><th>機能</th><th>無料</th><th>ハゼログ Pro</th></tr></thead>
     <tbody>
       <tr><td>ライブ焙煎記録・曲線表示・保存</td><td class="y">無制限</td><td class="y">✓</td></tr>
       <tr><td>火力・ダンパー操作ログ</td><td class="y">✓</td><td class="y">✓</td></tr>
+      <tr><td>記録の編集・中断からの再開</td><td class="y">✓</td><td class="y">✓</td></tr>
+      <tr><td>バックアップと復元</td><td class="y">✓</td><td class="y">✓</td></tr>
+      <tr><td>写真・環境メモ・フレーバータグ</td><td class="y">✓</td><td class="y">✓</td></tr>
       <tr><td>生豆マスタ</td><td class="n">3銘柄まで</td><td class="y">無制限</td></tr>
       <tr><td>ゴースト曲線（再現モード）</td><td class="n">—</td><td class="y">✓</td></tr>
       <tr><td>ROR / DTR 分析</td><td class="n">—</td><td class="y">✓</td></tr>
@@ -392,7 +405,10 @@
   <details><summary>℉ 表示にできますか？</summary><p>できます。設定で ℃ / ℉ を切り替えられます（記録は常に内部で統一して保存されるため、単位を変えても過去の記録と比較できます）。</p></details>
   <details><summary>データはどこに保存されますか？</summary><p>すべて端末内にのみ保存されます。外部送信・データ収集・広告は一切ありません。アカウント登録も不要で、機内モードでも全機能が動作します。</p></details>
   <details><summary>サブスクリプションですか？</summary><p>いいえ。ハゼログ Pro は買い切り（¥1,000）です。一度購入すればずっと使えます。</p></details>
-  <details><summary>バックアップはできますか？</summary><p>Pro の CSV / PDF エクスポートで書き出せます。iCloud 同期は今後のバージョンで検討しています。</p></details>
+  <details><summary>バックアップはできますか？</summary><p>できます。設定の「バックアップと復元」から、焙煎・生豆・イベント・メモ・環境をすべて含むファイルを書き出し、別の端末で読み込めます。<strong>無料機能</strong>です。写真を含めるかどうかも選べます。なお CSV / PDF（Pro）は分析・共有のための書き出しで、読み込みには使えません。iCloud での自動同期は今後のバージョンで検討しています。</p></details>
+  <details><summary>焙煎中にアプリが終了したら記録は消えますか？</summary><p>消えません。次にアプリを開いたときに中断した焙煎を検出して「再開する / 破棄する」を確認します。記録はイベントを打つたびに端末内へ保存されています。</p></details>
+  <details><summary>あとから記録を直せますか？</summary><p>直せます。焙煎の詳細画面から「編集」で、日時・投入量・焙煎後重量・焙煎度・生豆に加えて、イベントの時刻や温度も修正でき、不要なイベントは1件ずつ削除できます。投入量を変えると生豆の在庫も自動で調整されます。</p></details>
+  <details><summary>写真は外部に送信されますか？</summary><p>送信しません。写真は端末内にのみ保存され、バックアップに含めるかどうかもご自身で選べます。なお写真の選択には iOS 標準のピッカーを使うため、写真ライブラリへのアクセス許可も求めません。</p></details>
 </div></section>
 </main>
 <footer class="footer">
