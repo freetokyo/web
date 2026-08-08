@@ -312,6 +312,24 @@
 .ftbody th,.ftbody td{text-align:start;padding:11px 10px;border-bottom:1px solid var(--color-border);font-size:15px}
 .ftbody th:not(:first-child),.ftbody td:not(:first-child){text-align:center;width:22%}
 .ftbody thead th{background:rgba(0,0,0,.03);font-weight:600}
+/* 上の 22%/中央寄せは 機能×無料×Pro の「比較表」のための規則。
+   ところが「アプリ概要」「料金」「特商法」のような **2列の項目→内容の表** にも当たり、
+   ラベルが幅を独占して内容が 22% に押し込まれ、「無料（アプリ内課金 あり）」のように折れていた。
+   行のセルがちょうど2つのときだけ、ラベルを細く固定し内容を本文として左寄せ・可変幅に戻す。
+   3列以上の比較表は :nth-child(2):last-child に当たらないので影響しない。 */
+.ftbody table:not(:has(tr>:nth-child(3))){table-layout:fixed}
+.ftbody table tr:has(>:nth-child(2):last-child)>:first-child{
+  width:30%;color:var(--color-text-sub);font-weight:600;vertical-align:top;text-align:start}
+.ftbody table tr:has(>:nth-child(2):last-child)>:nth-child(2){
+  width:auto;text-align:start;vertical-align:top;overflow-wrap:anywhere}
+/* :has() が使えない環境向けの保険（アプリ概要は .ftfacts で明示されている） */
+.ftfacts table{table-layout:fixed}
+.ftfacts table th:first-child{width:30%;color:var(--color-text-sub);font-weight:600;vertical-align:top}
+.ftfacts table td{width:auto;text-align:start;vertical-align:top}
+@media (max-width:520px){
+  .ftbody table tr:has(>:nth-child(2):last-child)>:first-child,
+  .ftfacts table th:first-child{width:38%}
+}
 .ftbody img{max-width:100%;height:auto;border-radius:var(--radius-sm)}
 [dir="rtl"] .ftbody th,[dir="rtl"] .ftbody td{text-align:start}
 
