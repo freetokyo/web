@@ -25,8 +25,8 @@
   - App Store: https://apps.apple.com/app/id6760746164
 - [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
   - App Store: https://apps.apple.com/app/id6767084251
-- [Yuralog（ユラログ）](https://freetokyo.github.io/web/yuralog/): 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。※
-  - 近日公開 / coming soon
+- [Yuralog（ユラログ）](https://freetokyo.github.io/web/yuralog/): 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。
+  - App Store: https://apps.apple.com/app/id6792374401
 
 ### Life（くらし）
 
@@ -43,9 +43,9 @@
 - [ジツヒロ（Jitsuhiro）](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6779472712
 - [カジミエル（Kajimieru）](https://freetokyo.github.io/web/kajimieru/): 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
-  - 近日公開 / coming soon
-- [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。※
-  - 近日公開 / coming soon
+  - App Store: https://apps.apple.com/app/id6797382805
+- [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
+  - App Store: https://apps.apple.com/app/id6792197271
 - [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6788981648
 - [Miawell](https://freetokyo.github.io/web/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。
@@ -92,8 +92,8 @@
   - App Store: https://apps.apple.com/app/id6770864162
 - [Hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。
   - App Store: https://apps.apple.com/app/id6771629040
-- [Inkarte（インカルテ）](https://freetokyo.github.io/web/inkarte/): タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書 iOS / iPadOS アプリ。カウンセリングから電子署名付き同意書（PDF）まで一台で管理し、顧客情報を端末の外に出さない。完全オフライン・買い切り。※
-  - 近日公開 / coming soon
+- [Inkarte（インカルテ）](https://freetokyo.github.io/web/inkarte/): タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書 iOS / iPadOS アプリ。カウンセリングから電子署名付き同意書（PDF）まで一台で管理し、顧客情報を端末の外に出さない。完全オフライン・買い切り。
+  - App Store: https://apps.apple.com/app/id6792252166
 - [コエガキ（Koegaki）](https://freetokyo.github.io/web/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。
   - App Store: https://apps.apple.com/app/id6780139132
 - [ネイログ（Nailog）](https://freetokyo.github.io/web/nailog/): ネイリスト向けの顧客カルテ iOS アプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、アイテムマスタ・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。
