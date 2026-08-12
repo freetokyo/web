@@ -37,6 +37,9 @@
     <lastmod>2026-08-08</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://freetokyo.github.io/web/hemlog/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://freetokyo.github.io/web/heyalog/sitemap.xml</loc>
     <lastmod>2026-08-08</lastmod>
   </sitemap>
@@ -122,7 +125,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/recoverysync/sitemap.xml</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-12</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/sakulog/sitemap.xml</loc>
@@ -146,6 +149,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/tillcount/sitemap.xml</loc>
+    <lastmod>2026-08-11</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/torekarte/sitemap.xml</loc>
@@ -178,9 +182,5 @@
   <sitemap>
     <loc>https://freetokyo.github.io/web/zaicho/sitemap.xml</loc>
     <lastmod>2026-08-08</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://freetokyo.github.io/web/chezlog/sitemap.xml</loc>
-    <lastmod>2026-08-11</lastmod>
   </sitemap>
 </sitemapindex>
