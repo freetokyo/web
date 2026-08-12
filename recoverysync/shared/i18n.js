@@ -29,7 +29,7 @@ const TRANSLATIONS = {
 
     "privacy.s1.title":      "What data we access",
     "privacy.s1.body":       "With your permission, RecoverySync reads the following data from Apple HealthKit on your device:",
-    "privacy.s1.item1":      "Heart Rate Variability (RMSSD) — to calculate your recovery score",
+    "privacy.s1.item1":      "Heart Rate Variability (SDNN) — to calculate your recovery score",
     "privacy.s1.item2":      "Resting Heart Rate — to calculate your recovery score",
     "privacy.s1.item3":      "Sleep data — to calculate your recovery score",
     "privacy.s1.readonly":   "All access is read-only. RecoverySync never writes data back to HealthKit.",
@@ -114,7 +114,7 @@ const TRANSLATIONS = {
     "support.faq.title":     "Frequently Asked Questions",
 
     "support.faq.q1":  "How does the recovery score work?",
-    "support.faq.a1":  "Your recovery score is calculated from three metrics read from Apple Watch: Heart Rate Variability (HRV, RMSSD) accounts for 50%, Resting Heart Rate accounts for 30%, and Sleep Duration accounts for 20%. Each metric is compared to your personal 28-day baseline (established after a 14-day calibration period) to produce a score from 0–100. HIGH is 76–100, MODERATE is 51–75, and LOW is 0–50.",
+    "support.faq.a1":  "Your recovery score is calculated from three metrics read from Apple Watch: Heart Rate Variability (HRV, SDNN) accounts for 50%, Resting Heart Rate accounts for 30%, and Sleep Duration accounts for 20%. Each metric is compared to your personal 28-day baseline to produce a score from 0–100. HIGH is 76–100, MODERATE is 51–75, and LOW is 0–50.",
 
     "support.faq.q2":  "Why is my score showing \"—\" (dash)?",
     "support.faq.a2":  "A dash (—) means RecoverySync has no data for last night yet — not that the app is still calibrating; a score appears from your very first night of data. In the Health app, make sure Sleep, Heart Rate Variability and Resting Heart Rate are all allowed for RecoverySync, and turn on sleep tracking in the Watch app so your Apple Watch records sleep overnight.",
@@ -123,7 +123,7 @@ const TRANSLATIONS = {
     "support.faq.a3":  "No. RecoverySync requires Apple Watch (Series 4 or later) to record the HRV, resting heart rate, and sleep data used for score calculation. The iPhone app displays and analyzes the data, but the Apple Watch is the required data source.",
 
     "support.faq.q4":  "Why does the app need access to my Health data?",
-    "support.faq.a4":  "RecoverySync reads HRV (RMSSD), resting heart rate, and sleep data from Apple HealthKit to calculate your recovery score. This is the only purpose for which health data is used. The data is processed entirely on-device and never leaves your iPhone.",
+    "support.faq.a4":  "RecoverySync reads HRV (SDNN), resting heart rate, and sleep data from Apple HealthKit to calculate your recovery score. This is the only purpose for which health data is used. The data is processed entirely on-device and never leaves your iPhone.",
 
     "support.faq.q5":  "How do I restore my purchase?",
     "support.faq.a5":  "Open RecoverySync and go to Settings → Restore Purchase. Make sure you are signed in to the same Apple ID used for the original purchase. If the issue persists, contact Apple Support for purchase-related assistance.",
@@ -215,7 +215,7 @@ const TRANSLATIONS = {
 
     "privacy.s1.title":      "アクセスするデータ",
     "privacy.s1.body":       "お客様の許可のもと、RecoverySyncはデバイス上のApple HealthKitから以下のデータを読み取ります:",
-    "privacy.s1.item1":      "心拍変動（RMSSD）— リカバリースコアの算出のため",
+    "privacy.s1.item1":      "心拍変動（SDNN）— リカバリースコアの算出のため",
     "privacy.s1.item2":      "安静時心拍数 — リカバリースコアの算出のため",
     "privacy.s1.item3":      "睡眠データ — リカバリースコアの算出のため",
     "privacy.s1.readonly":   "すべてのアクセスは読み取り専用です。RecoverySyncがHealthKitにデータを書き込むことはありません。",
@@ -300,7 +300,7 @@ const TRANSLATIONS = {
     "support.faq.title":     "よくある質問",
 
     "support.faq.q1":  "リカバリースコアはどのように計算されますか？",
-    "support.faq.a1":  "リカバリースコアはApple Watchから取得した3つの指標をもとに算出されます。心拍変動（HRV、RMSSD）が50%、安静時心拍数が30%、睡眠時間が20%の割合で計算されます。各指標はお客様個人の28日間移動平均（14日間の較正期間後に確立）と比較され、0〜100のスコアが算出されます。76〜100がHIGH、51〜75がMODERATE、0〜50がLOWです。",
+    "support.faq.a1":  "リカバリースコアはApple Watchから取得した3つの指標をもとに算出されます。心拍変動（HRV、SDNN）が50%、安静時心拍数が30%、睡眠時間が20%の割合で計算されます。各指標はお客様個人の28日間移動平均と比較され、0〜100のスコアが算出されます。76〜100がHIGH、51〜75がMODERATE、0〜50がLOWです。",
 
     "support.faq.q2":  "スコアが「—」（ダッシュ）と表示されるのはなぜですか？",
     "support.faq.a2":  "「—」は、まだ前夜のデータが取得できていないサインです（較正中という意味ではありません。データがあれば初日からスコアが表示されます）。ヘルスケアAppで「睡眠」「心拍変動」「安静時心拍数」がRecoverySyncに許可されているか、またWatch Appで睡眠の記録がオンになっていて夜間にApple Watchが睡眠を記録しているかをご確認ください。",
@@ -309,7 +309,7 @@ const TRANSLATIONS = {
     "support.faq.a3":  "使用できません。RecoverySyncはスコア計算に使用するHRV・安静時心拍数・睡眠データを記録するためにApple Watch（Series 4以降）が必要です。iPhoneアプリはデータの表示と分析を行いますが、Apple Watchが必須のデータソースです。",
 
     "support.faq.q4":  "アプリにヘルスデータへのアクセスが必要なのはなぜですか？",
-    "support.faq.a4":  "RecoverySyncはリカバリースコアを算出するために、Apple HealthKitからHRV（RMSSD）・安静時心拍数・睡眠データを読み取ります。これが健康データを使用する唯一の目的です。データはデバイス上で完全に処理され、iPhoneの外に出ることはありません。",
+    "support.faq.a4":  "RecoverySyncはリカバリースコアを算出するために、Apple HealthKitからHRV（SDNN）・安静時心拍数・睡眠データを読み取ります。これが健康データを使用する唯一の目的です。データはデバイス上で完全に処理され、iPhoneの外に出ることはありません。",
 
     "support.faq.q5":  "購入を復元するにはどうすればよいですか？",
     "support.faq.a5":  "RecoverySyncを開き、設定 → 購入を復元 の順にタップしてください。元の購入時に使用したApple IDでサインインしていることを確認してください。問題が解決しない場合は、購入に関するサポートについてAppleサポートにお問い合わせください。",

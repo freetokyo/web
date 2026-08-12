@@ -10,7 +10,7 @@ Updated: 2026-06
 
 ## Features
 - Single recovery score from Apple Watch
-- HRV (RMSSD) tracking
+- HRV (SDNN) tracking
 - Resting heart rate analysis
 - Sleep-based calibration
 - Apple Watch complication
