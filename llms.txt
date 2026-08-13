@@ -1,22 +1,14 @@
 # freetokyo apps
 
-> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 41 本の iOS / watchOS アプリを公開中。多くが完全オフライン・アカウント不要・買い切り。
+> 個人開発者 freetokyo がリリースしている iOS アプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 55 本の iOS / watchOS アプリ（配信中 42 本・近日公開 13 本）。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyo.github.io/web/ （日本語） / https://freetokyo.github.io/web/en/ （English）
-アプリ数: 50（健康 9 / くらし 18 / おかね 5 / しごと 18）
+アプリ数: 55（健康 9 / くらし 18 / おかね 5 / しごと 23）
 
 ## Apps
 
 ### Health（健康）
 
-- [Atamalog（アタマログ）](https://freetokyo.github.io/web/atamalog/): 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。
-  - App Store: https://apps.apple.com/app/id6793514760
-- [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。
-  - App Store: https://apps.apple.com/app/id6790698772
-- [Hadalog（ハダログ）](https://freetokyo.github.io/web/hadalog/): 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。使ったコスメを記録すれば、使った日と使わなかった日で指数の平均がどう違ったかも見比べられる。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。
-  - App Store: https://apps.apple.com/app/id6793892712
-- [نسمة / Nasma（ナスマ）](https://freetokyo.github.io/web/nasma/): 紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録する iOS アプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
-  - 近日公開 / coming soon
 - [RecoverySync](https://freetokyo.github.io/web/recoverysync/): Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内で完結。
   - App Store: https://apps.apple.com/app/id6770408873
 - [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
@@ -25,60 +17,68 @@
   - App Store: https://apps.apple.com/app/id6760746164
 - [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
   - App Store: https://apps.apple.com/app/id6767084251
+- [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。
+  - App Store: https://apps.apple.com/app/id6790698772
 - [Yuralog（ユラログ）](https://freetokyo.github.io/web/yuralog/): 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。
   - App Store: https://apps.apple.com/app/id6792374401
+- [Atamalog（アタマログ）](https://freetokyo.github.io/web/atamalog/): 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。
+  - App Store: https://apps.apple.com/app/id6793514760
+- [Hadalog（ハダログ）](https://freetokyo.github.io/web/hadalog/): 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。使ったコスメを記録すれば、使った日と使わなかった日で指数の平均がどう違ったかも見比べられる。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。
+  - App Store: https://apps.apple.com/app/id6793892712
+- [نسمة / Nasma（ナスマ）](https://freetokyo.github.io/web/nasma/): 紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録する iOS アプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
+  - 近日公開 / coming soon
 
 ### Life（くらし）
 
-- [ハゼログ（HazeLog）](https://freetokyo.github.io/web/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。
-  - App Store: https://apps.apple.com/app/id6791478115
-- [ヘヤログ（Heyalog）](https://freetokyo.github.io/web/heyalog/): 賃貸住宅の入居・退去時の部屋状態を写真で記録し、国土交通省「原状回復をめぐるトラブルとガイドライン」準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で敷金トラブルを防ぐ。完全オフライン・買い切り 600 円・広告なし。
-  - App Store: https://apps.apple.com/app/id6778713193
-- [ヒトリログ（HitoriLog）](https://freetokyo.github.io/web/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
-  - App Store: https://apps.apple.com/app/id6785472192
 - [IeKan（家看）](https://freetokyo.github.io/web/iekan/): 離れて暮らす家族で実家を見守る iOS アプリ。写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。
   - App Store: https://apps.apple.com/app/id6764244913
-- [Jamalog](https://freetokyo.github.io/web/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
-  - App Store: https://apps.apple.com/app/id6788732648
-- [ジツヒロ（Jitsuhiro）](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。
-  - App Store: https://apps.apple.com/app/id6779472712
-- [カジミエル（Kajimieru）](https://freetokyo.github.io/web/kajimieru/): 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
-  - App Store: https://apps.apple.com/app/id6797382805
-- [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
-  - App Store: https://apps.apple.com/app/id6792197271
-- [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。日本語 / English 対応。
-  - App Store: https://apps.apple.com/app/id6788981648
-- [Miawell](https://freetokyo.github.io/web/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。
-  - App Store: https://apps.apple.com/app/id6774019571
-- [Muddah（ムッダ）](https://freetokyo.github.io/web/muddah/): GCC 駐在家族のための完全オフライン書類期限ボルト iOS アプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。
-  - App Store: https://apps.apple.com/app/id6790558814
 - [PrintSummary / プリサマ](https://freetokyo.github.io/web/printmemo/): 学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理する iOS アプリ。家族カレンダー連携対応。
   - App Store: https://apps.apple.com/app/id6761879860
-- [SakuLog（サクログ）](https://freetokyo.github.io/web/sakulog/): こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。
-  - App Store: https://apps.apple.com/app/id6791827004
-- [Saqrlog（サクルログ）](https://freetokyo.github.io/web/saqrlog/): 鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。
-  - App Store: https://apps.apple.com/app/id6789535072
-- [ソナログ（Sonalog）](https://freetokyo.github.io/web/sonalog/): 消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにする iOS アプリ。期限が近い備蓄を通知し、家族の人数から必要量を計算、防災カルテは PDF で持ち出せる。完全オフライン・アカウント不要・買い切り。日本語 / English 対応。
-  - App Store: https://apps.apple.com/app/id6790403062
+- [Miawell](https://freetokyo.github.io/web/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。
+  - App Store: https://apps.apple.com/app/id6774019571
 - [スクショリ](https://freetokyo.github.io/web/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、完全オフライン・買い切り・広告なし。
   - App Store: https://apps.apple.com/app/id6778336001
-- [Unelog（ウネログ）](https://freetokyo.github.io/web/unelog/): 市民農園・貸し農園の「区画」に特化した完全オフラインの区画栽培カルテ iOS アプリ。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。
-  - App Store: https://apps.apple.com/app/id6792154276
+- [ヘヤログ（Heyalog）](https://freetokyo.github.io/web/heyalog/): 賃貸住宅の入居・退去時の部屋状態を写真で記録し、国土交通省「原状回復をめぐるトラブルとガイドライン」準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で敷金トラブルを防ぐ。完全オフライン・買い切り 600 円・広告なし。
+  - App Store: https://apps.apple.com/app/id6778713193
+- [ジツヒロ（Jitsuhiro）](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。
+  - App Store: https://apps.apple.com/app/id6779472712
 - [Yuzuri（ユズリ）](https://freetokyo.github.io/web/yuzuri/): 完全オフラインの終活ノート iOS アプリ。資産・保険・連絡先・想いを一冊のノートに記録。アカウント登録不要・データ収集なし・買い切り。
   - App Store: https://apps.apple.com/app/id6784874949
+- [ヒトリログ（HitoriLog）](https://freetokyo.github.io/web/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
+  - App Store: https://apps.apple.com/app/id6785472192
+- [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。日本語 / English 対応。
+  - App Store: https://apps.apple.com/app/id6788981648
+- [Jamalog](https://freetokyo.github.io/web/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
+  - App Store: https://apps.apple.com/app/id6788732648
+- [Saqrlog（サクルログ）](https://freetokyo.github.io/web/saqrlog/): 鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。
+  - App Store: https://apps.apple.com/app/id6789535072
+- [Muddah（ムッダ）](https://freetokyo.github.io/web/muddah/): GCC 駐在家族のための完全オフライン書類期限ボルト iOS アプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。
+  - App Store: https://apps.apple.com/app/id6790558814
+- [ソナログ（Sonalog）](https://freetokyo.github.io/web/sonalog/): 消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにする iOS アプリ。期限が近い備蓄を通知し、家族の人数から必要量を計算、防災カルテは PDF で持ち出せる。完全オフライン・アカウント不要・買い切り。日本語 / English 対応。
+  - App Store: https://apps.apple.com/app/id6790403062
+- [ハゼログ（HazeLog）](https://freetokyo.github.io/web/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。
+  - App Store: https://apps.apple.com/app/id6791478115
+- [SakuLog（サクログ）](https://freetokyo.github.io/web/sakulog/): こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。
+  - App Store: https://apps.apple.com/app/id6791827004
+- [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
+  - App Store: https://apps.apple.com/app/id6792197271
+- [Unelog（ウネログ）](https://freetokyo.github.io/web/unelog/): 市民農園・貸し農園の「区画」に特化した完全オフラインの区画栽培カルテ iOS アプリ。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。
+  - App Store: https://apps.apple.com/app/id6792154276
+- [カジミエル（Kajimieru）](https://freetokyo.github.io/web/kajimieru/): 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
+  - App Store: https://apps.apple.com/app/id6797382805
 
 ### Money（おかね）
 
 - [世帯手取ナビ（HomeNet Navi）](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。
   - App Store: https://apps.apple.com/app/id6772911843
-- [ケイヒバ（Keihiba）](https://freetokyo.github.io/web/keihiba/): 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。
-  - App Store: https://apps.apple.com/app/id6779895529
-- [キメカブ（Kimekabu）](https://freetokyo.github.io/web/kimekabu/): 株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート iOS アプリ。損益ではなく「判断の質」を振り返り、売買ルールの再現性を高める。投資助言ではなく自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。日本語 / English 対応。
-  - App Store: https://apps.apple.com/app/id6789459452
 - [Mochiru](https://freetokyo.github.io/web/mochiru/): 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。
   - App Store: https://apps.apple.com/app/id6778235888
 - [ザイチョウ（Zaicho）](https://freetokyo.github.io/web/zaicho/): 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。
   - App Store: https://apps.apple.com/app/id6788175241
+- [ケイヒバ（Keihiba）](https://freetokyo.github.io/web/keihiba/): 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。
+  - App Store: https://apps.apple.com/app/id6779895529
+- [キメカブ（Kimekabu）](https://freetokyo.github.io/web/kimekabu/): 株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート iOS アプリ。損益ではなく「判断の質」を振り返り、売買ルールの再現性を高める。投資助言ではなく自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。日本語 / English 対応。
+  - App Store: https://apps.apple.com/app/id6789459452
 
 ### Work（しごと）
 
@@ -86,37 +86,47 @@
   - 近日公開 / coming soon
 - [CareHours](https://freetokyo.github.io/web/carehours/): 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間割増・特定事業所加算の自動計算、月次 PDF レポート出力。
   - App Store: https://apps.apple.com/app/id6769304063
-- [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。
-  - App Store: https://apps.apple.com/app/id6788604524
 - [Genbalog](https://freetokyo.github.io/web/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。
   - App Store: https://apps.apple.com/app/id6770864162
 - [Hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。
   - App Store: https://apps.apple.com/app/id6771629040
-- [Hemlog（ヘムログ）](https://freetokyo.github.io/web/hemlog/): 洋服のお直し職人向けの iOS / iPadOS アプリ。記録の単位を「顧客の体」ではなく「一着ごとの直し」に置き、元寸法・仕上がり寸法・測定条件（基準点/ヒール高/姿勢）・折り返し代の残量・仕上がり写真を1枚のカードにまとめる。各寸法は実測/指示/算出を区別し、実測が足りない記録には再現の根拠が不足と表示する。inch は 1/8 刻みの分数入力。通信を行わずアカウント登録もない。
-  - 近日公開 / coming soon
+- [Toscore](https://freetokyo.github.io/web/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。
+  - App Store: https://apps.apple.com/app/id6776913396
+- [コエガキ（Koegaki）](https://freetokyo.github.io/web/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。
+  - App Store: https://apps.apple.com/app/id6780139132
+- [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。
+  - App Store: https://apps.apple.com/app/id6788604524
+- [ネイログ（Nailog）](https://freetokyo.github.io/web/nailog/): ネイリスト向けの顧客カルテ iOS アプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、アイテムマスタ・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。
+  - App Store: https://apps.apple.com/app/id6790943773
+- [オトログ（Otolog）](https://freetokyo.github.io/web/otolog/): ピアノ・音楽教室の個人講師向け生徒カルテ iOS アプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。
+  - App Store: https://apps.apple.com/app/id6791038062
+- [トレカルテ（ToreKarte）](https://freetokyo.github.io/web/torekarte/): パーソナルトレーナー向けの顧客カルテ iOS アプリ。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。
+  - App Store: https://apps.apple.com/app/id6791176557
 - [Inkarte（インカルテ）](https://freetokyo.github.io/web/inkarte/): タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書 iOS / iPadOS アプリ。カウンセリングから電子署名付き同意書（PDF）まで一台で管理し、顧客情報を端末の外に出さない。完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6792252166
 - [カルテラ（Kartella）](https://freetokyo.github.io/web/kartella/): フリーランス／面貸し／訪問の美容師と1人サロン向けの顧客カルテ iOS/iPadOS アプリ。薬剤名・g・オキシ%・ 放置時間のフォーミュラ、Before/After 写真、パッチテストの実施日・ブランド・結果と有効期限（既定180日・ 30〜730日）を端末内だけで記録する。ネットワーク通信コードを持たず、アカウントもサーバーも無い。 顧客の権利対応として、1名分の記録のPDF書き出しと、識別情報のみの削除／完全削除の2系統を備える。 メニュー・薬剤・ブランドはマスタに登録して選ぶだけで入力できる。買い切り。日本語・英語・ドイツ語・ フランス語・スペイン語・イタリア語・韓国語。
   - 近日公開 / coming soon
 - [Kartella Pets（カルテラ ペッツ）](https://freetokyo.github.io/web/kartellapets/): 個人開業のペットシッター向けの顧客カルテ iOS/iPadOS アプリ。飼い主の連絡先と緊急連絡先、かかりつけ動物病院、ペットの品種・マイクロチップ番号・保険・性格・隠れ場所、給餌と投薬と散歩の指示、チェックリストと写真つきの訪問記録、ワクチンの接種日と期限リマインド、預かっている鍵のタグ台帳を端末内だけで扱う。鍵の保管場所と暗証番号は AES-GCM で暗号化し、鍵は端末専用の Keychain に置くため端末バックアップからは復元されない。代わりにパスフレーズ由来鍵で再暗号化した自己完結のバックアップファイルを書き出せる。表計算・書類形式（CSV／JSON／PDF）の書き出しに鍵情報を含める手段は用意していない。急な引き継ぎ用に顧客1件だけの暗号化書き出しもできる。獣医学的な助言は行わず、同意書に法的効力を持たせるものでもない。アカウント不要・買い切り・24言語。
   - 近日公開 / coming soon
-- [コエガキ（Koegaki）](https://freetokyo.github.io/web/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。
-  - App Store: https://apps.apple.com/app/id6780139132
-- [ネイログ（Nailog）](https://freetokyo.github.io/web/nailog/): ネイリスト向けの顧客カルテ iOS アプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、アイテムマスタ・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。
-  - App Store: https://apps.apple.com/app/id6790943773
-- [オトログ（Otolog）](https://freetokyo.github.io/web/otolog/): ピアノ・音楽教室の個人講師向け生徒カルテ iOS アプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。
-  - App Store: https://apps.apple.com/app/id6791038062
-- [قمري / Qamari（カマリ）](https://freetokyo.github.io/web/qamari/): ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
-  - App Store: https://apps.apple.com/app/id6791838601
 - [テマログ（Temalog）](https://freetokyo.github.io/web/temalog/): 建設業の一人親方（個人事業主）向けの出面・立替材料記録 iOS アプリ。人工（にんく）を単位に現場ごとの単価で金額を出し、立て替えた材料をレシート写真つきで残す。単価改定は履歴として積み、締め確定時に金額をスナップショットで凍結するため、すでに元請へ出した請求根拠が後から書き換わらない。締め日は現場ごとに設定でき、支払サイトから入金予定日を生成する。完全ローカル・アカウント不要・買い切り。日本語 / English。
+  - 近日公開 / coming soon
+- [Hemlog（ヘムログ）](https://freetokyo.github.io/web/hemlog/): 洋服のお直し職人向けの iOS / iPadOS アプリ。記録の単位を「顧客の体」ではなく「一着ごとの直し」に置き、元寸法・仕上がり寸法・測定条件（基準点/ヒール高/姿勢）・折り返し代の残量・仕上がり写真を1枚のカードにまとめる。各寸法は実測/指示/算出を区別し、実測が足りない記録には再現の根拠が不足と表示する。inch は 1/8 刻みの分数入力。通信を行わずアカウント登録もない。
   - 近日公開 / coming soon
 - [シメレジ（Tillcount）](https://freetokyo.github.io/web/tillcount/): 小規模な出店（フリマ・マルシェ・学園祭・キッチンカー）向けの iOS レジアプリ。会計だけでなく閉店後の現金照合（締め）を1本に統合しているのが特徴で、開始現金＋現金売上−取消＋入金−出金で「あるはずの現金」を組み立て、金種ごとに数えた実査額との差額を出す。差額が出たときは取消履歴と現金の入出金を原因候補として提示する。釣銭の追加投入や出店料の支払いといったレジを通らない現金移動を記録できるため、差額の理由をたどれる。JPY/USD/EUR/GBP/CNY/KRW/INR/BRL など28通貨の金種表を収録し、未収載通貨は合計額入力にフォールバック。商品ごとの税率と内税/外税、税率別集計、CSV書き出し、JSONバックアップ／復元（追加方式）に対応。完全ローカル・アカウント不要・買い切り。アプリUIは33言語、店頭は39ロケール。
   - 近日公開 / coming soon
-- [トレカルテ（ToreKarte）](https://freetokyo.github.io/web/torekarte/): パーソナルトレーナー向けの顧客カルテ iOS アプリ。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。
-  - App Store: https://apps.apple.com/app/id6791176557
-- [Toscore](https://freetokyo.github.io/web/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。
-  - App Store: https://apps.apple.com/app/id6776913396
 - [وقتين / Waqtain（ワクタイン）](https://freetokyo.github.io/web/waqtain/): 礼拝と礼拝のあいだの「実際に使える作業時間」を可視化し、会議とタスクをその枠に収める iOS アプリ。礼拝前後のバッファを差し引いた作業ウィンドウを毎日生成し、長時間タスクは礼拝で分割する。礼拝時刻は端末内の天文計算による推定値（地元モスクの告知が基準）。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
+  - 近日公開 / coming soon
+- [قمري / Qamari（カマリ）](https://freetokyo.github.io/web/qamari/): ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
+  - App Store: https://apps.apple.com/app/id6791838601
+- [カルテラ ラッシュ（Kartella Lash）](https://freetokyo.github.io/web/kartellalash/): まつ毛エクステとラッシュリフトを扱うアイリストのための顧客カルテ iOS アプリ。施術ごとに使ったグルーのロットを紐づけ、ロット番号から該当する顧客を逆引きできる。パッチテストの有効期間は製品ブランドごとに規則を設定でき、判定した日の値をそのまま保存するため、あとから規則を変えても過去の判定は動かない。ラッシュリフトの放置時間は開始時刻からの差分で実測する。記録は端末内のみ・アカウント不要・買い切り。
+  - 近日公開 / coming soon
+- [Chezlog（シェログ）](https://freetokyo.github.io/web/chezlog/): 出張シェフ（パーソナルシェフ・ケータリング）のための案件台帳 iOS アプリ。顧客宅ごとにコンロの口数・オーブン・調理器具・食物アレルギーや禁忌・前回提供した料理を記録し、同じ料理を続けて出さないよう提供履歴で照合する。献立を決めると必要な食材が買い物リストになり、提供時刻から逆算した当日の進行表を組み立てる。手が離せない工程は同じ時刻に重ならないよう配置する。記録は端末内のみ・アカウント不要・買い切り。UI 33言語。
+  - 近日公開 / coming soon
+- [Formulog（フォーミュログ）](https://freetokyo.github.io/web/formulog/): 革のリペア職人のための調色台帳 iOS / iPadOS アプリ。革の補修は元の色の上に塗り重ねるため、同じ配合でも素地の色が違えば仕上がりが変わる。そこで素地の色と仕上がりの色を必ず組にして記録し、過去の似た色を探すときもその組で照合する。配合比・下地処理・仕上げ・作業写真をひとまとめに残せる。塗料は自分の呼び方で登録でき、登録件数に上限はない。記録は端末内のみ・アカウント不要・買い切り。
+  - 近日公開 / coming soon
+- [Kartella Home（カルテラ ホーム）](https://freetokyo.github.io/web/kartellahome/): ハウスクリーニング・家事代行を個人または少人数で営む事業者のための顧客カルテ iOS アプリ。顧客ごとの間取り・作業指示・使う洗剤・訪問記録に加えて、預かっている鍵の本数と所在、玄関の暗証番号を扱う。暗証番号と鍵の所在は端末上で暗号化し、既定では伏字、Face ID などの本人確認を通したときだけ表示する。アプリは通信を行わず、アカウントもサーバーもない。買い切り。
+  - 近日公開 / coming soon
+- [Kartella Auto（カルテラ オート）](https://freetokyo.github.io/web/kartellaauto/): 出張型カーディテーリング事業者のための車両カルテ・施工記録 iOS / iPadOS アプリ。車両ごとにカルテを作り、作業前の状態・使用した薬剤・受領金額・コーティングの保証期限を1台に紐づけて残す。セダン／ハッチバック／SUV／ピックアップの4車型 × 5面の展開図をタップして、キズ・へこみ・飛び石・水垢・鉄粉を作業前に記録する。面の呼称は運転席側／助手席側ではなく左側面／右側面に統一し、右ハンドルと左ハンドルで意味が反転しないようにしている。保証・メンテ期限はローカル通知で知らせる。記録は端末内のみ・アカウント不要・買い切り。
   - 近日公開 / coming soon
 
 ## ページ構成
