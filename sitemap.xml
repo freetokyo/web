@@ -2,11 +2,11 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://freetokyo.github.io/web/en/sitemap.xml</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/arari/sitemap.xml</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/atamalog/sitemap.xml</loc>
@@ -86,15 +86,15 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/kartella/sitemap.xml</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/kartellaauto/sitemap.xml</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/kartellahome/sitemap.xml</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/kartellalash/sitemap.xml</loc>
@@ -102,7 +102,10 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/kartellapets/sitemap.xml</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-13</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/kartellastudio/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/keihiba/sitemap.xml</loc>
@@ -154,7 +157,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/qamari/sitemap.xml</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/recoverysync/sitemap.xml</loc>
@@ -182,7 +185,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/temalog/sitemap.xml</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/tillcount/sitemap.xml</loc>
@@ -210,7 +213,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/waqtain/sitemap.xml</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/yuralog/sitemap.xml</loc>
