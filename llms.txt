@@ -46,7 +46,7 @@
   - App Store: https://apps.apple.com/app/id6784874949
 - [ヒトリログ（HitoriLog）](https://freetokyo.github.io/web/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6785472192
-- [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。日本語 / English 対応。
+- [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。34言語対応。
   - App Store: https://apps.apple.com/app/id6788981648
 - [Jamalog](https://freetokyo.github.io/web/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
   - App Store: https://apps.apple.com/app/id6788732648
