@@ -2,7 +2,7 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://freetokyo.github.io/web/en/sitemap.xml</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-19</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/arari/sitemap.xml</loc>
@@ -149,6 +149,9 @@
     <lastmod>2026-08-08</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://freetokyo.github.io/web/netlit/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://freetokyo.github.io/web/otolog/sitemap.xml</loc>
     <lastmod>2026-08-08</lastmod>
   </sitemap>
@@ -174,7 +177,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/saunaflow/sitemap.xml</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-19</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/sonalog/sitemap.xml</loc>
@@ -202,7 +205,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/trero/sitemap.xml</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-19</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/tsukilift/sitemap.xml</loc>
