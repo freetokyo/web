@@ -150,6 +150,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/netlit/sitemap.xml</loc>
+    <lastmod>2026-08-19</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/otolog/sitemap.xml</loc>
@@ -166,6 +167,9 @@
   <sitemap>
     <loc>https://freetokyo.github.io/web/recoverysync/sitemap.xml</loc>
     <lastmod>2026-08-12</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/rotare/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/sakulog/sitemap.xml</loc>
