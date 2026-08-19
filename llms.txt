@@ -13,7 +13,7 @@
   - App Store: https://apps.apple.com/app/id6770408873
 - [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
   - App Store: https://apps.apple.com/app/id6761906547
-- [Trero](https://freetokyo.github.io/web/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。34 言語対応のフラッグシップアプリ。
+- [Trero](https://freetokyo.github.io/web/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。35 言語対応のフラッグシップアプリ。
   - App Store: https://apps.apple.com/app/id6760746164
 - [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
   - App Store: https://apps.apple.com/app/id6767084251
