@@ -153,6 +153,9 @@
     <lastmod>2026-08-08</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://freetokyo.github.io/web/nenrin/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://freetokyo.github.io/web/netlit/sitemap.xml</loc>
     <lastmod>2026-08-19</lastmod>
   </sitemap>
@@ -186,7 +189,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/saunaflow/sitemap.xml</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-20</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/sonalog/sitemap.xml</loc>
