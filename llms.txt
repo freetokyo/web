@@ -64,7 +64,7 @@
   - App Store: https://apps.apple.com/app/id6791827004
 - [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
   - App Store: https://apps.apple.com/app/id6792197271
-- [Unelog（ウネログ）](https://freetokyo.github.io/web/unelog/): 市民農園・貸し農園の「区画」に特化した完全オフラインの区画栽培カルテ iOS アプリ。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。
+- [Unelog（ウネログ）](https://freetokyo.github.io/web/unelog/): 市民農園・貸し農園の「区画」に特化した区画栽培カルテ iOS アプリ。記録は端末に保存し、iCloud 同期は任意。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。
   - App Store: https://apps.apple.com/app/id6792154276
 - [カジミエル（Kajimieru）](https://freetokyo.github.io/web/kajimieru/): 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6797382805
