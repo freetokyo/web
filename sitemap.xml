@@ -2,7 +2,7 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://freetokyo.github.io/web/en/sitemap.xml</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-21</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/arari/sitemap.xml</loc>
@@ -14,6 +14,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/baytlog/sitemap.xml</loc>
+    <lastmod>2026-08-21</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/calmgraph/sitemap.xml</loc>
@@ -133,6 +134,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/lessonreport/sitemap.xml</loc>
+    <lastmod>2026-08-21</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/lifeweeks/sitemap.xml</loc>
