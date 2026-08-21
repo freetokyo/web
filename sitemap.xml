@@ -2,7 +2,7 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://freetokyo.github.io/web/en/sitemap.xml</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/arari/sitemap.xml</loc>
@@ -238,6 +238,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/vatlog/sitemap.xml</loc>
+    <lastmod>2026-08-22</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/waqtain/sitemap.xml</loc>
