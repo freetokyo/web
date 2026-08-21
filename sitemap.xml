@@ -117,6 +117,9 @@
     <lastmod>2026-08-13</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://freetokyo.github.io/web/kedgelog/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://freetokyo.github.io/web/keihiba/sitemap.xml</loc>
     <lastmod>2026-08-08</lastmod>
   </sitemap>
@@ -134,7 +137,7 @@
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/lessonreport/sitemap.xml</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/lifeweeks/sitemap.xml</loc>
