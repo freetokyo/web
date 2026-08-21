@@ -13,6 +13,9 @@
     <lastmod>2026-08-17</lastmod>
   </sitemap>
   <sitemap>
+    <loc>https://freetokyo.github.io/web/baytlog/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://freetokyo.github.io/web/calmgraph/sitemap.xml</loc>
     <lastmod>2026-08-08</lastmod>
   </sitemap>
@@ -127,6 +130,9 @@
   <sitemap>
     <loc>https://freetokyo.github.io/web/koegaki/sitemap.xml</loc>
     <lastmod>2026-08-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://freetokyo.github.io/web/lessonreport/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://freetokyo.github.io/web/lifeweeks/sitemap.xml</loc>
