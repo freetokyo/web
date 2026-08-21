@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vatlog — サポート</title>
+<meta name="description" content="醸造したバッチを1つの台帳に">
+<link rel="canonical" href="https://freetokyo.github.io/web/vatlog/support.html">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/vatlog/">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/vatlog/en/">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/vatlog/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vatlog — サポート">
+<meta property="og:description" content="醸造したバッチを1つの台帳に">
+<meta property="og:url" content="https://freetokyo.github.io/web/vatlog/support.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>:root{--brand-1:#3E4650;--brand-2:#E08A1E}
+/* freetokyo apps 共通スタイル。
+   ルート index.html のデザインシステムを全アプリページで共有する。
+   ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
+   このファイルは build.py が各ページへインライン展開する。 */
+:root {
+      --color-bg: #f5f5f7;
+      --color-surface: #ffffff;
+      --color-text: #1d1d1f;
+      --color-text-sub: #515154;
+      --color-text-mute: #86868b;
+      --color-border: rgba(0,0,0,0.08);
+      --color-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+      --color-shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 16px 40px rgba(0,0,0,0.12);
+      --color-health: #34C759;
+      --color-life:   #FF9F0A;
+      --color-money:  #5E5CE6;
+      --color-work:   #0A84FF;
+      --color-accent: #0A84FF;
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --space-1: 8px;
+      --space-2: 16px;
+      --space-3: 24px;
+      --space-4: 40px;
+      --space-5: 64px;
+      --space-6: 96px;
+      --max-w: 1120px;
+      --font: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #000;
+        --color-surface: #1c1c1e;
+        --color-text: #f5f5f7;
+        --color-text-sub: #c7c7cc;
+        --color-text-mute: #8e8e93;
+        --color-border: rgba(255,255,255,0.12);
+        --color-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.4);
+        --color-shadow-hover: 0 4px 12px rgba(0,0,0,0.5), 0 16px 40px rgba(0,0,0,0.6);
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--color-text);
+      background: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--color-accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img, svg { display: block; max-width: 100%; height: auto; }
+    h1, h2, h3, p { margin: 0; }
+
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--space-3); }
+
+    /* Nav */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(245,245,247,0.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--color-border);
+    }
+    @media (prefers-color-scheme: dark) { .nav { background: rgba(0,0,0,0.7); } }
+    .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 52px; }
+    .nav__brand { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-text); }
+    .nav__brand:hover { text-decoration: none; }
+    .nav__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, #0A84FF 0%, #34C759 40%, #5E5CE6 70%, #FF9F0A 100%); display: grid; place-items: center; color: white; font-weight: 700; font-size: 14px; }
+    .nav__links { display: flex; gap: 18px; }
+    .nav__links a { color: var(--color-text-sub); font-size: 14px; }
+    @media (max-width: 720px) { .nav__links a:nth-child(n+5) { display: none; } }
+    .nav__item { position: relative; display: flex; align-items: center; height: 52px; }
+    .nav__item > a::after { content: "▾"; font-size: 9px; margin-left: 4px; opacity: .5; }
+    .nav__drop { position: absolute; top: 100%; left: 0; padding-top: 8px; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .16s ease, transform .16s ease, visibility .16s; z-index: 60; }
+    .nav__item:hover .nav__drop, .nav__item:focus-within .nav__drop { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav__drop-inner { display: grid; grid-auto-flow: column; grid-template-rows: repeat(7, auto); gap: 2px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 14px; box-shadow: var(--color-shadow-hover); padding: 8px; }
+    .nav__drop a { display: block; padding: 7px 12px; border-radius: 9px; font-size: 13px; font-weight: 600; color: var(--color-text); line-height: 1.25; white-space: nowrap; }
+    .nav__drop a:hover { background: rgba(0,0,0,0.05); text-decoration: none; }
+    @media (prefers-color-scheme: dark) { .nav__drop a:hover { background: rgba(255,255,255,0.07); } }
+    .nav__drop a span { display: block; font-size: 11px; font-weight: 400; color: var(--color-text-mute); margin-top: 1px; }
+    @media (max-width: 720px) { .nav__item { height: auto; } .nav__drop { display: none; } }
+
+    /* Hero */
+    .hero { padding: var(--space-6) 0 var(--space-5); text-align: center; }
+    .badge { display: inline-block; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; background: rgba(10,132,255,0.1); color: var(--color-accent); }
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 64px);
+      line-height: 1.1; letter-spacing: -0.02em; font-weight: 700;
+      margin: var(--space-3) 0 var(--space-2);
+    }
+    .hero__sub { font-size: clamp(17px, 2.2vw, 21px); color: var(--color-text-sub); max-width: 660px; margin: 0 auto; }
+    .stats { display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap; margin-top: var(--space-4); }
+    .stat { background: var(--color-surface); border-radius: var(--radius-md); padding: 16px 24px; box-shadow: var(--color-shadow); min-width: 140px; }
+    .stat__num { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+    .stat__label { font-size: 13px; color: var(--color-text-mute); margin-top: 4px; }
+
+    /* Section */
+    .section { padding: var(--space-5) 0; }
+    .section__head { margin-bottom: var(--space-4); }
+    .section__eyebrow { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+    .section__title { font-size: clamp(28px, 4vw, 40px); letter-spacing: -0.02em; font-weight: 700; margin-top: 6px; }
+    .section__lead { font-size: 17px; color: var(--color-text-sub); margin-top: 8px; max-width: 660px; }
+    .eyebrow-health { color: var(--color-health); }
+    .eyebrow-life   { color: var(--color-life); }
+    .eyebrow-money  { color: var(--color-money); }
+    .eyebrow-work   { color: var(--color-work); }
+
+    /* Pickup (Today-style large card) */
+    .pickup { display: grid; grid-template-columns: 1fr; gap: var(--space-3); }
+    @media (min-width: 880px) { .pickup { grid-template-columns: 1.4fr 1fr; } }
+    .pickup-card {
+      position: relative; display: block; padding: var(--space-4);
+      border-radius: var(--radius-lg); color: white; overflow: hidden;
+      min-height: 360px; box-shadow: var(--color-shadow);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .pickup-card:hover { transform: translateY(-2px); box-shadow: var(--color-shadow-hover); text-decoration: none; }
+    .pickup-card--tsuki { background: linear-gradient(135deg, #1a0033 0%, #4a1a6b 60%, #ff5fa2 100%); }
+    .pickup-card--iekan { background: linear-gradient(135deg, #064e3b 0%, #047857 60%, #34c759 100%); }
+    .pickup-card--trero { background:
+        radial-gradient(circle at top right, rgba(255,138,61,0.45), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(139,36,22,0.35), transparent 30%),
+        linear-gradient(145deg, #241717 0%, #4a1f16 46%, #7b2d1b 100%); }
+    .pickup-card__eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.9; }
+    .pickup-card__title { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.01em; margin: 10px 0 12px; }
+    .pickup-card__desc { font-size: 16px; max-width: 30em; opacity: 0.92; }
+    .pickup-card__cta { display: inline-block; margin-top: 24px; padding: 10px 18px; border-radius: 999px; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.32); font-weight: 600; font-size: 14px; backdrop-filter: blur(8px); }
+
+    /* App card grid */
+    .cards { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card {
+      display: flex; flex-direction: column; gap: 12px;
+      background: var(--color-surface); border-radius: var(--radius-md);
+      padding: var(--space-3); box-shadow: var(--color-shadow);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover { transform: translateY(-2px); box-shadow: var(--color-shadow-hover); }
+    .card__top { display: flex; align-items: center; gap: 14px; }
+    .card__icon {
+      width: 56px; height: 56px; border-radius: 14px;
+      display: grid; place-items: center; font-size: 28px;
+      flex-shrink: 0; color: white; font-weight: 700;
+    }
+    .icon-recoverysync { background: linear-gradient(135deg, #5e60ce, #64dfdf); }
+    .icon-saunaflow    { background: linear-gradient(135deg, #ff6b35, #d62828); }
+    .icon-trero        { background: linear-gradient(135deg, #1d1d1f, #515154); }
+    .icon-tsukilift    { background: linear-gradient(135deg, #4a1a6b, #ff5fa2); }
+    .icon-iekan        { background: linear-gradient(135deg, #047857, #34c759); }
+    .icon-printmemo    { background: linear-gradient(135deg, #f59e0b, #fde047); color: #1d1d1f; }
+    .icon-carehours    { background: linear-gradient(135deg, #ec4899, #f472b6); }
+    .icon-genbalog     { background: linear-gradient(135deg, #ea580c, #fbbf24); }
+    .icon-hanro        { background: linear-gradient(135deg, #0a84ff, #5ac8fa); }
+    .icon-miawell      { background: linear-gradient(135deg, #f472b6, #fbcfe8); }
+    .icon-homenetnavi  { background: linear-gradient(135deg, #0a84ff, #34c759); }
+    .icon-mochiru      { background: linear-gradient(135deg, #1e6091, #5ac8fa); }
+    .icon-sukushori    { background: linear-gradient(135deg, #c19a6b, #5c9e96); }
+    .icon-toscore      { background: linear-gradient(135deg, #ff6b35, #ffb84d); }
+    .icon-heyalog      { background: linear-gradient(135deg, #0d9488, #5eead4); }
+    .icon-jitsuhiro    { background: linear-gradient(135deg, #1d4ed8, #ef4444); }
+    .icon-keihiba      { background: linear-gradient(135deg, #0a84ff, #34c759); }
+    .icon-koegaki      { background: linear-gradient(135deg, #7c3aed, #22d3ee); }
+    .icon-yuzuri       { background: linear-gradient(135deg, #6b5b95, #b8a9c9); }
+    .icon-hitorilog    { background: linear-gradient(135deg, #d1495b, #f4a261); }
+    .icon-zaicho       { background: linear-gradient(135deg, #22292E, #8A6A3F); }
+    .icon-dartrack     { background: linear-gradient(135deg, #10505A, #C79A4B); }
+    .icon-lifeweeks    { background: linear-gradient(135deg, #34406B, #E8935A); }
+    .icon-jamalog      { background: linear-gradient(135deg, #2C6E63, #D99A4E); }
+    .icon-kimekabu     { background: linear-gradient(135deg, #2C3040, #C9A227); }
+    .icon-calmgraph    { background: linear-gradient(135deg, #0A5A54, #0E7C7B); }
+    .icon-hazelog      { background: linear-gradient(135deg, #6F4E37, #C08552); }
+    .icon-qamari       { background: linear-gradient(135deg, #101C3A, #C99A3F); }
+    .icon-nailog       { background: linear-gradient(135deg, #8a5a78, #d96c8e); }
+    .icon-otolog       { background: linear-gradient(135deg, #1f3a5f, #d6453f); }
+    .icon-torekarte    { background: linear-gradient(135deg, #134e4a, #f59e0b); }
+    .icon-saqrlog      { background: linear-gradient(135deg, #7a5230, #c67a32); }
+    .icon-muddah       { background: linear-gradient(135deg, #475569, #C9A24B); }
+    .icon-sonalog      { background: linear-gradient(135deg, #2f8f6b, #eab308); }
+    .icon-inkarte      { background: linear-gradient(135deg, #16161A, #E0492F); }
+    .icon-sakulog      { background: linear-gradient(135deg, #d96c8e, #f2b8c6); }
+    .icon-khaylog      { background: linear-gradient(135deg, #3B2F2F, #8A6D3B); }
+    .icon-unelog       { background: linear-gradient(135deg, #4E8035, #DD8A2E); }
+    .icon-yuralog      { background: linear-gradient(135deg, #6D5A73, #E39A5B); }
+    .icon-atamalog     { background: linear-gradient(135deg, #2E3D5C, #E2A14E); }
+    .icon-hadalog      { background: linear-gradient(135deg, #8FA3C9, #E2A14E); }
+    .chip-soon { background: rgba(142,142,147,0.18); color: var(--color-text-mute); }
+    .btn--soon { background: rgba(142,142,147,0.18); color: var(--color-text-mute); border-color: transparent; cursor: default; }
+    .card__title { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
+    .card__sub   { font-size: 13px; color: var(--color-text-mute); margin-top: 2px; }
+    .chip { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .chip-health { background: rgba(52,199,89,0.14); color: var(--color-health); }
+    .chip-life   { background: rgba(255,159,10,0.16); color: #b3650a; }
+    .chip-money  { background: rgba(94,92,230,0.14); color: var(--color-money); }
+    .chip-work   { background: rgba(10,132,255,0.12); color: var(--color-work); }
+    @media (prefers-color-scheme: dark) {
+      .chip-life  { color: #ffb84d; }
+      .chip-money { color: #a5a3ff; }
+    }
+    .card__desc { color: var(--color-text-sub); font-size: 15px; flex-grow: 1; }
+    .card__actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      padding: 8px 14px; border-radius: 999px; font-size: 13px; font-weight: 600;
+      border: 1px solid var(--color-border); color: var(--color-text); background: transparent;
+    }
+    .btn:hover { text-decoration: none; background: rgba(0,0,0,0.04); }
+    @media (prefers-color-scheme: dark) { .btn:hover { background: rgba(255,255,255,0.06); } }
+    .btn--primary { background: var(--color-text); color: var(--color-bg); border-color: var(--color-text); }
+    .btn--primary:hover { opacity: 0.85; background: var(--color-text); }
+
+    /* Concept / FAQ */
+    .concept { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: var(--space-4); }
+    .concept__item { background: var(--color-surface); padding: var(--space-3); border-radius: var(--radius-md); box-shadow: var(--color-shadow); }
+    .concept__icon { font-size: 28px; }
+    .concept__title { font-size: 18px; font-weight: 700; margin: 10px 0 6px; }
+    .concept__body { color: var(--color-text-sub); font-size: 15px; }
+    .faq { display: grid; gap: var(--space-2); }
+    .faq details { background: var(--color-surface); border-radius: var(--radius-md); padding: 18px 22px; box-shadow: var(--color-shadow); }
+    .faq summary { font-weight: 600; cursor: pointer; list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; float: right; font-size: 22px; color: var(--color-text-mute); transition: transform .2s; }
+    .faq details[open] summary::after { content: "−"; }
+    .faq p { margin-top: 10px; color: var(--color-text-sub); }
+
+    /* Footer */
+    .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+
+/* ------------------------------------------------------------------
+   本文（各アプリページ）用の互換レイヤ。
+   既存ページは .wrap / .lead / .card / .note / .cta / table を使っている。
+   本文HTMLはアプリ固有の資産なので書き換えず、ここでデザインシステムに合わせる。
+   ------------------------------------------------------------------ */
+.ftbody{max-width:760px;margin:0 auto;padding:0 20px}
+.ftbody .wrap{max-width:none;margin:0;padding:0}
+.ftbody header{padding:48px 0 24px;text-align:center}
+.ftbody h1{font-size:clamp(28px,5vw,36px);margin:0 0 10px;letter-spacing:-.02em}
+.ftbody .lead{color:var(--color-text-sub);margin:0 auto;max-width:36em;font-size:17px}
+.ftbody h2{font-size:21px;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--color-border)}
+.ftbody h3{font-size:16px;margin:24px 0 8px}
+.ftbody p{line-height:1.8}
+.ftbody ul{padding-inline-start:1.2em}
+.ftbody li{margin:6px 0;line-height:1.8}
+.ftbody .card{background:var(--color-surface);border:1px solid var(--color-border);
+  border-radius:var(--radius-md);padding:20px;margin:16px 0;box-shadow:var(--color-shadow)}
+.ftbody .note{color:var(--color-text-mute);font-size:14px}
+/* ロケール版の FAQ（.faq-q / .faq-a）。15アプリ500ページがこの形で、
+   元ページの CSS を共通版に置き換えたときに質問と答えの区別が消えていた。 */
+.ftbody .faq-item{margin:18px 0}
+.ftbody .faq-q{font-weight:600;line-height:1.6}
+.ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
+.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+  padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
+.ftbody .cta:hover{opacity:.9}
+.ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
+  background:var(--color-surface);border-radius:var(--radius-sm);overflow:hidden}
+.ftbody th,.ftbody td{text-align:start;padding:11px 10px;border-bottom:1px solid var(--color-border);font-size:15px}
+.ftbody th:not(:first-child),.ftbody td:not(:first-child){text-align:center;width:22%}
+.ftbody thead th{background:rgba(0,0,0,.03);font-weight:600}
+/* 上の 22%/中央寄せは 機能×無料×Pro の「比較表」のための規則。
+   ところが「アプリ概要」「料金」「特商法」のような **2列の項目→内容の表** にも当たり、
+   ラベルが幅を独占して内容が 22% に押し込まれ、「無料（アプリ内課金 あり）」のように折れていた。
+   行のセルがちょうど2つのときだけ、ラベルを細く固定し内容を本文として左寄せ・可変幅に戻す。
+   3列以上の比較表は :nth-child(2):last-child に当たらないので影響しない。 */
+.ftbody table:not(:has(tr>:nth-child(3))){table-layout:fixed}
+.ftbody table tr:has(>:nth-child(2):last-child)>:first-child{
+  width:30%;color:var(--color-text-sub);font-weight:600;vertical-align:top;text-align:start}
+.ftbody table tr:has(>:nth-child(2):last-child)>:nth-child(2){
+  width:auto;text-align:start;vertical-align:top;overflow-wrap:anywhere}
+/* :has() が使えない環境向けの保険（アプリ概要は .ftfacts で明示されている） */
+.ftfacts table{table-layout:fixed}
+.ftfacts table th:first-child{width:30%;color:var(--color-text-sub);font-weight:600;vertical-align:top}
+.ftfacts table td{width:auto;text-align:start;vertical-align:top}
+@media (max-width:520px){
+  .ftbody table tr:has(>:nth-child(2):last-child)>:first-child,
+  .ftfacts table th:first-child{width:38%}
+}
+.ftbody img{max-width:100%;height:auto;border-radius:var(--radius-sm)}
+[dir="rtl"] .ftbody th,[dir="rtl"] .ftbody td{text-align:start}
+
+/* お知らせバナー */
+.ftnotice{margin:0;padding:10px 16px;text-align:center;font-size:14px;line-height:1.6}
+.ftnotice--info{background:#eaf3ff;color:#0a3d7a;border-bottom:1px solid #cfe2ff}
+.ftnotice--warning{background:#fff4e5;color:#7a4a00;border-bottom:1px solid #ffe0b2}
+@media (prefers-color-scheme:dark){
+.ftnotice--info{background:#12263f;color:#cfe2ff;border-bottom-color:#1b3a5c}
+.ftnotice--warning{background:#3a2a10;color:#ffe0b2;border-bottom-color:#5c4520}}
+.nav__here{font-weight:600;color:var(--color-text);text-decoration:none;
+  padding-inline-start:12px;margin-inline-start:12px;border-inline-start:1px solid var(--color-border);
+  white-space:nowrap}
+.nav__here:hover{color:var(--brand-1,var(--color-accent))}
+@media (max-width:700px){.nav__here{display:none}}
+.ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
+.ftlangs a{margin:0}
+
+/* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
+   カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
+   狭い画面ではブランドと CTA だけ残す。 */
+@media (max-width: 720px){
+  .nav__links{display:none}
+  .nav__brand{white-space:nowrap;font-size:15px}
+  .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
+  .nav__inner{gap:8px}
+}
+.ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
+.ftlegal h2{margin-top:16px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Vatlog（ヴァットログ）", "description": "自家醸造（ビール・ワイン・サイダー・ミード）のバッチ記録 iOS / iPadOS アプリ。仕込みから瓶詰めまでを1つの台帳に記録し、瓶詰め日を基準にその年の累計容量を集計する。年間の目標は利用者が設定し、米国（26 U.S.C. §5053(e) / §5042(a)(2)(B)）とドイツ（§29 Abs. 2 BierStG i.V.m. §41 BierStV）については条文番号と最終確認日つきの参考値を候補として提示する。アプリは何が適用されるかを判定しない。参考値が改正で更新されたときは「変わった」ことだけを1度伝え、値を自動で書き換えない。発酵ログと比重の推移グラフ、原材料と酵母の登録、テイスティング、写真の添付、ABV・比重換算・温度補正・屈折計補正・補糖・IBU・色度・プライミング・単位換算の計算機、JSON / CSV / PDF / ZIP の書き出しと JSON の読み込みを備える。計算式の版はバッチごとに固定するので、設定を変えても過去の記録の数値は変わらない。サーバーもアカウントもなく、位置情報・写真ライブラリ・通知の権限を一切要求しない。買い切り。日本語・英語・ドイツ語。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/vatlog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="グローバル">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="../">
+      <span class="nav__logo" aria-hidden="true">ft</span>
+      freetokyo apps
+    </a>
+    <a class="nav__here" href="../vatlog/">Vatlog（ヴァットログ）</a>
+    <div class="nav__links">
+      <div class="nav__item"><a href="../#health">健康</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../immulog/">Immulog（イミュログ）<span>国が変わっても、記録は続く</span></a><a href="../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../#life">くらし</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../baytlog/">Baytlog（バイトログ）<span>引き渡せるヴィラの設備保全記録（GCC）</span></a><a href="../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../nenrin/">Nenrin（ネンリン）<span>その一本に必要な作業を、必要な時期に</span></a><a href="../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../rotare/">Rosetare（ロターレ）<span>同じ系統が、また回ってきていないか</span></a><a href="../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../vatlog/">Vatlog（ヴァットログ）<span>醸造したバッチを1つの台帳に</span></a><a href="../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../#money">おかね</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../#work">しごと</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../lessonreport/">指導レポート（Lesson Report）<span>入力すれば、報告書ができている</span></a><a href="../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
+    </div>
+    
+  </div>
+</nav>
+<main class="ftbody">
+<h1>サポート</h1>
+<p>Vatlog についてのご質問・不具合のご報告は、このページ下部の連絡先までお送りください。</p>
+
+<h2>よくある質問</h2>
+
+<h3>年間累計のバーが出ません</h3>
+<p><strong>年間の目標を設定していないときは、進捗バーを描きません。</strong>数値だけを表示して「目標を設定」ボタンを出します。目標を決めるのは利用者で、アプリは値を勝手に入れません。</p>
+<p>設定画面の地域が日本になっている場合は、メーター自体を表示せず、酒税法第2条・第7条の注記に置き換えています。</p>
+
+<h3>参考値が出ない地域があります</h3>
+<p>英国・オーストラリア・ニュージーランド・カナダについては、数量の上限を一次情報で確認できませんでした。<strong>根拠のない数値を入れないため、参考値を持たない状態を画面にそのまま出しています。</strong>ご自身で目標を入力してお使いください。</p>
+
+<h3>「参考値が変わりました」と出ました</h3>
+<p>アプリが提示した参考値をそのまま採用していた場合、その値がアプリの更新で変わったときに1度だけお知らせします。<strong>あなたの目標をアプリが勝手に書き換えることはありません。</strong>確認して、必要であればご自身で採り直してください。</p>
+<p>ご自身で入力した値には、この通知は出ません。</p>
+
+<h3>バッチを完了にできません</h3>
+<p>瓶詰めは専用の画面から行います。バッチ画面の「瓶詰めする」を押すと、<strong>瓶詰め日と完成容量を入力する画面</strong>が出ます。両方が揃わないと確定できません。完成容量が無いと、そのバッチは年間の累計に入らないためです。</p>
+
+<h3>無料で使えるバッチが2件までと出ます</h3>
+<p>無料でお使いいただける同時進行のバッチは2件です。ここでいう「同時進行」は<strong>計画中・発酵中・熟成中</strong>の3状態です。<strong>瓶詰め済みとアーカイブのバッチは件数に数えません</strong>ので、無料のままでも年間の累計は積み上がっていきます。</p>
+
+<h3>設定で計算式を変えたのに、過去の記録の数値が変わりません</h3>
+<p>仕様です。<strong>計算式の版はバッチごとに固定しています。</strong>あとから設定を変えても、保存済みの記録が遡って書き換わることはありません。そのバッチを新しい式で計算し直したいときは、バッチ画面のメニューから「現在の式で再計算」を選んでください。</p>
+
+<h3>写真が追加できません</h3>
+<p>1つのバッチに保存できる写真は、無料で3枚、Vatlog Pro で20枚です。上限に達すると、その理由と解放の手段が画面に出ます。</p>
+<p>なお本アプリは写真ライブラリへのアクセス権限を要求しません。写真は iOS の標準ピッカーで1枚ずつ選んでいただき、選ばれた画像だけがアプリに渡ります。</p>
+
+<h3>JSON を書き出したのに写真が入っていません</h3>
+<p>JSON にはデータのみが入り、<strong>写真は含まれません</strong>。写真も含めて持ち出すには <strong>ZIP</strong> を使ってください。機種変更のときは ZIP をお勧めします。</p>
+
+<h3>JSON を読み込むと、いまのデータは消えますか</h3>
+<p>消えません。読み込みは<strong>すでに端末にあるバッチを残したまま、まだ無いものだけを追加</strong>します。同じバッチが二重に増えることもありません。</p>
+
+<h3>Vatlog Pro を購入したのに機能が解放されません</h3>
+<p>設定画面の「購入を復元」をお試しください。同じ Apple アカウントであれば、別の端末でも復元できます。</p>
+<p>購入直後で価格が表示されない場合は、通信状況をご確認のうえ、購入画面の「再試行」を押してください。</p>
+
+<h3>「すべてのデータを削除」すると購入も消えますか</h3>
+<p>消えません。購入は Apple アカウントに紐づいており、アプリが消すことはできません。削除後も「購入を復元」でいつでも戻せます。</p>
+
+<h3>単位を地域に合わせて固定したい／地域と違う単位を使いたい</h3>
+<p>容量・温度・糖度・重量は<strong>それぞれ独立した設定</strong>です。地域を選ぶと初期値を提案しますが、あとから個別に変更できます。</p>
+
+<h3>数値が入力できません</h3>
+<p>小数点は、お使いの言語の書式で入力してください（ドイツ語であればカンマ、日本語・英語であればピリオド）。どちらの表記でも読み取れるようにしていますが、うまく入らない場合はご連絡ください。</p>
+
+<h3>他の端末と同期できますか</h3>
+<p>できません。本アプリはサーバーを持たず、同期機能もありません。端末間でデータを移すときは、JSON または ZIP を書き出して読み込んでください。</p>
+
+<h2>動作環境</h2>
+<p>iOS 17.0 以降 / iPadOS 17.0 以降。日本語・英語・ドイツ語。</p>
+
+<h2>不具合のご報告</h2>
+<p>次の情報を添えてお知らせいただけると調査が早くなります。</p>
+<ul>
+  <li>端末の機種と iOS のバージョン</li>
+  <li>アプリのバージョン（設定画面の一番下に表示されます）</li>
+  <li>設定画面の地域と、参考値のデータの版（同じく設定画面の一番下）</li>
+  <li>どの画面で何をしたときに起きたか</li>
+</ul>
+<p><strong>ご報告に個人情報や、記録の中身そのものを含める必要はありません。</strong></p>
+</main>
+<footer class="footer">
+  <div class="container">
+    <p><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシー</a><a href="../">← freetokyo apps（アプリ一覧）</a></p>
+    <p class="ftlangs" style="margin-top:8px"><strong>日本語</strong> · <a href="en/support.html" hreflang="en">English</a></p>
+    <p style="margin-top:8px"><a href="mailto:freetokyo2020@yahoo.co.jp">お問い合わせ: freetokyo2020@yahoo.co.jp</a></p>
+    <p style="margin-top:8px">&copy; 2026 freetokyo apps</p>
+  </div>
+</footer>
+</body>
+</html>
