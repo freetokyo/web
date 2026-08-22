@@ -366,8 +366,12 @@
 <p>When Baytlog checks whether a day was dusty, it sends that rounded area to <strong>Apple's WeatherKit</strong> and receives the weather back. The request goes to Apple, not to the developer. It happens at most once a day per villa, and only if you have set an area. Apple's privacy terms cover that request.</p>
 <p>Raw weather values are not printed in the handover file. Only Baytlog's own count of the dusty days <em>you confirmed</em> appears there.</p>
 
-<h2>Photos</h2>
-<p>Photos and receipts are attached through the standard iOS picker, which gives Baytlog only the images you select. Baytlog does not request access to your photo library as a whole, and the images stay on your iPhone (and, if you enabled it, in your own iCloud private database).</p>
+<h2>Photos and receipts</h2>
+<p>Photos are attached through the standard iOS photo picker and receipts (PDF or image files) through the standard file picker. Both give Baytlog only the items you select. Baytlog does not request access to your photo library as a whole, and the files stay on your iPhone (and, if you enabled it, in your own iCloud private database).</p>
+
+<h2>Notifications</h2>
+<p>Reminders are <strong>off until you turn them on</strong> in Settings. When you turn them on, iOS asks whether Baytlog may send notifications; if you decline, the rest of the app is unaffected.</p>
+<p>Reminders are <strong>local notifications scheduled on your iPhone by the app itself</strong>. Nothing is sent to the developer or to any server, and no push service is involved. Turning reminders off cancels every reminder Baytlog has scheduled.</p>
 
 <h2>The handover file and backups</h2>
 <p>The handover PDF and the full backup are created on your iPhone. Baytlog does not upload them anywhere. When you share one — by email, messaging or AirDrop — it leaves Baytlog's control, so treat it like any other copy of your records. The backup contains your original photos and receipts; the handover PDF includes photos only if you asked for them.</p>
