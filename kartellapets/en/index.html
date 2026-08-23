@@ -5,17 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kartella Pets</title>
 <meta name="description" content="ペットシッターの顧客カルテと鍵の記録">
-<link rel="canonical" href="https://freetokyo.github.io/web/kartellapets/en/index.html">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<link rel="canonical" href="https://freetokyo.github.io/web/kartellapets/en/">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="Kartella Pets">
 <meta property="og:description" content="ペットシッターの顧客カルテと鍵の記録">
-<meta property="og:url" content="https://freetokyo.github.io/web/kartellapets/en/index.html">
+<meta property="og:url" content="https://freetokyo.github.io/web/kartellapets/en/">
+<meta property="og:image" content="https://freetokyo.github.io/web/kartellapets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kartella Pets — Client keys, pets and visits">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kartella Pets">
+<meta name="twitter:description" content="ペットシッターの顧客カルテと鍵の記録">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/kartellapets/og-image.png">
+<meta name="theme-color" content="#26363F">
 
-<style>:root{--brand-1:#26363F;--brand-2:#B0812E}
+<style>:root{--brand-1:#26363F;--brand-2:#B0812E;--brand-bg:#26363F;--brand-fg:#ffffff;--brand-bg-dark:#5e6a71;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +283,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,32 +331,138 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Kartella Pets（カルテラ ペッツ）", "description": "個人開業のペットシッター向けの顧客カルテ iOS/iPadOS アプリ。飼い主の連絡先と緊急連絡先、かかりつけ動物病院、ペットの品種・マイクロチップ番号・保険・性格・隠れ場所、給餌と投薬と散歩の指示、チェックリストと写真つきの訪問記録、ワクチンの接種日と期限リマインド、預かっている鍵のタグ台帳を端末内だけで扱う。鍵の保管場所と暗証番号は AES-GCM で暗号化し、鍵は端末専用の Keychain に置くため端末バックアップからは復元されない。代わりにパスフレーズ由来鍵で再暗号化した自己完結のバックアップファイルを書き出せる。表計算・書類形式（CSV／JSON／PDF）の書き出しに鍵情報を含める手段は用意していない。急な引き継ぎ用に顧客1件だけの暗号化書き出しもできる。獣医学的な助言は行わず、同意書に法的効力を持たせるものでもない。アカウント不要・買い切り・24言語。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/kartellapets/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kartella Pets", "description": "ペットシッターの顧客カルテと鍵の記録", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartellapets/en/", "image": "https://freetokyo.github.io/web/kartellapets/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Kartella Pets", "item": "https://freetokyo.github.io/web/kartellapets/en/"}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">Skip to content</a>
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../">
       <span class="nav__logo" aria-hidden="true">ft</span>
       freetokyo apps
     </a>
-    <a class="nav__here" href="../../kartellapets/">Kartella Pets（カルテラ ペッツ）</a>
+    <a class="nav__here" href="../../kartellapets/">Kartella Pets</a>
     <div class="nav__links">
-      <div class="nav__item"><a href="../../#health">Health</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../../#life">Life</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../../#money">Money</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../../#work">Work</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
+      <div class="nav__item"><a href="../../#health">Health</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../../immulog/">Immulog（イミュログ）<span>国が変わっても、記録は続く</span></a><a href="../../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../../#life">Life</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../baytlog/">Baytlog（バイトログ）<span>引き渡せるヴィラの設備保全記録（GCC）</span></a><a href="../../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../../kedgelog/">Kedgelog（ケッジログ）<span>積んでいる装備の期限を、1点ずつ</span></a><a href="../../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../../nenrin/">Nenrin（ネンリン）<span>その一本に必要な作業を、必要な時期に</span></a><a href="../../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../../rotare/">Rosetare（ロターレ）<span>同じ系統が、また回ってきていないか</span></a><a href="../../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../../vatlog/">Vatlog（ヴァットログ）<span>醸造したバッチを1つの台帳に</span></a><a href="../../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../../#money">Money</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../../#work">Work</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../../lessonreport/">指導レポート（Lesson Report）<span>入力すれば、報告書ができている</span></a><a href="../../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
     </div>
     
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <header class="hero"><div class="wrap"><h1>Kartella Pets</h1><p class="lead">A working record book for solo pet sitters</p><p class="note">Contact: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p></div></header>
 <section><div class="wrap"><h2>What it is</h2><p>Client details, pet profiles, care instructions, visit records, key locations and door codes all live in one app on one phone.</p><p><strong>The app does not send your data anywhere.</strong> There is no account, no server and no sync — so there is nothing to sign in to, nothing to go down, and nothing to read at the other end. It opens at the doorstep whether or not you have a signal.</p></div></section>
 <section><div class="wrap"><h2>Key and code details, kept covered</h2><p>Key locations, door codes and alarm codes are encrypted on your device and shown masked by default. Field names stay readable, so you can see at the gate whether a home uses a keypad or a lockbox. The values appear only after Face ID or your passcode, hide themselves again after 30 seconds, and the app covers itself in the App Switcher while they are on screen.</p><p>The encryption key lives in this device's Keychain only. As a result, <strong>a device backup does not bring those details back</strong>. Use "Export everything" in Settings to move them to a new phone.</p></div></section>
@@ -354,6 +471,10 @@
 <section><div class="wrap"><h2>Free and full</h2><p>Free covers 10 clients, 3 photos per visit, reminders for 3 clients and 3 agreements a month. Full access removes those limits and adds your business name and logo to reports, for a <strong>single payment</strong> — there is no subscription, because there is no server to pay for.</p><p>Encryption, the key tag ledger, the biometric lock, backups, imports, exports, deletion and the emergency handover are free and always will be.</p></div></section>
 <section><div class="wrap"><h2>What it does not do</h2><p>Kartella Pets keeps records. <strong>It does not give veterinary advice</strong>, and it does not judge vaccination intervals — ask the veterinary practice.</p><p>A signed agreement in the app is your own note of what was agreed. <strong>It does not make that agreement legally binding.</strong></p></div></section>
 <section><div class="wrap"><h2>Requirements</h2><p>iPhone and iPad. 24 languages.</p></div></section>
+<section class="ftcta">
+<h2>Kartella Pets</h2>
+<p>Coming soon. This page will be updated at release.</p>
+</section>
 </main>
 <footer class="footer">
   <div class="container">

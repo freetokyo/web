@@ -5,17 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>サポート — テマログ（Temalog）</title>
 <meta name="description" content="テマログの使い方とよくある質問。締め期間・単価履歴・未請求の立替・バックアップ。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/temalog/support.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/temalog/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/temalog/en/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/temalog/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/temalog/support.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/temalog/en/support.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/temalog/support.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="サポート — テマログ（Temalog）">
 <meta property="og:description" content="テマログの使い方とよくある質問。締め期間・単価履歴・未請求の立替・バックアップ。">
 <meta property="og:url" content="https://freetokyo.github.io/web/temalog/support.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/temalog/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="テマログ（Temalog） — 一人親方の出面・立替">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="サポート — テマログ（Temalog）">
+<meta name="twitter:description" content="テマログの使い方とよくある質問。締め期間・単価履歴・未請求の立替・バックアップ。">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/temalog/og-image.png">
+<meta name="theme-color" content="#2B3A4A">
 <meta name="apple-itunes-app" content="app-id=6799075773">
-<style>:root{--brand-1:#2B3A4A;--brand-2:#A85A12}
+<style>:root{--brand-1:#2B3A4A;--brand-2:#A85A12;--brand-bg:#2B3A4A;--brand-fg:#ffffff;--brand-bg-dark:#5e6975;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +284,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,18 +332,125 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "テマログ（Temalog）", "description": "建設業の一人親方（個人事業主）向けの出面・立替材料記録 iOS アプリ。人工（にんく）を単位に現場ごとの単価で金額を出し、立て替えた材料をレシート写真つきで残す。単価改定は履歴として積み、締め確定時に金額をスナップショットで凍結するため、すでに元請へ出した請求根拠が後から書き換わらない。締め日は現場ごとに設定でき、支払サイトから入金予定日を生成する。完全ローカル・アカウント不要・買い切り。日本語 / English。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/temalog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6799075773"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "テマログ（Temalog）", "description": "テマログの使い方とよくある質問。締め期間・単価履歴・未請求の立替・バックアップ。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/temalog/support.html", "image": "https://freetokyo.github.io/web/temalog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6799075773", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "テマログ（Temalog）", "item": "https://freetokyo.github.io/web/temalog/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/temalog/support.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "締め期間はどう決まりますか？", "acceptedAnswer": {"@type": "Answer", "text": "前回締め日の翌日から今回の締め日までです。20日締めなら7月21日〜8月20日になります。ホームの合計は暦月（1日〜末日）なので、数字が違うことがあります。画面ではどちらの期間かをラベルで明示しています。"}}, {"@type": "Question", "name": "確定した金額はあとから変わりますか？", "acceptedAnswer": {"@type": "Answer", "text": "変わりません。締めを確定した時点の単価と記録をそのまま保存しています。あとで単価を改定したり記録を直したりしても、確定済みの金額はそのまま残ります。"}}, {"@type": "Question", "name": "締めたあとに記録を直したいときは？", "acceptedAnswer": {"@type": "Answer", "text": "直せます。確定済みの期間を触るときは確認が1回出ます。直したあとで「もう一度締める」を押すと新しい金額で確定し、前の確定分は履歴として残ります。"}}, {"@type": "Question", "name": "立替の請求漏れはどう防ぎますか？", "acceptedAnswer": {"@type": "Answer", "text": "請求先の現場を選んで登録しておくと、その現場を締めるときに未請求の立替が一覧で出ます。先月分の取りこぼしも拾います。"}}, {"@type": "Question", "name": "時間外はどう入力しますか？", "acceptedAnswer": {"@type": "Answer", "text": "現場の単価設定で「時間外単価」を入れると、出面入力に時間外の欄が出ます。0 のままなら欄は表示されません。"}}, {"@type": "Question", "name": "データを他のアプリに渡せますか？", "acceptedAnswer": {"@type": "Answer", "text": "締め画面から CSV を書き出せます（無料）。会計ソフトや Excel でお使いください。"}}, {"@type": "Question", "name": "購入したのに機能が使えません", "acceptedAnswer": {"@type": "Answer", "text": "ペイウォールまたは設定の「購入を復元」をお試しください。購入時と同じ Apple Account でサインインしている必要があります。"}}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">本文へスキップ</a>
 <nav class="nav" aria-label="グローバル">
   <div class="container nav__inner">
     <a class="nav__brand" href="../">
@@ -345,7 +464,7 @@
     <a class="nav__cta" href="https://apps.apple.com/app/id6799075773" target="_blank" rel="noopener">App Store で見る</a>
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <header class="hero"><div class="wrap"><h1>サポート</h1><p class="lead">使い方とよくある質問をまとめています。解決しない場合はメールでお問い合わせください。</p></div></header>
 <section><div class="wrap"><h2>はじめかた</h2><ol class="plain"><li>初回に、よく行く現場を1つだけ登録します。現場名と日単価を入れてください。</li><li>ホーム下部の「出面を入力」を押し、現場を選んで人工のボタンを押し、保存します。</li><li>ホームに今月の人工合計と金額が出ます。ここが最初の手応えです。</li><li>材料を立て替えたら、ホームの「立替材料」から金額・購入先・レシートの写真を残します。請求先の現場を選んでおくと締めに自動で入ります。</li><li>締め日が近づいたらホームの「月次締め」へ。未請求の立替を確認してから「この期間を締める」を押します。</li><li>締めた期間から出面表の PDF と CSV を書き出せます。</li></ol></div></section>
 <section><div class="wrap"><h2>よくある質問</h2><details><summary>締め期間はどう決まりますか？</summary><p>前回締め日の翌日から今回の締め日までです。20日締めなら7月21日〜8月20日になります。ホームの合計は暦月（1日〜末日）なので、数字が違うことがあります。画面ではどちらの期間かをラベルで明示しています。</p></details><details><summary>確定した金額はあとから変わりますか？</summary><p>変わりません。締めを確定した時点の単価と記録をそのまま保存しています。あとで単価を改定したり記録を直したりしても、確定済みの金額はそのまま残ります。</p></details><details><summary>締めたあとに記録を直したいときは？</summary><p>直せます。確定済みの期間を触るときは確認が1回出ます。直したあとで「もう一度締める」を押すと新しい金額で確定し、前の確定分は履歴として残ります。</p></details><details><summary>立替の請求漏れはどう防ぎますか？</summary><p>請求先の現場を選んで登録しておくと、その現場を締めるときに未請求の立替が一覧で出ます。先月分の取りこぼしも拾います。</p></details><details><summary>時間外はどう入力しますか？</summary><p>現場の単価設定で「時間外単価」を入れると、出面入力に時間外の欄が出ます。0 のままなら欄は表示されません。</p></details><details><summary>データを他のアプリに渡せますか？</summary><p>締め画面から CSV を書き出せます（無料）。会計ソフトや Excel でお使いください。</p></details><details><summary>購入したのに機能が使えません</summary><p>ペイウォールまたは設定の「購入を復元」をお試しください。購入時と同じ Apple Account でサインインしている必要があります。</p></details></div></section>

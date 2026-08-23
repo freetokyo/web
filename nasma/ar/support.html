@@ -5,18 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>الدعم | نسمة</title>
 <meta name="description" content="دعم نسمة: طريقة البدء والأسئلة الشائعة وطرق التواصل.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/nasma/ar/support.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/">
-<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/support.html">
+<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/support.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/support.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/support.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="الدعم | نسمة">
 <meta property="og:description" content="دعم نسمة: طريقة البدء والأسئلة الشائعة وطرق التواصل.">
 <meta property="og:url" content="https://freetokyo.github.io/web/nasma/ar/support.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/nasma/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nasma — Quit smoking &amp; shisha (GCC)">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="الدعم | نسمة">
+<meta name="twitter:description" content="دعم نسمة: طريقة البدء والأسئلة الشائعة وطرق التواصل.">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/nasma/og-image.png">
+<meta name="theme-color" content="#1F6B57">
 <meta name="apple-itunes-app" content="app-id=6797344961">
-<style>:root{--brand-1:#1F6B57;--brand-2:#C9762D}
+<style>:root{--brand-1:#1F6B57;--brand-2:#C9762D;--brand-bg:#1F6B57;--brand-fg:#ffffff;--brand-bg-dark:#2c7461;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -273,7 +285,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -321,18 +333,125 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "نسمة / Nasma（ナスマ）", "description": "紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録する iOS アプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/nasma/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Nasma", "description": "دعم نسمة: طريقة البدء والأسئلة الشائعة وطرق التواصل.", "inLanguage": "ar", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/nasma/ar/support.html", "image": "https://freetokyo.github.io/web/nasma/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Nasma", "item": "https://freetokyo.github.io/web/nasma/ar/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/nasma/ar/support.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "هل التطبيق يعمل فعلاً بلا إنترنت؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم. لا يوجد حساب، وتُحفظ السجلات داخل جهازك فقط، ولا يُرسل أي شيء إلى الخارج. ولا توجد إعلانات ولا أدوات تحليل خارجية."}}, {"@type": "Question", "name": "هل يمكنني تتبّع الشيشة فقط؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم. اختر «الشيشة (النرجيلة)» أثناء الإعداد فتُخفى حقول السجائر، ويمكنك تغيير ذلك لاحقاً من الإعدادات."}}, {"@type": "Question", "name": "هل أسجّل الأيام التي دخّنت فيها؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم. يفصل نسمة بين مدتك المتواصلة وإجماليك، فالتسجيل لا يصفّر الإجمالي أبداً، والصياغة ليست لوماً."}}, {"@type": "Question", "name": "ماذا يحدث عند تغيير الجهاز؟", "acceptedAnswer": {"@type": "Answer", "text": "تبقى السجلات على جهازك فقط ولا تنتقل من تلقاء نفسها. استخدم النسخ الاحتياطي في الوصول الكامل لتصدير ملف JSON وقراءته على الجهاز الجديد."}}, {"@type": "Question", "name": "فيمَ تُستخدم بيانات الصحة؟", "acceptedAnswer": {"@type": "Answer", "text": "تُقرأ ثلاثة أنواع فقط: نبض الراحة والخطوات والنوم، لعرضها إلى جانب المدة نفسها. للقراءة فقط، وتُعالَج داخل جهازك، ولا تُرسل إلى أي مكان."}}, {"@type": "Question", "name": "هل هو اشتراك؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. الوصول الكامل شراء لمرة واحدة بلا رسوم إضافية."}}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">Skip to content</a>
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../">
@@ -346,7 +465,7 @@
     <a class="nav__cta" href="https://apps.apple.com/app/id6797344961" target="_blank" rel="noopener">View on the App Store</a>
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <header class="hero"><div class="wrap"><h1>الدعم</h1><p class="lead">طريقة البدء وإجابات الأسئلة الشائعة. وإن بقي شيء غير واضح، راسلنا بالبريد.</p></div></header><section><div class="wrap"><h2>كيف تبدأ</h2><ol class="plain"><li>أثناء الإعداد، اختر ما تريد تتبّعه: السجائر أو الشيشة أو كليهما.</li><li>أدخل معدّلك المعتاد والسعر، فهذا أساس حساب المبلغ الموفَّر.</li><li>اختر تاريخ البدء، ويمكن أن يكون تاريخاً سابقاً.</li><li>إن دخّنت، سجّل ذلك من تبويب «السجل». يبقى إجماليك محفوظاً بمعزل عن مدتك المتواصلة.</li><li>عند اشتداد الرغبة، افتح دليل التنفّس من الزر الدائري أسفل الشاشة الرئيسية.</li><li>في رمضان، تنقلك بطاقة الشاشة الرئيسية إلى إعداد ساعات الصيام وإلى الإجمالي الجاري.</li></ol></div></section><section><div class="wrap"><h2>الأسئلة الشائعة</h2><details><summary>هل التطبيق يعمل فعلاً بلا إنترنت؟</summary><p>نعم. لا يوجد حساب، وتُحفظ السجلات داخل جهازك فقط، ولا يُرسل أي شيء إلى الخارج. ولا توجد إعلانات ولا أدوات تحليل خارجية.</p></details><details><summary>هل يمكنني تتبّع الشيشة فقط؟</summary><p>نعم. اختر «الشيشة (النرجيلة)» أثناء الإعداد فتُخفى حقول السجائر، ويمكنك تغيير ذلك لاحقاً من الإعدادات.</p></details><details><summary>هل أسجّل الأيام التي دخّنت فيها؟</summary><p>نعم. يفصل نسمة بين مدتك المتواصلة وإجماليك، فالتسجيل لا يصفّر الإجمالي أبداً، والصياغة ليست لوماً.</p></details><details><summary>ماذا يحدث عند تغيير الجهاز؟</summary><p>تبقى السجلات على جهازك فقط ولا تنتقل من تلقاء نفسها. استخدم النسخ الاحتياطي في الوصول الكامل لتصدير ملف JSON وقراءته على الجهاز الجديد.</p></details><details><summary>فيمَ تُستخدم بيانات الصحة؟</summary><p>تُقرأ ثلاثة أنواع فقط: نبض الراحة والخطوات والنوم، لعرضها إلى جانب المدة نفسها. للقراءة فقط، وتُعالَج داخل جهازك، ولا تُرسل إلى أي مكان.</p></details><details><summary>هل هو اشتراك؟</summary><p>لا. الوصول الكامل شراء لمرة واحدة بلا رسوم إضافية.</p></details></div></section><section><div class="wrap"><h2>التواصل</h2><p>للأسئلة أو الإبلاغ عن خلل، راسلنا بالبريد. قد يستغرق الرد بعض الوقت.</p><div class="callout"><p><a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p></div></div></section><section><div class="wrap"><h2>ملاحظة حول المعلومات الصحية</h2><div class="callout"><p>ما يعرضه نسمة عن الجسم هو معلومات عامة عمّا يمر به الناس عادةً، مع ذكر مصدره. وهو ليس مخصصاً للتشخيص أو العلاج أو الوقاية، ولا يدل على أي نتيجة. تختلف التجربة من شخص لآخر. إذا كان لديك أي قلق بشأن صحتك، يُرجى استشارة الطبيب أو مختص مؤهل.</p></div></div></section>
 </main>
 <footer class="footer">

@@ -5,17 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kartella Home（カルテラ ホーム） — 家事代行・訪問清掃の顧客台帳と鍵の受け渡し記録</title>
 <meta name="description" content="ハウスクリーニング・家事代行のための顧客カルテ。いま何本、誰の鍵を預かっているかが一覧で分かり、暗証番号は Face ID を通すまで伏せたまま。アプリは通信しません。買い切り。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kartellahome/">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellahome/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellahome/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellahome/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="Kartella Home（カルテラ ホーム） — 家事代行・訪問清掃の顧客台帳と鍵の受け渡し記録">
 <meta property="og:description" content="ハウスクリーニング・家事代行のための顧客カルテ。いま何本、誰の鍵を預かっているかが一覧で分かり、暗証番号は Face ID を通すまで伏せたまま。アプリは通信しません。買い切り。">
 <meta property="og:url" content="https://freetokyo.github.io/web/kartellahome/">
+<meta property="og:image" content="https://freetokyo.github.io/web/kartellahome/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kartella Home（カルテラ ホーム） — 家事代行の顧客台帳と鍵の記録">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kartella Home（カルテラ ホーム） — 家事代行・訪問清掃の顧客台帳と鍵の受け渡し記録">
+<meta name="twitter:description" content="ハウスクリーニング・家事代行のための顧客カルテ。いま何本、誰の鍵を預かっているかが一覧で分かり、暗証番号は Face ID を通すまで伏せたまま。アプリは通信しません。買い切り。">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/kartellahome/og-image.png">
+<meta name="theme-color" content="#3A2C33">
 
-<style>:root{--brand-1:#3A2C33;--brand-2:#A97A35}
+<style>:root{--brand-1:#3A2C33;--brand-2:#A97A35;--brand-bg:#3A2C33;--brand-fg:#ffffff;--brand-bg-dark:#71676c;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +284,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,18 +332,124 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Kartella Home（カルテラ ホーム）", "description": "ハウスクリーニング・家事代行を個人または少人数で営む事業者のための顧客カルテ iOS アプリ。顧客ごとの間取り・作業指示・使う洗剤・訪問記録に加えて、預かっている鍵の本数と所在、玄関の暗証番号を扱う。暗証番号と鍵の所在は端末上で暗号化し、既定では伏字、Face ID などの本人確認を通したときだけ表示する。アプリは通信を行わず、アカウントもサーバーもない。買い切り。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/kartellahome/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kartella Home（カルテラ ホーム）", "description": "ハウスクリーニング・家事代行のための顧客カルテ。いま何本、誰の鍵を預かっているかが一覧で分かり、暗証番号は Face ID を通すまで伏せたまま。アプリは通信しません。買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartellahome/", "image": "https://freetokyo.github.io/web/kartellahome/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Kartella Home（カルテラ ホーム）", "item": "https://freetokyo.github.io/web/kartellahome/"}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">本文へスキップ</a>
 <nav class="nav" aria-label="グローバル">
   <div class="container nav__inner">
     <a class="nav__brand" href="../">
@@ -345,7 +463,7 @@
     
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <header class="hero"><div class="wrap"><h1>いま何本、誰の鍵を預かっているか。3秒で答えられますか。</h1><p class="lead">ハウスクリーニング・家事代行を、ひとりまたは2〜3人で営む方のためのカルテです。<br>顧客の情報も、暗証番号も、鍵の受け渡しも、アカウントもサーバーも使わずに記録します。</p><p class="note">iPhone・iOS 18.0 以降・日本語 / 英語・アカウント登録不要・買い切り</p></div></header>
 <section><div class="wrap"><h2>鍵の受け渡し台帳</h2><p>預かった鍵・キーボックス・カードキー・暗証番号を、<strong>種別／受領日／立会いの有無／保管場所／返却日</strong>で記録します。ホーム画面の最上部には預かり本数を常時表示します。0本のときも表示します——数が無いときに消える表示は、4本のときにも信用できないからです。</p><div class="grid"><div class="card"><h3>返却予定日</h3><p>設定しておくと、過ぎたときにホーム画面で分かります。通知でもお知らせしますが、通知には顧客名も住所も含めません。</p></div><div class="card"><h3>顧客に紐づけなくてもよい</h3><p>顧客登録の前に預かった鍵も記録できます。顧客を削除したあとも、手元に残る鍵の記録だけを残せます。</p></div><div class="card"><h3>無料でも無制限</h3><p>鍵の記録に上限はありません。差別化の中核に課金の壁を置くと、無料の利用者には「いま何本」が実態と合わなくなります。</p></div></div><p class="note">Kartella Home は鍵の受け渡し状況を<strong>記録</strong>します。紛失を防ぐ機能ではなく、保険に関する判断を示すものでもありません。</p></div></section>
 
@@ -358,6 +476,10 @@
 <section><div class="wrap"><h2>機種変更と、顧客の削除</h2><p>バックアップは<strong>鍵の台帳を含めて</strong>1つの暗号化ファイルにまとめます。暗号鍵はこの端末の外へ持ち出されないため、<strong>iPhone や iCloud の端末バックアップから復元しても、暗証番号と鍵の保管場所だけは戻りません</strong>。この方法でのバックアップが、その情報を新しい端末へ移す唯一の手段です。パスフレーズを忘れた場合に復旧する仕組みはありません（それにはサーバーが必要で、このアプリにはサーバーがないからです）。</p><p>顧客の削除は2段構えです。氏名・住所・連絡先・写真・入室情報を消して自分の作業履歴だけを残すか、すべてを削除するか。<strong>鍵を預かったままなら、削除の前にお知らせします</strong>——いま氏名を消すと、どの家の鍵か分からない鍵が手元に残るからです。</p></div></section>
 
 <section><div class="wrap"><h2>無料とフルアクセス</h2><p>無料でも<strong>顧客10軒・訪問1件あたり写真3枚・エリアメモ写真3枚・チェックリスト3件</strong>まで使えます。鍵の台帳・生体認証ロック・書き出し・バックアップ・削除は、無料でも制限なく使えます。顧客の安全と秘匿に関わる機能に課金の壁を置かない方針です。</p><p>フルアクセスは<strong>買い切り</strong>です（サブスクリプションではありません）。顧客・写真・チェックリストが無制限になり、料金・入金メモが使えます。</p></div></section>
+<section class="ftcta">
+<h2>Kartella Home（カルテラ ホーム）</h2>
+<p>近日公開。公開したらこのページでお知らせします。</p>
+</section>
 </main>
 <footer class="footer">
   <div class="container">

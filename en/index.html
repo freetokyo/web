@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>freetokyo apps — iOS apps for health, life, money &amp; work</title>
-  <meta name="description" content="A portfolio of 64 iOS apps by indie developer freetokyo — small tools that stay on your device. Across health, life, money and work: sleep recovery, sauna timer, strength training, menstrual-cycle training, family-home watch, school-printout OCR, cat healthcare, screenshot triage, rental move-in/out records, floor-plan effective area, end-of-life notebook, solo-caregiver logs, weekly journal, camel logbook, falconry records, GCC family document-expiry vault, household disaster-prep, income-threshold simulator, asset-longevity simulator, estate inventory, expense receipts, stock trade-decision journal, home-care payroll, on-site reports, delivery income, meeting notes, mini-basketball scoresheet household-staff records, stress scoring, coffee-roast logging and client charts for nail, music-lesson and personal-training professionals. Most are fully offline, no account, one-time purchase.">
+  <meta name="description" content="A portfolio of 64 iOS apps by indie developer freetokyo — small tools that stay on your device, across health, life, money and work. Most are fully offline, no account, one-time purchase.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <meta name="theme-color" content="#0A84FF">
   <meta name="format-detection" content="telephone=no">
   <link rel="canonical" href="https://freetokyo.github.io/web/en/">
@@ -18,7 +19,7 @@
   <meta property="og:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
   <meta property="og:description" content="64 iOS apps that make your everyday a little lighter. A portfolio across four axes: health, life, money and work. Most are fully offline, no account, one-time purchase.">
   <meta property="og:url" content="https://freetokyo.github.io/web/en/">
-  <meta property="og:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
+  <meta property="og:image" content="https://freetokyo.github.io/web/og-default.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ja_JP">
 
@@ -26,7 +27,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
   <meta name="twitter:description" content="64 iOS apps that make your everyday a little lighter — across health, life, money and work.">
-  <meta name="twitter:image" content="https://freetokyo.github.io/web/iekan/ogp.png">
+  <meta name="twitter:image" content="https://freetokyo.github.io/web/og-default.png">
 
   <!-- Favicon (emoji as SVG) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
@@ -283,6 +284,25 @@
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
     .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    /* ---- アクセシビリティ（アプリページの base.css と同じ規則） ---- */
+    a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible{
+      outline:3px solid var(--color-accent); outline-offset:2px; border-radius:4px;
+    }
+    .ftskip{
+      position:absolute; left:8px; top:-48px; z-index:100;
+      background:var(--color-surface); color:var(--color-text);
+      border:1px solid var(--color-border); border-radius:8px;
+      padding:8px 14px; font-size:14px; font-weight:600; transition:top .12s ease;
+    }
+    .ftskip:focus{ top:8px; text-decoration:none; }
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{
+        animation-duration:.01ms !important; animation-iteration-count:1 !important;
+        transition-duration:.01ms !important; scroll-behavior:auto !important;
+      }
+    }
+
   </style>
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -291,7 +311,7 @@
     "@type": "Organization",
     "name": "freetokyo apps",
     "url": "https://freetokyo.github.io/web/",
-    "logo": "https://freetokyo.github.io/web/iekan/ogp.png",
+    "logo": "https://freetokyo.github.io/web/og-default.png",
     "description": "A portfolio of iOS apps by indie developer freetokyo that stay on your device, useful across health, life, money and work.",
     "sameAs": ["https://github.com/freetokyo"]
   }
@@ -316,6 +336,7 @@
 </head>
 
 <body>
+<a class="ftskip" href="#ftmain">Skip to content</a>
 
 <!-- ===== NAV ===== -->
 <nav class="nav" aria-label="Global">
@@ -414,6 +435,8 @@
     </div>
   </div>
 </nav>
+
+<main id="ftmain">
 
 <!-- ===== HERO ===== -->
 <header class="hero">
@@ -1509,6 +1532,7 @@
 </section>
 
 <!-- ===== FOOTER ===== -->
+</main>
 <footer class="footer">
   <div class="container">
     <p>© 2026 freetokyo apps</p>

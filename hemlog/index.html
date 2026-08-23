@@ -5,17 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hemlog（ヘムログ） — お直し職人の一着ごとの寸法カルテ</title>
 <meta name="description" content="洋服のお直し職人のための「一着ごとの直し寸法カルテ」iOS / iPadOS アプリ。元寸法・仕上がり寸法・測定条件・折り返し代の残量・仕上がり写真を1枚のカードに残し、次に同じ一着が来たときそのまま複製できる。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/hemlog/">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="Hemlog（ヘムログ） — お直し職人の一着ごとの寸法カルテ">
 <meta property="og:description" content="洋服のお直し職人のための「一着ごとの直し寸法カルテ」iOS / iPadOS アプリ。元寸法・仕上がり寸法・測定条件・折り返し代の残量・仕上がり写真を1枚のカードに残し、次に同じ一着が来たときそのまま複製できる。">
 <meta property="og:url" content="https://freetokyo.github.io/web/hemlog/">
+<meta property="og:image" content="https://freetokyo.github.io/web/hemlog/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hemlog（ヘムログ） — 一着ごとの直し寸法カルテ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hemlog（ヘムログ） — お直し職人の一着ごとの寸法カルテ">
+<meta name="twitter:description" content="洋服のお直し職人のための「一着ごとの直し寸法カルテ」iOS / iPadOS アプリ。元寸法・仕上がり寸法・測定条件・折り返し代の残量・仕上がり写真を1枚のカードに残し、次に同じ一着が来たときそのまま複製できる。">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/hemlog/og-image.png">
+<meta name="theme-color" content="#2A4A7B">
 <meta name="apple-itunes-app" content="app-id=6800742261">
-<style>:root{--brand-1:#2A4A7B;--brand-2:#E0A458}
+<style>:root{--brand-1:#2A4A7B;--brand-2:#E0A458;--brand-bg:#2A4A7B;--brand-fg:#ffffff;--brand-bg-dark:#506b93;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +284,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,18 +332,124 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Hemlog（ヘムログ）", "description": "洋服のお直し職人向けの iOS / iPadOS アプリ。記録の単位を「顧客の体」ではなく「一着ごとの直し」に置き、元寸法・仕上がり寸法・測定条件（基準点/ヒール高/姿勢）・折り返し代の残量・仕上がり写真を1枚のカードにまとめる。各寸法は実測/指示/算出を区別し、実測が足りない記録には再現の根拠が不足と表示する。inch は 1/8 刻みの分数入力。通信を行わずアカウント登録もない。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/hemlog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6800742261"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hemlog（ヘムログ）", "description": "洋服のお直し職人のための「一着ごとの直し寸法カルテ」iOS / iPadOS アプリ。元寸法・仕上がり寸法・測定条件・折り返し代の残量・仕上がり写真を1枚のカードに残し、次に同じ一着が来たときそのまま複製できる。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hemlog/", "image": "https://freetokyo.github.io/web/hemlog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6800742261"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Hemlog（ヘムログ）", "item": "https://freetokyo.github.io/web/hemlog/"}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">本文へスキップ</a>
 <nav class="nav" aria-label="グローバル">
   <div class="container nav__inner">
     <a class="nav__brand" href="../">
@@ -345,8 +463,13 @@
     <a class="nav__cta" href="https://apps.apple.com/app/id6800742261" target="_blank" rel="noopener">App Store で見る</a>
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <header><div class="wrap"><span class="badge">iPhone · iPad</span><h1>Hemlog（ヘムログ）</h1><p class="lead">この一着を、前回と同じに。</p><p class="lead">お直し職人のための、一着ごとの直し寸法カルテです。</p><p class="note">記録・写真・バックアップ・アプリロックはすべて無料で上限がありません。有料になるのは書類と自動化だけです。</p></div></header><section><div class="wrap"><h2>記録の単位は「体」ではなく「一着ごとの直し」</h2><p>採寸アプリの多くは顧客の体の寸法を残します。Hemlog が残すのは「この一着の、この部位を、何cmから何cmに、どう直したか」です。顧客 → 一着 → 直し の3階層で、同じ客の2本目のパンツも別の記録として並びます。</p></div></section><section><div class="wrap"><h2>測ったときの条件まで残す</h2><p>同じ寸法に仕上げても同じに見えないことがあります。どこから測ったか（基準点）、そのとき履いていた靴のヒール高、立位か座位か、誰が測ったか。この4つを寸法とセットで残せます。</p></div></section><section><div class="wrap"><h2>あと何cm出せるかがわかる</h2><p>「もう少し出せますか」と聞かれたとき、折り返し代と縫い代の残量が記録に残っていれば、現物を開く前に答えられます。</p></div></section><section><div class="wrap"><h2>実測か、口頭指示か、算出値かを区別する</h2><p>「6cm詰めて」と言われただけの値と、実際に測った値は別ものです。各寸法に実測／指示／算出の区別を持たせ、実測が足りない記録には「再現の根拠が不足」とはっきり表示します。</p></div></section><section><div class="wrap"><h2>洗ってから直したかを残す</h2><p>生地の縮みは、お直しの再現性を壊す最大の要因です。洗濯表示と「洗ってから直したか／未洗いで直したか」を記録し、未洗いの記録を複製するときは注意を表示します。</p></div></section><section><div class="wrap"><h2>前回の直しを複製する</h2><p>「前回と同じ丈で」に1タップで応えられます。部位・手法・寸法・測定条件・ミシン設定を引き継ぎ、数値は<strong>実測ではなく指示として</strong>渡します。今回の一着を測って確定してください。</p></div></section><section><div class="wrap"><h2>cm でも inch でも</h2><p>inch は 1/8 刻みの分数で入力・表示します（31 3/8" のように）。cm で入れた値を inch 表示すると最近傍の 1/8 に丸まるので、丸めたことを ≈ で示します。単位を切り替えても、保存された値は変わりません。</p></div></section><section><div class="wrap"><h2>顧客の削除要求に2段階で応える</h2><p>連絡先だけを消して直しの記録を残す方法と、すべてを消す方法を分けています。前者は氏名を匿名 ID に置き換えるので、自分の作業記録は失われません。</p></div></section><section><div class="wrap"><h2>無料とフルアクセス</h2><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:15px"><thead><tr><th>機能</th><th>無料</th><th>フルアクセス</th></tr></thead><tbody><tr><td>顧客・一着・直しの記録</td><td>無制限</td><td>無制限</td></tr><tr><td>写真（長辺 2,048px に縮小）</td><td>無制限</td><td>無制限</td></tr><tr><td>標準の部位8種・手法6種</td><td>全部使える</td><td>全部使える</td></tr><tr><td>部位・手法を自分の言葉で入力</td><td>○</td><td>○</td></tr><tr><td>バックアップ（写真込み）と復元</td><td>○</td><td>○</td></tr><tr><td>アプリロックと2層削除</td><td>○</td><td>○</td></tr><tr><td>ホーム画面のウィジェット</td><td>○</td><td>○</td></tr><tr><td>1条件での検索</td><td>○</td><td>○</td></tr><tr><td>独自プリセットの保存</td><td>部位3件 / 手法5件</td><td>無制限</td></tr><tr><td>2つ以上の条件を組み合わせた検索</td><td>—</td><td>○</td></tr><tr><td>Before / After 画像の書き出し</td><td>透かしあり</td><td>透かしなし</td></tr><tr><td>作業単価表と見積り</td><td>—</td><td>○</td></tr><tr><td>預かり票 PDF</td><td>—</td><td>○</td></tr><tr><td>顧客カルテ PDF</td><td>—</td><td>○</td></tr><tr><td>写真を原寸のまま保持</td><td>—</td><td>○</td></tr></tbody></table></div><p style='margin-top:12px'>フルアクセスは月額・年額（自動更新）と、<strong>自動更新のない買い切り</strong>からお選びいただけます。解約しても記録の閲覧・編集・削除・バックアップは続けてご利用いただけます。止まるのは書類の書き出しと複合検索です。</p></div></section><section><div class="wrap"><h2>データの扱い</h2><p>Hemlog は<strong>通信を行いません</strong>。<strong>アカウント登録は不要</strong>で、<strong>開発者にデータは送信されません</strong>。</p><p>端末で iCloud バックアップが有効な場合、他のアプリと同じく Hemlog のデータもApple のバックアップに含まれます。そのバックアップを扱うのは Apple であり、Hemlog ではありません。</p><p>解析 SDK・広告 SDK は組み込んでおらず、開発者が利用状況を知る手段はありません。</p></div></section><section><div class="wrap"><h2>やらないこと</h2><ul><li><strong>写真からの自動採寸はしません。</strong>Hemlog は推定ではなく記録の道具です。</li><li><strong>税額の計算をしません。</strong>出力するのは預かり票であり、金額は入力値の合計です。</li><li><strong>ブランド名・型番の辞書を持ちません。</strong>ブランド欄は自由入力です。</li><li><strong>職人間・店舗間の共有機能はありません。</strong></li><li><strong>和装（鯨尺）は扱いません。</strong></li></ul></div></section><section><div class="wrap"><h2>ご確認ください</h2><p>本アプリはお客様ご自身の記録を残す道具です。仕上がりの一致や、記録の法的な効力を保証するものではありません。生地の縮み・伸び、洗いによる変化は素材と扱いによって異なります。最終的な判断は職人ご自身が行ってください。</p></div></section>
+<section class="ftcta">
+<h2>Hemlog（ヘムログ）</h2>
+<p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>
+<a class="cta" href="https://apps.apple.com/app/id6800742261" target="_blank" rel="noopener">App Store で見る</a>
+</section>
 </main>
 <footer class="footer">
   <div class="container">

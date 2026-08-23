@@ -5,17 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Baytlog — سياسة الخصوصية</title>
 <meta name="description" content="سياسة خصوصية Baytlog. تبقى بياناتك على جهازك — بلا حساب، وبلا تتبع، وبلا جمع للبيانات.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/baytlog/ar/privacy.html">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/">
-<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/privacy.html">
+<link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/privacy.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="Baytlog — سياسة الخصوصية">
 <meta property="og:description" content="سياسة خصوصية Baytlog. تبقى بياناتك على جهازك — بلا حساب، وبلا تتبع، وبلا جمع للبيانات.">
 <meta property="og:url" content="https://freetokyo.github.io/web/baytlog/ar/privacy.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/baytlog/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Baytlog — Villa maintenance record (GCC)">
+<meta property="og:locale" content="ar_AR">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baytlog — سياسة الخصوصية">
+<meta name="twitter:description" content="سياسة خصوصية Baytlog. تبقى بياناتك على جهازك — بلا حساب، وبلا تتبع، وبلا جمع للبيانات.">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/baytlog/og-image.png">
+<meta name="theme-color" content="#7A4020">
 
-<style>:root{--brand-1:#7A4020;--brand-2:#9A6206}
+<style>:root{--brand-1:#7A4020;--brand-2:#9A6206;--brand-bg:#7A4020;--brand-fg:#ffffff;--brand-bg-dark:#8f5f44;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +283,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,18 +331,124 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Baytlog（バイトログ）", "description": "湾岸（UAE・サウジ・カタール・クウェート・バーレーン・オマーン）のヴィラ所有者向け設備保全記録の iOS アプリ。AC・貯水タンク・加圧ポンプ・プールを設備1台ずつ台帳にし、作業日・費用・業者・写真・領収書を記録して、売却や賃貸、管理会社の交代時に A4 縦 1 枚の PDF（引き継ぎファイル）として引き渡す。推奨周期は公的機関の公開文書を出典として示し、国・首長国別に分岐し、すべて編集できる（出典が無い国には初期値を置かず、その旨を表示する）。砂塵日は気象データからの判定をユーザーが Yes/No で訂正し、確認した日だけを数えて次回の前倒しを提案する（自動でタスクを発行しない）。位置情報の権限を一度も要求せず、地図で選んだ地点を約1km に丸めて保存する。無料でヴィラ1件・設備と記録は無制限・写真1枚/記録・出典付き推奨周期・砂塵日の記録と前倒し提案・業者アドレス帳・バックアップと復元・直近12か月の費用グラフ。Pro（月額/年額の自動更新サブスク）で引き継ぎファイル（PDF）・iCloud 同期・ヴィラ無制限・写真10枚/記録・全期間の費用グラフ。解約しても記録は削除されず、無料の上限を超えたヴィラが read-only になるだけ。第三者による検証は受けておらず、証明書ではない。税額計算・通貨換算・業者の紹介や評価は行わない。アカウント不要・広告なし・解析 SDK なし。English / العربية（RTL）。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/baytlog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Baytlog", "description": "سياسة خصوصية Baytlog. تبقى بياناتك على جهازك — بلا حساب، وبلا تتبع، وبلا جمع للبيانات.", "inLanguage": "ar", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://freetokyo.github.io/web/baytlog/ar/privacy.html", "image": "https://freetokyo.github.io/web/baytlog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Baytlog", "item": "https://freetokyo.github.io/web/baytlog/ar/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/baytlog/ar/privacy.html"}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">Skip to content</a>
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../">
@@ -340,12 +457,12 @@
     </a>
     <a class="nav__here" href="../../baytlog/">Baytlog</a>
     <div class="nav__links">
-      <div class="nav__item"><a href="../../#health">Health</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../../immulog/">Immulog（イミュログ）<span>国が変わっても、記録は続く</span></a><a href="../../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../../#life">Life</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../baytlog/">Baytlog（バイトログ）<span>引き渡せるヴィラの設備保全記録（GCC）</span></a><a href="../../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../../nenrin/">Nenrin（ネンリン）<span>その一本に必要な作業を、必要な時期に</span></a><a href="../../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../../rotare/">Rosetare（ロターレ）<span>同じ系統が、また回ってきていないか</span></a><a href="../../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../../#money">Money</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../../#work">Work</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../../lessonreport/">指導レポート（Lesson Report）<span>入力すれば、報告書ができている</span></a><a href="../../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
+      <div class="nav__item"><a href="../../#health">Health</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../../immulog/">Immulog（イミュログ）<span>国が変わっても、記録は続く</span></a><a href="../../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../../#life">Life</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../baytlog/">Baytlog（バイトログ）<span>引き渡せるヴィラの設備保全記録（GCC）</span></a><a href="../../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../../kedgelog/">Kedgelog（ケッジログ）<span>積んでいる装備の期限を、1点ずつ</span></a><a href="../../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../../nenrin/">Nenrin（ネンリン）<span>その一本に必要な作業を、必要な時期に</span></a><a href="../../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../../rotare/">Rosetare（ロターレ）<span>同じ系統が、また回ってきていないか</span></a><a href="../../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../../vatlog/">Vatlog（ヴァットログ）<span>醸造したバッチを1つの台帳に</span></a><a href="../../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../../#money">Money</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../../#work">Work</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../../lessonreport/">指導レポート（Lesson Report）<span>入力すれば、報告書ができている</span></a><a href="../../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
     </div>
     
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <article><div class="wrap">
 <h1>سياسة الخصوصية</h1>
 <p class="updated">آخر تحديث: أغسطس 2026</p>
@@ -395,6 +512,7 @@
 <p>لأي سؤال عن الخصوصية راسلنا على <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>.</p>
 <p class="langs"><a href="https://freetokyo.github.io/web/baytlog/privacy.html" hreflang="en" lang="en">English</a> · <a href="https://freetokyo.github.io/web/baytlog/ar/privacy.html" hreflang="ar" lang="ar" aria-current="true">العربية</a></p>
 </div></article>
+
 </main>
 <footer class="footer">
   <div class="container">

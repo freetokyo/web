@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://freetokyo.github.io/web/zaicho/sitemap.xml

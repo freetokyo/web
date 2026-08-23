@@ -5,21 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>支援 — Arari</title>
 <meta name="description" content="Arari 常見問題：實質時薪的計算方式、匯率、稅額進位、免費額度、購買還原與聯絡方式。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/">
-<link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/">
-<link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/">
-<link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/">
-<link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html">
+<link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html">
+<link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html">
+<link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="支援 — Arari">
 <meta property="og:description" content="Arari 常見問題：實質時薪的計算方式、匯率、稅額進位、免費額度、購買還原與聯絡方式。">
 <meta property="og:url" content="https://freetokyo.github.io/web/arari/zh-Hant/support.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/arari/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Arari — Real hourly rate per job">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="支援 — Arari">
+<meta name="twitter:description" content="Arari 常見問題：實質時薪的計算方式、匯率、稅額進位、免費額度、購買還原與聯絡方式。">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/arari/og-image.png">
+<meta name="theme-color" content="#3A3F58">
 <meta name="apple-itunes-app" content="app-id=6797534182">
-<style>:root{--brand-1:#3A3F58;--brand-2:#C8873A}
+<style>:root{--brand-1:#3A3F58;--brand-2:#C8873A;--brand-bg:#3A3F58;--brand-fg:#ffffff;--brand-bg-dark:#65697d;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -276,7 +291,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -324,18 +339,125 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "アラリ（Arari）", "description": "フリーランス・一人法人のための業務アプリ。案件ごとの粗利と実質時給を、工数と経費を差し引いたうえで表示する。見積・納品・請求の PDF は税率ごとの内訳と源泉徴収に対応し、顧客ごとの言語で出力できる。消費税の端数処理は伝票につき税率ごとに1回。為替レートは手入力で通信は行わない（iCloud 同期のみ任意）。iPhone / iPad / Mac ネイティブの3ペイン、ユニバーサル購入。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/arari/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797534182"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Arari", "description": "Arari 常見問題：實質時薪的計算方式、匯率、稅額進位、免費額度、購買還原與聯絡方式。", "inLanguage": "zh-Hant", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/arari/zh-Hant/support.html", "image": "https://freetokyo.github.io/web/arari/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797534182"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Arari", "item": "https://freetokyo.github.io/web/arari/zh-Hant/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/arari/zh-Hant/support.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "實質時薪是怎麼算的？", "acceptedAnswer": {"@type": "Answer", "text": "（已開立請款單的未稅合計 − 該專案的費用）÷ 你記錄的工時。 沒有記錄工時時會顯示「—」而不是 0，因為兩者意義不同。"}}, {"@type": "Question", "name": "儀表板上的數字兜不起來", "acceptedAnswer": {"@type": "Answer", "text": "收入、成本、工時與時薪都來自 同一組專案 。 未設定匯率的專案會排除在合計之外，其筆數會顯示為 「已排除：N 個未設定匯率的專案」。輸入匯率後就會併入合計。"}}, {"@type": "Question", "name": "為什麼不會自動抓匯率？", "acceptedAnswer": {"@type": "Answer", "text": "Arari 不使用網路，所以由你輸入。下次使用相同的貨幣組合時， 會以你上次輸入的數值作為起始值。"}}, {"@type": "Question", "name": "消費稅怎麼進位？", "acceptedAnswer": {"@type": "Answer", "text": "依規定於每份單據、每個稅率各進位一次，而不是逐筆明細進位後再加總。 可於「設定 → 我的事業」選擇無條件捨去、無條件進位或四捨五入（預設為捨去）。 變更只影響之後開立的單據，已開立的單據不會重新計算。"}}, {"@type": "Question", "name": "單據號碼不是連號", "acceptedAnswer": {"@type": "Answer", "text": "這是刻意設計。號碼格式為「種類-開立日期-4 個字元」，以絕不重複為優先。 在日本，合格單據並不要求連續編號。"}}, {"@type": "Question", "name": "我想用客戶的語言開立請款單", "acceptedAnswer": {"@type": "Answer", "text": "請在客戶資料中設定「單據語言」。它與 App 本身的語言無關（Pro 功能）。"}}, {"@type": "Question", "name": "換新裝置", "acceptedAnswer": {"@type": "Answer", "text": "使用「設定 → 匯出備份」保存檔案，並在新裝置上選擇「從備份還原」。 若已啟用 iCloud 同步，只要登入相同的 Apple 帳戶即可自動帶過去。"}}, {"@type": "Question", "name": "還原會做什麼？", "acceptedAnswer": {"@type": "Answer", "text": "它會以備份內容 取代 本裝置上的所有資料。 若不確定，請先匯出一份備份。"}}, {"@type": "Question", "name": "免費的 20 份單據是什麼意思？", "acceptedAnswer": {"@type": "Answer", "text": "那是你可以免費建立的報價單與請款單 累計總數 。 刪除單據並不會回復額度。至於 5 位客戶與 10 件專案的上限， 只要從垃圾桶中永久刪除項目就會回復。"}}, {"@type": "Question", "name": "達到上限後還看得到資料嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以。上限只限制 新增 。 檢視、編輯與匯出既有資料一律不受影響。"}}, {"@type": "Question", "name": "取消訂閱會怎樣？", "acceptedAnswer": {"@type": "Answer", "text": "資料仍會保留。檢視與匯出 PDF、CSV 都能繼續使用，只有新增與編輯會停止。 請於 Apple 帳戶設定中取消。"}}, {"@type": "Question", "name": "已經訂閱了，但 Pro 沒有啟用", "acceptedAnswer": {"@type": "Answer", "text": "請確認你登入的是同一個 Apple 帳戶，然後使用 「設定 → 還原購買項目」，或 Pro 畫面上的同一個按鈕。"}}, {"@type": "Question", "name": "Mac 版需要另外購買嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。iPhone、iPad 與 Mac 共用同一個 App 紀錄（通用購買），一份訂閱即涵蓋三個平台。"}}, {"@type": "Question", "name": "可以鎖定 App 嗎？", "acceptedAnswer": {"@type": "Answer", "text": "開啟「設定 → App 鎖定」後，Arari 會在開啟時要求 Face ID、Touch ID 或裝置密碼。 此功能免費。若裝置未設定密碼則無法啟用。"}}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">Skip to content</a>
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../">
@@ -349,7 +471,7 @@
     <a class="nav__cta" href="https://apps.apple.com/app/id6797534182" target="_blank" rel="noopener">View on the App Store</a>
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <h1>支援</h1>
 
 <h2>常見問題</h2>

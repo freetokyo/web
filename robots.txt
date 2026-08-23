@@ -1,3 +1,13 @@
+# ！このファイルは現在クローラーに読まれていない。
+# robots.txt はホスト単位のプロトコルで、ホストのルートにあるものだけが読まれる。
+# 実体は https://freetokyo.github.io/web/ なので、効いているのは
+# https://freetokyo.github.io/robots.txt（= freetokyo/freetokyo.github.io リポジトリ）。
+# 2026-08-23 時点でそれは 404 で、下の Sitemap 宣言も AI クローラーへの Allow も届いていない。
+# 独自ドメインを CNAME で当てた場合はこのファイルがルートに来て有効になるので、
+# 内容はルート側と同じに保つこと。
+#
+# アプリ配下の robots.txt（19本）は、どの構成でも効かないので削除した。
+
 User-agent: *
 Allow: /
 

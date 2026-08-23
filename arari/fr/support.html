@@ -5,21 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assistance — Arari</title>
 <meta name="description" content="Questions fréquentes sur Arari : calcul du taux horaire réel, taux de change, arrondi de la taxe, limites gratuites, restauration des achats et contact.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/arari/fr/support.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/">
-<link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/">
-<link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/">
-<link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/">
-<link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html">
+<link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html">
+<link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html">
+<link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="Assistance — Arari">
 <meta property="og:description" content="Questions fréquentes sur Arari : calcul du taux horaire réel, taux de change, arrondi de la taxe, limites gratuites, restauration des achats et contact.">
 <meta property="og:url" content="https://freetokyo.github.io/web/arari/fr/support.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/arari/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Arari — Real hourly rate per job">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Assistance — Arari">
+<meta name="twitter:description" content="Questions fréquentes sur Arari : calcul du taux horaire réel, taux de change, arrondi de la taxe, limites gratuites, restauration des achats et contact.">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/arari/og-image.png">
+<meta name="theme-color" content="#3A3F58">
 <meta name="apple-itunes-app" content="app-id=6797534182">
-<style>:root{--brand-1:#3A3F58;--brand-2:#C8873A}
+<style>:root{--brand-1:#3A3F58;--brand-2:#C8873A;--brand-bg:#3A3F58;--brand-fg:#ffffff;--brand-bg-dark:#65697d;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -276,7 +291,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -324,18 +339,125 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "アラリ（Arari）", "description": "フリーランス・一人法人のための業務アプリ。案件ごとの粗利と実質時給を、工数と経費を差し引いたうえで表示する。見積・納品・請求の PDF は税率ごとの内訳と源泉徴収に対応し、顧客ごとの言語で出力できる。消費税の端数処理は伝票につき税率ごとに1回。為替レートは手入力で通信は行わない（iCloud 同期のみ任意）。iPhone / iPad / Mac ネイティブの3ペイン、ユニバーサル購入。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/arari/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797534182"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Arari", "description": "Questions fréquentes sur Arari : calcul du taux horaire réel, taux de change, arrondi de la taxe, limites gratuites, restauration des achats et contact.", "inLanguage": "fr", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/arari/fr/support.html", "image": "https://freetokyo.github.io/web/arari/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797534182"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Arari", "item": "https://freetokyo.github.io/web/arari/fr/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/arari/fr/support.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment le taux horaire réel est-il calculé ?", "acceptedAnswer": {"@type": "Answer", "text": "(Total hors taxes des factures émises − dépenses de ce projet) ÷ les heures suivies. Sans heures enregistrées, l’app affiche « — » et non 0 : ce n’est pas la même chose."}}, {"@type": "Question", "name": "Les chiffres du tableau de bord ne tombent pas juste", "acceptedAnswer": {"@type": "Answer", "text": "Les recettes, les coûts, les heures et le taux horaire proviennent tous du même ensemble de projets . Les projets sans taux de change sont laissés hors du total et leur nombre s’affiche sous la forme « Exclus : N projets sans taux de change ». Saisissez un taux et ils rejoignent le total."}}, {"@type": "Question", "name": "Pourquoi les taux de change ne sont-ils pas récupérés ?", "acceptedAnswer": {"@type": "Answer", "text": "Arari n’utilise pas le réseau : c’est donc vous qui les saisissez. La prochaine fois que vous utiliserez la même paire de devises, la dernière valeur saisie vous sera proposée comme point de départ."}}, {"@type": "Question", "name": "Comment la taxe à la consommation est-elle arrondie ?", "acceptedAnswer": {"@type": "Answer", "text": "Une fois par taux et par document, comme la réglementation l’exige — et non ligne par ligne avant de sommer. Choisissez l’arrondi inférieur, supérieur ou au plus proche dans « Réglages → Mon activité » (inférieur par défaut). Un changement s’applique aux documents que vous émettez ensuite ; ceux déjà émis ne sont pas recalculés."}}, {"@type": "Question", "name": "Les numéros de document ne se suivent pas", "acceptedAnswer": {"@type": "Answer", "text": "C’est voulu. Un numéro s’écrit « type-date d’émission-4 caractères », ce qui privilégie l’absence de collision. Une numérotation séquentielle n’est pas exigée pour la facture qualifiée au Japon."}}, {"@type": "Question", "name": "Je veux des factures dans la langue de mon client", "acceptedAnswer": {"@type": "Answer", "text": "Définissez « Langue des documents » sur la fiche du client. Elle est indépendante de la langue de l’app (Pro)."}}, {"@type": "Question", "name": "Passer à un nouvel appareil", "acceptedAnswer": {"@type": "Answer", "text": "Utilisez « Réglages → Exporter une sauvegarde », conservez le fichier, puis choisissez « Restauration depuis une sauvegarde » sur le nouvel appareil. Si la synchronisation iCloud est active, il suffit de vous connecter au même compte Apple."}}, {"@type": "Question", "name": "Que fait la restauration ?", "acceptedAnswer": {"@type": "Answer", "text": "Elle remplace tout ce qui se trouve sur cet appareil par le contenu de la sauvegarde. En cas de doute, exportez d’abord une sauvegarde."}}, {"@type": "Question", "name": "Qu’est-ce que la limite gratuite de 20 documents ?", "acceptedAnswer": {"@type": "Answer", "text": "C’est le total cumulé de devis et de factures que vous pouvez créer gratuitement. Supprimer un document ne libère pas de place. En revanche, les limites de 5 clients et 10 projets reviennent si vous supprimez définitivement un élément depuis la corbeille."}}, {"@type": "Question", "name": "Puis-je encore voir mes données une fois une limite atteinte ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Les limites ne portent que sur la création de nouveaux éléments . Consulter, modifier et exporter l’existant fonctionne toujours."}}, {"@type": "Question", "name": "Que se passe-t-il si je résilie ?", "acceptedAnswer": {"@type": "Answer", "text": "Vos données restent. La consultation et l’export de fichiers PDF et CSV fonctionnent toujours ; seules la création et la modification s’arrêtent. Résiliez dans les réglages de votre compte Apple."}}, {"@type": "Question", "name": "Je me suis abonné mais Pro n’est pas actif", "acceptedAnswer": {"@type": "Answer", "text": "Vérifiez que vous êtes connecté au même compte Apple, puis utilisez « Réglages → Restaurer les achats » ou le même bouton sur l’écran Pro."}}, {"@type": "Question", "name": "Dois-je acheter la version Mac séparément ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. iPhone, iPad et Mac partagent une même fiche d’app (achat universel) : un abonnement couvre les trois."}}, {"@type": "Question", "name": "Puis-je verrouiller l’app ?", "acceptedAnswer": {"@type": "Answer", "text": "Activez « Réglages → Verrouillage de l’app » et Arari demandera Face ID, Touch ID ou le code de votre appareil à l’ouverture. C’est gratuit. Cela ne peut pas être activé sur un appareil sans code défini."}}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">Skip to content</a>
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../">
@@ -349,7 +471,7 @@
     <a class="nav__cta" href="https://apps.apple.com/app/id6797534182" target="_blank" rel="noopener">View on the App Store</a>
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <h1>Assistance</h1>
 
 <h2>Questions fréquentes</h2>

@@ -5,17 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>サポート — Netlit（ネットリット）</title>
 <meta name="description" content="Netlit のサポートページ。実効水量・換水計算・ドージング・記録・バックアップ・サブスクリプションについてのよくある質問と、お問い合わせ先。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/netlit/support.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/netlit/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/netlit/en/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/netlit/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/netlit/support.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/netlit/en/support.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/netlit/support.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="サポート — Netlit（ネットリット）">
 <meta property="og:description" content="Netlit のサポートページ。実効水量・換水計算・ドージング・記録・バックアップ・サブスクリプションについてのよくある質問と、お問い合わせ先。">
 <meta property="og:url" content="https://freetokyo.github.io/web/netlit/support.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/netlit/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Netlit（ネットリット） — 淡水水槽の実効水量と換水計算">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="サポート — Netlit（ネットリット）">
+<meta name="twitter:description" content="Netlit のサポートページ。実効水量・換水計算・ドージング・記録・バックアップ・サブスクリプションについてのよくある質問と、お問い合わせ先。">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/netlit/og-image.png">
+<meta name="theme-color" content="#0E4C5C">
 
-<style>:root{--brand-1:#0E4C5C;--brand-2:#E3A21F}
+<style>:root{--brand-1:#0E4C5C;--brand-2:#E3A21F;--brand-bg:#0E4C5C;--brand-fg:#ffffff;--brand-bg-dark:#3e707d;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +284,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,18 +332,125 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Netlit（ネットリット）", "description": "淡水水槽（熱帯魚・水草）の実効水量を軸にした iOS / iPadOS アプリ。外寸ではなくガラス厚・水位・底床・レイアウト材・機材を差し引いた実際の水量を求め、換水量・乾燥塩ドージング（KNO3 / KH2PO4 / K2SO4 / MgSO4·7H2O）・カルキ抜きをその数値の上で計算する。副次イオンを必ず併記し、換水で到達できない目標には数値を返さず代替案を出す。水質7項目（NO3 / PO4 / KH / GH / pH / TDS / 水温）の記録、グラフ、CSV・PDF 書き出し、バックアップと復元を備える。海水・魚病薬・魚種データベース・市販製品プリセットは搭載しない。通信を行わずアカウント登録もない。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/netlit/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Netlit（ネットリット）", "description": "Netlit のサポートページ。実効水量・換水計算・ドージング・記録・バックアップ・サブスクリプションについてのよくある質問と、お問い合わせ先。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/netlit/support.html", "image": "https://freetokyo.github.io/web/netlit/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Netlit（ネットリット）", "item": "https://freetokyo.github.io/web/netlit/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/netlit/support.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "実効水量が、思っていたよりずっと少なく出ます。", "acceptedAnswer": {"@type": "Answer", "text": "それがこのアプリの出発点です。60×30×36cm の水槽でも、ガラス厚・実際の水位・底床・レイアウト材を差し引くと 64.8 L が 48 L 前後になります。ホーム画面の水量をタップすると、 総容積から何がどれだけ引かれたか を内訳で確認できます。数値に納得がいかない場合は、水位の高さと底床の厚みを見直してみてください。"}}, {"@type": "Question", "name": "底床の空隙率は、どのくらい信じてよいですか。", "acceptedAnswer": {"@type": "Answer", "text": "プリセットの値は すべて推定値 です。特に焼成ソイルは製品による差が大きく、既定値は暫定のものです。正確に知りたい場合は、使う量の底床をバケツに入れ、水を注いで入った水の量を測る（排水法）のが確実です。測った結果は「実測値」として登録できます。"}}, {"@type": "Question", "name": "「換水では目標に到達できません」と出て、数値が出ません。", "acceptedAnswer": {"@type": "Answer", "text": "足す水（源水）の値が、目標値と同じかそれ以上のときに出ます。この場合は何度換水しても目標を下回りません。RO / DI 水を混ぜて源水の値を下げるか、目標値を設定し直してください。画面にはこの2つの代替案を表示しています。 到達できない条件で「◯%換水」という数値を出さないのは意図した動作です。"}}, {"@type": "Question", "name": "源水（水道水）の硝酸塩の値がわかりません。", "acceptedAnswer": {"@type": "Answer", "text": "お住まいの水道局が公表している水質検査結果に記載があることが多いほか、試薬でご自身で測ることもできます。地域差が大きいため、本アプリは初期値を決め打ちにしていません。 0 のまま計算すると、換水後の値を実際より低く見積もることになります。"}}, {"@type": "Question", "name": "硝酸塩を上げたいだけなのに、カリウムの数字も出ます。", "acceptedAnswer": {"@type": "Answer", "text": "硝酸カリウム（KNO 3 ）は、硝酸イオンとカリウムイオンを同時に供給します。リン酸二水素カリウム（KH 2 PO 4 ）も同様です。意図しない蓄積を避けられるよう、本アプリは 同時に入る副次イオンの増加量を必ず併記 しています。"}}, {"@type": "Question", "name": "1回の換水の上限を、あとから変えられますか。", "acceptedAnswer": {"@type": "Answer", "text": "設定 →「安全上限」から、20〜80% の範囲でいつでも変更できます。初回に決めていただく形にしているのは、適切な上限が水槽と生体によって変わるためです。"}}, {"@type": "Question", "name": "ガロン表示にできますか。", "acceptedAnswer": {"@type": "Answer", "text": "設定から L / US ガロン / UK ガロンを選べます。アプリ全体で単位系は1つに統一されます。例外は液体製品のラベル逆算ウィザードだけで、ここではラベルに書かれている単位をそのまま入力できます（内部で換算されます）。"}}, {"@type": "Question", "name": "小数点をカンマで入力できますか。", "acceptedAnswer": {"@type": "Answer", "text": "できます。「12,5」と「12.5」のどちらでも同じ値として受け付けます。アラビア数字・デーヴァナーガリー数字・タイ数字・全角数字での入力にも対応しています。"}}, {"@type": "Question", "name": "蓄積速度の推定が「まだ推定できません」のままです。", "acceptedAnswer": {"@type": "Answer", "text": "推定には、 途中で換水していない区間 の測定値が2点以上必要です。換水を挟んだ2点は濃度が不連続になるため、区間から除外しています。画面には使える区間の本数が表示されるので、水換えをしていない期間に硝酸塩を2回測ってみてください。 データが足りないときに「速度 0」や「該当なし」とは表示しません。"}}, {"@type": "Question", "name": "水槽の構成を変えたら、過去の記録の水量も変わりますか。", "acceptedAnswer": {"@type": "Answer", "text": "変わりません。記録は 計算した時点のスナップショット として保存されます。記録の詳細画面では「当時 41.0 L（現在 44.2 L）」のように、当時の値と現在の値の両方を表示します。"}}, {"@type": "Question", "name": "機種変更します。記録を移せますか。", "acceptedAnswer": {"@type": "Answer", "text": "設定 →「バックアップと復元」で全データのバックアップファイルを作り、新しい端末で復元してください。 書き出しも復元も無料です。 CSV / PDF の書き出しは記録の一部だけを含むため、バックアップの代わりにはなりません。"}}, {"@type": "Question", "name": "端末間で自動的に同期しますか。", "acceptedAnswer": {"@type": "Answer", "text": "しません。本アプリは通信を行わないため、iPhone と iPad のデータは別々です。移行や共有はバックアップファイルで行ってください。"}}, {"@type": "Question", "name": "表示言語を変えられますか。", "acceptedAnswer": {"@type": "Answer", "text": "設定から変更できます。既定は端末のシステム言語です。"}}, {"@type": "Question", "name": "サブスクリプションを解約したい。", "acceptedAnswer": {"@type": "Answer", "text": "端末の「設定」→ Apple アカウント →「サブスクリプション」から行えます。解約後も、記録の閲覧・編集・削除・バックアップと、無料の計算機能は続けてご利用いただけます。"}}, {"@type": "Question", "name": "機種変更したら Premium が無効になりました。", "acceptedAnswer": {"@type": "Answer", "text": "購入画面または設定の「購入を復元」をお試しください。購入時と同じ Apple アカウントでサインインしている必要があります。"}}, {"@type": "Question", "name": "海水水槽でも使えますか。", "acceptedAnswer": {"@type": "Answer", "text": "実効水量の計算はお使いいただけますが、Ca / KH / Mg のバランスや海水用の添加剤には対応していません。本アプリは淡水（熱帯魚・水草）向けです。"}}, {"@type": "Question", "name": "魚が調子を崩しています。どうすればよいですか。", "acceptedAnswer": {"@type": "Answer", "text": "本アプリは計算と記録の道具であり、 診断や治療の助言はできません 。魚病薬の投薬量計算も搭載していません。専門の獣医師やショップにご相談ください。"}}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">本文へスキップ</a>
 <nav class="nav" aria-label="グローバル">
   <div class="container nav__inner">
     <a class="nav__brand" href="../">
@@ -340,12 +459,12 @@
     </a>
     <a class="nav__here" href="../netlit/">Netlit（ネットリット）</a>
     <div class="nav__links">
-      <div class="nav__item"><a href="../#health">健康</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../#life">くらし</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../#money">おかね</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../#work">しごと</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
+      <div class="nav__item"><a href="../#health">健康</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../immulog/">Immulog（イミュログ）<span>国が変わっても、記録は続く</span></a><a href="../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../#life">くらし</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../baytlog/">Baytlog（バイトログ）<span>引き渡せるヴィラの設備保全記録（GCC）</span></a><a href="../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../kedgelog/">Kedgelog（ケッジログ）<span>積んでいる装備の期限を、1点ずつ</span></a><a href="../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../nenrin/">Nenrin（ネンリン）<span>その一本に必要な作業を、必要な時期に</span></a><a href="../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../rotare/">Rosetare（ロターレ）<span>同じ系統が、また回ってきていないか</span></a><a href="../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../vatlog/">Vatlog（ヴァットログ）<span>醸造したバッチを1つの台帳に</span></a><a href="../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../#money">おかね</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../#work">しごと</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../lessonreport/">指導レポート（Lesson Report）<span>入力すれば、報告書ができている</span></a><a href="../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
     </div>
     
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <section><div class="wrap"><h2>サポート</h2><p>ご質問・ご要望は <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a> までお送りください。返信までに数日いただくことがあります。</p></div></section>
 
 <section><div class="wrap"><h2>よくある質問</h2>

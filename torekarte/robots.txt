@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://freetokyo.github.io/web/torekarte/sitemap.xml

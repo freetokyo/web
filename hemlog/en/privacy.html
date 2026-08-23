@@ -5,17 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Hemlog</title>
 <meta name="description" content="A per-garment alteration log for tailors and alteration shops, on iPhone and iPad. Keeps the original and finished measurements together with how they were taken, how much allowance is left, and the photos — ready to duplicate next time.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/hemlog/en/privacy.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/privacy.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/privacy.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="Privacy Policy — Hemlog">
 <meta property="og:description" content="A per-garment alteration log for tailors and alteration shops, on iPhone and iPad. Keeps the original and finished measurements together with how they were taken, how much allowance is left, and the photos — ready to duplicate next time.">
 <meta property="og:url" content="https://freetokyo.github.io/web/hemlog/en/privacy.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/hemlog/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hemlog — Per-garment alteration log">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy — Hemlog">
+<meta name="twitter:description" content="A per-garment alteration log for tailors and alteration shops, on iPhone and iPad. Keeps the original and finished measurements together with how they were taken, how much allowance is left, and the photos — ready to duplicate next time.">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/hemlog/og-image.png">
+<meta name="theme-color" content="#2A4A7B">
 <meta name="apple-itunes-app" content="app-id=6800742261">
-<style>:root{--brand-1:#2A4A7B;--brand-2:#E0A458}
+<style>:root{--brand-1:#2A4A7B;--brand-2:#E0A458;--brand-bg:#2A4A7B;--brand-fg:#ffffff;--brand-bg-dark:#506b93;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +283,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,18 +331,124 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Hemlog（ヘムログ）", "description": "洋服のお直し職人向けの iOS / iPadOS アプリ。記録の単位を「顧客の体」ではなく「一着ごとの直し」に置き、元寸法・仕上がり寸法・測定条件（基準点/ヒール高/姿勢）・折り返し代の残量・仕上がり写真を1枚のカードにまとめる。各寸法は実測/指示/算出を区別し、実測が足りない記録には再現の根拠が不足と表示する。inch は 1/8 刻みの分数入力。通信を行わずアカウント登録もない。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/hemlog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6800742261"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hemlog", "description": "A per-garment alteration log for tailors and alteration shops, on iPhone and iPad. Keeps the original and finished measurements together with how they were taken, how much allowance is left, and the photos — ready to duplicate next time.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hemlog/en/privacy.html", "image": "https://freetokyo.github.io/web/hemlog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6800742261"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hemlog", "item": "https://freetokyo.github.io/web/hemlog/en/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hemlog/en/privacy.html"}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">Skip to content</a>
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../">
@@ -345,8 +462,16 @@
     <a class="nav__cta" href="https://apps.apple.com/app/id6800742261" target="_blank" rel="noopener">View on the App Store</a>
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <section><div class="wrap"><h2>Privacy Policy</h2><p>This explains how Hemlog (“the app”) handles personal information and what you enter.</p></div></section><section><div class="wrap"><h2>Information we collect</h2><p><strong>The app collects nothing about you.</strong> No name, no email address, no device identifier, no usage data.</p></div></section><section><div class="wrap"><h2>Where your data is stored</h2><p>Hemlog <strong>does not connect to the internet</strong>. <strong>There is no account</strong>, and <strong>nothing is sent to the developer</strong>.</p><p>If iCloud Backup is on for the device, Hemlog's data is included in Apple's backup, like any other app. That backup is handled by Apple, not by Hemlog.</p><p>No analytics or advertising SDK is included, so the developer has no way to see how you use the app.</p></div></section><section><div class="wrap"><h2>Device features used</h2><ul><li><strong>Camera</strong> — to take photos of the work as you go.</li><li><strong>Face ID / Touch ID</strong> — to unlock the app. Biometric data is handled by iOS and is never seen by the app.</li></ul><p>Choosing an existing photo goes through the standard iOS picker, so no photo library permission is requested. Location, contacts, microphone and notifications are not used.</p></div></section><section><div class="wrap"><h2>About your customers' information</h2><p>The names and contact details you enter are <strong>information you control as a business</strong>. The developer never receives or stores them, and complying with applicable law is your responsibility.</p><p>For when a customer asks you to remove their details, the app separates <strong>“remove contact details”</strong> (which replaces the name with an anonymous ID and keeps the alteration records) from <strong>“delete everything”</strong>. Which is appropriate is your decision; this is not legal advice.</p></div></section><section><div class="wrap"><h2>Exporting and deleting your data</h2><p>In Settings you can create a full export (a `.hemlog` file including photos), restore from one, and export the ledger as TSV. <strong>The ledger export does not contain photos and is not a backup.</strong> Deleting the app removes the data on the device.</p></div></section><section><div class="wrap"><h2>Contact</h2><p><a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p></div></section>
+<section class="ftlegal">
+<h2>Controller, contact and your rights</h2>
+<p>This app is provided by freetokyo, an independent developer, who acts as the data controller. For any question about this policy or about personal data, contact freetokyo2020@yahoo.co.jp. We normally reply within five business days.</p>
+<p>If you are in the EU, the EEA or the UK, the GDPR gives you the right to access, rectify, erase, restrict and port your personal data, to withdraw consent and to object to processing. You may also lodge a complaint with your national supervisory authority.</p>
+<p>If you are a California resident, the CCPA/CPRA gives you the right to know, delete and correct the personal information collected about you, and to opt out of its sale or sharing. We do not sell or share personal information.</p>
+<p>Where this app stores data only on your device, we have no access to it, so most of these rights are exercised directly on the device: delete or export inside the app, or delete the app. We will still answer any request you send us.</p>
+<p>Retention: on-device data is kept until you delete it or remove the app. Support emails are deleted 24 months after the request is closed.</p>
+</section>
 </main>
 <footer class="footer">
   <div class="container">

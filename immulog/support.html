@@ -5,17 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>サポート — Immulog（イミュログ）</title>
 <meta name="description" content="Immulog のサポートとよくある質問。収録国、抗原単位の記録、接種した国の扱い、PDF の書き出し、バックアップ、購入の復元についてお答えします。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/immulog/support.html">
-<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/">
-<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/">
-<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/">
+<link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/support.html">
+<link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/support.html">
+<link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/support.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="freetokyo apps">
 <meta property="og:title" content="サポート — Immulog（イミュログ）">
 <meta property="og:description" content="Immulog のサポートとよくある質問。収録国、抗原単位の記録、接種した国の扱い、PDF の書き出し、バックアップ、購入の復元についてお答えします。">
 <meta property="og:url" content="https://freetokyo.github.io/web/immulog/support.html">
+<meta property="og:image" content="https://freetokyo.github.io/web/immulog/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Immulog（イミュログ） — 子どもの予防接種記録">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="サポート — Immulog（イミュログ）">
+<meta name="twitter:description" content="Immulog のサポートとよくある質問。収録国、抗原単位の記録、接種した国の扱い、PDF の書き出し、バックアップ、購入の復元についてお答えします。">
+<meta name="twitter:image" content="https://freetokyo.github.io/web/immulog/og-image.png">
+<meta name="theme-color" content="#4A2A6E">
 
-<style>:root{--brand-1:#4A2A6E;--brand-2:#D9A441}
+<style>:root{--brand-1:#4A2A6E;--brand-2:#D9A441;--brand-bg:#4A2A6E;--brand-fg:#ffffff;--brand-bg-dark:#755d91;--brand-fg-dark:#ffffff}
 /* freetokyo apps 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
@@ -272,7 +284,7 @@
 .ftbody .faq-item{margin:18px 0}
 .ftbody .faq-q{font-weight:600;line-height:1.6}
 .ftbody .faq-a{color:var(--color-text-sub);line-height:1.8;margin-top:4px}
-.ftbody .cta{display:inline-block;background:var(--brand-1,var(--color-accent));color:#fff;
+.ftbody .cta{display:inline-block;background:var(--brand-bg,var(--color-accent));color:var(--brand-fg,#fff);
   padding:14px 30px;border-radius:var(--radius-sm);text-decoration:none;font-weight:600;margin-top:20px}
 .ftbody .cta:hover{opacity:.9}
 .ftbody table{width:100%;border-collapse:collapse;margin:14px 0;
@@ -320,18 +332,125 @@
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
    狭い画面ではブランドと CTA だけ残す。 */
 @media (max-width: 720px){
-  .nav__links{display:none}
-  .nav__brand{white-space:nowrap;font-size:15px}
+  /* ドロップダウンは hover 前提なので畳む。カテゴリ見出しへのリンクだけ
+     横スクロールで残す。display:none にすると他アプリへの導線が
+     フッターの1行だけになる（375px で実測）。 */
+  .nav__links{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;flex:1;min-width:0;margin-inline:8px}
+  .nav__links::-webkit-scrollbar{display:none}
+  .nav__item > a::after{content:none}
+  .nav__links a{white-space:nowrap;font-size:13px}
+  .nav__brand{white-space:nowrap;font-size:0}
+  .nav__brand .nav__logo{font-size:14px}
   .nav__cta{font-size:13px;padding:6px 12px;white-space:nowrap}
   .nav__inner{gap:8px}
 }
 .ftlegal{margin-top:32px;padding-top:8px;border-top:1px solid var(--color-border)}
 .ftlegal h2{margin-top:16px}
+
+
+/* ==== アクセシビリティ ==================================================== */
+/* 2026-08-23 実測: :focus-visible 0/2879、skip link 1/2879、
+   prefers-reduced-motion 0/2879。どれも生成器の1箇所で全ページに入る。 */
+
+a:focus-visible, button:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* 「本文へスキップ」。スクリーンリーダーは毎ページ 4カテゴリ×64本の
+   ドロップダウンを読み上げてから本文に着く。 */
+.ftskip{
+  position:absolute; left:8px; top:-48px; z-index:100;
+  background:var(--color-surface); color:var(--color-text);
+  border:1px solid var(--color-border); border-radius:8px;
+  padding:8px 14px; font-size:14px; font-weight:600;
+  transition:top .12s ease;
+}
+.ftskip:focus{ top:8px; text-decoration:none; }
+
+/* html{scroll-behavior:smooth} が前庭障害のある利用者に効いてしまう。 */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ==== App Store 導線 ====================================================== */
+/* 本文の CTA クラスが18通りあり、base.css が定義しているのは
+   .cta / .btn / .btn--primary の3つだけ。appstore-badge / btn-primary /
+   plan-cta / appstore-btn / tl-btn / クラス無し の19アプリでは、主導線が
+   素の青いテキストリンクとして出ていた（trero のヒーローで実測。
+   background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
+   クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
+.ftbody a[href*="apps.apple.com"]{
+  display:inline-block;
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:13px 26px; border-radius:999px;
+  font-weight:600; font-size:16px; line-height:1.4;
+  text-align:center; text-decoration:none;
+  max-width:100%; margin:6px 6px 6px 0;
+}
+.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+/* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  display:inline; background:none; color:var(--color-accent);
+  padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
+}
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]:hover{text-decoration:underline}
+
+/* ヘッダーの CTA も背景が透明だった。常に見えている唯一の購入導線なので
+   ボタンとして描く。 */
+.nav__cta{
+  background:var(--brand-bg,var(--color-accent));
+  color:var(--brand-fg,#fff);
+  padding:7px 14px; border-radius:999px; font-size:14px; font-weight:600;
+}
+.nav__cta:hover{opacity:.9;text-decoration:none}
+
+/* 生成器が製品ページの末尾に足す購入ブロック（chrome.store_cta）。 */
+.ftcta{
+  margin:44px 0 8px; padding:28px 24px; text-align:center;
+  background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+}
+.ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
+.ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
+.ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+
+/* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
+   trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
+   塗りと前景を外観ごとに割る（chrome.brand_roles が値を出す）。 */
+@media (prefers-color-scheme:dark){
+  .ftbody .cta,
+  .ftbody a[href*="apps.apple.com"],
+  .nav__cta{
+    background:var(--brand-bg-dark,var(--color-accent));
+    color:var(--brand-fg-dark,#fff);
+  }
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+    background:none; color:var(--color-accent);
+  }
+}
+
+/* ==== 色だけで意味を伝えている箇所の保険 ================================== */
+/* 本文が <span style="color:var(--green)">（フル）</span> のように
+   色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
+   インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
+.ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Immulog（イミュログ）", "description": "子どもの予防接種記録のための iOS アプリ。記録を製品名ではなく抗原単位で保存し、接種した国を必須項目として持つ（同じ商品名でも国と承認時期で構成が違うため、製品から抗原への展開は国と接種日で照合し、確定できないときは推測せず手動選択を求める）。アメリカ・イギリス・日本の公表スケジュールと機械的に突き合わせ、記録あり／不足の可能性／回数が異なる可能性／この国の定期対象外／医療者と相談／時期がまだ先／目安の期間の中／毎シーズン接種の8状態で表示する。断定はせず、色・アイコン形状・文言の3重で表し、警告に赤を使わない。収録国はライセンスを個別に確認できたものだけ（CDC＝米連邦政府著作物、UKHSA＝OGL v3.0、日本＝厚労省の公共データ利用規約と法令）。出典・ライセンス・データ版数・参照日を折りたためない形で常時表示し、参照日から6か月を過ぎた国は更新確認を促す。PDF は抗原の英語名と出典・参照日を併記して医療者に渡せる。通信せず、アカウントも開発者のサーバーも無く、解析 SDK も広告 SDK も無い。バックアップの書き出しと読み込みは無料。買い切り（自動更新なし）。", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/immulog/", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Immulog（イミュログ）", "description": "Immulog のサポートとよくある質問。収録国、抗原単位の記録、接種した国の扱い、PDF の書き出し、バックアップ、購入の復元についてお答えします。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/immulog/support.html", "image": "https://freetokyo.github.io/web/immulog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Immulog（イミュログ）", "item": "https://freetokyo.github.io/web/immulog/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/immulog/support.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "私の国のスケジュールが入っていません。", "acceptedAnswer": {"@type": "Answer", "text": "v1.0 で収録しているのはアメリカ合衆国・イギリス・日本の3か国です。少ないのは、 公表されたスケジュールを再利用してよいかを1件ずつ確認し、確認できたものだけを収録している ためです。「たぶん自由に使える」で収録した国はありません。収録がない国でも、 接種の記録そのものはすべて手で入力でき、記録・編集・書き出し・バックアップはご利用いただけます 。差の表示だけが、収録国を選んだときに表示されます。"}}, {"@type": "Question", "name": "なぜ製品名ではなく抗原で記録するのですか。", "acceptedAnswer": {"@type": "Answer", "text": "混合ワクチンの構成は国によって違うためです。製品名で持つと、その製品が無い国に移った時点で記録の意味が読み取れなくなります。抗原（どの病気に対する接種か）で持てば、国が変わっても記録はそのまま使えます。製品名から入力することもでき、その場合は 接種した国と接種日で照合して 抗原に展開します。"}}, {"@type": "Question", "name": "製品を選んだのに「構成を特定できません」と出ます。", "acceptedAnswer": {"@type": "Answer", "text": "同じ商品名でも、国や承認された時期によって含まれる抗原が違うことがあります。接種した国と接種日の組み合わせで確定できないとき、本アプリは 推測で展開せず 、抗原をご自身で選んでいただく形にしています。ラベルや接種済証に記載の内容をご確認ください。"}}, {"@type": "Question", "name": "「接種した国」は必ず入れないといけませんか。", "acceptedAnswer": {"@type": "Answer", "text": "はい、必須です。どの国で受けたかによって、その製品がどの抗原を含むかも、その接種が定期接種だったかどうかも変わります。既定値は記録を作るときの居住国が入りますので、同じ国での接種であればそのままお使いいただけます。"}}, {"@type": "Question", "name": "「不足の可能性」と出ました。接種が足りないということですか。", "acceptedAnswer": {"@type": "Answer", "text": "そうとは限りません。 この表示は、入力された記録とその国の標準スケジュールを機械的に比べた結果です。本アプリは在胎週数・既往歴・免疫の状態・医師の個別の指示を考慮しません。記録の入力漏れであることもあります。 必ず医療機関にご相談ください。"}}, {"@type": "Question", "name": "「医療者と相談」という状態は何ですか。", "acceptedAnswer": {"@type": "Answer", "text": "その国のスケジュールで、リスクに応じて判断される接種、または医師と相談して決めるとされている区分です。これを「定期の対象外」に含めてしまうと、 検討すべきものを対象外として表示してしまう ため、別の状態として分けています。"}}, {"@type": "Question", "name": "まだ生まれたばかりですが、ほとんどが「不足の可能性」になりませんか。", "acceptedAnswer": {"@type": "Answer", "text": "なりません。標準の時期に達していない抗原は 「時期がまだ先」 として表示します。時期の来ていないものを不足として表示しないためです。"}}, {"@type": "Question", "name": "スケジュールはいつの時点のものですか。", "acceptedAnswer": {"@type": "Answer", "text": "各スケジュールの画面に、出典・ライセンス・データ版数・ 最後に確認した日 を常時表示しています。確認から6か月が過ぎた国では「更新の確認が必要です」と表示します。公式ページへのリンクも同じ場所にありますので、最新の内容はそちらでご確認ください。"}}, {"@type": "Question", "name": "アメリカのスケジュールの版について教えてください。", "acceptedAnswer": {"@type": "Answer", "text": "2026年3月16日の予備的差止命令により、2026年1月5日の決定メモが停止され、 2025年7月2日版が現在 CDC が公表しているスケジュール です。本アプリはその版を収録し、この経緯を出典欄に表示しています。どちらが正しいかについての評価は行いません。"}}, {"@type": "Question", "name": "PDF には何が載りますか。", "acceptedAnswer": {"@type": "Answer", "text": "お子さんの生年月日、接種の記録（日付・抗原・接種した国）、参照したスケジュールの出典・ライセンス・参照日です。抗原名には 英語名を必ず併記 します。渡航先の医療者が読み、出所を確かめられるようにするためです。お名前を含めるかは選べます。生年月日は常に含まれます（無いと、各接種が何か月のときのものかを読み取れないためです）。"}}, {"@type": "Question", "name": "機種変更します。記録を移せますか。", "acceptedAnswer": {"@type": "Answer", "text": "設定の「バックアップ」から全データのファイルを書き出し、新しい端末で読み込んでください。 書き出しも読み込みも無料です。 読み込みは追加として動作し、すでにある記録を置き換えたり消したりしません。 PDF はバックアップの代わりにはなりません。"}}, {"@type": "Question", "name": "iPhone と iPad で同期しますか。", "acceptedAnswer": {"@type": "Answer", "text": "しません。本アプリは通信を行わないため、端末間の自動同期はありません。移行や共有はバックアップファイルで行ってください。"}}, {"@type": "Question", "name": "母子手帳の写真を貼れますか。", "acceptedAnswer": {"@type": "Answer", "text": "できません。写真の添付は実装していません。"}}, {"@type": "Question", "name": "購入したのに、機種変更後に使えません。", "acceptedAnswer": {"@type": "Answer", "text": "購入画面または設定の「購入を復元」をお試しください。購入時と同じ Apple アカウントでサインインしている必要があります。"}}, {"@type": "Question", "name": "サブスクリプションですか。", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。 一度のお支払いで、自動更新はありません。 収録国が増えた場合も、購入済みの方に追加の費用は発生しません。"}}, {"@type": "Question", "name": "リマインダーは接種を指示するものですか。", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。標準スケジュール上の目安の時期が近づいたことをお知らせするだけで、 接種を指示する書き方はしません 。通知の許可は、設定でリマインダーをオンにしたときにのみ求めます。"}}, {"@type": "Question", "name": "お子さんのプロファイルを削除すると、記録はどうなりますか。", "acceptedAnswer": {"@type": "Answer", "text": "そのお子さんの記録もすべて削除され、 この操作は取り消せません 。先にバックアップを書き出しておくことをおすすめします。個別の接種記録の削除は、直後であれば取り消せます。"}}, {"@type": "Question", "name": "表示言語を変えられますか。", "acceptedAnswer": {"@type": "Answer", "text": "設定から変更できます。既定は端末のシステム言語です。"}}, {"@type": "Question", "name": "抗原名が英語のまま表示されることがあります。", "acceptedAnswer": {"@type": "Answer", "text": "抗原名は機械翻訳していません。その言語圏の公的な情報源で訳語を確認できたものだけを翻訳し、 確認できないものは英語のまま表示します 。推測で訳さない方針です。各国の公式な呼称や注記も、原文のまま表示します。"}}]}</script>
 </head>
 <body>
 
+<a class="ftskip" href="#ftmain">本文へスキップ</a>
 <nav class="nav" aria-label="グローバル">
   <div class="container nav__inner">
     <a class="nav__brand" href="../">
@@ -340,12 +459,12 @@
     </a>
     <a class="nav__here" href="../immulog/">Immulog（イミュログ）</a>
     <div class="nav__links">
-      <div class="nav__item"><a href="../#health">健康</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../immulog/">Immulog（イミュログ）<span>国が変わっても、記録は続く</span></a><a href="../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../#life">くらし</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../nenrin/">Nenrin（ネンリン）<span>その一本に必要な作業を、必要な時期に</span></a><a href="../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../rotare/">Rosetare（ロターレ）<span>同じ系統が、また回ってきていないか</span></a><a href="../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../#money">おかね</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../#work">しごと</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
+      <div class="nav__item"><a href="../#health">健康</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../atamalog/">Atamalog（アタマログ）<span>頭痛 × 気圧 × からだの記録と分析</span></a><a href="../calmgraph/">Calmgraph（カームグラフ）<span>ストレスを、1 つの数字に</span></a><a href="../hadalog/">Hadalog（ハダログ）<span>天気と生活から、明日の肌を予測</span></a><a href="../immulog/">Immulog（イミュログ）<span>国が変わっても、記録は続く</span></a><a href="../nasma/">نسمة / Nasma（ナスマ）<span>禁煙とシーシャ（水たばこ）の記録</span></a><a href="../recoverysync/">RecoverySync<span>睡眠・HRV リカバリースコア</span></a><a href="../saunaflow/">SaunaFlow<span>Apple Watch サウナタイマー</span></a><a href="../trero/">Trero<span>筋トレ・ワークアウト管理</span></a><a href="../tsukilift/">TsukiLift<span>生理周期 × 筋トレ</span></a><a href="../yuralog/">Yuralog（ユラログ）<span>更年期の症状記録・受診メモ</span></a></div></div></div><div class="nav__item"><a href="../#life">くらし</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../baytlog/">Baytlog（バイトログ）<span>引き渡せるヴィラの設備保全記録（GCC）</span></a><a href="../hazelog/">ハゼログ（HazeLog）<span>コーヒー自家焙煎のロースト曲線記録</span></a><a href="../heyalog/">ヘヤログ（Heyalog）<span>賃貸入退去の原状回復記録 × 国交省準拠 PDF</span></a><a href="../hitorilog/">ヒトリログ（HitoriLog）<span>ひとり介護者のためのケア記録</span></a><a href="../iekan/">IeKan（家看）<span>実家を家族みんなで見守る</span></a><a href="../jamalog/">Jamalog<span>ラクダのための完全オフライン台帳</span></a><a href="../jitsuhiro/">ジツヒロ（Jitsuhiro）<span>間取り図の本当の広さチェッカー</span></a><a href="../kajimieru/">カジミエル（Kajimieru）<span>名もなき家事130項目の分担診断</span></a><a href="../kedgelog/">Kedgelog（ケッジログ）<span>積んでいる装備の期限を、1点ずつ</span></a><a href="../khaylog/">Khaylog（ハイログ）<span>馬主のための馬管理台帳</span></a><a href="../lifeweeks/">Weekwise<span>人生を週で記録する週次ジャーナル</span></a><a href="../miawell/">Miawell<span>猫専用ヘルスケア × AI写真判定</span></a><a href="../muddah/">Muddah（ムッダ）<span>駐在家族の書類期限ボルト（GCC）</span></a><a href="../nenrin/">Nenrin（ネンリン）<span>その一本に必要な作業を、必要な時期に</span></a><a href="../netlit/">Netlit（ネットリット）<span>水槽の「本当の水量」から計算する</span></a><a href="../printmemo/">PrintSummary / プリサマ<span>学校プリント整理 × OCR</span></a><a href="../rotare/">Rosetare（ロターレ）<span>同じ系統が、また回ってきていないか</span></a><a href="../sakulog/">SakuLog（サクログ）<span>こどもの作品アーカイブ × 手放す判断</span></a><a href="../saqrlog/">Saqrlog（サクルログ）<span>鷹匠のための完全オフライン記録</span></a><a href="../sonalog/">ソナログ（Sonalog）<span>備蓄ローリングストック × 家庭防災カルテ</span></a><a href="../sukushori/">スクショリ<span>スクショ自動仕分け × 端末内 AI</span></a><a href="../unelog/">Unelog（ウネログ）<span>市民農園・貸し農園の区画栽培カルテ</span></a><a href="../vatlog/">Vatlog（ヴァットログ）<span>醸造したバッチを1つの台帳に</span></a><a href="../yuzuri/">Yuzuri（ユズリ）<span>完全オフラインの終活ノート</span></a></div></div></div><div class="nav__item"><a href="../#money">おかね</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../homenetnavi/">世帯手取ナビ（HomeNet Navi）<span>2026年制度対応「年収の壁」シミュレーター</span></a><a href="../keihiba/">ケイヒバ（Keihiba）<span>経費レシート整理 × ローカル完結</span></a><a href="../kimekabu/">キメカブ（Kimekabu）<span>株の「売買判断」を記録するトレードノート</span></a><a href="../mochiru/">Mochiru<span>資産寿命シミュレーター × Monte Carlo</span></a><a href="../zaicho/">ザイチョウ（Zaicho）<span>自分だけの財産目録・純資産・相続税概算</span></a></div></div></div><div class="nav__item"><a href="../#work">しごと</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../arari/">アラリ（Arari）<span>案件の粗利と実質時給がわかる</span></a><a href="../carehours/">CareHours<span>訪問介護ヘルパー給与管理</span></a><a href="../chezlog/">Chezlog（シェログ）<span>出張シェフの案件・献立台帳</span></a><a href="../dartrack/">Dartrack<span>家事使用人の記録をオフラインで（UAE）</span></a><a href="../formulog/">Formulog（フォーミュログ）<span>革の補修職人のための調色台帳</span></a><a href="../genbalog/">Genbalog<span>60秒で現場報告書</span></a><a href="../hanro/">Hanro<span>配達ドライバー収支管理</span></a><a href="../hemlog/">Hemlog（ヘムログ）<span>一着ごとの直し寸法カルテ</span></a><a href="../inkarte/">Inkarte（インカルテ）<span>彫師のための顧客カルテ・同意書</span></a><a href="../kartella/">カルテラ（Kartella）<span>美容師のカルテ・薬剤記録・パッチテスト期限</span></a><a href="../kartellaauto/">Kartella Auto（カルテラ オート）<span>出張カーディテーリングの車両カルテ</span></a><a href="../kartellahome/">Kartella Home（カルテラ ホーム）<span>家事代行・訪問清掃の顧客台帳と鍵の記録</span></a><a href="../kartellalash/">カルテラ ラッシュ（Kartella Lash）<span>まつ毛エクステ・ラッシュリフトの顧客カルテ</span></a><a href="../kartellapets/">Kartella Pets（カルテラ ペッツ）<span>ペットシッターの顧客カルテと鍵の記録</span></a><a href="../kartellastudio/">Kartella Studio（カルテラ スタジオ）<span>レッスン回数券の残数管理</span></a><a href="../koegaki/">コエガキ（Koegaki）<span>完全オンデバイスの議事メモ</span></a><a href="../lessonreport/">指導レポート（Lesson Report）<span>入力すれば、報告書ができている</span></a><a href="../nailog/">ネイログ（Nailog）<span>ネイリストの顧客カルテ・施術記録</span></a><a href="../otolog/">オトログ（Otolog）<span>ピアノ・音楽教室の生徒カルテ</span></a><a href="../qamari/">قمري / Qamari（カマリ）<span>ヒジュラ暦を「第一の暦」として使うカレンダー</span></a><a href="../temalog/">テマログ（Temalog）<span>一人親方の出面・人工と立替の記録</span></a><a href="../tillcount/">シメレジ（Tillcount）<span>出店の会計と、閉店後の現金の締め</span></a><a href="../torekarte/">トレカルテ（ToreKarte）<span>パーソナルトレーナーの顧客カルテ</span></a><a href="../toscore/">Toscore<span>ミニバス対応 デジタルスコアシート</span></a><a href="../waqtain/">وقتين / Waqtain（ワクタイン）<span>礼拝と礼拝のあいだを、設計する</span></a></div></div></div>
     </div>
     
   </div>
 </nav>
-<main class="ftbody">
+<main class="ftbody" id="ftmain">
 <section><div class="wrap"><h2>サポート</h2><p>ご質問・ご要望は <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a> までお送りください。返信までに数日いただくことがあります。</p><p>お子さんの接種の要否についてのご質問には、お答えできません。<strong>医療上の判断は医療機関にご相談ください。</strong></p></div></section>
 
 <section><div class="wrap"><h2>よくある質問</h2>
