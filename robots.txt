@@ -2,29 +2,82 @@
 # robots.txt はホスト単位のプロトコルで、ホストのルートにあるものだけが読まれる。
 # 実体は https://freetokyo.github.io/web/ なので、効いているのは
 # https://freetokyo.github.io/robots.txt（= freetokyo/freetokyo.github.io リポジトリ）。
-# 2026-08-23 時点でそれは 404 で、下の Sitemap 宣言も AI クローラーへの Allow も届いていない。
 # 独自ドメインを CNAME で当てた場合はこのファイルがルートに来て有効になるので、
-# 内容はルート側と同じに保つこと。
+# 内容はルート側と同じに保つ。以下はルート側のコピー。
 #
-# アプリ配下の robots.txt（19本）は、どの構成でも効かないので削除した。
+# アプリ配下の robots.txt（18本）は、どの構成でも効かないので削除した。
+
+# https://freetokyo.github.io/robots.txt
+# freetokyo apps — 実体は /web/ 配下。
 
 User-agent: *
 Allow: /
 
-# AI crawlers - explicit allow
+# ---- 検索エンジン ----------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ---- 生成AI: 学習クローラー（学習を許可する方針）---------------------------
+# 「学習させたくない」に転じたときに書き換える場所を1箇所にしておく。
+# 許可は既定と同じなので、ここは方針の記録を兼ねる。
 User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Bingbot
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+# ---- 生成AI: 回答時に取りに来るクローラー（= 引用される経路）----------------
+# 学習用とは別の UA。ここを塞ぐと ChatGPT / Claude / Perplexity の回答から
+# アプリが消える。アプリ名で指名検索される前の「知られる」経路なので許可する。
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 Sitemap: https://freetokyo.github.io/web/sitemap.xml
