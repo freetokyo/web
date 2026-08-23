@@ -1,12 +1,13 @@
 # SaunaFlow
 
-> Apple Watch対応サウナタイマー。完全オフライン・買い切り。対象: サウナ愛好家（サ活）。
+> Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
 
-App Store: https://apps.apple.com/jp/app/id6761906547
 Web: https://freetokyo.github.io/web/saunaflow/
-開発者: freetokyo
-バージョン: 1.2 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-07
+App Store: https://apps.apple.com/app/id6761906547
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.4.0 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - サウナ・水風呂・休憩のタイマー
@@ -25,7 +26,41 @@ Web: https://freetokyo.github.io/web/saunaflow/
 3. ととのいスコアと履歴を確認する
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/saunaflow/
 - サポート / FAQ: https://freetokyo.github.io/web/saunaflow/support.html
-- プライバシー: https://freetokyo.github.io/web/saunaflow/privacy.html
 - 利用規約: https://freetokyo.github.io/web/saunaflow/terms.html
+- プライバシー: https://freetokyo.github.io/web/saunaflow/privacy.html
+- ar: https://freetokyo.github.io/web/saunaflow/ar/
+- ca: https://freetokyo.github.io/web/saunaflow/ca/
+- cs: https://freetokyo.github.io/web/saunaflow/cs/
+- da: https://freetokyo.github.io/web/saunaflow/da/
+- de: https://freetokyo.github.io/web/saunaflow/de/
+- el: https://freetokyo.github.io/web/saunaflow/el/
+- en: https://freetokyo.github.io/web/saunaflow/en/
+- es: https://freetokyo.github.io/web/saunaflow/es/
+- fi: https://freetokyo.github.io/web/saunaflow/fi/
+- fr: https://freetokyo.github.io/web/saunaflow/fr/
+- he: https://freetokyo.github.io/web/saunaflow/he/
+- hi: https://freetokyo.github.io/web/saunaflow/hi/
+- hr: https://freetokyo.github.io/web/saunaflow/hr/
+- hu: https://freetokyo.github.io/web/saunaflow/hu/
+- id: https://freetokyo.github.io/web/saunaflow/id/
+- it: https://freetokyo.github.io/web/saunaflow/it/
+- ko: https://freetokyo.github.io/web/saunaflow/ko/
+- ms: https://freetokyo.github.io/web/saunaflow/ms/
+- nb: https://freetokyo.github.io/web/saunaflow/nb/
+- nl: https://freetokyo.github.io/web/saunaflow/nl/
+- pl: https://freetokyo.github.io/web/saunaflow/pl/
+- pt-BR: https://freetokyo.github.io/web/saunaflow/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/saunaflow/pt-PT/
+- ro: https://freetokyo.github.io/web/saunaflow/ro/
+- ru: https://freetokyo.github.io/web/saunaflow/ru/
+- sk: https://freetokyo.github.io/web/saunaflow/sk/
+- sv: https://freetokyo.github.io/web/saunaflow/sv/
+- th: https://freetokyo.github.io/web/saunaflow/th/
+- tr: https://freetokyo.github.io/web/saunaflow/tr/
+- uk: https://freetokyo.github.io/web/saunaflow/uk/
+- vi: https://freetokyo.github.io/web/saunaflow/vi/
+- zh-Hans: https://freetokyo.github.io/web/saunaflow/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/saunaflow/zh-Hant/

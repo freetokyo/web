@@ -7,6 +7,7 @@
 <meta name="description" content="Client records, booking, session history and consent forms for tattoo artists. Fully offline, one-time purchase. Your data stays on your device.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/inkarte/en/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/inkarte/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/inkarte/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/inkarte/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/inkarte/">
@@ -442,6 +443,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Inkarte", "description": "Client records, booking, session history and consent forms for tattoo artists. Fully offline, one-time purchase. Your data stays on your device.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/inkarte/en/", "image": "https://freetokyo.github.io/web/inkarte/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6792252166"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Inkarte", "item": "https://freetokyo.github.io/web/inkarte/en/"}]}</script>
@@ -469,6 +480,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>Pricing</h2><p>The free tier supports up to 10 clients and 3 signed consent forms per calendar month, with unlimited sessions, appointments and backup/restore. A one-time Full Access purchase makes clients and consent forms unlimited and unlocks statistics, custom templates, portfolio and bulk export. There is no subscription.</p>
 <div class="note">All data is stored on your device with no collection or transmission by the developer. You, the artist, are the data controller for your clients&#x27; information.<br><br>The consent templates are general samples; they do not guarantee any specific legal effect and are not legal advice. For actual use, please consult a professional according to your local regulations.</div>
 </div>
+
 <section class="ftcta">
 <h2>Inkarte</h2>
 <p>Available on the App Store, for iPhone and iPad.</p>

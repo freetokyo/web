@@ -7,6 +7,7 @@
 <meta name="description" content="フリマ・マルシェ・学園祭の出店向け。商品をタップして会計し、閉店後は金種を数えるだけ。あるはずの現金との差額と、その原因候補まで出します。通信しない買い切りアプリ。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/tillcount/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/tillcount/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "シメレジ（Tillcount）", "description": "フリマ・マルシェ・学園祭の出店向け。商品をタップして会計し、閉店後は金種を数えるだけ。あるはずの現金との差額と、その原因候補まで出します。通信しない買い切りアプリ。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/tillcount/", "image": "https://freetokyo.github.io/web/tillcount/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "シメレジ（Tillcount）", "item": "https://freetokyo.github.io/web/tillcount/"}]}</script>
@@ -543,6 +554,10 @@ CSV の書き出し、バックアップと復元が使えます。1回の購入
 お住まいの国・地域の制度に従ってご自身でご確認ください。</p>
 <p>本アプリは決済処理を一切行いません。支払方法は記録のための区分です。</p>
 </div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="締めの画面。照合結果 −¥300 と、あるはずの現金（開始現金・現金売上・現金の取消・入金・出金）の内訳、数えた現金の入力" width="360" height="782" loading="lazy" decoding="async"><figcaption>レジと締めが1本。 現金が合わない理由まで分かる</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="レジの画面。ホットコーヒー・カフェラテ・アイスティー・スコーンなどの商品をタップで積み上げ、合計 ¥2,300 を大きく出す" width="360" height="782" loading="lazy" decoding="async"><figcaption>商品をタップするだけ。 合計は大きく、押しやすく</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="締めの一致画面。照合結果 ¥0（一致しています）と、あるはずの現金と数えた現金がどちらも ¥37,570 で並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>開始現金・売上・入出金から あるはずの現金を組み立てる</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>シメレジ（Tillcount）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

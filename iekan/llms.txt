@@ -1,12 +1,13 @@
 # IeKan（家看）
 
-> 実家を家族で見守るホーム管理アプリ。家族間のみiCloud共有・第三者提供なし。対象: 実家を離れて暮らす家族。
+> 離れて暮らす家族で実家を見守る iOS アプリ。写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。
 
-App Store: https://apps.apple.com/jp/app/id6764244913
 Web: https://freetokyo.github.io/web/iekan/
-開発者: freetokyo
-バージョン: 1.1 / 対応: iOS 26.2 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6764244913
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2.1 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 実家の写真タイムライン
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/iekan/
 3. タイムラインで家族と共有する
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/iekan/
 - サポート / FAQ: https://freetokyo.github.io/web/iekan/support.html
-- プライバシー: https://freetokyo.github.io/web/iekan/privacy.html
 - 利用規約: https://freetokyo.github.io/web/iekan/terms.html
+- プライバシー: https://freetokyo.github.io/web/iekan/privacy.html
+- ar: https://freetokyo.github.io/web/iekan/ar/
+- ca: https://freetokyo.github.io/web/iekan/ca/
+- cs: https://freetokyo.github.io/web/iekan/cs/
+- da: https://freetokyo.github.io/web/iekan/da/
+- de: https://freetokyo.github.io/web/iekan/de/
+- el: https://freetokyo.github.io/web/iekan/el/
+- en: https://freetokyo.github.io/web/iekan/en/
+- es: https://freetokyo.github.io/web/iekan/es/
+- fi: https://freetokyo.github.io/web/iekan/fi/
+- fr: https://freetokyo.github.io/web/iekan/fr/
+- he: https://freetokyo.github.io/web/iekan/he/
+- hi: https://freetokyo.github.io/web/iekan/hi/
+- hr: https://freetokyo.github.io/web/iekan/hr/
+- hu: https://freetokyo.github.io/web/iekan/hu/
+- id: https://freetokyo.github.io/web/iekan/id/
+- it: https://freetokyo.github.io/web/iekan/it/
+- ko: https://freetokyo.github.io/web/iekan/ko/
+- ms: https://freetokyo.github.io/web/iekan/ms/
+- nb: https://freetokyo.github.io/web/iekan/nb/
+- nl: https://freetokyo.github.io/web/iekan/nl/
+- pl: https://freetokyo.github.io/web/iekan/pl/
+- pt-BR: https://freetokyo.github.io/web/iekan/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/iekan/pt-PT/
+- ro: https://freetokyo.github.io/web/iekan/ro/
+- ru: https://freetokyo.github.io/web/iekan/ru/
+- sk: https://freetokyo.github.io/web/iekan/sk/
+- sv: https://freetokyo.github.io/web/iekan/sv/
+- th: https://freetokyo.github.io/web/iekan/th/
+- tr: https://freetokyo.github.io/web/iekan/tr/
+- uk: https://freetokyo.github.io/web/iekan/uk/
+- vi: https://freetokyo.github.io/web/iekan/vi/
+- zh-Hans: https://freetokyo.github.io/web/iekan/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/iekan/zh-Hant/

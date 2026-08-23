@@ -1,12 +1,13 @@
 # ヒトリログ（HitoriLog）
 
-> ひとりで介護を担う人のためのケア記録アプリ。広告なし・アカウントなし・完全オフラインで、体温・血圧・水分・食事・服薬・排泄・睡眠・気分を記録し、誰にも見せない本音メモで介護のリアルを書き留められる。対象: 在宅でひとり介護をしている人。
+> ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
 
-App Store: https://apps.apple.com/app/id6785472192
 Web: https://freetokyo.github.io/web/hitorilog/
-開発者: freetokyo
-対応: iOS 18.0 以降 / 価格: 基本無料（プレミアム機能は買い切り・サブスクなし）
-最終更新: 2026-07
+App Store: https://apps.apple.com/app/id6785472192
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.0.1 / 対応: iOS 18.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 体温・血圧・水分・食事・服薬・排泄・睡眠・気分の8項目記録
@@ -15,7 +16,41 @@ Web: https://freetokyo.github.io/web/hitorilog/
 - PDF出力
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/hitorilog/
 - サポート / FAQ: https://freetokyo.github.io/web/hitorilog/support.html
-- プライバシー: https://freetokyo.github.io/web/hitorilog/privacy.html
 - 利用規約: https://freetokyo.github.io/web/hitorilog/terms.html
+- プライバシー: https://freetokyo.github.io/web/hitorilog/privacy.html
+- ar: https://freetokyo.github.io/web/hitorilog/ar/
+- ca: https://freetokyo.github.io/web/hitorilog/ca/
+- cs: https://freetokyo.github.io/web/hitorilog/cs/
+- da: https://freetokyo.github.io/web/hitorilog/da/
+- de: https://freetokyo.github.io/web/hitorilog/de/
+- el: https://freetokyo.github.io/web/hitorilog/el/
+- en: https://freetokyo.github.io/web/hitorilog/en/
+- es: https://freetokyo.github.io/web/hitorilog/es/
+- fi: https://freetokyo.github.io/web/hitorilog/fi/
+- fr: https://freetokyo.github.io/web/hitorilog/fr/
+- he: https://freetokyo.github.io/web/hitorilog/he/
+- hi: https://freetokyo.github.io/web/hitorilog/hi/
+- hr: https://freetokyo.github.io/web/hitorilog/hr/
+- hu: https://freetokyo.github.io/web/hitorilog/hu/
+- id: https://freetokyo.github.io/web/hitorilog/id/
+- it: https://freetokyo.github.io/web/hitorilog/it/
+- ko: https://freetokyo.github.io/web/hitorilog/ko/
+- ms: https://freetokyo.github.io/web/hitorilog/ms/
+- nb: https://freetokyo.github.io/web/hitorilog/nb/
+- nl: https://freetokyo.github.io/web/hitorilog/nl/
+- pl: https://freetokyo.github.io/web/hitorilog/pl/
+- pt-BR: https://freetokyo.github.io/web/hitorilog/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/hitorilog/pt-PT/
+- ro: https://freetokyo.github.io/web/hitorilog/ro/
+- ru: https://freetokyo.github.io/web/hitorilog/ru/
+- sk: https://freetokyo.github.io/web/hitorilog/sk/
+- sv: https://freetokyo.github.io/web/hitorilog/sv/
+- th: https://freetokyo.github.io/web/hitorilog/th/
+- tr: https://freetokyo.github.io/web/hitorilog/tr/
+- uk: https://freetokyo.github.io/web/hitorilog/uk/
+- vi: https://freetokyo.github.io/web/hitorilog/vi/
+- zh-Hans: https://freetokyo.github.io/web/hitorilog/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/hitorilog/zh-Hant/

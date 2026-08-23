@@ -7,6 +7,7 @@
 <meta name="description" content="フリーランス・面貸し・訪問の美容師と1人サロンのためのカルテアプリ。顧客情報・施術履歴・薬剤の配合・Before/After写真・パッチテストの実施記録。Kartellaはデータを送信しません。アカウント登録不要・買い切り・7言語。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kartella/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kartella/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartella/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartella/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartella/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "カルテラ（Kartella）", "description": "フリーランス・面貸し・訪問の美容師と1人サロンのためのカルテアプリ。顧客情報・施術履歴・薬剤の配合・Before/After写真・パッチテストの実施記録。Kartellaはデータを送信しません。アカウント登録不要・買い切り・7言語。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartella/", "image": "https://freetokyo.github.io/web/kartella/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "カルテラ（Kartella）", "item": "https://freetokyo.github.io/web/kartella/"}]}</script>
@@ -503,6 +514,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </div></section>
 
 <section><div class="wrap"><h2>ご利用にあたっての注記</h2><div class="callout"><p>本アプリは<strong>記録のためのツール</strong>です。法令や業界基準への適合を保証するものではなく、保険の要件を満たすことを約束するものでもありません。アレルギー反応を予防するものでもありません。パッチテストの実施方法・間隔・施術の可否は、製品の説明書とご自身の判断、必要に応じて専門家にご確認ください。署名機能は署名を記録として保存するもので、法的効力を保証しません。未成年のお客様の取り扱いについても、年齢に応じた判断はアプリでは行わず、記録欄の提供に留めています。</p></div></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="顧客の一覧。顧客ごとにパッチテストの有効期限（残り150日、期限切れ60日経過など）が色付きで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>Kartellaはデータを送信しません アカウント登録は不要です</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="パッチテスト。ブランド・製品名で検索でき、有効・まもなく期限・期限切れの状態が顧客ごとに並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>パッチテストの期限がひと目で 実施日・結果・署名を記録</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="施術の編集。日付・カラー・所要時間・通常料金に加えて、薬剤の配合（Ash Beige 7 を 60/6/30）と写真を記録する" width="360" height="782" loading="lazy" decoding="async"><figcaption>薬剤・オキシ・放置時間を記録 よく使う配合はテンプレートで</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>カルテラ（Kartella）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

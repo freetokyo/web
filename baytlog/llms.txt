@@ -1,0 +1,16 @@
+# Baytlog（バイトログ）
+
+> 湾岸（UAE・サウジ・カタール・クウェート・バーレーン・オマーン）のヴィラ所有者向け設備保全記録の iOS アプリ。AC・貯水タンク・加圧ポンプ・プールを設備1台ずつ台帳にし、作業日・費用・業者・写真・領収書を記録して、売却や賃貸、管理会社の交代時に A4 縦 1 枚の PDF（引き継ぎファイル）として引き渡す。推奨周期は公的機関の公開文書を出典として示し、国・首長国別に分岐し、すべて編集できる（出典が無い国には初期値を置かず、その旨を表示する）。砂塵日は気象データからの判定をユーザーが Yes/No で訂正し、確認した日だけを数えて次回の前倒しを提案する（自動でタスクを発行しない）。位置情報の権限を一度も要求せず、地図で選んだ地点を約1km に丸めて保存する。無料でヴィラ1件・設備と記録は無制限・写真と領収書は1点/記録・出典付き推奨周期・砂塵日の記録と前倒し提案・期日と保証期限のリマインダー（任意・端末内のローカル通知）・業者アドレス帳・バックアップと復元・直近12か月の費用グラフ。Pro（月額/年額の自動更新サブスク）で引き継ぎファイル（PDF）・iCloud 同期・ヴィラ無制限・写真と領収書は10点/記録・全期間の費用グラフ。解約しても記録は削除されず、無料の上限を超えたヴィラが read-only になるだけ。第三者による検証は受けておらず、証明書ではない。税額計算・通貨換算・業者の紹介や評価は行わない。アカウント不要・広告なし・解析 SDK なし。English / العربية（RTL）。
+
+Web: https://freetokyo.github.io/web/baytlog/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: en / ar
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/baytlog/
+- サポート / FAQ: https://freetokyo.github.io/web/baytlog/support.html
+- 利用規約: https://freetokyo.github.io/web/baytlog/terms.html
+- プライバシー: https://freetokyo.github.io/web/baytlog/privacy.html
+- ar: https://freetokyo.github.io/web/baytlog/ar/

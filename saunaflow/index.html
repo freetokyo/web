@@ -7,6 +7,7 @@
 <meta name="description" content="SaunaFlow は Apple Watch 向けのサウナタイマーです。サウナ・水風呂・休憩を手首で進行し、ととのいスコア、履歴、メモ、プリセット管理まで対応。完全オフライン、買い切りプレミアム。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/saunaflow/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/saunaflow/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/saunaflow/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/saunaflow/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/saunaflow/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "SaunaFlow は Apple Watch 向けのサウナタイマーです。サウナ・水風呂・休憩を手首で進行し、ととのいスコア、履歴、メモ、プリセット管理まで対応。完全オフライン、買い切りプレミアム。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "SaunaFlow", "item": "https://freetokyo.github.io/web/saunaflow/"}]}</script>
@@ -563,38 +574,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         </div>
         <div class="story-card">
 
-<section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
 
-<section class="ftfacts" aria-label="アプリ概要">
-  <h2>アプリ概要</h2>
-  <table>
-    <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
-    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
-    <tr><th>バージョン</th><td>1.3.0</td></tr>
-    <tr><th>サイズ</th><td>約 3 MB</td></tr>
-    <tr><th>カテゴリ</th><td>ヘルスケア／フィットネス</td></tr>
-    <tr><th>対象年齢</th><td>4+</td></tr>
-    <tr><th>対象ユーザー</th><td>サウナ愛好家（サ活）</td></tr>
-    <tr><th>データの扱い</th><td>完全オフライン・買い切り</td></tr>
-    <tr><th>開発者</th><td>freetokyo</td></tr>
-    <tr><th>最終更新</th><td>2026-08-06</td></tr>
-  </table>
-</section>
-<section class="fthowto" aria-label="使い方（3ステップ）">
-  <h2>使い方（3ステップ）</h2>
-  <ol>
-    <li>サウナ・水風呂・休憩のプリセットを作成</li>
-    <li>Apple Watch でセッションを開始</li>
-    <li>ととのいスコアと履歴を確認する</li>
-  </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
-</section>
-  <h2>アプリの画面</h2>
-  <div class="ftshot-row">
-    <figure class="ftshot-item"><img src="shots/01.png" alt="SaunaFlow サウナ・水風呂・休憩のプリセット画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>プリセット</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/02.png" alt="サウナフローの時間とセット編集画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>フロー編集</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/03.png" alt="セッション履歴とととのいスコア画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>履歴とスコア</figcaption></figure>
-  </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
           <h2>SNSで伝わる要点</h2>
@@ -778,6 +758,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </section>
 
     <section style="max-width:720px;margin:0 auto;padding:8px 24px 28px"><p style="font-size:13px;line-height:1.8;opacity:.75;border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:12px 16px;margin:0"><strong>ご注意：</strong>本アプリは医療機器ではなく、医学的助言を行いません。サウナのご利用は体調に合わせて無理のない範囲で。持病のある方は事前に医師にご相談ください。</p></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="プリセットの一覧。90分スタンダードなどの定番メニューと、今日のおすすめが並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>プリセット</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="フローの編集。セット数と、サウナ・水風呂・休憩の各フェーズの時間を自由に組み立てる" width="360" height="782" loading="lazy" decoding="async"><figcaption>フロー編集</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="Apple Watch のタイマー。サウナ1/3セット、残り09:49 を大きく表示し、一時停止と次へのボタンが並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>Apple Watch のタイマー</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>SaunaFlow</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

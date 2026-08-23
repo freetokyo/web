@@ -7,6 +7,7 @@
 <meta name="description" content="こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理。残す・手放すをスワイプで決める整理モードと保管ダッシュボードで、現物を納得して手放せます。データはあなたのiCloudだけ・アカウント不要・買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/sakulog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/sakulog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sakulog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sakulog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sakulog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SakuLog（サクログ）", "description": "こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理。残す・手放すをスワイプで決める整理モードと保管ダッシュボードで、現物を納得して手放せます。データはあなたのiCloudだけ・アカウント不要・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "PhotoVideoApplication", "url": "https://freetokyo.github.io/web/sakulog/", "image": "https://freetokyo.github.io/web/sakulog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791827004"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "SakuLog（サクログ）", "item": "https://freetokyo.github.io/web/sakulog/"}]}</script>
@@ -548,6 +559,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <details><summary>サブスクリプションですか？</summary><p>いいえ。フルアクセスは買い切り（¥1,200）です。一度購入すれば追加の料金はかかりません。</p></details>
   <details><summary>写真の容量が心配です。</summary><p>通常は長辺3,000pxにリサイズして保存します（ふだんの閲覧や印刷にはこれで十分です）。設定でいまの使用容量を確認できます。フルアクセスではオリジナル画質での保存も選べます。</p></details>
 </div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ギャラリー。こどもの作品が写真のタイルで並び、タイトル・日付・年齢と、保管中／検討中／手放しのタグが付く" width="360" height="782" loading="lazy" decoding="async"><figcaption>増え続ける作品の収納に困ったら、 写真できれいに残す</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="タイムライン。年齢ごとに作品をまとめ、5さいの作品が撮影日つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>保育園・小学生の作品を 子ども別・年齢別に自動整理</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="追加の画面。撮るだけで年齢ごとに整理されるという説明と、撮影する・写真から選ぶのボタン" width="360" height="782" loading="lazy" decoding="async"><figcaption>撮るだけで、まっすぐ補正。 工作は多面から1作品に</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>SakuLog（サクログ）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

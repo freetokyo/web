@@ -7,6 +7,7 @@
 <meta name="description" content="A client record for house cleaners and housekeepers. See how many keys you are holding and whose they are; door codes stay behind Face ID and the app makes no network requests. One-time purchase.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kartellahome/en/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kartellahome/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellahome/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellahome/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellahome/">
@@ -442,6 +443,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kartella Home", "description": "A client record for house cleaners and housekeepers. See how many keys you are holding and whose they are; door codes stay behind Face ID and the app makes no network requests. One-time purchase.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartellahome/en/", "image": "https://freetokyo.github.io/web/kartellahome/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Kartella Home", "item": "https://freetokyo.github.io/web/kartellahome/en/"}]}</script>
@@ -475,6 +486,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>New phones, and removing a client</h2><p>A backup is one encrypted file and it <strong>includes the key ledger</strong>. The encryption key never leaves this device, so restoring a new phone from an iPhone or iCloud backup brings back everything <strong>except the door codes and key locations</strong> — this backup is the only way to move those. There is no recovery if you forget the passphrase, because a reset would need a server and this app does not have one.</p><p>A client can be removed in two stages: strip the name, address, contacts, photos and entry information while keeping your own work history, or erase everything. <strong>If you are still holding their keys, the app says so first</strong> — removing the name now would leave keys in a drawer with no way to learn whose door they open.</p></div></section>
 
 <section><div class="wrap"><h2>Free and full access</h2><p>Free covers <strong>10 clients, 3 photos per visit, 3 area photos per client and 3 checklists</strong>. The key ledger, the app lock, export, backup and the two-stage removal are unlimited at both tiers — anything that protects a client is never behind a purchase.</p><p>Full access is a <strong>one-time purchase</strong>, not a subscription: unlimited clients, photos and checklists, plus the fee and payment log.</p></div></section>
+
 <section class="ftcta">
 <h2>Kartella Home</h2>
 <p>Coming soon. This page will be updated at release.</p>

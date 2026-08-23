@@ -7,6 +7,7 @@
 <meta name="description" content="ゆらぐ日々の症状を、端末の外に出さずに記録・可視化。受診のときにそのまま医師へ。完全ローカル・買い切りの iOS アプリ。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/yuralog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/yuralog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Yuralog（ユラログ）", "description": "ゆらぐ日々の症状を、端末の外に出さずに記録・可視化。受診のときにそのまま医師へ。完全ローカル・買い切りの iOS アプリ。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/yuralog/", "image": "https://freetokyo.github.io/web/yuralog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6792374401"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Yuralog（ユラログ）", "item": "https://freetokyo.github.io/web/yuralog/"}]}</script>
@@ -504,6 +515,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <p style="text-align:center"><a class="badge" href="https://apps.apple.com/app/id6792374401" target="_blank" rel="noopener">App Store で見る</a></p>
 
   </div>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="今日の記録。ほてり・発汗、気分・不安、からだ・関節、睡眠、肩こりの強さを0〜3の4段階で選ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>更年期の症状を1タップで記録 4分類・強さ0〜3・メモとタグ</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="セルフチェック。12問で「今」を数値にする設問セット（かんたん12問／くわしい10項目）と、これまでの推移" width="360" height="782" loading="lazy" decoding="async"><figcaption>今日の状態を数字にする 自分の記録どうしを比べる目安</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="トレンド。ほてり・発汗1.8、気分・不安0.8、からだ・関節1.2、睡眠2.2、肩こり1.6 の症状別の推移を折れ線で並べる" width="360" height="782" loading="lazy" decoding="async"><figcaption>症状別の推移がひと目でわかる 受診用PDFにまとめて医師へ</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Yuralog（ユラログ）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

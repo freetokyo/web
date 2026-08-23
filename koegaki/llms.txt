@@ -1,12 +1,13 @@
-# コエガキ
+# コエガキ（Koegaki）
 
-> オンデバイス議事メモアプリ。完全オンデバイス・データ収集なし。対象: 会議・打合せの記録を取る人。
+> 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。
 
-App Store: https://apps.apple.com/jp/app/id6780139132
 Web: https://freetokyo.github.io/web/koegaki/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 26.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6780139132
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 26.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 会議録音と端末内文字起こし
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/koegaki/
 3. AIが要点・決定事項・ToDoに要約
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/koegaki/
 - サポート / FAQ: https://freetokyo.github.io/web/koegaki/support.html
-- プライバシー: https://freetokyo.github.io/web/koegaki/privacy.html
 - 利用規約: https://freetokyo.github.io/web/koegaki/terms.html
+- プライバシー: https://freetokyo.github.io/web/koegaki/privacy.html
+- ar: https://freetokyo.github.io/web/koegaki/ar/
+- ca: https://freetokyo.github.io/web/koegaki/ca/
+- cs: https://freetokyo.github.io/web/koegaki/cs/
+- da: https://freetokyo.github.io/web/koegaki/da/
+- de: https://freetokyo.github.io/web/koegaki/de/
+- el: https://freetokyo.github.io/web/koegaki/el/
+- en: https://freetokyo.github.io/web/koegaki/en/
+- es: https://freetokyo.github.io/web/koegaki/es/
+- fi: https://freetokyo.github.io/web/koegaki/fi/
+- fr: https://freetokyo.github.io/web/koegaki/fr/
+- he: https://freetokyo.github.io/web/koegaki/he/
+- hi: https://freetokyo.github.io/web/koegaki/hi/
+- hr: https://freetokyo.github.io/web/koegaki/hr/
+- hu: https://freetokyo.github.io/web/koegaki/hu/
+- id: https://freetokyo.github.io/web/koegaki/id/
+- it: https://freetokyo.github.io/web/koegaki/it/
+- ko: https://freetokyo.github.io/web/koegaki/ko/
+- ms: https://freetokyo.github.io/web/koegaki/ms/
+- nb: https://freetokyo.github.io/web/koegaki/nb/
+- nl: https://freetokyo.github.io/web/koegaki/nl/
+- pl: https://freetokyo.github.io/web/koegaki/pl/
+- pt-BR: https://freetokyo.github.io/web/koegaki/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/koegaki/pt-PT/
+- ro: https://freetokyo.github.io/web/koegaki/ro/
+- ru: https://freetokyo.github.io/web/koegaki/ru/
+- sk: https://freetokyo.github.io/web/koegaki/sk/
+- sv: https://freetokyo.github.io/web/koegaki/sv/
+- th: https://freetokyo.github.io/web/koegaki/th/
+- tr: https://freetokyo.github.io/web/koegaki/tr/
+- uk: https://freetokyo.github.io/web/koegaki/uk/
+- vi: https://freetokyo.github.io/web/koegaki/vi/
+- zh-Hans: https://freetokyo.github.io/web/koegaki/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/koegaki/zh-Hant/

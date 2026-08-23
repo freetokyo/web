@@ -1,2 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://freetokyo.github.io/web/hadalog/</loc></url><url><loc>https://freetokyo.github.io/web/hadalog/support.html</loc></url><url><loc>https://freetokyo.github.io/web/hadalog/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/hadalog/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/hadalog/en/</loc></url><url><loc>https://freetokyo.github.io/web/hadalog/en/support.html</loc></url><url><loc>https://freetokyo.github.io/web/hadalog/en/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/hadalog/en/privacy.html</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/hadalog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hadalog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hadalog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hadalog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hadalog/support.html" />
+  </url>
+</urlset>

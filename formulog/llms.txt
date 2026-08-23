@@ -1,0 +1,16 @@
+# Formulog（フォーミュログ）
+
+> 革のリペア職人のための調色台帳 iOS / iPadOS アプリ。革の補修は元の色の上に塗り重ねるため、同じ配合でも素地の色が違えば仕上がりが変わる。そこで素地の色と仕上がりの色を必ず組にして記録し、過去の似た色を探すときもその組で照合する。配合比・下地処理・仕上げ・作業写真をひとまとめに残せる。塗料は自分の呼び方で登録でき、登録件数に上限はない。記録は端末内のみ・アカウント不要・買い切り。
+
+Web: https://freetokyo.github.io/web/formulog/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/formulog/
+- サポート / FAQ: https://freetokyo.github.io/web/formulog/support.html
+- 利用規約: https://freetokyo.github.io/web/formulog/terms.html
+- プライバシー: https://freetokyo.github.io/web/formulog/privacy.html
+- en: https://freetokyo.github.io/web/formulog/en/

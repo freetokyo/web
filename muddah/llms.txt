@@ -1,0 +1,18 @@
+# Muddah（ムッダ）
+
+> GCC 駐在家族のための完全オフライン書類期限ボルト iOS アプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。
+
+Web: https://freetokyo.github.io/web/muddah/
+App Store: https://apps.apple.com/app/id6790558814
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 18.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: en / ar
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/muddah/
+- サポート / FAQ: https://freetokyo.github.io/web/muddah/support.html
+- 利用規約: https://freetokyo.github.io/web/muddah/terms.html
+- プライバシー: https://freetokyo.github.io/web/muddah/privacy.html
+- ar: https://freetokyo.github.io/web/muddah/ar/

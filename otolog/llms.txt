@@ -1,0 +1,17 @@
+# オトログ（Otolog）
+
+> ピアノ・音楽教室の個人講師向け生徒カルテ iOS アプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。
+
+Web: https://freetokyo.github.io/web/otolog/
+App Store: https://apps.apple.com/app/id6791038062
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 26.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/otolog/
+- サポート / FAQ: https://freetokyo.github.io/web/otolog/support.html
+- 利用規約: https://freetokyo.github.io/web/otolog/terms.html
+- プライバシー: https://freetokyo.github.io/web/otolog/privacy.html
+- en: https://freetokyo.github.io/web/otolog/en/

@@ -1,0 +1,16 @@
+# Netlit（ネットリット）
+
+> 淡水水槽（熱帯魚・水草）の実効水量を軸にした iOS / iPadOS アプリ。外寸ではなくガラス厚・水位・底床・レイアウト材・機材を差し引いた実際の水量を求め、換水量・乾燥塩ドージング（KNO3 / KH2PO4 / K2SO4 / MgSO4·7H2O）・カルキ抜きをその数値の上で計算する。副次イオンを必ず併記し、換水で到達できない目標には数値を返さず代替案を出す。水質7項目（NO3 / PO4 / KH / GH / pH / TDS / 水温）の記録、グラフ、CSV・PDF 書き出し、バックアップと復元を備える。海水・魚病薬・魚種データベース・市販製品プリセットは搭載しない。通信を行わずアカウント登録もない。
+
+Web: https://freetokyo.github.io/web/netlit/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/netlit/
+- サポート / FAQ: https://freetokyo.github.io/web/netlit/support.html
+- 利用規約: https://freetokyo.github.io/web/netlit/terms.html
+- プライバシー: https://freetokyo.github.io/web/netlit/privacy.html
+- en: https://freetokyo.github.io/web/netlit/en/

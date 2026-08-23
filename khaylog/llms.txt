@@ -1,0 +1,17 @@
+# Khaylog（ハイログ）
+
+> 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
+
+Web: https://freetokyo.github.io/web/khaylog/
+App Store: https://apps.apple.com/app/id6792197271
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 26.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/khaylog/
+- サポート / FAQ: https://freetokyo.github.io/web/khaylog/support.html
+- 利用規約: https://freetokyo.github.io/web/khaylog/terms.html
+- プライバシー: https://freetokyo.github.io/web/khaylog/privacy.html
+- en: https://freetokyo.github.io/web/khaylog/en/

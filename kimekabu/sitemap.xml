@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://freetokyo.github.io/web/kimekabu/</loc></url>
-<url><loc>https://freetokyo.github.io/web/kimekabu/privacy.html</loc></url>
-<url><loc>https://freetokyo.github.io/web/kimekabu/terms.html</loc></url>
-<url><loc>https://freetokyo.github.io/web/kimekabu/support.html</loc></url>
-<url><loc>https://freetokyo.github.io/web/kimekabu/en/</loc></url>
-<url><loc>https://freetokyo.github.io/web/kimekabu/en/privacy.html</loc></url>
-<url><loc>https://freetokyo.github.io/web/kimekabu/en/terms.html</loc></url>
-<url><loc>https://freetokyo.github.io/web/kimekabu/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/kimekabu/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kimekabu/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/support.html" />
+  </url>
 </urlset>

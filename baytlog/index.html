@@ -7,6 +7,7 @@
 <meta name="description" content="引き渡せるヴィラの設備保全記録（GCC）">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/baytlog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/baytlog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Baytlog", "description": "引き渡せるヴィラの設備保全記録（GCC）", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://freetokyo.github.io/web/baytlog/", "image": "https://freetokyo.github.io/web/baytlog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Baytlog", "item": "https://freetokyo.github.io/web/baytlog/"}]}</script>
@@ -569,6 +580,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>Requirements</h2>
 <p>iPhone with iOS 17.0 or later, portrait. Available in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain and Oman. English and العربية, with full right-to-left layout. Weather data is provided by Apple Weather.</p>
 </div></section>
+<section class="ftshots" aria-label="Screens">
+<h2>Screens</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/en/01.webp" alt="Today. A dusty-day question for the villa, and jobs worth doing early — cleaning the cooling coil and rinsing the AC filter, each with how many dusty days have passed" width="360" height="782" loading="lazy" decoding="async"><figcaption>Today&#x27;s list, and the days you confirmed were dusty</figcaption></figure><figure class="ftshot"><img src="shots/en/02.webp" alt="Equipment list for Al Barsha Villa. Split AC, roof water tank, booster pump and pool filter, each with days since the last service" width="360" height="782" loading="lazy" decoding="async"><figcaption>One entry per AC, tank, pump and pool item</figcaption></figure><figure class="ftshot"><img src="shots/en/03.webp" alt="Records. Service visits logged against each piece of equipment, with dates and the source of the interval" width="360" height="782" loading="lazy" decoding="async"><figcaption>What was done, by whom, and what it cost</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Baytlog</h2>
 <p>Coming soon. This page will be updated at release.</p>

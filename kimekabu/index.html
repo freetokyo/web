@@ -7,6 +7,7 @@
 <meta name="description" content="キメカブは株の「売買判断」を記録し、決済時に計画と照合するトレードノート。損益ではなく判断の質を管理。口座連携なし・完全オフライン・買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kimekabu/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kimekabu/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "キメカブ（Kimekabu）", "description": "キメカブは株の「売買判断」を記録し、決済時に計画と照合するトレードノート。損益ではなく判断の質を管理。口座連携なし・完全オフライン・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/kimekabu/", "image": "https://freetokyo.github.io/web/kimekabu/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6789459452", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "キメカブ（Kimekabu）", "item": "https://freetokyo.github.io/web/kimekabu/"}]}</script>
@@ -474,6 +485,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>主な機能</h2><div class="grid"><div class="feat"><div class="ic">📝</div><h3>判断カード</h3><p>銘柄・仮説・根拠タグ・確信度・目標/損切りを、発注前に約90秒で構造化記録。</p></div><div class="feat"><div class="ic">⚖️</div><h3>決済照合</h3><p>決済時に計画（目標・損切り・期間）との乖離を自動照合し、逸脱理由と教訓を記録。</p></div><div class="feat"><div class="ic">📊</div><h3>判断分析</h3><p>根拠タグ別の勝率、確信度と結果の相関、ルール逸脱率、保有期間の分布を可視化。</p></div><div class="feat"><div class="ic">🔒</div><h3>完全オフライン</h3><p>証券口座連携なし。データはすべて端末内。アカウント不要で機内モードでも全機能動作。</p></div><div class="feat"><div class="ic">💴</div><h3>買い切り</h3><p>サブスクなし。無料で10カードまで体験、Pro（買い切り¥2,000）で無制限・全分析・エクスポート。</p></div><div class="feat"><div class="ic">📤</div><h3>エクスポート</h3><p>判断記録をCSV / PDFで書き出し。バックアップや振り返りに。</p></div></div></div></section>
 <section><div class="wrap"><div class="disc">本アプリはあなた自身の売買判断を記録・整理するためのツールです。特定の金融商品の推奨・勧誘や、売買タイミングの助言を行うものではありません。表示される集計はすべてあなた自身の過去の記録に基づく整理であり、将来の成果を保証するものではありません。最終的な投資判断はご自身の責任で行ってください。</div></div></section>
 <section style="max-width:720px;margin:0 auto;padding:8px 24px 28px"><p style="font-size:13px;line-height:1.8;opacity:.75;border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:12px 16px;margin:0"><strong>ご注意：</strong>本アプリは売買判断を記録・整理するツールであり、投資助言・特定銘柄の推奨を行うものではありません。集計はご自身の過去の記録に基づく参考情報であり、将来の成果を保証しません。投資判断はご自身の責任で行ってください。</p></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="記録の一覧。保有中の AAPL・7203 が売買理由のテーマつきで並び、クローズ済みの 9984 は +¥169,890（+17.9%）の結果を示す" width="360" height="782" loading="lazy" decoding="async"><figcaption>買う前の「なぜ」を残す</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="記録の詳細一覧。保有中とクローズ済みをタブで切り替え、銘柄・タグで検索できる" width="360" height="782" loading="lazy" decoding="async"><figcaption>保有中とクローズ済みを一覧</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="Pro の案内。無料と Pro の機能比較表（判断の記録・照合、分析、週次レビュー、CSV/PDF 出力、バックアップ）と買い切り価格" width="360" height="782" loading="lazy" decoding="async"><figcaption>無料と Pro のちがい</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>キメカブ（Kimekabu）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

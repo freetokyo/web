@@ -1,11 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/privacy.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/terms.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/support.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/ja/</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/ja/privacy.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/ja/terms.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/lifeweeks/ja/support.html</loc><lastmod>2026-08-01</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/lifeweeks/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/lifeweeks/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/lifeweeks/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/lifeweeks/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/lifeweeks/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/ja/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/ja/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/ja/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/zh-Hans/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/lifeweeks/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/lifeweeks/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/lifeweeks/zh-Hant/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lifeweeks/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lifeweeks/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://freetokyo.github.io/web/lifeweeks/zh-Hans/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/lifeweeks/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lifeweeks/" />
+  </url>
 </urlset>

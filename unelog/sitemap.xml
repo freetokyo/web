@@ -1,2 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://freetokyo.github.io/web/unelog/</loc></url><url><loc>https://freetokyo.github.io/web/unelog/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/unelog/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/unelog/support.html</loc></url><url><loc>https://freetokyo.github.io/web/unelog/en/</loc></url><url><loc>https://freetokyo.github.io/web/unelog/en/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/unelog/en/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/unelog/en/support.html</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/unelog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/unelog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/unelog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/unelog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/unelog/support.html" />
+  </url>
+</urlset>

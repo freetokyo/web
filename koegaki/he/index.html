@@ -7,6 +7,7 @@
 <meta name="description" content="הקליטו את הישיבה. בינה מלאכותית שפועלת במכשיר מתמללת ומארגנת את התוכן לנקודות עיקריות, החלטות ומשימות. שום דבר לא יוצא מהמכשיר.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/koegaki/he/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/koegaki/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/koegaki/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/koegaki/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/koegaki/ca/">
@@ -506,6 +507,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Koegaki", "description": "הקליטו את הישיבה. בינה מלאכותית שפועלת במכשיר מתמללת ומארגנת את התוכן לנקודות עיקריות, החלטות ומשימות. שום דבר לא יוצא מהמכשיר.", "inLanguage": "he", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://freetokyo.github.io/web/koegaki/he/", "image": "https://freetokyo.github.io/web/koegaki/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6780139132", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Koegaki", "item": "https://freetokyo.github.io/web/koegaki/he/"}]}</script>
@@ -560,6 +571,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <a href="terms.html">תנאי שימוש</a>
   <a href="mailto:freetokyo2020@yahoo.co.jp">יצירת קשר</a>
 </div>
+
 <section class="ftcta">
 <h2>Koegaki</h2>
 <p>Available on the App Store, for iPhone and iPad.</p>

@@ -11,141 +11,205 @@
 
 - [RecoverySync](https://freetokyo.github.io/web/recoverysync/): Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内で完結。
   - App Store: https://apps.apple.com/app/id6770408873
+  - 詳細: https://freetokyo.github.io/web/recoverysync/llms.txt
 - [SaunaFlow](https://freetokyo.github.io/web/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
   - App Store: https://apps.apple.com/app/id6761906547
+  - 詳細: https://freetokyo.github.io/web/saunaflow/llms.txt
 - [Trero](https://freetokyo.github.io/web/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。35 言語対応のフラッグシップアプリ。
   - App Store: https://apps.apple.com/app/id6760746164
+  - 詳細: https://freetokyo.github.io/web/trero/llms.txt
 - [TsukiLift](https://freetokyo.github.io/web/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
   - App Store: https://apps.apple.com/app/id6767084251
+  - 詳細: https://freetokyo.github.io/web/tsukilift/llms.txt
 - [Calmgraph（カームグラフ）](https://freetokyo.github.io/web/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6790698772
+  - 詳細: https://freetokyo.github.io/web/calmgraph/llms.txt
 - [Yuralog（ユラログ）](https://freetokyo.github.io/web/yuralog/): 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。
   - App Store: https://apps.apple.com/app/id6792374401
+  - 詳細: https://freetokyo.github.io/web/yuralog/llms.txt
 - [Atamalog（アタマログ）](https://freetokyo.github.io/web/atamalog/): 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6793514760
+  - 詳細: https://freetokyo.github.io/web/atamalog/llms.txt
 - [Hadalog（ハダログ）](https://freetokyo.github.io/web/hadalog/): 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。使ったコスメを記録すれば、使った日と使わなかった日で指数の平均がどう違ったかも見比べられる。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6793892712
+  - 詳細: https://freetokyo.github.io/web/hadalog/llms.txt
 - [نسمة / Nasma（ナスマ）](https://freetokyo.github.io/web/nasma/): 紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録する iOS アプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
   - App Store: https://apps.apple.com/app/id6797344961
+  - 詳細: https://freetokyo.github.io/web/nasma/llms.txt
 - [Immulog（イミュログ）](https://freetokyo.github.io/web/immulog/): 子どもの予防接種記録のための iOS アプリ。記録を製品名ではなく抗原単位で保存し、接種した国を必須項目として持つ（同じ商品名でも国と承認時期で構成が違うため、製品から抗原への展開は国と接種日で照合し、確定できないときは推測せず手動選択を求める）。アメリカ・イギリス・日本の公表スケジュールと機械的に突き合わせ、記録あり／不足の可能性／回数が異なる可能性／この国の定期対象外／医療者と相談／時期がまだ先／目安の期間の中／毎シーズン接種の8状態で表示する。断定はせず、色・アイコン形状・文言の3重で表し、警告に赤を使わない。収録国はライセンスを個別に確認できたものだけ（CDC＝米連邦政府著作物、UKHSA＝OGL v3.0、日本＝厚労省の公共データ利用規約と法令）。出典・ライセンス・データ版数・参照日を折りたためない形で常時表示し、参照日から6か月を過ぎた国は更新確認を促す。PDF は抗原の英語名と出典・参照日を併記して医療者に渡せる。通信せず、アカウントも開発者のサーバーも無く、解析 SDK も広告 SDK も無い。バックアップの書き出しと読み込みは無料。買い切り（自動更新なし）。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/immulog/llms.txt
 
 ### Life（くらし）
 
 - [IeKan（家看）](https://freetokyo.github.io/web/iekan/): 離れて暮らす家族で実家を見守る iOS アプリ。写真タイムライン、季節のチェックリスト、書類スキャン、家族共有、シンプルモード。
   - App Store: https://apps.apple.com/app/id6764244913
+  - 詳細: https://freetokyo.github.io/web/iekan/llms.txt
 - [PrintSummary / プリサマ](https://freetokyo.github.io/web/printmemo/): 学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理する iOS アプリ。家族カレンダー連携対応。
   - App Store: https://apps.apple.com/app/id6761879860
+  - 詳細: https://freetokyo.github.io/web/printmemo/llms.txt
 - [Miawell](https://freetokyo.github.io/web/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。
   - App Store: https://apps.apple.com/app/id6774019571
+  - 詳細: https://freetokyo.github.io/web/miawell/llms.txt
 - [スクショリ](https://freetokyo.github.io/web/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、解析と保存は端末内・買い切り・広告なし。通信は「地図で見る」のときだけ。
   - App Store: https://apps.apple.com/app/id6778336001
+  - 詳細: https://freetokyo.github.io/web/sukushori/llms.txt
 - [ヘヤログ（Heyalog）](https://freetokyo.github.io/web/heyalog/): 賃貸住宅の入居・退去時の部屋状態を写真で記録し、国土交通省「原状回復をめぐるトラブルとガイドライン」準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で敷金トラブルを防ぐ。完全オフライン・買い切り 600 円・広告なし。
   - App Store: https://apps.apple.com/app/id6778713193
+  - 詳細: https://freetokyo.github.io/web/heyalog/llms.txt
 - [ジツヒロ（Jitsuhiro）](https://freetokyo.github.io/web/jitsuhiro/): 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6779472712
+  - 詳細: https://freetokyo.github.io/web/jitsuhiro/llms.txt
 - [Yuzuri（ユズリ）](https://freetokyo.github.io/web/yuzuri/): 完全オフラインの終活ノート iOS アプリ。資産・保険・連絡先・想いを一冊のノートに記録。アカウント登録不要・データ収集なし・買い切り。
   - App Store: https://apps.apple.com/app/id6784874949
+  - 詳細: https://freetokyo.github.io/web/yuzuri/llms.txt
 - [ヒトリログ（HitoriLog）](https://freetokyo.github.io/web/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6785472192
+  - 詳細: https://freetokyo.github.io/web/hitorilog/llms.txt
 - [Weekwise](https://freetokyo.github.io/web/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。34言語対応。
   - App Store: https://apps.apple.com/app/id6788981648
+  - 詳細: https://freetokyo.github.io/web/lifeweeks/llms.txt
 - [Jamalog](https://freetokyo.github.io/web/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
   - App Store: https://apps.apple.com/app/id6788732648
+  - 詳細: https://freetokyo.github.io/web/jamalog/llms.txt
 - [Saqrlog（サクルログ）](https://freetokyo.github.io/web/saqrlog/): 鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。
   - App Store: https://apps.apple.com/app/id6789535072
+  - 詳細: https://freetokyo.github.io/web/saqrlog/llms.txt
 - [Muddah（ムッダ）](https://freetokyo.github.io/web/muddah/): GCC 駐在家族のための完全オフライン書類期限ボルト iOS アプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。
   - App Store: https://apps.apple.com/app/id6790558814
+  - 詳細: https://freetokyo.github.io/web/muddah/llms.txt
 - [ソナログ（Sonalog）](https://freetokyo.github.io/web/sonalog/): 消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにする iOS アプリ。期限が近い備蓄を通知し、家族の人数から必要量を計算、防災カルテは PDF で持ち出せる。完全オフライン・アカウント不要・買い切り。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6790403062
+  - 詳細: https://freetokyo.github.io/web/sonalog/llms.txt
 - [ハゼログ（HazeLog）](https://freetokyo.github.io/web/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6791478115
+  - 詳細: https://freetokyo.github.io/web/hazelog/llms.txt
 - [SakuLog（サクログ）](https://freetokyo.github.io/web/sakulog/): こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6791827004
+  - 詳細: https://freetokyo.github.io/web/sakulog/llms.txt
 - [Khaylog（ハイログ）](https://freetokyo.github.io/web/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
   - App Store: https://apps.apple.com/app/id6792197271
+  - 詳細: https://freetokyo.github.io/web/khaylog/llms.txt
 - [Unelog（ウネログ）](https://freetokyo.github.io/web/unelog/): 市民農園・貸し農園の「区画」に特化した区画栽培カルテ iOS アプリ。記録は端末に保存し、iCloud 同期は任意。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。
   - App Store: https://apps.apple.com/app/id6792154276
+  - 詳細: https://freetokyo.github.io/web/unelog/llms.txt
 - [カジミエル（Kajimieru）](https://freetokyo.github.io/web/kajimieru/): 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6797382805
+  - 詳細: https://freetokyo.github.io/web/kajimieru/llms.txt
 - [Netlit（ネットリット）](https://freetokyo.github.io/web/netlit/): 淡水水槽（熱帯魚・水草）の実効水量を軸にした iOS / iPadOS アプリ。外寸ではなくガラス厚・水位・底床・レイアウト材・機材を差し引いた実際の水量を求め、換水量・乾燥塩ドージング（KNO3 / KH2PO4 / K2SO4 / MgSO4·7H2O）・カルキ抜きをその数値の上で計算する。副次イオンを必ず併記し、換水で到達できない目標には数値を返さず代替案を出す。水質7項目（NO3 / PO4 / KH / GH / pH / TDS / 水温）の記録、グラフ、CSV・PDF 書き出し、バックアップと復元を備える。海水・魚病薬・魚種データベース・市販製品プリセットは搭載しない。通信を行わずアカウント登録もない。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/netlit/llms.txt
 - [Rosetare（ロターレ）](https://freetokyo.github.io/web/rotare/): バラの防除記録のための iOS / iPadOS アプリ。散布のたびに作用機構グループコードを記録し、同じグループが直前（Premium は直近3回）の散布と重なっていないかを時系列で照合して、重なりを事実として提示する（良し悪しは判定しない）。グループコードは利用者が製品ラベルから入力する方式で、アプリは有効成分との対応表も製品名のデータベースも持たない。黒星病・うどんこ病・べと病・さび病・灰色かび病の感染条件を、統合スコアを作らず5つ独立に「条件成立／不成立／データ不足」の3状態で表示する。葉面の濡れ時間は気温と相対湿度からの推定値（誤差 約±1.5〜2時間）であることを常設で明示し、黒星病に検証済みの予測モデルが無いこと・うどんこ病の指標がブドウうどんこ病からの援用であることも画面上で開示する。散布記録はゾーンに紐づき、グループコードは記録時点のスナップショットとして保存される。場所は現在地・地名検索・緯度経度の3経路で、位置情報を許可しなくても全機能が動く。気象取得のため Apple WeatherKit と通信するが、アカウント登録は無く開発者のサーバーは存在しない。CSV 書き出しは無料。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/rotare/llms.txt
 - [Nenrin（ネンリン）](https://freetokyo.github.io/web/nenrin/): 盆栽の手入れ暦のための iOS / iPadOS アプリ。作業を樹種だけでなく仕立て段階（development / structural / refinement / maintenance）で出し分け、観察記録（芽の動き・新芽の伸び・葉の固まり）で時期を樹ごとに再アンカーする。季節は月ではなくフェーズとして持ち、半球と気候帯から月に写すため南半球は設定で切り替わる。樹種30種は学名を主キーとし、jin・shari・nebari などの国際盆栽用語は訳さず現地語の説明を括弧で添える。無料で樹3本・記録と写真は無制限・樹種ガイド全種・作業3種類までの通知・台帳（CSV/JSON）とバックアップの書き出し。Premium（月額/年額の自動更新サブスク・年額は7日間の無料トライアル）で樹の無制限化・前年比・気候補正と霜の警告（Apple WeatherKit）・iCloud 同期・写真を含む完全アーカイブ・ウィジェット。解約しても記録は削除されず、無料の上限を超える新規の追加のみが止まる。霜の警告は予報の最低気温から自作したもので気象機関の警報の転載ではない。アカウント登録は無く、広告 SDK も解析 SDK も無い。34言語。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/nenrin/llms.txt
 - [Kedgelog（ケッジログ）](https://freetokyo.github.io/web/kedgelog/): プレジャーボート（セーリングヨット・モーターボート）の安全装備の期限管理と発航前チェックのための iOS アプリ。装備1点ごとに品目・数量・製造者・型式・シリアル・保管場所・写真と、製品に刻印された有効期限を登録する。刻印は年月だけのものが多いため月精度をそのまま保持し、日を捏造しない。期限の90日前・30日前・7日前・当日に通知し、同じ日に来るものは1件にまとめる。四半期に1回、アプリを開いて確認するよう促す。アプリは何が必要かを判定しない。艇の装備が揃っているかを原理的に知り得ないため、画面に合否や「異常なし」は出さず、登録数・未入力数・期限警告数の集計だけを併記する。発航前チェックは利用者が決めた項目を消し込む形式で、スキップしても記録の開始を妨げず、スキップした事実だけが記録に残る。参考チェックリストは米（33 CFR Part 175）・日（小型船舶安全規則）・仏（Division 240）・豪NSW・豪VICの18区分を出典名と出典確認日つきで同梱し、候補として提示するだけで自動適用はしない。英国13.7m未満・独・NZは私用プレジャーボートの法定装備一覧が存在しないことを確認済みで、その事実を空状態として表示する。航海日誌は航海の記録中だけ航跡を取り、画面が消えている間も継続する（記録を終えると背景での取得も止まる）。記録が途切れた区間は距離に加算せず欠落時間として開示する。無料で艇1隻・装備の登録数は無制限・期限通知・発航前チェック・参考チェックリスト・JSON書き出し。買い切りのフルアクセスで艇を無制限にし、GPX・CSV・PDF の書き出し、写真の一括書き出し、装備の艇間移動が使えるようになる。サブスクリプションはない。通信を行わずアカウント登録もない。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/kedgelog/llms.txt
 - [Baytlog（バイトログ）](https://freetokyo.github.io/web/baytlog/): 湾岸（UAE・サウジ・カタール・クウェート・バーレーン・オマーン）のヴィラ所有者向け設備保全記録の iOS アプリ。AC・貯水タンク・加圧ポンプ・プールを設備1台ずつ台帳にし、作業日・費用・業者・写真・領収書を記録して、売却や賃貸、管理会社の交代時に A4 縦 1 枚の PDF（引き継ぎファイル）として引き渡す。推奨周期は公的機関の公開文書を出典として示し、国・首長国別に分岐し、すべて編集できる（出典が無い国には初期値を置かず、その旨を表示する）。砂塵日は気象データからの判定をユーザーが Yes/No で訂正し、確認した日だけを数えて次回の前倒しを提案する（自動でタスクを発行しない）。位置情報の権限を一度も要求せず、地図で選んだ地点を約1km に丸めて保存する。無料でヴィラ1件・設備と記録は無制限・写真と領収書は1点/記録・出典付き推奨周期・砂塵日の記録と前倒し提案・期日と保証期限のリマインダー（任意・端末内のローカル通知）・業者アドレス帳・バックアップと復元・直近12か月の費用グラフ。Pro（月額/年額の自動更新サブスク）で引き継ぎファイル（PDF）・iCloud 同期・ヴィラ無制限・写真と領収書は10点/記録・全期間の費用グラフ。解約しても記録は削除されず、無料の上限を超えたヴィラが read-only になるだけ。第三者による検証は受けておらず、証明書ではない。税額計算・通貨換算・業者の紹介や評価は行わない。アカウント不要・広告なし・解析 SDK なし。English / العربية（RTL）。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/baytlog/llms.txt
 - [Vatlog（ヴァットログ）](https://freetokyo.github.io/web/vatlog/): 自家醸造（ビール・ワイン・サイダー・ミード）のバッチ記録 iOS / iPadOS アプリ。仕込みから瓶詰めまでを1つの台帳に記録し、瓶詰め日を基準にその年の累計容量を集計する。年間の目標は利用者が設定し、米国（26 U.S.C. §5053(e) / §5042(a)(2)(B)）とドイツ（§29 Abs. 2 BierStG i.V.m. §41 BierStV）については条文番号と最終確認日つきの参考値を候補として提示する。アプリは何が適用されるかを判定しない。参考値が改正で更新されたときは「変わった」ことだけを1度伝え、値を自動で書き換えない。発酵ログと比重の推移グラフ、原材料と酵母の登録、テイスティング、写真の添付、ABV・比重換算・温度補正・屈折計補正・補糖・IBU・色度・プライミング・単位換算の計算機、JSON / CSV / PDF / ZIP の書き出しと JSON の読み込みを備える。計算式の版はバッチごとに固定するので、設定を変えても過去の記録の数値は変わらない。サーバーもアカウントもなく、位置情報・写真ライブラリ・通知の権限を一切要求しない。買い切り。日本語・英語・ドイツ語。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/vatlog/llms.txt
 
 ### Money（おかね）
 
 - [世帯手取ナビ（HomeNet Navi）](https://freetokyo.github.io/web/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。
   - App Store: https://apps.apple.com/app/id6772911843
+  - 詳細: https://freetokyo.github.io/web/homenetnavi/llms.txt
 - [Mochiru](https://freetokyo.github.io/web/mochiru/): 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。
   - App Store: https://apps.apple.com/app/id6778235888
+  - 詳細: https://freetokyo.github.io/web/mochiru/llms.txt
 - [ザイチョウ（Zaicho）](https://freetokyo.github.io/web/zaicho/): 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。
   - App Store: https://apps.apple.com/app/id6788175241
+  - 詳細: https://freetokyo.github.io/web/zaicho/llms.txt
 - [ケイヒバ（Keihiba）](https://freetokyo.github.io/web/keihiba/): 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6779895529
+  - 詳細: https://freetokyo.github.io/web/keihiba/llms.txt
 - [キメカブ（Kimekabu）](https://freetokyo.github.io/web/kimekabu/): 株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート iOS アプリ。損益ではなく「判断の質」を振り返り、売買ルールの再現性を高める。投資助言ではなく自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6789459452
+  - 詳細: https://freetokyo.github.io/web/kimekabu/llms.txt
 
 ### Work（しごと）
 
 - [アラリ（Arari）](https://freetokyo.github.io/web/arari/): フリーランス・一人法人のための業務アプリ。案件ごとの粗利と実質時給を、工数と経費を差し引いたうえで表示する。見積・納品・請求の PDF は税率ごとの内訳と源泉徴収に対応し、顧客ごとの言語で出力できる。消費税の端数処理は伝票につき税率ごとに1回。為替レートは手入力で通信は行わない（iCloud 同期のみ任意）。iPhone / iPad / Mac ネイティブの3ペイン、ユニバーサル購入。
   - App Store: https://apps.apple.com/app/id6797534182
+  - 詳細: https://freetokyo.github.io/web/arari/llms.txt
 - [CareHours](https://freetokyo.github.io/web/carehours/): 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間・休日の割増自動計算、月次 PDF レポート出力。
   - App Store: https://apps.apple.com/app/id6769304063
+  - 詳細: https://freetokyo.github.io/web/carehours/llms.txt
 - [Genbalog](https://freetokyo.github.io/web/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。
   - App Store: https://apps.apple.com/app/id6770864162
+  - 詳細: https://freetokyo.github.io/web/genbalog/llms.txt
 - [Hanro](https://freetokyo.github.io/web/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。
   - App Store: https://apps.apple.com/app/id6771629040
+  - 詳細: https://freetokyo.github.io/web/hanro/llms.txt
 - [Toscore](https://freetokyo.github.io/web/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。
   - App Store: https://apps.apple.com/app/id6776913396
+  - 詳細: https://freetokyo.github.io/web/toscore/llms.txt
 - [コエガキ（Koegaki）](https://freetokyo.github.io/web/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。
   - App Store: https://apps.apple.com/app/id6780139132
+  - 詳細: https://freetokyo.github.io/web/koegaki/llms.txt
 - [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。
   - App Store: https://apps.apple.com/app/id6788604524
+  - 詳細: https://freetokyo.github.io/web/dartrack/llms.txt
 - [ネイログ（Nailog）](https://freetokyo.github.io/web/nailog/): ネイリスト向けの顧客カルテ iOS アプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、アイテムマスタ・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。
   - App Store: https://apps.apple.com/app/id6790943773
+  - 詳細: https://freetokyo.github.io/web/nailog/llms.txt
 - [オトログ（Otolog）](https://freetokyo.github.io/web/otolog/): ピアノ・音楽教室の個人講師向け生徒カルテ iOS アプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。
   - App Store: https://apps.apple.com/app/id6791038062
+  - 詳細: https://freetokyo.github.io/web/otolog/llms.txt
 - [トレカルテ（ToreKarte）](https://freetokyo.github.io/web/torekarte/): パーソナルトレーナー向けの顧客カルテ iOS アプリ。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。
   - App Store: https://apps.apple.com/app/id6791176557
+  - 詳細: https://freetokyo.github.io/web/torekarte/llms.txt
 - [Inkarte（インカルテ）](https://freetokyo.github.io/web/inkarte/): タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書 iOS / iPadOS アプリ。カウンセリングから電子署名付き同意書（PDF）まで一台で管理し、顧客情報を端末の外に出さない。完全オフライン・買い切り。
   - App Store: https://apps.apple.com/app/id6792252166
+  - 詳細: https://freetokyo.github.io/web/inkarte/llms.txt
 - [カルテラ（Kartella）](https://freetokyo.github.io/web/kartella/): フリーランス／面貸し／訪問の美容師と1人サロン向けの顧客カルテ iOS/iPadOS アプリ。薬剤名・g・オキシ%・ 放置時間のフォーミュラ、Before/After 写真、パッチテストの実施日・ブランド・結果と有効期限（既定180日・ 30〜730日）を端末内だけで記録する。ネットワーク通信コードを持たず、アカウントもサーバーも無い。 顧客の権利対応として、1名分の記録のPDF書き出しと、識別情報のみの削除／完全削除の2系統を備える。 メニュー・薬剤・ブランドはマスタに登録して選ぶだけで入力できる。買い切り。日本語・英語・ドイツ語・ フランス語・スペイン語・イタリア語・韓国語。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/kartella/llms.txt
 - [Kartella Pets（カルテラ ペッツ）](https://freetokyo.github.io/web/kartellapets/): 個人開業のペットシッター向けの顧客カルテ iOS/iPadOS アプリ。飼い主の連絡先と緊急連絡先、かかりつけ動物病院、ペットの品種・マイクロチップ番号・保険・性格・隠れ場所、給餌と投薬と散歩の指示、チェックリストと写真つきの訪問記録、ワクチンの接種日と期限リマインド、預かっている鍵のタグ台帳を端末内だけで扱う。鍵の保管場所と暗証番号は AES-GCM で暗号化し、鍵は端末専用の Keychain に置くため端末バックアップからは復元されない。代わりにパスフレーズ由来鍵で再暗号化した自己完結のバックアップファイルを書き出せる。表計算・書類形式（CSV／JSON／PDF）の書き出しに鍵情報を含める手段は用意していない。急な引き継ぎ用に顧客1件だけの暗号化書き出しもできる。獣医学的な助言は行わず、同意書に法的効力を持たせるものでもない。アカウント不要・買い切り・24言語。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/kartellapets/llms.txt
 - [テマログ（Temalog）](https://freetokyo.github.io/web/temalog/): 建設業の一人親方（個人事業主）向けの出面・立替材料記録 iOS アプリ。人工（にんく）を単位に現場ごとの単価で金額を出し、立て替えた材料をレシート写真つきで残す。単価改定は履歴として積み、締め確定時に金額をスナップショットで凍結するため、すでに元請へ出した請求根拠が後から書き換わらない。締め日は現場ごとに設定でき、支払サイトから入金予定日を生成する。完全ローカル・アカウント不要・買い切り。日本語 / English。
   - App Store: https://apps.apple.com/app/id6799075773
+  - 詳細: https://freetokyo.github.io/web/temalog/llms.txt
 - [Hemlog（ヘムログ）](https://freetokyo.github.io/web/hemlog/): 洋服のお直し職人向けの iOS / iPadOS アプリ。記録の単位を「顧客の体」ではなく「一着ごとの直し」に置き、元寸法・仕上がり寸法・測定条件（基準点/ヒール高/姿勢）・折り返し代の残量・仕上がり写真を1枚のカードにまとめる。各寸法は実測/指示/算出を区別し、実測が足りない記録には再現の根拠が不足と表示する。inch は 1/8 刻みの分数入力。通信を行わずアカウント登録もない。
   - App Store: https://apps.apple.com/app/id6800742261
+  - 詳細: https://freetokyo.github.io/web/hemlog/llms.txt
 - [シメレジ（Tillcount）](https://freetokyo.github.io/web/tillcount/): 小規模な出店（フリマ・マルシェ・学園祭・キッチンカー）向けの iOS レジアプリ。会計だけでなく閉店後の現金照合（締め）を1本に統合しているのが特徴で、開始現金＋現金売上−取消＋入金−出金で「あるはずの現金」を組み立て、金種ごとに数えた実査額との差額を出す。差額が出たときは取消履歴と現金の入出金を原因候補として提示する。釣銭の追加投入や出店料の支払いといったレジを通らない現金移動を記録できるため、差額の理由をたどれる。JPY/USD/EUR/GBP/CNY/KRW/INR/BRL など28通貨の金種表を収録し、未収載通貨は合計額入力にフォールバック。商品ごとの税率と内税/外税、税率別集計、CSV書き出し、JSONバックアップ／復元（追加方式）に対応。完全ローカル・アカウント不要・買い切り。アプリUIは33言語、店頭は39ロケール。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/tillcount/llms.txt
 - [وقتين / Waqtain（ワクタイン）](https://freetokyo.github.io/web/waqtain/): 礼拝と礼拝のあいだの「実際に使える作業時間」を可視化し、会議とタスクをその枠に収める iOS アプリ。礼拝前後のバッファを差し引いた作業ウィンドウを毎日生成し、長時間タスクは礼拝で分割する。礼拝時刻は端末内の天文計算による推定値（地元モスクの告知が基準）。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
   - App Store: https://apps.apple.com/app/id6799283353
+  - 詳細: https://freetokyo.github.io/web/waqtain/llms.txt
 - [قمري / Qamari（カマリ）](https://freetokyo.github.io/web/qamari/): ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
   - App Store: https://apps.apple.com/app/id6791838601
+  - 詳細: https://freetokyo.github.io/web/qamari/llms.txt
 - [カルテラ ラッシュ（Kartella Lash）](https://freetokyo.github.io/web/kartellalash/): まつ毛エクステとラッシュリフトを扱うアイリストのための顧客カルテ iOS アプリ。施術ごとに使ったグルーのロットを紐づけ、ロット番号から該当する顧客を逆引きできる。パッチテストの有効期間は製品ブランドごとに規則を設定でき、判定した日の値をそのまま保存するため、あとから規則を変えても過去の判定は動かない。ラッシュリフトの放置時間は開始時刻からの差分で実測する。記録は端末内のみ・アカウント不要・買い切り。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/kartellalash/llms.txt
 - [Chezlog（シェログ）](https://freetokyo.github.io/web/chezlog/): 出張シェフ（パーソナルシェフ・ケータリング）のための案件台帳 iOS アプリ。顧客宅ごとにコンロの口数・オーブン・調理器具・食物アレルギーや禁忌・前回提供した料理を記録し、同じ料理を続けて出さないよう提供履歴で照合する。献立を決めると必要な食材が買い物リストになり、提供時刻から逆算した当日の進行表を組み立てる。手が離せない工程は同じ時刻に重ならないよう配置する。記録は端末内のみ・アカウント不要・買い切り。UI 33言語。
   - App Store: https://apps.apple.com/app/id6800338366
+  - 詳細: https://freetokyo.github.io/web/chezlog/llms.txt
 - [Formulog（フォーミュログ）](https://freetokyo.github.io/web/formulog/): 革のリペア職人のための調色台帳 iOS / iPadOS アプリ。革の補修は元の色の上に塗り重ねるため、同じ配合でも素地の色が違えば仕上がりが変わる。そこで素地の色と仕上がりの色を必ず組にして記録し、過去の似た色を探すときもその組で照合する。配合比・下地処理・仕上げ・作業写真をひとまとめに残せる。塗料は自分の呼び方で登録でき、登録件数に上限はない。記録は端末内のみ・アカウント不要・買い切り。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/formulog/llms.txt
 - [Kartella Home（カルテラ ホーム）](https://freetokyo.github.io/web/kartellahome/): ハウスクリーニング・家事代行を個人または少人数で営む事業者のための顧客カルテ iOS アプリ。顧客ごとの間取り・作業指示・使う洗剤・訪問記録に加えて、預かっている鍵の本数と所在、玄関の暗証番号を扱う。暗証番号と鍵の所在は端末上で暗号化し、既定では伏字、Face ID などの本人確認を通したときだけ表示する。アプリは通信を行わず、アカウントもサーバーもない。買い切り。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/kartellahome/llms.txt
 - [Kartella Auto（カルテラ オート）](https://freetokyo.github.io/web/kartellaauto/): 出張型カーディテーリング事業者のための車両カルテ・施工記録 iOS / iPadOS アプリ。車両ごとにカルテを作り、作業前の状態・使用した薬剤・受領金額・コーティングの保証期限を1台に紐づけて残す。セダン／ハッチバック／SUV／ピックアップの4車型 × 5面の展開図をタップして、キズ・へこみ・飛び石・水垢・鉄粉を作業前に記録する。面の呼称は運転席側／助手席側ではなく左側面／右側面に統一し、右ハンドルと左ハンドルで意味が反転しないようにしている。保証・メンテ期限はローカル通知で知らせる。記録は端末内のみ・アカウント不要・買い切り。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/kartellaauto/llms.txt
 - [Kartella Studio（カルテラ スタジオ）](https://freetokyo.github.io/web/kartellastudio/): ヨガ・ピラティス・音楽教室・語学など、少人数のレッスンを個人で運営する講師のための回数券台帳 iPhone アプリ。残数は保持せず「総回数 − 消化 ＋ 取消」で都度計算し、取引台帳は追記のみ（消化・追加・取消・期限延長）。消化は行右端の専用ボタンでワンタップ、10秒以内は記録ごと取り消せ、それ以降は取消として台帳に残る。失効は記録を書かず期限と現在日時から判定するため、期限を延長すれば過去の記録に触れずに有効へ戻る。期限間近は通知を許可していなくても一覧のバッジで分かる。残数の控えはテキスト／PDF で書き出せるが金額を載せず、領収書ではない旨を明記する。通信するコードを持たず、外部へ出るのは利用者が共有・書き出しを行ったときだけ。アカウント不要・買い切り・33言語。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/kartellastudio/llms.txt
 - [指導レポート（Lesson Report）](https://freetokyo.github.io/web/lessonreport/): 家庭教師・個人指導者のための指導記録と報告書作成 iOS アプリ。タップ中心の入力フォームがそのまま保護者向け1ページPDFになる。前回の宿題と結果を次回の冒頭に引き継ぎ、指導の連続性を書面に残す。用紙は地域に応じて A4 / Letter を既定にし、設定で変更できる。生徒数・記録件数・保存期間は無制限で、無料版の上限は報告書PDFが月3件・定型コメントの登録が10件の2つ。
   - 近日公開 / coming soon
+  - 詳細: https://freetokyo.github.io/web/lessonreport/llms.txt
 
 ## ページ構成
 

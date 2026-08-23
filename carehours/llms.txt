@@ -1,12 +1,13 @@
 # CareHours
 
-> 訪問介護ヘルパーの給与管理アプリ。完全オフライン・データは端末内に保存。対象: 訪問介護の登録ヘルパー。
+> 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間・休日の割増自動計算、月次 PDF レポート出力。
 
-App Store: https://apps.apple.com/jp/app/id6769304063
 Web: https://freetokyo.github.io/web/carehours/
-開発者: freetokyo
-バージョン: 1.1 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6769304063
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.4 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 訪問記録の登録と集計
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/carehours/
 3. 月次PDFレポートを出力する
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/carehours/
 - サポート / FAQ: https://freetokyo.github.io/web/carehours/support.html
-- プライバシー: https://freetokyo.github.io/web/carehours/privacy.html
 - 利用規約: https://freetokyo.github.io/web/carehours/terms.html
+- プライバシー: https://freetokyo.github.io/web/carehours/privacy.html
+- ar: https://freetokyo.github.io/web/carehours/ar/
+- ca: https://freetokyo.github.io/web/carehours/ca/
+- cs: https://freetokyo.github.io/web/carehours/cs/
+- da: https://freetokyo.github.io/web/carehours/da/
+- de: https://freetokyo.github.io/web/carehours/de/
+- el: https://freetokyo.github.io/web/carehours/el/
+- en: https://freetokyo.github.io/web/carehours/en/
+- es: https://freetokyo.github.io/web/carehours/es/
+- fi: https://freetokyo.github.io/web/carehours/fi/
+- fr: https://freetokyo.github.io/web/carehours/fr/
+- he: https://freetokyo.github.io/web/carehours/he/
+- hi: https://freetokyo.github.io/web/carehours/hi/
+- hr: https://freetokyo.github.io/web/carehours/hr/
+- hu: https://freetokyo.github.io/web/carehours/hu/
+- id: https://freetokyo.github.io/web/carehours/id/
+- it: https://freetokyo.github.io/web/carehours/it/
+- ko: https://freetokyo.github.io/web/carehours/ko/
+- ms: https://freetokyo.github.io/web/carehours/ms/
+- nb: https://freetokyo.github.io/web/carehours/nb/
+- nl: https://freetokyo.github.io/web/carehours/nl/
+- pl: https://freetokyo.github.io/web/carehours/pl/
+- pt-BR: https://freetokyo.github.io/web/carehours/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/carehours/pt-PT/
+- ro: https://freetokyo.github.io/web/carehours/ro/
+- ru: https://freetokyo.github.io/web/carehours/ru/
+- sk: https://freetokyo.github.io/web/carehours/sk/
+- sv: https://freetokyo.github.io/web/carehours/sv/
+- th: https://freetokyo.github.io/web/carehours/th/
+- tr: https://freetokyo.github.io/web/carehours/tr/
+- uk: https://freetokyo.github.io/web/carehours/uk/
+- vi: https://freetokyo.github.io/web/carehours/vi/
+- zh-Hans: https://freetokyo.github.io/web/carehours/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/carehours/zh-Hant/

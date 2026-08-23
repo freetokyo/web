@@ -1,12 +1,12 @@
-# Atamalog (アタマログ)
+# Atamalog（アタマログ）
 
-> An app that turns "today feels heavy" into something you can actually look at: how much the conditions overlap.
+> 頭痛などの体調を、気圧の変化・睡眠・心拍といった「条件」と重ねて可視化する iOS / watchOS アプリ。その日の条件の重なりを 0〜100 の指数で示し、条件別の傾向は日数で表示する。分析はすべて端末内（外部送信は Apple の天気サービスのみ）。診断・予測は行わない非医療アプリ。アカウント不要・買い切り。
 
-Developer: freetokyo
-Platform: iPhone (iOS 26+), Apple Watch (optional)
-Languages: 36
-Pricing: free to use; Full Access is a one-time purchase ($9.99 / ¥1,500), not a subscription.
+Web: https://freetokyo.github.io/web/atamalog/
 App Store: https://apps.apple.com/app/id6793514760
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 26.0 以降
+対応言語（Webページ）: ja / en
 
 ## What it is
 Pick one of four levels and note whether you took medication. Pressure, sleep and heart data are collected for you and treated as that day's conditions. As entries add up, you see — in days, not percentages — which conditions line up with how you feel.
@@ -44,3 +44,11 @@ service contacted is Apple's WeatherKit, for weather data.
 ## 日本語概要
 「今日はなんとなく重い」を、条件の重なりとして見えるようにするアプリです。
 本アプリは、ご自身の記録と気象・健康データの関連を可視化するウェルネス用途のアプリです。病気の診断・治療を目的としたものではなく、医学的な助言を提供するものでもありません。表示される指数は起こりやすさを断定するものではなく、条件の重なりの目安です。体調に不安があるときは医療機関にご相談ください。
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/atamalog/
+- サポート / FAQ: https://freetokyo.github.io/web/atamalog/support.html
+- 利用規約: https://freetokyo.github.io/web/atamalog/terms.html
+- プライバシー: https://freetokyo.github.io/web/atamalog/privacy.html
+- en: https://freetokyo.github.io/web/atamalog/en/

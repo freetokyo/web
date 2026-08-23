@@ -7,6 +7,7 @@
 <meta name="description" content="案件ごとの粗利と実質時給がわかる、フリーランス・一人法人のための業務アプリ。工数と経費を差し引いた「本当に手元に残る額」を出します。iPhone・iPad・Mac。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/arari/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/arari/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/">
 <link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/">
@@ -451,6 +452,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "アラリ（Arari）", "description": "案件ごとの粗利と実質時給がわかる、フリーランス・一人法人のための業務アプリ。工数と経費を差し引いた「本当に手元に残る額」を出します。iPhone・iPad・Mac。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/arari/", "image": "https://freetokyo.github.io/web/arari/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797534182"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "アラリ（Arari）", "item": "https://freetokyo.github.io/web/arari/"}]}</script>
@@ -551,6 +562,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <li>複数人での共有編集・権限管理（ひとりで使う前提です）</li>
 <li>為替レートの自動取得（通信をしないため）</li>
 </ul>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ダッシュボード。今月の実質時給 ¥21,000 と粗利 ¥588,000、売上・経費の内訳、作業時間28時間が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>その仕事、実質時給いくら？ 粗利を作業時間で割って表示</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="伝票の一覧。見積書・納品書・請求書をタブで切り替え、未入金だけを絞り込める" width="360" height="782" loading="lazy" decoding="async"><figcaption>見積・納品・請求を1か所で 未入金だけ絞り込める</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="案件の一覧。案件ごとに売上と粗利の金額が行に並び、ステータスで絞り込める" width="360" height="782" loading="lazy" decoding="async"><figcaption>案件ごとの粗利が並ぶ 実質時給も行ごとに出る</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>アラリ（Arari）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

@@ -1,0 +1,20 @@
+# Weekwise
+
+> 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。34言語対応。
+
+Web: https://freetokyo.github.io/web/lifeweeks/
+App Store: https://apps.apple.com/app/id6788981648
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 17.0 以降
+価格: USD 9.99（買い切り）
+対応言語（Webページ）: en / ja / zh-Hans / zh-Hant
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/lifeweeks/
+- サポート / FAQ: https://freetokyo.github.io/web/lifeweeks/support.html
+- 利用規約: https://freetokyo.github.io/web/lifeweeks/terms.html
+- プライバシー: https://freetokyo.github.io/web/lifeweeks/privacy.html
+- ja: https://freetokyo.github.io/web/lifeweeks/ja/
+- zh-Hans: https://freetokyo.github.io/web/lifeweeks/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/lifeweeks/zh-Hant/

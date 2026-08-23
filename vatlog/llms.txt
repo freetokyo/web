@@ -1,0 +1,17 @@
+# Vatlog（ヴァットログ）
+
+> 自家醸造（ビール・ワイン・サイダー・ミード）のバッチ記録 iOS / iPadOS アプリ。仕込みから瓶詰めまでを1つの台帳に記録し、瓶詰め日を基準にその年の累計容量を集計する。年間の目標は利用者が設定し、米国（26 U.S.C. §5053(e) / §5042(a)(2)(B)）とドイツ（§29 Abs. 2 BierStG i.V.m. §41 BierStV）については条文番号と最終確認日つきの参考値を候補として提示する。アプリは何が適用されるかを判定しない。参考値が改正で更新されたときは「変わった」ことだけを1度伝え、値を自動で書き換えない。発酵ログと比重の推移グラフ、原材料と酵母の登録、テイスティング、写真の添付、ABV・比重換算・温度補正・屈折計補正・補糖・IBU・色度・プライミング・単位換算の計算機、JSON / CSV / PDF / ZIP の書き出しと JSON の読み込みを備える。計算式の版はバッチごとに固定するので、設定を変えても過去の記録の数値は変わらない。サーバーもアカウントもなく、位置情報・写真ライブラリ・通知の権限を一切要求しない。買い切り。日本語・英語・ドイツ語。
+
+Web: https://freetokyo.github.io/web/vatlog/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/vatlog/
+- サポート / FAQ: https://freetokyo.github.io/web/vatlog/support.html
+- 利用規約: https://freetokyo.github.io/web/vatlog/terms.html
+- プライバシー: https://freetokyo.github.io/web/vatlog/privacy.html
+- en: https://freetokyo.github.io/web/vatlog/en/

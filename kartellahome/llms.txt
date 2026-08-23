@@ -1,0 +1,16 @@
+# Kartella Home（カルテラ ホーム）
+
+> ハウスクリーニング・家事代行を個人または少人数で営む事業者のための顧客カルテ iOS アプリ。顧客ごとの間取り・作業指示・使う洗剤・訪問記録に加えて、預かっている鍵の本数と所在、玄関の暗証番号を扱う。暗証番号と鍵の所在は端末上で暗号化し、既定では伏字、Face ID などの本人確認を通したときだけ表示する。アプリは通信を行わず、アカウントもサーバーもない。買い切り。
+
+Web: https://freetokyo.github.io/web/kartellahome/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/kartellahome/
+- サポート / FAQ: https://freetokyo.github.io/web/kartellahome/support.html
+- 利用規約: https://freetokyo.github.io/web/kartellahome/terms.html
+- プライバシー: https://freetokyo.github.io/web/kartellahome/privacy.html
+- en: https://freetokyo.github.io/web/kartellahome/en/

@@ -1,0 +1,16 @@
+# Nenrin（ネンリン）
+
+> 盆栽の手入れ暦のための iOS / iPadOS アプリ。作業を樹種だけでなく仕立て段階（development / structural / refinement / maintenance）で出し分け、観察記録（芽の動き・新芽の伸び・葉の固まり）で時期を樹ごとに再アンカーする。季節は月ではなくフェーズとして持ち、半球と気候帯から月に写すため南半球は設定で切り替わる。樹種30種は学名を主キーとし、jin・shari・nebari などの国際盆栽用語は訳さず現地語の説明を括弧で添える。無料で樹3本・記録と写真は無制限・樹種ガイド全種・作業3種類までの通知・台帳（CSV/JSON）とバックアップの書き出し。Premium（月額/年額の自動更新サブスク・年額は7日間の無料トライアル）で樹の無制限化・前年比・気候補正と霜の警告（Apple WeatherKit）・iCloud 同期・写真を含む完全アーカイブ・ウィジェット。解約しても記録は削除されず、無料の上限を超える新規の追加のみが止まる。霜の警告は予報の最低気温から自作したもので気象機関の警報の転載ではない。アカウント登録は無く、広告 SDK も解析 SDK も無い。34言語。
+
+Web: https://freetokyo.github.io/web/nenrin/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/nenrin/
+- サポート / FAQ: https://freetokyo.github.io/web/nenrin/support.html
+- 利用規約: https://freetokyo.github.io/web/nenrin/terms.html
+- プライバシー: https://freetokyo.github.io/web/nenrin/privacy.html
+- en: https://freetokyo.github.io/web/nenrin/en/

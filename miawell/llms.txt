@@ -1,12 +1,13 @@
 # Miawell
 
-> 猫専用ヘルスケアアプリ。完全オフライン・写真の外部送信なし（端末内Core ML）。対象: 猫の飼い主。
+> 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。
 
-App Store: https://apps.apple.com/jp/app/id6774019571
 Web: https://freetokyo.github.io/web/miawell/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6774019571
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - AIによる写真からの体調判定
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/miawell/
 3. 毎日の記録でトレンドを把握する
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/miawell/
 - サポート / FAQ: https://freetokyo.github.io/web/miawell/support.html
-- プライバシー: https://freetokyo.github.io/web/miawell/privacy.html
 - 利用規約: https://freetokyo.github.io/web/miawell/terms.html
+- プライバシー: https://freetokyo.github.io/web/miawell/privacy.html
+- ar: https://freetokyo.github.io/web/miawell/ar/
+- ca: https://freetokyo.github.io/web/miawell/ca/
+- cs: https://freetokyo.github.io/web/miawell/cs/
+- da: https://freetokyo.github.io/web/miawell/da/
+- de: https://freetokyo.github.io/web/miawell/de/
+- el: https://freetokyo.github.io/web/miawell/el/
+- en: https://freetokyo.github.io/web/miawell/en/
+- es: https://freetokyo.github.io/web/miawell/es/
+- fi: https://freetokyo.github.io/web/miawell/fi/
+- fr: https://freetokyo.github.io/web/miawell/fr/
+- he: https://freetokyo.github.io/web/miawell/he/
+- hi: https://freetokyo.github.io/web/miawell/hi/
+- hr: https://freetokyo.github.io/web/miawell/hr/
+- hu: https://freetokyo.github.io/web/miawell/hu/
+- id: https://freetokyo.github.io/web/miawell/id/
+- it: https://freetokyo.github.io/web/miawell/it/
+- ko: https://freetokyo.github.io/web/miawell/ko/
+- ms: https://freetokyo.github.io/web/miawell/ms/
+- nb: https://freetokyo.github.io/web/miawell/nb/
+- nl: https://freetokyo.github.io/web/miawell/nl/
+- pl: https://freetokyo.github.io/web/miawell/pl/
+- pt-BR: https://freetokyo.github.io/web/miawell/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/miawell/pt-PT/
+- ro: https://freetokyo.github.io/web/miawell/ro/
+- ru: https://freetokyo.github.io/web/miawell/ru/
+- sk: https://freetokyo.github.io/web/miawell/sk/
+- sv: https://freetokyo.github.io/web/miawell/sv/
+- th: https://freetokyo.github.io/web/miawell/th/
+- tr: https://freetokyo.github.io/web/miawell/tr/
+- uk: https://freetokyo.github.io/web/miawell/uk/
+- vi: https://freetokyo.github.io/web/miawell/vi/
+- zh-Hans: https://freetokyo.github.io/web/miawell/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/miawell/zh-Hant/

@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/chezlog/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/chezlog/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/chezlog/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/chezlog/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/chezlog/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/chezlog/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/chezlog/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/chezlog/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/chezlog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/chezlog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/support.html" />
+  </url>
 </urlset>

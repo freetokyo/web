@@ -7,6 +7,7 @@
 <meta name="description" content="建設業の一人親方が、どの現場に何人工出たか、立て替えた材料はいくらかをその日のうちに記録し、月末の請求根拠を作るアプリ。現場ごとの単価履歴、未請求の立替アラート、締め日ごとの集計と出面表PDF。アカウント不要・記録は端末内のみ・買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/temalog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/temalog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/temalog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/temalog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/temalog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "テマログ（Temalog）", "description": "建設業の一人親方が、どの現場に何人工出たか、立て替えた材料はいくらかをその日のうちに記録し、月末の請求根拠を作るアプリ。現場ごとの単価履歴、未請求の立替アラート、締め日ごとの集計と出面表PDF。アカウント不要・記録は端末内のみ・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/temalog/", "image": "https://freetokyo.github.io/web/temalog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6799075773", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "テマログ（Temalog）", "item": "https://freetokyo.github.io/web/temalog/"}]}</script>
@@ -475,6 +486,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>現場で使える画面</h2><p>本文19pt・主要ボタン64pt・最小タップ領域56pt。手袋のままでも、明るい屋外でも押せるように作りました。数値は等幅で表示し、点滅やカウントアップの演出は使いません。ダークモードにも対応しています。</p></div></section>
 <section><div class="wrap"><h2>よくある質問</h2><details><summary>記録はどこに保存されますか？</summary><p>すべて端末の中だけです。アカウント登録は不要で、記録を外部に送信することはありません。写真も端末内に保存されます。</p></details><details><summary>機種変更するとどうなりますか？</summary><p>設定のバックアップから記録と写真をまとめた ZIP を書き出し、新しい端末で読み込んでください。書き出しは無料、復元はフルアクセスの機能です。</p></details><details><summary>請求書は作れますか？</summary><p>このバージョンでは請求書そのものは作りません。出面表と立替の明細まで出せます。元請所定の様式に添えてお使いください。</p></details><details><summary>単価を上げたら過去の金額も変わりますか？</summary><p>変わりません。単価は「この日から」という履歴として積むため、適用開始日より前の記録は当時の単価のまま計算されます。</p></details><details><summary>1日に2つの現場に出た場合は？</summary><p>同じ日に何件でも記録できます。1日の合計人工に上限はなく、警告も出しません。</p></details><details><summary>消費税はどう扱われますか？</summary><p>金額は税抜で集計し、消費税は参考として表示するだけです。最終的な請求額と消費税の取扱いは、ご自身とお取引先でご確認ください。</p></details><details><summary>サブスクリプションですか？</summary><p>いいえ。買い切りです。一度購入すれば追加の料金はかかりません。</p></details></div></section>
 <section><div class="wrap"><h2>用語と契約についての注記</h2><div class="callout"><p>アプリに表示される「日単価」「一式」「時間精算」は<strong>金額の計算方法の分類</strong>であり、契約の形態や適法性を判断するものではありません。契約についてはお取引先および専門家にご確認ください。本アプリは記録のためのツールであり、金額は税抜で集計し、消費税は参考表示に留めています。最終的な請求額・税務上の取扱いを保証するものではありません。</p></div></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。今日の現場と単価、当月の人工6.25、労務費 ¥144,750・立替材料 ¥51,100・合計（税抜）¥195,850、未請求の立替3件の警告が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>今月、何人工でいくらか。 開いた瞬間にわかる</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="出面の入力。日付と現場を選び、人工を0.5／1／1.25／1.5から選んで保存する" width="360" height="782" loading="lazy" decoding="async"><figcaption>現場を選ぶ。人工を押す。 終わり。</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="立替材料の一覧。未請求の合計 ¥38,300 と、ホームセンター・資材店・金物店ごとの金額が未請求／請求済みのバッジつきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>立て替えた材料、 請求し忘れていませんか</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>テマログ（Temalog）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

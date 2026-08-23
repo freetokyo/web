@@ -7,6 +7,7 @@
 <meta name="description" content="礼拝と礼拝のあいだを、設計する">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/waqtain/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/waqtain/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/waqtain/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/waqtain/ar/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/waqtain/en/">
@@ -445,6 +446,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "وقتين / Waqtain（ワクタイン）", "description": "礼拝と礼拝のあいだを、設計する", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://freetokyo.github.io/web/waqtain/", "image": "https://freetokyo.github.io/web/waqtain/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6799283353", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "وقتين / Waqtain（ワクタイン）", "item": "https://freetokyo.github.io/web/waqtain/"}]}</script>
@@ -486,6 +497,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>買い切りの Waqtain Pro（¥1,500）で、タスク数の無制限化、週単位の自動配置、会議候補時間、カレンダーへの書き出し、バックアップが使えます。サブスクリプションではありません。</p>
 
 <p><a href="privacy.html">プライバシーポリシー</a> ／ <a href="terms.html">利用規約</a> ／ <a href="support.html">サポート</a></p>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="今日の画面。この時間の残り1時間58分と、ファジュル・ズフルの礼拝時刻のあいだに作業ウィンドウが挟まって並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>礼拝のあいだに作業を置く</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="作業ウィンドウ。6:00〜11:39 の1時間58分に、四半期レビューの資料作成90分と設計ドキュメントの読み合わせ28分を割り付ける" width="360" height="782" loading="lazy" decoding="async"><figcaption>作業ウィンドウに割り付け</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="週表示。今週の集中4時間5分と、日ごとの作業可能時間・枠・タスク数が帯で並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>1週間の集中時間</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>وقتين / Waqtain（ワクタイン）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

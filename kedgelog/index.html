@@ -7,6 +7,7 @@
 <meta name="description" content="積んでいる装備の期限を、1点ずつ">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kedgelog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kedgelog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kedgelog（ケッジログ）", "description": "積んでいる装備の期限を、1点ずつ", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://freetokyo.github.io/web/kedgelog/", "image": "https://freetokyo.github.io/web/kedgelog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Kedgelog（ケッジログ）", "item": "https://freetokyo.github.io/web/kedgelog/"}]}</script>
@@ -490,6 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>お断り</h2><p>Kedgelog は一般財団法人日本小型船舶検査機構（JCI）をはじめ、<strong>いかなる検査機関とも無関係</strong>であり、いかなる機関の証明・検査・裏書きも受けていません。書き出した PDF は利用者が入力した記録であって、証明書ではありません。</p><p>本アプリは<strong>通信を行わず</strong>、アカウント登録もありません。ただし端末で iCloud バックアップが有効な場合、他のアプリと同じく本アプリのデータもそこに含まれます。</p></div></section>
 
 <section><div class="wrap"><h2>動作環境</h2><p>iOS 17.0 以降の iPhone。34言語に対応しています。</p></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="発航前の画面。登録10・未入力2・期限警告2の集計と、期限が過ぎた携帯型赤色信号紅炎・落下傘付き赤色信号ロケットの警告、発航前チェックの導線" width="360" height="782" loading="lazy" decoding="async"><figcaption>シーズン前に、 何が切れるかがわかる。</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="装備の一覧。救命・信号・消火のカテゴリごとに、小型船舶用自己点火灯・救命胴衣・膨脹式救命いかだ・消火器などが期限つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>紅炎も胴衣も消火器も、 期限つきで1点ずつ。</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="発航前チェックの実施画面。装備を1点ずつ確認して記録する" width="360" height="782" loading="lazy" decoding="async"><figcaption>自分で決めた発航前チェックを、 毎回。</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Kedgelog（ケッジログ）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

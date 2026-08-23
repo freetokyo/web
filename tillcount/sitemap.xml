@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/tillcount/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/tillcount/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/tillcount/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/tillcount/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/tillcount/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/tillcount/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/tillcount/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/tillcount/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/tillcount/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tillcount/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tillcount/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tillcount/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tillcount/support.html" />
+  </url>
 </urlset>

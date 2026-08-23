@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/baytlog/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/baytlog/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/baytlog/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/baytlog/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/baytlog/ar/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/baytlog/ar/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/baytlog/ar/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/baytlog/ar/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/baytlog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/ar/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/baytlog/ar/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/baytlog/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/baytlog/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/baytlog/support.html" />
+  </url>
 </urlset>

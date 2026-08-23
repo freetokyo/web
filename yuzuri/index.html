@@ -7,6 +7,7 @@
 <meta name="description" content="完全オフラインの終活ノート">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/yuzuri/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/yuzuri/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuzuri/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/yuzuri/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/yuzuri/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Yuzuri（ユズリ）", "description": "完全オフラインの終活ノート", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/yuzuri/", "image": "https://freetokyo.github.io/web/yuzuri/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6784874949", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Yuzuri（ユズリ）", "item": "https://freetokyo.github.io/web/yuzuri/"}]}</script>
@@ -698,6 +709,10 @@ LINE でシェア
 </div>
 <p class="hashtags">おすすめハッシュタグ: #終活 #終活ノート #エンディングノート #相続 #iPhone #アプリ</p>
 </div>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="終活ノートの一覧。基本情報・これまでの歩み・銀行預貯金口座・有価証券投資信託・保険・不動産・クレジットカード・年金退職金・負債ローンなどの項目が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>大切な情報を、端末の中だけで整理</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="基本情報の入力。氏名・生年月日・出生地・本籍・血液型・本人確認書類の保管場所と、カスタム項目の追加" width="360" height="782" loading="lazy" decoding="async"><figcaption>72項目を網羅したエンディングノート</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="書き出し。空欄項目も含めるかを選んで、PDF として書き出す（プレミアム機能）" width="360" height="782" loading="lazy" decoding="async"><figcaption>PDF として家族に遺せる</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Yuzuri（ユズリ）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

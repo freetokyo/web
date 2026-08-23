@@ -1,12 +1,13 @@
 # RecoverySync
 
-> Apple Watch sleep & HRV recovery tracker. On-device only / no account / no servers. For: Apple Watch ユーザー・アスリート.
+> Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内で完結。
 
-App Store: https://apps.apple.com/jp/app/id6770408873
 Web: https://freetokyo.github.io/web/recoverysync/
-Developer: freetokyo
-Version: 1.0 / Requires: iOS 17.0 or later / Price: Free (with in-app purchase)
-Updated: 2026-06
+App Store: https://apps.apple.com/app/id6770408873
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.4.0 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: en / ar / ca / cs / da / de / el / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## Features
 - Single recovery score from Apple Watch
@@ -26,3 +27,43 @@ Updated: 2026-06
 - Support / FAQ: https://freetokyo.github.io/web/recoverysync/support.html
 - Privacy: https://freetokyo.github.io/web/recoverysync/privacy.html
 - Terms: https://freetokyo.github.io/web/recoverysync/terms.html
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/recoverysync/
+- サポート / FAQ: https://freetokyo.github.io/web/recoverysync/support.html
+- 利用規約: https://freetokyo.github.io/web/recoverysync/terms.html
+- プライバシー: https://freetokyo.github.io/web/recoverysync/privacy.html
+- ar: https://freetokyo.github.io/web/recoverysync/ar/
+- ca: https://freetokyo.github.io/web/recoverysync/ca/
+- cs: https://freetokyo.github.io/web/recoverysync/cs/
+- da: https://freetokyo.github.io/web/recoverysync/da/
+- de: https://freetokyo.github.io/web/recoverysync/de/
+- el: https://freetokyo.github.io/web/recoverysync/el/
+- en: https://freetokyo.github.io/web/recoverysync/en/
+- es: https://freetokyo.github.io/web/recoverysync/es/
+- fi: https://freetokyo.github.io/web/recoverysync/fi/
+- fr: https://freetokyo.github.io/web/recoverysync/fr/
+- he: https://freetokyo.github.io/web/recoverysync/he/
+- hi: https://freetokyo.github.io/web/recoverysync/hi/
+- hr: https://freetokyo.github.io/web/recoverysync/hr/
+- hu: https://freetokyo.github.io/web/recoverysync/hu/
+- id: https://freetokyo.github.io/web/recoverysync/id/
+- it: https://freetokyo.github.io/web/recoverysync/it/
+- ko: https://freetokyo.github.io/web/recoverysync/ko/
+- ms: https://freetokyo.github.io/web/recoverysync/ms/
+- nb: https://freetokyo.github.io/web/recoverysync/nb/
+- nl: https://freetokyo.github.io/web/recoverysync/nl/
+- pl: https://freetokyo.github.io/web/recoverysync/pl/
+- pt-BR: https://freetokyo.github.io/web/recoverysync/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/recoverysync/pt-PT/
+- ro: https://freetokyo.github.io/web/recoverysync/ro/
+- ru: https://freetokyo.github.io/web/recoverysync/ru/
+- sk: https://freetokyo.github.io/web/recoverysync/sk/
+- sv: https://freetokyo.github.io/web/recoverysync/sv/
+- th: https://freetokyo.github.io/web/recoverysync/th/
+- tr: https://freetokyo.github.io/web/recoverysync/tr/
+- uk: https://freetokyo.github.io/web/recoverysync/uk/
+- vi: https://freetokyo.github.io/web/recoverysync/vi/
+- zh-Hans: https://freetokyo.github.io/web/recoverysync/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/recoverysync/zh-Hant/

@@ -1,6 +1,12 @@
 # قمري / Qamari（カマリ）
 
-> 完全オフライン・買い切りの iOS カレンダーアプリ。ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見（月の目視観測）補正で登録済み通知が全て自動追従 —— が差別化の核心。アカウント不要・データ収集なし・広告なし。
+> ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
+
+Web: https://freetokyo.github.io/web/qamari/
+App Store: https://apps.apple.com/app/id6791838601
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 26.0 以降
+対応言語（Webページ）: ja / ar / en
 
 ## 概要
 - 開発: freetokyo（個人 iOS 開発）
@@ -42,10 +48,11 @@
 - 記念日の日付・呼称は地域および学派によって異なるため、既定ではまとめて有効にせず、ユーザーが参照するものだけを個別に選ぶ設計。
 - 「正しい日付」を主張しない。表示は選択した計算方式とユーザーが設定した補正に基づく参考情報であり、断食・礼拝等の最終判断は利用者自身および利用者が従う学派・地域の当局による。
 
-## リンク
-- 日本語: https://freetokyo.github.io/web/qamari/
-- English: https://freetokyo.github.io/web/qamari/en/
-- العربية: https://freetokyo.github.io/web/qamari/ar/
-- プライバシー: https://freetokyo.github.io/web/qamari/privacy.html
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/qamari/
+- サポート / FAQ: https://freetokyo.github.io/web/qamari/support.html
 - 利用規約: https://freetokyo.github.io/web/qamari/terms.html
-- サポート: https://freetokyo.github.io/web/qamari/support.html
+- プライバシー: https://freetokyo.github.io/web/qamari/privacy.html
+- ar: https://freetokyo.github.io/web/qamari/ar/
+- en: https://freetokyo.github.io/web/qamari/en/

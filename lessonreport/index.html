@@ -7,6 +7,7 @@
 <meta name="description" content="家庭教師・個人指導者が、指導のたびに保護者へ渡す1ページのPDFを数タップで作る iOS アプリ。入力フォームが報告書のレイアウトそのものです。生徒数・記録件数・保存期間は無制限。アカウント登録はありません。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/lessonreport/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/lessonreport/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/lessonreport/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/lessonreport/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/lessonreport/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "指導レポート（Lesson Report）", "description": "家庭教師・個人指導者が、指導のたびに保護者へ渡す1ページのPDFを数タップで作る iOS アプリ。入力フォームが報告書のレイアウトそのものです。生徒数・記録件数・保存期間は無制限。アカウント登録はありません。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "EducationalApplication", "url": "https://freetokyo.github.io/web/lessonreport/", "image": "https://freetokyo.github.io/web/lessonreport/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "指導レポート（Lesson Report）", "item": "https://freetokyo.github.io/web/lessonreport/"}]}</script>
@@ -517,6 +528,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <li>日本語・英語</li>
 <li>Apple 標準のフレームワークのみを使用。第三者の解析 SDK は入れていません</li>
 </ul>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="報告書のプレビュー。生徒名・学年・日時・扱った範囲・様子・次回の予定が1枚に収まった PDF と、共有ボタン" width="360" height="782" loading="lazy" decoding="async"><figcaption>保護者に渡す1枚は 入力が終わった時点で完成</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="記録の編集。日時と所要時間90分、科目（数学／英語）、扱った範囲と単元、理解度（できた／もう少し／要復習）を選ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>1回の記録は縦1画面。 自由入力は2箇所だけ</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="生徒の一覧。生徒ごとに学年・前回の指導日と、未作成の報告書の件数が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>生徒ごとに次回の予定と 未作成の報告書がひと目で</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>指導レポート（Lesson Report）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

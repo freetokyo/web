@@ -1,13 +1,17 @@
-# Kajimieru（カジミエル）
+# カジミエル（Kajimieru）
 
-Kajimieru organises 130 "invisible" household tasks — the ones that are never counted as chores but that somebody does every day — into 11 categories, and turns how a couple splits them into counts and percentages. It is a one-off stocktake, not a daily tracker: there are no checkboxes, reminders or points. Up to 28 of the 130 tasks can be marked "not applicable" (no children, no car, renting) and they drop out of the totals. The three percentages are shown as rounded and are not adjusted to sum to exactly 100%. The app makes no judgement about whether a split is appropriate. Everything is stored on the device: the app contains no networking code, requests no permissions and has no account. One-time purchase, no subscription.
+> 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
 
-- Home: https://freetokyo.github.io/web/kajimieru/
-- English: https://freetokyo.github.io/web/kajimieru/en/
-- Privacy: https://freetokyo.github.io/web/kajimieru/privacy.html
-- Terms: https://freetokyo.github.io/web/kajimieru/terms.html
-- Support: https://freetokyo.github.io/web/kajimieru/support.html
-- Contact: freetokyo2020@yahoo.co.jp
+Web: https://freetokyo.github.io/web/kajimieru/
+App Store: https://apps.apple.com/app/id6797382805
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 17.0 以降
+対応言語（Webページ）: ja / en
 
-Free: assign all 130 tasks, overall share and chart, mark tasks as not applicable, search, backup and restore.
-Full access (one-time purchase): breakdown for all 11 categories, custom names, image sharing without a watermark, CSV export.
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/kajimieru/
+- サポート / FAQ: https://freetokyo.github.io/web/kajimieru/support.html
+- 利用規約: https://freetokyo.github.io/web/kajimieru/terms.html
+- プライバシー: https://freetokyo.github.io/web/kajimieru/privacy.html
+- en: https://freetokyo.github.io/web/kajimieru/en/

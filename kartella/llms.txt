@@ -1,0 +1,16 @@
+# カルテラ（Kartella）
+
+> フリーランス／面貸し／訪問の美容師と1人サロン向けの顧客カルテ iOS/iPadOS アプリ。薬剤名・g・オキシ%・ 放置時間のフォーミュラ、Before/After 写真、パッチテストの実施日・ブランド・結果と有効期限（既定180日・ 30〜730日）を端末内だけで記録する。ネットワーク通信コードを持たず、アカウントもサーバーも無い。 顧客の権利対応として、1名分の記録のPDF書き出しと、識別情報のみの削除／完全削除の2系統を備える。 メニュー・薬剤・ブランドはマスタに登録して選ぶだけで入力できる。買い切り。日本語・英語・ドイツ語・ フランス語・スペイン語・イタリア語・韓国語。
+
+Web: https://freetokyo.github.io/web/kartella/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/kartella/
+- サポート / FAQ: https://freetokyo.github.io/web/kartella/support.html
+- 利用規約: https://freetokyo.github.io/web/kartella/terms.html
+- プライバシー: https://freetokyo.github.io/web/kartella/privacy.html
+- en: https://freetokyo.github.io/web/kartella/en/

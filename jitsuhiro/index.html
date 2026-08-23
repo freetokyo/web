@@ -7,6 +7,7 @@
 <meta name="description" content="間取り図の本当の広さチェッカー">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/jitsuhiro/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/jitsuhiro/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/jitsuhiro/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/jitsuhiro/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/jitsuhiro/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ジツヒロ（Jitsuhiro）", "description": "間取り図の本当の広さチェッカー", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://freetokyo.github.io/web/jitsuhiro/", "image": "https://freetokyo.github.io/web/jitsuhiro/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6779472712", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "ジツヒロ（Jitsuhiro）", "item": "https://freetokyo.github.io/web/jitsuhiro/"}]}</script>
@@ -597,6 +608,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <h2 class="section-title" data-ja="ご注意" data-en="Please note">ご注意</h2>
   <p class="section-lead" data-ja="本アプリの結果は図面からの推定値です。実際の寸法・面積は重要事項説明書および実測でご確認ください。特定物件の購入を推奨・勧誘するものではありません。寸法線（mm表記）入りのクリーンなマンション図面を想定しています。"
      data-en="Results are estimates from the drawing. Verify actual dimensions and area with the official property documents and on-site measurement. This app does not recommend or solicit any particular property. It assumes clean condominium plans with mm dimension lines.">本アプリの結果は図面からの推定値です。実際の寸法・面積は重要事項説明書および実測でご確認ください。特定物件の購入を推奨・勧誘するものではありません。寸法線（mm表記）入りのクリーンなマンション図面を想定しています。</p>
+</section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="解析結果。間取り図から柱を引いた有効面積5.55帖（図面記載の6.00帖に対して −7.4%）と、内訳・柱の注記を示す" width="360" height="782" loading="lazy" decoding="async"><figcaption>その6.0帖、本当は何帖？</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="図面の補正。撮ったマンション図面の輪郭を自動で検出し、四隅をドラッグして補正する" width="360" height="782" loading="lazy" decoding="async"><figcaption>図面を撮るだけ</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="家具配置の動線検証。部屋に家具を置いて、通路幅と動線が確保できるかを実寸で判定する" width="360" height="782" loading="lazy" decoding="async"><figcaption>その家具、置ける？</figcaption></figure></div>
 </section>
 <section class="ftcta">
 <h2>ジツヒロ（Jitsuhiro）</h2>

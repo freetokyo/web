@@ -1,0 +1,17 @@
+# Unelog（ウネログ）
+
+> 市民農園・貸し農園の「区画」に特化した区画栽培カルテ iOS アプリ。記録は端末に保存し、iCloud 同期は任意。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。
+
+Web: https://freetokyo.github.io/web/unelog/
+App Store: https://apps.apple.com/app/id6792154276
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 17.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/unelog/
+- サポート / FAQ: https://freetokyo.github.io/web/unelog/support.html
+- 利用規約: https://freetokyo.github.io/web/unelog/terms.html
+- プライバシー: https://freetokyo.github.io/web/unelog/privacy.html
+- en: https://freetokyo.github.io/web/unelog/en/

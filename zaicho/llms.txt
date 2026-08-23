@@ -1,6 +1,13 @@
-# ザイチョウ (Zaicho)
+# ザイチョウ（Zaicho）
 
-> 完全オフライン・買い切りの iOS 財産目録アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移・相続税の概算・財産目録PDF出力に対応。口座連携なし・データ収集なし・広告なし。
+> 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。
+
+Web: https://freetokyo.github.io/web/zaicho/
+App Store: https://apps.apple.com/app/id6788175241
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 18.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / en
 
 ## 概要
 - 開発: freetokyo（個人 iOS 開発）
@@ -27,9 +34,10 @@
 - 相続税概算は「相続税の総額」の目安であり、配偶者の税額軽減や各種特例は反映しない。実際の申告・納税額とは異なる。正式な判断は税理士へ。
 - 本アプリは一般的な情報提供・学習目的であり、税務・投資の助言や金融商品の勧誘を行うものではない。
 
-## リンク
-- 日本語: https://freetokyo.github.io/web/zaicho/
-- English: https://freetokyo.github.io/web/zaicho/en/
-- プライバシー: https://freetokyo.github.io/web/zaicho/privacy.html
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/zaicho/
+- サポート / FAQ: https://freetokyo.github.io/web/zaicho/support.html
 - 利用規約: https://freetokyo.github.io/web/zaicho/terms.html
-- サポート: https://freetokyo.github.io/web/zaicho/support.html
+- プライバシー: https://freetokyo.github.io/web/zaicho/privacy.html
+- en: https://freetokyo.github.io/web/zaicho/en/

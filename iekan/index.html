@@ -7,6 +7,7 @@
 <meta name="description" content="離れて暮らす家族のために、実家の状態をいつでもどこからでも確認できる家族向けホーム管理アプリ。写真タイムライン・チェックリスト・書類スキャン・家族共有。iOS対応。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/iekan/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/iekan/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/iekan/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/iekan/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/iekan/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "IeKan（家看）", "description": "離れて暮らす家族のために、実家の状態をいつでもどこからでも確認できる家族向けホーム管理アプリ。写真タイムライン・チェックリスト・書類スキャン・家族共有。iOS対応。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/iekan/", "image": "https://freetokyo.github.io/web/iekan/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6764244913", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "IeKan（家看）", "item": "https://freetokyo.github.io/web/iekan/"}]}</script>
@@ -573,38 +584,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="section-header center">
       <div class="badge badge--green">主な機能</div>
 
-<section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
 
-<section class="ftfacts" aria-label="アプリ概要">
-  <h2>アプリ概要</h2>
-  <table>
-    <tr><th>対応OS</th><td>iOS 17.0 以降</td></tr>
-    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
-    <tr><th>バージョン</th><td>1.2.1</td></tr>
-    <tr><th>サイズ</th><td>約 3 MB</td></tr>
-    <tr><th>カテゴリ</th><td>ライフスタイル</td></tr>
-    <tr><th>対象年齢</th><td>4+</td></tr>
-    <tr><th>対象ユーザー</th><td>実家を離れて暮らす家族</td></tr>
-    <tr><th>データの扱い</th><td>写真・チェック・書類は端末内に保存（第三者提供なし）。物件情報のみiCloudで家族共有</td></tr>
-    <tr><th>開発者</th><td>freetokyo</td></tr>
-    <tr><th>最終更新</th><td>2026-07-28</td></tr>
-  </table>
-</section>
-<section class="fthowto" aria-label="使い方（3ステップ）">
-  <h2>使い方（3ステップ）</h2>
-  <ol>
-    <li>実家を登録して家族を招待</li>
-    <li>写真・チェックリストで状態を記録</li>
-    <li>タイムラインで変化を振り返る</li>
-  </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
-</section>
-  <h2>アプリの画面</h2>
-  <div class="ftshot-row">
-    <figure class="ftshot-item"><img src="shots/01.png" alt="IeKan 実家を家族で見守るホーム画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>実家のホーム</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/02.png" alt="季節ごとの実家チェックリスト画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>季節チェックリスト</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/03.png" alt="実家の写真タイムライン画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>写真タイムライン</figcaption></figure>
-  </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
       <h2 class="t-title mt-8">実家管理に必要なことが<br>すべて揃っています</h2>
@@ -789,6 +769,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </section>
 
 <!-- ===== FOOTER ===== -->
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="実家の状態をひと目で把握するホーム画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>実家のホーム</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="季節のメンテナンスをリストで管理するチェックリスト画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>季節チェックリスト</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="実家の写真を時系列に残す写真タイムライン画面" width="360" height="480" loading="lazy" decoding="async"><figcaption>写真タイムライン</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>IeKan（家看）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/kartellalash/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellalash/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellalash/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellalash/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellalash/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellalash/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellalash/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellalash/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/kartellalash/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellalash/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/support.html" />
+  </url>
 </urlset>

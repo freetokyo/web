@@ -7,6 +7,7 @@
 <meta name="description" content="Keep a child&#x27;s vaccination record by antigen and see how it differs from the published schedules of the United States, the United Kingdom and Japan — in eight states, never as a verdict. No communication, no account, no server. One-time purchase.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/immulog/en/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/immulog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/">
@@ -442,6 +443,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Immulog", "description": "Keep a child's vaccination record by antigen and see how it differs from the published schedules of the United States, the United Kingdom and Japan — in eight states, never as a verdict. No communication, no account, no server. One-time purchase.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/immulog/en/", "image": "https://freetokyo.github.io/web/immulog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Immulog", "item": "https://freetokyo.github.io/web/immulog/en/"}]}</script>
@@ -490,6 +501,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>Please read</h2><p>What Immulog shows is a <strong>mechanical comparison between the records you entered and a published standard schedule</strong>. It is not what your child needs. Gestational age, medical history, immune status and a clinician's individual instructions are not taken into account.</p><p>Whether, when and which vaccinations are appropriate is a decision to make with a healthcare provider. Immulog makes no claim about the accuracy or completeness of what it shows. <strong>Schedules change</strong>: the current version is on the official pages linked from every schedule screen.</p></div></section>
 
 <section><div class="wrap"><h2>Requirements</h2><p>iPhone running iOS 17.0 or later. Available in 34 languages. The interface is fixed to a light appearance.</p></div></section>
+
 <section class="ftcta">
 <h2>Immulog</h2>
 <p>Coming soon. This page will be updated at release.</p>

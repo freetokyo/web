@@ -7,6 +7,7 @@
 <meta name="description" content="ザイチョウは、完全オフライン・買い切りの財産目録アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録PDFまで、すべて端末内で完結。口座連携なし・データ収集なし・広告なし。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/zaicho/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/zaicho/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ザイチョウ（Zaicho）", "description": "ザイチョウは、完全オフライン・買い切りの財産目録アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録PDFまで、すべて端末内で完結。口座連携なし・データ収集なし・広告なし。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/zaicho/", "image": "https://freetokyo.github.io/web/zaicho/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6788175241", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "ザイチョウ（Zaicho）", "item": "https://freetokyo.github.io/web/zaicho/"}]}</script>
@@ -538,6 +549,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </div>
     <p class="note" style="margin-top:24px">本アプリは一般的な情報提供・学習目的のツールであり、特定の金融商品の推奨・勧誘や、税務・投資の助言を行うものではありません。相続税の試算は「相続税の総額」の概算であり、実際の申告・納税額とは異なります。</p>
   </div>
+</section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。純資産 ¥181,500,000 と前月比 +¥500,000、資産合計と負債合計、カテゴリ別の内訳（現金預金・上場株式・債券・不動産・非上場株式・貴金属・美術品・負債）" width="360" height="782" loading="lazy" decoding="async"><figcaption>資産の全体像を ひと画面で</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="資産の一覧。現金預金・上場株式投資信託・債券保険・不動産（時価）・非上場株式・貴金属が、銘柄名と金額つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>預金・株式・不動産を ひとつの台帳に</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="純資産の推移。今月の純資産と、月次スナップショットを記録するボタン、推移の折れ線グラフと記録一覧" width="360" height="782" loading="lazy" decoding="async"><figcaption>純資産の推移を 月ごとに記録</figcaption></figure></div>
 </section>
 <section class="ftcta">
 <h2>ザイチョウ（Zaicho）</h2>

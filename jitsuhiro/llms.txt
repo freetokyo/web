@@ -1,12 +1,13 @@
-# ジツヒロ
+# ジツヒロ（Jitsuhiro）
 
-> 間取り図の有効面積チェッカー。完全オフライン・データ収集なし・買い切り。対象: 中古マンションの購入検討者。
+> 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。
 
-App Store: https://apps.apple.com/jp/app/id6779472712
 Web: https://freetokyo.github.io/web/jitsuhiro/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 18.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6779472712
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 18.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 間取り図の有効面積（柱抜き）を算出
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/jitsuhiro/
 3. 家具を置いて動線・クリアランスを検証
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/jitsuhiro/
 - サポート / FAQ: https://freetokyo.github.io/web/jitsuhiro/support.html
-- プライバシー: https://freetokyo.github.io/web/jitsuhiro/privacy.html
 - 利用規約: https://freetokyo.github.io/web/jitsuhiro/terms.html
+- プライバシー: https://freetokyo.github.io/web/jitsuhiro/privacy.html
+- ar: https://freetokyo.github.io/web/jitsuhiro/ar/
+- ca: https://freetokyo.github.io/web/jitsuhiro/ca/
+- cs: https://freetokyo.github.io/web/jitsuhiro/cs/
+- da: https://freetokyo.github.io/web/jitsuhiro/da/
+- de: https://freetokyo.github.io/web/jitsuhiro/de/
+- el: https://freetokyo.github.io/web/jitsuhiro/el/
+- en: https://freetokyo.github.io/web/jitsuhiro/en/
+- es: https://freetokyo.github.io/web/jitsuhiro/es/
+- fi: https://freetokyo.github.io/web/jitsuhiro/fi/
+- fr: https://freetokyo.github.io/web/jitsuhiro/fr/
+- he: https://freetokyo.github.io/web/jitsuhiro/he/
+- hi: https://freetokyo.github.io/web/jitsuhiro/hi/
+- hr: https://freetokyo.github.io/web/jitsuhiro/hr/
+- hu: https://freetokyo.github.io/web/jitsuhiro/hu/
+- id: https://freetokyo.github.io/web/jitsuhiro/id/
+- it: https://freetokyo.github.io/web/jitsuhiro/it/
+- ko: https://freetokyo.github.io/web/jitsuhiro/ko/
+- ms: https://freetokyo.github.io/web/jitsuhiro/ms/
+- nb: https://freetokyo.github.io/web/jitsuhiro/nb/
+- nl: https://freetokyo.github.io/web/jitsuhiro/nl/
+- pl: https://freetokyo.github.io/web/jitsuhiro/pl/
+- pt-BR: https://freetokyo.github.io/web/jitsuhiro/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/jitsuhiro/pt-PT/
+- ro: https://freetokyo.github.io/web/jitsuhiro/ro/
+- ru: https://freetokyo.github.io/web/jitsuhiro/ru/
+- sk: https://freetokyo.github.io/web/jitsuhiro/sk/
+- sv: https://freetokyo.github.io/web/jitsuhiro/sv/
+- th: https://freetokyo.github.io/web/jitsuhiro/th/
+- tr: https://freetokyo.github.io/web/jitsuhiro/tr/
+- uk: https://freetokyo.github.io/web/jitsuhiro/uk/
+- vi: https://freetokyo.github.io/web/jitsuhiro/vi/
+- zh-Hans: https://freetokyo.github.io/web/jitsuhiro/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/jitsuhiro/zh-Hant/

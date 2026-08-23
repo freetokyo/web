@@ -1,2 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://freetokyo.github.io/web/otolog/</loc></url><url><loc>https://freetokyo.github.io/web/otolog/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/otolog/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/otolog/support.html</loc></url><url><loc>https://freetokyo.github.io/web/otolog/en/</loc></url><url><loc>https://freetokyo.github.io/web/otolog/en/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/otolog/en/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/otolog/en/support.html</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/otolog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/otolog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/support.html" />
+  </url>
+</urlset>

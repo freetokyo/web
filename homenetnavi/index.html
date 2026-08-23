@@ -7,6 +7,7 @@
 <meta name="description" content="2026年制度に正確対応した「年収の壁」シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案する iOS アプリ。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/homenetnavi/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/homenetnavi/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/homenetnavi/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/homenetnavi/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/homenetnavi/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "世帯手取ナビ（HomeNet Navi）", "description": "2026年制度に正確対応した「年収の壁」シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案する iOS アプリ。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/homenetnavi/", "image": "https://freetokyo.github.io/web/homenetnavi/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6772911843", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "世帯手取ナビ（HomeNet Navi）", "item": "https://freetokyo.github.io/web/homenetnavi/"}]}</script>
@@ -574,38 +585,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="section-header center">
       <div class="badge badge--green">主な機能</div>
 
-<section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
 
-<section class="ftfacts" aria-label="アプリ概要">
-  <h2>アプリ概要</h2>
-  <table>
-    <tr><th>対応OS</th><td>iOS 16.0 以降</td></tr>
-    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
-    <tr><th>バージョン</th><td>1.0</td></tr>
-    <tr><th>サイズ</th><td>約 1 MB</td></tr>
-    <tr><th>カテゴリ</th><td>ファイナンス</td></tr>
-    <tr><th>対象年齢</th><td>4+</td></tr>
-    <tr><th>対象ユーザー</th><td>扶養内・パートで働く世帯</td></tr>
-    <tr><th>データの扱い</th><td>入力は端末内で計算・外部送信なし</td></tr>
-    <tr><th>開発者</th><td>freetokyo</td></tr>
-    <tr><th>最終更新</th><td>2026-06-08</td></tr>
-  </table>
-</section>
-<section class="fthowto" aria-label="使い方（3ステップ）">
-  <h2>使い方（3ステップ）</h2>
-  <ol>
-    <li>世帯の年収を入力する</li>
-    <li>年収の壁と世帯手取りを確認</li>
-    <li>働き方シナリオを比較して最適化</li>
-  </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
-</section>
-  <h2>アプリの画面</h2>
-  <div class="ftshot-row">
-    <figure class="ftshot-item"><img src="shots/01.png" alt="世帯手取りと年収の壁を可視化したグラフ画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>手取りカーブ</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/02.png" alt="働き方シナリオ別の世帯手取り比較画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>シナリオ比較</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/03.png" alt="手取りが最大になる働き方の提案画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>最適な働き方提案</figcaption></figure>
-  </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
       <h2 class="t-title mt-8">「年収の壁」と賢く付き合う、<br>4 つの中核機能</h2>
@@ -771,6 +751,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </section>
 
 <!-- ===== FOOTER ===== -->
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。いまは働き控えの谷にいるという判定と、年収を5万円下げると世帯の手取りが +227,590 円 増えるという試算を示す" width="360" height="783" loading="lazy" decoding="async"><figcaption>年収を下げたほうが 世帯の手取りが増えることがある</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="2026年の実績。給与見込み 1,272,000 円と、130万円・110万円・123万円の壁に達する月の警告、月ごとの給与の一覧" width="360" height="783" loading="lazy" decoding="async"><figcaption>毎月の給与から 年末の着地を予測</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="年収の壁の一覧。106万・110万・123万・130万・160万の各ラインについて、超えたときに何が起きるかと現在位置を示す" width="360" height="783" loading="lazy" decoding="async"><figcaption>6本の壁を 公的根拠つきで解説</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>世帯手取ナビ（HomeNet Navi）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

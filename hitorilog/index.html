@@ -7,6 +7,7 @@
 <meta name="description" content="ひとり介護者のためのケア記録">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/hitorilog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/hitorilog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hitorilog/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/hitorilog/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/hitorilog/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ヒトリログ（HitoriLog）", "description": "ひとり介護者のためのケア記録", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/hitorilog/", "image": "https://freetokyo.github.io/web/hitorilog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6785472192", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "ヒトリログ（HitoriLog）", "item": "https://freetokyo.github.io/web/hitorilog/"}]}</script>
@@ -579,6 +590,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 
   <p class="disclaimer">本アプリはケア記録の支援を目的としています。医療的な診断・治療方針の決定には使用しないでください。医療上の判断は必ず医師・看護師等の専門家にご相談ください。</p>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。体温・血圧・水分・排便・食事・睡眠・気分／様子・本音メモのアイコンが並び、その下に今日の記録が時刻順に続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>8項目をワンタップで 体温・血圧・水分・服薬…</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="本音メモの入力。日時と自由記述の本文に加えて、徘徊・暴言・拒否・転倒リスク・よかったこと・介護者の気持ちなどのタグをトグルで付ける" width="360" height="782" loading="lazy" decoding="async"><figcaption>誰にも見せない前提だから 本音が書ける</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="タイムライン。日付ごとに本音メモ・気分／様子・水分・食事・服薬・体温・睡眠・排便が時刻とともに縦に並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>その日を1画面で振り返る 記録はあとから直せる</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>ヒトリログ（HitoriLog）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

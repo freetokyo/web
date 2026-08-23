@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/hemlog/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/hemlog/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/hemlog/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/hemlog/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/hemlog/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/hemlog/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/hemlog/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/hemlog/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/hemlog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/hemlog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hemlog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hemlog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hemlog/support.html" />
+  </url>
 </urlset>

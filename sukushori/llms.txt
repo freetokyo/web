@@ -1,12 +1,13 @@
 # スクショリ
 
-> スクショを端末内AIで自動仕分けするアプリ。完全オフライン・データ収集なし・買い切り。対象: スクショが溜まりがちな人。
+> 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、解析と保存は端末内・買い切り・広告なし。通信は「地図で見る」のときだけ。
 
-App Store: https://apps.apple.com/jp/app/id6778336001
 Web: https://freetokyo.github.io/web/sukushori/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6778336001
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 端末内AIによるスクショ自動分類
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/sukushori/
 3. 要点を活用して原本を片付ける
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/sukushori/
 - サポート / FAQ: https://freetokyo.github.io/web/sukushori/support.html
-- プライバシー: https://freetokyo.github.io/web/sukushori/privacy.html
 - 利用規約: https://freetokyo.github.io/web/sukushori/terms.html
+- プライバシー: https://freetokyo.github.io/web/sukushori/privacy.html
+- ar: https://freetokyo.github.io/web/sukushori/ar/
+- ca: https://freetokyo.github.io/web/sukushori/ca/
+- cs: https://freetokyo.github.io/web/sukushori/cs/
+- da: https://freetokyo.github.io/web/sukushori/da/
+- de: https://freetokyo.github.io/web/sukushori/de/
+- el: https://freetokyo.github.io/web/sukushori/el/
+- en: https://freetokyo.github.io/web/sukushori/en/
+- es: https://freetokyo.github.io/web/sukushori/es/
+- fi: https://freetokyo.github.io/web/sukushori/fi/
+- fr: https://freetokyo.github.io/web/sukushori/fr/
+- he: https://freetokyo.github.io/web/sukushori/he/
+- hi: https://freetokyo.github.io/web/sukushori/hi/
+- hr: https://freetokyo.github.io/web/sukushori/hr/
+- hu: https://freetokyo.github.io/web/sukushori/hu/
+- id: https://freetokyo.github.io/web/sukushori/id/
+- it: https://freetokyo.github.io/web/sukushori/it/
+- ko: https://freetokyo.github.io/web/sukushori/ko/
+- ms: https://freetokyo.github.io/web/sukushori/ms/
+- nb: https://freetokyo.github.io/web/sukushori/nb/
+- nl: https://freetokyo.github.io/web/sukushori/nl/
+- pl: https://freetokyo.github.io/web/sukushori/pl/
+- pt-BR: https://freetokyo.github.io/web/sukushori/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/sukushori/pt-PT/
+- ro: https://freetokyo.github.io/web/sukushori/ro/
+- ru: https://freetokyo.github.io/web/sukushori/ru/
+- sk: https://freetokyo.github.io/web/sukushori/sk/
+- sv: https://freetokyo.github.io/web/sukushori/sv/
+- th: https://freetokyo.github.io/web/sukushori/th/
+- tr: https://freetokyo.github.io/web/sukushori/tr/
+- uk: https://freetokyo.github.io/web/sukushori/uk/
+- vi: https://freetokyo.github.io/web/sukushori/vi/
+- zh-Hans: https://freetokyo.github.io/web/sukushori/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/sukushori/zh-Hant/

@@ -7,6 +7,7 @@
 <meta name="description" content="まつ毛エクステとラッシュリフトの顧客カルテ。使ったグルーのロットを施術ごとに紐づけてロットから顧客を逆引きでき、パッチテストの規則は製品ブランドごとに設定します。記録は端末内。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kartellalash/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kartellalash/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellalash/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellalash/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellalash/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "カルテラ ラッシュ（Kartella Lash）", "description": "まつ毛エクステとラッシュリフトの顧客カルテ。使ったグルーのロットを施術ごとに紐づけてロットから顧客を逆引きでき、パッチテストの規則は製品ブランドごとに設定します。記録は端末内。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartellalash/", "image": "https://freetokyo.github.io/web/kartellalash/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "カルテラ ラッシュ（Kartella Lash）", "item": "https://freetokyo.github.io/web/kartellalash/"}]}</script>
@@ -511,6 +522,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>搭載していないもの</h2>
 <p>予約・決済・売上管理・スタッフ共有・クラウド同期・デザイン提案はありません。気象データも取得しません。</p><p>本アプリは記録のための道具です。施術の可否や適否を判断したり、アレルギー・法令・保険の要件について助言したりするものではありません。判断は施術者が行うものです。</p>
 </div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="顧客の一覧。氏名の頭文字と前回来店日が並び、アレルギー等の注記が赤いバッジで付く" width="360" height="782" loading="lazy" decoding="async"><figcaption>顧客ごとに、施術の記録を 記録は端末の中に残ります</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="ロット逆引き。使ったグルーのロット番号から、そのロットを使った施術と連絡できる顧客の件数をたどる" width="360" height="782" loading="lazy" decoding="async"><figcaption>ロットから、顧客をたどる 連絡できる人と、抜けている件数も</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="パッチテストの一覧。顧客ごとにテストした日と製品名、期限切れ・あと2週間・残り70日などの状態が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>パッチテストは製品ごとに テストした日の規則を一緒に保存</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>カルテラ ラッシュ（Kartella Lash）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

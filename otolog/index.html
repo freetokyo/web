@@ -7,6 +7,7 @@
 <meta name="description" content="オトログは、ピアノ・音楽教室の個人講師のための生徒カルテアプリ。教則本の進度・課題曲・レッスンメモ・月謝の受領を、生徒の情報を端末の外に出さずに管理。登録不要・データ収集ゼロ・買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/otolog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/otolog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/otolog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/otolog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/otolog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "オトログ（Otolog）", "description": "オトログは、ピアノ・音楽教室の個人講師のための生徒カルテアプリ。教則本の進度・課題曲・レッスンメモ・月謝の受領を、生徒の情報を端末の外に出さずに管理。登録不要・データ収集ゼロ・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/otolog/", "image": "https://freetokyo.github.io/web/otolog/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791038062"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "オトログ（Otolog）", "item": "https://freetokyo.github.io/web/otolog/"}]}</script>
@@ -499,6 +510,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       </div>
       <p class="note">iPhone と iPad に対応（iOS 26 以降）。日本語・英語ほか36言語で表示できます。</p>
     </section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。今月の月謝が未受領の生徒が2人いるという警告と、今日・明日のレッスンが生徒名・時刻・前回の様子つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>今日と明日の生徒が 前回のメモ付きで並ぶ</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="生徒の詳細。進度・課題曲・メモ・出欠のタブがあり、ブルグミュラー25（12/25曲）ハノン（20/60曲）自作ドリル（6/24曲）の進捗バーが並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>課題曲もレッスンメモも 生徒カルテに1つに</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="進度のグリッド。ブルグミュラー25の全25曲を升目で並べ、合格・練習中・未着手を色で分ける" width="360" height="782" loading="lazy" decoding="async"><figcaption>教則本の進度は タップ1回で記録</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>オトログ（Otolog）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

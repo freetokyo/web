@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/kedgelog/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kedgelog/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kedgelog/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kedgelog/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kedgelog/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kedgelog/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kedgelog/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kedgelog/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/kedgelog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kedgelog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kedgelog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kedgelog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kedgelog/support.html" />
+  </url>
 </urlset>

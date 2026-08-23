@@ -7,6 +7,7 @@
 <meta name="description" content="Log stovetop, hand-net and small-roaster coffee roasts as curves, then roast alongside your last one. No probe required, automatic ROR/DTR, fully offline, one-time purchase.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/hazelog/en/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/hazelog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hazelog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hazelog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hazelog/">
@@ -442,6 +443,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HazeLog", "description": "Log stovetop, hand-net and small-roaster coffee roasts as curves, then roast alongside your last one. No probe required, automatic ROR/DTR, fully offline, one-time purchase.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/hazelog/en/", "image": "https://freetokyo.github.io/web/hazelog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791478115"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "HazeLog", "item": "https://freetokyo.github.io/web/hazelog/en/"}]}</script>
@@ -545,6 +556,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <details><summary>Can I correct a record afterwards?</summary><p>Yes. Open a roast and tap Edit to change the date, charge weight, roasted weight, roast level and bean, and to fix or delete individual event times and temperatures. Changing the charge weight adjusts your green bean stock automatically.</p></details>
   <details><summary>Are photos uploaded anywhere?</summary><p>No. Photos are stored only on your device, and you decide whether they go into a backup. HazeLog uses the standard iOS picker, so it never asks for photo library access.</p></details>
 </div></section>
+
 <section class="ftcta">
 <h2>HazeLog</h2>
 <p>Available on the App Store, for iPhone and iPad.</p>

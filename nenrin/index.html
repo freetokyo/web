@@ -7,6 +7,7 @@
 <meta name="description" content="樹種と仕立て段階、そして観察した記録から、盆栽一本ごとの手入れ時期を組み立てる iOS / iPadOS アプリ。30樹種を学名で管理し34言語に対応。アカウント登録は不要です。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/nenrin/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/nenrin/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Nenrin（ネンリン）", "description": "樹種と仕立て段階、そして観察した記録から、盆栽一本ごとの手入れ時期を組み立てる iOS / iPadOS アプリ。30樹種を学名で管理し34言語に対応。アカウント登録は不要です。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/nenrin/", "image": "https://freetokyo.github.io/web/nenrin/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Nenrin（ネンリン）", "item": "https://freetokyo.github.io/web/nenrin/"}]}</script>
@@ -490,6 +501,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>ご確認ください</h2><p>盆栽の手入れの手法には、<strong>流派・地域・専門家による見解の差があります</strong>。本アプリが示す作業名・段階の区分・季節の時期は、そうした手法が存在するという事実の提示であり、内容の正確性を保証するものではありません。<strong>園芸上の助言ではありません。</strong></p><p>時期はあくまで出発点です。最後は、目の前の樹を見てご判断ください。</p></div></section>
 
 <section><div class="wrap"><h2>対応環境</h2><p>iOS 17.0 以降の iPhone / iPad。iPad では横向きで樹の一覧と詳細を2カラムで表示します。表示言語は34言語です。気象は Apple Weather によります。</p></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="今週の画面。クロマツ・アカマツ・シンパクの各樹について、今週の作業（芽切り・骨格づくり）と記録するボタンが並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>今週やることだけ 盆栽の手入れを1枚ずつ</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="樹ごとの手入れ暦。クロマツの芽摘み・古葉取り・芽かき・冬の保護・病害虫の防除が、それぞれの時期の範囲つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>作業は日付でなく季節で 芽切り・針金・植え替え</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="前年比。芽切り6日早い・施肥4日早い・芽の動き9日早いなど、昨年との比較を年ごとの点で並べる" width="360" height="782" loading="lazy" decoding="async"><figcaption>去年より何日早いか 年ごとのずれが数で出る</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Nenrin（ネンリン）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

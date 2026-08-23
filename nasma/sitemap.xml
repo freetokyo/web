@@ -1,15 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/nasma/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/ar/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/ar/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/ar/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/ar/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nasma/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/nasma/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/ar/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/ar/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nasma/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nasma/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/nasma/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nasma/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nasma/support.html" />
+  </url>
 </urlset>

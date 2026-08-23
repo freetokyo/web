@@ -7,6 +7,7 @@
 <meta name="description" content="醸造したバッチを1つの台帳に">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/vatlog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/vatlog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/vatlog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/vatlog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/vatlog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Vatlog（ヴァットログ）", "description": "醸造したバッチを1つの台帳に", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/vatlog/", "image": "https://freetokyo.github.io/web/vatlog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Vatlog（ヴァットログ）", "item": "https://freetokyo.github.io/web/vatlog/"}]}</script>
@@ -555,6 +566,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <li>測定機器との連携はありません</li>
     <li>アルコール分が基準を満たしているかどうかを、このアプリが判定することはできません</li>
   </ul>
+</section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="バッチの一覧。進行中のテーブルワイン11.29% ABV・ダークラガー4.86% ABV と、完了したロゼ・ペアペリーが日数つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>ビール・ワイン・シードル・ミード を1つの醸造記録に</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="比重の換算。SG 1.052 を入れると °Bx 12.86・°P 12.86 に換算される（NBS Circular 440 による）" width="360" height="782" loading="lazy" decoding="async"><figcaption>比重の換算は SG・Brix・Plato 出典つきで表示</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="バッチの詳細。酒種ビール、瓶詰め済み、仕込み日・瓶詰め日・完成容量38L・OG 12.2 °Bx・FG 2.6 °Bx と、計算値の ABV 5.12%・発酵度79.6%" width="360" height="782" loading="lazy" decoding="async"><figcaption>比重・温度・アルコール度数を 発酵ログごとに記録</figcaption></figure></div>
 </section>
 <section class="ftcta">
 <h2>Vatlog（ヴァットログ）</h2>

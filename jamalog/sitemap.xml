@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/jamalog/</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/jamalog/privacy.html</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/jamalog/terms.html</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/jamalog/support.html</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/jamalog/ar/</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/jamalog/ja/</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/jamalog/ar/support.html</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/jamalog/ja/support.html</loc><lastmod>2026-08-03</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/jamalog/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/jamalog/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/jamalog/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/jamalog/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/jamalog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/jamalog/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/jamalog/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/ar/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/jamalog/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/jamalog/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/jamalog/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/jamalog/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/jamalog/ja/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/jamalog/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/jamalog/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/jamalog/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/jamalog/support.html" />
+  </url>
 </urlset>

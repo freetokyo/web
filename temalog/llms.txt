@@ -1,0 +1,18 @@
+# テマログ（Temalog）
+
+> 建設業の一人親方（個人事業主）向けの出面・立替材料記録 iOS アプリ。人工（にんく）を単位に現場ごとの単価で金額を出し、立て替えた材料をレシート写真つきで残す。単価改定は履歴として積み、締め確定時に金額をスナップショットで凍結するため、すでに元請へ出した請求根拠が後から書き換わらない。締め日は現場ごとに設定でき、支払サイトから入金予定日を生成する。完全ローカル・アカウント不要・買い切り。日本語 / English。
+
+Web: https://freetokyo.github.io/web/temalog/
+App Store: https://apps.apple.com/app/id6799075773
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.0 / 対応: iOS 18.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/temalog/
+- サポート / FAQ: https://freetokyo.github.io/web/temalog/support.html
+- 利用規約: https://freetokyo.github.io/web/temalog/terms.html
+- プライバシー: https://freetokyo.github.io/web/temalog/privacy.html
+- en: https://freetokyo.github.io/web/temalog/en/

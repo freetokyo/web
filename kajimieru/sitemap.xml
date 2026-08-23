@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/kajimieru/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kajimieru/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kajimieru/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kajimieru/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kajimieru/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kajimieru/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kajimieru/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kajimieru/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/kajimieru/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kajimieru/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/support.html" />
+  </url>
 </urlset>

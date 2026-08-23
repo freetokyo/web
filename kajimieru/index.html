@@ -7,6 +7,7 @@
 <meta name="description" content="「名もなき家事」130項目を11カテゴリに整理し、ふたりの分担を10分で件数と割合にする iOS アプリ。該当しない家事は分母から外せます。完全オフライン・アカウント不要・買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kajimieru/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kajimieru/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kajimieru/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kajimieru/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kajimieru/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "カジミエル（Kajimieru）", "description": "「名もなき家事」130項目を11カテゴリに整理し、ふたりの分担を10分で件数と割合にする iOS アプリ。該当しない家事は分母から外せます。完全オフライン・アカウント不要・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/kajimieru/", "image": "https://freetokyo.github.io/web/kajimieru/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797382805"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "カジミエル（Kajimieru）", "item": "https://freetokyo.github.io/web/kajimieru/"}]}</script>
@@ -518,6 +529,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>対応</h2>
 <p>iPhone / iPad（iOS 17.0 以降）。日本語・英語。
 ダークモード、Dynamic Type、VoiceOver に対応しています。</p>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="家事リスト。128項目のうち111項目を入力済みという進捗と、食事・調理関連の各家事に「あなた／パートナー／ふたり」の担当が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>名もなき家事を128項目で</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="1件ずつ入力する画面。ゴミ出し（生ゴミ含む）について、あなた・パートナー・ふたり・該当なしから選ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>1件ずつ、10分で</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="いまの分担。全体で あなた56件43.8%／パートナー38件29.7%／ふたり17件 を帯グラフで示し、カテゴリ別の内訳が続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>分担が数字で見える</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>カジミエル（Kajimieru）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

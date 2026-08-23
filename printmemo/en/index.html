@@ -7,6 +7,7 @@
 <meta name="description" content="PrintSummary organizes school handouts just by snapping a photo. OCR reads the subject, document type, deadline, and items to bring, then tracks submission status and review sets — all on your device.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/printmemo/en/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/printmemo/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/">
@@ -442,6 +443,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "PrintSummary", "description": "PrintSummary organizes school handouts just by snapping a photo. OCR reads the subject, document type, deadline, and items to bring, then tracks submission status and review sets — all on your device.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/printmemo/en/", "image": "https://freetokyo.github.io/web/printmemo/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761879860", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "PrintSummary", "item": "https://freetokyo.github.io/web/printmemo/en/"}]}</script>
@@ -493,38 +504,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         </div>
         <div class="section-card" style="margin:0;">
 
-<section class="ftshot-gallery" aria-label="App screenshots">
 
-<section class="ftfacts" aria-label="App overview">
-  <h2>App overview</h2>
-  <table>
-    <tr><th>Requires</th><td>iOS 17.6 or later</td></tr>
-    <tr><th>Price</th><td>Free (In-App Purchases)</td></tr>
-    <tr><th>Version</th><td>1.1</td></tr>
-    <tr><th>Size</th><td>About 4 MB</td></tr>
-    <tr><th>Category</th><td>Education</td></tr>
-    <tr><th>Age rating</th><td>4+</td></tr>
-    <tr><th>Made for</th><td>Parents managing school handouts</td></tr>
-    <tr><th>Data handling</th><td>Core processing stays on device</td></tr>
-    <tr><th>Developer</th><td>freetokyo</td></tr>
-    <tr><th>Last updated</th><td>2026-05-28</td></tr>
-  </table>
-</section>
-<section class="fthowto" aria-label="How to use it (3 steps)">
-  <h2>How to use it (3 steps)</h2>
-  <ol>
-    <li>Photograph the handout</li>
-    <li>Let OCR extract the details and the deadline</li>
-    <li>Stay on top of it with reminders and search</li>
-  </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
-</section>
-  <h2>Inside the app</h2>
-  <div class="ftshot-row">
-    <figure class="ftshot-item"><img src="../shots/01.png" alt="PrintSummary timeline list of school handouts" width="360" height="782" loading="lazy" decoding="async"><figcaption>Handout list</figcaption></figure>
-    <figure class="ftshot-item"><img src="../shots/02.png" alt="Photographing a handout and organizing it with OCR" width="360" height="782" loading="lazy" decoding="async"><figcaption>Snap and organize</figcaption></figure>
-    <figure class="ftshot-item"><img src="../shots/03.png" alt="Deadline extraction and handout search screen" width="360" height="782" loading="lazy" decoding="async"><figcaption>Deadlines and search</figcaption></figure>
-  </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
           <h2>Product summary</h2>
@@ -577,6 +557,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </div>
 
     <p class="footer-note">PrintSummary Marketing Page · <a href="https://freetokyo.github.io/web/">freetokyo</a></p>
+
 <section class="ftcta">
 <h2>PrintSummary</h2>
 <p>Available on the App Store, for iPhone and iPad.</p>

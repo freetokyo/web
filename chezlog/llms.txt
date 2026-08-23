@@ -1,0 +1,17 @@
+# Chezlog（シェログ）
+
+> 出張シェフ（パーソナルシェフ・ケータリング）のための案件台帳 iOS アプリ。顧客宅ごとにコンロの口数・オーブン・調理器具・食物アレルギーや禁忌・前回提供した料理を記録し、同じ料理を続けて出さないよう提供履歴で照合する。献立を決めると必要な食材が買い物リストになり、提供時刻から逆算した当日の進行表を組み立てる。手が離せない工程は同じ時刻に重ならないよう配置する。記録は端末内のみ・アカウント不要・買い切り。UI 33言語。
+
+Web: https://freetokyo.github.io/web/chezlog/
+App Store: https://apps.apple.com/app/id6800338366
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.0 / 対応: iOS 17.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/chezlog/
+- サポート / FAQ: https://freetokyo.github.io/web/chezlog/support.html
+- 利用規約: https://freetokyo.github.io/web/chezlog/terms.html
+- プライバシー: https://freetokyo.github.io/web/chezlog/privacy.html
+- en: https://freetokyo.github.io/web/chezlog/en/

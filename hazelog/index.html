@@ -7,6 +7,7 @@
 <meta name="description" content="手網・手鍋・小型焙煎機の焙煎を曲線で記録し、前回の曲線と並走して再現するiPhoneアプリ。温度プローブ不要、ROR/DTR自動計算、完全オフライン・買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/hazelog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/hazelog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/hazelog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/hazelog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/hazelog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ハゼログ（HazeLog）", "description": "手網・手鍋・小型焙煎機の焙煎を曲線で記録し、前回の曲線と並走して再現するiPhoneアプリ。温度プローブ不要、ROR/DTR自動計算、完全オフライン・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/hazelog/", "image": "https://freetokyo.github.io/web/hazelog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791478115"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "ハゼログ（HazeLog）", "item": "https://freetokyo.github.io/web/hazelog/"}]}</script>
@@ -546,6 +557,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <details><summary>あとから記録を直せますか？</summary><p>直せます。焙煎の詳細画面から「編集」で、日時・投入量・焙煎後重量・焙煎度・生豆に加えて、イベントの時刻や温度も修正でき、不要なイベントは1件ずつ削除できます。投入量を変えると生豆の在庫も自動で調整されます。</p></details>
   <details><summary>写真は外部に送信されますか？</summary><p>送信しません。写真は端末内にのみ保存され、バックアップに含めるかどうかもご自身で選べます。なお写真の選択には iOS 標準のピッカーを使うため、写真ライブラリへのアクセス許可も求めません。</p></details>
 </div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="焙煎中の画面。経過5分34秒・163℃を大きく示し、温度カーブを折れ線で描きながら、1ハゼ開始や煎り止めをボタンで記録する" width="360" height="782" loading="lazy" decoding="async"><figcaption>前回の自分と、並走する焙煎。 実測とゴーストを重ねて再現へ</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="分析。1回の焙煎のロースト曲線と ROR（上昇率）を並べ、DTR・重量減率・乾燥・メイラードの各指標を百分率で出す" width="360" height="782" loading="lazy" decoding="async"><figcaption>ROR・DTRを自動で計算 温度計がなくても記録できる</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="ホーム。最近の焙煎が豆の名前・日付・DTR 付きで並び、下部に「焙煎を始める」ボタン" width="360" height="782" loading="lazy" decoding="async"><figcaption>自家焙煎はワンタップで記録 曲線とDTRが一覧に積み上がる</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>ハゼログ（HazeLog）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

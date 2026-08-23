@@ -1,12 +1,13 @@
 # Trero
 
-> 筋トレ・ワークアウト記録アプリ。アカウント登録制（ゲストでも試せる）で、記録は Firebase 上に保存され機種変更後も復元できます（任意でHealthKit連携）。対象: 筋トレ・ワークアウトを記録する人。
+> iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。35 言語対応のフラッグシップアプリ。
 
-App Store: https://apps.apple.com/app/id6760746164
 Web: https://freetokyo.github.io/web/trero/
-開発者: freetokyo
-バージョン: 1.5 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-08
+App Store: https://apps.apple.com/app/id6760746164
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.5.0 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 前回値を見ながらの記録
@@ -24,7 +25,41 @@ Web: https://freetokyo.github.io/web/trero/
 3. 進捗と体組成を分析する
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/trero/
 - サポート / FAQ: https://freetokyo.github.io/web/trero/support.html
-- プライバシー: https://freetokyo.github.io/web/trero/privacy.html
 - 利用規約: https://freetokyo.github.io/web/trero/terms.html
+- プライバシー: https://freetokyo.github.io/web/trero/privacy.html
+- ar: https://freetokyo.github.io/web/trero/ar/
+- ca: https://freetokyo.github.io/web/trero/ca/
+- cs: https://freetokyo.github.io/web/trero/cs/
+- da: https://freetokyo.github.io/web/trero/da/
+- de: https://freetokyo.github.io/web/trero/de/
+- el: https://freetokyo.github.io/web/trero/el/
+- en: https://freetokyo.github.io/web/trero/en/
+- es: https://freetokyo.github.io/web/trero/es/
+- fi: https://freetokyo.github.io/web/trero/fi/
+- fr: https://freetokyo.github.io/web/trero/fr/
+- he: https://freetokyo.github.io/web/trero/he/
+- hi: https://freetokyo.github.io/web/trero/hi/
+- hr: https://freetokyo.github.io/web/trero/hr/
+- hu: https://freetokyo.github.io/web/trero/hu/
+- id: https://freetokyo.github.io/web/trero/id/
+- it: https://freetokyo.github.io/web/trero/it/
+- ko: https://freetokyo.github.io/web/trero/ko/
+- ms: https://freetokyo.github.io/web/trero/ms/
+- nb: https://freetokyo.github.io/web/trero/nb/
+- nl: https://freetokyo.github.io/web/trero/nl/
+- pl: https://freetokyo.github.io/web/trero/pl/
+- pt-BR: https://freetokyo.github.io/web/trero/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/trero/pt-PT/
+- ro: https://freetokyo.github.io/web/trero/ro/
+- ru: https://freetokyo.github.io/web/trero/ru/
+- sk: https://freetokyo.github.io/web/trero/sk/
+- sv: https://freetokyo.github.io/web/trero/sv/
+- th: https://freetokyo.github.io/web/trero/th/
+- tr: https://freetokyo.github.io/web/trero/tr/
+- uk: https://freetokyo.github.io/web/trero/uk/
+- vi: https://freetokyo.github.io/web/trero/vi/
+- zh-Hans: https://freetokyo.github.io/web/trero/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/trero/zh-Hant/

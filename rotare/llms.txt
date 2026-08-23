@@ -1,0 +1,16 @@
+# Rosetare（ロターレ）
+
+> バラの防除記録のための iOS / iPadOS アプリ。散布のたびに作用機構グループコードを記録し、同じグループが直前（Premium は直近3回）の散布と重なっていないかを時系列で照合して、重なりを事実として提示する（良し悪しは判定しない）。グループコードは利用者が製品ラベルから入力する方式で、アプリは有効成分との対応表も製品名のデータベースも持たない。黒星病・うどんこ病・べと病・さび病・灰色かび病の感染条件を、統合スコアを作らず5つ独立に「条件成立／不成立／データ不足」の3状態で表示する。葉面の濡れ時間は気温と相対湿度からの推定値（誤差 約±1.5〜2時間）であることを常設で明示し、黒星病に検証済みの予測モデルが無いこと・うどんこ病の指標がブドウうどんこ病からの援用であることも画面上で開示する。散布記録はゾーンに紐づき、グループコードは記録時点のスナップショットとして保存される。場所は現在地・地名検索・緯度経度の3経路で、位置情報を許可しなくても全機能が動く。気象取得のため Apple WeatherKit と通信するが、アカウント登録は無く開発者のサーバーは存在しない。CSV 書き出しは無料。
+
+Web: https://freetokyo.github.io/web/rotare/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/rotare/
+- サポート / FAQ: https://freetokyo.github.io/web/rotare/support.html
+- 利用規約: https://freetokyo.github.io/web/rotare/terms.html
+- プライバシー: https://freetokyo.github.io/web/rotare/privacy.html
+- en: https://freetokyo.github.io/web/rotare/en/

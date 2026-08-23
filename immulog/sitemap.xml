@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/immulog/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/immulog/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/immulog/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/immulog/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/immulog/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/immulog/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/immulog/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/immulog/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/immulog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/immulog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/support.html" />
+  </url>
 </urlset>

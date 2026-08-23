@@ -1,12 +1,13 @@
 # Hanro
 
-> 配達ドライバーの収支管理アプリ。完全オフライン（iCloud にサインインしていれば端末間で同期）。対象: フードデリバリー・軽貨物・タクシードライバー。
+> 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。
 
-App Store: https://apps.apple.com/jp/app/id6771629040
 Web: https://freetokyo.github.io/web/hanro/
-開発者: freetokyo
-バージョン: 1.2 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり・価格はアプリ内のプラン画面を参照）
-最終更新: 2026-07
+App Store: https://apps.apple.com/app/id6771629040
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.3 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 売上・経費の記録（マルチプラットフォーム対応）
@@ -27,7 +28,41 @@ Web: https://freetokyo.github.io/web/hanro/
 3. 対象年を選んで確定申告用CSVを出力する
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/hanro/
 - サポート / FAQ: https://freetokyo.github.io/web/hanro/support.html
-- プライバシー: https://freetokyo.github.io/web/hanro/privacy.html
 - 利用規約: https://freetokyo.github.io/web/hanro/terms.html
+- プライバシー: https://freetokyo.github.io/web/hanro/privacy.html
+- ar: https://freetokyo.github.io/web/hanro/ar/
+- ca: https://freetokyo.github.io/web/hanro/ca/
+- cs: https://freetokyo.github.io/web/hanro/cs/
+- da: https://freetokyo.github.io/web/hanro/da/
+- de: https://freetokyo.github.io/web/hanro/de/
+- el: https://freetokyo.github.io/web/hanro/el/
+- en: https://freetokyo.github.io/web/hanro/en/
+- es: https://freetokyo.github.io/web/hanro/es/
+- fi: https://freetokyo.github.io/web/hanro/fi/
+- fr: https://freetokyo.github.io/web/hanro/fr/
+- he: https://freetokyo.github.io/web/hanro/he/
+- hi: https://freetokyo.github.io/web/hanro/hi/
+- hr: https://freetokyo.github.io/web/hanro/hr/
+- hu: https://freetokyo.github.io/web/hanro/hu/
+- id: https://freetokyo.github.io/web/hanro/id/
+- it: https://freetokyo.github.io/web/hanro/it/
+- ko: https://freetokyo.github.io/web/hanro/ko/
+- ms: https://freetokyo.github.io/web/hanro/ms/
+- nb: https://freetokyo.github.io/web/hanro/nb/
+- nl: https://freetokyo.github.io/web/hanro/nl/
+- pl: https://freetokyo.github.io/web/hanro/pl/
+- pt-BR: https://freetokyo.github.io/web/hanro/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/hanro/pt-PT/
+- ro: https://freetokyo.github.io/web/hanro/ro/
+- ru: https://freetokyo.github.io/web/hanro/ru/
+- sk: https://freetokyo.github.io/web/hanro/sk/
+- sv: https://freetokyo.github.io/web/hanro/sv/
+- th: https://freetokyo.github.io/web/hanro/th/
+- tr: https://freetokyo.github.io/web/hanro/tr/
+- uk: https://freetokyo.github.io/web/hanro/uk/
+- vi: https://freetokyo.github.io/web/hanro/vi/
+- zh-Hans: https://freetokyo.github.io/web/hanro/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/hanro/zh-Hant/

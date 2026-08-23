@@ -7,6 +7,7 @@
 <meta name="description" content="出張シェフの案件台帳。顧客宅のキッチン・禁忌・提供履歴から、買い物リストと提供時刻からの逆算進行を組み立てます。記録は端末内。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/chezlog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/chezlog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/chezlog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/chezlog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/chezlog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Chezlog（シェログ）", "description": "出張シェフの案件台帳。顧客宅のキッチン・禁忌・提供履歴から、買い物リストと提供時刻からの逆算進行を組み立てます。記録は端末内。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/chezlog/", "image": "https://freetokyo.github.io/web/chezlog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6800338366"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Chezlog（シェログ）", "item": "https://freetokyo.github.io/web/chezlog/"}]}</script>
@@ -521,6 +532,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>集客・マッチング・決済・栄養計算・顧客との共有はありません。税額の計算も行いません。</p>
 <p>本アプリは記録と段取りのための道具です。食物アレルギーによる事故の防止を保証するものではなく、医療・栄養・法務の助言を行うものでもありません。</p>
 </div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="進行表。提供時刻から逆算した工程が17:02「野菜を切る」から時刻順に並び、実所要時間2時間28分を示す" width="360" height="782" loading="lazy" decoding="async"><figcaption>提供時刻から 逆算した進行表</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="買い物リスト。案件をまとめた見積合計 ¥6,240 と、青果・精肉・乳製品など売り場別の必要数量が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>買い出しは一度で 落としなく</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="顧客の詳細。禁忌・嗜好、世帯人数、この家のキッチン台帳、提供履歴への導線が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>前回そこで 出した料理</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Chezlog（シェログ）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

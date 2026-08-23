@@ -1,0 +1,17 @@
+# Inkarte（インカルテ）
+
+> タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書 iOS / iPadOS アプリ。カウンセリングから電子署名付き同意書（PDF）まで一台で管理し、顧客情報を端末の外に出さない。完全オフライン・買い切り。
+
+Web: https://freetokyo.github.io/web/inkarte/
+App Store: https://apps.apple.com/app/id6792252166
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 17.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/inkarte/
+- サポート / FAQ: https://freetokyo.github.io/web/inkarte/support.html
+- 利用規約: https://freetokyo.github.io/web/inkarte/terms.html
+- プライバシー: https://freetokyo.github.io/web/inkarte/privacy.html
+- en: https://freetokyo.github.io/web/inkarte/en/

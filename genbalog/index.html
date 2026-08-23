@@ -7,6 +7,7 @@
 <meta name="description" content="Genbalog は現場職人のための報告書アプリ。現場写真をワンタップで A4 PDF にまとめ、GPS タグ・手書きメモ・カスタムテンプレートに対応。完全オフライン・登録不要。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/genbalog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/genbalog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/genbalog/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/genbalog/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/genbalog/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Genbalog", "description": "Genbalog は現場職人のための報告書アプリ。現場写真をワンタップで A4 PDF にまとめ、GPS タグ・手書きメモ・カスタムテンプレートに対応。完全オフライン・登録不要。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/genbalog/", "image": "https://freetokyo.github.io/web/genbalog/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770864162", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Genbalog", "item": "https://freetokyo.github.io/web/genbalog/"}]}</script>
@@ -547,38 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </section>
 
 
-<section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
 
-<section class="ftfacts" aria-label="アプリ概要">
-  <h2>アプリ概要</h2>
-  <table>
-    <tr><th>対応OS</th><td>iOS 17.0 以降（iPhone・iPad）</td></tr>
-    <tr><th>価格</th><td>無料（アプリ内課金あり）</td></tr>
-    <tr><th>バージョン</th><td>1.2</td></tr>
-    <tr><th>サイズ</th><td>約 2 MB</td></tr>
-    <tr><th>カテゴリ</th><td>ビジネス</td></tr>
-    <tr><th>対象年齢</th><td>4+</td></tr>
-    <tr><th>対象ユーザー</th><td>建設現場の職人・施工管理</td></tr>
-    <tr><th>データの扱い</th><td>完全オフライン・登録不要・データ収集なし</td></tr>
-    <tr><th>開発者</th><td>freetokyo</td></tr>
-    <tr><th>最終更新</th><td>2026年7月</td></tr>
-  </table>
-</section>
-<section class="fthowto" aria-label="使い方（3ステップ）">
-  <h2>使い方（3ステップ）</h2>
-  <ol>
-    <li>現場写真を撮影する</li>
-    <li>写真に注釈・手書きメモを追加</li>
-    <li>ワンタップでA4 PDF報告書を生成</li>
-  </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
-</section>
-  <h2>アプリの画面</h2>
-  <div class="ftshot-row">
-    <figure class="ftshot-item"><img src="shots/01.png" alt="Genbalog 現場案件の一覧画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>案件一覧</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/02.png" alt="現場写真への手書きアノテーション編集画面" width="360" height="780" loading="lazy" decoding="async"><figcaption>写真に注釈</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/03.png" alt="現場写真をまとめたA4 PDF報告書のプレビュー" width="360" height="780" loading="lazy" decoding="async"><figcaption>A4 PDF報告書</figcaption></figure>
-  </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
 <section class="alt">
@@ -702,6 +682,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <div style="margin-top:32px;text-align:center;">
     <a href="support.html" class="btn-secondary" data-i18n="faq.more">他の質問を見る →</a>
   </div>
+</section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="案件の一覧。現場ごとに住所・顧客名・写真枚数・進行状況が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>案件一覧</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="写真編集。現場写真にペンで注釈を描き込む画面。ペン・色・太さのツールバーが下部にある" width="360" height="782" loading="lazy" decoding="async"><figcaption>写真に注釈</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="PDF プレビュー。現場名と日付の見出し付きで、注釈した写真がレイアウトされた報告書" width="360" height="782" loading="lazy" decoding="async"><figcaption>A4 PDF報告書</figcaption></figure></div>
 </section>
 <section class="ftcta">
 <h2>Genbalog</h2>

@@ -7,6 +7,7 @@
 <meta name="description" content="バラの防除記録から、同じ作用機構グループが続けて使われていないかを時系列で照合する iOS / iPadOS アプリ。作用機構グループは製品ラベルからご自身で入力します。5つの病害の感染条件を別々に表示。散布を勧めることはしません。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/rotare/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/rotare/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/rotare/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/rotare/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/rotare/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Rosetare（ロターレ）", "description": "バラの防除記録から、同じ作用機構グループが続けて使われていないかを時系列で照合する iOS / iPadOS アプリ。作用機構グループは製品ラベルからご自身で入力します。5つの病害の感染条件を別々に表示。散布を勧めることはしません。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/rotare/", "image": "https://freetokyo.github.io/web/rotare/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Rosetare（ロターレ）", "item": "https://freetokyo.github.io/web/rotare/"}]}</script>
@@ -496,6 +507,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>ご確認ください</h2><p>Rosetare は記録のための道具です。<strong>散布を勧めるものではなく、製品ラベルや専門家の助言に代わるものでもありません。</strong>病害の条件の表示は、公表されている感染条件にもとづく推定であって、検証された予測ではありません。<strong>モデルの出力は、ご自身で植物を観察することの代替にはなりません。</strong></p><p>農薬の使用にあたっては、必ず製品ラベルを読み、お住まいの地域の規則に従ってください。</p></div></section>
 
 <section><div class="wrap"><h2>対応環境</h2><p>iOS 17.0 以降の iPhone / iPad。表示言語は英語・日本語・ドイツ語・フランス語・スペイン語・イタリア語・オランダ語・ポルトガル語（ブラジル）の8言語です。気象は Apple Weather によります。</p></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。最近の散布が日付・薬剤名・系統番号つきで並び、薬剤ライブラリと庭への導線が続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>散布のたびに グループコードを記録</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="ローテーション。グループ別の散布履歴と、同じグループが続いているという警告、今シーズン使ったグループの回数" width="360" height="782" loading="lazy" decoding="async"><figcaption>同じグループが、また 回ってきていないか</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="リスク。黒星病とうどんこ病について、感染が成立しやすい条件が続いているという判定を、観測時間・しきい値・気温とともに示す" width="360" height="782" loading="lazy" decoding="async"><figcaption>5つの病害を 別々に表示します</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Rosetare（ロターレ）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

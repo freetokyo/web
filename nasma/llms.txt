@@ -1,13 +1,18 @@
-# Nasma
+# نسمة / Nasma（ナスマ）
 
-Nasma logs cigarettes and shisha (waterpipe) sessions in their own units, shows the money and time kept, and supports Ramadan and the Hijri calendar. Everything is stored on the device: no account, no network, no ads. One-time purchase, no subscription.
+> 紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録する iOS アプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
 
-- Home: https://freetokyo.github.io/web/nasma/
-- Arabic: https://freetokyo.github.io/web/nasma/ar/
-- English: https://freetokyo.github.io/web/nasma/en/
-- Privacy: https://freetokyo.github.io/web/nasma/privacy.html
-- Terms: https://freetokyo.github.io/web/nasma/terms.html
-- Support: https://freetokyo.github.io/web/nasma/support.html
-- Contact: freetokyo2020@yahoo.co.jp
+Web: https://freetokyo.github.io/web/nasma/
+App Store: https://apps.apple.com/app/id6797344961
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 18.0 以降
+対応言語（Webページ）: ja / ar / en
 
-Health content is general information presented with sources. It is not intended for diagnosis, treatment or prevention.
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/nasma/
+- サポート / FAQ: https://freetokyo.github.io/web/nasma/support.html
+- 利用規約: https://freetokyo.github.io/web/nasma/terms.html
+- プライバシー: https://freetokyo.github.io/web/nasma/privacy.html
+- ar: https://freetokyo.github.io/web/nasma/ar/
+- en: https://freetokyo.github.io/web/nasma/en/

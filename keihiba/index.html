@@ -7,6 +7,7 @@
 <meta name="description" content="経費レシート整理 × ローカル完結">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/keihiba/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/keihiba/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/keihiba/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/keihiba/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/keihiba/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ケイヒバ（Keihiba）", "description": "経費レシート整理 × ローカル完結", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/keihiba/", "image": "https://freetokyo.github.io/web/keihiba/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6779895529", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "ケイヒバ（Keihiba）", "item": "https://freetokyo.github.io/web/keihiba/"}]}</script>
@@ -604,6 +615,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <h2 class="section-title" data-ja="ご注意" data-en="Please note">ご注意</h2>
   <p class="section-lead" data-ja="本アプリは税務・法律の助言ではなく、正式な電子保存の代替を保証するものではありません。電子帳簿保存法の要件への対応を支援するツールであり、最終的な適法性や保存方法の判断は、利用者ご自身および税理士にご確認ください。文字認識・抽出結果の正確性は保証されません。"
      data-en="This app is not tax or legal advice and does not guarantee a substitute for official electronic storage. It is a tool that supports compliance with Japan's electronic bookkeeping requirements; confirm legality and storage methods with yourself and a tax accountant. Recognition and extraction accuracy is not guaranteed.">本アプリは税務・法律の助言ではなく、正式な電子保存の代替を保証するものではありません。電子帳簿保存法の要件への対応を支援するツールであり、最終的な適法性や保存方法の判断は、利用者ご自身および税理士にご確認ください。文字認識・抽出結果の正確性は保証されません。</p>
+</section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="レシート一覧。今月の合計 ¥13,380 と、クラウド事務用品 ¥8,800、カフェ ¥3,300 などのレシートが並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>撮るだけで、経費が片づく</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="レシートの詳細。取引日付・取引金額・取引先名に加えて、適用税率10%対象・消費税額・登録番号（インボイス）、勘定科目と支払方法を並べる" width="360" height="782" loading="lazy" decoding="async"><figcaption>原本を見ながら確認</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="集計。今月の合計（税込）¥13,380 と件数3件、勘定科目別の棒グラフと通信費・会議費・消耗品費の内訳" width="360" height="782" loading="lazy" decoding="async"><figcaption>科目別の月次・年次集計</figcaption></figure></div>
 </section>
 <section class="ftcta">
 <h2>ケイヒバ（Keihiba）</h2>

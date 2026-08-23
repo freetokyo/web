@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/kartellapets/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellapets/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellapets/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellapets/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellapets/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellapets/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellapets/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/kartellapets/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/kartellapets/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/kartellapets/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/support.html" />
+  </url>
 </urlset>

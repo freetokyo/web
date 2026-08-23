@@ -1,12 +1,13 @@
-# プリサマ（PrintSummary）
+# PrintSummary / プリサマ
 
-> 学校プリント整理アプリ。主要処理は端末内で完結。対象: 学校プリントを管理したい保護者。
+> 学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理する iOS アプリ。家族カレンダー連携対応。
 
-App Store: https://apps.apple.com/jp/app/id6761879860
 Web: https://freetokyo.github.io/web/printmemo/
-開発者: freetokyo
-バージョン: 1.1 / 対応: iOS 17.6 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6761879860
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.3.0 / 対応: iOS 17.6 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / en
 
 ## 主な機能
 - プリント撮影とOCR
@@ -22,7 +23,9 @@ Web: https://freetokyo.github.io/web/printmemo/
 3. 通知と検索で見逃さない
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/printmemo/
 - サポート / FAQ: https://freetokyo.github.io/web/printmemo/support.html
-- プライバシー: https://freetokyo.github.io/web/printmemo/privacy.html
 - 利用規約: https://freetokyo.github.io/web/printmemo/terms.html
+- プライバシー: https://freetokyo.github.io/web/printmemo/privacy.html
+- en: https://freetokyo.github.io/web/printmemo/en/

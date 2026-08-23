@@ -1,27 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/arari/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/en/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/es/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/es/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/es/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/es/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/de/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/de/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/de/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/de/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/fr/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/fr/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/fr/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/fr/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/zh-Hant/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/zh-Hant/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/zh-Hant/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/arari/zh-Hant/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/arari/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/es/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/es/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/es/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/de/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/de/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/de/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/de/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/fr/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/fr/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/zh-Hant/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/zh-Hant/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/zh-Hant/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/arari/zh-Hant/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/arari/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/arari/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://freetokyo.github.io/web/arari/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://freetokyo.github.io/web/arari/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyo.github.io/web/arari/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html" />
+  </url>
 </urlset>

@@ -7,6 +7,7 @@
 <meta name="description" content="ペットシッターの顧客カルテと鍵の記録">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kartellapets/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kartellapets/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellapets/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellapets/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellapets/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kartella Pets（カルテラ ペッツ）", "description": "ペットシッターの顧客カルテと鍵の記録", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartellapets/", "image": "https://freetokyo.github.io/web/kartellapets/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Kartella Pets（カルテラ ペッツ）", "item": "https://freetokyo.github.io/web/kartellapets/"}]}</script>
@@ -473,6 +484,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>無料とフルアクセス</h2><p>無料で顧客10件、1訪問あたり写真3枚、リマインド3名分、同意書は月3通まで使えます。フルアクセスはこれらの上限を解除し、報告書に事業者名とロゴを入れられるようにします。<strong>買い切り</strong>です。サーバーを持たないため、サブスクリプションはありません。</p><p>暗号化、鍵の台帳、生体認証ロック、バックアップ、読み込み、書き出し、削除、緊急引き継ぎは無料で、今後も無料です。</p></div></section>
 <section><div class="wrap"><h2>できないこと</h2><p>Kartella Pets は記録を保存するアプリです。<strong>獣医学的な助言は行いません。</strong>ワクチンの接種間隔についても判断しません——動物病院にご確認ください。</p><p>同意書の署名は「あなたが何を取り決めたかの控え」です。<strong>同意書に法的効力を持たせるものではありません。</strong></p></div></section>
 <section><div class="wrap"><h2>対応環境</h2><p>iPhone / iPad。24言語（日本語・英語・アラビア語・チェコ語・デンマーク語・ドイツ語・ギリシャ語・スペイン語・フィンランド語・フランス語・ヘブライ語・ハンガリー語・イタリア語・韓国語・ノルウェー語・オランダ語・ポーランド語・ポルトガル語・ルーマニア語・スウェーデン語・トルコ語・ウクライナ語・簡体字中国語・繁体字中国語）。</p></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="今日の画面。進行中の訪問と今日の訪問予定がペットの種別つきで並び、期限切れ・期限が近いの要確認も出る" width="360" height="782" loading="lazy" decoding="async"><figcaption>今日の訪問を 玄関に着く前に</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="顧客の一覧。飼い主名・ペット名・住所が並び、無料プランの顧客枠10件中4件を使用中と表示する" width="360" height="782" loading="lazy" decoding="async"><figcaption>顧客・ペット・お世話の指示を 1か所にまとめて</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="顧客の詳細。鍵の暗証番号を伏せ字で保持し、タップして表示するボタン、連絡先と緊急連絡先、かかりつけ動物病院、ペットの情報が続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>鍵と暗証番号は 求めるまで伏せたまま</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Kartella Pets（カルテラ ペッツ）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

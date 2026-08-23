@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/dartrack/</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/dartrack/privacy.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/dartrack/terms.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/dartrack/support.html</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/dartrack/ar/</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://freetokyo.github.io/web/dartrack/ja/</loc><lastmod>2026-08-01</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/dartrack/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/dartrack/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/dartrack/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/dartrack/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/dartrack/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/dartrack/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/dartrack/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/dartrack/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/dartrack/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/dartrack/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/dartrack/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/dartrack/ar/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/dartrack/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/dartrack/" />
+  </url>
 </urlset>

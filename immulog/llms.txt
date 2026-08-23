@@ -1,0 +1,16 @@
+# Immulog（イミュログ）
+
+> 子どもの予防接種記録のための iOS アプリ。記録を製品名ではなく抗原単位で保存し、接種した国を必須項目として持つ（同じ商品名でも国と承認時期で構成が違うため、製品から抗原への展開は国と接種日で照合し、確定できないときは推測せず手動選択を求める）。アメリカ・イギリス・日本の公表スケジュールと機械的に突き合わせ、記録あり／不足の可能性／回数が異なる可能性／この国の定期対象外／医療者と相談／時期がまだ先／目安の期間の中／毎シーズン接種の8状態で表示する。断定はせず、色・アイコン形状・文言の3重で表し、警告に赤を使わない。収録国はライセンスを個別に確認できたものだけ（CDC＝米連邦政府著作物、UKHSA＝OGL v3.0、日本＝厚労省の公共データ利用規約と法令）。出典・ライセンス・データ版数・参照日を折りたためない形で常時表示し、参照日から6か月を過ぎた国は更新確認を促す。PDF は抗原の英語名と出典・参照日を併記して医療者に渡せる。通信せず、アカウントも開発者のサーバーも無く、解析 SDK も広告 SDK も無い。バックアップの書き出しと読み込みは無料。買い切り（自動更新なし）。
+
+Web: https://freetokyo.github.io/web/immulog/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/immulog/
+- サポート / FAQ: https://freetokyo.github.io/web/immulog/support.html
+- 利用規約: https://freetokyo.github.io/web/immulog/terms.html
+- プライバシー: https://freetokyo.github.io/web/immulog/privacy.html
+- en: https://freetokyo.github.io/web/immulog/en/

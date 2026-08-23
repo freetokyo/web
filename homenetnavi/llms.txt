@@ -1,12 +1,13 @@
-# 世帯手取ナビ
+# 世帯手取ナビ（HomeNet Navi）
 
-> 年収の壁シミュレーター。入力は端末内で計算・外部送信なし。対象: 扶養内・パートで働く世帯。
+> 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。
 
-App Store: https://apps.apple.com/jp/app/id6772911843
 Web: https://freetokyo.github.io/web/homenetnavi/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 16.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6772911843
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 16.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 年収の壁の世帯シミュレーション
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/homenetnavi/
 3. 働き方シナリオを比較して最適化
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/homenetnavi/
 - サポート / FAQ: https://freetokyo.github.io/web/homenetnavi/support.html
-- プライバシー: https://freetokyo.github.io/web/homenetnavi/privacy.html
 - 利用規約: https://freetokyo.github.io/web/homenetnavi/terms.html
+- プライバシー: https://freetokyo.github.io/web/homenetnavi/privacy.html
+- ar: https://freetokyo.github.io/web/homenetnavi/ar/
+- ca: https://freetokyo.github.io/web/homenetnavi/ca/
+- cs: https://freetokyo.github.io/web/homenetnavi/cs/
+- da: https://freetokyo.github.io/web/homenetnavi/da/
+- de: https://freetokyo.github.io/web/homenetnavi/de/
+- el: https://freetokyo.github.io/web/homenetnavi/el/
+- en: https://freetokyo.github.io/web/homenetnavi/en/
+- es: https://freetokyo.github.io/web/homenetnavi/es/
+- fi: https://freetokyo.github.io/web/homenetnavi/fi/
+- fr: https://freetokyo.github.io/web/homenetnavi/fr/
+- he: https://freetokyo.github.io/web/homenetnavi/he/
+- hi: https://freetokyo.github.io/web/homenetnavi/hi/
+- hr: https://freetokyo.github.io/web/homenetnavi/hr/
+- hu: https://freetokyo.github.io/web/homenetnavi/hu/
+- id: https://freetokyo.github.io/web/homenetnavi/id/
+- it: https://freetokyo.github.io/web/homenetnavi/it/
+- ko: https://freetokyo.github.io/web/homenetnavi/ko/
+- ms: https://freetokyo.github.io/web/homenetnavi/ms/
+- nb: https://freetokyo.github.io/web/homenetnavi/nb/
+- nl: https://freetokyo.github.io/web/homenetnavi/nl/
+- pl: https://freetokyo.github.io/web/homenetnavi/pl/
+- pt-BR: https://freetokyo.github.io/web/homenetnavi/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/homenetnavi/pt-PT/
+- ro: https://freetokyo.github.io/web/homenetnavi/ro/
+- ru: https://freetokyo.github.io/web/homenetnavi/ru/
+- sk: https://freetokyo.github.io/web/homenetnavi/sk/
+- sv: https://freetokyo.github.io/web/homenetnavi/sv/
+- th: https://freetokyo.github.io/web/homenetnavi/th/
+- tr: https://freetokyo.github.io/web/homenetnavi/tr/
+- uk: https://freetokyo.github.io/web/homenetnavi/uk/
+- vi: https://freetokyo.github.io/web/homenetnavi/vi/
+- zh-Hans: https://freetokyo.github.io/web/homenetnavi/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/homenetnavi/zh-Hant/

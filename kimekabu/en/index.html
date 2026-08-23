@@ -7,6 +7,7 @@
 <meta name="description" content="Kimekabu records your stock trading decisions and reconciles them against your plan at exit. Manage the quality of your judgment, not just P/L. No account linking, fully offline, one-time purchase.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kimekabu/en/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kimekabu/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kimekabu/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kimekabu/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kimekabu/">
@@ -442,6 +443,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kimekabu", "description": "Kimekabu records your stock trading decisions and reconciles them against your plan at exit. Manage the quality of your judgment, not just P/L. No account linking, fully offline, one-time purchase.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/kimekabu/en/", "image": "https://freetokyo.github.io/web/kimekabu/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6789459452", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Kimekabu", "item": "https://freetokyo.github.io/web/kimekabu/en/"}]}</script>
@@ -471,6 +482,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </div></header>
 <section><div class="wrap"><h2>Features</h2><div class="grid"><div class="feat"><div class="ic">📝</div><h3>Decision cards</h3><p>Structure ticker, hypothesis, reason tags, conviction and target/stop in ~90 seconds before you enter.</p></div><div class="feat"><div class="ic">⚖️</div><h3>Reconcile on exit</h3><p>At exit, auto-compare against your plan (target, stop, horizon) and record deviation reasons and lessons.</p></div><div class="feat"><div class="ic">📊</div><h3>Decision analysis</h3><p>Win rate by reason tag, conviction vs. outcome, rule-deviation rate and holding-period distribution.</p></div><div class="feat"><div class="ic">🔒</div><h3>Fully offline</h3><p>No brokerage linking. All data stays on your device. No account, works fully in airplane mode.</p></div><div class="feat"><div class="ic">💴</div><h3>One-time purchase</h3><p>No subscription. Free up to 10 cards; Pro (one-time) unlocks unlimited cards, full analysis and export.</p></div><div class="feat"><div class="ic">📤</div><h3>Export</h3><p>Export your decision records as CSV / PDF for backup and review.</p></div></div></div></section>
 <section><div class="wrap"><div class="disc">This app is a tool to record and organize your own trading decisions. It does not recommend or solicit any financial product, nor advise on buy/sell timing. All figures shown are summaries of your own past records and do not guarantee future results. Make your own investment decisions at your own responsibility.</div></div></section>
+
 <section class="ftcta">
 <h2>Kimekabu</h2>
 <p>Available on the App Store, for iPhone and iPad.</p>

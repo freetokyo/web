@@ -7,6 +7,7 @@
 <meta name="description" content="完全オンデバイスの議事メモ">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/koegaki/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/koegaki/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/koegaki/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/koegaki/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/koegaki/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "コエガキ（Koegaki）", "description": "完全オンデバイスの議事メモ", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://freetokyo.github.io/web/koegaki/", "image": "https://freetokyo.github.io/web/koegaki/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6780139132", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "コエガキ（Koegaki）", "item": "https://freetokyo.github.io/web/koegaki/"}]}</script>
@@ -605,6 +616,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="faq-item"><strong data-ja="どの端末で使えますか？" data-en="Which devices are supported?">どの端末で使えますか？</strong><span data-ja="iOS / iPadOS 26 以降に対応しています。AI要約機能は Apple Intelligence 対応端末（iPhone 15 Pro／16シリーズ以降、M1以降のiPadなど）が必要です。非対応端末でも、文字起こし・編集・検索・書き出しはご利用いただけます。" data-en="Requires iOS / iPadOS 26 or later. The AI summary feature needs an Apple Intelligence–capable device (iPhone 15 Pro / 16 series or later, M1 iPad or later). On other devices you can still transcribe, edit, search, and export.">iOS / iPadOS 26 以降に対応しています。AI要約機能は Apple Intelligence 対応端末（iPhone 15 Pro／16シリーズ以降、M1以降のiPadなど）が必要です。非対応端末でも、文字起こし・編集・検索・書き出しはご利用いただけます。</span></div>
     <div class="faq-item"><strong data-ja="録音してもいいですか？" data-en="May I record conversations?">録音してもいいですか？</strong><span data-ja="ご自身が参加する会話の録音は直ちに違法となるものではありませんが、相手への告知と同意の取得を強く推奨します。業務利用は所属組織の規定や適用法令をご確認ください。本案内は一般的な情報であり法的助言ではありません。" data-en="Recording a conversation you take part in is not inherently illegal, but we strongly recommend informing the other parties and obtaining consent. For work use, check your organization's policies and applicable laws. This is general information, not legal advice.">ご自身が参加する会話の録音は直ちに違法となるものではありませんが、相手への告知と同意の取得を強く推奨します。業務利用は所属組織の規定や適用法令をご確認ください。本案内は一般的な情報であり法的助言ではありません。</span></div>
   </div>
+</section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。録音した会議が日時・長さ・ファイルサイズつきで並び、下部に「録音する」ボタン" width="360" height="782" loading="lazy" decoding="async"><figcaption>録音した会議が並ぶ</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="議事メモの要点タブ。目的とゴールの共有、リリース目標、予算案の承認が箇条書きで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>要点だけを先に読む</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="文字起こしタブ。0:00 から 2:40 まで、発言が時刻つきで文章として並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>時刻つきの文字起こし</figcaption></figure></div>
 </section>
 <section class="ftcta">
 <h2>コエガキ（Koegaki）</h2>

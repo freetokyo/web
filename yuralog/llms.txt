@@ -1,0 +1,17 @@
+# Yuralog（ユラログ）
+
+> 更年期のゆらぐ日々の症状を、端末の外に一切出さずに記録・可視化する iOS / watchOS アプリ。ほてり・気分・からだ・睡眠を毎日かんたんに記録し、受診時はそのまま PDF レポートで医師に共有。判断はせず記録に徹する非診断アプリ。完全ローカル・買い切り。
+
+Web: https://freetokyo.github.io/web/yuralog/
+App Store: https://apps.apple.com/app/id6792374401
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 17.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/yuralog/
+- サポート / FAQ: https://freetokyo.github.io/web/yuralog/support.html
+- 利用規約: https://freetokyo.github.io/web/yuralog/terms.html
+- プライバシー: https://freetokyo.github.io/web/yuralog/privacy.html
+- en: https://freetokyo.github.io/web/yuralog/en/

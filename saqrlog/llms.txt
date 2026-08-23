@@ -1,0 +1,17 @@
+# Saqrlog（サクルログ）
+
+> 鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。
+
+Web: https://freetokyo.github.io/web/saqrlog/
+App Store: https://apps.apple.com/app/id6789535072
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/saqrlog/
+- サポート / FAQ: https://freetokyo.github.io/web/saqrlog/support.html
+- 利用規約: https://freetokyo.github.io/web/saqrlog/terms.html
+- プライバシー: https://freetokyo.github.io/web/saqrlog/privacy.html

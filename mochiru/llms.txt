@@ -1,12 +1,13 @@
 # Mochiru
 
-> 資産寿命シミュレーター。完全オフライン・口座連携なし・データ収集ゼロ。対象: 老後資金・FIREを検討する人。
+> 完全オフラインの資産寿命シミュレーター iOS アプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。
 
-App Store: https://apps.apple.com/jp/app/id6778235888
 Web: https://freetokyo.github.io/web/mochiru/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6778235888
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.3 / 対応: iOS 17.0 以降
+価格: 500円（買い切り）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 積立から取り崩しまでの資産寿命試算
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/mochiru/
 3. 前提を変えて結果を比較する
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/mochiru/
 - サポート / FAQ: https://freetokyo.github.io/web/mochiru/support.html
-- プライバシー: https://freetokyo.github.io/web/mochiru/privacy.html
 - 利用規約: https://freetokyo.github.io/web/mochiru/terms.html
+- プライバシー: https://freetokyo.github.io/web/mochiru/privacy.html
+- ar: https://freetokyo.github.io/web/mochiru/ar/
+- ca: https://freetokyo.github.io/web/mochiru/ca/
+- cs: https://freetokyo.github.io/web/mochiru/cs/
+- da: https://freetokyo.github.io/web/mochiru/da/
+- de: https://freetokyo.github.io/web/mochiru/de/
+- el: https://freetokyo.github.io/web/mochiru/el/
+- en: https://freetokyo.github.io/web/mochiru/en/
+- es: https://freetokyo.github.io/web/mochiru/es/
+- fi: https://freetokyo.github.io/web/mochiru/fi/
+- fr: https://freetokyo.github.io/web/mochiru/fr/
+- he: https://freetokyo.github.io/web/mochiru/he/
+- hi: https://freetokyo.github.io/web/mochiru/hi/
+- hr: https://freetokyo.github.io/web/mochiru/hr/
+- hu: https://freetokyo.github.io/web/mochiru/hu/
+- id: https://freetokyo.github.io/web/mochiru/id/
+- it: https://freetokyo.github.io/web/mochiru/it/
+- ko: https://freetokyo.github.io/web/mochiru/ko/
+- ms: https://freetokyo.github.io/web/mochiru/ms/
+- nb: https://freetokyo.github.io/web/mochiru/nb/
+- nl: https://freetokyo.github.io/web/mochiru/nl/
+- pl: https://freetokyo.github.io/web/mochiru/pl/
+- pt-BR: https://freetokyo.github.io/web/mochiru/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/mochiru/pt-PT/
+- ro: https://freetokyo.github.io/web/mochiru/ro/
+- ru: https://freetokyo.github.io/web/mochiru/ru/
+- sk: https://freetokyo.github.io/web/mochiru/sk/
+- sv: https://freetokyo.github.io/web/mochiru/sv/
+- th: https://freetokyo.github.io/web/mochiru/th/
+- tr: https://freetokyo.github.io/web/mochiru/tr/
+- uk: https://freetokyo.github.io/web/mochiru/uk/
+- vi: https://freetokyo.github.io/web/mochiru/vi/
+- zh-Hans: https://freetokyo.github.io/web/mochiru/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/mochiru/zh-Hant/

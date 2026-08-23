@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://freetokyo.github.io/web/nenrin/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nenrin/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nenrin/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nenrin/support.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nenrin/en/</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nenrin/en/privacy.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nenrin/en/terms.html</loc></url>
-  <url><loc>https://freetokyo.github.io/web/nenrin/en/support.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/nenrin/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/nenrin/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nenrin/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nenrin/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nenrin/support.html" />
+  </url>
 </urlset>

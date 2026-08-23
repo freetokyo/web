@@ -1,2 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://freetokyo.github.io/web/yuralog/</loc></url><url><loc>https://freetokyo.github.io/web/yuralog/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/yuralog/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/yuralog/support.html</loc></url><url><loc>https://freetokyo.github.io/web/yuralog/en/</loc></url><url><loc>https://freetokyo.github.io/web/yuralog/en/privacy.html</loc></url><url><loc>https://freetokyo.github.io/web/yuralog/en/terms.html</loc></url><url><loc>https://freetokyo.github.io/web/yuralog/en/support.html</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/support.html" />
+  </url>
+  <url><loc>https://freetokyo.github.io/web/yuralog/llms.txt</loc></url>
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/yuralog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/yuralog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/support.html" />
+  </url>
+</urlset>

@@ -1,0 +1,16 @@
+# Kartella Studio（カルテラ スタジオ）
+
+> ヨガ・ピラティス・音楽教室・語学など、少人数のレッスンを個人で運営する講師のための回数券台帳 iPhone アプリ。残数は保持せず「総回数 − 消化 ＋ 取消」で都度計算し、取引台帳は追記のみ（消化・追加・取消・期限延長）。消化は行右端の専用ボタンでワンタップ、10秒以内は記録ごと取り消せ、それ以降は取消として台帳に残る。失効は記録を書かず期限と現在日時から判定するため、期限を延長すれば過去の記録に触れずに有効へ戻る。期限間近は通知を許可していなくても一覧のバッジで分かる。残数の控えはテキスト／PDF で書き出せるが金額を載せず、領収書ではない旨を明記する。通信するコードを持たず、外部へ出るのは利用者が共有・書き出しを行ったときだけ。アカウント不要・買い切り・33言語。
+
+Web: https://freetokyo.github.io/web/kartellastudio/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/kartellastudio/
+- サポート / FAQ: https://freetokyo.github.io/web/kartellastudio/support.html
+- 利用規約: https://freetokyo.github.io/web/kartellastudio/terms.html
+- プライバシー: https://freetokyo.github.io/web/kartellastudio/privacy.html
+- en: https://freetokyo.github.io/web/kartellastudio/en/

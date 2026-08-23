@@ -7,6 +7,7 @@
 <meta name="description" content="淡水水槽の実効水量を軸にした iOS / iPadOS アプリ。外寸ではなくガラス厚・水位・底床・レイアウト材を差し引いた水量を求め、換水量・乾燥塩ドージング・カルキ抜きをその数値の上で計算し、そのまま記録に残します。完全オフライン。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/netlit/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/netlit/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/netlit/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/netlit/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/netlit/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Netlit（ネットリット）", "description": "淡水水槽の実効水量を軸にした iOS / iPadOS アプリ。外寸ではなくガラス厚・水位・底床・レイアウト材を差し引いた水量を求め、換水量・乾燥塩ドージング・カルキ抜きをその数値の上で計算し、そのまま記録に残します。完全オフライン。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/netlit/", "image": "https://freetokyo.github.io/web/netlit/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Netlit（ネットリット）", "item": "https://freetokyo.github.io/web/netlit/"}]}</script>
@@ -492,6 +503,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>やらないこと</h2><ul><li><strong>海水は扱いません。</strong>Ca / KH / Mg のバランスも CO<sub>2</sub> の推定も、v1.0 の対象外です。</li><li><strong>魚病薬の投薬量は計算しません。</strong></li><li><strong>魚種のデータベースを持ちません。</strong></li><li><strong>市販製品のプリセットを持ちません。</strong>ご自身でラベルから登録していただく方式です。</li><li><strong>端末間の同期はありません。</strong>移行はバックアップファイルで行います。</li></ul></div></section>
 
 <section><div class="wrap"><h2>ご確認ください</h2><p>本アプリが示す数値は一般的な計算結果であり、<strong>獣医療的な助言ではありません</strong>。生体の状態・水槽の履歴・試薬の精度によって適切な値は変わります。換水や添加を行う前に、ご自身で水質を測定し、最終的な判断はご自身で行ってください。</p></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。60cm 水草水槽の実効水量48.9Lを大きく示し、外寸から求めた64.8Lの75.4%であることと、最新の水質測定値（NO₂・PO₄・KH・GH・TDS・pH・水温）が続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>この水槽の本当の水量 投与も換水もここから始まる</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="水はどこへ行ったか。外寸の水量56.5Lから砂利・レイアウト材・生体・フィルター配管の体積を引いて、実効水量48.9Lを出す内訳" width="360" height="782" loading="lazy" decoding="async"><figcaption>換水量は実効水量から</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="記録の一覧。水質と換水の履歴を、グラフ・蓄積のタブで切り替えて見る" width="360" height="782" loading="lazy" decoding="async"><figcaption>水質と換水の記録</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Netlit（ネットリット）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

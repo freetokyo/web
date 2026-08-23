@@ -7,6 +7,7 @@
 <meta name="description" content="iPhone / Apple Watch の筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。オフラインで使えて買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/trero/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/trero/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/trero/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/trero/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/trero/ca/">
@@ -507,6 +508,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Trero", "description": "iPhone / Apple Watch の筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。オフラインで使えて買い切り。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/trero/", "image": "https://freetokyo.github.io/web/trero/og-image-spatial.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6760746164", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Trero", "item": "https://freetokyo.github.io/web/trero/"}]}</script>
@@ -857,6 +868,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </p>
 </div>
 <section style="max-width:720px;margin:0 auto;padding:8px 24px 28px"><p style="font-size:13px;line-height:1.8;opacity:.75;border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:12px 16px;margin:0"><strong>ご注意：</strong>本アプリのトレーニング関連情報は一般的な情報提供であり、医学的助言ではありません。体調に不安があるときは医師や専門家にご相談ください。</p></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ワークアウトの記録。ベンチプレス（バーベル）のセット1に77.5kg×10回を入れる画面。前回の記録と、次のセットの提案85kg×5回が並ぶ" width="360" height="783" loading="lazy" decoding="async"><figcaption>前回の記録を見ながら</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="分析。ベンチプレスの最大重量80.5kg・推定1RM 112.7kg・累計40セットと、最大重量の推移およびセッションボリュームのグラフ" width="360" height="783" loading="lazy" decoding="async"><figcaption>最大重量と推定1RMの推移</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="目標の一覧。デッドリフト68%・スクワット71%・ベンチプレス82%の進捗バーと、達成済み5件" width="360" height="783" loading="lazy" decoding="async"><figcaption>目標の進捗を一覧で</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Trero</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

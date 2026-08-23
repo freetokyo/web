@@ -7,6 +7,7 @@
 <meta name="description" content="Dartrack helps UAE households keep private, offline records for domestic staff — visa &amp; contract deadlines with reminders, work hours, leave, payroll and end-of-service estimates. On-device, no account, no data collection. English, العربية, 日本語.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/dartrack/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/dartrack/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/dartrack/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/dartrack/ar/">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/dartrack/ja/">
@@ -445,6 +446,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Dartrack", "description": "Dartrack helps UAE households keep private, offline records for domestic staff — visa & contract deadlines with reminders, work hours, leave, payroll and end-of-service estimates. On-device, no account, no data collection. English, العربية, 日本語.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/dartrack/", "image": "https://freetokyo.github.io/web/dartrack/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6788604524", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Dartrack", "item": "https://freetokyo.github.io/web/dartrack/"}]}</script>
@@ -523,6 +534,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       </div>
       <p class="disc">Dartrack keeps private records. It does not file visas or contracts, process wage payments (WPS), or provide legal advice. Labor-standard values are adjustable references only.</p>
     </section>
+<section class="ftshots" aria-label="Screens">
+<h2>Screens</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/en/01.webp" alt="Home screen showing days left on the nearest deadline, today&#x27;s staff list, and upcoming visa and labour-card deadlines" width="360" height="782" loading="lazy" decoding="async"><figcaption>Mark today&#x27;s attendance in one tap</figcaption></figure><figure class="ftshot"><img src="shots/en/02.webp" alt="Staff detail. Role, employment start date and monthly salary, visa and contract deadlines, and this week&#x27;s work log with overtime" width="360" height="782" loading="lazy" decoding="async"><figcaption>Visa and contract dates, hours and overtime</figcaption></figure><figure class="ftshot"><img src="shots/en/03.webp" alt="Payroll screen. Payslip and end-of-service estimates, outstanding advance balance in AED, repayments and notes" width="360" height="782" loading="lazy" decoding="async"><figcaption>Payslips, gratuity and salary advances</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Dartrack</h2>
 <p>Available on the App Store, for iPhone and iPad.</p>

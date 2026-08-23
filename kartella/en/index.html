@@ -7,6 +7,7 @@
 <meta name="description" content="A client record app for freelance hairdressers, chair renters and mobile stylists. Formulas, before and after photos, patch test dates and signatures. Kartella never sends your data. No account, one-time purchase, seven languages.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kartella/en/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kartella/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartella/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartella/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartella/">
@@ -442,6 +443,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kartella", "description": "A client record app for freelance hairdressers, chair renters and mobile stylists. Formulas, before and after photos, patch test dates and signatures. Kartella never sends your data. No account, one-time purchase, seven languages.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartella/en/", "image": "https://freetokyo.github.io/web/kartella/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Kartella", "item": "https://freetokyo.github.io/web/kartella/en/"}]}</script>
@@ -502,6 +513,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </div></section>
 
 <section><div class="wrap"><h2>Please note</h2><div class="callout"><p>This app is <strong>a tool for keeping records</strong>. It does not guarantee compliance with any law or industry standard, does not promise that insurance requirements are met, and does not prevent allergic reactions. How and how often to patch test, and whether to carry out a service, are for you to decide with the product instructions and, where needed, a qualified professional. The signature feature keeps a signature as a record; no legal effect is claimed. For clients under the age of majority the app provides a note field only and makes no age-related legal judgement.</p></div></div></section>
+
 <section class="ftcta">
 <h2>Kartella</h2>
 <p>Coming soon. This page will be updated at release.</p>

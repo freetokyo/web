@@ -7,6 +7,7 @@
 <meta name="description" content="RecoverySync is an Apple Watch recovery tracker. Get a single recovery score from sleep, HRV, and resting heart rate — no subscription, no account, no data leaving your device.">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/recoverysync/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/recoverysync/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/recoverysync/">
 <link rel="alternate" hreflang="ar" href="https://freetokyo.github.io/web/recoverysync/ar/">
 <link rel="alternate" hreflang="ca" href="https://freetokyo.github.io/web/recoverysync/ca/">
@@ -505,6 +506,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "RecoverySync is an Apple Watch recovery tracker. Get a single recovery score from sleep, HRV, and resting heart rate — no subscription, no account, no data leaving your device.", "inLanguage": "en", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/"}]}</script>
@@ -542,38 +553,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <section class="score-section">
     <div class="score-section__inner">
 
-<section class="ftshot-gallery" aria-label="アプリのスクリーンショット">
 
-<section class="ftfacts" aria-label="App overview">
-  <h2>App overview</h2>
-  <table>
-    <tr><th>Requires</th><td>iOS 17.0 or later</td></tr>
-    <tr><th>Price</th><td>Free (with in-app purchase)</td></tr>
-    <tr><th>Version</th><td>1.0</td></tr>
-    <tr><th>Size</th><td>approx. 3 MB</td></tr>
-    <tr><th>Category</th><td>ヘルスケア／フィットネス</td></tr>
-    <tr><th>Age rating</th><td>4+</td></tr>
-    <tr><th>For</th><td>Apple Watch ユーザー・アスリート</td></tr>
-    <tr><th>Data</th><td>On-device only / no account / no servers</td></tr>
-    <tr><th>Developer</th><td>freetokyo</td></tr>
-    <tr><th>Updated</th><td>2026-05-20</td></tr>
-  </table>
-</section>
-<section class="fthowto" aria-label="How to use (3 steps)">
-  <h2>How to use (3 steps)</h2>
-  <ol>
-    <li>Wear Apple Watch while you sleep</li>
-    <li>RecoverySync reads HRV, resting HR and sleep</li>
-    <li>Check your single daily recovery score</li>
-  </ol>
-  <style>.ftfacts,.fthowto{max-width:760px;margin:32px auto;padding:0 16px}.ftfacts h2,.fthowto h2{font-size:1.3rem;margin:0 0 14px;border:0;padding:0}.ftfacts table{width:100%;border-collapse:collapse;font-size:.95rem}.ftfacts th,.ftfacts td{text-align:left;padding:9px 12px;border-bottom:1px solid rgba(128,128,128,.25);vertical-align:top}.ftfacts th{white-space:nowrap;width:9em;opacity:.7;font-weight:600}.fthowto ol{margin:0;padding-left:1.3em;line-height:1.9}</style>
-</section>
-  <h2>アプリの画面</h2>
-  <div class="ftshot-row">
-    <figure class="ftshot-item"><img src="shots/01.png" alt="RecoverySync daily recovery score home screen" width="360" height="438" loading="lazy" decoding="async"><figcaption>Recovery score</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/02.png" alt="Recovery score breakdown from HRV and sleep" width="360" height="780" loading="lazy" decoding="async"><figcaption>Score detail</figcaption></figure>
-    <figure class="ftshot-item"><img src="shots/03.png" alt="Recovery and HRV trend chart screen" width="360" height="780" loading="lazy" decoding="async"><figcaption>Trends</figcaption></figure>
-  </div>
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
 </section>
       <h2 class="score-section__title" data-i18n="product.score.title">One score. Three signals.</h2>
@@ -720,6 +700,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </section>
 
   <section style="max-width:720px;margin:0 auto;padding:8px 24px 28px"><p style="font-size:13px;line-height:1.8;opacity:.75;border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:12px 16px;margin:0"><strong>ご注意：</strong>回復スコアは一般的なウェルネスの参考情報であり、医学的な助言・診断ではありません。体調に不安があるときは医師にご相談ください。</p></section>
+<section class="ftshots" aria-label="Screens">
+<h2>Screens</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/en/01.webp" alt="Score detail. A recovery score of 82 (good), with the HRV, resting heart rate and sleep figures behind it, a workout note field, and the personal-baseline calibration progress" width="360" height="780" loading="lazy" decoding="async"><figcaption>Score detail</figcaption></figure><figure class="ftshot"><img src="shots/en/02.webp" alt="Trend. Recovery score plotted over 7 or 28 days, with tabs for score, HRV, resting heart rate and sleep" width="360" height="780" loading="lazy" decoding="async"><figcaption>Trends</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>RecoverySync</h2>
 <p>Available on the App Store, for iPhone and iPad.</p>

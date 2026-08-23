@@ -7,6 +7,7 @@
 <meta name="description" content="子どもの予防接種を抗原単位で記録し、米国・英国・日本の公表スケジュールとの差を8つの状態で示す iPhone アプリ。不足を断定しません。通信せず、アカウントもサーバーもありません。買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/immulog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/immulog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/immulog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/immulog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/immulog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Immulog（イミュログ）", "description": "子どもの予防接種を抗原単位で記録し、米国・英国・日本の公表スケジュールとの差を8つの状態で示す iPhone アプリ。不足を断定しません。通信せず、アカウントもサーバーもありません。買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/immulog/", "image": "https://freetokyo.github.io/web/immulog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Immulog（イミュログ）", "item": "https://freetokyo.github.io/web/immulog/"}]}</script>
@@ -492,6 +503,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>ご確認ください</h2><p>Immulog が示す差は、<strong>入力された記録と、公表されている標準スケジュールとの機械的な比較</strong>です。お子さんに必要な接種を示すものではありません。本アプリは在胎週数・既往歴・免疫の状態・医師の個別の指示を考慮しません。</p><p>接種の要否・時期・種類の判断は、必ず医療機関にご相談ください。表示している内容の正確性・網羅性について、本アプリは主張を行いません。<strong>スケジュールは変わります。</strong>最新の内容は、各画面に掲載している公式ページでご確認ください。</p></div></section>
 
 <section><div class="wrap"><h2>対応環境</h2><p>iOS 17.0 以降の iPhone。表示言語は34言語です。表示は明るい配色に固定しています。</p></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="こどもの一覧。子どもごとに月齢・接種した国（日本）が並び、タップすると記録と国のスケジュールを確認できる" width="360" height="782" loading="lazy" decoding="async"><figcaption>ひとつの記録を、どの国でも 製品名ではなく抗原で</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="差分の画面。比較する国を選び、B型肝炎・ロタウイルス感染症・麻しんなどについて「不足の可能性」「回数が異なる可能性」を注記付きで並べる" width="360" height="782" loading="lazy" decoding="async"><figcaption>国をまたぐときに 不足の可能性が見える</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="月齢のタイムライン。ロタウイルス感染症・B型肝炎・ジフテリア・破傷風・百日せき・急性灰白髄炎（ポリオ）が接種日と記録の有無つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>すべての接種を時系列で 接種した国も一緒に</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Immulog（イミュログ）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

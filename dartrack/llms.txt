@@ -1,0 +1,19 @@
+# Dartrack
+
+> UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。
+
+Web: https://freetokyo.github.io/web/dartrack/
+App Store: https://apps.apple.com/app/id6788604524
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: en / ar / ja
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/dartrack/
+- サポート / FAQ: https://freetokyo.github.io/web/dartrack/support.html
+- 利用規約: https://freetokyo.github.io/web/dartrack/terms.html
+- プライバシー: https://freetokyo.github.io/web/dartrack/privacy.html
+- ar: https://freetokyo.github.io/web/dartrack/ar/
+- ja: https://freetokyo.github.io/web/dartrack/ja/

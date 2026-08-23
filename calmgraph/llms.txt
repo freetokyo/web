@@ -1,0 +1,17 @@
+# Calmgraph（カームグラフ）
+
+> ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。
+
+Web: https://freetokyo.github.io/web/calmgraph/
+App Store: https://apps.apple.com/app/id6790698772
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2 / 対応: iOS 26.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/calmgraph/
+- サポート / FAQ: https://freetokyo.github.io/web/calmgraph/support.html
+- 利用規約: https://freetokyo.github.io/web/calmgraph/terms.html
+- プライバシー: https://freetokyo.github.io/web/calmgraph/privacy.html
+- en: https://freetokyo.github.io/web/calmgraph/en/

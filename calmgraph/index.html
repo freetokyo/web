@@ -7,6 +7,7 @@
 <meta name="description" content="Calmgraph（カームグラフ）は、Apple Watch の HRV や主観チェックインから日々のストレスを0–100のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。カレンダーで過去日も編集でき、タグ相関で要因が見えます。データは端末内だけに保存します。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/calmgraph/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/calmgraph/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/calmgraph/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/calmgraph/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/calmgraph/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calmgraph（カームグラフ）", "description": "Calmgraph（カームグラフ）は、Apple Watch の HRV や主観チェックインから日々のストレスを0–100のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。カレンダーで過去日も編集でき、タグ相関で要因が見えます。データは端末内だけに保存します。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/calmgraph/", "image": "https://freetokyo.github.io/web/calmgraph/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790698772"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Calmgraph（カームグラフ）", "item": "https://freetokyo.github.io/web/calmgraph/"}]}</script>
@@ -534,6 +545,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       Calmgraph は医療機器ではなく、病気の診断・治療・予防を目的とするものではありません。表示されるスコアは個人のベースラインに対する相対的な傾向であり、絶対的な健康状態を示すものではありません。健康上の懸念がある場合は、医療専門家にご相談ください。
     </div>
   </div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。今日のストレススコア46（中間）を円グラフで示し、原因タグと直近7日の推移グラフが続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>HRVから ストレススコア</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="推移のグラフ表示。7日／30日／90日を切り替え、期間の平均スコア59と最も高い日・低い日、帯ごとの日数をまとめる" width="360" height="782" loading="lazy" decoding="async"><figcaption>何がスコアを 動かしたか</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="推移のカレンダー表示。2026年8月の各日を安定・中間・負荷の3色で塗り分ける" width="360" height="782" loading="lazy" decoding="async"><figcaption>カレンダーで 過去日も記録</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Calmgraph（カームグラフ）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

@@ -1,0 +1,17 @@
+# SakuLog（サクログ）
+
+> こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。
+
+Web: https://freetokyo.github.io/web/sakulog/
+App Store: https://apps.apple.com/app/id6791827004
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1 / 対応: iOS 26.0 以降
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/sakulog/
+- サポート / FAQ: https://freetokyo.github.io/web/sakulog/support.html
+- 利用規約: https://freetokyo.github.io/web/sakulog/terms.html
+- プライバシー: https://freetokyo.github.io/web/sakulog/privacy.html
+- en: https://freetokyo.github.io/web/sakulog/en/

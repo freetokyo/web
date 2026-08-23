@@ -1,12 +1,13 @@
 # Genbalog
 
-> 現場写真から報告書を作るアプリ。完全オフライン・登録不要・データ収集なし。対象: 建設現場の職人・施工管理。
+> 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。
 
-App Store: https://apps.apple.com/jp/app/id6770864162
 Web: https://freetokyo.github.io/web/genbalog/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 17.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6770864162
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.2.0 / 対応: iOS 17.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - 現場写真をワンタップでPDF化
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/genbalog/
 3. ワンタップでA4 PDF報告書を生成
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/genbalog/
 - サポート / FAQ: https://freetokyo.github.io/web/genbalog/support.html
-- プライバシー: https://freetokyo.github.io/web/genbalog/privacy.html
 - 利用規約: https://freetokyo.github.io/web/genbalog/terms.html
+- プライバシー: https://freetokyo.github.io/web/genbalog/privacy.html
+- ar: https://freetokyo.github.io/web/genbalog/ar/
+- ca: https://freetokyo.github.io/web/genbalog/ca/
+- cs: https://freetokyo.github.io/web/genbalog/cs/
+- da: https://freetokyo.github.io/web/genbalog/da/
+- de: https://freetokyo.github.io/web/genbalog/de/
+- el: https://freetokyo.github.io/web/genbalog/el/
+- en: https://freetokyo.github.io/web/genbalog/en/
+- es: https://freetokyo.github.io/web/genbalog/es/
+- fi: https://freetokyo.github.io/web/genbalog/fi/
+- fr: https://freetokyo.github.io/web/genbalog/fr/
+- he: https://freetokyo.github.io/web/genbalog/he/
+- hi: https://freetokyo.github.io/web/genbalog/hi/
+- hr: https://freetokyo.github.io/web/genbalog/hr/
+- hu: https://freetokyo.github.io/web/genbalog/hu/
+- id: https://freetokyo.github.io/web/genbalog/id/
+- it: https://freetokyo.github.io/web/genbalog/it/
+- ko: https://freetokyo.github.io/web/genbalog/ko/
+- ms: https://freetokyo.github.io/web/genbalog/ms/
+- nb: https://freetokyo.github.io/web/genbalog/nb/
+- nl: https://freetokyo.github.io/web/genbalog/nl/
+- pl: https://freetokyo.github.io/web/genbalog/pl/
+- pt-BR: https://freetokyo.github.io/web/genbalog/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/genbalog/pt-PT/
+- ro: https://freetokyo.github.io/web/genbalog/ro/
+- ru: https://freetokyo.github.io/web/genbalog/ru/
+- sk: https://freetokyo.github.io/web/genbalog/sk/
+- sv: https://freetokyo.github.io/web/genbalog/sv/
+- th: https://freetokyo.github.io/web/genbalog/th/
+- tr: https://freetokyo.github.io/web/genbalog/tr/
+- uk: https://freetokyo.github.io/web/genbalog/uk/
+- vi: https://freetokyo.github.io/web/genbalog/vi/
+- zh-Hans: https://freetokyo.github.io/web/genbalog/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/genbalog/zh-Hant/

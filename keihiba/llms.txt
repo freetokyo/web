@@ -1,12 +1,13 @@
-# ケイヒバ
+# ケイヒバ（Keihiba）
 
-> 経費レシート整理アプリ。完全オフライン・データ収集なし・買い切り。対象: 個人事業主・フリーランス。
+> 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。
 
-App Store: https://apps.apple.com/jp/app/id6779895529
 Web: https://freetokyo.github.io/web/keihiba/
-開発者: freetokyo
-バージョン: 1.0 / 対応: iOS 18.0 以降 / 価格: 無料（アプリ内課金あり）
-最終更新: 2026-06
+App Store: https://apps.apple.com/app/id6779895529
+開発: freetokyo（個人 iOS 開発）
+バージョン: 1.1.0 / 対応: iOS 18.0 以降
+価格: 無料（アプリ内課金あり）
+対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
 - レシート撮影と端末内OCR
@@ -22,7 +23,41 @@ Web: https://freetokyo.github.io/web/keihiba/
 3. 確認・集計してCSV／PDFで書き出す
 
 ## ページ
+
 - 紹介: https://freetokyo.github.io/web/keihiba/
 - サポート / FAQ: https://freetokyo.github.io/web/keihiba/support.html
-- プライバシー: https://freetokyo.github.io/web/keihiba/privacy.html
 - 利用規約: https://freetokyo.github.io/web/keihiba/terms.html
+- プライバシー: https://freetokyo.github.io/web/keihiba/privacy.html
+- ar: https://freetokyo.github.io/web/keihiba/ar/
+- ca: https://freetokyo.github.io/web/keihiba/ca/
+- cs: https://freetokyo.github.io/web/keihiba/cs/
+- da: https://freetokyo.github.io/web/keihiba/da/
+- de: https://freetokyo.github.io/web/keihiba/de/
+- el: https://freetokyo.github.io/web/keihiba/el/
+- en: https://freetokyo.github.io/web/keihiba/en/
+- es: https://freetokyo.github.io/web/keihiba/es/
+- fi: https://freetokyo.github.io/web/keihiba/fi/
+- fr: https://freetokyo.github.io/web/keihiba/fr/
+- he: https://freetokyo.github.io/web/keihiba/he/
+- hi: https://freetokyo.github.io/web/keihiba/hi/
+- hr: https://freetokyo.github.io/web/keihiba/hr/
+- hu: https://freetokyo.github.io/web/keihiba/hu/
+- id: https://freetokyo.github.io/web/keihiba/id/
+- it: https://freetokyo.github.io/web/keihiba/it/
+- ko: https://freetokyo.github.io/web/keihiba/ko/
+- ms: https://freetokyo.github.io/web/keihiba/ms/
+- nb: https://freetokyo.github.io/web/keihiba/nb/
+- nl: https://freetokyo.github.io/web/keihiba/nl/
+- pl: https://freetokyo.github.io/web/keihiba/pl/
+- pt-BR: https://freetokyo.github.io/web/keihiba/pt-BR/
+- pt-PT: https://freetokyo.github.io/web/keihiba/pt-PT/
+- ro: https://freetokyo.github.io/web/keihiba/ro/
+- ru: https://freetokyo.github.io/web/keihiba/ru/
+- sk: https://freetokyo.github.io/web/keihiba/sk/
+- sv: https://freetokyo.github.io/web/keihiba/sv/
+- th: https://freetokyo.github.io/web/keihiba/th/
+- tr: https://freetokyo.github.io/web/keihiba/tr/
+- uk: https://freetokyo.github.io/web/keihiba/uk/
+- vi: https://freetokyo.github.io/web/keihiba/vi/
+- zh-Hans: https://freetokyo.github.io/web/keihiba/zh-Hans/
+- zh-Hant: https://freetokyo.github.io/web/keihiba/zh-Hant/

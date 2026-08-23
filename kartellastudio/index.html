@@ -7,6 +7,7 @@
 <meta name="description" content="ヨガ・ピラティス・音楽教室など少人数レッスンの回数券を管理する iPhone アプリ。残数は台帳から計算し、消化はワンタップ。アプリは送信しません。買い切り。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/kartellastudio/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/kartellastudio/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/kartellastudio/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/kartellastudio/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/kartellastudio/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Kartella Studio（カルテラ スタジオ）", "description": "ヨガ・ピラティス・音楽教室など少人数レッスンの回数券を管理する iPhone アプリ。残数は台帳から計算し、消化はワンタップ。アプリは送信しません。買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/kartellastudio/", "image": "https://freetokyo.github.io/web/kartellastudio/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Kartella Studio（カルテラ スタジオ）", "item": "https://freetokyo.github.io/web/kartellastudio/"}]}</script>
@@ -481,6 +492,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <section><div class="wrap"><h2>無料とフルアクセス</h2><p>無料のままで、<strong>アクティブな生徒10名・券種テンプレート3件</strong>まで使えます。記録・消化・取消・控えの書き出し・生体認証ロック・削除・今月の集計、そして<strong>期限7日前の予告通知</strong>は無料です。</p><p>上限に達しても、<strong>これまでの記録はこれまで通り使えます。増やせるのは新しい生徒の登録だけです。</strong></p><p>フルアクセス（買い切り・サブスクリプションではありません）で増えるのは、生徒と券種の上限、リマインダーの細かい設定、全期間の集計、バックアップです。購入の復元は、ペイウォールと設定の両方に常に置いています。</p></div></section>
 
 <section><div class="wrap"><h2>できないこと</h2><p><strong>オンライン予約はありません。</strong>アプリ内で回数券を販売することもできません（金額は記録するだけです）。</p><p><strong>クラウド同期・スタッフ間の共有はありません。</strong>通信しない設計と両立しないためです。移すときはバックアップを使ってください。</p><p><strong>生徒用のアプリはありません。</strong>控えを渡す形にしています。</p><p class="note">Kartella Studio は記録の道具です。前払いで受け取った回数券の法的な取り扱いについて助言するものではなく、講師の義務を代行・保証するものでもありません。健康・怪我・妊娠などに関する判断も扱いません。</p></div></section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="生徒の一覧。生徒ごとに回数券の残り回数（残り1回・全5回など）と有効期限が並び、右のボタンで1回分を消化する" width="360" height="782" loading="lazy" decoding="async"><figcaption>ドアの前で1タップ。 残数はいつも合う。</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="残数の控え。5回券・10回券の残りと有効期限、残り合計、直近の消化日を並べた、生徒に見せるための画面" width="360" height="782" loading="lazy" decoding="async"><figcaption>生徒に見せる 残数の控え。</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="台帳。消化・新規・失効が日付と回数つきで時系列に並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>カウンターではなく台帳。 記録は消えない。</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>Kartella Studio（カルテラ スタジオ）</h2>
 <p>近日公開。公開したらこのページでお知らせします。</p>

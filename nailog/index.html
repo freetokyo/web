@@ -7,6 +7,7 @@
 <meta name="description" content="Nailog（ネイログ）は、ネイリストのための顧客カルテアプリ。施術履歴・写真・注意事項・使用カラーを、完全オフライン・自分のiPhoneだけで管理。登録不要・データ収集ゼロ。">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 <link rel="canonical" href="https://freetokyo.github.io/web/nailog/">
+<link rel="alternate" type="text/plain" href="https://freetokyo.github.io/web/nailog/llms.txt" title="llms.txt">
 <link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/">
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/">
@@ -443,6 +444,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    色だけで有料機能を示している（WCAG 1.4.1）。本文の書き換えは別件だが、
    インラインの色指定を無効化して太字に寄せるだけでも判別できる。 */
 .ftbody [style*="var(--green)"]{ color:inherit !important; font-weight:600; }
+
+/* 製品ページの画面写真（chrome.shots_html）。 */
+.ftshots{margin:40px 0}
+.ftshot-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:8px;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.ftshot{flex:0 0 auto;margin:0;width:200px;scroll-snap-align:start}
+.ftshot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--color-border);
+  background:var(--color-surface)}
+.ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
+@media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ネイログ（Nailog）", "description": "Nailog（ネイログ）は、ネイリストのための顧客カルテアプリ。施術履歴・写真・注意事項・使用カラーを、完全オフライン・自分のiPhoneだけで管理。登録不要・データ収集ゼロ。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/nailog/", "image": "https://freetokyo.github.io/web/nailog/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790943773"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "ネイログ（Nailog）", "item": "https://freetokyo.github.io/web/nailog/"}]}</script>
@@ -496,6 +507,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <p class="muted" style="margin-top:10px">購読は期間終了の24時間前までに解約しない限り自動更新されます。管理・解約は「設定 &gt; Apple ID &gt; サブスクリプション」から。</p>
       </div>
     </section>
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="顧客の一覧。爪のサムネイル付きで顧客が並び、最終来店日とジェル／フレンチなどのタグ、注意の警告が出る" width="360" height="782" loading="lazy" decoding="async"><figcaption>ネイリストの顧客カルテを お客さまごとに整理</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="顧客の詳細。ジェルアレルギー・パラベン不可の注意を上部に出し、次回目安の日付と、来店タイムラインがデザイン写真と金額つきで続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>アレルギー・注意事項は いつも見える位置に</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="施術のビフォー／アフター比較。同じ顧客の前回と今回の爪を並べて見る" width="360" height="782" loading="lazy" decoding="async"><figcaption>ビフォー/アフターを 並べて比較</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>ネイログ（Nailog）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

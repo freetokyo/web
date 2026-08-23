@@ -1,0 +1,16 @@
+# Kartella Auto（カルテラ オート）
+
+> 出張型カーディテーリング事業者のための車両カルテ・施工記録 iOS / iPadOS アプリ。車両ごとにカルテを作り、作業前の状態・使用した薬剤・受領金額・コーティングの保証期限を1台に紐づけて残す。セダン／ハッチバック／SUV／ピックアップの4車型 × 5面の展開図をタップして、キズ・へこみ・飛び石・水垢・鉄粉を作業前に記録する。面の呼称は運転席側／助手席側ではなく左側面／右側面に統一し、右ハンドルと左ハンドルで意味が反転しないようにしている。保証・メンテ期限はローカル通知で知らせる。記録は端末内のみ・アカウント不要・買い切り。
+
+Web: https://freetokyo.github.io/web/kartellaauto/
+状態: 近日公開 / coming soon
+開発: freetokyo（個人 iOS 開発）
+対応言語（Webページ）: ja / en
+
+## ページ
+
+- 紹介: https://freetokyo.github.io/web/kartellaauto/
+- サポート / FAQ: https://freetokyo.github.io/web/kartellaauto/support.html
+- 利用規約: https://freetokyo.github.io/web/kartellaauto/terms.html
+- プライバシー: https://freetokyo.github.io/web/kartellaauto/privacy.html
+- en: https://freetokyo.github.io/web/kartellaauto/en/
