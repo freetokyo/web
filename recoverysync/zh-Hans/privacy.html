@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "RecoverySync 隐私政策。数据仅保存在您的设备上，无需账号，不追踪、不收集任何数据。", "inLanguage": "zh-Hans", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/zh-Hans/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "RecoverySync 隐私政策。数据仅保存在您的设备上，无需账号，不追踪、不收集任何数据。", "inLanguage": "zh-Hans", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/zh-Hans/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/zh-Hans/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/recoverysync/zh-Hans/privacy.html"}]}</script>
 </head>
 <body>
@@ -547,15 +547,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="legal-content">
 <p>RecoverySync 基于一个简单的原则构建：您的健康数据属于您。我们不会收集、传输或与任何人共享任何个人或健康数据——不与我们共享，不与第三方共享，也不与广告商共享。</p>
 <h2>我们访问的数据</h2>
-<p>经您许可，RecoverySync 会从您设备上的 Apple HealthKit 读取以下数据：• 心率变异性（SDNN）—— 用于计算您的恢复分数 • 静息心率 —— 用于计算您的恢复分数 • 睡眠数据 —— 用于计算您的恢复分数 所有访问均为只读。RecoverySync 绝不会将数据写回 HealthKit。</p>
+<p><strong>iOS:</strong> 经您许可，RecoverySync 会从您设备上的 Apple HealthKit 读取以下数据：• 心率变异性（SDNN）—— 用于计算您的恢复分数 • 静息心率 —— 用于计算您的恢复分数 • 睡眠数据 —— 用于计算您的恢复分数 所有访问均为只读。RecoverySync 绝不会将数据写回 HealthKit。</p>
 <h2>我们不收集的内容</h2>
 <p>RecoverySync 不收集以下任何内容：• 姓名、电子邮件地址或账户信息 • 位置数据 • IP 地址或设备标识符 • 分析或使用数据 • 发送给第三方服务的崩溃报告 • 广告标识符</p>
 <h2>您的数据存储在哪里</h2>
-<p>RecoverySync 生成的所有数据——包括您的恢复分数和偏好设置——均使用 Apple 的 SwiftData 框架专门存储在您的设备上。任何数据都绝不会传输到外部服务器。您设备的 iCloud 备份可能会根据您自己的 Apple ID 和 Apple 的隐私条款，按您的意愿包含此数据。</p>
+<p><strong>iOS:</strong> RecoverySync 生成的所有数据——包括您的恢复分数和偏好设置——均使用 Apple 的 SwiftData 框架专门存储在您的设备上。任何数据都绝不会传输到外部服务器。您设备的 iCloud 备份可能会根据您自己的 Apple ID 和 Apple 的隐私条款，按您的意愿包含此数据。</p>
 <h2>第三方 SDK 和服务</h2>
-<p>RecoverySync 不包含任何第三方分析 SDK、广告 SDK 或跟踪库。使用的唯一外部框架是 Apple 的 HealthKit，该框架受 Apple 自身隐私政策的约束。</p>
-<h2>Apple HealthKit</h2>
+<p><strong>iOS:</strong> RecoverySync 不包含任何第三方分析 SDK、广告 SDK 或跟踪库。使用的唯一外部框架是 Apple 的 HealthKit，该框架受 Apple 自身隐私政策的约束。</p>
+<h2>Apple HealthKit (iOS)</h2>
 <p>通过 HealthKit 获取的健康数据仅用于在应用内计算和显示您的恢复分数。此数据绝不会用于广告、与数据经纪商共享或披露给第三方。</p>
+
+<h2>Health Connect (Android)</h2>
+<p>在您授权的前提下，RecoverySync 从您设备上的 Health Connect 读取以下数据：心率变异性（SDNN）、静息心率和睡眠。所有访问均为只读，RecoverySync 绝不会写回任何数据。</p>
+<p>这些数据存储在您设备上的本地数据库中。云备份和设备间迁移均已关闭，因此数据绝不会离开您的设备。</p>
+<p>使用的外部服务仅有 Health Connect、Google Play Billing（购买）和 Google Play In-app Review（评分请求）。它们都不会接收您的健康数据。</p>
+<p>通过 Health Connect 获取的健康数据仅用于在应用内计算和显示您的恢复分数。这些数据绝不会用于广告、与数据经纪商共享或披露给第三方。</p>
 <h2>儿童</h2>
 <p>RecoverySync 不面向 13 岁以下的儿童，也不会故意收集儿童的信息。</p>
 <h2>本政策的变更</h2>

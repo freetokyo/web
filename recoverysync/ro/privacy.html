@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Politica de confidențialitate pentru RecoverySync. Datele rămân pe dispozitiv – fără cont, fără urmărire, fără colectare.", "inLanguage": "ro", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/ro/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Politica de confidențialitate pentru RecoverySync. Datele rămân pe dispozitiv – fără cont, fără urmărire, fără colectare.", "inLanguage": "ro", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/ro/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/ro/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/recoverysync/ro/privacy.html"}]}</script>
 </head>
 <body>
@@ -548,27 +548,33 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>RecoverySync este construit pe un principiu simplu: datele dvs. de sănătate vă aparțin. Nu colectăm, transmitem sau partajăm date personale sau de sănătate cu nimeni — nici cu noi, nici cu terți, nici cu agenții de publicitate.</p>
 <h2>La ce date avem acces</h2>
 <p>Cu permisiunea dvs.</p>
-<p>, RecoverySync citește următoarele date din Apple HealthKit pe dispozitivul dvs.</p>
+<p><strong>iOS:</strong> , RecoverySync citește următoarele date din Apple HealthKit pe dispozitivul dvs.</p>
 <p>: • Variabilitatea Ritmului Cardiac (SDNN) — pentru a calcula scorul dvs.</p>
 <p>de recuperare • Ritmul Cardiac de Repaus — pentru a calcula scorul dvs.</p>
 <p>de recuperare • Date de somn — pentru a calcula scorul dvs.</p>
 <p>de recuperare Tot accesul este doar pentru citire.</p>
-<p>RecoverySync nu scrie niciodată date înapoi în HealthKit.</p>
+<p><strong>iOS:</strong> RecoverySync nu scrie niciodată date înapoi în HealthKit.</p>
 <h2>Ce NU colectăm</h2>
 <p>RecoverySync nu colectează niciunul dintre următoarele: • Nume, adrese de e-mail sau informații de cont • Date de localizare • Adrese IP sau identificatori de dispozitiv • Date de analiză sau utilizare • Rapoarte de blocare trimise către servicii terțe • Identificatori publicitari</p>
 <h2>Unde sunt stocate datele dvs.</h2>
 <p>Toate datele generate de RecoverySync — inclusiv scorurile dvs.</p>
 <p>de recuperare și preferințele — sunt stocate exclusiv pe dispozitivul dvs.</p>
-<p>utilizând cadrul SwiftData al Apple.</p>
+<p><strong>iOS:</strong> utilizând cadrul SwiftData al Apple.</p>
 <p>Nicio dată nu este niciodată transmisă către servere externe.</p>
-<p>Copia de rezervă iCloud a dispozitivului dvs.</p>
+<p><strong>iOS:</strong> Copia de rezervă iCloud a dispozitivului dvs.</p>
 <p>poate include aceste date la discreția dvs.</p>
 <p>, sub propriul dvs.</p>
 <p>ID Apple și termenii de confidențialitate ai Apple.</p>
 <h2>SDK-uri și servicii terțe</h2>
-<p>RecoverySync nu conține SDK-uri de analiză terțe, SDK-uri publicitare sau biblioteci de urmărire. Singurul cadru extern utilizat este HealthKit al Apple, care este guvernat de propriile politici de confidențialitate ale Apple.</p>
-<h2>Apple HealthKit</h2>
+<p><strong>iOS:</strong> RecoverySync nu conține SDK-uri de analiză terțe, SDK-uri publicitare sau biblioteci de urmărire. Singurul cadru extern utilizat este HealthKit al Apple, care este guvernat de propriile politici de confidențialitate ale Apple.</p>
+<h2>Apple HealthKit (iOS)</h2>
 <p>Datele de sănătate obținute prin HealthKit sunt utilizate exclusiv în scopul calculării și afișării scorului dvs. de recuperare în cadrul aplicației. Aceste date nu sunt niciodată utilizate în scopuri publicitare, partajate cu brokeri de date sau divulgate terților.</p>
+
+<h2>Health Connect (Android)</h2>
+<p>Cu permisiunea dvs., RecoverySync citește următoarele date din Health Connect de pe dispozitivul dvs.: variabilitatea ritmului cardiac (SDNN), ritmul cardiac în repaus și somnul. Accesul este doar pentru citire, iar RecoverySync nu scrie niciodată date înapoi.</p>
+<p>Aceste date sunt stocate pe dispozitivul dvs. într-o bază de date locală. Copierea de rezervă în cloud și transferul între dispozitive sunt dezactivate, astfel încât datele nu părăsesc niciodată dispozitivul dvs.</p>
+<p>Singurele servicii externe utilizate sunt Health Connect, Google Play Billing (achiziție) și Google Play In-app Review (solicitare de evaluare). Niciunul dintre ele nu primește datele dvs. de sănătate.</p>
+<p>Datele de sănătate obținute prin Health Connect sunt utilizate exclusiv pentru a calcula și a afișa scorul dvs. de recuperare în aplicație. Ele nu sunt niciodată utilizate pentru publicitate, partajate cu brokeri de date sau divulgate terților.</p>
 <h2>Copii</h2>
 <p>RecoverySync nu se adresează copiilor sub 13 ani și nu colectează cu bună știință informații de la copii.</p>
 <h2>Modificări ale acestei politici</h2>

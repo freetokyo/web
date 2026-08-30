@@ -49,8 +49,13 @@ const TRANSLATIONS = {
     "privacy.s4.title":      "Third-party SDKs and services",
     "privacy.s4.body":       "RecoverySync contains no third-party analytics SDKs, advertising SDKs, or tracking libraries. The only external framework used is Apple's HealthKit, which is governed by Apple's own privacy policies.",
 
-    "privacy.s5.title":      "Apple HealthKit",
+    "privacy.s5.title":      "Apple HealthKit (iOS)",
     "privacy.s5.body":       "Health data obtained through HealthKit is used solely for the purpose of calculating and displaying your recovery score within the app. This data is never used for advertising, shared with data brokers, or disclosed to third parties.",
+    "privacy.android.title":  "Health Connect (Android)",
+    "privacy.android.read":   "With your permission, RecoverySync reads the following data from Health Connect on your device: heart rate variability (SDNN), resting heart rate and sleep. All access is read-only — RecoverySync never writes anything back.",
+    "privacy.android.storage":"This data is stored on your device in a local database. Cloud backup and device transfer are turned off, so it never leaves your device.",
+    "privacy.android.services":"The only external services used are Health Connect, Google Play Billing (purchase) and Google Play In-app Review (rating prompt). None of them receives your health data.",
+    "privacy.android.usage":  "Health data obtained through Health Connect is used solely to calculate and display your recovery score within the app. It is never used for advertising, shared with data brokers, or disclosed to third parties.",
 
     "privacy.s6.title":      "Children",
     "privacy.s6.body":       "RecoverySync is not directed at children under the age of 13 and does not knowingly collect information from children.",
@@ -235,8 +240,13 @@ const TRANSLATIONS = {
     "privacy.s4.title":      "サードパーティSDKおよびサービス",
     "privacy.s4.body":       "RecoverySyncにはサードパーティの分析SDK・広告SDK・トラッキングライブラリは含まれていません。使用している唯一の外部フレームワークはAppleのHealthKitであり、これはApple自身のプライバシーポリシーに準拠しています。",
 
-    "privacy.s5.title":      "Apple HealthKitについて",
+    "privacy.s5.title":      "Apple HealthKit（iOS）について",
     "privacy.s5.body":       "HealthKitを通じて取得した健康データは、アプリ内でリカバリースコアを算出・表示する目的のみに使用します。広告目的での使用、データブローカーへの提供、第三者への開示は一切行いません。",
+    "privacy.android.title":  "Health Connect（Android）について",
+    "privacy.android.read":   "あなたの許可のもとで、RecoverySync は端末上の Health Connect から次のデータを読み取ります: 心拍変動（SDNN）、安静時心拍数、睡眠。アクセスは読み取り専用で、RecoverySync が書き戻すことはありません。",
+    "privacy.android.storage":"このデータは端末内のローカルデータベースに保存されます。クラウドバックアップと端末間の移行はどちらも無効にしてあるため、端末の外へ出ることはありません。",
+    "privacy.android.services":"利用している外部サービスは Health Connect、Google Play Billing（購入）、Google Play In-app Review（評価の依頼）だけです。いずれもあなたの健康データを受け取りません。",
+    "privacy.android.usage":  "Health Connect から取得した健康データは、アプリ内で回復スコアを算出して表示する目的にのみ使用します。広告に利用することも、データブローカーと共有することも、第三者に開示することもありません。",
 
     "privacy.s6.title":      "お子様について",
     "privacy.s6.body":       "RecoverySyncは13歳未満のお子様を対象としておらず、お子様から意図的に情報を収集することはありません。",

@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Informativa sulla privacy di RecoverySync. I dati restano sul dispositivo: nessun account, nessun tracciamento.", "inLanguage": "it", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/it/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Informativa sulla privacy di RecoverySync. I dati restano sul dispositivo: nessun account, nessun tracciamento.", "inLanguage": "it", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/it/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/it/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/recoverysync/it/privacy.html"}]}</script>
 </head>
 <body>
@@ -547,18 +547,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="legal-content">
 <p>RecoverySync si basa su un principio semplice: i tuoi dati sulla salute ti appartengono. Non raccogliamo, trasmettiamo o condividiamo dati personali o sanitari con nessuno — né con noi, né con terze parti, né con inserzionisti.</p>
 <h2>Quali dati accediamo</h2>
-<p>Con il tuo permesso, RecoverySync legge i seguenti dati da Apple HealthKit sul tuo dispositivo: • Variabilità della Frequenza Cardiaca (SDNN) — per calcolare il tuo punteggio di recupero • Frequenza Cardiaca a Riposo — per calcolare il tuo punteggio di recupero • Dati sul sonno — per calcolare il tuo punteggio di recupero Tutto l&#x27;accesso è di sola lettura.</p>
-<p>RecoverySync non scrive mai dati nuovamente in HealthKit.</p>
+<p><strong>iOS:</strong> Con il tuo permesso, RecoverySync legge i seguenti dati da Apple HealthKit sul tuo dispositivo: • Variabilità della Frequenza Cardiaca (SDNN) — per calcolare il tuo punteggio di recupero • Frequenza Cardiaca a Riposo — per calcolare il tuo punteggio di recupero • Dati sul sonno — per calcolare il tuo punteggio di recupero Tutto l&#x27;accesso è di sola lettura.</p>
+<p><strong>iOS:</strong> RecoverySync non scrive mai dati nuovamente in HealthKit.</p>
 <h2>Cosa NON raccogliamo</h2>
 <p>RecoverySync non raccoglie nessuno dei seguenti dati: • Nomi, indirizzi email o informazioni sull&#x27;account • Dati sulla posizione • Indirizzi IP o identificatori del dispositivo • Dati di analisi o utilizzo • Rapporti sui crash inviati a servizi di terze parti • Identificatori pubblicitari</p>
 <h2>Dove vengono memorizzati i tuoi dati</h2>
-<p>Tutti i dati generati da RecoverySync — inclusi i tuoi punteggi di recupero e le tue preferenze — vengono memorizzati esclusivamente sul tuo dispositivo utilizzando il framework SwiftData di Apple.</p>
+<p><strong>iOS:</strong> Tutti i dati generati da RecoverySync — inclusi i tuoi punteggi di recupero e le tue preferenze — vengono memorizzati esclusivamente sul tuo dispositivo utilizzando il framework SwiftData di Apple.</p>
 <p>Nessun dato viene mai trasmesso a server esterni.</p>
-<p>Il backup su iCloud del tuo dispositivo può includere questi dati a tua discrezione, con il tuo ID Apple e secondo i termini sulla privacy di Apple.</p>
+<p><strong>iOS:</strong> Il backup su iCloud del tuo dispositivo può includere questi dati a tua discrezione, con il tuo ID Apple e secondo i termini sulla privacy di Apple.</p>
 <h2>SDK e servizi di terze parti</h2>
-<p>RecoverySync non contiene SDK di analisi di terze parti, SDK pubblicitari o librerie di tracciamento. L&#x27;unico framework esterno utilizzato è HealthKit di Apple, che è regolato dalle politiche sulla privacy di Apple stessa.</p>
-<h2>Apple HealthKit</h2>
+<p><strong>iOS:</strong> RecoverySync non contiene SDK di analisi di terze parti, SDK pubblicitari o librerie di tracciamento. L&#x27;unico framework esterno utilizzato è HealthKit di Apple, che è regolato dalle politiche sulla privacy di Apple stessa.</p>
+<h2>Apple HealthKit (iOS)</h2>
 <p>I dati sanitari ottenuti tramite HealthKit vengono utilizzati esclusivamente allo scopo di calcolare e visualizzare il tuo punteggio di recupero all&#x27;interno dell&#x27;app. Questi dati non vengono mai utilizzati per pubblicità, condivisi con broker di dati o divulgati a terze parti.</p>
+
+<h2>Health Connect (Android)</h2>
+<p>Con il tuo permesso, RecoverySync legge i seguenti dati da Health Connect sul tuo dispositivo: variabilità della frequenza cardiaca (SDNN), frequenza cardiaca a riposo e sonno. L'accesso è di sola lettura e RecoverySync non scrive mai nulla.</p>
+<p>Questi dati sono memorizzati sul tuo dispositivo in un database locale. Il backup su cloud e il trasferimento tra dispositivi sono disattivati, quindi non lasciano mai il tuo dispositivo.</p>
+<p>Gli unici servizi esterni utilizzati sono Health Connect, Google Play Billing (acquisto) e Google Play In-app Review (richiesta di valutazione). Nessuno di essi riceve i tuoi dati sanitari.</p>
+<p>I dati sanitari ottenuti tramite Health Connect vengono utilizzati esclusivamente per calcolare e mostrare il tuo punteggio di recupero all'interno dell'app. Non vengono mai utilizzati per pubblicità, condivisi con broker di dati o divulgati a terzi.</p>
 <h2>Minori</h2>
 <p>RecoverySync non è rivolto a minori di 13 anni e non raccoglie consapevolmente informazioni da minori.</p>
 <h2>Modifiche a questa politica</h2>

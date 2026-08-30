@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Privacybeleid van RecoverySync. Je gegevens blijven op je apparaat – geen account, geen tracking, geen dataverzameling.", "inLanguage": "nl", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/nl/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Privacybeleid van RecoverySync. Je gegevens blijven op je apparaat – geen account, geen tracking, geen dataverzameling.", "inLanguage": "nl", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/nl/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/nl/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/recoverysync/nl/privacy.html"}]}</script>
 </head>
 <body>
@@ -547,18 +547,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="legal-content">
 <p>RecoverySync is gebouwd op een eenvoudig principe: je gezondheidsgegevens zijn van jou. We verzamelen, verzenden of delen geen persoonlijke of gezondheidsgegevens met wie dan ook — niet met ons, niet met derden, niet met adverteerders.</p>
 <h2>Welke gegevens we raadplegen</h2>
-<p>Met jouw toestemming leest RecoverySync de volgende gegevens uit Apple HealthKit op je apparaat: • Hartslagvariabiliteit (SDNN) — om je herstelscore te berekenen • Rusthartslag — om je herstelscore te berekenen • Slaapgegevens — om je herstelscore te berekenen Alle toegang is alleen-lezen.</p>
-<p>RecoverySync schrijft nooit gegevens terug naar HealthKit.</p>
+<p><strong>iOS:</strong> Met jouw toestemming leest RecoverySync de volgende gegevens uit Apple HealthKit op je apparaat: • Hartslagvariabiliteit (SDNN) — om je herstelscore te berekenen • Rusthartslag — om je herstelscore te berekenen • Slaapgegevens — om je herstelscore te berekenen Alle toegang is alleen-lezen.</p>
+<p><strong>iOS:</strong> RecoverySync schrijft nooit gegevens terug naar HealthKit.</p>
 <h2>Wat we NIET verzamelen</h2>
 <p>RecoverySync verzamelt niets van het volgende: • Namen, e-mailadressen of accountinformatie • Locatiegegevens • IP-adressen of apparaat-ID&#x27;s • Analyse- of gebruiksgegevens • Crashrapporten die naar diensten van derden worden verzonden • Advertentie-ID&#x27;s</p>
 <h2>Waar je gegevens worden opgeslagen</h2>
-<p>Alle door RecoverySync gegenereerde gegevens — inclusief je herstelscores en voorkeuren — worden uitsluitend op je apparaat opgeslagen met behulp van Apples SwiftData-framework.</p>
+<p><strong>iOS:</strong> Alle door RecoverySync gegenereerde gegevens — inclusief je herstelscores en voorkeuren — worden uitsluitend op je apparaat opgeslagen met behulp van Apples SwiftData-framework.</p>
 <p>Er worden nooit gegevens naar externe servers verzonden.</p>
-<p>De iCloud-back-up van je apparaat kan deze gegevens naar eigen goeddunken bevatten onder je eigen Apple-ID en Apples privacyvoorwaarden.</p>
+<p><strong>iOS:</strong> De iCloud-back-up van je apparaat kan deze gegevens naar eigen goeddunken bevatten onder je eigen Apple-ID en Apples privacyvoorwaarden.</p>
 <h2>SDK&#x27;s en diensten van derden</h2>
-<p>RecoverySync bevat geen analyse-SDK&#x27;s, advertentie-SDK&#x27;s of trackingbibliotheken van derden. Het enige externe framework dat wordt gebruikt is Apples HealthKit, dat wordt beheerst door het eigen privacybeleid van Apple.</p>
-<h2>Apple HealthKit</h2>
+<p><strong>iOS:</strong> RecoverySync bevat geen analyse-SDK&#x27;s, advertentie-SDK&#x27;s of trackingbibliotheken van derden. Het enige externe framework dat wordt gebruikt is Apples HealthKit, dat wordt beheerst door het eigen privacybeleid van Apple.</p>
+<h2>Apple HealthKit (iOS)</h2>
 <p>Gezondheidsgegevens verkregen via HealthKit worden uitsluitend gebruikt voor het berekenen en weergeven van je herstelscore binnen de app. Deze gegevens worden nooit gebruikt voor advertenties, gedeeld met databrokers, of vrijgegeven aan derden.</p>
+
+<h2>Health Connect (Android)</h2>
+<p>Met jouw toestemming leest RecoverySync de volgende gegevens uit Health Connect op je apparaat: hartslagvariabiliteit (SDNN), rusthartslag en slaap. De toegang is alleen-lezen en RecoverySync schrijft nooit gegevens terug.</p>
+<p>Deze gegevens worden op je apparaat opgeslagen in een lokale database. Cloudback-up en apparaatoverdracht zijn uitgeschakeld, dus ze verlaten je apparaat nooit.</p>
+<p>De enige externe diensten die worden gebruikt zijn Health Connect, Google Play Billing (aankoop) en Google Play In-app Review (beoordelingsverzoek). Geen daarvan ontvangt je gezondheidsgegevens.</p>
+<p>Gezondheidsgegevens die via Health Connect zijn verkregen, worden uitsluitend gebruikt om je herstelscore in de app te berekenen en weer te geven. Ze worden nooit gebruikt voor advertenties, gedeeld met datahandelaren of aan derden bekendgemaakt.</p>
 <h2>Kinderen</h2>
 <p>RecoverySync is niet gericht op kinderen jonger dan 13 jaar en verzamelt niet bewust informatie van kinderen.</p>
 <h2>Wijzigingen in dit beleid</h2>

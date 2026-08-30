@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Integritetspolicy för RecoverySync. Dina data stannar på enheten – inget konto, ingen spårning, ingen datainsamling.", "inLanguage": "sv", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/sv/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Integritetspolicy för RecoverySync. Dina data stannar på enheten – inget konto, ingen spårning, ingen datainsamling.", "inLanguage": "sv", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/sv/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/sv/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/recoverysync/sv/privacy.html"}]}</script>
 </head>
 <body>
@@ -547,18 +547,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="legal-content">
 <p>RecoverySync bygger på en enkel princip: dina hälsodata tillhör dig. Vi samlar inte in, överför eller delar några personliga eller hälsorelaterade data med någon — varken med oss, tredje part eller annonsörer.</p>
 <h2>Vilka data vi kommer åt</h2>
-<p>Med ditt tillstånd läser RecoverySync följande data från Apple HealthKit på din enhet: • Hjärtfrekvensvariabilitet (SDNN) — för att beräkna din återhämtningspoäng • Vilopuls — för att beräkna din återhämtningspoäng • Sömndata — för att beräkna din återhämtningspoäng All åtkomst är skrivskyddad.</p>
-<p>RecoverySync skriver aldrig data tillbaka till HealthKit.</p>
+<p><strong>iOS:</strong> Med ditt tillstånd läser RecoverySync följande data från Apple HealthKit på din enhet: • Hjärtfrekvensvariabilitet (SDNN) — för att beräkna din återhämtningspoäng • Vilopuls — för att beräkna din återhämtningspoäng • Sömndata — för att beräkna din återhämtningspoäng All åtkomst är skrivskyddad.</p>
+<p><strong>iOS:</strong> RecoverySync skriver aldrig data tillbaka till HealthKit.</p>
 <h2>Vad vi INTE samlar in</h2>
 <p>RecoverySync samlar inte in något av följande: • Namn, e-postadresser eller kontoinformation • Platsdata • IP-adresser eller enhets-ID • Analys- eller användningsdata • Kraschrapporter som skickas till tredjepartstjänster • Reklam-ID</p>
 <h2>Var din data lagras</h2>
-<p>All data som genereras av RecoverySync — inklusive dina återhämtningspoäng och inställningar — lagras uteslutande på din enhet med hjälp av Apples SwiftData-ramverk.</p>
+<p><strong>iOS:</strong> All data som genereras av RecoverySync — inklusive dina återhämtningspoäng och inställningar — lagras uteslutande på din enhet med hjälp av Apples SwiftData-ramverk.</p>
 <p>Ingen data överförs någonsin till externa servrar.</p>
-<p>Din enhets iCloud-säkerhetskopia kan inkludera dessa data efter eget gottfinnande under ditt eget Apple-ID och Apples sekretessvillkor.</p>
+<p><strong>iOS:</strong> Din enhets iCloud-säkerhetskopia kan inkludera dessa data efter eget gottfinnande under ditt eget Apple-ID och Apples sekretessvillkor.</p>
 <h2>Tredjeparts-SDK:er och -tjänster</h2>
-<p>RecoverySync innehåller inga tredjeparts analys-SDK:er, reklam-SDK:er eller spårningsbibliotek. Det enda externa ramverket som används är Apples HealthKit, som styrs av Apples egna sekretesspolicyer.</p>
-<h2>Apple HealthKit</h2>
+<p><strong>iOS:</strong> RecoverySync innehåller inga tredjeparts analys-SDK:er, reklam-SDK:er eller spårningsbibliotek. Det enda externa ramverket som används är Apples HealthKit, som styrs av Apples egna sekretesspolicyer.</p>
+<h2>Apple HealthKit (iOS)</h2>
 <p>Hälsodata som erhålls via HealthKit används uteslutande för att beräkna och visa din återhämtningspoäng i appen. Denna data används aldrig för reklam, delas inte med databörsmäklare eller avslöjas för tredje part.</p>
+
+<h2>Health Connect (Android)</h2>
+<p>Med ditt tillstånd läser RecoverySync följande data från Health Connect på din enhet: hjärtfrekvensvariabilitet (SDNN), vilopuls och sömn. All åtkomst är skrivskyddad och RecoverySync skriver aldrig tillbaka data.</p>
+<p>Dessa data lagras på din enhet i en lokal databas. Molnsäkerhetskopiering och överföring mellan enheter är avstängda, så de lämnar aldrig din enhet.</p>
+<p>De enda externa tjänster som används är Health Connect, Google Play Billing (köp) och Google Play In-app Review (betygsförfrågan). Ingen av dem tar emot dina hälsodata.</p>
+<p>Hälsodata som hämtas via Health Connect används uteslutande för att beräkna och visa dina återhämtningspoäng i appen. De används aldrig för annonsering, delas aldrig med datamäklare och lämnas aldrig ut till tredje part.</p>
 <h2>Barn</h2>
 <p>RecoverySync riktar sig inte till barn under 13 år och samlar inte medvetet in information från barn.</p>
 <h2>Ändringar av denna policy</h2>

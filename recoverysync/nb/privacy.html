@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Personvernerklæring for RecoverySync. Dataene blir på enheten din – ingen konto, ingen sporing, ingen datainnsamling.", "inLanguage": "nb", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/nb/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Personvernerklæring for RecoverySync. Dataene blir på enheten din – ingen konto, ingen sporing, ingen datainnsamling.", "inLanguage": "nb", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/nb/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/nb/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/recoverysync/nb/privacy.html"}]}</script>
 </head>
 <body>
@@ -547,18 +547,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="legal-content">
 <p>RecoverySync er bygget på et enkelt prinsipp: helsedataene dine tilhører deg. Vi samler ikke inn, overfører eller deler noen personlige eller helserelaterte data med noen — verken med oss, tredjeparter eller annonsører.</p>
 <h2>Hvilke data vi henter</h2>
-<p>Med din tillatelse leser RecoverySync følgende data fra Apple HealthKit på enheten din: • Hjertefrekvensvariabilitet (SDNN) — for å beregne restitusjonsscoren din • Hvilepuls — for å beregne restitusjonsscoren din • Søvndata — for å beregne restitusjonsscoren din All tilgang er skrivebeskyttet.</p>
-<p>RecoverySync skriver aldri data tilbake til HealthKit.</p>
+<p><strong>iOS:</strong> Med din tillatelse leser RecoverySync følgende data fra Apple HealthKit på enheten din: • Hjertefrekvensvariabilitet (SDNN) — for å beregne restitusjonsscoren din • Hvilepuls — for å beregne restitusjonsscoren din • Søvndata — for å beregne restitusjonsscoren din All tilgang er skrivebeskyttet.</p>
+<p><strong>iOS:</strong> RecoverySync skriver aldri data tilbake til HealthKit.</p>
 <h2>Hva vi IKKE samler inn</h2>
 <p>RecoverySync samler ikke inn noe av følgende: • Navn, e-postadresser eller kontoinformasjon • Posisjonsdata • IP-adresser eller enhetsidentifikatorer • Analyse- eller bruksdata • Krasjrapporter sendt til tredjepartstjenester • Reklameidentifikatorer</p>
 <h2>Hvor dataene dine lagres</h2>
-<p>Alle data generert av RecoverySync — inkludert restitusjonsscorene og preferansene dine — lagres utelukkende på enheten din ved hjelp av Apples SwiftData-rammeverk.</p>
+<p><strong>iOS:</strong> Alle data generert av RecoverySync — inkludert restitusjonsscorene og preferansene dine — lagres utelukkende på enheten din ved hjelp av Apples SwiftData-rammeverk.</p>
 <p>Ingen data overføres noensinne til eksterne servere.</p>
-<p>iCloud-sikkerhetskopiering av enheten din kan inkludere disse dataene etter eget skjønn under din egen Apple-ID og Apples personvernvilkår.</p>
+<p><strong>iOS:</strong> iCloud-sikkerhetskopiering av enheten din kan inkludere disse dataene etter eget skjønn under din egen Apple-ID og Apples personvernvilkår.</p>
 <h2>Tredjeparts-SDK-er og -tjenester</h2>
-<p>RecoverySync inneholder ingen tredjeparts analyse-SDK-er, reklame-SDK-er eller sporingsbiblioteker. Det eneste eksterne rammeverket som brukes, er Apples HealthKit, som styres av Apples egne personvernregler.</p>
-<h2>Apple HealthKit</h2>
+<p><strong>iOS:</strong> RecoverySync inneholder ingen tredjeparts analyse-SDK-er, reklame-SDK-er eller sporingsbiblioteker. Det eneste eksterne rammeverket som brukes, er Apples HealthKit, som styres av Apples egne personvernregler.</p>
+<h2>Apple HealthKit (iOS)</h2>
 <p>Helsedata innhentet gjennom HealthKit brukes utelukkende til å beregne og vise restitusjonsscoren din i appen. Disse dataene brukes aldri til reklame, deles ikke med datameglere, og videreformidles ikke til tredjeparter.</p>
+
+<h2>Health Connect (Android)</h2>
+<p>Med din tillatelse leser RecoverySync følgende data fra Health Connect på enheten din: hjerterytmevariabilitet (SDNN), hvilepuls og søvn. All tilgang er skrivebeskyttet, og RecoverySync skriver aldri data tilbake.</p>
+<p>Disse dataene lagres på enheten din i en lokal database. Skysikkerhetskopiering og overføring mellom enheter er slått av, så dataene forlater aldri enheten din.</p>
+<p>De eneste eksterne tjenestene som brukes, er Health Connect, Google Play Billing (kjøp) og Google Play In-app Review (vurderingsforespørsel). Ingen av dem mottar helsedataene dine.</p>
+<p>Helsedata hentet via Health Connect brukes utelukkende til å beregne og vise restitusjonsscoren din i appen. De brukes aldri til annonsering, deles aldri med datameglere og utleveres aldri til tredjeparter.</p>
 <h2>Barn</h2>
 <p>RecoverySync er ikke rettet mot barn under 13 år og samler ikke bevisst inn informasjon fra barn.</p>
 <h2>Endringer i denne policyen</h2>

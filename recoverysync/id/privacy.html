@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Kebijakan privasi RecoverySync. Data Anda tetap di perangkat — tanpa akun, tanpa pelacakan, tanpa pengumpulan data.", "inLanguage": "id", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/id/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "Kebijakan privasi RecoverySync. Data Anda tetap di perangkat — tanpa akun, tanpa pelacakan, tanpa pengumpulan data.", "inLanguage": "id", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/id/privacy.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/id/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/recoverysync/id/privacy.html"}]}</script>
 </head>
 <body>
@@ -547,18 +547,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <div class="legal-content">
 <p>RecoverySync dibangun berdasarkan prinsip sederhana: data kesehatan Anda adalah milik Anda. Kami tidak mengumpulkan, mentransmisikan, atau membagikan data pribadi atau kesehatan apa pun dengan siapa pun — tidak dengan kami, tidak dengan pihak ketiga, tidak dengan pengiklan.</p>
 <h2>Data apa yang kami akses</h2>
-<p>Dengan izin Anda, RecoverySync membaca data berikut dari Apple HealthKit di perangkat Anda: • Variabilitas Detak Jantung (SDNN) — untuk menghitung skor pemulihan Anda • Detak Jantung Istirahat — untuk menghitung skor pemulihan Anda • Data tidur — untuk menghitung skor pemulihan Anda Semua akses hanya baca.</p>
-<p>RecoverySync tidak pernah menulis data kembali ke HealthKit.</p>
+<p><strong>iOS:</strong> Dengan izin Anda, RecoverySync membaca data berikut dari Apple HealthKit di perangkat Anda: • Variabilitas Detak Jantung (SDNN) — untuk menghitung skor pemulihan Anda • Detak Jantung Istirahat — untuk menghitung skor pemulihan Anda • Data tidur — untuk menghitung skor pemulihan Anda Semua akses hanya baca.</p>
+<p><strong>iOS:</strong> RecoverySync tidak pernah menulis data kembali ke HealthKit.</p>
 <h2>Apa yang TIDAK kami kumpulkan</h2>
 <p>RecoverySync tidak mengumpulkan salah satu dari berikut ini: • Nama, alamat email, atau informasi akun • Data lokasi • Alamat IP atau pengenal perangkat • Data analitik atau penggunaan • Laporan crash yang dikirim ke layanan pihak ketiga • Pengenal iklan</p>
 <h2>Di mana data Anda disimpan</h2>
-<p>Semua data yang dihasilkan oleh RecoverySync — termasuk skor pemulihan dan preferensi Anda — disimpan secara eksklusif di perangkat Anda menggunakan framework SwiftData milik Apple.</p>
+<p><strong>iOS:</strong> Semua data yang dihasilkan oleh RecoverySync — termasuk skor pemulihan dan preferensi Anda — disimpan secara eksklusif di perangkat Anda menggunakan framework SwiftData milik Apple.</p>
 <p>Tidak ada data yang pernah dikirimkan ke server eksternal.</p>
-<p>Cadangan iCloud perangkat Anda dapat menyertakan data ini sesuai kebijaksanaan Anda di bawah Apple ID Anda sendiri dan ketentuan privasi Apple.</p>
+<p><strong>iOS:</strong> Cadangan iCloud perangkat Anda dapat menyertakan data ini sesuai kebijaksanaan Anda di bawah Apple ID Anda sendiri dan ketentuan privasi Apple.</p>
 <h2>SDK dan layanan pihak ketiga</h2>
-<p>RecoverySync tidak mengandung SDK analitik pihak ketiga, SDK iklan, atau pustaka pelacakan. Satu-satunya framework eksternal yang digunakan adalah HealthKit milik Apple, yang diatur oleh kebijakan privasi Apple sendiri.</p>
-<h2>Apple HealthKit</h2>
+<p><strong>iOS:</strong> RecoverySync tidak mengandung SDK analitik pihak ketiga, SDK iklan, atau pustaka pelacakan. Satu-satunya framework eksternal yang digunakan adalah HealthKit milik Apple, yang diatur oleh kebijakan privasi Apple sendiri.</p>
+<h2>Apple HealthKit (iOS)</h2>
 <p>Data kesehatan yang diperoleh melalui HealthKit digunakan semata-mata untuk tujuan menghitung dan menampilkan skor pemulihan Anda dalam aplikasi. Data ini tidak pernah digunakan untuk iklan, dibagikan dengan pialang data, atau diungkapkan kepada pihak ketiga.</p>
+
+<h2>Health Connect (Android)</h2>
+<p>Dengan izin Anda, RecoverySync membaca data berikut dari Health Connect di perangkat Anda: variabilitas denyut jantung (SDNN), denyut jantung istirahat, dan tidur. Akses bersifat baca-saja dan RecoverySync tidak pernah menulis data kembali.</p>
+<p>Data ini disimpan di perangkat Anda dalam basis data lokal. Pencadangan cloud dan transfer antarperangkat dinonaktifkan, sehingga data tidak pernah meninggalkan perangkat Anda.</p>
+<p>Satu-satunya layanan eksternal yang digunakan adalah Health Connect, Google Play Billing (pembelian), dan Google Play In-app Review (permintaan penilaian). Tidak satu pun dari layanan tersebut menerima data kesehatan Anda.</p>
+<p>Data kesehatan yang diperoleh melalui Health Connect hanya digunakan untuk menghitung dan menampilkan skor pemulihan Anda di dalam aplikasi. Data tersebut tidak pernah digunakan untuk iklan, dibagikan kepada pialang data, atau diungkapkan kepada pihak ketiga.</p>
 <h2>Anak-anak</h2>
 <p>RecoverySync tidak ditujukan untuk anak-anak di bawah usia 13 tahun dan tidak dengan sengaja mengumpulkan informasi dari anak-anak.</p>
 <h2>Perubahan pada kebijakan ini</h2>
