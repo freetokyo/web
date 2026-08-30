@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Informativa sulla privacy di Hanro. I dati restano sul dispositivo: nessun account, nessun tracciamento.", "inLanguage": "it", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/it/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Informativa sulla privacy di Hanro. I dati restano sul dispositivo: nessun account, nessun tracciamento.", "inLanguage": "it", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/it/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/it/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/it/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Notifiche: utilizzate per inviare promemoria come scadenze di revisione del veicolo o tempi di cambio olio.</p>
 <p>• Dati inseriti dall&#x27;utente: registri delle consegne, entrate, spese, informazioni sul veicolo, obiettivi, impostazioni fiscali e altre informazioni inserite direttamente dall&#x27;utente vengono salvate in un database sul dispositivo.</p>
 <h2>3. Sincronizzazione iCloud</h2>
-<p>Se l'utente ha eseguito l'accesso a iCloud sul dispositivo, i dati sopra indicati vengono sincronizzati esclusivamente all'interno del proprio account iCloud tramite il CloudKit Private Database di Apple (l'app non prevede un'impostazione per attivare o disattivare la sincronizzazione). Non abbiamo mai accesso a questi dati.</p>
+<p><strong>iOS:</strong> Se l'utente ha eseguito l'accesso a iCloud sul dispositivo, i dati sopra indicati vengono sincronizzati esclusivamente all'interno del proprio account iCloud tramite il CloudKit Private Database di Apple (l'app non prevede un'impostazione per attivare o disattivare la sincronizzazione). Non abbiamo mai accesso a questi dati.</p>
 <h2>4. Riconoscimento del testo e riepiloghi sul dispositivo</h2>
 <p>Il riconoscimento del testo delle ricevute, la lettura degli importi dagli screenshot dei guadagni e la generazione del testo del riepilogo mensile utilizzano funzionalità che Apple mette a disposizione sul dispositivo (Vision / Foundation Models). Tutta questa elaborazione viene completata interamente sul dispositivo dell'utente e non viene mai inviata a server esterni. La previsione dei picchi è una statistica calcolata sul dispositivo a partire dai dati passati dell'utente e non utilizza dati esterni.</p>
 <h2>5. Divulgazione a terzi</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Informazioni sui minori</h2>
 <p>Questa app è destinata principalmente ad autisti adulti che sono lavoratori autonomi. Non raccogliamo consapevolmente informazioni da minori di 13 anni.</p>
 <h2>8. Cancellazione dei dati</h2>
-<p>Gli utenti possono eliminare tutti i dati sul dispositivo disinstallando questa app tramite Impostazioni iOS → Generali → Spazio iPhone. I dati sincronizzati su iCloud possono essere cancellati eliminando i dati dell&#x27;app dalle impostazioni iCloud.</p>
+<p><strong>iOS:</strong> Gli utenti possono eliminare tutti i dati sul dispositivo disinstallando questa app tramite Impostazioni iOS → Generali → Spazio iPhone. I dati sincronizzati su iCloud possono essere cancellati eliminando i dati dell&#x27;app dalle impostazioni iCloud.</p>
 <h2>9. Fatturazione e App Store</h2>
-<p>La fatturazione dell&#x27;abbonamento per questa app viene gestita tramite l&#x27;App Store di Apple, e non otteniamo mai informazioni di pagamento come i dati della carta di credito. Queste informazioni vengono trattate in conformità con l&#x27;informativa sulla privacy di Apple.</p>
+<p><strong>iOS:</strong> La fatturazione dell&#x27;abbonamento per questa app viene gestita tramite l&#x27;App Store di Apple, e non otteniamo mai informazioni di pagamento come i dati della carta di credito. Queste informazioni vengono trattate in conformità con l&#x27;informativa sulla privacy di Apple.</p>
 <h2>10. Modifiche a questa Informativa</h2>
 <p>Il contenuto di questa Informativa può cambiare secondo necessità. Le modifiche sostanziali saranno annunciate all&#x27;interno dell&#x27;app o nella pagina di supporto.</p>
+
+<h2 id="android">Android</h2>
+<p>Questi dati sono memorizzati sul tuo dispositivo in un database locale. Il backup su cloud e il trasferimento tra dispositivi sono disattivati, quindi non lasciano mai il tuo dispositivo.</p>
 <h2>11. Contatto</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

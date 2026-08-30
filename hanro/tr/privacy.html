@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro gizlilik politikası. Verileriniz cihazınızda kalır — hesap yok, izleme yok, veri toplama yok.", "inLanguage": "tr", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/tr/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro gizlilik politikası. Verileriniz cihazınızda kalır — hesap yok, izleme yok, veri toplama yok.", "inLanguage": "tr", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/tr/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/tr/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/tr/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Bildirimler: Araç muayene son tarihleri veya yağ değişim zamanları gibi hatırlatıcılar göndermek için kullanılır.</p>
 <p>• Kullanıcı tarafından girilen veriler: Teslimat kayıtları, gelir, giderler, araç bilgileri, hedefler, vergi ayarları ve kullanıcı tarafından doğrudan girilen diğer bilgiler cihazdaki bir veritabanında saklanır.</p>
 <h2>3. iCloud Senkronizasyonu</h2>
-<p>Kullanıcı cihazda iCloud'da oturum açmışsa, yukarıdaki veriler yalnızca kullanıcının kendi iCloud hesabı içinde Apple'ın özel CloudKit veritabanı üzerinden eşitlenir (uygulamada eşitlemeyi açma veya kapatma ayarı yoktur). Bu verilere hiçbir zaman erişimimiz olmaz.</p>
+<p><strong>iOS:</strong> Kullanıcı cihazda iCloud'da oturum açmışsa, yukarıdaki veriler yalnızca kullanıcının kendi iCloud hesabı içinde Apple'ın özel CloudKit veritabanı üzerinden eşitlenir (uygulamada eşitlemeyi açma veya kapatma ayarı yoktur). Bu verilere hiçbir zaman erişimimiz olmaz.</p>
 <h2>4. Cihaz üzerinde metin tanıma ve özetleme</h2>
 <p>Fiş metni tanıma, kazanç ekran görüntülerinden tutar okuma ve aylık özet metninin oluşturulması, Apple'ın cihaz üzerinde sunduğu yetenekleri kullanır (Vision / Foundation Models). Tüm bu işleme kullanıcının cihazında tamamlanır ve hiçbir zaman harici sunuculara gönderilmez. Zirve saati tahmini, kullanıcının kendi geçmiş kayıtlarından cihazda hesaplanan bir istatistiktir ve harici veri kullanmaz.</p>
 <h2>5. Üçüncü Taraflara Açıklama</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Çocuk Bilgileri</h2>
 <p>Bu uygulama öncelikle işletme sahibi olan yetişkin sürücülere yöneliktir. 13 yaşından küçük çocuklardan bilerek bilgi toplamıyoruz.</p>
 <h2>8. Veri Silme</h2>
-<p>Kullanıcılar, iOS Ayarları → Genel → iPhone Depolama üzerinden bu uygulamayı kaldırarak cihazdaki tüm verileri silebilir. iCloud&#x27;daki senkronize edilmiş veriler, iCloud ayarlarından uygulama verilerini silerek temizlenebilir.</p>
+<p><strong>iOS:</strong> Kullanıcılar, iOS Ayarları → Genel → iPhone Depolama üzerinden bu uygulamayı kaldırarak cihazdaki tüm verileri silebilir. iCloud&#x27;daki senkronize edilmiş veriler, iCloud ayarlarından uygulama verilerini silerek temizlenebilir.</p>
 <h2>9. Faturalandırma ve App Store</h2>
-<p>Bu uygulama için abonelik faturalandırması Apple&#x27;ın App Store&#x27;u üzerinden yapılır ve kredi kartı bilgileri gibi ödeme bilgilerini asla elde etmeyiz. Bu bilgiler Apple&#x27;ın gizlilik politikasına uygun olarak işlenir.</p>
+<p><strong>iOS:</strong> Bu uygulama için abonelik faturalandırması Apple&#x27;ın App Store&#x27;u üzerinden yapılır ve kredi kartı bilgileri gibi ödeme bilgilerini asla elde etmeyiz. Bu bilgiler Apple&#x27;ın gizlilik politikasına uygun olarak işlenir.</p>
 <h2>10. Bu Politikadaki Değişiklikler</h2>
 <p>Bu Politikanın içeriği gerektiğinde değişebilir. Önemli değişiklikler uygulama içinde veya destek sayfasında duyurulacaktır.</p>
+
+<h2 id="android">Android</h2>
+<p>Bu veriler cihazınızda yerel bir veritabanında saklanır. Bulut yedeklemesi ve cihazlar arası aktarım kapalıdır, bu nedenle veriler cihazınızdan asla çıkmaz.</p>
 <h2>11. İletişim</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

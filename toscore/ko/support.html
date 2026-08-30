@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Toscore 지원. 자주 묻는 질문과 이메일 문의 방법을 안내합니다.", "inLanguage": "ko", "operatingSystem": "iOS", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/ko/support.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Toscore 지원. 자주 묻는 질문과 이메일 문의 방법을 안내합니다.", "inLanguage": "ko", "operatingSystem": "iOS, Android", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/ko/support.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Toscore", "item": "https://freetokyo.github.io/web/toscore/ko/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/toscore/ko/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "오프라인으로 사용할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. Toscore는 모든 기능을 오프라인으로 제공합니다. 스코어링, 규칙 검증, 출전 시간 검증, 내보내기 모두 네트워크 통신 없이 작동합니다."}}, {"@type": "Question", "name": "데이터는 어디에 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "모든 경기 기록은 iPhone에만 저장됩니다. 개발자 서버로는 아무것도 전송되지 않습니다. 앱 삭제 시 모든 데이터가 삭제되므로 중요한 기록은 내보내기 기능으로 백업하세요."}}, {"@type": "Question", "name": "이 기록을 공식 기록으로 사용할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "이 앱은 비공식/참조 용도만입니다. 공식 결정은 항상 경기 규칙과 심판의 판단을 따릅니다."}}, {"@type": "Question", "name": "규칙 설정을 변경할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 규칙 설정 화면에서 프리셋을 선택하세요. 시간, 타임아웃, 교체, 득점, 출전 시간도 편집해 커스텀 프로필로 저장할 수 있습니다."}}, {"@type": "Question", "name": "출전 시간 검증이란 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "이 기능은 전원 출전 요건 충족이 예상되는지 미리 확인합니다. 출전하지 않은 선수와 필요한 출전 슬롯을 표시하고 쿼터 시작 전 라인업 적합성을 검증합니다."}}, {"@type": "Question", "name": "기록 실수를 했을 때는 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "라이브 화면의 실행 취소 버튼으로 최근 기록을 즉시 취소하세요. 기록/수정 화면에서 임의의 기록을 취소하거나 재실행할 수 있습니다."}}, {"@type": "Question", "name": "어떤 iOS 버전이 지원되나요?", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0 이상. 최신 iOS로 업데이트하는 것을 권장합니다."}}]}</script>
 </head>

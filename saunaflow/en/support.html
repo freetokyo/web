@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "Support — SaunaFlow", "inLanguage": "en", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/en/support.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "Support — SaunaFlow", "inLanguage": "en", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/en/support.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "SaunaFlow", "item": "https://freetokyo.github.io/web/saunaflow/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/saunaflow/en/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What do I need to use SaunaFlow?", "acceptedAnswer": {"@type": "Answer", "text": "You need an iPhone (iOS 17 or later) and an Apple Watch (watchOS 10 or later). You create presets on your iPhone and start sessions on your Apple Watch."}}, {"@type": "Question", "name": "What can I set up in a preset?", "acceptedAnswer": {"@type": "Answer", "text": "You can set the sauna, cold plunge, rest, and transition phases, along with their duration and number of sets. You can save routines you use often and reuse them."}}, {"@type": "Question", "name": "Can I operate SaunaFlow with just the Apple Watch?", "acceptedAnswer": {"@type": "Answer", "text": "The main controls during a session are on the Apple Watch. Creating presets and checking your history are done on the iPhone."}}, {"@type": "Question", "name": "My Watch app isn't syncing with my iPhone.", "acceptedAnswer": {"@type": "Answer", "text": "Open SaunaFlow on both your iPhone and Apple Watch, and keep the preset list displayed on the Watch. Syncing starts once you save or edit a preset on the iPhone. Also check your Bluetooth connection."}}, {"@type": "Question", "name": "How do I use the Digital Crown?", "acceptedAnswer": {"@type": "Answer", "text": "Use the Digital Crown to skip or add 30 seconds to the current phase; pause has its own on-screen button."}}, {"@type": "Question", "name": "What does the Session Score show?", "acceptedAnswer": {"@type": "Answer", "text": "The Session Score (a measure of the relaxed “totonoi” feeling after a sauna) is a 0–100 rating based on set completion rate, phase balance, and session duration. It's not a medical guarantee of your experience."}}, {"@type": "Question", "name": "Can I keep a history and notes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, you can save your session history and add notes. Replaying your last session is a Premium feature."}}, {"@type": "Question", "name": "Can I record the facility and temperatures?", "acceptedAnswer": {"@type": "Answer", "text": "Since v1.2, you can record the facility name, sauna room temperature, cold plunge temperature, outside temperature, and whether löyly (steam) was used. You can add or edit these right after finishing a session or from the history details, and you can filter your history by facility."}}, {"@type": "Question", "name": "Can I log a session on days I don't have my Watch?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tap “+” at the top right of the history screen to log a sauna session manually (heart rate won't be recorded). You can also say “Hey Siri, log a sauna session in SaunaFlow.”"}}, {"@type": "Question", "name": "What are the Progress tab and Streak Reminder?", "acceptedAnswer": {"@type": "Answer", "text": "The Progress tab shows your weekly streak, milestone badges, and a summary for the month. Turn on Streak Reminder in Settings to get a single notification on Saturday evening, only if you haven't had a sauna session that week."}}, {"@type": "Question", "name": "Is Premium a subscription?", "acceptedAnswer": {"@type": "Answer", "text": "No. SaunaFlow Premium is a one-time purchase, not a recurring subscription."}}, {"@type": "Question", "name": "How do I restore my purchase?", "acceptedAnswer": {"@type": "Answer", "text": "Choose “Restore Purchases” on the Premium screen in the iPhone app. If you purchased with the same Apple ID, it will be restored."}}, {"@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": {"@type": "Answer", "text": "Data such as presets, history, and notes are stored on your device. This site makes no claims about sending data to external servers. Please check the Privacy Policy for details."}}, {"@type": "Question", "name": "How do I contact support?", "acceptedAnswer": {"@type": "Answer", "text": "Contact is by email. If you need support, please reach out at freetokyo2020@yahoo.co.jp."}}]}</script>
 </head>
@@ -615,6 +615,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
           <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
         </div>
       </section>
+<section class="ftlegal">
+<h2 id="android-support">About the Android version</h2>
+<p>The Android version supports Android 9.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup is disabled in the Android version.</p>
+<p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

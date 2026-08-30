@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 隐私政策。数据仅保存在您的设备上，无需账号，不追踪、不收集任何数据。", "inLanguage": "zh-Hans", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/zh-Hans/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 隐私政策。数据仅保存在您的设备上，无需账号，不追踪、不收集任何数据。", "inLanguage": "zh-Hans", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/zh-Hans/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/zh-Hans/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/zh-Hans/privacy.html"}]}</script>
 </head>
 <body>
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 网络通信</h2>
 <p>计算、输入与记录全部在设备内完成，不会外传。仅在购买、恢复购买以及打开法律页面时才使用网络。</p>
 <h2>💳 购买与支付信息</h2>
-<p>应用内购买（一次性高级功能）通过Apple的App Store进行。支付信息由Apple管理，不会提供给开发者。购买状态确认及购买恢复使用StoreKit 2。</p>
+<p><strong>iOS:</strong> 应用内购买（一次性高级功能）通过Apple的App Store进行。支付信息由Apple管理，不会提供给开发者。购买状态确认及购买恢复使用StoreKit 2。</p>
 <h2>🗑️ 数据的保存与删除</h2>
 <p>数据仅保存在设备内。卸载本应用后，保存的数据将被删除且无法恢复。请自行备份重要数据。</p>
 <h2>🔗 向第三方提供信息</h2>
@@ -564,6 +564,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>如需修订本政策，将通过应用更新或本页面进行通知。</p>
 <h2>✉️ 联系方式</h2>
 <p>有关隐私的问题，请通过支持页面与我们联系。</p>
+<h2 id="android">Android</h2>
+<p>这些数据存储在您设备上的本地数据库中。云备份和设备间迁移均已关闭，因此数据绝不会离开您的设备。</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>联系</p>

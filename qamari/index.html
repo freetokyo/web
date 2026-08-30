@@ -262,7 +262,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -329,7 +329,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -457,7 +457,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "قمري / Qamari（カマリ）", "description": "ヒジュラ暦を大きく、西暦を併記。毎ヒジュラ年・毎ヒジュラ月で繰り返すリマインダーと、地域の実見発表に合わせると登録済みの通知がすべて自動追従する実見補正。完全オフライン・アカウント不要・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://freetokyo.github.io/web/qamari/", "image": "https://freetokyo.github.io/web/qamari/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791838601"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "قمري / Qamari（カマリ）", "description": "ヒジュラ暦を大きく、西暦を併記。毎ヒジュラ年・毎ヒジュラ月で繰り返すリマインダーと、地域の実見発表に合わせると登録済みの通知がすべて自動追従する実見補正。完全オフライン・アカウント不要・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "ProductivityApplication", "url": "https://freetokyo.github.io/web/qamari/", "image": "https://freetokyo.github.io/web/qamari/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791838601"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "قمري / Qamari（カマリ）", "item": "https://freetokyo.github.io/web/qamari/"}]}</script>
 </head>
 <body>
@@ -483,9 +483,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   ヒジュラ暦で繰り返す予定と、地域の実見発表に通知が追従する補正 —— 標準のカレンダーではできない2つを担います。</p>
   <a class="badge" href="https://apps.apple.com/jp/app/id6791838601">App Store で見る</a>
   <div class="shots">
-    <img src="shots/ja/calendar.png" alt="カレンダー画面。ヒジュラ暦の日付が大きく、西暦が小さく併記されている" loading="lazy">
-    <img src="shots/ja/holidays.png" alt="記念日画面。イスラム記念日が一覧され、個別にオン・オフできる" loading="lazy">
-    <img src="shots/ja/adjust.png" alt="実見補正画面。全体オフセットと月別の個別補正、暦の計算方式の設定" loading="lazy">
+    <img src="shots/ja/calendar.png" alt="カレンダー画面。ヒジュラ暦の日付が大きく、西暦が小さく併記されている" loading="lazy" width="640" height="1391">
+    <img src="shots/ja/holidays.png" alt="記念日画面。イスラム記念日が一覧され、個別にオン・オフできる" loading="lazy" width="640" height="1391">
+    <img src="shots/ja/adjust.png" alt="実見補正画面。全体オフセットと月別の個別補正、暦の計算方式の設定" loading="lazy" width="640" height="1391">
   </div>
   <p class="note">iPhone / iOS 26.0 以降・日本語 / English / العربية・アカウント登録不要</p>
 </div></header>
@@ -607,6 +607,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <details><summary>サブスクリプションですか？</summary><p>いいえ。Pro は買い切り（¥1,500）です。一度購入すれば追加の料金はかかりません。設定と Paywall の両方から復元できます。</p></details>
   <details><summary>宗教的な判断をアプリが示すことはありますか？</summary><p>ありません。Qamari は日付の管理のみを行います。記念日の日付や呼称は地域・学派によって異なるため、ご自身が参照するものだけを選べる設計にしています。「正しい日付」を主張することはなく、最終的な判断は各自の学派・地域の当局にお任せしています。</p></details>
 </div></section>
+
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Qamari は Android 版を準備しています。Android 8.0 以降に対応し、Google Play での公開を予定しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
+</section>
 
 <section class="ftcta">
 <h2>قمري / Qamari（カマリ）</h2>

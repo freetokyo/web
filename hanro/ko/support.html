@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro 지원. 자주 묻는 질문과 이메일 문의 방법을 안내합니다.", "inLanguage": "ko", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ko/support.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro 지원. 자주 묻는 질문과 이메일 문의 방법을 안내합니다.", "inLanguage": "ko", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ko/support.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/ko/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/hanro/ko/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "오프라인에서 사용할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 이 앱의 모든 핵심 기능은 오프라인에서 작동합니다. 모든 데이터는 기기에만 저장되며 서버로 전송되는 일은 없습니다."}}, {"@type": "Question", "name": "여러 iPhone/iPad 간에 데이터를 동기화할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "예. iCloud에 로그인되어 있으면 동일한 Apple ID의 기기 간에 데이터가 자동으로 동기화됩니다. 앱 내에 동기화 켜기/끄기 설정은 없습니다. 동기화된 데이터는 Apple의 CloudKit Private Database에서만 관리됩니다."}}, {"@type": "Question", "name": "자동 주행거리 기록의 정확도는 어느 정도인가요?", "acceptedAnswer": {"@type": "Answer", "text": "Core Motion(가속도 센서)과 Core Location(GPS)을 조합해 주행을 감지합니다. 주행 자동 감지는 기본적으로 꺼져 있으며 설정에서 켜면 동작합니다(프리미엄). 꺼져 있어도 직접 업무 시작·종료를 누른 구간의 주행거리는 기록됩니다. 감지 정확도는 기기 상태·전파 상황·주행 환경에 따라 달라지며, 기록은 수동으로 보정할 수 있습니다."}}, {"@type": "Question", "name": "피크타임 예측은 어떤 기기에서 사용할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0 이상을 지원하는 모든 iPhone에서 사용할 수 있습니다(프리미엄 기능). 예측은 같은 요일·시간대의 본인 과거 기록을 집계한 값이므로, 기록이 적을 때는 정확도가 낮습니다."}}, {"@type": "Question", "name": "어떤 소프트웨어로 확정신고 데이터를 가져올 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "freee, Money Forward, Yayoi Kaikei용 CSV 가져오기 형식을 지원합니다. 내보낸 CSV를 원하는 회계 소프트웨어로 가져오세요."}}, {"@type": "Question", "name": "구독을 취소하려면 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone에서 설정 → 계정 이름 탭 → 구독 → Hanro 선택 → 구독 취소를 탭하세요. 무료 체험 기간 중에 취소하면 요금이 청구되지 않습니다."}}, {"@type": "Question", "name": "다른 기기에서 구매를 복원하려면?", "acceptedAnswer": {"@type": "Answer", "text": "동일한 Apple ID로 로그인한 상태에서 앱의 설정 → 구매 복원을 탭하세요."}}, {"@type": "Question", "name": "데이터를 백업할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "iCloud에 로그인되어 있으면 데이터가 자동으로 iCloud에 동기화·백업됩니다. CSV/PDF로 내보낼 수도 있습니다(세금 탭 → 데이터 내보내기)."}}, {"@type": "Question", "name": "Apple Watch와 연동하려면?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone에서 Hanro 앱을 실행한 후 Watch 앱에서 Hanro 설치를 승인하세요. 시계에서 &quot;헤이&quot;라고 말하거나 탭하여 원터치로 기록할 수 있습니다."}}, {"@type": "Question", "name": "비즈니스 플랜이나 다중 운전자 관리 기능이 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재 버전은 개인 사업자를 위해 설계되었습니다. 비즈니스 및 다중 운전자 관리 기능은 향후 업데이트를 위해 검토 중입니다. 이메일로 요청 사항을 보내주세요."}}]}</script>
 </head>

@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -517,7 +517,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "RecoverySync 支援：常見問題與透過電子郵件聯絡我們的方式。", "inLanguage": "zh-Hant", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/zh-Hant/support.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "RecoverySync", "description": "RecoverySync 支援：常見問題與透過電子郵件聯絡我們的方式。", "inLanguage": "zh-Hant", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/recoverysync/zh-Hant/support.html", "image": "https://freetokyo.github.io/web/recoverysync/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6770408873", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "RecoverySync", "item": "https://freetokyo.github.io/web/recoverysync/zh-Hant/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/recoverysync/zh-Hant/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "恢復分數是如何計算的？", "acceptedAnswer": {"@type": "Answer", "text": "您的恢復分數由從 Apple Watch 讀取的三項指標計算得出：心率變異性（HRV，SDNN）佔 50%，靜息心率佔 30%，睡眠時長佔 20%。每項指標都會與您的個人 28 天基線進行比較，得出 0-100 的分數。高為 76-100，中等為 51-75，低為 0-50。"}}, {"@type": "Question", "name": "為什麼我的分數顯示為「—」（短橫線）？", "acceptedAnswer": {"@type": "Answer", "text": "破折號（—）表示 RecoverySync 尚未取得昨晚的數據，並不代表 App 還在校準；只要有數據，第一晚就會顯示分數。請在「健康」App 中確認已允許 RecoverySync 讀取睡眠、心率變異性與靜止心率，並在 Watch App 中開啟睡眠追蹤，讓 Apple Watch 在夜間記錄睡眠。"}}, {"@type": "Question", "name": "RecoverySync 沒有 Apple Watch 也能使用嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不能。RecoverySync 需要 Apple Watch（Series 4 或更新機型）來記錄用於分數計算的 HRV、靜息心率和睡眠資料。iPhone 應用程式會顯示和分析資料，但 Apple Watch 是必需的資料來源。"}}, {"@type": "Question", "name": "為什麼應用程式需要存取我的健康資料？", "acceptedAnswer": {"@type": "Answer", "text": "RecoverySync 從 Apple HealthKit 讀取 HRV（SDNN）、靜息心率和睡眠資料以計算您的恢復分數。這是使用健康資料的唯一目的。資料完全在裝置上處理，絕不會離開您的 iPhone。"}}, {"@type": "Question", "name": "如何復原我的購買？", "acceptedAnswer": {"@type": "Answer", "text": "開啟 RecoverySync，前往設定 → 復原購買項目。請確保您使用與原始購買相同的 Apple ID 登入。如果問題仍然存在，請聯絡 Apple 支援取得購買相關協助。"}}, {"@type": "Question", "name": "應用程式是否將資料同步到 iCloud 或任何伺服器？", "acceptedAnswer": {"@type": "Answer", "text": "不會。RecoverySync 僅將所有資料本機儲存在您的裝置上。沒有雲端同步、沒有帳戶、也沒有伺服器。您的資料絕不會離開您的裝置（除非包含在受您的 iOS 設定控制的 iCloud 裝置備份中）。"}}, {"@type": "Question", "name": "我的 Apple Watch 複雜功能沒有顯示——如何修復？", "acceptedAnswer": {"@type": "Answer", "text": "在 iPhone 上開啟 Watch 應用程式 → 我的手錶標籤 → 捲動至 RecoverySync → 點按 → 確保複雜功能已新增至您的作用中錶面。您也可以長按錶面 → 編輯 → 選擇複雜功能插槽 → 選擇 RecoverySync。"}}, {"@type": "Question", "name": "支援哪些 Apple Watch 機型？", "acceptedAnswer": {"@type": "Answer", "text": "RecoverySync 需要執行 watchOS 10.0 或更新版本的 Apple Watch Series 4 或更新機型，並與執行 iOS 17.0 或更新版本的 iPhone 配對。"}}]}</script>
 </head>

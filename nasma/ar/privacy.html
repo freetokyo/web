@@ -261,7 +261,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -328,7 +328,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -456,7 +456,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Nasma", "description": "سياسة خصوصية نسمة. تبقى البيانات داخل جهازك ولا تُرسل إلى أي مكان، وقراءة بيانات الصحة للقراءة فقط.", "inLanguage": "ar", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/nasma/ar/privacy.html", "image": "https://freetokyo.github.io/web/nasma/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Nasma", "description": "سياسة خصوصية نسمة. تبقى البيانات داخل جهازك ولا تُرسل إلى أي مكان، وقراءة بيانات الصحة للقراءة فقط.", "inLanguage": "ar", "operatingSystem": "iOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/nasma/ar/privacy.html", "image": "https://freetokyo.github.io/web/nasma/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Nasma", "item": "https://freetokyo.github.io/web/nasma/ar/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/nasma/ar/privacy.html"}]}</script>
 </head>
 <body>
@@ -476,7 +476,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 </nav>
 <main class="ftbody" id="ftmain">
-<header class="hero"><div class="wrap"><h1>سياسة الخصوصية</h1><p class="note">آخر تحديث: ٣ أغسطس ٢٠٢٦</p></div></header><section><div class="wrap"><h2>ما الذي نجمعه</h2><p>لا يجمع نسمة أي معلومات شخصية. لا يوجد حساب، ولا يحصل التطبيق على اسمك أو بريدك أو رقم هاتفك أو موقعك أو معرّفات جهازك.</p></div></section><section><div class="wrap"><h2>أين تُحفظ البيانات</h2><p>تُحفظ كل السجلات (التدخين والرغبة والأهداف والإعدادات) داخل جهازك فقط. ولا يستطيع المطوّر ولا أي طرف ثالث الاطلاع عليها.</p></div></section><section><div class="wrap"><h2>الاتصال بالشبكة</h2><p>باستثناء معالجة الشراء عبر App Store التي توفرها Apple، لا يجري التطبيق أي اتصال بالشبكة. ولا تتضمن الحزمة أي أدوات إعلانات أو تحليلات أو تقارير أعطال.</p></div></section><section><div class="wrap"><h2>بيانات الصحة (HealthKit)</h2><p>بعد إذنك الصريح فقط، يقرأ نسمة ثلاثة أنواع: نبض الراحة والخطوات والنوم، <strong>للقراءة فقط</strong>. تُعالَج داخل جهازك ولا تُرسل إلى أي مكان. لا يكتب نسمة في «الصحة» إطلاقاً، ولا يستخدم السجلات الطبية السريرية، ولا يستخدم بيانات الصحة لأي غرض إعلاني. ويمكنك سحب الإذن في أي وقت من تطبيق «الصحة».</p></div></section><section><div class="wrap"><h2>بصمة الوجه أو الإصبع</h2><p>تُستخدم فقط لإلغاء قفل التطبيق. تبقى المصادقة داخل الجهاز ولا تصل أي بيانات حيوية إلى التطبيق.</p></div></section><section><div class="wrap"><h2>الإشعارات</h2><p>تُجدوَل الإشعارات محلياً على الجهاز فقط إذا فعّلتها، ولا يُرسل محتواها إلى أي مكان.</p></div></section><section><div class="wrap"><h2>النسخ الاحتياطي</h2><p>أنت تختار مكان حفظ الملف المصدَّر، ولا يعلم المطوّر بالوجهة ولا بالمحتوى.</p></div></section><section><div class="wrap"><h2>الأطفال</h2><p>نسمة غير مصمَّم للأطفال. يُرجى استخدامه وفق تصنيفه العمري.</p></div></section><section><div class="wrap"><h2>حذف بياناتك</h2><p>يزيل خيار «حذف جميع البيانات» في الإعدادات كل السجلات والإعدادات. كما يؤدي حذف التطبيق إلى إزالة البيانات من جهازك.</p></div></section><section><div class="wrap"><h2>التغييرات</h2><p>في حال تغيّرت هذه السياسة، ستُحدَّث هذه الصفحة.</p></div></section>
+<header class="hero"><div class="wrap"><h1>سياسة الخصوصية</h1><p class="note">آخر تحديث: ٣ أغسطس ٢٠٢٦</p></div></header><section><div class="wrap"><h2>ما الذي نجمعه</h2><p>لا يجمع نسمة أي معلومات شخصية. لا يوجد حساب، ولا يحصل التطبيق على اسمك أو بريدك أو رقم هاتفك أو موقعك أو معرّفات جهازك.</p></div></section><section><div class="wrap"><h2>أين تُحفظ البيانات</h2><p>تُحفظ كل السجلات (التدخين والرغبة والأهداف والإعدادات) داخل جهازك فقط. ولا يستطيع المطوّر ولا أي طرف ثالث الاطلاع عليها.</p></div></section><section><div class="wrap"><h2>الاتصال بالشبكة</h2><p><strong>iOS:</strong> باستثناء معالجة الشراء عبر App Store التي توفرها Apple، لا يجري التطبيق أي اتصال بالشبكة. ولا تتضمن الحزمة أي أدوات إعلانات أو تحليلات أو تقارير أعطال.</p></div></section><section><div class="wrap"><h2>بيانات الصحة (HealthKit)</h2><p>بعد إذنك الصريح فقط، يقرأ نسمة ثلاثة أنواع: نبض الراحة والخطوات والنوم، <strong>للقراءة فقط</strong>. تُعالَج داخل جهازك ولا تُرسل إلى أي مكان. لا يكتب نسمة في «الصحة» إطلاقاً، ولا يستخدم السجلات الطبية السريرية، ولا يستخدم بيانات الصحة لأي غرض إعلاني. ويمكنك سحب الإذن في أي وقت من تطبيق «الصحة».</p></div></section><section><div class="wrap"><h2>بصمة الوجه أو الإصبع</h2><p>تُستخدم فقط لإلغاء قفل التطبيق. تبقى المصادقة داخل الجهاز ولا تصل أي بيانات حيوية إلى التطبيق.</p></div></section><section><div class="wrap"><h2>الإشعارات</h2><p>تُجدوَل الإشعارات محلياً على الجهاز فقط إذا فعّلتها، ولا يُرسل محتواها إلى أي مكان.</p></div></section><section><div class="wrap"><h2>النسخ الاحتياطي</h2><p>أنت تختار مكان حفظ الملف المصدَّر، ولا يعلم المطوّر بالوجهة ولا بالمحتوى.</p></div></section><section><div class="wrap"><h2>الأطفال</h2><p>نسمة غير مصمَّم للأطفال. يُرجى استخدامه وفق تصنيفه العمري.</p></div></section><section><div class="wrap"><h2>حذف بياناتك</h2><p>يزيل خيار «حذف جميع البيانات» في الإعدادات كل السجلات والإعدادات. كما يؤدي حذف التطبيق إلى إزالة البيانات من جهازك.</p></div></section><section><div class="wrap"><h2>التغييرات</h2><p>في حال تغيّرت هذه السياسة، ستُحدَّث هذه الصفحة.</p></div></section>
+
+<section><div class="wrap">
+<h2 id="android">Android</h2>
+<p>تُخزَّن هذه البيانات على جهازك في قاعدة بيانات محلية. النسخ الاحتياطي السحابي ونقل البيانات بين الأجهزة معطَّلان، لذا لا تغادر جهازك أبداً.</p>
+</div></section>
 
 </main>
 <footer class="footer">

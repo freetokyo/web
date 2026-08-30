@@ -324,7 +324,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -391,7 +391,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -519,7 +519,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Trero", "description": "iPhone / Apple Watch の筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。オフラインで使えて買い切り。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/trero/", "image": "https://freetokyo.github.io/web/trero/og-image-spatial.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6760746164", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Trero", "description": "iPhone / Apple Watch の筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。オフラインで使えて買い切り。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/trero/", "image": "https://freetokyo.github.io/web/trero/og-image-spatial.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6760746164", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Trero", "item": "https://freetokyo.github.io/web/trero/"}]}</script>
 </head>
 <body>
@@ -872,6 +872,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ワークアウトの記録。ベンチプレス（バーベル）のセット1に77.5kg×10回を入れる画面。前回の記録と、次のセットの提案85kg×5回が並ぶ" width="360" height="783" loading="lazy" decoding="async"><figcaption>前回の記録を見ながら</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="分析。ベンチプレスの最大重量80.5kg・推定1RM 112.7kg・累計40セットと、最大重量の推移およびセッションボリュームのグラフ" width="360" height="783" loading="lazy" decoding="async"><figcaption>最大重量と推定1RMの推移</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="目標の一覧。デッドリフト68%・スクワット71%・ベンチプレス82%の進捗バーと、達成済み5件" width="360" height="783" loading="lazy" decoding="async"><figcaption>目標の進捗を一覧で</figcaption></figure></div>
 </section>
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Trero は Android 版を準備しています。Android 9.0 以降に対応し、Google Play での公開を予定しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
+</section>
+
 <section class="ftcta">
 <h2>Trero</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

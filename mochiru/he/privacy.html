@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "מדיניות הפרטיות של Mochiru. הנתונים נשארים במכשיר שלך — ללא חשבון, ללא מעקב וללא איסוף נתונים.", "inLanguage": "he", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/he/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "מדיניות הפרטיות של Mochiru. הנתונים נשארים במכשיר שלך — ללא חשבון, ללא מעקב וללא איסוף נתונים.", "inLanguage": "he", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/he/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/he/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/he/privacy.html"}]}</script>
 </head>
 <body>
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 תקשורת רשת</h2>
 <p>החישובים, הקלט והרישומים נשארים במכשיר שלכם ואינם נשלחים לשום מקום. הרשת משמשת רק לרכישה, לשחזורה ולפתיחת הדפים המשפטיים.</p>
 <h2>💳 רכישות ותשלומים</h2>
-<p>רכישות בתוך האפליקציה (פרמיום חד-פעמי) מתבצעות דרך App Store של Apple. פרטי התשלום מנוהלים על ידי Apple ואינם מועברים למפתח. StoreKit 2 משמש לאימות ושחזור רכישות.</p>
+<p><strong>iOS:</strong> רכישות בתוך האפליקציה (פרמיום חד-פעמי) מתבצעות דרך App Store של Apple. פרטי התשלום מנוהלים על ידי Apple ואינם מועברים למפתח. StoreKit 2 משמש לאימות ושחזור רכישות.</p>
 <h2>🗑️ אחסון ומחיקת נתונים</h2>
 <p>הנתונים נשמרים רק במכשיר שלך. הסרת ההתקנה של האפליקציה מוחקת לצמיתות את כל הנתונים השמורים. גבה נתונים חשובים בעצמך.</p>
 <h2>🔗 מסירה לצדדים שלישיים</h2>
@@ -564,6 +564,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>אם מדיניות זו תשתנה, נודיע לך דרך עדכון האפליקציה או בדף זה.</p>
 <h2>✉️ יצירת קשר</h2>
 <p>לשאלות בנושא פרטיות, צור קשר דרך דף התמיכה.</p>
+<h2 id="android">Android</h2>
+<p>נתונים אלה נשמרים במכשירכם במסד נתונים מקומי. גיבוי בענן והעברה בין מכשירים מושבתים, ולכן הנתונים לעולם אינם יוצאים מהמכשיר שלכם.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>יצירת קשר</p>

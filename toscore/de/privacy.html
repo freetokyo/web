@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Datenschutzerklärung für Toscore. Ihre Daten bleiben auf dem Gerät – kein Konto, kein Tracking, keine Datenerfassung.", "inLanguage": "de", "operatingSystem": "iOS", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/de/privacy.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Datenschutzerklärung für Toscore. Ihre Daten bleiben auf dem Gerät – kein Konto, kein Tracking, keine Datenerfassung.", "inLanguage": "de", "operatingSystem": "iOS, Android", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/de/privacy.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Toscore", "item": "https://freetokyo.github.io/web/toscore/de/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/toscore/de/privacy.html"}]}</script>
 </head>
 <body>
@@ -559,7 +559,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>Export und Teilen</h2>
 <p>Der Export erfolgt durch den Benutzer über das Standard-Freigabeblatt von iOS. Der Entwickler erhält weder das Ziel noch den Inhalt der Freigaben.</p>
 <h2>Kauf- und Zahlungsinformationen</h2>
-<p>Käufe werden über den App Store von Apple abgewickelt. Kreditkartendaten werden von Apple verwaltet; der Entwickler hat keinen Zugang dazu. StoreKit 2 wird zur Überprüfung des Kaufstatus verwendet.</p>
+<p><strong>iOS:</strong> Käufe werden über den App Store von Apple abgewickelt. Kreditkartendaten werden von Apple verwaltet; der Entwickler hat keinen Zugang dazu. StoreKit 2 wird zur Überprüfung des Kaufstatus verwendet.</p>
 <h2>Datenspeicherung und -löschung</h2>
 <p>Daten werden nur auf dem Gerät gespeichert. Deinstallation löscht alle Daten ohne Wiederherstellungsmöglichkeit. Sichern Sie wichtige Daten selbst.</p>
 <h2>Weitergabe an Dritte</h2>
@@ -570,6 +570,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Änderungen werden per App-Update oder auf dieser Seite mitgeteilt.</p>
 <h2>Kontakt</h2>
 <p>Bei Datenschutzfragen kontaktieren Sie uns über die Support-Seite.</p>
+<h2 id="android">Android</h2>
+<p>Diese Daten werden auf deinem Gerät in einer lokalen Datenbank gespeichert. Cloud-Backup und Geräteübertragung sind deaktiviert, sodass sie dein Gerät nie verlassen.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontakt</p>

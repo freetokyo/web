@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Zásady ochrany súkromia pre Hanro. Údaje zostávajú vo vašom zariadení – bez účtu, bez sledovania a bez zberu údajov.", "inLanguage": "sk", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/sk/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Zásady ochrany súkromia pre Hanro. Údaje zostávajú vo vašom zariadení – bez účtu, bez sledovania a bez zberu údajov.", "inLanguage": "sk", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/sk/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/sk/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/sk/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Upozornenia: používajú sa na zasielanie pripomienok, ako sú termíny technickej kontroly vozidla alebo výmeny oleja.</p>
 <p>• Údaje zadané používateľom: záznamy o doručení, tržby, výdavky, informácie o vozidle, ciele, nastavenia daní a ďalšie informácie zadané priamo používateľom sa ukladajú do databázy v zariadení.</p>
 <h2>3. Synchronizácia iCloud</h2>
-<p>Ak je používateľ na zariadení prihlásený do iCloudu, vyššie uvedené údaje sa synchronizujú výlučne v rámci vlastného iCloud účtu používateľa cez súkromnú databázu CloudKit od Apple (aplikácia nemá nastavenie na zapnutie ani vypnutie synchronizácie). K týmto údajom nikdy nemáme prístup.</p>
+<p><strong>iOS:</strong> Ak je používateľ na zariadení prihlásený do iCloudu, vyššie uvedené údaje sa synchronizujú výlučne v rámci vlastného iCloud účtu používateľa cez súkromnú databázu CloudKit od Apple (aplikácia nemá nastavenie na zapnutie ani vypnutie synchronizácie). K týmto údajom nikdy nemáme prístup.</p>
 <h2>4. Rozpoznávanie textu a zhrnutia priamo v zariadení</h2>
 <p>Rozpoznávanie textu účteniek, načítanie súm zo snímok obrazovky s tržbami a generovanie textu mesačného zhrnutia využívajú funkcie, ktoré Apple poskytuje priamo v zariadení (Vision / Foundation Models). Celé toto spracovanie sa vykonáva výlučne na zariadení používateľa a nikdy sa neposiela na externé servery. Predikcia špičkových časov je štatistika vypočítaná v zariadení z vlastných predchádzajúcich záznamov používateľa a nevyužíva žiadne externé údaje.</p>
 <h2>5. Sprístupnenie tretím stranám</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Informácie o deťoch</h2>
 <p>Táto aplikácia je primárne určená pre dospelých vodičov, ktorí sú podnikateľmi. Vedome nezhromažďujeme informácie od detí mladších ako 13 rokov.</p>
 <h2>8. Odstránenie údajov</h2>
-<p>Používatelia môžu odstrániť všetky údaje v zariadení odinštalovaním tejto aplikácie cez Nastavenia iOS → Všeobecné → Úložisko iPhone. Synchronizované údaje v iCloud je možné vymazať odstránením údajov aplikácie z nastavení iCloud.</p>
+<p><strong>iOS:</strong> Používatelia môžu odstrániť všetky údaje v zariadení odinštalovaním tejto aplikácie cez Nastavenia iOS → Všeobecné → Úložisko iPhone. Synchronizované údaje v iCloud je možné vymazať odstránením údajov aplikácie z nastavení iCloud.</p>
 <h2>9. Fakturácia a App Store</h2>
-<p>Fakturácia predplatného tejto aplikácie sa vykonáva prostredníctvom App Store spoločnosti Apple a nikdy nezískavame platobné údaje, ako sú údaje o kreditnej karte. Tieto informácie sú spracúvané v súlade so zásadami ochrany osobných údajov spoločnosti Apple.</p>
+<p><strong>iOS:</strong> Fakturácia predplatného tejto aplikácie sa vykonáva prostredníctvom App Store spoločnosti Apple a nikdy nezískavame platobné údaje, ako sú údaje o kreditnej karte. Tieto informácie sú spracúvané v súlade so zásadami ochrany osobných údajov spoločnosti Apple.</p>
 <h2>10. Zmeny týchto Zásad</h2>
 <p>Obsah týchto Zásad sa môže podľa potreby meniť. Podstatné zmeny budú oznámené v aplikácii alebo na stránke podpory.</p>
+
+<h2 id="android">Android</h2>
+<p>Tieto údaje sa ukladajú vo vašom zariadení v lokálnej databáze. Zálohovanie do cloudu a prenos medzi zariadeniami sú vypnuté, takže údaje nikdy neopustia vaše zariadenie.</p>
 <h2>11. Kontakt</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

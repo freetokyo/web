@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -558,7 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>SDKs und Dienste von Drittanbietern</h2>
 <p><strong>iOS:</strong> RecoverySync enthält keine Analyse-SDKs, Werbe-SDKs oder Tracking-Bibliotheken von Drittanbietern. Das einzige verwendete externe Framework ist Apples HealthKit, das den eigenen Datenschutzrichtlinien von Apple unterliegt.</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>Über HealthKit erhaltene Gesundheitsdaten werden ausschließlich zum Zweck der Berechnung und Anzeige deines Erholungswerts innerhalb der App verwendet. Diese Daten werden niemals für Werbung verwendet, mit Datenhändlern geteilt oder an Dritte weitergegeben.</p>
+<p><strong>iOS:</strong> Über HealthKit erhaltene Gesundheitsdaten werden ausschließlich zum Zweck der Berechnung und Anzeige deines Erholungswerts innerhalb der App verwendet. Diese Daten werden niemals für Werbung verwendet, mit Datenhändlern geteilt oder an Dritte weitergegeben.</p>
 
 <h2>Health Connect (Android)</h2>
 <p>Mit deiner Erlaubnis liest RecoverySync die folgenden Daten aus Health Connect auf deinem Gerät: Herzfrequenzvariabilität (SDNN), Ruheherzfrequenz und Schlaf. Der Zugriff ist ausschließlich lesend; RecoverySync schreibt niemals Daten zurück.</p>
@@ -571,6 +571,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Wenn wir wesentliche Änderungen an dieser Datenschutzrichtlinie vornehmen, aktualisieren wir das oben genannte Datum &quot;Zuletzt aktualisiert&quot;. Die fortgesetzte Nutzung der App nach solchen Änderungen stellt deine Zustimmung zur aktualisierten Richtlinie dar.</p>
 <h2>Kontakt</h2>
 <p>Wenn du Fragen zu dieser Datenschutzrichtlinie hast, kontaktiere uns bitte:</p>
+<h2 id="android">Android</h2>
+<p>Diese Daten werden auf deinem Gerät in einer lokalen Datenbank gespeichert. Cloud-Backup und Geräteübertragung sind deaktiviert, sodass sie dein Gerät nie verlassen.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontakt</p>

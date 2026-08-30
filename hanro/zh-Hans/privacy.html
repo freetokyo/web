@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro 隐私政策。数据仅保存在您的设备上，无需账号，不追踪、不收集任何数据。", "inLanguage": "zh-Hans", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/zh-Hans/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro 隐私政策。数据仅保存在您的设备上，无需账号，不追踪、不收集任何数据。", "inLanguage": "zh-Hans", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/zh-Hans/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/zh-Hans/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/zh-Hans/privacy.html"}]}</script>
 </head>
 <body>
@@ -552,7 +552,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>2. 我们收集的信息</h2>
 <p>本应用在设备上收集并使用以下信息以提供其功能。这些信息永远不会离开设备。• 位置信息：在工作时间内自动记录行驶距离，并用于计算费用。后台位置信息也用于记录从工作开始到结束的行驶距离。• 运动与体能：检测车辆移动以自动估算工作的开始/结束。• 相机：拍摄收据以自动录入费用。拍摄的图像仅在设备上处理。• 通知：用于发送提醒，例如车辆年检期限或换油时间。• 用户输入的数据：配送记录、收入、费用、车辆信息、目标、税务设置以及用户直接输入的其他信息，均保存在设备内的数据库中。</p>
 <h2>3. iCloud 同步</h2>
-<p>若用户已在设备上登录 iCloud，上述数据将仅通过 Apple 的 CloudKit 私有数据库在用户本人的 iCloud 账户内同步（App 内没有开启或关闭同步的设置）。我们绝不会访问这些数据。</p>
+<p><strong>iOS:</strong> 若用户已在设备上登录 iCloud，上述数据将仅通过 Apple 的 CloudKit 私有数据库在用户本人的 iCloud 账户内同步（App 内没有开启或关闭同步的设置）。我们绝不会访问这些数据。</p>
 <h2>4. 设备端文字识别与摘要生成</h2>
 <p>收据文字识别、从收入截图中读取金额以及生成每月摘要文本，均使用 Apple 在设备端提供的能力（Vision / Foundation Models）。所有处理均在用户设备上完成，绝不会发送至外部服务器。高峰时段预测是在设备上根据用户本人过往记录计算的统计结果，不使用任何外部数据。</p>
 <h2>5. 向第三方披露</h2>
@@ -562,11 +562,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. 儿童信息</h2>
 <p>本应用主要面向作为经营者的成年司机。我们不会故意收集 13 岁以下儿童的信息。</p>
 <h2>8. 数据删除</h2>
-<p>用户可以通过 iOS 设置 → 通用 → iPhone 储存空间卸载本应用，删除设备上的所有数据。iCloud 中的同步数据可通过从 iCloud 设置中删除应用数据来清除。</p>
+<p><strong>iOS:</strong> 用户可以通过 iOS 设置 → 通用 → iPhone 储存空间卸载本应用，删除设备上的所有数据。iCloud 中的同步数据可通过从 iCloud 设置中删除应用数据来清除。</p>
 <h2>9. 计费与 App Store</h2>
-<p>本应用的订阅计费通过 Apple 的 App Store 处理，我们绝不会获取信用卡详情等付款信息。此类信息按照 Apple 的隐私政策处理。</p>
+<p><strong>iOS:</strong> 本应用的订阅计费通过 Apple 的 App Store 处理，我们绝不会获取信用卡详情等付款信息。此类信息按照 Apple 的隐私政策处理。</p>
 <h2>10. 本政策的变更</h2>
 <p>本政策的内容可能根据需要而变更。重大变更将在应用内或支持页面上公布。</p>
+
+<h2 id="android">Android</h2>
+<p>这些数据存储在您设备上的本地数据库中。云备份和设备间迁移均已关闭，因此数据绝不会离开您的设备。</p>
 <h2>11. 联系我们</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

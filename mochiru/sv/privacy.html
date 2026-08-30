@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Integritetspolicy för Mochiru. Dina data stannar på enheten – inget konto, ingen spårning, ingen datainsamling.", "inLanguage": "sv", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/sv/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Integritetspolicy för Mochiru. Dina data stannar på enheten – inget konto, ingen spårning, ingen datainsamling.", "inLanguage": "sv", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/sv/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/sv/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/sv/privacy.html"}]}</script>
 </head>
 <body>
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 Nätverkskommunikation</h2>
 <p>Beräkningar, inmatningar och noteringar stannar på din enhet och skickas aldrig vidare. Nätverket används bara för att köpa eller återställa köpet och för att öppna de juridiska sidorna.</p>
 <h2>💳 Köp och betalningar</h2>
-<p>Köp i appen görs via Apples App Store. Betalningsinformation hanteras av Apple och ges inte till utvecklaren. StoreKit 2 används för att verifiera och återställa köp.</p>
+<p><strong>iOS:</strong> Köp i appen görs via Apples App Store. Betalningsinformation hanteras av Apple och ges inte till utvecklaren. StoreKit 2 används för att verifiera och återställa köp.</p>
 <h2>🗑️ Datalagring och radering</h2>
 <p>Data lagras endast på din enhet. Avinstallation av appen raderar all lagrad data permanent. Säkerhetskopiera viktig data själv.</p>
 <h2>🔗 Utlämnande till tredje part</h2>
@@ -564,6 +564,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Om denna policy revideras meddelar vi dig via en appuppdatering eller på den här sidan.</p>
 <h2>✉️ Kontakt</h2>
 <p>Vid frågor om sekretess, kontakta oss via supportsidan.</p>
+<h2 id="android">Android</h2>
+<p>Dessa data lagras på din enhet i en lokal databas. Molnsäkerhetskopiering och överföring mellan enheter är avstängda, så de lämnar aldrig din enhet.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontakt</p>

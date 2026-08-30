@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Politica de confidențialitate pentru Mochiru. Datele rămân pe dispozitiv – fără cont, fără urmărire, fără colectare.", "inLanguage": "ro", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ro/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Politica de confidențialitate pentru Mochiru. Datele rămân pe dispozitiv – fără cont, fără urmărire, fără colectare.", "inLanguage": "ro", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ro/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/ro/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/ro/privacy.html"}]}</script>
 </head>
 <body>
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 Comunicare de rețea</h2>
 <p>Calculele, datele introduse și înregistrările rămân pe dispozitiv și nu sunt trimise nicăieri. Rețeaua este folosită doar pentru cumpărare, restaurarea achiziției și deschiderea paginilor juridice.</p>
 <h2>💳 Achiziții și plăți</h2>
-<p>Achizițiile din aplicație se efectuează prin App Store Apple. Informațiile de plată sunt gestionate de Apple și nu sunt furnizate dezvoltatorului. StoreKit 2 este utilizat pentru a verifica și restaura achizițiile.</p>
+<p><strong>iOS:</strong> Achizițiile din aplicație se efectuează prin App Store Apple. Informațiile de plată sunt gestionate de Apple și nu sunt furnizate dezvoltatorului. StoreKit 2 este utilizat pentru a verifica și restaura achizițiile.</p>
 <h2>🗑️ Stocarea și ștergerea datelor</h2>
 <p>Datele sunt stocate numai pe dispozitivul dvs. Dezinstalarea aplicației șterge permanent toate datele stocate. Vă rugăm să faceți singur copii de rezervă ale datelor importante.</p>
 <h2>🔗 Furnizarea către terți</h2>
@@ -564,6 +564,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Dacă această politică este revizuită, vă vom notifica printr-o actualizare a aplicației sau pe această pagină.</p>
 <h2>✉️ Contact</h2>
 <p>Pentru întrebări despre confidențialitate, contactați-ne prin pagina de suport.</p>
+<h2 id="android">Android</h2>
+<p>Aceste date sunt stocate pe dispozitivul dvs. într-o bază de date locală. Copierea de rezervă în cloud și transferul între dispozitive sunt dezactivate, astfel încât datele nu părăsesc niciodată dispozitivul dvs.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Contact</p>

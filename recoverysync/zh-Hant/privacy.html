@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>第三方 SDK 和服務</h2>
 <p><strong>iOS:</strong> RecoverySync 不包含任何第三方分析 SDK、廣告 SDK 或追蹤庫。使用的唯一外部框架是 Apple 的 HealthKit，該框架受 Apple 自身隱私政策的約束。</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>透過 HealthKit 獲取的健康資料僅用於在應用程式內計算和顯示您的恢復分數。此資料絕不會用於廣告、與資料經紀商共享或揭露給第三方。</p>
+<p><strong>iOS:</strong> 透過 HealthKit 獲取的健康資料僅用於在應用程式內計算和顯示您的恢復分數。此資料絕不會用於廣告、與資料經紀商共享或揭露給第三方。</p>
 
 <h2>Health Connect (Android)</h2>
 <p>在您授權的前提下，RecoverySync 從您裝置上的 Health Connect 讀取以下資料：心率變異性（SDNN）、靜止心率和睡眠。所有存取均為唯讀，RecoverySync 絕不會寫回任何資料。</p>
@@ -568,6 +568,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>如果我們對本隱私政策進行重大變更，我們將更新上述「最近更新」日期。此類變更後繼續使用本應用程式即表示您接受更新後的政策。</p>
 <h2>聯絡我們</h2>
 <p>如果您對本隱私政策有任何疑問，請聯絡我們：</p>
+<h2 id="android">Android</h2>
+<p>這些資料儲存在您裝置上的本機資料庫中。雲端備份與裝置間轉移均已關閉，因此資料絕不會離開您的裝置。</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>聯絡</p>

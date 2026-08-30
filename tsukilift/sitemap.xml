@@ -25,6 +25,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/tsukilift/en/support.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tsukilift/support.html" />
   </url>
+  <url>
+    <loc>https://freetokyo.github.io/web/tsukilift/tokushoho.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/tsukilift/tokushoho.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/tsukilift/tokushoho.html" />
+  </url>
   <url><loc>https://freetokyo.github.io/web/tsukilift/llms.txt</loc></url>
   <url>
     <loc>https://freetokyo.github.io/web/tsukilift/en/</loc>

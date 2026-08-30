@@ -259,7 +259,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -326,7 +326,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -454,7 +454,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hadalog", "description": "Frequently asked questions and contact details for Hadalog.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/hadalog/en/support.html", "image": "https://freetokyo.github.io/web/hadalog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6793892712"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hadalog", "description": "Frequently asked questions and contact details for Hadalog.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/hadalog/en/support.html", "image": "https://freetokyo.github.io/web/hadalog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6793892712"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hadalog", "item": "https://freetokyo.github.io/web/hadalog/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/hadalog/en/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I have to allow location access?", "acceptedAnswer": {"@type": "Answer", "text": "No. Open the Today tab and choose Select a region to pick a city instead; the index is then calculated from that region&rsquo;s weather."}}, {"@type": "Question", "name": "Do I have to allow Health access?", "acceptedAnswer": {"@type": "Answer", "text": "No. The index works from weather alone. Allowing sleep, steps, water and cycle data simply makes the contributing factors more specific."}}, {"@type": "Question", "name": "What does the index mean?", "acceptedAnswer": {"@type": "Answer", "text": "A number from 0 to 100 showing how much the day&rsquo;s conditions &mdash; humidity, temperature, UV, wind, sleep, steps, water and so on &mdash; overlap. It is not a probability that you will have a skin problem."}}, {"@type": "Question", "name": "How long before my records show up in the analysis?", "acceptedAnswer": {"@type": "Answer", "text": "Trends by condition appear once each condition has enough days behind it (at least five). Until you have 30 days of records, the app labels this a learning period."}}, {"@type": "Question", "name": "I purchased Full Access but the features are still locked", "acceptedAnswer": {"@type": "Answer", "text": "Try Restore Purchases in Settings or on the Full Access screen. If that does not help, please email us."}}, {"@type": "Question", "name": "Can I move my data to another device?", "acceptedAnswer": {"@type": "Answer", "text": "Not in this version &mdash; the app is designed to keep your data on your device only. You can export your records as PDF or CSV."}}]}</script>
 </head>
@@ -516,6 +516,14 @@ please email us.</p>
 You can export your records as PDF or CSV.</p>
 
 </div>
+<section class="ftlegal">
+<h2 id="android-support">About the Android version</h2>
+<p>The Android version supports Android 9.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
+<p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

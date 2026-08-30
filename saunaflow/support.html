@@ -324,7 +324,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -391,7 +391,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -519,7 +519,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "SaunaFlow（Apple Watch対応サウナタイマー）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/support.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "SaunaFlow（Apple Watch対応サウナタイマー）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/support.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "SaunaFlow", "item": "https://freetokyo.github.io/web/saunaflow/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/saunaflow/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "SaunaFlow を使うには何が必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "iPhone（iOS 17 以降）と Apple Watch（watchOS 10 以降）が必要です。プリセットは iPhone で作成し、セッションは Apple Watch で開始します。"}}, {"@type": "Question", "name": "プリセットは何を設定できますか？", "acceptedAnswer": {"@type": "Answer", "text": "サウナ、水風呂、休憩、移動の各フェーズと、その時間、セット数を設定できます。よく使う流れを保存して再利用できます。"}}, {"@type": "Question", "name": "Apple Watch だけで操作できますか？", "acceptedAnswer": {"@type": "Answer", "text": "セッション実行中の主操作は Apple Watch で行います。プリセット作成や履歴確認などは iPhone 側で行う構成です。"}}, {"@type": "Question", "name": "Watch アプリが iPhone と同期されません。", "acceptedAnswer": {"@type": "Answer", "text": "iPhone と Apple Watch の両方で SaunaFlow を開き、Watch 側はプリセット一覧を表示したままにしてください。iPhone 側でプリセットを保存または編集すると同期が始まります。Bluetooth 接続も確認してください。"}}, {"@type": "Question", "name": "Digital Crown はどう使いますか？", "acceptedAnswer": {"@type": "Answer", "text": "フェーズ切り替えは触覚通知。Digital Crown でスキップや現在フェーズの30秒延長ができ、一時停止は画面上の常設ボタンで行えます。"}}, {"@type": "Question", "name": "ととのいスコアは何を表していますか？", "acceptedAnswer": {"@type": "Answer", "text": "セット完了率、フェーズバランス、セッション継続時間をもとに 0〜100 点で可視化した指標です。体験そのものを医学的に保証する数値ではありません。"}}, {"@type": "Question", "name": "履歴やメモは残せますか？", "acceptedAnswer": {"@type": "Answer", "text": "セッション履歴を保存でき、メモも残せます。前回セッションの再実行機能はプレミアム向けです。"}}, {"@type": "Question", "name": "施設や温度は記録できますか？", "acceptedAnswer": {"@type": "Answer", "text": "v1.2から施設名・サウナ室温・水風呂温度・外気温・ロウリュの有無を記録できます。セッション完了直後のシートか、履歴詳細から追記・編集でき、履歴を施設で絞り込めます。"}}, {"@type": "Question", "name": "Watchを持っていない日でも記録できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。履歴画面右上の「+」から手動でサ活を記録できます（心拍は記録されません）。「Hey Siri、SaunaFlowでサ活を記録」でも追加できます。"}}, {"@type": "Question", "name": "進捗タブとストリークリマインダーとは？", "acceptedAnswer": {"@type": "Answer", "text": "進捗タブでは週間ストリーク、マイルストーンバッジ、今月のサマリーを確認できます。設定のストリークリマインダーをオンにすると、その週にサ活がない場合のみ土曜夕方に1回だけ通知します。"}}, {"@type": "Question", "name": "プレミアムはサブスクリプションですか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。SaunaFlow のプレミアムは買い切り型です。継続課金ではありません。"}}, {"@type": "Question", "name": "購入を復元するにはどうすればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "iPhone アプリ内のプレミアム画面から「購入を復元」を選んでください。同じ Apple ID で購入している場合は復元されます。"}}, {"@type": "Question", "name": "データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "プリセット、履歴、メモなどのデータはデバイス内に保存されます。外部サーバーへの送信を前提とした説明はこのサイト上にありません。詳細はプライバシーポリシーをご確認ください。"}}, {"@type": "Question", "name": "問い合わせ先はどこですか？", "acceptedAnswer": {"@type": "Answer", "text": "お問い合わせ先はメールです。サポートが必要な場合は freetokyo2020@yahoo.co.jp までご連絡ください。"}}]}</script>
 </head>
@@ -632,6 +632,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
           <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
         </div>
       </section>
+<section class="ftlegal">
+<h2 id="android-support">Android 版について</h2>
+<p>対応するのは Android 9.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップを無効にしてあります。</p>
+<p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

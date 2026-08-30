@@ -324,7 +324,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -391,7 +391,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -519,7 +519,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "フードデリバリー・軽貨物ドライバーの売上 & 経費管理アプリ。マルチプラットフォーム対応、スクリーンショットからの売上取込、手取りシミュレーション、確定申告 CSV 出力。完全オフラインで安心。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "フードデリバリー・軽貨物ドライバーの売上 & 経費管理アプリ。マルチプラットフォーム対応、スクリーンショットからの売上取込、手取りシミュレーション、確定申告 CSV 出力。完全オフラインで安心。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/"}]}</script>
 </head>
 <body>
@@ -540,7 +540,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </nav>
 <main class="ftbody" id="ftmain">
 <header>
-  <div class="lang-switch"><a href="index_en.html">English</a></div>
+  <div class="lang-switch"><a href="en/index.html">English</a></div>
   <h1 class="logo">配達ドライバーの稼ぎが、ひと目でわかる</h1>
 <div class="tagline">Hanro</div>
   <p class="sub">フードデリバリー・軽貨物・タクシードライバーのための、完全オフラインで使える売上 &amp; 経費管理アプリ。マルチプラットフォーム対応、スクリーンショットからの売上取込、手取りシミュレーション、確定申告データ出力をすべて 1 つのアプリで。</p>
@@ -551,7 +551,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
 
   <style>.ftshot-gallery{max-width:960px;margin:36px auto;padding:0 16px;text-align:center}.ftshot-gallery h2{font-size:1.3rem;margin:0 0 18px;border:0;padding:0}.ftshot-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.ftshot-item{margin:0;flex:0 1 200px;max-width:230px}.ftshot-item img{width:100%;height:auto;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.16);border:1px solid rgba(0,0,0,.06);background:#fff}.ftshot-item figcaption{margin-top:10px;font-size:.85rem;opacity:.72}</style>
-</section>
   <h2>配達ドライバーの収支管理ができる主な機能</h2>
   <div class="grid">
     <div class="card"><h4>マルチプラットフォーム対応</h4><p>Uber Eats / 出前館 / Wolt / menu / Amazon Flex / ピックゴー など、複数の配達サービスをまたいだ売上を一元管理。</p></div>
@@ -591,6 +590,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。今日の売上 ¥7,283 と、月間目標 ¥400,000 に対する進捗31%、業務開始と配達記録のボタン" width="360" height="782" loading="lazy" decoding="async"><figcaption>今日の稼ぎ</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="記録の一覧。日付ごとに PickGo・Amazon Flex・menu・Wolt などプラットフォーム別の売上と距離が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>売上・経費記録</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="分析。今月のレビューと日次売上の棒グラフ、プラットフォーム別の内訳を円グラフで示す" width="360" height="782" loading="lazy" decoding="async"><figcaption>稼ぎ時予測</figcaption></figure></div>
 </section>
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Hanro は Android 版を準備しています。Android 8.0 以降に対応し、Google Play での公開を予定しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
+</section>
+
 <section class="ftcta">
 <h2>Hanro</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

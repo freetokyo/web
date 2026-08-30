@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Politique de confidentialité de Hanro. Vos données restent sur votre appareil : aucun compte, aucun suivi, aucune collecte.", "inLanguage": "fr", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/fr/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Politique de confidentialité de Hanro. Vos données restent sur votre appareil : aucun compte, aucun suivi, aucune collecte.", "inLanguage": "fr", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/fr/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/fr/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/fr/privacy.html"}]}</script>
 </head>
 <body>
@@ -561,7 +561,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Notifications : utilisées pour envoyer des rappels tels que les échéances de contrôle technique du véhicule ou les moments de vidange d&#x27;huile.</p>
 <p>• Données saisies par l&#x27;utilisateur : les enregistrements de livraison, les revenus, les dépenses, les informations sur le véhicule, les objectifs, les paramètres fiscaux et d&#x27;autres informations saisies directement par l&#x27;utilisateur sont stockés dans une base de données sur l&#x27;appareil.</p>
 <h2>3. Synchronisation iCloud</h2>
-<p>Si l'utilisateur est connecté à iCloud sur l'appareil, les données ci-dessus sont synchronisées exclusivement au sein de son propre compte iCloud via la base de données privée CloudKit d'Apple (l'application ne propose aucun réglage pour activer ou désactiver la synchronisation). Nous n'avons jamais accès à ces données.</p>
+<p><strong>iOS:</strong> Si l'utilisateur est connecté à iCloud sur l'appareil, les données ci-dessus sont synchronisées exclusivement au sein de son propre compte iCloud via la base de données privée CloudKit d'Apple (l'application ne propose aucun réglage pour activer ou désactiver la synchronisation). Nous n'avons jamais accès à ces données.</p>
 <h2>4. Reconnaissance de texte et résumés sur l'appareil</h2>
 <p>La reconnaissance du texte des reçus, la lecture des montants sur les captures d'écran de revenus et la génération du résumé mensuel utilisent des fonctions fournies par Apple sur l'appareil (Vision / Foundation Models). L'ensemble de ce traitement s'effectue entièrement sur l'appareil de l'utilisateur et n'est jamais envoyé à des serveurs externes. La prédiction des meilleures heures est une statistique calculée sur l'appareil à partir des relevés passés de l'utilisateur et n'utilise aucune donnée externe.</p>
 <h2>5. Divulgation à des tiers</h2>
@@ -571,11 +571,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Informations sur les mineurs</h2>
 <p>Cette application est principalement destinée aux conducteurs adultes exerçant une activité professionnelle. Nous ne collectons pas sciemment d&#x27;informations auprès d&#x27;enfants de moins de 13 ans.</p>
 <h2>8. Suppression des données</h2>
-<p>Les utilisateurs peuvent supprimer toutes les données sur l&#x27;appareil en désinstallant cette application via Réglages iOS → Général → Stockage iPhone. Les données synchronisées sur iCloud peuvent être effacées en supprimant les données de l&#x27;application depuis les réglages iCloud.</p>
+<p><strong>iOS:</strong> Les utilisateurs peuvent supprimer toutes les données sur l&#x27;appareil en désinstallant cette application via Réglages iOS → Général → Stockage iPhone. Les données synchronisées sur iCloud peuvent être effacées en supprimant les données de l&#x27;application depuis les réglages iCloud.</p>
 <h2>9. Facturation et App Store</h2>
-<p>La facturation de l&#x27;abonnement de cette application est gérée via l&#x27;App Store d&#x27;Apple, et nous n&#x27;obtenons jamais d&#x27;informations de paiement telles que les données de carte de crédit. Ces informations sont traitées conformément à la politique de confidentialité d&#x27;Apple.</p>
+<p><strong>iOS:</strong> La facturation de l&#x27;abonnement de cette application est gérée via l&#x27;App Store d&#x27;Apple, et nous n&#x27;obtenons jamais d&#x27;informations de paiement telles que les données de carte de crédit. Ces informations sont traitées conformément à la politique de confidentialité d&#x27;Apple.</p>
 <h2>10. Modifications de cette Politique</h2>
 <p>Le contenu de cette Politique peut être modifié si nécessaire. Les changements importants seront annoncés dans l&#x27;application ou sur la page d&#x27;assistance.</p>
+
+<h2 id="android">Android</h2>
+<p>Ces données sont stockées sur votre appareil dans une base de données locale. La sauvegarde dans le cloud et le transfert entre appareils sont désactivés, elles ne quittent donc jamais votre appareil.</p>
 <h2>11. Contact</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

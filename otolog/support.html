@@ -260,7 +260,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -327,7 +327,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -455,7 +455,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "オトログ（Otolog）", "description": "オトログのサポート。よくある質問（データの保存場所・機種変更・バックアップ・購入の復元）とお問い合わせ先。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/otolog/support.html", "image": "https://freetokyo.github.io/web/otolog/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791038062"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "オトログ（Otolog）", "description": "オトログのサポート。よくある質問（データの保存場所・機種変更・バックアップ・購入の復元）とお問い合わせ先。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/otolog/support.html", "image": "https://freetokyo.github.io/web/otolog/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791038062"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "オトログ（Otolog）", "item": "https://freetokyo.github.io/web/otolog/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/otolog/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "生徒の情報はどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "お使いの iPhone・iPad の中だけです。サーバーへ送信されることはなく、アカウント登録も不要です。氏名の代わりにニックネームを入力しても構いません。"}}, {"@type": "Question", "name": "機種変更するときはどうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "設定 &gt; 暗号化バックアップ から、パスワードを設定してファイルに書き出してください。新しい端末で同じ画面から読み込むと復元できます。この機能は無料でお使いいただけます。 ※ 読み込むと現在のデータはすべて置き換わります。 また、パスワードを紛失すると復元できません（暗号化のため、開発者でも復元できません）。iPhone の「クイックスタート」による端末間の移行でもデータは引き継がれます。"}}, {"@type": "Question", "name": "iCloud で同期できますか？", "acceptedAnswer": {"@type": "Answer", "text": "現時点では対応していません。生徒の情報を端末の外に出さない方針のため、同期は搭載せず、暗号化バックアップのみを提供しています。"}}, {"@type": "Question", "name": "PDFレポートは何が載りますか？", "acceptedAnswer": {"@type": "Answer", "text": "生徒名・学年・教則本ごとの進度・合格した曲の一覧です。 保護者メモとレッスンメモは載りません （講師の内部メモのため）。オトログ Pro でご利用いただけます。生徒詳細の「その他」から書き出せます。"}}, {"@type": "Question", "name": "教則本を他の先生と共有できますか？", "acceptedAnswer": {"@type": "Answer", "text": "設定 &gt; 教則本マスタ &gt; テンプレートを書き出す から、カスタム教則本をファイルにできます。 生徒の情報は含まれません （書名と曲数だけ）。受け取った側は「テンプレートを読み込む」で追加できます（既存の教則本は消えません）。"}}]}</script>
 </head>
@@ -496,6 +496,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </section>
     
   </div>
+<section class="ftlegal">
+<h2 id="android-support">Android 版について</h2>
+<p>対応するのは Android 8.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
+<p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

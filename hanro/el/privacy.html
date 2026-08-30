@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Πολιτική απορρήτου του Hanro. Τα δεδομένα σας παραμένουν στη συσκευή — χωρίς λογαριασμό, χωρίς παρακολούθηση.", "inLanguage": "el", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/el/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Πολιτική απορρήτου του Hanro. Τα δεδομένα σας παραμένουν στη συσκευή — χωρίς λογαριασμό, χωρίς παρακολούθηση.", "inLanguage": "el", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/el/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/el/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/el/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Ειδοποιήσεις: χρησιμοποιούνται για την αποστολή υπενθυμίσεων όπως προθεσμίες τεχνικού ελέγχου οχήματος ή στιγμές αλλαγής λαδιών.</p>
 <p>• Δεδομένα που εισάγει ο χρήστης: εγγραφές παράδοσης, έσοδα, έξοδα, πληροφορίες οχήματος, στόχοι, φορολογικές ρυθμίσεις και άλλες πληροφορίες που εισάγει απευθείας ο χρήστης αποθηκεύονται σε βάση δεδομένων εντός της συσκευής.</p>
 <h2>3. Συγχρονισμός iCloud</h2>
-<p>Αν ο χρήστης είναι συνδεδεμένος στο iCloud στη συσκευή, τα παραπάνω δεδομένα συγχρονίζονται αποκλειστικά εντός του δικού του λογαριασμού iCloud μέσω της ιδιωτικής βάσης δεδομένων CloudKit της Apple (η εφαρμογή δεν διαθέτει ρύθμιση ενεργοποίησης ή απενεργοποίησης του συγχρονισμού). Δεν έχουμε ποτέ πρόσβαση σε αυτά τα δεδομένα.</p>
+<p><strong>iOS:</strong> Αν ο χρήστης είναι συνδεδεμένος στο iCloud στη συσκευή, τα παραπάνω δεδομένα συγχρονίζονται αποκλειστικά εντός του δικού του λογαριασμού iCloud μέσω της ιδιωτικής βάσης δεδομένων CloudKit της Apple (η εφαρμογή δεν διαθέτει ρύθμιση ενεργοποίησης ή απενεργοποίησης του συγχρονισμού). Δεν έχουμε ποτέ πρόσβαση σε αυτά τα δεδομένα.</p>
 <h2>4. Αναγνώριση κειμένου και σύνοψη εντός της συσκευής</h2>
 <p>Η αναγνώριση κειμένου αποδείξεων, η ανάγνωση ποσών από στιγμιότυπα εσόδων και η δημιουργία της μηνιαίας σύνοψης χρησιμοποιούν δυνατότητες που παρέχει η Apple εντός της συσκευής (Vision / Foundation Models). Όλη αυτή η επεξεργασία ολοκληρώνεται εξ ολοκλήρου στη συσκευή του χρήστη και δεν αποστέλλεται ποτέ σε εξωτερικούς διακομιστές. Η πρόβλεψη ωρών αιχμής είναι στατιστικός υπολογισμός εντός της συσκευής από τις δικές του παλαιότερες καταγραφές και δεν χρησιμοποιεί εξωτερικά δεδομένα.</p>
 <h2>5. Κοινοποίηση σε τρίτους</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Πληροφορίες παιδιών</h2>
 <p>Αυτή η εφαρμογή απευθύνεται κυρίως σε ενήλικους οδηγούς που είναι επιχειρηματίες. Δεν συλλέγουμε εν γνώσει μας πληροφορίες από παιδιά κάτω των 13 ετών.</p>
 <h2>8. Διαγραφή δεδομένων</h2>
-<p>Οι χρήστες μπορούν να διαγράψουν όλα τα δεδομένα στη συσκευή απεγκαθιστώντας αυτή την εφαρμογή μέσω Ρυθμίσεις iOS → Γενικά → Αποθηκευτικός χώρος iPhone. Τα συγχρονισμένα δεδομένα στο iCloud μπορούν να διαγραφούν διαγράφοντας τα δεδομένα της εφαρμογής από τις ρυθμίσεις iCloud.</p>
+<p><strong>iOS:</strong> Οι χρήστες μπορούν να διαγράψουν όλα τα δεδομένα στη συσκευή απεγκαθιστώντας αυτή την εφαρμογή μέσω Ρυθμίσεις iOS → Γενικά → Αποθηκευτικός χώρος iPhone. Τα συγχρονισμένα δεδομένα στο iCloud μπορούν να διαγραφούν διαγράφοντας τα δεδομένα της εφαρμογής από τις ρυθμίσεις iCloud.</p>
 <h2>9. Χρέωση και App Store</h2>
-<p>Η χρέωση συνδρομής για αυτή την εφαρμογή γίνεται μέσω του App Store της Apple, και δεν λαμβάνουμε ποτέ πληροφορίες πληρωμής όπως στοιχεία πιστωτικής κάρτας. Αυτές οι πληροφορίες αντιμετωπίζονται σύμφωνα με την πολιτική απορρήτου της Apple.</p>
+<p><strong>iOS:</strong> Η χρέωση συνδρομής για αυτή την εφαρμογή γίνεται μέσω του App Store της Apple, και δεν λαμβάνουμε ποτέ πληροφορίες πληρωμής όπως στοιχεία πιστωτικής κάρτας. Αυτές οι πληροφορίες αντιμετωπίζονται σύμφωνα με την πολιτική απορρήτου της Apple.</p>
 <h2>10. Αλλαγές σε αυτή την Πολιτική</h2>
 <p>Το περιεχόμενο αυτής της Πολιτικής ενδέχεται να αλλάξει όπως απαιτείται. Σημαντικές αλλαγές θα ανακοινώνονται εντός της εφαρμογής ή στη σελίδα υποστήριξης.</p>
+
+<h2 id="android">Android</h2>
+<p>Αυτά τα δεδομένα αποθηκεύονται στη συσκευή σας σε μια τοπική βάση δεδομένων. Το αντίγραφο ασφαλείας στο cloud και η μεταφορά μεταξύ συσκευών είναι απενεργοποιημένα, επομένως δεν φεύγουν ποτέ από τη συσκευή σας.</p>
 <h2>11. Επικοινωνία</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

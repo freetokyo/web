@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Hỗ trợ Toscore: câu hỏi thường gặp và cách liên hệ với chúng tôi qua email.", "inLanguage": "vi", "operatingSystem": "iOS", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/vi/support.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Hỗ trợ Toscore: câu hỏi thường gặp và cách liên hệ với chúng tôi qua email.", "inLanguage": "vi", "operatingSystem": "iOS, Android", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/vi/support.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Toscore", "item": "https://freetokyo.github.io/web/toscore/vi/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/toscore/vi/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Có thể dùng ngoại tuyến không?", "acceptedAnswer": {"@type": "Answer", "text": "Có. Toscore cung cấp tất cả các chức năng ngoại tuyến. Ghi điểm, xác nhận quy tắc, xác minh thời gian thi đấu và xuất dữ liệu đều hoạt động mà không cần kết nối mạng."}}, {"@type": "Question", "name": "Dữ liệu được lưu ở đâu?", "acceptedAnswer": {"@type": "Answer", "text": "Tất cả hồ sơ trận đấu chỉ được lưu trên iPhone. Không có gì được gửi đến máy chủ của nhà phát triển. Gỡ cài đặt sẽ xóa tất cả dữ liệu; hãy sao lưu hồ sơ quan trọng bằng chức năng xuất."}}, {"@type": "Question", "name": "Hồ sơ này có thể dùng làm hồ sơ chính thức không?", "acceptedAnswer": {"@type": "Answer", "text": "Ứng dụng này chỉ dùng cho mục đích không chính thức/tham khảo. Các quyết định thi đấu chính thức luôn tuân theo quy tắc thi đấu và phán quyết của trọng tài."}}, {"@type": "Question", "name": "Có thể thay đổi cài đặt quy tắc không?", "acceptedAnswer": {"@type": "Answer", "text": "Có. Chọn cài đặt sẵn trên màn hình cài đặt quy tắc. Bạn cũng có thể chỉnh sửa thời gian, thời gian chờ, thay người, điểm số và thời gian thi đấu rồi lưu thành hồ sơ tùy chỉnh."}}, {"@type": "Question", "name": "Xác minh thời gian thi đấu là gì?", "acceptedAnswer": {"@type": "Answer", "text": "Chức năng này kiểm tra trước xem yêu cầu tham gia của tất cả cầu thủ có dự kiến được đáp ứng hay không. Hiển thị các cầu thủ chưa thi đấu và xác minh tính hợp lệ của đội hình."}}, {"@type": "Question", "name": "Làm gì khi ghi nhầm?", "acceptedAnswer": {"@type": "Answer", "text": "Dùng nút Hoàn tác trên màn hình trực tiếp để lập tức hủy bỏ bản ghi gần nhất. Trên màn hình lịch sử/sửa chữa có thể hoàn tác hoặc làm lại bất kỳ bản ghi nào."}}, {"@type": "Question", "name": "Phiên bản iOS nào được hỗ trợ?", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0 trở lên. Khuyến nghị cập nhật lên iOS mới nhất."}}]}</script>
 </head>

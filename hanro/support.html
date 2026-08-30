@@ -324,7 +324,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -391,7 +391,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -519,7 +519,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro（配達ドライバーの収支管理アプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/support.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro（配達ドライバーの収支管理アプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/support.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/hanro/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Q. オフラインで使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。本アプリはすべての主要機能をオフラインで利用できます。データはすべて端末内に保存され、当方のサーバーには送信されません。"}}, {"@type": "Question", "name": "Q. 複数の iPhone・iPad でデータを同期できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。iCloud にサインインしていれば、同じ Apple ID の端末間で自動的に同期されます。アプリ側に同期のオン／オフ切り替えはありません。同期データは Apple の CloudKit Private Database 上でのみ管理され、当方がアクセスすることはありません。"}}, {"@type": "Question", "name": "Q. 自動マイレージ記録の精度は？", "acceptedAnswer": {"@type": "Answer", "text": "Core Motion（加速度センサー）と Core Location（GPS）を組み合わせて走行を検知します。運転の自動検知は初期状態ではオフで、設定から有効にすると動作します（プレミアム）。オフのままでも、業務開始／終了を手動で操作すればその間の走行距離は記録されます。検知の正確性は端末の状態・電波状況・運転環境により異なるため、記録は手動で補正できます。"}}, {"@type": "Question", "name": "Q. 稼ぎ時予測はどの端末で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0 以降に対応したすべての iPhone で利用できます（プレミアム機能）。予測は、ご自身の過去の記録から同じ曜日・時間帯の実績時給を集計したものです。記録が少ないうちは表示されないか、精度が下がります。"}}, {"@type": "Question", "name": "Q. 確定申告データはどのソフトで読み込めますか？", "acceptedAnswer": {"@type": "Answer", "text": "freee / マネーフォワード / 弥生会計 の CSV インポート形式に対応しています。出力時に対象年を選べるので、前年分が混ざりません。出力された CSV をそれぞれの会計ソフトでインポートしてください。"}}, {"@type": "Question", "name": "Q. サブスクリプションを解約するには？", "acceptedAnswer": {"@type": "Answer", "text": "iPhone の「設定」 → アカウント名タップ → 「サブスクリプション」から Hanro を選択 → 「サブスクリプションをキャンセル」をタップしてください。無料体験期間中の解約で課金は発生しません。現在の価格はアプリ内のプラン画面をご確認ください。"}}, {"@type": "Question", "name": "Q. 購入を別の端末に復元するには？", "acceptedAnswer": {"@type": "Answer", "text": "同じ Apple ID でサインインした状態で、アプリ内の「設定」→「購入を復元」をタップしてください。"}}, {"@type": "Question", "name": "Q. データのバックアップは取れますか？", "acceptedAnswer": {"@type": "Answer", "text": "iCloud にサインインしていれば、データは自動的に iCloud に同期・バックアップされます。CSV / PDF 形式での書き出しも可能です（確定申告タブ → データ出力）。"}}, {"@type": "Question", "name": "Q. Apple Watch との連携はどうすれば？", "acceptedAnswer": {"@type": "Answer", "text": "iPhone 上で Hanro アプリを起動し、Watch アプリで Hanro のインストールを承認してください。Watch の大型ボタンをタップするだけで配達をワンタッチ記録できます。"}}, {"@type": "Question", "name": "Q. 法人プランや複数ドライバー管理はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "現バージョンは個人事業主向けです。法人・複数ドライバー管理機能は今後のアップデートで検討しています。ご要望はメールにてお寄せください。"}}]}</script>
 </head>
@@ -602,6 +602,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <p>メール: <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a></p>
   <p style="font-size:14px;opacity:0.7;margin-top:8px;">お問い合わせの際は、アプリのバージョン番号（設定 → バージョン情報）と端末モデル・iOS バージョンも併せてお知らせください。</p>
 </div>
+<section class="ftlegal">
+<h2 id="android-support">Android 版について</h2>
+<p>対応するのは Android 8.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
+<p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

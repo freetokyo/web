@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Privatlivspolitik for Hanro. Dine data bliver på din enhed – ingen konto, ingen sporing, ingen dataindsamling.", "inLanguage": "da", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/da/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Privatlivspolitik for Hanro. Dine data bliver på din enhed – ingen konto, ingen sporing, ingen dataindsamling.", "inLanguage": "da", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/da/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/da/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/da/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Notifikationer: bruges til at sende påmindelser såsom syn af køretøj og olieskift.</p>
 <p>• Brugerindtastede data: leveringsregistreringer, omsætning, udgifter, køretøjsoplysninger, mål, skatteindstillinger og andre oplysninger, som brugeren indtaster direkte, gemmes i en database på enheden.</p>
 <h2>3. iCloud-synkronisering</h2>
-<p>Hvis brugeren er logget ind på iCloud på enheden, synkroniseres ovenstående data udelukkende inden for brugerens egen iCloud-konto via Apples private CloudKit-database (appen har ingen indstilling til at slå synkronisering til eller fra). Vi har aldrig adgang til disse data.</p>
+<p><strong>iOS:</strong> Hvis brugeren er logget ind på iCloud på enheden, synkroniseres ovenstående data udelukkende inden for brugerens egen iCloud-konto via Apples private CloudKit-database (appen har ingen indstilling til at slå synkronisering til eller fra). Vi har aldrig adgang til disse data.</p>
 <h2>4. Tekstgenkendelse og opsummering på enheden</h2>
 <p>Tekstgenkendelse af kvitteringer, aflæsning af beløb fra skærmbilleder af indtjening og generering af den månedlige opsummering bruger funktioner, som Apple stiller til rådighed på enheden (Vision / Foundation Models). Al denne behandling gennemføres udelukkende på brugerens enhed og sendes aldrig til eksterne servere. Forudsigelsen af travle perioder er statistik beregnet på enheden ud fra brugerens egne tidligere registreringer og bruger ingen eksterne data.</p>
 <h2>5. Videregivelse til tredjeparter</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Børns oplysninger</h2>
 <p>Denne app er primært beregnet til voksne chauffører, der er erhvervsdrivende. Vi indsamler ikke bevidst oplysninger fra børn under 13 år.</p>
 <h2>8. Sletning af data</h2>
-<p>Brugere kan slette alle data på enheden ved at afinstallere denne app via iOS-indstillinger → Generelt → iPhone-lager. Synkroniserede data i iCloud kan slettes ved at fjerne appens data fra iCloud-indstillinger.</p>
+<p><strong>iOS:</strong> Brugere kan slette alle data på enheden ved at afinstallere denne app via iOS-indstillinger → Generelt → iPhone-lager. Synkroniserede data i iCloud kan slettes ved at fjerne appens data fra iCloud-indstillinger.</p>
 <h2>9. Fakturering og App Store</h2>
-<p>Abonnementsfakturering for denne app håndteres via Apples App Store, og vi indhenter aldrig betalingsoplysninger som kreditkortoplysninger. Disse oplysninger håndteres i overensstemmelse med Apples privatlivspolitik.</p>
+<p><strong>iOS:</strong> Abonnementsfakturering for denne app håndteres via Apples App Store, og vi indhenter aldrig betalingsoplysninger som kreditkortoplysninger. Disse oplysninger håndteres i overensstemmelse med Apples privatlivspolitik.</p>
 <h2>10. Ændringer af denne politik</h2>
 <p>Indholdet af denne politik kan ændres efter behov. Væsentlige ændringer vil blive annonceret i appen eller på supportsiden.</p>
+
+<h2 id="android">Android</h2>
+<p>Disse data opbevares på din enhed i en lokal database. Cloud-backup og enhedsoverførsel er slået fra, så de forlader aldrig din enhed.</p>
 <h2>11. Kontakt</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

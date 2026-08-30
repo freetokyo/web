@@ -260,7 +260,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -327,7 +327,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -455,7 +455,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Muddah", "description": "Support and FAQ for Muddah — Hijri and Gregorian dates, reminders, restoring your purchase, and data handling.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/muddah/support.html", "image": "https://freetokyo.github.io/web/muddah/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790558814", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Muddah", "description": "Support and FAQ for Muddah — Hijri and Gregorian dates, reminders, restoring your purchase, and data handling.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "LifestyleApplication", "url": "https://freetokyo.github.io/web/muddah/support.html", "image": "https://freetokyo.github.io/web/muddah/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790558814", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Muddah", "item": "https://freetokyo.github.io/web/muddah/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/muddah/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do my Hijri and Gregorian dates differ by a day sometimes?", "acceptedAnswer": {"@type": "Answer", "text": "Muddah uses the Umm al-Qura calendar for Hijri dates. It can differ by a day from calendars based on moon sighting. Always confirm the official date on your document."}}, {"@type": "Question", "name": "I renewed a document. Do I have to work out the new date myself?", "acceptedAnswer": {"@type": "Answer", "text": "No. Open the document and tap &quot;I renewed this&quot;. Muddah counts the new expiry on the calendar that document actually uses — a Hijri year is about 354 days, not 365 — and keeps the old date as history. You can also pick a date by hand."}}, {"@type": "Question", "name": "Will I always get every reminder?", "acceptedAnswer": {"@type": "Answer", "text": "Reminders are delivered on your device by iOS, which limits how many can be scheduled at once. Muddah keeps the nearest reminders scheduled and rebuilds the queue every time you open the app. We can&#x27;t guarantee delivery of every reminder — you remain responsible for renewing on time."}}, {"@type": "Question", "name": "Can I change what time reminders arrive?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Settings › Notifications lets you choose the time of day, and which reminder stages new documents start with."}}, {"@type": "Question", "name": "How do I restore my purchase on a new phone?", "acceptedAnswer": {"@type": "Answer", "text": "Open Settings inside Muddah and tap &quot;Restore purchase&quot;. Muddah Pro is a one-time purchase and works with Family Sharing."}}, {"@type": "Question", "name": "Is my data backed up?", "acceptedAnswer": {"@type": "Answer", "text": "All data stays on your device and is not synced to any cloud. Deleting the app deletes your data, so keep your own backups. With Pro you can export your documents to a JSON file and import it again on another device. The export is a plain JSON file, not encrypted, and photos and scans are not included in it."}}, {"@type": "Question", "name": "Do you collect any data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Muddah has no account, no analytics, and no servers. Scanning and reading dates from a scan also happen entirely on your device."}}, {"@type": "Question", "name": "Is Muddah connected to a government service?", "acceptedAnswer": {"@type": "Answer", "text": "No. Muddah is an independent personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice. Muddah is a personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice. English · العربية"}}]}</script>
 </head>
@@ -501,6 +501,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p class="langs"><a href="https://freetokyo.github.io/web/muddah/support.html" hreflang="en" lang="en" aria-current="true">English</a> · <a href="https://freetokyo.github.io/web/muddah/ar/support.html" hreflang="ar" lang="ar">العربية</a></p>
 
 </div></article>
+<section class="ftlegal">
+<h2 id="android-support">About the Android version</h2>
+<p>The Android version supports Android 8.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
+<p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

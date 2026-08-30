@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "SaunaFlow 支援：常見問題與透過電子郵件聯絡我們的方式。", "inLanguage": "zh-Hant", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/zh-Hant/support.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "SaunaFlow 支援：常見問題與透過電子郵件聯絡我們的方式。", "inLanguage": "zh-Hant", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/zh-Hant/support.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "SaunaFlow", "item": "https://freetokyo.github.io/web/saunaflow/zh-Hant/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/saunaflow/zh-Hant/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "使用 SaunaFlow 需要什麼？", "acceptedAnswer": {"@type": "Answer", "text": "需要 iPhone（iOS 17 或以上）與 Apple Watch（watchOS 10 或以上）。預設組合在 iPhone 上建立，流程則在 Apple Watch 上開始。"}}, {"@type": "Question", "name": "預設組合可以設定哪些項目？", "acceptedAnswer": {"@type": "Answer", "text": "可以設定三溫暖、冷水池、休息、移動等各階段及其時間與組數。常用的流程可以儲存起來重複使用。"}}, {"@type": "Question", "name": "只用 Apple Watch 就能操作嗎？", "acceptedAnswer": {"@type": "Answer", "text": "流程進行中的主要操作在 Apple Watch 上完成。建立預設組合與查看紀錄則在 iPhone 上進行。"}}, {"@type": "Question", "name": "Watch App 無法與 iPhone 同步。", "acceptedAnswer": {"@type": "Answer", "text": "請在 iPhone 與 Apple Watch 上同時開啟 SaunaFlow，並讓 Watch 停留在預設組合清單。在 iPhone 上儲存或編輯預設組合後就會開始同步。也請確認藍牙連線。"}}, {"@type": "Question", "name": "Digital Crown 怎麼使用？", "acceptedAnswer": {"@type": "Answer", "text": "用 Digital Crown 可跳過或為目前階段延長 30 秒，暫停則有螢幕上的常駐按鈕。"}}, {"@type": "Question", "name": "整備度（整備分數）代表什麼？", "acceptedAnswer": {"@type": "Answer", "text": "這是依據完成組數比例、各階段的平衡以及流程時間換算出的 0～100 分指標。它並非醫學數值，不對你的身體狀態作任何保證。"}}, {"@type": "Question", "name": "可以保留紀錄與筆記嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以，流程紀錄會保存下來，也能寫下筆記。重新執行上一次流程屬於進階版功能。"}}, {"@type": "Question", "name": "可以記錄場館與溫度嗎？", "acceptedAnswer": {"@type": "Answer", "text": "自 v1.2 起可記錄場館名稱、三溫暖室溫、冷水池水溫、戶外氣溫以及是否有 löyly。可在流程結束後的表單填寫，也可以之後從紀錄詳情補充與修改，紀錄還能依場館篩選。"}}, {"@type": "Question", "name": "沒戴 Watch 的日子也能記錄嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以。在紀錄畫面右上角點一下「+」即可手動新增（此時不會記錄心率）。也可以說「嘿 Siri，用 SaunaFlow 記錄一次」來新增。"}}, {"@type": "Question", "name": "進度標籤頁與連續紀錄提醒是什麼？", "acceptedAnswer": {"@type": "Answer", "text": "進度標籤頁可查看每週連續紀錄、里程碑徽章與本月摘要。在設定中開啟連續紀錄提醒後，只有當週沒有紀錄時，才會在週六傍晚提醒一次。"}}, {"@type": "Question", "name": "進階版是訂閱制嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不是。SaunaFlow 的進階版為一次買斷，沒有週期性扣款。"}}, {"@type": "Question", "name": "要如何回復購買項目？", "acceptedAnswer": {"@type": "Answer", "text": "請在 iPhone App 的進階版頁面選擇「回復購買項目」。若曾以相同的 Apple ID 購買即可回復。"}}, {"@type": "Question", "name": "資料儲存在哪裡？", "acceptedAnswer": {"@type": "Answer", "text": "預設組合、紀錄、筆記等資料儲存在裝置內。本網站並未說明任何傳送至外部伺服器的行為。詳情請參閱隱私權政策。"}}, {"@type": "Question", "name": "聯絡方式為何？", "acceptedAnswer": {"@type": "Answer", "text": "我們透過電子郵件提供支援。需要協助時請聯絡 freetokyo2020@yahoo.co.jp。"}}]}</script>
 </head>

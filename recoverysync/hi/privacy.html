@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>तृतीय-पक्ष SDK और सेवाएं</h2>
 <p><strong>iOS:</strong> RecoverySync में कोई तृतीय-पक्ष विश्लेषण SDK, विज्ञापन SDK, या ट्रैकिंग लाइब्रेरी नहीं है। उपयोग किया जाने वाला एकमात्र बाहरी फ्रेमवर्क Apple का HealthKit है, जो Apple की अपनी गोपनीयता नीतियों द्वारा शासित है।</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>HealthKit के माध्यम से प्राप्त स्वास्थ्य डेटा का उपयोग केवल ऐप के भीतर आपके रिकवरी स्कोर की गणना और प्रदर्शित करने के उद्देश्य से किया जाता है। इस डेटा का उपयोग कभी भी विज्ञापन के लिए नहीं किया जाता, डेटा दलालों के साथ साझा नहीं किया जाता, या तीसरे पक्षों को प्रकट नहीं किया जाता।</p>
+<p><strong>iOS:</strong> HealthKit के माध्यम से प्राप्त स्वास्थ्य डेटा का उपयोग केवल ऐप के भीतर आपके रिकवरी स्कोर की गणना और प्रदर्शित करने के उद्देश्य से किया जाता है। इस डेटा का उपयोग कभी भी विज्ञापन के लिए नहीं किया जाता, डेटा दलालों के साथ साझा नहीं किया जाता, या तीसरे पक्षों को प्रकट नहीं किया जाता।</p>
 
 <h2>Health Connect (Android)</h2>
 <p>आपकी अनुमति से, RecoverySync आपके डिवाइस पर Health Connect से निम्नलिखित डेटा पढ़ता है: हृदय गति परिवर्तनशीलता (SDNN), विश्राम हृदय गति और नींद। पहुँच केवल पढ़ने के लिए है और RecoverySync कभी भी डेटा वापस नहीं लिखता।</p>
@@ -568,6 +568,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>यदि हम इस गोपनीयता नीति में महत्वपूर्ण परिवर्तन करते हैं, तो हम ऊपर दी गई &quot;अंतिम अपडेट&quot; तिथि को अपडेट करेंगे। ऐसे परिवर्तनों के बाद ऐप का निरंतर उपयोग अद्यतन नीति की आपकी स्वीकृति का गठन करता है।</p>
 <h2>संपर्क करें</h2>
 <p>यदि आपके पास इस गोपनीयता नीति के बारे में प्रश्न हैं, तो कृपया हमसे संपर्क करें:</p>
+<h2 id="android">Android</h2>
+<p>यह डेटा आपके डिवाइस पर एक स्थानीय डेटाबेस में संग्रहीत किया जाता है। क्लाउड बैकअप और डिवाइस ट्रांसफ़र बंद हैं, इसलिए यह कभी आपके डिवाइस से बाहर नहीं जाता।</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>संपर्क</p>

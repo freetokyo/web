@@ -259,7 +259,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -326,7 +326,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -454,7 +454,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ToreKarte", "description": "ToreKarte support. How it works, frequently asked questions and how to get in touch — using prepaid sessions, backups and restoring purchases.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/torekarte/en/support.html", "image": "https://freetokyo.github.io/web/torekarte/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791176557"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ToreKarte", "description": "ToreKarte support. How it works, frequently asked questions and how to get in touch — using prepaid sessions, backups and restoring purchases.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/torekarte/en/support.html", "image": "https://freetokyo.github.io/web/torekarte/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791176557"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "ToreKarte", "item": "https://freetokyo.github.io/web/torekarte/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/torekarte/en/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When does a pass get used up?", "acceptedAnswer": {"@type": "Answer", "text": "One session is deducted when you save a session. On the record screen, pick the pass to use and make sure &quot;Use one session when saving&quot; is on. Expired or fully used passes are never deducted, and the app tells you when that happens."}}, {"@type": "Question", "name": "Can I undo a session that was deducted by mistake?", "acceptedAnswer": {"@type": "Answer", "text": "Deleting that session returns the one session to the pass. You can also edit the &quot;Used&quot; count directly on the pass."}}, {"@type": "Question", "name": "How do I move to a new phone?", "acceptedAnswer": {"@type": "Answer", "text": "Go to Settings → &quot;Export backup&quot; and save the file somewhere your new phone can reach, such as iCloud Drive. On the new phone, install ToreKarte and use Settings → &quot;Restore from backup&quot; to pick that file. This feature is free."}}, {"@type": "Question", "name": "What happens to my current data when I restore?", "acceptedAnswer": {"@type": "Answer", "text": "Restoring replaces all current data on that device with the backup&#x27;s contents. It can&#x27;t be undone, so confirm carefully in the dialog before proceeding."}}, {"@type": "Question", "name": "I purchased Pro but don&#x27;t have it / it disappeared after switching phones", "acceptedAnswer": {"@type": "Answer", "text": "Tap Settings → &quot;Restore purchase&quot;. You need to be signed in with the same Apple Account used for the purchase."}}, {"@type": "Question", "name": "What do I get for free?", "acceptedAnswer": {"@type": "Answer", "text": "Within the limits of 3 clients and 3 templates, you get session records, charts, passes, app lock, reminders, and backup. There&#x27;s no limit on how many sessions you record."}}, {"@type": "Question", "name": "Is this a subscription?", "acceptedAnswer": {"@type": "Answer", "text": "No. ToreKarte Pro is a one-time purchase. Nothing auto-renews."}}, {"@type": "Question", "name": "Does it handle payments or collection?", "acceptedAnswer": {"@type": "Answer", "text": "No. Passes only record sessions left, expiry, and unpaid status. No payments are handled."}}, {"@type": "Question", "name": "Is my clients&#x27; information safe?", "acceptedAnswer": {"@type": "Answer", "text": "What you enter is stored only on your device and is never sent to the developer or any third party. There&#x27;s no account. Turn on the app lock (Face ID, Touch ID, or passcode) in Settings to require authentication when opening the app."}}, {"@type": "Question", "name": "My PDF report has a watermark", "acceptedAnswer": {"@type": "Answer", "text": "Free previews carry a &quot;SAMPLE&quot; watermark. Sharing or saving without it is a ToreKarte Pro feature."}}, {"@type": "Question", "name": "Is there an Apple Watch or iPad version?", "acceptedAnswer": {"@type": "Answer", "text": "Not currently — ToreKarte is iPhone only (iOS 18 or later)."}}, {"@type": "Question", "name": "I&#x27;m not getting reminders", "acceptedAnswer": {"@type": "Answer", "text": "Check Settings → &quot;Permission&quot;. If it says &quot;Not allowed&quot;, tap &quot;Open iOS Settings&quot; and enable notifications. Reminders arrive one hour before the next session."}}]}</script>
 </head>
@@ -554,6 +554,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <p>Check Settings → &quot;Permission&quot;. If it says &quot;Not allowed&quot;, tap &quot;Open iOS Settings&quot; and enable notifications. Reminders arrive one hour before the next session.</p>
       </details>
     </section>
+<section class="ftlegal">
+<h2 id="android-support">About the Android version</h2>
+<p>The Android version supports Android 8.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
+<p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

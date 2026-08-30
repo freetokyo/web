@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -558,7 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>SDK i serveis de tercers</h2>
 <p><strong>iOS:</strong> RecoverySync no conté SDK d&#x27;anàlisi de tercers, SDK publicitaris ni biblioteques de seguiment. L&#x27;únic marc extern utilitzat és HealthKit d&#x27;Apple, que es regeix per les pròpies polítiques de privadesa d&#x27;Apple.</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>Les dades de salut obtingudes a través de HealthKit s&#x27;utilitzen únicament per calcular i mostrar la teva puntuació de recuperació dins de l&#x27;aplicació. Aquestes dades mai s&#x27;utilitzen per a publicitat, ni es comparteixen amb intermediaris de dades, ni es divulguen a tercers.</p>
+<p><strong>iOS:</strong> Les dades de salut obtingudes a través de HealthKit s&#x27;utilitzen únicament per calcular i mostrar la teva puntuació de recuperació dins de l&#x27;aplicació. Aquestes dades mai s&#x27;utilitzen per a publicitat, ni es comparteixen amb intermediaris de dades, ni es divulguen a tercers.</p>
 
 <h2>Health Connect (Android)</h2>
 <p>Amb el teu permís, RecoverySync llegeix les dades següents de Health Connect al teu dispositiu: variabilitat de la freqüència cardíaca (SDNN), freqüència cardíaca en repòs i son. L'accés és només de lectura i RecoverySync no hi escriu mai res.</p>
@@ -571,6 +571,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Si fem canvis materials en aquesta política de privadesa, actualitzarem la data d&#x27;&quot;Última actualització&quot; a dalt. L&#x27;ús continuat de l&#x27;aplicació després d&#x27;aquests canvis constitueix la teva acceptació de la política actualitzada.</p>
 <h2>Contacte</h2>
 <p>Si tens preguntes sobre aquesta política de privadesa, contacta amb nosaltres:</p>
+<h2 id="android">Android</h2>
+<p>Aquestes dades s'emmagatzemen al teu dispositiu en una base de dades local. La còpia de seguretat al núvol i la transferència entre dispositius estan desactivades, de manera que no surten mai del teu dispositiu.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Contacte</p>

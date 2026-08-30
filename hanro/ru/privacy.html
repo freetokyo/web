@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Политика конфиденциальности Hanro. Данные остаются на вашем устройстве — без аккаунта, отслеживания и сбора данных.", "inLanguage": "ru", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ru/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Политика конфиденциальности Hanro. Данные остаются на вашем устройстве — без аккаунта, отслеживания и сбора данных.", "inLanguage": "ru", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ru/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/ru/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/ru/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Уведомления: используются для отправки напоминаний, таких как сроки техосмотра автомобиля или время замены масла.</p>
 <p>• Данные, введённые пользователем: записи о доставках, доходы, расходы, информация об автомобиле, цели, налоговые настройки и другая информация, введённая непосредственно пользователем, хранятся в базе данных на устройстве.</p>
 <h2>3. Синхронизация iCloud</h2>
-<p>Если пользователь вошёл в iCloud на устройстве, указанные выше данные синхронизируются только внутри его собственной учётной записи iCloud через приватную базу CloudKit от Apple (в приложении нет настройки включения или выключения синхронизации). Мы никогда не получаем доступ к этим данным.</p>
+<p><strong>iOS:</strong> Если пользователь вошёл в iCloud на устройстве, указанные выше данные синхронизируются только внутри его собственной учётной записи iCloud через приватную базу CloudKit от Apple (в приложении нет настройки включения или выключения синхронизации). Мы никогда не получаем доступ к этим данным.</p>
 <h2>4. Распознавание текста и краткие сводки на устройстве</h2>
 <p>Распознавание текста чеков, считывание сумм со скриншотов выручки и создание текста ежемесячной сводки используют возможности, которые Apple предоставляет на устройстве (Vision / Foundation Models). Вся эта обработка полностью завершается на устройстве пользователя и никогда не отправляется на внешние серверы. Прогноз пиковых часов — это статистика, рассчитанная на устройстве по собственным прошлым записям пользователя, без использования внешних данных.</p>
 <h2>5. Раскрытие информации третьим лицам</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Информация о детях</h2>
 <p>Это приложение в первую очередь предназначено для взрослых водителей, являющихся предпринимателями. Мы сознательно не собираем информацию от детей младше 13 лет.</p>
 <h2>8. Удаление данных</h2>
-<p>Пользователи могут удалить все данные на устройстве, удалив это приложение через Настройки iOS → Основные → Хранилище iPhone. Синхронизированные данные в iCloud можно стереть, удалив данные приложения из настроек iCloud.</p>
+<p><strong>iOS:</strong> Пользователи могут удалить все данные на устройстве, удалив это приложение через Настройки iOS → Основные → Хранилище iPhone. Синхронизированные данные в iCloud можно стереть, удалив данные приложения из настроек iCloud.</p>
 <h2>9. Оплата и App Store</h2>
-<p>Оплата подписки для этого приложения осуществляется через App Store компании Apple, и мы никогда не получаем платёжную информацию, такую как данные кредитной карты. Эта информация обрабатывается в соответствии с политикой конфиденциальности Apple.</p>
+<p><strong>iOS:</strong> Оплата подписки для этого приложения осуществляется через App Store компании Apple, и мы никогда не получаем платёжную информацию, такую как данные кредитной карты. Эта информация обрабатывается в соответствии с политикой конфиденциальности Apple.</p>
 <h2>10. Изменения в настоящей Политике</h2>
 <p>Содержание настоящей Политики может изменяться по мере необходимости. О существенных изменениях будет объявлено в приложении или на странице поддержки.</p>
+
+<h2 id="android">Android</h2>
+<p>Эти данные хранятся на вашем устройстве в локальной базе данных. Резервное копирование в облако и перенос между устройствами отключены, поэтому данные никогда не покидают ваше устройство.</p>
 <h2>11. Контакты</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

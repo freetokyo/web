@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Terms of use for Mochiru: limitation of liability, prohibited use, purchases and restore, and changes to these terms.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/en/terms.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Terms of use for Mochiru: limitation of liability, prohibited use, purchases and restore, and changes to these terms.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/en/terms.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/en/"}, {"@type": "ListItem", "position": 3, "name": "Terms", "item": "https://freetokyo.github.io/web/mochiru/en/terms.html"}]}</script>
 </head>
 <body>
@@ -580,6 +580,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
     </div>
   </div>
+
+<section class="ftlegal">
+<h2 id="android-terms">Android purchases, and use by minors</h2>
+<p>In-app purchases in the Android version are processed through Google Play. Payment and refund procedures follow Google Play's terms and processes. Google Play handles refunds immediately after purchase; after that window, please contact us through the support page.</p>
+<p>Minors may use this app, but should obtain a parent or guardian's consent before making an in-app purchase. Guardians can control purchases with Family Sharing / Ask to Buy on the App Store, or Parental Controls on Google Play.</p>
+</section>
+
 <section class="ftlegal">
 <h2>Limitation of liability (overriding)</h2>
 <p>Notwithstanding any other provision of these terms, Except in cases of our willful misconduct or gross negligence, our liability for any damages arising from your use of the app is limited to the amount you paid us for the app. Where such a limitation is not permitted by mandatory law, we are liable to the extent that law provides.</p>

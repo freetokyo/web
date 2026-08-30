@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro 개인정보처리방침. 데이터는 기기 안에만 저장되며 계정 등록과 외부 전송이 없습니다.", "inLanguage": "ko", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ko/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro 개인정보처리방침. 데이터는 기기 안에만 저장되며 계정 등록과 외부 전송이 없습니다.", "inLanguage": "ko", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ko/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/ko/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/ko/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• 알림: 차량 검사 기한이나 오일 교환 시기 등의 알림을 보내는 데 사용됩니다.</p>
 <p>• 사용자 입력 데이터: 배송 기록, 매출, 경비, 차량 정보, 목표, 세금 설정 및 사용자가 직접 입력한 기타 정보는 기기 내 데이터베이스에 저장됩니다.</p>
 <h2>3. iCloud 동기화</h2>
-<p>사용자가 기기에서 iCloud에 로그인한 경우, 위 데이터는 Apple의 CloudKit Private Database를 통해 사용자 본인의 iCloud 계정 내에서만 동기화됩니다(앱에는 동기화 켜기/끄기 설정이 없습니다). 당사는 이 데이터에 접근하지 않습니다.</p>
+<p><strong>iOS:</strong> 사용자가 기기에서 iCloud에 로그인한 경우, 위 데이터는 Apple의 CloudKit Private Database를 통해 사용자 본인의 iCloud 계정 내에서만 동기화됩니다(앱에는 동기화 켜기/끄기 설정이 없습니다). 당사는 이 데이터에 접근하지 않습니다.</p>
 <h2>4. 기기 내 문자 인식 및 요약 처리</h2>
 <p>영수증 문자 인식, 매출 스크린샷에서의 금액 판독, 월간 요약 문장 생성에는 Apple이 기기에서 제공하는 기능(Vision / Foundation Models)을 사용합니다. 이 모든 처리는 사용자의 기기에서 완결되며 외부 서버로 전송되지 않습니다. 피크타임 예측은 사용자 본인의 과거 기록을 기기 내에서 집계한 통계이며 외부 데이터를 사용하지 않습니다.</p>
 <h2>5. 제3자 공개</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. 아동 정보</h2>
 <p>본 앱은 주로 사업자인 성인 운전자를 대상으로 합니다. 당사는 13세 미만 아동으로부터 고의로 정보를 수집하지 않습니다.</p>
 <h2>8. 데이터 삭제</h2>
-<p>사용자는 iOS 설정 → 일반 → iPhone 저장 공간을 통해 본 앱을 삭제하여 기기 내 모든 데이터를 삭제할 수 있습니다. iCloud에 동기화된 데이터는 iCloud 설정에서 앱 데이터를 삭제하여 지울 수 있습니다.</p>
+<p><strong>iOS:</strong> 사용자는 iOS 설정 → 일반 → iPhone 저장 공간을 통해 본 앱을 삭제하여 기기 내 모든 데이터를 삭제할 수 있습니다. iCloud에 동기화된 데이터는 iCloud 설정에서 앱 데이터를 삭제하여 지울 수 있습니다.</p>
 <h2>9. 결제 및 App Store</h2>
-<p>본 앱의 구독 결제는 Apple의 App Store를 통해 처리되며, 당사는 신용카드 정보 등의 결제 정보를 취득하지 않습니다. 이 정보는 Apple의 개인정보 처리방침에 따라 처리됩니다.</p>
+<p><strong>iOS:</strong> 본 앱의 구독 결제는 Apple의 App Store를 통해 처리되며, 당사는 신용카드 정보 등의 결제 정보를 취득하지 않습니다. 이 정보는 Apple의 개인정보 처리방침에 따라 처리됩니다.</p>
 <h2>10. 본 방침의 변경</h2>
 <p>본 방침의 내용은 필요에 따라 변경될 수 있습니다. 중요한 변경 사항은 앱 내 또는 지원 페이지를 통해 공지됩니다.</p>
+
+<h2 id="android">Android</h2>
+<p>이 데이터는 귀하의 기기에 있는 로컬 데이터베이스에 저장됩니다. 클라우드 백업과 기기 간 전송은 모두 비활성화되어 있으므로 데이터가 기기를 벗어나지 않습니다.</p>
 <h2>11. 문의</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

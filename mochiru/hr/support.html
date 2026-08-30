@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Podrška za Mochiru: česta pitanja i kontakt e-poštom.", "inLanguage": "hr", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/hr/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Podrška za Mochiru: česta pitanja i kontakt e-poštom.", "inLanguage": "hr", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/hr/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/hr/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/mochiru/hr/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Je li potrebna internetska veza?", "acceptedAnswer": {"@type": "Answer", "text": "Izračuni, uneseni podaci i zapisi ostaju na vašem uređaju i nikamo se ne šalju. Mreža se koristi samo za kupnju, njezinu obnovu i otvaranje pravnih stranica."}}, {"@type": "Question", "name": "Šalju li se moje financijske informacije van?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Uneseni podaci pohranjuju se samo na vašem uređaju i nikada se ne šalju na poslužitelje razvojnog programera niti trećim stranama."}}, {"@type": "Question", "name": "Povezuje li se aplikacija s bankovnim ili investicijskim računima?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Ova se aplikacija ne povezuje ni s kakvim računima niti zahtijeva registraciju. Sve vrijednosti unosite sami."}}, {"@type": "Question", "name": "Mogu li se pouzdati u rezultate simulacije?", "acceptedAnswer": {"@type": "Answer", "text": "Rezultati su procjene temeljene na vašim unesenim pretpostavkama i ne jamče buduće učinke. Ova aplikacija nije investicijski savjet i ne preporučuje određene financijske proizvode ni termine transakcija. Dizajnirana je za usporedbu rezultata prilagođavanjem pretpostavki. Konačne odluke vaša su odgovornost."}}, {"@type": "Question", "name": "Postoji li trošak?", "acceptedAnswer": {"@type": "Answer", "text": "Možete započeti s besplatnim pregledom (uključuje osnovnu simulaciju, nadzornu ploču rezultata i analizu osjetljivosti). Pune funkcionalnosti otključavaju se jednokratnom premium kupnjom (¥500, nepotrošiva, bez pretplate). Obnova kupnje podržana je putem StoreKit 2."}}]}</script>
 </head>

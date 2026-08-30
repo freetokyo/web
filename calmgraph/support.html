@@ -260,7 +260,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -327,7 +327,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -455,7 +455,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calmgraph（カームグラフ）", "description": "Calmgraph のサポートページ。使い方・較正期間・ヘルスケア連携・購入の復元に関するよくある質問とお問い合わせ先。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/calmgraph/support.html", "image": "https://freetokyo.github.io/web/calmgraph/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790698772"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calmgraph（カームグラフ）", "description": "Calmgraph のサポートページ。使い方・較正期間・ヘルスケア連携・購入の復元に関するよくある質問とお問い合わせ先。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/calmgraph/support.html", "image": "https://freetokyo.github.io/web/calmgraph/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790698772"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Calmgraph（カームグラフ）", "item": "https://freetokyo.github.io/web/calmgraph/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/calmgraph/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "スコアが表示されません", "acceptedAnswer": {"@type": "Answer", "text": "ホームの「チェックイン」から5段階を1タップすると当日スコアが表示されます。Apple Watch と連携している場合、HRV などのデータが端末に取り込まれ次第スコアが算出されます（装着状況により時間がかかることがあります）。"}}, {"@type": "Question", "name": "「較正中」と表示されます", "acceptedAnswer": {"@type": "Answer", "text": "スコアはあなた個人の平常（ベースライン）を基準に測ります。最初の14日間は学習のための較正期間で、暫定値として表示されます。記録を続けるほど精度が上がります。"}}, {"@type": "Question", "name": "Apple Watch がなくても使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。主観チェックイン（1タップ）だけで、スコア・タグ・グラフ・週次インサイトのすべてをご利用いただけます。"}}, {"@type": "Question", "name": "ヘルスケアの許可を変更したい", "acceptedAnswer": {"@type": "Answer", "text": "iOS の「設定 &gt; プライバシーとセキュリティ &gt; ヘルスケア &gt; Calmgraph」から、読み取り項目をいつでも変更できます。"}}, {"@type": "Question", "name": "購入を復元したい／機種変更した", "acceptedAnswer": {"@type": "Answer", "text": "設定タブまたはペイウォールの「購入を復元」をタップしてください。同一 Apple ID であれば追加料金なく復元されます。買い切りのため、サブスクの解約手続きは不要です。"}}, {"@type": "Question", "name": "データは安全ですか？", "acceptedAnswer": {"@type": "Answer", "text": "すべてのデータは端末内にのみ保存され、外部送信・第三者提供・広告利用はありません。詳しくは プライバシーポリシー をご覧ください。"}}]}</script>
 </head>
@@ -493,6 +493,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       通常2〜3営業日以内に返信します。</p>
     </div>
   </div>
+<section class="ftlegal">
+<h2 id="android-support">Android 版について</h2>
+<p>対応するのは Android 9.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
+<p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru सहायता: अक्सर पूछे जाने वाले प्रश्न और ईमेल से संपर्क करने का तरीका।", "inLanguage": "hi", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/hi/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru सहायता: अक्सर पूछे जाने वाले प्रश्न और ईमेल से संपर्क करने का तरीका।", "inLanguage": "hi", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/hi/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/hi/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/mochiru/hi/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "क्या इंटरनेट कनेक्शन की आवश्यकता है?", "acceptedAnswer": {"@type": "Answer", "text": "गणनाएँ, इनपुट और रिकॉर्ड आपके डिवाइस पर ही रहते हैं और कहीं नहीं भेजे जाते। नेटवर्क केवल खरीद, खरीद बहाल करने और कानूनी पृष्ठ खोलने के लिए उपयोग होता है।"}}, {"@type": "Question", "name": "क्या मेरी वित्तीय जानकारी बाहर भेजी जाती है?", "acceptedAnswer": {"@type": "Answer", "text": "नहीं। दर्ज किया गया डेटा केवल आपके डिवाइस पर संग्रहीत होता है और कभी भी डेवलपर के सर्वर या किसी तृतीय पक्ष को नहीं भेजा जाता।"}}, {"@type": "Question", "name": "क्या ऐप बैंक या निवेश खातों से जुड़ता है?", "acceptedAnswer": {"@type": "Answer", "text": "नहीं। यह ऐप किसी भी खाते से नहीं जुड़ता और न ही पंजीकरण की आवश्यकता है। आप सभी आंकड़े स्वयं दर्ज करते हैं।"}}, {"@type": "Question", "name": "क्या सिमुलेशन परिणामों पर भरोसा किया जा सकता है?", "acceptedAnswer": {"@type": "Answer", "text": "परिणाम आपके दर्ज किए गए अनुमानों पर आधारित अनुमान हैं और भविष्य के प्रदर्शन की गारंटी नहीं देते। यह ऐप निवेश सलाह नहीं है और किसी विशिष्ट वित्तीय उत्पाद या व्यापार समय की सिफारिश नहीं करता। इसे अनुमानों को बदलकर परिणामों की तुलना के लिए डिज़ाइन किया गया है। अंतिम निर्णय आपकी जिम्मेदारी है।"}}, {"@type": "Question", "name": "क्या कोई शुल्क है?", "acceptedAnswer": {"@type": "Answer", "text": "आप मुफ्त प्रीव्यू से शुरुआत कर सकते हैं (बुनियादी सिमुलेशन, परिणाम डैशबोर्ड और संवेदनशीलता विश्लेषण शामिल)। पूर्ण सुविधाएं एकमुश्त प्रीमियम खरीद (¥500, गैर-उपभोग्य, कोई सदस्यता नहीं) से अनलॉक होती हैं। StoreKit 2 के माध्यम से खरीद पुनर्स्थापना समर्थित है।"}}]}</script>
 </head>

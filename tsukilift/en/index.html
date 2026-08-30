@@ -259,7 +259,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -326,7 +326,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -454,7 +454,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TsukiLift", "description": "Track your menstrual cycle and strength training in one app. Phase-aware training suggestions help you build strength at your own rhythm — all stored on your device.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/tsukilift/en/", "image": "https://freetokyo.github.io/web/tsukilift/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6767084251", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TsukiLift", "description": "Track your menstrual cycle and strength training in one app. Phase-aware training suggestions help you build strength at your own rhythm — all stored on your device.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/tsukilift/en/", "image": "https://freetokyo.github.io/web/tsukilift/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6767084251", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "TsukiLift", "item": "https://freetokyo.github.io/web/tsukilift/en/"}]}</script>
 </head>
 <body>
@@ -552,19 +552,19 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </div>
     <div class="screenshot-gallery">
       <div class="screenshot-item">
-        <img src="../img/01_home.png" alt="Home screen: today's phase and training suggestion" loading="lazy">
+        <img src="../img/01_home.png" alt="Home screen: today's phase and training suggestion" loading="lazy" width="1320" height="2868">
         <p class="screenshot-caption">Today's phase &amp; suggestion</p>
       </div>
       <div class="screenshot-item">
-        <img src="../img/02_calendar.png" alt="Calendar screen: period, symptoms and workouts at a glance" loading="lazy">
+        <img src="../img/02_calendar.png" alt="Calendar screen: period, symptoms and workouts at a glance" loading="lazy" width="1320" height="2868">
         <p class="screenshot-caption">Color calendar</p>
       </div>
       <div class="screenshot-item">
-        <img src="../img/03_analytics.png" alt="Analytics screen: performance trends by cycle phase" loading="lazy">
+        <img src="../img/03_analytics.png" alt="Analytics screen: performance trends by cycle phase" loading="lazy" width="1320" height="2868">
         <p class="screenshot-caption">Analysis by phase</p>
       </div>
       <div class="screenshot-item">
-        <img src="../img/04_record.png" alt="Logging screen: period, symptoms, workouts, body composition and temperature" loading="lazy">
+        <img src="../img/04_record.png" alt="Logging screen: period, symptoms, workouts, body composition and temperature" loading="lazy" width="1320" height="2868">
         <p class="screenshot-caption">Five kinds of records</p>
       </div>
     </div>
@@ -720,6 +720,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
 
 <section style="max-width:720px;margin:0 auto;padding:8px 24px 28px"><p style="font-size:13px;line-height:1.8;opacity:.75;border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:12px 16px;margin:0"><strong>Please note:</strong> This app is not a medical device and is not intended for diagnosis, treatment, contraception, or any other medical decision. Cycle predictions are reference information only. If you have concerns about your health, please consult a doctor.</p></section>
+
+
+<section class="ftlegal">
+<h2 id="android-about">About the Android version</h2>
+<p>An Android version of TsukiLift is in preparation. It supports Android 9.0 and later and will be published on Google Play.</p>
+<p>Both implementations are checked against the same verification data so that the Android build calculates and judges exactly as the iOS one does. Storage and backup behaviour is described in the <a href="privacy.html#android-privacy">privacy policy</a>.</p>
+<p>We are not linking to a store page until it is live. We will announce it here and on the <a href="support.html#android-support">support page</a>.</p>
+</section>
 
 <section class="ftcta">
 <h2>TsukiLift</h2>

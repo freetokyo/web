@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -558,7 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>Üçüncü taraf SDK&#x27;ları ve hizmetleri</h2>
 <p><strong>iOS:</strong> RecoverySync hiçbir üçüncü taraf analitik SDK&#x27;sı, reklam SDK&#x27;sı veya izleme kütüphanesi içermez. Kullanılan tek harici çerçeve, Apple&#x27;ın kendi gizlilik politikalarına tabi olan Apple&#x27;ın HealthKit&#x27;idir.</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>HealthKit aracılığıyla elde edilen sağlık verileri yalnızca uygulama içinde toparlanma puanınızı hesaplama ve görüntüleme amacıyla kullanılır. Bu veriler asla reklam amacıyla kullanılmaz, veri komisyoncularıyla paylaşılmaz veya üçüncü taraflara ifşa edilmez.</p>
+<p><strong>iOS:</strong> HealthKit aracılığıyla elde edilen sağlık verileri yalnızca uygulama içinde toparlanma puanınızı hesaplama ve görüntüleme amacıyla kullanılır. Bu veriler asla reklam amacıyla kullanılmaz, veri komisyoncularıyla paylaşılmaz veya üçüncü taraflara ifşa edilmez.</p>
 
 <h2>Health Connect (Android)</h2>
 <p>İzninizle RecoverySync, cihazınızdaki Health Connect'ten şu verileri okur: kalp atış hızı değişkenliği (SDNN), dinlenme kalp atış hızı ve uyku. Erişim yalnızca okuma amaçlıdır ve RecoverySync asla veri geri yazmaz.</p>
@@ -571,6 +571,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Bu gizlilik politikasında önemli değişiklikler yaparsak, yukarıdaki &quot;Son güncelleme&quot; tarihini güncelleyeceğiz. Bu tür değişikliklerden sonra uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
 <h2>İletişim</h2>
 <p>Bu gizlilik politikası hakkında sorularınız varsa lütfen bizimle iletişime geçin:</p>
+<h2 id="android">Android</h2>
+<p>Bu veriler cihazınızda yerel bir veritabanında saklanır. Bulut yedeklemesi ve cihazlar arası aktarım kapalıdır, bu nedenle veriler cihazınızdan asla çıkmaz.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>İletişim</p>

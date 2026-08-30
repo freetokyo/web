@@ -260,7 +260,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -327,7 +327,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -455,7 +455,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calmgraph（カームグラフ）", "description": "Calmgraph（カームグラフ）は、Apple Watch の HRV や主観チェックインから日々のストレスを0–100のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。カレンダーで過去日も編集でき、タグ相関で要因が見えます。データは端末内だけに保存します。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/calmgraph/", "image": "https://freetokyo.github.io/web/calmgraph/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790698772"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calmgraph（カームグラフ）", "description": "Calmgraph（カームグラフ）は、Apple Watch の HRV や主観チェックインから日々のストレスを0–100のスコアにして、原因タグと重ねて可視化する完全オフラインの記録アプリです。サブスクなし・アカウント不要・買い切り。カレンダーで過去日も編集でき、タグ相関で要因が見えます。データは端末内だけに保存します。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/calmgraph/", "image": "https://freetokyo.github.io/web/calmgraph/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6790698772"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Calmgraph（カームグラフ）", "item": "https://freetokyo.github.io/web/calmgraph/"}]}</script>
 </head>
 <body>
@@ -549,6 +549,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。今日のストレススコア46（中間）を円グラフで示し、原因タグと直近7日の推移グラフが続く" width="360" height="782" loading="lazy" decoding="async"><figcaption>HRVから ストレススコア</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="推移のグラフ表示。7日／30日／90日を切り替え、期間の平均スコア59と最も高い日・低い日、帯ごとの日数をまとめる" width="360" height="782" loading="lazy" decoding="async"><figcaption>何がスコアを 動かしたか</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="推移のカレンダー表示。2026年8月の各日を安定・中間・負荷の3色で塗り分ける" width="360" height="782" loading="lazy" decoding="async"><figcaption>カレンダーで 過去日も記録</figcaption></figure></div>
 </section>
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Calmgraph は Android 版を準備しています。Android 9.0 以降に対応し、Google Play での公開を予定しています。スマートフォンに加えて Wear OS の時計にも対応します。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
+</section>
+
 <section class="ftcta">
 <h2>Calmgraph（カームグラフ）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

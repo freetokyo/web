@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru-tuki: usein kysytyt kysymykset ja yhteydenotto sähköpostitse.", "inLanguage": "fi", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/fi/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru-tuki: usein kysytyt kysymykset ja yhteydenotto sähköpostitse.", "inLanguage": "fi", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/fi/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/fi/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/mochiru/fi/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Tarvitaanko internetyhteys?", "acceptedAnswer": {"@type": "Answer", "text": "Laskennat, syötteet ja merkinnät pysyvät laitteessasi eikä niitä lähetetä minnekään. Verkkoa käytetään vain ostoon, oston palauttamiseen ja juridisten sivujen avaamiseen."}}, {"@type": "Question", "name": "Lähetetäänkö taloudelliset tietoni ulkopuolelle?", "acceptedAnswer": {"@type": "Answer", "text": "Ei. Syötetyt tiedot tallennetaan vain laitteellesi, eikä niitä koskaan lähetetä kehittäjän palvelimille tai kolmansille osapuolille."}}, {"@type": "Question", "name": "Yhdistyykö sovellus pankki- tai sijoitustileihin?", "acceptedAnswer": {"@type": "Answer", "text": "Ei. Tämä sovellus ei yhdisty tileihin eikä vaadi rekisteröitymistä. Syötät kaikki luvut itse."}}, {"@type": "Question", "name": "Voiko simulointituloksiin luottaa?", "acceptedAnswer": {"@type": "Answer", "text": "Tulokset ovat arvioita syöttämiesi oletusten perusteella, eivätkä ne takaa tulevaa tuottoa. Sovellus ei ole sijoitusneuvontaa eikä suosittele tiettyjä rahoitustuotteita tai kaupankäyntiaikoja. Se on suunniteltu tulosten vertailuun muuttamalla oletuksia. Lopulliset päätökset ovat sinun vastuullasi."}}, {"@type": "Question", "name": "Onko sovellus maksullinen?", "acceptedAnswer": {"@type": "Answer", "text": "Voit aloittaa ilmaisella esikatsellulla (sis. perussimuloinni, tulosnäytön ja herkkyysanalyysin). Täydet toiminnot avataan kertaostolla (¥500, ei kulutustavara, ei tilaus). Osto voidaan palauttaa StoreKit 2:n kautta."}}]}</script>
 </head>

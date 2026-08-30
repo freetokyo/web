@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Privacybeleid van Mochiru. Je gegevens blijven op je apparaat – geen account, geen tracking, geen dataverzameling.", "inLanguage": "nl", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/nl/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Privacybeleid van Mochiru. Je gegevens blijven op je apparaat – geen account, geen tracking, geen dataverzameling.", "inLanguage": "nl", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/nl/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/nl/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/nl/privacy.html"}]}</script>
 </head>
 <body>
@@ -559,7 +559,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 Netwerkcommunicatie</h2>
 <p>Berekeningen, invoer en registraties blijven op je apparaat en worden nooit verstuurd. Het netwerk wordt alleen gebruikt om te kopen of de aankoop te herstellen en om de juridische pagina’s te openen.</p>
 <h2>💳 Aankopen en betalingen</h2>
-<p>In-app-aankopen (eenmalige premium) worden gedaan via de App Store van Apple. Betalingsinformatie wordt beheerd door Apple en wordt niet verstrekt aan de ontwikkelaar. StoreKit 2 wordt gebruikt om aankopen te verifiëren en te herstellen.</p>
+<p><strong>iOS:</strong> In-app-aankopen (eenmalige premium) worden gedaan via de App Store van Apple. Betalingsinformatie wordt beheerd door Apple en wordt niet verstrekt aan de ontwikkelaar. StoreKit 2 wordt gebruikt om aankopen te verifiëren en te herstellen.</p>
 <h2>🗑️ Gegevensopslag en -verwijdering</h2>
 <p>Gegevens worden alleen op uw apparaat opgeslagen. Door de app te verwijderen worden alle opgeslagen gegevens permanent verwijderd. Maak zelf een back-up van belangrijke gegevens.</p>
 <h2>🔗 Verstrekking aan derden</h2>
@@ -568,6 +568,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Als dit beleid wordt herzien, stellen we u hiervan op de hoogte via een app-update of op deze pagina.</p>
 <h2>✉️ Contact</h2>
 <p>Voor vragen over privacy kunt u contact met ons opnemen via de ondersteuningspagina.</p>
+<h2 id="android">Android</h2>
+<p>Deze gegevens worden op je apparaat opgeslagen in een lokale database. Cloudback-up en apparaatoverdracht zijn uitgeschakeld, dus ze verlaten je apparaat nooit.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Contact</p>

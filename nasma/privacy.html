@@ -262,7 +262,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -329,7 +329,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -457,7 +457,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "نسمة / Nasma（ナスマ）", "description": "Nasma のプライバシーポリシー。データは端末内にのみ保存され、外部に送信されません。ヘルスケアは読み取り専用です。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/nasma/privacy.html", "image": "https://freetokyo.github.io/web/nasma/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "نسمة / Nasma（ナスマ）", "description": "Nasma のプライバシーポリシー。データは端末内にのみ保存され、外部に送信されません。ヘルスケアは読み取り専用です。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/nasma/privacy.html", "image": "https://freetokyo.github.io/web/nasma/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "نسمة / Nasma（ナスマ）", "item": "https://freetokyo.github.io/web/nasma/"}, {"@type": "ListItem", "position": 3, "name": "プライバシー", "item": "https://freetokyo.github.io/web/nasma/privacy.html"}]}</script>
 </head>
 <body>
@@ -478,6 +478,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </nav>
 <main class="ftbody" id="ftmain">
 <header class="hero"><div class="wrap"><h1>プライバシーポリシー</h1><p class="note">最終更新日: 2026年8月3日</p></div></header><section><div class="wrap"><h2>収集する情報</h2><p>Nasma は、利用者の個人情報を収集しません。アカウント登録はなく、氏名・メールアドレス・電話番号・位置情報・端末識別子のいずれも取得しません。</p></div></section><section><div class="wrap"><h2>データの保存場所</h2><p>記録（喫煙・欲求・目標・設定）はすべて利用者の端末内にのみ保存されます。開発者を含む第三者がこれらを参照することはできません。</p></div></section><section><div class="wrap"><h2>ネットワーク通信</h2><p>本アプリは、App Store の購入処理（Apple が提供）を除き、ネットワーク通信を行いません。広告 SDK・解析 SDK・クラッシュレポート SDK のいずれも組み込んでいません。</p></div></section><section><div class="wrap"><h2>ヘルスケア（HealthKit）</h2><p>利用者が明示的に許可した場合に限り、安静時心拍数・歩数・睡眠の3種類を<strong>読み取り専用</strong>で参照します。読み取ったデータは端末内でのみ処理し、外部には送信しません。本アプリはヘルスケアへの書き込みを行いません。臨床記録（Clinical Health Records）は利用しません。広告目的での利用も行いません。許可はいつでも「ヘルスケア」App から取り消せます。</p></div></section><section><div class="wrap"><h2>生体認証（Face ID / Touch ID）</h2><p>アプリのロック解除にのみ使用します。認証は端末内で完結し、生体情報がアプリに渡されることはありません。</p></div></section><section><div class="wrap"><h2>通知</h2><p>利用者が有効にした場合にのみ、端末内でローカル通知を予約します。通知の内容が外部に送信されることはありません。</p></div></section><section><div class="wrap"><h2>バックアップ</h2><p>書き出したファイルの保存先は利用者が選びます。開発者が保存先や内容を知ることはありません。</p></div></section><section><div class="wrap"><h2>子どものプライバシー</h2><p>本アプリは子ども向けに設計されていません。年齢レーティングに従ってご利用ください。</p></div></section><section><div class="wrap"><h2>データの削除</h2><p>設定画面の「すべてのデータを削除」から、記録と設定をすべて消去できます。アプリを削除した場合も端末内のデータは削除されます。</p></div></section><section><div class="wrap"><h2>ポリシーの変更</h2><p>内容を変更する場合は、本ページを更新します。</p></div></section>
+
+<section class="ftlegal">
+<h2 id="android-privacy">Android 版でのデータの扱い</h2>
+<p>以下は Android 版（Android 9.0 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
+<p>記録したデータは端末内のローカルデータベース（Room）に保存され、開発者のサーバーへ送られることはありません。</p>
+<p>クラウドバックアップと端末間移行はどちらも無効にしてあります（<code>allowBackup="false"</code> と <code>data_extraction_rules.xml</code>）。端末を替えるときは、アプリ内の書き出し機能でご自身でバックアップしてください。</p>
+<p>アプリをアンインストールすると、端末内のデータは削除されます。バックアップも移行も無効なので、端末の外にコピーは残りません。</p>
+</section>
+
 <section class="ftlegal">
 <h2>事業者・お問い合わせ・権利について</h2>
 <p>本アプリの提供者（データ管理者）は個人開発者 freetokyo です。 本ポリシーおよび個人データの取り扱いに関するお問い合わせは freetokyo2020@yahoo.co.jp までご連絡ください。 通常5営業日以内に返信します。</p>

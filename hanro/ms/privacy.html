@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Dasar privasi Hanro. Data anda kekal pada peranti — tiada akaun, tiada penjejakan, tiada pengumpulan data.", "inLanguage": "ms", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ms/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Dasar privasi Hanro. Data anda kekal pada peranti — tiada akaun, tiada penjejakan, tiada pengumpulan data.", "inLanguage": "ms", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ms/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/ms/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/ms/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Pemberitahuan: digunakan untuk menghantar peringatan seperti tarikh akhir pemeriksaan kenderaan atau masa pertukaran minyak.</p>
 <p>• Data yang dimasukkan pengguna: rekod penghantaran, hasil, perbelanjaan, maklumat kenderaan, matlamat, tetapan cukai, dan maklumat lain yang dimasukkan terus oleh pengguna disimpan dalam pangkalan data pada peranti.</p>
 <h2>3. Penyegerakan iCloud</h2>
-<p>Jika pengguna log masuk ke iCloud pada peranti, data di atas disegerakkan hanya dalam akaun iCloud pengguna sendiri melalui CloudKit Private Database milik Apple (apl tiada tetapan untuk menghidupkan atau mematikan penyegerakan). Kami tidak pernah mempunyai akses kepada data ini.</p>
+<p><strong>iOS:</strong> Jika pengguna log masuk ke iCloud pada peranti, data di atas disegerakkan hanya dalam akaun iCloud pengguna sendiri melalui CloudKit Private Database milik Apple (apl tiada tetapan untuk menghidupkan atau mematikan penyegerakan). Kami tidak pernah mempunyai akses kepada data ini.</p>
 <h2>4. Pengecaman Teks dan Ringkasan pada Peranti</h2>
 <p>Pengecaman teks resit, pembacaan jumlah daripada tangkapan skrin pendapatan dan penjanaan teks ringkasan bulanan menggunakan keupayaan yang disediakan Apple pada peranti (Vision / Foundation Models). Semua pemprosesan ini diselesaikan sepenuhnya pada peranti pengguna dan tidak pernah dihantar ke pelayan luaran. Ramalan waktu puncak ialah statistik yang dikira pada peranti daripada rekod lalu pengguna sendiri dan tidak menggunakan data luaran.</p>
 <h2>5. Pendedahan kepada Pihak Ketiga</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Maklumat Kanak-kanak</h2>
 <p>Aplikasi ini terutamanya ditujukan untuk pemandu dewasa yang merupakan pengendali perniagaan. Kami tidak dengan sengaja mengumpul maklumat daripada kanak-kanak bawah 13 tahun.</p>
 <h2>8. Pemadaman Data</h2>
-<p>Pengguna boleh memadam semua data pada peranti dengan menyahpasang aplikasi ini melalui Tetapan iOS → Umum → Storan iPhone. Data yang disegerakkan dalam iCloud boleh dipadam dengan memadam data aplikasi daripada tetapan iCloud.</p>
+<p><strong>iOS:</strong> Pengguna boleh memadam semua data pada peranti dengan menyahpasang aplikasi ini melalui Tetapan iOS → Umum → Storan iPhone. Data yang disegerakkan dalam iCloud boleh dipadam dengan memadam data aplikasi daripada tetapan iCloud.</p>
 <h2>9. Pengebilan dan App Store</h2>
-<p>Pengebilan langganan untuk aplikasi ini dikendalikan melalui App Store Apple, dan kami tidak pernah memperoleh maklumat pembayaran seperti butiran kad kredit. Maklumat ini dikendalikan mengikut dasar privasi Apple.</p>
+<p><strong>iOS:</strong> Pengebilan langganan untuk aplikasi ini dikendalikan melalui App Store Apple, dan kami tidak pernah memperoleh maklumat pembayaran seperti butiran kad kredit. Maklumat ini dikendalikan mengikut dasar privasi Apple.</p>
 <h2>10. Perubahan pada Dasar Ini</h2>
 <p>Kandungan Dasar ini boleh berubah mengikut keperluan. Perubahan material akan diumumkan dalam aplikasi atau pada halaman sokongan.</p>
+
+<h2 id="android">Android</h2>
+<p>Data ini disimpan pada peranti anda dalam pangkalan data setempat. Sandaran awan dan pemindahan antara peranti dimatikan, jadi data tidak pernah meninggalkan peranti anda.</p>
 <h2>11. Hubungi</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -558,7 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>Harmadik féltől származó SDK-k és szolgáltatások</h2>
 <p><strong>iOS:</strong> A RecoverySync nem tartalmaz harmadik féltől származó elemzési SDK-kat, hirdetési SDK-kat vagy nyomkövető könyvtárakat. Az egyetlen használt külső keretrendszer az Apple HealthKitje, amelyre az Apple saját adatvédelmi irányelvei vonatkoznak.</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>A HealthKiten keresztül szerzett egészségügyi adatokat kizárólag a regenerációs pontszámod kiszámítására és megjelenítésére használjuk az alkalmazáson belül. Ezeket az adatokat soha nem használjuk hirdetésre, nem osztjuk meg adatközvetítőkkel, és nem hozzuk nyilvánosságra harmadik felek számára.</p>
+<p><strong>iOS:</strong> A HealthKiten keresztül szerzett egészségügyi adatokat kizárólag a regenerációs pontszámod kiszámítására és megjelenítésére használjuk az alkalmazáson belül. Ezeket az adatokat soha nem használjuk hirdetésre, nem osztjuk meg adatközvetítőkkel, és nem hozzuk nyilvánosságra harmadik felek számára.</p>
 
 <h2>Health Connect (Android)</h2>
 <p>Az engedélyeddel a RecoverySync a következő adatokat olvassa be a készülékeden lévő Health Connect szolgáltatásból: szívfrekvencia-variabilitás (SDNN), nyugalmi pulzus és alvás. A hozzáférés csak olvasható, a RecoverySync soha nem ír vissza adatot.</p>
@@ -571,6 +571,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Ha lényeges változtatásokat hajtunk végre ezen adatvédelmi szabályzaton, frissítjük a fenti &quot;Utolsó frissítés&quot; dátumot. Az alkalmazás ilyen változtatások utáni folyamatos használata a frissített szabályzat elfogadását jelenti.</p>
 <h2>Kapcsolat</h2>
 <p>Ha kérdésed van ezzel az adatvédelmi szabályzattal kapcsolatban, kérjük, vedd fel velünk a kapcsolatot:</p>
+<h2 id="android">Android</h2>
+<p>Ezeket az adatokat a készülékeden egy helyi adatbázis tárolja. A felhőalapú biztonsági mentés és az eszközök közötti átvitel ki van kapcsolva, így az adatok soha nem hagyják el a készülékedet.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kapcsolat</p>

@@ -324,7 +324,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -391,7 +391,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -519,7 +519,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "SaunaFlow（Apple Watch対応サウナタイマー）のプライバシーポリシーです。アプリが収集する情報の種類、利用目的、第三者提供の有無、データの保存と削除方法について説明します。本アプリは完全オフラインで動作し、計測データを外部送信しません。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/privacy.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SaunaFlow", "description": "SaunaFlow（Apple Watch対応サウナタイマー）のプライバシーポリシーです。アプリが収集する情報の種類、利用目的、第三者提供の有無、データの保存と削除方法について説明します。本アプリは完全オフラインで動作し、計測データを外部送信しません。", "inLanguage": "ja", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/saunaflow/privacy.html", "image": "https://freetokyo.github.io/web/saunaflow/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6761906547", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "SaunaFlow", "item": "https://freetokyo.github.io/web/saunaflow/"}, {"@type": "ListItem", "position": 3, "name": "プライバシー", "item": "https://freetokyo.github.io/web/saunaflow/privacy.html"}]}</script>
 </head>
 <body>
@@ -601,6 +601,19 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <p>プライバシーに関するお問い合わせは、メールで受け付けます。</p>
         <p><a href="mailto:freetokyo2020@yahoo.co.jp" style="color:var(--accent2)">freetokyo2020@yahoo.co.jp</a></p>
       </section>
+
+<section class="ftlegal">
+<h2 id="android-privacy">Android 版でのデータの扱い</h2>
+<p>以下は Android 版（Android 9.0 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
+<p>記録したデータは端末内のローカルデータベース（Room）に保存され、開発者のサーバーへ送られることはありません。</p>
+<p>Google のクラウドバックアップは無効にしてあります（<code>allowBackup="false"</code>）。端末を買い替えたときの端末間の直接移行は Android の既定に従います。端末外にコピーを残したくない場合は、移行時にこのアプリを対象から外してください。</p>
+<p>あなたの許可のもとで、SaunaFlow は端末上の Health Connect を使います。書き込むのは心拍数、運動です。</p>
+<p>Health Connect を通じて扱う健康データは、アプリ内で結果を算出して表示する目的にのみ使用します。広告に利用することも、データブローカーと共有することも、第三者に開示することもありません。Health Connect の許可は、いつでも端末の設定から取り消せます。</p>
+<p>利用している外部サービスは Google Play Billing（購入）だけです。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。</p>
+<p>アプリが求める端末の権限は通知の表示だけです。この権限は該当する機能を使うときにのみ要求され、断っても他の機能は使えます。</p>
+<p>アプリをアンインストールすると、端末内のデータは削除されます。</p>
+</section>
+
 <section class="ftlegal">
 <h2>事業者・お問い合わせ・権利について</h2>
 <p>本アプリの提供者（データ管理者）は個人開発者 freetokyo です。 本ポリシーおよび個人データの取り扱いに関するお問い合わせは freetokyo2020@yahoo.co.jp までご連絡ください。 通常5営業日以内に返信します。</p>

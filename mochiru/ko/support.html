@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 지원. 자주 묻는 질문과 이메일 문의 방법을 안내합니다.", "inLanguage": "ko", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ko/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 지원. 자주 묻는 질문과 이메일 문의 방법을 안내합니다.", "inLanguage": "ko", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ko/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/ko/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/mochiru/ko/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "인터넷 연결이 필요한가요?", "acceptedAnswer": {"@type": "Answer", "text": "계산·입력·기록은 모두 기기 안에서 끝나며 외부로 전송되지 않습니다. 네트워크는 구매와 구매 복원, 법적 페이지를 열 때만 사용합니다."}}, {"@type": "Question", "name": "입력한 금융 정보가 외부로 전송되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 입력 데이터는 기기 내에만 저장되며 개발자 서버나 외부로 전송되지 않습니다."}}, {"@type": "Question", "name": "은행 계좌나 증권 계좌와 연동되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 이 앱은 어떤 계좌와도 연동하지 않으며 계정 등록도 필요하지 않습니다. 모든 수치는 직접 입력합니다."}}, {"@type": "Question", "name": "시뮬레이션 결과를 신뢰할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "결과는 입력한 가정에 기반한 시산이며 미래의 운용 성과를 보장하지 않습니다. 이 앱은 투자 조언을 목적으로 하지 않으며 특정 금융상품이나 매매 시점을 추천하지 않습니다. 가정을 바꿔 결과를 비교하는 용도로 설계되어 있습니다. 최종 판단은 본인 책임 하에 내려주세요."}}, {"@type": "Question", "name": "유료인가요?", "acceptedAnswer": {"@type": "Answer", "text": "먼저 무료 미리보기로 체험할 수 있습니다(기본 시뮬레이션·결과 대시보드·민감도 분석 포함). 시퀀스/헤지/히스토리컬 분석, 시나리오 저장·비교, PDF 출력, 시뮬레이션 횟수 증가 등 전체 기능은 일회성 프리미엄(¥500·비소모형·구독 없음)으로 해제됩니다. StoreKit 2를 통한 구매 복원을 지원합니다."}}]}</script>
 </head>

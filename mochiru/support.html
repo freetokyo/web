@@ -324,7 +324,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -391,7 +391,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -519,7 +519,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru（資産寿命シミュレーター）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru（資産寿命シミュレーター）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/mochiru/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Q. インターネット接続は必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "A. 試算そのものに接続は不要です。計算・入力・記録はすべて端末内で完結し、外部へ送信されません。ネットワークを使うのは、App Store での購入・購入の復元・法務ページを開くときだけです。"}}, {"@type": "Question", "name": "Q. 入力したお金の情報は外部に送信されますか？", "acceptedAnswer": {"@type": "Answer", "text": "A. 送信されません。入力データはお使いの端末内にのみ保存され、開発者のサーバーや外部へ送信されることはありません。"}}, {"@type": "Question", "name": "Q. 銀行口座や証券口座と連携しますか？", "acceptedAnswer": {"@type": "Answer", "text": "A. 連携しません。本アプリは口座連携やアカウント登録を行いません。数値はご自身で入力していただきます。"}}, {"@type": "Question", "name": "Q. シミュレーション結果は信頼できますか？", "acceptedAnswer": {"@type": "Answer", "text": "A. 結果は入力された前提に基づく試算であり、将来の運用成果を保証するものではありません。本アプリは投資助言を目的とするものではなく、特定の金融商品の推奨や売買時期の助言を行いません。前提を変えて結果を比べる、という使い方を想定しています。最終的な判断はご自身の責任で行ってください。"}}, {"@type": "Question", "name": "Q. 料金はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "A. まず無料プレビューでお試しいただけます（基本シミュレーション・結果ダッシュボード・感応度分析を含みます）。シーケンス／ヘッジ／ヒストリカル分析、シナリオの保存・比較、PDF出力、試行回数の引き上げなどのフル機能は買い切りプレミアム（¥500・非消費型・サブスクなし）で解放します。StoreKit 2 による購入復元に対応しています。"}}]}</script>
 </head>
@@ -588,6 +588,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 
 </div>
+<section class="ftlegal">
+<h2 id="android-support">Android 版について</h2>
+<p>対応するのは Android 8.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
+<p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

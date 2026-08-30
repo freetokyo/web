@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 支援：常見問題與透過電子郵件聯絡我們的方式。", "inLanguage": "zh-Hant", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/zh-Hant/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 支援：常見問題與透過電子郵件聯絡我們的方式。", "inLanguage": "zh-Hant", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/zh-Hant/support.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/zh-Hant/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/mochiru/zh-Hant/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "需要網路連線嗎？", "acceptedAnswer": {"@type": "Answer", "text": "計算、輸入與紀錄全部在裝置內完成，不會外傳。只有在購買、回復購買以及開啟法律頁面時才會使用網路。"}}, {"@type": "Question", "name": "我輸入的財務資訊會被傳送到外部嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會。輸入的資料僅儲存在您的裝置上，絕不會傳送給開發者伺服器或任何第三方。"}}, {"@type": "Question", "name": "應用程式會與銀行帳戶或證券帳戶連結嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會。本應用程式不與任何帳戶連結，也不需要帳戶註冊。所有數值均由您自行輸入。"}}, {"@type": "Question", "name": "可以信任模擬結果嗎？", "acceptedAnswer": {"@type": "Answer", "text": "結果是基於您輸入的假設所作的估算，不保證未來的運用成果。本應用程式不以投資建議為目的，不推薦特定金融商品或買賣時機。最終判斷請由您自行負責。"}}, {"@type": "Question", "name": "需要付費嗎？", "acceptedAnswer": {"@type": "Answer", "text": "您可以先透過免費預覽版試用（包含基礎模擬、結果儀表板及敏感性分析）。完整功能透過一次性進階購買（¥500，非消耗型，無訂閱）解鎖。支援透過StoreKit 2恢復購買。"}}]}</script>
 </head>

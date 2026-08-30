@@ -262,7 +262,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -329,7 +329,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -457,7 +457,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "نسمة / Nasma（ナスマ）", "description": "紙巻きたばことシーシャ（水たばこ）をセッション単位で記録し、浮いたお金と時間を並べて表示します。ラマダン・ヒジュラ暦に対応。通信ゼロ・アカウント不要・広告なし・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/nasma/", "image": "https://freetokyo.github.io/web/nasma/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "نسمة / Nasma（ナスマ）", "description": "紙巻きたばことシーシャ（水たばこ）をセッション単位で記録し、浮いたお金と時間を並べて表示します。ラマダン・ヒジュラ暦に対応。通信ゼロ・アカウント不要・広告なし・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/nasma/", "image": "https://freetokyo.github.io/web/nasma/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797344961"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "نسمة / Nasma（ナスマ）", "item": "https://freetokyo.github.io/web/nasma/"}]}</script>
 </head>
 <body>
@@ -482,6 +482,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。連続42日・9時間15分、累計90本・吸わなかった本数1,329本・行かなかったセッション25回と、節約額 ¥114,870 を並べる" width="360" height="782" loading="lazy" decoding="async"><figcaption>続いた日数と、浮いたお金 アカウントも通信もなし</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="記録の一覧。紙巻き1本・シーシャ1回のボタンで足せて、現地の記録が本数・場所・時刻つきで並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>シーシャはセッションで記録 時間・フレーバー・場所まで</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="統計。7日／30日／90日／1年で、記録のない日65・紙巻き21・シーシャ13のサマリー、日ごとの記録と時間帯の分布グラフ" width="360" height="782" loading="lazy" decoding="async"><figcaption>日ごと、時間帯ごとの傾向 90日ぶんをまとめて確認</figcaption></figure></div>
 </section>
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Nasma は Android 版を準備しています。Android 9.0 以降に対応し、Google Play での公開を予定しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
+</section>
+
 <section class="ftcta">
 <h2>نسمة / Nasma（ナスマ）</h2>
 <p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>

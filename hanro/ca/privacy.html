@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Política de privadesa de Hanro. Les dades es queden al dispositiu: sense compte, sense seguiment ni recollida de dades.", "inLanguage": "ca", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ca/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Política de privadesa de Hanro. Les dades es queden al dispositiu: sense compte, sense seguiment ni recollida de dades.", "inLanguage": "ca", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ca/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/ca/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/ca/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Notificacions: s&#x27;utilitzen per enviar recordatoris com terminis d&#x27;ITV o moments de canvi d&#x27;oli.</p>
 <p>• Dades introduïdes per l&#x27;usuari: registres de repartiment, ingressos, despeses, informació del vehicle, objectius, configuració fiscal i altra informació introduïda directament per l&#x27;usuari es desa en una base de dades del dispositiu.</p>
 <h2>3. Sincronització amb iCloud</h2>
-<p>Si l'usuari ha iniciat sessió a iCloud al dispositiu, les dades anteriors se sincronitzen només dins del compte iCloud del propi usuari mitjançant la base de dades privada CloudKit d'Apple (l'app no té cap ajust per activar o desactivar la sincronització). Nosaltres no hi tenim accés en cap cas.</p>
+<p><strong>iOS:</strong> Si l'usuari ha iniciat sessió a iCloud al dispositiu, les dades anteriors se sincronitzen només dins del compte iCloud del propi usuari mitjançant la base de dades privada CloudKit d'Apple (l'app no té cap ajust per activar o desactivar la sincronització). Nosaltres no hi tenim accés en cap cas.</p>
 <h2>4. Reconeixement de text i resums al dispositiu</h2>
 <p>El reconeixement de text dels rebuts, la lectura d'imports a partir de captures de pantalla d'ingressos i la generació del resum mensual utilitzen funcions que Apple ofereix al dispositiu (Vision / Foundation Models). Tot aquest processament es completa íntegrament al dispositiu de l'usuari i mai s'envia a servidors externs. La predicció de pics és una estadística calculada al dispositiu a partir dels registres anteriors de l'usuari i no utilitza dades externes.</p>
 <h2>5. Divulgació a tercers</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Informació de menors</h2>
 <p>Aquesta app està destinada principalment a conductors adults que són treballadors autònoms. No recopilem intencionadament informació de menors de 13 anys.</p>
 <h2>8. Eliminació de dades</h2>
-<p>Els usuaris poden eliminar totes les dades del dispositiu desinstal·lant aquesta app mitjançant Ajustos d&#x27;iOS → General → Emmagatzematge de l&#x27;iPhone. Les dades sincronitzades a iCloud es poden esborrar eliminant les dades de l&#x27;app des dels ajustos d&#x27;iCloud.</p>
+<p><strong>iOS:</strong> Els usuaris poden eliminar totes les dades del dispositiu desinstal·lant aquesta app mitjançant Ajustos d&#x27;iOS → General → Emmagatzematge de l&#x27;iPhone. Les dades sincronitzades a iCloud es poden esborrar eliminant les dades de l&#x27;app des dels ajustos d&#x27;iCloud.</p>
 <h2>9. Facturació i App Store</h2>
-<p>La facturació de subscripcions d&#x27;aquesta app es gestiona a través de l&#x27;App Store d&#x27;Apple, i mai obtenim informació de pagament com les dades de la targeta de crèdit. Aquesta informació es tracta segons la política de privadesa d&#x27;Apple.</p>
+<p><strong>iOS:</strong> La facturació de subscripcions d&#x27;aquesta app es gestiona a través de l&#x27;App Store d&#x27;Apple, i mai obtenim informació de pagament com les dades de la targeta de crèdit. Aquesta informació es tracta segons la política de privadesa d&#x27;Apple.</p>
 <h2>10. Canvis en aquesta política</h2>
 <p>El contingut d&#x27;aquesta política pot canviar segons calgui. Els canvis importants s&#x27;anunciaran dins de l&#x27;app o a la pàgina de suport.</p>
+
+<h2 id="android">Android</h2>
+<p>Aquestes dades s'emmagatzemen al teu dispositiu en una base de dades local. La còpia de seguretat al núvol i la transferència entre dispositius estan desactivades, de manera que no surten mai del teu dispositiu.</p>
 <h2>11. Contacte</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

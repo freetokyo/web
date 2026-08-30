@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Kebijakan privasi Hanro. Data Anda tetap di perangkat — tanpa akun, tanpa pelacakan, tanpa pengumpulan data.", "inLanguage": "id", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/id/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Kebijakan privasi Hanro. Data Anda tetap di perangkat — tanpa akun, tanpa pelacakan, tanpa pengumpulan data.", "inLanguage": "id", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/id/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/id/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/id/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Notifikasi: digunakan untuk mengirim pengingat seperti tenggat waktu inspeksi kendaraan atau waktu penggantian oli.</p>
 <p>• Data yang dimasukkan pengguna: catatan pengiriman, pendapatan, biaya, informasi kendaraan, target, pengaturan pajak, dan informasi lain yang dimasukkan langsung oleh pengguna disimpan dalam basis data di perangkat.</p>
 <h2>3. Sinkronisasi iCloud</h2>
-<p>Jika pengguna masuk ke iCloud di perangkat, data di atas disinkronkan hanya di dalam akun iCloud milik pengguna sendiri melalui CloudKit Private Database milik Apple (aplikasi tidak memiliki pengaturan untuk mengaktifkan atau menonaktifkan sinkronisasi). Kami tidak pernah memiliki akses ke data ini.</p>
+<p><strong>iOS:</strong> Jika pengguna masuk ke iCloud di perangkat, data di atas disinkronkan hanya di dalam akun iCloud milik pengguna sendiri melalui CloudKit Private Database milik Apple (aplikasi tidak memiliki pengaturan untuk mengaktifkan atau menonaktifkan sinkronisasi). Kami tidak pernah memiliki akses ke data ini.</p>
 <h2>4. Pengenalan Teks dan Ringkasan di Perangkat</h2>
 <p>Pengenalan teks struk, pembacaan nominal dari tangkapan layar penghasilan, dan pembuatan teks ringkasan bulanan menggunakan kemampuan yang disediakan Apple di perangkat (Vision / Foundation Models). Seluruh pemrosesan ini diselesaikan sepenuhnya di perangkat pengguna dan tidak pernah dikirim ke server eksternal. Prediksi jam puncak adalah statistik yang dihitung di perangkat dari catatan pengguna sendiri dan tidak menggunakan data eksternal.</p>
 <h2>5. Pengungkapan kepada Pihak Ketiga</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Informasi Anak-anak</h2>
 <p>Aplikasi ini terutama ditujukan untuk pengemudi dewasa yang merupakan pelaku usaha. Kami tidak dengan sengaja mengumpulkan informasi dari anak-anak di bawah 13 tahun.</p>
 <h2>8. Penghapusan Data</h2>
-<p>Pengguna dapat menghapus semua data di perangkat dengan menghapus instalan aplikasi ini melalui Pengaturan iOS → Umum → Penyimpanan iPhone. Data yang disinkronkan di iCloud dapat dihapus dengan menghapus data aplikasi dari pengaturan iCloud.</p>
+<p><strong>iOS:</strong> Pengguna dapat menghapus semua data di perangkat dengan menghapus instalan aplikasi ini melalui Pengaturan iOS → Umum → Penyimpanan iPhone. Data yang disinkronkan di iCloud dapat dihapus dengan menghapus data aplikasi dari pengaturan iCloud.</p>
 <h2>9. Penagihan dan App Store</h2>
-<p>Penagihan langganan untuk aplikasi ini ditangani melalui App Store Apple, dan kami tidak pernah memperoleh informasi pembayaran seperti detail kartu kredit. Informasi ini ditangani sesuai dengan kebijakan privasi Apple.</p>
+<p><strong>iOS:</strong> Penagihan langganan untuk aplikasi ini ditangani melalui App Store Apple, dan kami tidak pernah memperoleh informasi pembayaran seperti detail kartu kredit. Informasi ini ditangani sesuai dengan kebijakan privasi Apple.</p>
 <h2>10. Perubahan pada Kebijakan Ini</h2>
 <p>Konten Kebijakan ini dapat berubah sesuai kebutuhan. Perubahan material akan diumumkan di dalam aplikasi atau di halaman dukungan.</p>
+
+<h2 id="android">Android</h2>
+<p>Data ini disimpan di perangkat Anda dalam basis data lokal. Pencadangan cloud dan transfer antarperangkat dinonaktifkan, sehingga data tidak pernah meninggalkan perangkat Anda.</p>
 <h2>11. Kontak</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

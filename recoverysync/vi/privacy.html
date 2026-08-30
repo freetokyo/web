@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -558,7 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>SDK và dịch vụ của bên thứ ba</h2>
 <p><strong>iOS:</strong> RecoverySync không chứa bất kỳ SDK phân tích của bên thứ ba, SDK quảng cáo hoặc thư viện theo dõi nào. Khung bên ngoài duy nhất được sử dụng là HealthKit của Apple, được điều chỉnh bởi chính sách quyền riêng tư riêng của Apple.</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>Dữ liệu sức khỏe thu được thông qua HealthKit chỉ được sử dụng với mục đích tính toán và hiển thị điểm phục hồi của bạn trong ứng dụng. Dữ liệu này không bao giờ được sử dụng cho quảng cáo, chia sẻ với các nhà môi giới dữ liệu hoặc tiết lộ cho bên thứ ba.</p>
+<p><strong>iOS:</strong> Dữ liệu sức khỏe thu được thông qua HealthKit chỉ được sử dụng với mục đích tính toán và hiển thị điểm phục hồi của bạn trong ứng dụng. Dữ liệu này không bao giờ được sử dụng cho quảng cáo, chia sẻ với các nhà môi giới dữ liệu hoặc tiết lộ cho bên thứ ba.</p>
 
 <h2>Health Connect (Android)</h2>
 <p>Với sự cho phép của bạn, RecoverySync đọc các dữ liệu sau từ Health Connect trên thiết bị của bạn: biến thiên nhịp tim (SDNN), nhịp tim khi nghỉ và giấc ngủ. Quyền truy cập chỉ ở chế độ đọc và RecoverySync không bao giờ ghi dữ liệu ngược lại.</p>
@@ -571,6 +571,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Nếu chúng tôi thực hiện các thay đổi quan trọng đối với chính sách quyền riêng tư này, chúng tôi sẽ cập nhật ngày &quot;Cập nhật lần cuối&quot; ở trên. Việc tiếp tục sử dụng ứng dụng sau những thay đổi đó cấu thành sự chấp nhận của bạn đối với chính sách đã cập nhật.</p>
 <h2>Liên hệ</h2>
 <p>Nếu bạn có câu hỏi về chính sách quyền riêng tư này, vui lòng liên hệ với chúng tôi:</p>
+<h2 id="android">Android</h2>
+<p>Dữ liệu này được lưu trữ trên thiết bị của bạn trong một cơ sở dữ liệu cục bộ. Sao lưu đám mây và chuyển dữ liệu giữa các thiết bị đều bị tắt, nên dữ liệu không bao giờ rời khỏi thiết bị của bạn.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Liên hệ</p>

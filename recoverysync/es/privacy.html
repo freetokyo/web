@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -558,7 +558,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>SDK y servicios de terceros</h2>
 <p><strong>iOS:</strong> RecoverySync no contiene SDK de análisis de terceros, SDK publicitarios ni bibliotecas de seguimiento. El único marco externo utilizado es HealthKit de Apple, que se rige por las propias políticas de privacidad de Apple.</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>Los datos de salud obtenidos a través de HealthKit se utilizan únicamente con el fin de calcular y mostrar tu puntuación de recuperación dentro de la app. Estos datos nunca se utilizan para publicidad, ni se comparten con intermediarios de datos, ni se divulgan a terceros.</p>
+<p><strong>iOS:</strong> Los datos de salud obtenidos a través de HealthKit se utilizan únicamente con el fin de calcular y mostrar tu puntuación de recuperación dentro de la app. Estos datos nunca se utilizan para publicidad, ni se comparten con intermediarios de datos, ni se divulgan a terceros.</p>
 
 <h2>Health Connect (Android)</h2>
 <p>Con tu permiso, RecoverySync lee los siguientes datos de Health Connect en tu dispositivo: variabilidad de la frecuencia cardíaca (SDNN), frecuencia cardíaca en reposo y sueño. El acceso es solo de lectura y RecoverySync nunca escribe nada de vuelta.</p>
@@ -571,6 +571,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Si realizamos cambios materiales en esta política de privacidad, actualizaremos la fecha de &quot;Última actualización&quot; indicada arriba. El uso continuado de la app después de dichos cambios constituye tu aceptación de la política actualizada.</p>
 <h2>Contacto</h2>
 <p>Si tienes preguntas sobre esta política de privacidad, contáctanos:</p>
+<h2 id="android">Android</h2>
+<p>Estos datos se almacenan en tu dispositivo en una base de datos local. La copia de seguridad en la nube y la transferencia entre dispositivos están desactivadas, por lo que nunca salen de tu dispositivo.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Contacto</p>

@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Dasar privasi Mochiru. Data anda kekal pada peranti — tiada akaun, tiada penjejakan, tiada pengumpulan data.", "inLanguage": "ms", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ms/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Dasar privasi Mochiru. Data anda kekal pada peranti — tiada akaun, tiada penjejakan, tiada pengumpulan data.", "inLanguage": "ms", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ms/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/ms/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/ms/privacy.html"}]}</script>
 </head>
 <body>
@@ -559,7 +559,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 Komunikasi Rangkaian</h2>
 <p>Pengiraan, input dan rekod kekal pada peranti anda dan tidak pernah dihantar ke mana-mana. Rangkaian hanya digunakan untuk membeli, memulihkan pembelian dan membuka halaman undang-undang.</p>
 <h2>💳 Pembelian dan Pembayaran</h2>
-<p>Pembelian dalam aplikasi (premium sekali bayar) dibuat melalui App Store Apple. Maklumat pembayaran diurus oleh Apple dan tidak diberikan kepada pembangun. StoreKit 2 digunakan untuk mengesahkan dan memulihkan pembelian.</p>
+<p><strong>iOS:</strong> Pembelian dalam aplikasi (premium sekali bayar) dibuat melalui App Store Apple. Maklumat pembayaran diurus oleh Apple dan tidak diberikan kepada pembangun. StoreKit 2 digunakan untuk mengesahkan dan memulihkan pembelian.</p>
 <h2>🗑️ Penyimpanan dan Pemadaman Data</h2>
 <p>Data hanya disimpan pada peranti anda. Menyahpasang aplikasi memadam semua data yang disimpan secara kekal. Sila sandarkan data penting sendiri.</p>
 <h2>🔗 Penyediaan kepada Pihak Ketiga</h2>
@@ -568,6 +568,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Jika dasar ini disemak semula, kami akan memberitahu anda melalui kemas kini aplikasi atau pada halaman ini.</p>
 <h2>✉️ Hubungi</h2>
 <p>Untuk soalan mengenai privasi, sila hubungi kami melalui halaman sokongan.</p>
+<h2 id="android">Android</h2>
+<p>Data ini disimpan pada peranti anda dalam pangkalan data setempat. Sandaran awan dan pemindahan antara peranti dimatikan, jadi data tidak pernah meninggalkan peranti anda.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Hubungi</p>

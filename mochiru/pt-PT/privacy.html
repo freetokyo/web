@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Política de privacidade do Mochiru. Os seus dados ficam no dispositivo — sem conta, sem rastreio e sem recolha.", "inLanguage": "pt-PT", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/pt-PT/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Política de privacidade do Mochiru. Os seus dados ficam no dispositivo — sem conta, sem rastreio e sem recolha.", "inLanguage": "pt-PT", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/pt-PT/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/pt-PT/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/pt-PT/privacy.html"}]}</script>
 </head>
 <body>
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 Comunicação de rede</h2>
 <p>Cálculos, dados introduzidos e registos ficam no seu dispositivo e nunca são enviados. A rede só é usada para comprar ou restaurar a compra e para abrir as páginas legais.</p>
 <h2>💳 Compras e pagamentos</h2>
-<p>As compras na aplicação são realizadas através da App Store da Apple. As informações de pagamento são geridas pela Apple e não são fornecidas ao programador. O StoreKit 2 é utilizado para verificar e restaurar compras.</p>
+<p><strong>iOS:</strong> As compras na aplicação são realizadas através da App Store da Apple. As informações de pagamento são geridas pela Apple e não são fornecidas ao programador. O StoreKit 2 é utilizado para verificar e restaurar compras.</p>
 <h2>🗑️ Armazenamento e eliminação de dados</h2>
 <p>Os dados são armazenados apenas no seu dispositivo. A desinstalação da aplicação elimina permanentemente todos os dados armazenados. Por favor, faça cópias de segurança dos dados importantes.</p>
 <h2>🔗 Fornecimento a terceiros</h2>
@@ -564,6 +564,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Se esta política for revista, notificamo-lo através de uma atualização da aplicação ou nesta página.</p>
 <h2>✉️ Contacto</h2>
 <p>Para questões sobre privacidade, contacte-nos através da página de suporte.</p>
+<h2 id="android">Android</h2>
+<p>Estes dados são armazenados no seu dispositivo numa base de dados local. A cópia de segurança na nuvem e a transferência entre dispositivos estão desativadas, pelo que nunca saem do seu dispositivo.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Contacto</p>

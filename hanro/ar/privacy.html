@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "سياسة خصوصية Hanro. تبقى بياناتك على جهازك — بلا حساب، وبلا تتبع، وبلا جمع للبيانات.", "inLanguage": "ar", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ar/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "سياسة خصوصية Hanro. تبقى بياناتك على جهازك — بلا حساب، وبلا تتبع، وبلا جمع للبيانات.", "inLanguage": "ar", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/ar/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/ar/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/ar/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• الإشعارات: تُستخدم لإرسال تذكيرات مثل مواعيد فحص المركبة وتوقيت تغيير الزيت.</p>
 <p>• البيانات التي يدخلها المستخدم: سجلات التوصيل، الإيرادات، النفقات، معلومات المركبة، الأهداف، الإعدادات الضريبية، وغيرها من المعلومات التي يدخلها المستخدم مباشرة تُخزَّن في قاعدة بيانات على الجهاز.</p>
 <h2>3. مزامنة iCloud</h2>
-<p>إذا كان المستخدم مسجّل الدخول إلى iCloud على الجهاز، تتم مزامنة البيانات أعلاه داخل حساب iCloud الخاص بالمستخدم فقط عبر قاعدة بيانات CloudKit الخاصة من Apple (لا يوجد إعداد لتشغيل/إيقاف المزامنة داخل التطبيق). لا يمكننا الوصول إلى هذه البيانات مطلقاً.</p>
+<p><strong>iOS:</strong> إذا كان المستخدم مسجّل الدخول إلى iCloud على الجهاز، تتم مزامنة البيانات أعلاه داخل حساب iCloud الخاص بالمستخدم فقط عبر قاعدة بيانات CloudKit الخاصة من Apple (لا يوجد إعداد لتشغيل/إيقاف المزامنة داخل التطبيق). لا يمكننا الوصول إلى هذه البيانات مطلقاً.</p>
 <h2>4. التعرّف على النص والتلخيص على الجهاز</h2>
 <p>يستخدم التعرّف على نص الإيصالات وقراءة المبالغ من لقطات شاشة الأرباح وتوليد نص الملخص الشهري إمكانات توفرها Apple على الجهاز (Vision / Foundation Models). تكتمل كل هذه المعالجة بالكامل على جهاز المستخدم ولا تُرسل أبداً إلى خوادم خارجية. أما توقع أوقات الكسب فهو إحصاء يُحسب على الجهاز من سجلات المستخدم السابقة ولا يستخدم أي بيانات خارجية.</p>
 <h2>5. الإفصاح لأطراف ثالثة</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. معلومات الأطفال</h2>
 <p>هذا التطبيق مخصص بشكل أساسي للسائقين البالغين من أصحاب الأعمال. لا نجمع عمداً معلومات من الأطفال دون سن 13 عاماً.</p>
 <h2>8. حذف البيانات</h2>
-<p>يمكن للمستخدمين حذف جميع البيانات على الجهاز عن طريق إلغاء تثبيت هذا التطبيق عبر إعدادات iOS ← عام ← تخزين iPhone. يمكن مسح البيانات المتزامنة في iCloud بحذف بيانات التطبيق من إعدادات iCloud.</p>
+<p><strong>iOS:</strong> يمكن للمستخدمين حذف جميع البيانات على الجهاز عن طريق إلغاء تثبيت هذا التطبيق عبر إعدادات iOS ← عام ← تخزين iPhone. يمكن مسح البيانات المتزامنة في iCloud بحذف بيانات التطبيق من إعدادات iCloud.</p>
 <h2>9. الفوترة ومتجر App Store</h2>
-<p>تتم فوترة الاشتراك في هذا التطبيق عبر App Store من Apple، ولا نحصل أبداً على معلومات الدفع مثل تفاصيل بطاقة الائتمان. تُعالج هذه المعلومات وفقاً لسياسة خصوصية Apple.</p>
+<p><strong>iOS:</strong> تتم فوترة الاشتراك في هذا التطبيق عبر App Store من Apple، ولا نحصل أبداً على معلومات الدفع مثل تفاصيل بطاقة الائتمان. تُعالج هذه المعلومات وفقاً لسياسة خصوصية Apple.</p>
 <h2>10. التغييرات على هذه السياسة</h2>
 <p>قد يتغير محتوى هذه السياسة حسب الحاجة. سيُعلن عن أي تغييرات جوهرية داخل التطبيق أو على صفحة الدعم.</p>
+
+<h2 id="android">Android</h2>
+<p>تُخزَّن هذه البيانات على جهازك في قاعدة بيانات محلية. النسخ الاحتياطي السحابي ونقل البيانات بين الأجهزة معطَّلان، لذا لا تغادر جهازك أبداً.</p>
 <h2>11. تواصل</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

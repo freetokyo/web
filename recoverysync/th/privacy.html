@@ -322,7 +322,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -389,7 +389,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>SDK และบริการของบุคคลที่สาม</h2>
 <p><strong>iOS:</strong> RecoverySync ไม่มี SDK การวิเคราะห์ของบุคคลที่สาม SDK โฆษณา หรือไลบรารีการติดตามใด ๆ เฟรมเวิร์กภายนอกเดียวที่ใช้คือ HealthKit ของ Apple ซึ่งอยู่ภายใต้นโยบายความเป็นส่วนตัวของ Apple เอง</p>
 <h2>Apple HealthKit (iOS)</h2>
-<p>ข้อมูลสุขภาพที่ได้รับผ่าน HealthKit ถูกใช้เพื่อวัตถุประสงค์ในการคำนวณและแสดงคะแนนการฟื้นตัวของคุณภายในแอปเท่านั้น ข้อมูลนี้จะไม่ถูกใช้เพื่อการโฆษณา ไม่แบ่งปันกับนายหน้าข้อมูล หรือเปิดเผยต่อบุคคลที่สาม</p>
+<p><strong>iOS:</strong> ข้อมูลสุขภาพที่ได้รับผ่าน HealthKit ถูกใช้เพื่อวัตถุประสงค์ในการคำนวณและแสดงคะแนนการฟื้นตัวของคุณภายในแอปเท่านั้น ข้อมูลนี้จะไม่ถูกใช้เพื่อการโฆษณา ไม่แบ่งปันกับนายหน้าข้อมูล หรือเปิดเผยต่อบุคคลที่สาม</p>
 
 <h2>Health Connect (Android)</h2>
 <p>ด้วยการอนุญาตของคุณ RecoverySync อ่านข้อมูลต่อไปนี้จาก Health Connect บนอุปกรณ์ของคุณ: ความแปรปรวนของอัตราการเต้นหัวใจ (SDNN) อัตราการเต้นหัวใจขณะพัก และการนอนหลับ การเข้าถึงเป็นแบบอ่านอย่างเดียว และ RecoverySync ไม่เขียนข้อมูลกลับ</p>
@@ -568,6 +568,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>หากเรามีการเปลี่ยนแปลงที่สำคัญต่อนโยบายความเป็นส่วนตัวนี้ เราจะอัปเดตวันที่ &quot;อัปเดตล่าสุด&quot; ด้านบน การใช้แอปต่อไปหลังจากการเปลี่ยนแปลงดังกล่าวถือเป็นการยอมรับนโยบายที่อัปเดตของคุณ</p>
 <h2>ติดต่อ</h2>
 <p>หากคุณมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเรา:</p>
+<h2 id="android">Android</h2>
+<p>ข้อมูลนี้ถูกจัดเก็บไว้บนอุปกรณ์ของคุณในฐานข้อมูลภายในเครื่อง การสำรองข้อมูลบนคลาวด์และการถ่ายโอนระหว่างอุปกรณ์ถูกปิดใช้งาน ข้อมูลจึงไม่ออกจากอุปกรณ์ของคุณ</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>ติดต่อ</p>

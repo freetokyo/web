@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Privacybeleid van Hanro. Je gegevens blijven op je apparaat – geen account, geen tracking, geen dataverzameling.", "inLanguage": "nl", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/nl/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Privacybeleid van Hanro. Je gegevens blijven op je apparaat – geen account, geen tracking, geen dataverzameling.", "inLanguage": "nl", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/nl/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/nl/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/nl/privacy.html"}]}</script>
 </head>
 <body>
@@ -561,7 +561,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Meldingen: gebruikt om herinneringen te sturen zoals APK-keuringstermijnen of momenten van olieverversing.</p>
 <p>• Door de gebruiker ingevoerde gegevens: bezorggegevens, omzet, kosten, voertuiginformatie, doelen, belastinginstellingen en andere door de gebruiker rechtstreeks ingevoerde informatie worden opgeslagen in een database op het apparaat.</p>
 <h2>3. iCloud-synchronisatie</h2>
-<p>Als de gebruiker op het apparaat is aangemeld bij iCloud, worden bovenstaande gegevens uitsluitend binnen het eigen iCloud-account van de gebruiker gesynchroniseerd via Apples privé CloudKit-database (de app heeft geen instelling om synchronisatie aan of uit te zetten). Wij hebben nooit toegang tot deze gegevens.</p>
+<p><strong>iOS:</strong> Als de gebruiker op het apparaat is aangemeld bij iCloud, worden bovenstaande gegevens uitsluitend binnen het eigen iCloud-account van de gebruiker gesynchroniseerd via Apples privé CloudKit-database (de app heeft geen instelling om synchronisatie aan of uit te zetten). Wij hebben nooit toegang tot deze gegevens.</p>
 <h2>4. Tekstherkenning en samenvattingen op het apparaat</h2>
 <p>Tekstherkenning van bonnetjes, het uitlezen van bedragen uit schermafbeeldingen van inkomsten en het genereren van de maandelijkse samenvatting gebruiken functies die Apple op het apparaat aanbiedt (Vision / Foundation Models). Al deze verwerking wordt volledig voltooid op het apparaat van de gebruiker en wordt nooit naar externe servers verzonden. De piekurenprognose is een op het apparaat berekende statistiek uit de eigen eerdere ritten van de gebruiker en gebruikt geen externe gegevens.</p>
 <h2>5. Verstrekking aan derden</h2>
@@ -571,11 +571,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Informatie over kinderen</h2>
 <p>Deze app is voornamelijk bedoeld voor volwassen chauffeurs die zelfstandig ondernemer zijn. We verzamelen niet bewust informatie van kinderen onder de 13 jaar.</p>
 <h2>8. Verwijdering van gegevens</h2>
-<p>Gebruikers kunnen alle gegevens op het apparaat verwijderen door deze app te verwijderen via iOS-instellingen → Algemeen → iPhone-opslag. Gesynchroniseerde gegevens in iCloud kunnen worden gewist door de app-gegevens te verwijderen uit de iCloud-instellingen.</p>
+<p><strong>iOS:</strong> Gebruikers kunnen alle gegevens op het apparaat verwijderen door deze app te verwijderen via iOS-instellingen → Algemeen → iPhone-opslag. Gesynchroniseerde gegevens in iCloud kunnen worden gewist door de app-gegevens te verwijderen uit de iCloud-instellingen.</p>
 <h2>9. Facturering en App Store</h2>
-<p>Abonnementsfacturering voor deze app wordt afgehandeld via Apples App Store, en we verkrijgen nooit betalingsinformatie zoals creditcardgegevens. Deze informatie wordt behandeld in overeenstemming met Apples privacybeleid.</p>
+<p><strong>iOS:</strong> Abonnementsfacturering voor deze app wordt afgehandeld via Apples App Store, en we verkrijgen nooit betalingsinformatie zoals creditcardgegevens. Deze informatie wordt behandeld in overeenstemming met Apples privacybeleid.</p>
 <h2>10. Wijzigingen in dit Beleid</h2>
 <p>De inhoud van dit Beleid kan naar behoefte veranderen. Materiële wijzigingen worden aangekondigd in de app of op de ondersteuningspagina.</p>
+
+<h2 id="android">Android</h2>
+<p>Deze gegevens worden op je apparaat opgeslagen in een lokale database. Cloudback-up en apparaatoverdracht zijn uitgeschakeld, dus ze verlaten je apparaat nooit.</p>
 <h2>11. Contact</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

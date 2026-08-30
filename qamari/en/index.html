@@ -261,7 +261,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -328,7 +328,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -456,7 +456,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Qamari", "description": "The Hijri date large, the Gregorian date alongside. Reminders that repeat every Hijri year or month, and a sighting adjustment that makes every saved reminder follow your local announcement. Fully offline, no account, one-time purchase.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://freetokyo.github.io/web/qamari/en/", "image": "https://freetokyo.github.io/web/qamari/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791838601"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Qamari", "description": "The Hijri date large, the Gregorian date alongside. Reminders that repeat every Hijri year or month, and a sighting adjustment that makes every saved reminder follow your local announcement. Fully offline, no account, one-time purchase.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "ProductivityApplication", "url": "https://freetokyo.github.io/web/qamari/en/", "image": "https://freetokyo.github.io/web/qamari/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6791838601"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Qamari", "item": "https://freetokyo.github.io/web/qamari/en/"}]}</script>
 </head>
 <body>
@@ -482,9 +482,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   Recurrence by the Hijri calendar, and notifications that follow your local sighting — the two things a standard calendar cannot do.</p>
   <a class="badge" href="https://apps.apple.com/app/id6791838601">View on the App Store</a>
   <div class="shots">
-    <img src="../shots/en/calendar.png" alt="Calendar screen with the Hijri date shown large and the Gregorian date beneath it" loading="lazy">
-    <img src="../shots/en/holidays.png" alt="Occasions screen listing Islamic occasions, each with its own toggle" loading="lazy">
-    <img src="../shots/en/adjust.png" alt="Sighting adjustment screen with the overall offset, per-month overrides and the calculation method" loading="lazy">
+    <img src="../shots/en/calendar.png" alt="Calendar screen with the Hijri date shown large and the Gregorian date beneath it" loading="lazy" width="640" height="1391">
+    <img src="../shots/en/holidays.png" alt="Occasions screen listing Islamic occasions, each with its own toggle" loading="lazy" width="640" height="1391">
+    <img src="../shots/en/adjust.png" alt="Sighting adjustment screen with the overall offset, per-month overrides and the calculation method" loading="lazy" width="640" height="1391">
   </div>
   <p class="note">iPhone / iOS 26.0 or later · English / العربية / 日本語 · No account needed</p>
 </div></header>
@@ -606,6 +606,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <details><summary>Is it a subscription?</summary><p>No. Pro is a one-time purchase. Buy it once and there is nothing further to pay. You can restore it from Settings or from the paywall.</p></details>
   <details><summary>Does the app make religious rulings?</summary><p>No. Qamari manages dates only. Because dates and names vary by region and school of thought, you choose the occasions you follow. It never claims a date is the correct one, and religious decisions are left to you and to the authorities you follow.</p></details>
 </div></section>
+
+
+<section class="ftlegal">
+<h2 id="android-about">About the Android version</h2>
+<p>An Android version of Qamari is in preparation. It supports Android 8.0 and later and will be published on Google Play.</p>
+<p>Both implementations are checked against the same verification data so that the Android build calculates and judges exactly as the iOS one does. Storage and backup behaviour is described in the <a href="privacy.html#android-privacy">privacy policy</a>.</p>
+<p>We are not linking to a store page until it is live. We will announce it here and on the <a href="support.html#android-support">support page</a>.</p>
+</section>
 
 <section class="ftcta">
 <h2>Qamari</h2>

@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 개인정보처리방침. 데이터는 기기 안에만 저장되며 계정 등록과 외부 전송이 없습니다.", "inLanguage": "ko", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ko/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Mochiru 개인정보처리방침. 데이터는 기기 안에만 저장되며 계정 등록과 외부 전송이 없습니다.", "inLanguage": "ko", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyo.github.io/web/mochiru/ko/privacy.html", "image": "https://freetokyo.github.io/web/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyo.github.io/web/mochiru/ko/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/mochiru/ko/privacy.html"}]}</script>
 </head>
 <body>
@@ -555,7 +555,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>📡 네트워크 통신</h2>
 <p>계산·입력·기록은 모두 기기 안에서 끝나며 외부로 전송되지 않습니다. 네트워크는 구매와 구매 복원, 법적 페이지를 열 때만 사용합니다.</p>
 <h2>💳 구매·결제 정보</h2>
-<p>인앱 구매(일회성 프리미엄)는 Apple의 App Store를 통해 이루어집니다. 신용카드 정보 등 결제 정보는 Apple이 관리하며 개발자에게 제공되지 않습니다. 구매 상태 확인 및 구매 복원에는 StoreKit 2를 사용합니다.</p>
+<p><strong>iOS:</strong> 인앱 구매(일회성 프리미엄)는 Apple의 App Store를 통해 이루어집니다. 신용카드 정보 등 결제 정보는 Apple이 관리하며 개발자에게 제공되지 않습니다. 구매 상태 확인 및 구매 복원에는 StoreKit 2를 사용합니다.</p>
 <h2>🗑️ 데이터 저장과 삭제</h2>
 <p>데이터는 기기 내에만 저장됩니다. 앱을 삭제하면 저장된 데이터는 복원할 수 없습니다. 필요한 데이터는 직접 백업해 두세요.</p>
 <h2>🔗 제3자 제공</h2>
@@ -564,6 +564,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>이 정책을 개정하는 경우 앱 업데이트 또는 이 페이지를 통해 알려드립니다.</p>
 <h2>✉️ 문의</h2>
 <p>개인 정보에 관한 질문은 지원 페이지를 통해 문의해 주세요.</p>
+<h2 id="android">Android</h2>
+<p>이 데이터는 귀하의 기기에 있는 로컬 데이터베이스에 저장됩니다. 클라우드 백업과 기기 간 전송은 모두 비활성화되어 있으므로 데이터가 기기를 벗어나지 않습니다.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>문의</p>

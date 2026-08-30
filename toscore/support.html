@@ -324,7 +324,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -391,7 +391,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -519,7 +519,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Toscore（ミニバス対応デジタルスコアシート）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/support.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "Toscore（ミニバス対応デジタルスコアシート）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS, Android", "applicationCategory": "SportsApplication", "url": "https://freetokyo.github.io/web/toscore/support.html", "image": "https://freetokyo.github.io/web/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Toscore", "item": "https://freetokyo.github.io/web/toscore/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/toscore/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "オフラインでも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。Toscoreはすべての機能をオフラインで提供します。記録・ルール検証・出場時間検証・書き出しのいずれもネットワーク通信を行いません。電波の届かない体育館でも安心してご利用いただけます。"}}, {"@type": "Question", "name": "データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "すべての試合記録はお使いのiPhone内にのみ保存されます。開発者のサーバーや外部へ送信されることは一切ありません。アプリをアンインストールするとデータは削除されますので、必要な記録は書き出し機能でバックアップしてください。"}}, {"@type": "Question", "name": "この記録は公式記録として使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "本アプリは「非公式記録／参照用」です。チーム相互TO・育成年代・練習試合などでの記録補助を目的としています。最終的な競技の判定は、競技規則・大会規定および審判の判断が優先されます。書き出した記録にも「非公式記録／参照用」と明記されます。"}}, {"@type": "Question", "name": "ルールの設定は変更できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。ルール設定画面でプリセット（一般 / U15 / ミニバス基本 / ミニバス全国特別 / カスタム）を選べます。さらに時間・タイムアウト・交代・得点・ファウル・名簿・出場・アローなどを論理グループ単位で編集し、カスタムプロファイルとして保存・複製できます。"}}, {"@type": "Question", "name": "出場時間検証とは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "ミニバスの全員出場規定の充足見込みを事前にチェックする機能です。未出場の選手や必要な出場枠を前面に表示し、クォーター開始前にラインアップの妥当性を検証します。達成が難しい状況は警告として通知します（保守的な近似による判定です）。"}}, {"@type": "Question", "name": "記録を間違えたときは？", "acceptedAnswer": {"@type": "Answer", "text": "ライブ画面の「元に戻す」で直前の記録を即座に取り消せます。さらに履歴・訂正画面では、任意の記録の取り消し・復活や、クォーターの取り違えの一括補正ができます。すべての記録は追記型で保持され、物理削除はされません。"}}, {"@type": "Question", "name": "対応しているiOSのバージョンは？", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0以降に対応しています。最新のiOSへのアップデートを推奨します。"}}]}</script>
 </head>
@@ -644,6 +644,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 
 </div>
+<section class="ftlegal">
+<h2 id="android-support">Android 版について</h2>
+<p>対応するのは Android 8.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
+<p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Support for Hanro: frequently asked questions and how to contact us by email.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/en/support.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Support for Hanro: frequently asked questions and how to contact us by email.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/en/support.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyo.github.io/web/hanro/en/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I use it offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All core features of this app work offline. All data is stored on-device only and is never sent to our servers."}}, {"@type": "Question", "name": "Can I sync data across multiple iPhones/iPads?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If you are signed in to iCloud, your data syncs automatically between devices using the same Apple ID. There is no sync on/off switch inside the app. Synced data is managed exclusively within Apple's CloudKit Private Database."}}, {"@type": "Question", "name": "How accurate is automatic mileage logging?", "acceptedAnswer": {"@type": "Answer", "text": "Driving is detected using a combination of Core Motion (accelerometer) and Core Location (GPS). Automatic drive detection is off by default and works once you turn it on in Settings (Premium). Even with it off, distance is recorded between the work start and end you tap yourself. Accuracy varies with device state, signal strength and driving conditions, and records can be corrected manually."}}, {"@type": "Question", "name": "Which devices support peak-time insights?", "acceptedAnswer": {"@type": "Answer", "text": "Every iPhone running iOS 17.0 or later (Premium feature). The estimate is calculated from your own past records for the same weekday and time slot, so it needs some history before it becomes useful."}}, {"@type": "Question", "name": "Which software can import the tax filing data?", "acceptedAnswer": {"@type": "Answer", "text": "It supports CSV import formats for freee, Money Forward, and Yayoi Kaikei. Import the exported CSV into your accounting software of choice."}}, {"@type": "Question", "name": "How do I cancel my subscription?", "acceptedAnswer": {"@type": "Answer", "text": "On your iPhone, go to Settings → tap your account name → Subscriptions → select Hanro → tap Cancel Subscription. No charge occurs if you cancel during the free trial period."}}, {"@type": "Question", "name": "How do I restore a purchase on another device?", "acceptedAnswer": {"@type": "Answer", "text": "While signed in with the same Apple ID, open the app&#x27;s Settings → tap Restore Purchase."}}, {"@type": "Question", "name": "Can I back up my data?", "acceptedAnswer": {"@type": "Answer", "text": "If you are signed in to iCloud, your data is automatically synced and backed up to iCloud. You can also export it as CSV/PDF (Tax tab → Export Data)."}}, {"@type": "Question", "name": "How do I connect with Apple Watch?", "acceptedAnswer": {"@type": "Answer", "text": "Launch the Hanro app on your iPhone, then approve the Hanro installation in the Watch app. You can log a one-tap entry from your Watch by saying &quot;Hey&quot; or tapping."}}, {"@type": "Question", "name": "Is there a business plan or multi-driver management?", "acceptedAnswer": {"@type": "Answer", "text": "The current version is designed for sole proprietors. Business and multi-driver management features are being considered for a future update. Please send requests by email."}}]}</script>
 </head>
@@ -593,6 +593,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a>
     </div>
   </div>
+<section class="ftlegal">
+<h2 id="android-support">About the Android version</h2>
+<p>The Android version supports Android 8.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
+<p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
+</section>
+
+
 </main>
 <footer class="footer">
   <div class="container">

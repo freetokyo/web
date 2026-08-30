@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro-sovelluksen tietosuojakäytäntö. Tiedot pysyvät laitteessasi – ei tiliä, ei seurantaa, ei tiedonkeruuta.", "inLanguage": "fi", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/fi/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Hanro-sovelluksen tietosuojakäytäntö. Tiedot pysyvät laitteessasi – ei tiliä, ei seurantaa, ei tiedonkeruuta.", "inLanguage": "fi", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/fi/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/fi/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/fi/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Ilmoitukset: käytetään muistutusten, kuten ajoneuvon katsastusaikojen tai öljynvaihtoaikojen, lähettämiseen.</p>
 <p>• Käyttäjän syöttämät tiedot: toimitustiedot, tulot, kulut, ajoneuvotiedot, tavoitteet, veroasetukset ja muut käyttäjän suoraan syöttämät tiedot tallennetaan laitteella olevaan tietokantaan.</p>
 <h2>3. iCloud-synkronointi</h2>
-<p>Jos käyttäjä on kirjautunut laitteella iCloudiin, yllä mainitut tiedot synkronoidaan yksinomaan käyttäjän omalla iCloud-tilillä Applen yksityisen CloudKit-tietokannan kautta (sovelluksessa ei ole asetusta synkronoinnin käyttöönottoon tai poistoon). Meillä ei ole koskaan pääsyä näihin tietoihin.</p>
+<p><strong>iOS:</strong> Jos käyttäjä on kirjautunut laitteella iCloudiin, yllä mainitut tiedot synkronoidaan yksinomaan käyttäjän omalla iCloud-tilillä Applen yksityisen CloudKit-tietokannan kautta (sovelluksessa ei ole asetusta synkronoinnin käyttöönottoon tai poistoon). Meillä ei ole koskaan pääsyä näihin tietoihin.</p>
 <h2>4. Tekstintunnistus ja tiivistelmät laitteella</h2>
 <p>Kuittien tekstintunnistus, summien lukeminen myyntinäkymän kuvakaappauksista ja kuukausitiivistelmän tekstin luonti käyttävät Applen laitteella tarjoamia toimintoja (Vision / Foundation Models). Kaikki tämä käsittely suoritetaan kokonaan käyttäjän laitteella, eikä sitä koskaan lähetetä ulkoisille palvelimille. Huippuaikaennuste on laitteella laskettu tilasto käyttäjän omista aiemmista merkinnöistä eikä käytä ulkoisia tietoja.</p>
 <h2>5. Tietojen luovuttaminen kolmansille osapuolille</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Lasten tiedot</h2>
 <p>Tämä sovellus on suunnattu ensisijaisesti aikuisille kuljettajille, jotka ovat elinkeinonharjoittajia. Emme tietoisesti kerää tietoja alle 13-vuotiailta lapsilta.</p>
 <h2>8. Tietojen poistaminen</h2>
-<p>Käyttäjät voivat poistaa kaikki laitteella olevat tiedot poistamalla tämän sovelluksen asennuksen iOS-asetuksista → Yleiset → iPhonen tallennustila. iCloudissa synkronoidut tiedot voidaan poistaa poistamalla sovelluksen tiedot iCloud-asetuksista.</p>
+<p><strong>iOS:</strong> Käyttäjät voivat poistaa kaikki laitteella olevat tiedot poistamalla tämän sovelluksen asennuksen iOS-asetuksista → Yleiset → iPhonen tallennustila. iCloudissa synkronoidut tiedot voidaan poistaa poistamalla sovelluksen tiedot iCloud-asetuksista.</p>
 <h2>9. Laskutus ja App Store</h2>
-<p>Tämän sovelluksen tilauslaskutus hoidetaan Applen App Storen kautta, emmekä koskaan saa maksutietoja, kuten luottokorttitietoja. Näitä tietoja käsitellään Applen tietosuojakäytännön mukaisesti.</p>
+<p><strong>iOS:</strong> Tämän sovelluksen tilauslaskutus hoidetaan Applen App Storen kautta, emmekä koskaan saa maksutietoja, kuten luottokorttitietoja. Näitä tietoja käsitellään Applen tietosuojakäytännön mukaisesti.</p>
 <h2>10. Muutokset tähän käytäntöön</h2>
 <p>Tämän käytännön sisältö voi muuttua tarpeen mukaan. Olennaisista muutoksista ilmoitetaan sovelluksessa tai tukisivulla.</p>
+
+<h2 id="android">Android</h2>
+<p>Nämä tiedot tallennetaan laitteellesi paikalliseen tietokantaan. Pilvivarmuuskopiointi ja laitteiden välinen siirto on poistettu käytöstä, joten tiedot eivät koskaan poistu laitteeltasi.</p>
 <h2>11. Yhteystiedot</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">

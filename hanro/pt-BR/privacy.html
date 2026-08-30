@@ -323,7 +323,7 @@
 
     /* Footer */
     .footer { padding: var(--space-4) 0; text-align: center; border-top: 1px solid var(--color-border); margin-top: var(--space-5); color: var(--color-text-mute); font-size: 13px; }
-    .footer a { color: var(--color-text-sub); margin: 0 8px; }
+    .footer a { color: var(--color-text-sub); margin: 0 8px; display: inline-block; padding: 12px 4px; }
 
 /* ------------------------------------------------------------------
    本文（各アプリページ）用の互換レイヤ。
@@ -390,7 +390,7 @@
 .nav__here:hover{color:var(--brand-1,var(--color-accent))}
 @media (max-width:700px){.nav__here{display:none}}
 .ftlangs{font-size:13px;line-height:2;color:var(--color-text-mute)}
-.ftlangs a{margin:0}
+.ftlangs a{margin:0;display:inline-block;padding:6px 3px}
 
 /* モバイルのヘッダー。ドロップダウンは hover 前提で触れないうえ、
    カテゴリ4つ＋アプリ名＋CTA を 375px に並べると溢れる（実際に崩れた）。
@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Política de privacidade do Hanro. Seus dados ficam no aparelho — sem conta, sem rastreamento e sem coleta.", "inLanguage": "pt-BR", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/pt-BR/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Hanro", "description": "Política de privacidade do Hanro. Seus dados ficam no aparelho — sem conta, sem rastreamento e sem coleta.", "inLanguage": "pt-BR", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/hanro/pt-BR/privacy.html", "image": "https://freetokyo.github.io/web/hanro/ogp.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6771629040", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/en/"}, {"@type": "ListItem", "position": 2, "name": "Hanro", "item": "https://freetokyo.github.io/web/hanro/pt-BR/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyo.github.io/web/hanro/pt-BR/privacy.html"}]}</script>
 </head>
 <body>
@@ -560,7 +560,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>• Notificações: usadas para enviar lembretes como prazos de vistoria do veículo ou horários de troca de óleo.</p>
 <p>• Dados inseridos pelo usuário: registros de entrega, receita, despesas, informações do veículo, metas, configurações fiscais e outras informações inseridas diretamente pelo usuário são armazenados em um banco de dados no dispositivo.</p>
 <h2>3. Sincronização com iCloud</h2>
-<p>Se o usuário estiver conectado ao iCloud no dispositivo, os dados acima são sincronizados somente dentro da própria conta iCloud do usuário via CloudKit Private Database da Apple (o app não possui ajuste para ativar ou desativar a sincronização). Nunca temos acesso a esses dados.</p>
+<p><strong>iOS:</strong> Se o usuário estiver conectado ao iCloud no dispositivo, os dados acima são sincronizados somente dentro da própria conta iCloud do usuário via CloudKit Private Database da Apple (o app não possui ajuste para ativar ou desativar a sincronização). Nunca temos acesso a esses dados.</p>
 <h2>4. Reconhecimento de texto e resumos no dispositivo</h2>
 <p>O reconhecimento de texto de recibos, a leitura de valores em capturas de tela de ganhos e a geração do texto do resumo mensal usam recursos que a Apple oferece no dispositivo (Vision / Foundation Models). Todo esse processamento é concluído inteiramente no dispositivo do usuário e nunca é enviado a servidores externos. A previsão de pico é uma estatística calculada no dispositivo a partir dos registros anteriores do próprio usuário e não usa dados externos.</p>
 <h2>5. Divulgação a terceiros</h2>
@@ -570,11 +570,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>7. Informações de menores</h2>
 <p>Este app é destinado principalmente a motoristas adultos que são empresários. Não coletamos intencionalmente informações de crianças menores de 13 anos.</p>
 <h2>8. Exclusão de dados</h2>
-<p>Os usuários podem excluir todos os dados no dispositivo desinstalando este app pelas Ajustes do iOS → Geral → Armazenamento do iPhone. Os dados sincronizados no iCloud podem ser apagados excluindo os dados do app das configurações do iCloud.</p>
+<p><strong>iOS:</strong> Os usuários podem excluir todos os dados no dispositivo desinstalando este app pelas Ajustes do iOS → Geral → Armazenamento do iPhone. Os dados sincronizados no iCloud podem ser apagados excluindo os dados do app das configurações do iCloud.</p>
 <h2>9. Cobrança e App Store</h2>
-<p>A cobrança de assinatura deste app é feita pela App Store da Apple, e nunca obtemos informações de pagamento, como dados de cartão de crédito. Essas informações são tratadas de acordo com a política de privacidade da Apple.</p>
+<p><strong>iOS:</strong> A cobrança de assinatura deste app é feita pela App Store da Apple, e nunca obtemos informações de pagamento, como dados de cartão de crédito. Essas informações são tratadas de acordo com a política de privacidade da Apple.</p>
 <h2>10. Alterações nesta Política</h2>
 <p>O conteúdo desta Política pode mudar conforme necessário. Alterações materiais serão anunciadas no app ou na página de suporte.</p>
+
+<h2 id="android">Android</h2>
+<p>Esses dados são armazenados no seu dispositivo em um banco de dados local. O backup na nuvem e a transferência entre dispositivos estão desativados, portanto eles nunca saem do seu dispositivo.</p>
 <h2>11. Contato</h2>
     </div>
     <div class="contact-box" style="margin-top:32px">
