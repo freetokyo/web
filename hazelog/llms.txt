@@ -4,7 +4,7 @@
 
 Web: https://freetokyo.github.io/web/hazelog/
 App Store: https://apps.apple.com/app/id6791478115
-開発: freetokyo（個人 iOS 開発）
+開発: freetokyo（個人開発）
 バージョン: 1.1 / 対応: iOS 17.0 以降
 対応言語（Webページ）: ja / en
 

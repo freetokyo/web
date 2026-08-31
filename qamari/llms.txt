@@ -4,13 +4,14 @@
 
 Web: https://freetokyo.github.io/web/qamari/
 App Store: https://apps.apple.com/app/id6791838601
-開発: freetokyo（個人 iOS 開発）
+Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
+開発: freetokyo（個人開発）
 バージョン: 1.2 / 対応: iOS 26.0 以降
 対応言語（Webページ）: ja / ar / en
 
 ## 概要
 - 開発: freetokyo（個人 iOS 開発）
-- プラットフォーム: iOS 26.0+ / iPhone 専用
+- プラットフォーム: iOS 26.0+ / iPhone 専用（Android 8.0 以降の Android 版を準備中）
 - カテゴリ: 仕事効率化（セカンダリ: ライフスタイル）
 - 対応言語: العربية（右から左）/ English / 日本語
 - 主要市場: GCC（サウジアラビア・UAE 等）

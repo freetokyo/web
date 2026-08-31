@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>freetokyo apps — iOS apps for health, life, money &amp; work</title>
-  <meta name="description" content="A portfolio of 64 iOS apps by indie developer freetokyo — small tools that stay on your device, across health, life, money and work. Most are fully offline, no account, one-time purchase.">
+  <title>freetokyo apps — small apps for health, life, money &amp; work</title>
+  <meta name="description" content="A portfolio of 64 apps by indie developer freetokyo — small tools that stay on your device, across health, life, money and work. On the App Store today, with Android versions of 16 apps in preparation. Most are fully offline, no account, one-time purchase.">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <meta name="theme-color" content="#0A84FF">
   <meta name="format-detection" content="telephone=no">
@@ -17,8 +17,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="freetokyo apps">
-  <meta property="og:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
-  <meta property="og:description" content="64 iOS apps that make your everyday a little lighter. A portfolio across four axes: health, life, money and work. Most are fully offline, no account, one-time purchase.">
+  <meta property="og:title" content="freetokyo apps — small apps for health, life, money &amp; work">
+  <meta property="og:description" content="64 apps that make your everyday a little lighter. A portfolio across four axes: health, life, money and work. Most are fully offline, no account, one-time purchase.">
   <meta property="og:url" content="https://freetokyo.github.io/web/en/">
   <meta property="og:image" content="https://freetokyo.github.io/web/og-default.png">
   <meta property="og:locale" content="en_US">
@@ -26,8 +26,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="freetokyo apps — iOS apps for health, life, money &amp; work">
-  <meta name="twitter:description" content="64 iOS apps that make your everyday a little lighter — across health, life, money and work.">
+  <meta name="twitter:title" content="freetokyo apps — small apps for health, life, money &amp; work">
+  <meta name="twitter:description" content="64 apps that make your everyday a little lighter — across health, life, money and work.">
   <meta name="twitter:image" content="https://freetokyo.github.io/web/og-default.png">
 
   <!-- Favicon (emoji as SVG) -->
@@ -267,6 +267,14 @@
     @media (prefers-color-scheme: dark) { .btn:hover { background: rgba(255,255,255,0.06); } }
     .btn--primary { background: var(--color-text); color: var(--color-bg); border-color: var(--color-text); }
     .btn--primary:hover { opacity: 0.85; background: var(--color-text); }
+    /* ストアの導線。1枚のカードに App Store と Google Play が並ぶので、
+       主導線（詳しく見る）より一段小さくして 341px のカード幅に収める。
+       高さは触らない（押せる面積を減らさない）。 */
+    .btn--store { font-size: 12px; padding: 8px 11px; }
+    /* 公開前の Android。押せない灰色（.btn--soon）ではなく、アプリページの
+       「Android 版について」へ送るリンクとして生かす。 */
+    .btn--wait { background: rgba(142,142,147,0.10); color: var(--color-text-mute); border-color: transparent; }
+    .btn--wait:hover { color: var(--color-text); }
 
     /* Concept / FAQ */
     .concept { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: var(--space-4); }
@@ -313,13 +321,13 @@
     "name": "freetokyo apps",
     "url": "https://freetokyo.github.io/web/",
     "logo": "https://freetokyo.github.io/web/og-default.png",
-    "description": "A portfolio of iOS apps by indie developer freetokyo that stay on your device, useful across health, life, money and work.",
+    "description": "A portfolio of apps by indie developer freetokyo that stay on your device, useful across health, life, money and work. On iOS today, with Android versions rolling out.",
     "sameAs": ["https://github.com/freetokyo"]
   }
   </script>
 
   <!-- JSON-LD: CollectionPage + ItemList -->
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "freetokyo apps — iOS apps for health, life, money & work", "url": "https://freetokyo.github.io/web/en/", "inLanguage": "en", "description": "A portfolio of 64 iOS apps by indie developer freetokyo — 48 on the App Store, 16 coming soon — spanning the four categories of health, life, money and work.", "mainEntity": {"@type": "ItemList", "numberOfItems": 64, "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "SoftwareApplication", "name": "RecoverySync", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/recoverysync/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "SoftwareApplication", "name": "SaunaFlow", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/saunaflow/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "SoftwareApplication", "name": "Trero", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/trero/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "SoftwareApplication", "name": "TsukiLift", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/tsukilift/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "SoftwareApplication", "name": "Calmgraph", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS", "url": "https://freetokyo.github.io/web/calmgraph/"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "SoftwareApplication", "name": "Yuralog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuralog/"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "SoftwareApplication", "name": "Atamalog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/atamalog/"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "Hadalog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hadalog/"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "Nasma", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/nasma/"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "SoftwareApplication", "name": "Immulog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/immulog/"}}, {"@type": "ListItem", "position": 11, "item": {"@type": "SoftwareApplication", "name": "IeKan", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/iekan/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 12, "item": {"@type": "SoftwareApplication", "name": "PrintSummary", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/printmemo/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 13, "item": {"@type": "SoftwareApplication", "name": "Miawell", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/miawell/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 14, "item": {"@type": "SoftwareApplication", "name": "Sukushori", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sukushori/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 15, "item": {"@type": "SoftwareApplication", "name": "Heyalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/heyalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 16, "item": {"@type": "SoftwareApplication", "name": "Jitsuhiro", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jitsuhiro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 17, "item": {"@type": "SoftwareApplication", "name": "Yuzuri", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuzuri/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 18, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 19, "item": {"@type": "SoftwareApplication", "name": "Weekwise", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lifeweeks/", "offers": {"@type": "Offer", "price": "9.99", "priceCurrency": "USD"}}}, {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "Jamalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jamalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 21, "item": {"@type": "SoftwareApplication", "name": "Saqrlog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/saqrlog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 22, "item": {"@type": "SoftwareApplication", "name": "Muddah", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/muddah/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 23, "item": {"@type": "SoftwareApplication", "name": "Sonalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sonalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 24, "item": {"@type": "SoftwareApplication", "name": "HazeLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hazelog/"}}, {"@type": "ListItem", "position": 25, "item": {"@type": "SoftwareApplication", "name": "SakuLog", "applicationCategory": "PhotoVideoApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sakulog/"}}, {"@type": "ListItem", "position": 26, "item": {"@type": "SoftwareApplication", "name": "Khaylog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/khaylog/"}}, {"@type": "ListItem", "position": 27, "item": {"@type": "SoftwareApplication", "name": "Unelog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/unelog/"}}, {"@type": "ListItem", "position": 28, "item": {"@type": "SoftwareApplication", "name": "Kajimieru", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kajimieru/"}}, {"@type": "ListItem", "position": 29, "item": {"@type": "SoftwareApplication", "name": "Netlit", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/netlit/"}}, {"@type": "ListItem", "position": 30, "item": {"@type": "SoftwareApplication", "name": "Rosetare", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/rotare/"}}, {"@type": "ListItem", "position": 31, "item": {"@type": "SoftwareApplication", "name": "Nenrin", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/nenrin/"}}, {"@type": "ListItem", "position": 32, "item": {"@type": "SoftwareApplication", "name": "Kedgelog", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kedgelog/"}}, {"@type": "ListItem", "position": 33, "item": {"@type": "SoftwareApplication", "name": "Baytlog", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/baytlog/"}}, {"@type": "ListItem", "position": 34, "item": {"@type": "SoftwareApplication", "name": "Vatlog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/vatlog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 35, "item": {"@type": "SoftwareApplication", "name": "HomeNet Navi", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/homenetnavi/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 36, "item": {"@type": "SoftwareApplication", "name": "Mochiru", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/mochiru/", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 37, "item": {"@type": "SoftwareApplication", "name": "Zaicho", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/zaicho/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 38, "item": {"@type": "SoftwareApplication", "name": "Keihiba", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/keihiba/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 39, "item": {"@type": "SoftwareApplication", "name": "Kimekabu", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kimekabu/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 40, "item": {"@type": "SoftwareApplication", "name": "Arari", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/arari/"}}, {"@type": "ListItem", "position": 41, "item": {"@type": "SoftwareApplication", "name": "CareHours", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/carehours/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 42, "item": {"@type": "SoftwareApplication", "name": "Genbalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/genbalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 43, "item": {"@type": "SoftwareApplication", "name": "Hanro", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hanro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 44, "item": {"@type": "SoftwareApplication", "name": "Toscore", "applicationCategory": "SportsApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/toscore/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 45, "item": {"@type": "SoftwareApplication", "name": "Koegaki", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/koegaki/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 46, "item": {"@type": "SoftwareApplication", "name": "Dartrack", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/dartrack/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 47, "item": {"@type": "SoftwareApplication", "name": "Nailog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/nailog/"}}, {"@type": "ListItem", "position": 48, "item": {"@type": "SoftwareApplication", "name": "Otolog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/otolog/"}}, {"@type": "ListItem", "position": 49, "item": {"@type": "SoftwareApplication", "name": "ToreKarte", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/torekarte/"}}, {"@type": "ListItem", "position": 50, "item": {"@type": "SoftwareApplication", "name": "Inkarte", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/inkarte/"}}, {"@type": "ListItem", "position": 51, "item": {"@type": "SoftwareApplication", "name": "Kartella", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartella/"}}, {"@type": "ListItem", "position": 52, "item": {"@type": "SoftwareApplication", "name": "Kartella Pets", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellapets/"}}, {"@type": "ListItem", "position": 53, "item": {"@type": "SoftwareApplication", "name": "Temalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/temalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 54, "item": {"@type": "SoftwareApplication", "name": "Hemlog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hemlog/"}}, {"@type": "ListItem", "position": 55, "item": {"@type": "SoftwareApplication", "name": "Tillcount", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/tillcount/"}}, {"@type": "ListItem", "position": 56, "item": {"@type": "SoftwareApplication", "name": "Waqtain", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/waqtain/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 57, "item": {"@type": "SoftwareApplication", "name": "Qamari", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/qamari/"}}, {"@type": "ListItem", "position": 58, "item": {"@type": "SoftwareApplication", "name": "Kartella Lash", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellalash/"}}, {"@type": "ListItem", "position": 59, "item": {"@type": "SoftwareApplication", "name": "Chezlog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/chezlog/"}}, {"@type": "ListItem", "position": 60, "item": {"@type": "SoftwareApplication", "name": "Formulog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/formulog/"}}, {"@type": "ListItem", "position": 61, "item": {"@type": "SoftwareApplication", "name": "Kartella Home", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellahome/"}}, {"@type": "ListItem", "position": 62, "item": {"@type": "SoftwareApplication", "name": "Kartella Auto", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellaauto/"}}, {"@type": "ListItem", "position": 63, "item": {"@type": "SoftwareApplication", "name": "Kartella Studio", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellastudio/"}}, {"@type": "ListItem", "position": 64, "item": {"@type": "SoftwareApplication", "name": "Lesson Report", "applicationCategory": "EducationalApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lessonreport/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}]}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "freetokyo apps — small apps for health, life, money & work", "url": "https://freetokyo.github.io/web/en/", "inLanguage": "en", "description": "A portfolio of 64 apps by indie developer freetokyo — 48 on the App Store, 16 coming soon — spanning the four categories of health, life, money and work.", "mainEntity": {"@type": "ItemList", "numberOfItems": 64, "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "SoftwareApplication", "name": "RecoverySync", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS, Android", "url": "https://freetokyo.github.io/web/recoverysync/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "SoftwareApplication", "name": "SaunaFlow", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS, Android", "url": "https://freetokyo.github.io/web/saunaflow/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "SoftwareApplication", "name": "Trero", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS, Android", "url": "https://freetokyo.github.io/web/trero/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "SoftwareApplication", "name": "TsukiLift", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/tsukilift/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "SoftwareApplication", "name": "Calmgraph", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS, Android", "url": "https://freetokyo.github.io/web/calmgraph/"}}, {"@type": "ListItem", "position": 6, "item": {"@type": "SoftwareApplication", "name": "Yuralog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuralog/"}}, {"@type": "ListItem", "position": 7, "item": {"@type": "SoftwareApplication", "name": "Atamalog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/atamalog/"}}, {"@type": "ListItem", "position": 8, "item": {"@type": "SoftwareApplication", "name": "Hadalog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/hadalog/"}}, {"@type": "ListItem", "position": 9, "item": {"@type": "SoftwareApplication", "name": "Nasma", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/nasma/"}}, {"@type": "ListItem", "position": 10, "item": {"@type": "SoftwareApplication", "name": "Immulog", "applicationCategory": "HealthApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/immulog/"}}, {"@type": "ListItem", "position": 11, "item": {"@type": "SoftwareApplication", "name": "IeKan", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/iekan/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 12, "item": {"@type": "SoftwareApplication", "name": "PrintSummary", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/printmemo/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 13, "item": {"@type": "SoftwareApplication", "name": "Miawell", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/miawell/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 14, "item": {"@type": "SoftwareApplication", "name": "Sukushori", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sukushori/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 15, "item": {"@type": "SoftwareApplication", "name": "Heyalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/heyalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 16, "item": {"@type": "SoftwareApplication", "name": "Jitsuhiro", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jitsuhiro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 17, "item": {"@type": "SoftwareApplication", "name": "Yuzuri", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/yuzuri/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 18, "item": {"@type": "SoftwareApplication", "name": "HitoriLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hitorilog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 19, "item": {"@type": "SoftwareApplication", "name": "Weekwise", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lifeweeks/", "offers": {"@type": "Offer", "price": "9.99", "priceCurrency": "USD"}}}, {"@type": "ListItem", "position": 20, "item": {"@type": "SoftwareApplication", "name": "Jamalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/jamalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 21, "item": {"@type": "SoftwareApplication", "name": "Saqrlog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/saqrlog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 22, "item": {"@type": "SoftwareApplication", "name": "Muddah", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/muddah/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 23, "item": {"@type": "SoftwareApplication", "name": "Sonalog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sonalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 24, "item": {"@type": "SoftwareApplication", "name": "HazeLog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hazelog/"}}, {"@type": "ListItem", "position": 25, "item": {"@type": "SoftwareApplication", "name": "SakuLog", "applicationCategory": "PhotoVideoApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/sakulog/"}}, {"@type": "ListItem", "position": 26, "item": {"@type": "SoftwareApplication", "name": "Khaylog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/khaylog/"}}, {"@type": "ListItem", "position": 27, "item": {"@type": "SoftwareApplication", "name": "Unelog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/unelog/"}}, {"@type": "ListItem", "position": 28, "item": {"@type": "SoftwareApplication", "name": "Kajimieru", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kajimieru/"}}, {"@type": "ListItem", "position": 29, "item": {"@type": "SoftwareApplication", "name": "Netlit", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/netlit/"}}, {"@type": "ListItem", "position": 30, "item": {"@type": "SoftwareApplication", "name": "Rosetare", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/rotare/"}}, {"@type": "ListItem", "position": 31, "item": {"@type": "SoftwareApplication", "name": "Nenrin", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/nenrin/"}}, {"@type": "ListItem", "position": 32, "item": {"@type": "SoftwareApplication", "name": "Kedgelog", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kedgelog/"}}, {"@type": "ListItem", "position": 33, "item": {"@type": "SoftwareApplication", "name": "Baytlog", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/baytlog/"}}, {"@type": "ListItem", "position": 34, "item": {"@type": "SoftwareApplication", "name": "Vatlog", "applicationCategory": "LifestyleApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/vatlog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 35, "item": {"@type": "SoftwareApplication", "name": "HomeNet Navi", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/homenetnavi/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 36, "item": {"@type": "SoftwareApplication", "name": "Mochiru", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/mochiru/", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 37, "item": {"@type": "SoftwareApplication", "name": "Zaicho", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/zaicho/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 38, "item": {"@type": "SoftwareApplication", "name": "Keihiba", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/keihiba/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 39, "item": {"@type": "SoftwareApplication", "name": "Kimekabu", "applicationCategory": "FinanceApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kimekabu/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 40, "item": {"@type": "SoftwareApplication", "name": "Arari", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/arari/"}}, {"@type": "ListItem", "position": 41, "item": {"@type": "SoftwareApplication", "name": "CareHours", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/carehours/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 42, "item": {"@type": "SoftwareApplication", "name": "Genbalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/genbalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 43, "item": {"@type": "SoftwareApplication", "name": "Hanro", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/hanro/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 44, "item": {"@type": "SoftwareApplication", "name": "Toscore", "applicationCategory": "SportsApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/toscore/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 45, "item": {"@type": "SoftwareApplication", "name": "Koegaki", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/koegaki/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 46, "item": {"@type": "SoftwareApplication", "name": "Dartrack", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/dartrack/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 47, "item": {"@type": "SoftwareApplication", "name": "Nailog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/nailog/"}}, {"@type": "ListItem", "position": 48, "item": {"@type": "SoftwareApplication", "name": "Otolog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/otolog/"}}, {"@type": "ListItem", "position": 49, "item": {"@type": "SoftwareApplication", "name": "ToreKarte", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/torekarte/"}}, {"@type": "ListItem", "position": 50, "item": {"@type": "SoftwareApplication", "name": "Inkarte", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/inkarte/"}}, {"@type": "ListItem", "position": 51, "item": {"@type": "SoftwareApplication", "name": "Kartella", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartella/"}}, {"@type": "ListItem", "position": 52, "item": {"@type": "SoftwareApplication", "name": "Kartella Pets", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellapets/"}}, {"@type": "ListItem", "position": 53, "item": {"@type": "SoftwareApplication", "name": "Temalog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/temalog/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 54, "item": {"@type": "SoftwareApplication", "name": "Hemlog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/hemlog/"}}, {"@type": "ListItem", "position": 55, "item": {"@type": "SoftwareApplication", "name": "Tillcount", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/tillcount/"}}, {"@type": "ListItem", "position": 56, "item": {"@type": "SoftwareApplication", "name": "Waqtain", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/waqtain/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}, {"@type": "ListItem", "position": 57, "item": {"@type": "SoftwareApplication", "name": "Qamari", "applicationCategory": "ProductivityApplication", "operatingSystem": "iOS, Android", "url": "https://freetokyo.github.io/web/qamari/"}}, {"@type": "ListItem", "position": 58, "item": {"@type": "SoftwareApplication", "name": "Kartella Lash", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellalash/"}}, {"@type": "ListItem", "position": 59, "item": {"@type": "SoftwareApplication", "name": "Chezlog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/chezlog/"}}, {"@type": "ListItem", "position": 60, "item": {"@type": "SoftwareApplication", "name": "Formulog", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/formulog/"}}, {"@type": "ListItem", "position": 61, "item": {"@type": "SoftwareApplication", "name": "Kartella Home", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellahome/"}}, {"@type": "ListItem", "position": 62, "item": {"@type": "SoftwareApplication", "name": "Kartella Auto", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellaauto/"}}, {"@type": "ListItem", "position": 63, "item": {"@type": "SoftwareApplication", "name": "Kartella Studio", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/kartellastudio/"}}, {"@type": "ListItem", "position": 64, "item": {"@type": "SoftwareApplication", "name": "Lesson Report", "applicationCategory": "EducationalApplication", "operatingSystem": "iOS", "url": "https://freetokyo.github.io/web/lessonreport/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}}]}}</script>
 
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
@@ -327,7 +335,8 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "What is freetokyo apps?", "acceptedAnswer": {"@type": "Answer", "text": "A collection of iOS apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 64 small tools that make daily chores a little lighter. Most are fully offline, with no account and no data collection."}},
+      {"@type": "Question", "name": "What is freetokyo apps?", "acceptedAnswer": {"@type": "Answer", "text": "A collection of apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 64 small tools that make daily chores a little lighter. Most are fully offline, with no account and no data collection."}},
+      {"@type": "Question", "name": "Which devices are supported? Is there an Android version?", "acceptedAnswer": {"@type": "Answer", "text": "The apps are on the App Store today, for iPhone and iPad, with some also on Apple Watch and Mac. Android versions of 16 apps are in preparation and will be published on Google Play. Each app page has an \u201cAndroid version\u201d section with the supported Android release and when it arrives. Store links are not shown before a listing goes live."}},
       {"@type": "Question", "name": "What categories are there?", "acceptedAnswer": {"@type": "Answer", "text": "Health (recovery, sauna, strength, cycle), Life & Family (family home, cat, documents, rentals, end-of-life, caregiving, disaster-prep, life abroad), Money (income thresholds, asset longevity, estate inventory, expenses, trade decisions) and Work (home care, on-site reports, delivery, meeting notes, scoresheets)."}},
       {"@type": "Question", "name": "Is it free to use?", "acceptedAnswer": {"@type": "Answer", "text": "All core features are free. To support ongoing development, operation and support, some apps offer premium features via one-time purchase, or occasionally subscription, at around the price of a cup of coffee. They are designed so you get a fully sufficient experience for everyday use without going premium."}},
       {"@type": "Question", "name": "How is my personal information and data handled?", "acceptedAnswer": {"@type": "Answer", "text": "Many apps are fully offline, or use only your own cloud such as iCloud, and do not send data to the developer's servers. See each app's privacy policy for details."}}
@@ -444,11 +453,12 @@
   <div class="container">
     <span class="badge">🔒 All on-device. A toolbox of 64 small apps</span>
     <h1>Small tools to make<br>your everyday a little lighter.</h1>
-    <p class="hero__sub">Sleep, sauna, stress, family, your cat, household finances, assets, documents, disaster-prep, coffee roasting, job sites, caregiving, client charts. 64 iOS apps that tidy up the small chores scattered across daily life — most fully offline, no account, one-time purchase.</p>
+    <p class="hero__sub">Sleep, sauna, stress, family, your cat, household finances, assets, documents, disaster-prep, coffee roasting, job sites, caregiving, client charts. 64 apps that tidy up the small chores scattered across daily life — most fully offline, no account, one-time purchase.</p>
     <div class="stats" aria-label="Site stats">
       <div class="stat"><div class="stat__num">48</div><div class="stat__label">Apps published</div></div>
       <div class="stat"><div class="stat__num">4</div><div class="stat__label">Categories</div></div>
-      <div class="stat"><div class="stat__num">iOS</div><div class="stat__label">iPhone / Apple Watch</div></div>
+      <div class="stat"><div class="stat__num">iOS</div><div class="stat__label">On the App Store</div></div>
+      <div class="stat"><div class="stat__num" data-android-count>16</div><div class="stat__label">Android in preparation</div></div>
     </div>
   </div>
 </header>
@@ -492,7 +502,8 @@
         <p class="card__desc">Calculates a daily recovery score from your Apple Watch sleep, heart-rate variability and resting heart rate. No subscription, no account — all data stays on your device.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/recoverysync/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6770408873" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6770408873" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/recoverysync/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -507,7 +518,8 @@
         <p class="card__desc">Runs your sauna, cold-plunge and rest on Apple Watch, recording a “totonoi” score and history. One-time premium, fully offline.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/saunaflow/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6761906547" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6761906547" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/saunaflow/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -522,7 +534,8 @@
         <p class="card__desc">A strength-training app you can log calmly against last time’s numbers. Goals, progress analysis, body composition and Apple Watch support — in 35 languages.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/trero/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6760746164" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6760746164" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/trero/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -537,7 +550,8 @@
         <p class="card__desc">A women’s fitness app that manages your menstrual cycle and training together. Phase-matched recommendations help you get stronger in tune with your rhythm. HealthKit integration.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/tsukilift/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6767084251" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6767084251" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/tsukilift/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -552,7 +566,8 @@
         <p class="card__desc">Turns Apple Watch HRV — or a few taps — into a daily 0–100 stress score. Tag what moved it and see a weekly insight into your trend. Fully offline, no account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/calmgraph/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6790698772" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6790698772" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/calmgraph/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -567,7 +582,7 @@
         <p class="card__desc">Record and visualize your fluctuating daily symptoms — hot flashes, mood, body and sleep — without any of it leaving your device, then hand a PDF straight to your doctor at your next visit. It does not judge; it records. Fully on-device, no account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/yuralog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6792374401" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6792374401" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -582,7 +597,7 @@
         <p class="card__desc">Log how you feel each day and see how much it overlaps with conditions like barometric change, sleep and heart rate, as a 0–100 index. All analysis runs on your device, and condition-by-condition trends are shown in days. It does not predict symptoms. No account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/atamalog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6793514760" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6793514760" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -597,7 +612,8 @@
         <p class="card__desc">Hadalog makes “why is my skin different today?” visible as an overlap of weather and daily habits. Tap through three questions — tightness, oiliness and sensitivity — in about 15 seconds, and see how humidity, temperature, UV, wind and your sleep line up. No camera, no photos of your face. No account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/hadalog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6793892712" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6793892712" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/hadalog/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -612,7 +628,8 @@
         <p class="card__desc">Log cigarettes and shisha sessions in their own units — sessions, duration, flavour and place — without collapsing them into a single &quot;one session equals N cigarettes&quot; conversion. Counts the hours you did not smoke during Ramadan fasting, with a start date you can shift to match your region. Works offline, no account, no ads, one-time purchase. Arabic (RTL), English and Japanese.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/nasma/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6797344961" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6797344961" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/nasma/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -655,7 +672,7 @@
         <p class="card__desc">Photo timeline, seasonal checklists, document scanning, family sharing and a simple mode. Keep an eye on a distant family home, sharing the work across the family.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/iekan/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6764244913" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6764244913" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -670,7 +687,7 @@
         <p class="card__desc">Just photograph a school printout and OCR reads it, tracking deadlines and submission status together. Turns the pile of paper on the fridge into the whole family’s calendar.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/printmemo/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6761879860" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6761879860" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -685,7 +702,7 @@
         <p class="card__desc">Log your cat’s health smartly every day. AI photo analysis reads changes in expression and posture, and daily records plus behavior coaching help you catch small changes.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/miawell/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6774019571" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6774019571" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -700,7 +717,7 @@
         <p class="card__desc">On-device AI automatically sorts the screenshots that pile up unseen into “places to go”, “plans”, “things I want” and more. Analysis and storage stay on your device, no data collection, one-time purchase, no ads. The only network use is “Show on map”.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/sukushori/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6778336001" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6778336001" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -715,7 +732,7 @@
         <p class="card__desc">Photograph the room’s condition at move-in and move-out and generate a checklist and PDF report compliant with Japan’s MLIT restoration guidelines. Same-angle comparison shots prevent “he-said-she-said” and protect your deposit. Fully offline, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/heyalog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6778713193" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6778713193" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -730,7 +747,7 @@
         <p class="card__desc">Import a resale-condo floor plan and compute the “net effective area” with columns and beams subtracted, plus the tatami-mat difference. Place furniture to check flow lines and clearances, so you can decide on viewings and moves without relying on the drawing’s numbers alone. Fully offline, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/jitsuhiro/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6779472712" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6779472712" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -745,7 +762,7 @@
         <p class="card__desc">Record assets, insurance, contacts and your wishes in a single notebook. No account, no data collection, fully offline. One-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/yuzuri/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6784874949" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6784874949" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -760,7 +777,7 @@
         <p class="card__desc">Record the reality of caregiving in honest notes no one else sees. No ads, no account, fully offline — a care-logging app for people caring alone. One-time purchase, no subscription.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/hitorilog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6785472192" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6785472192" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -775,7 +792,7 @@
         <p class="card__desc">A fully offline weekly journal that turns your whole life into a grid of weeks and lets you note how each week really felt. See past, present and future at a glance, with milestones, a bucket list and search. No subscription, one-time purchase, no account. 34 languages.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/lifeweeks/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6788981648" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6788981648" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -790,7 +807,7 @@
         <p class="card__desc">A private, fully offline logbook for camel owners. Keep profiles, health records, pedigree, races, documents and reminders — all on your device. No account, no data collection. Arabic (RTL) / English / Japanese.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/jamalog/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6788732648" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6788732648" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -805,7 +822,7 @@
         <p class="card__desc">A fully offline logbook for falconers. Log daily weight, feeding, training and hunts for every bird, and manage pre-flight condition by the numbers. No account, no data collection. العربية (RTL) / اردو / English / Japanese.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/saqrlog/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6789535072" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6789535072" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -820,7 +837,8 @@
         <p class="card__desc">A fully offline vault for a GCC expat family’s documents — iqama, residence card, passport, insurance and more — with dual Hijri and Gregorian calendars, households and dependents, so nothing lapses. No account, no cloud sync. English / العربية (RTL) / Japanese.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/muddah/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6790558814" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6790558814" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/muddah/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -835,7 +853,7 @@
         <p class="card__desc">Combines rolling-stock supply management with a household emergency card. Get alerts as items approach expiry, size required amounts from your family’s headcount, and take the emergency card out as a PDF. Fully offline, no account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/sonalog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -850,7 +868,7 @@
         <p class="card__desc">Save the roast that went right, curve and all, then run the next one alongside that ghost curve. Works with a hand net, pan or small roaster — no temperature probe required. Fully offline, one-time purchase. Japanese / English.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/hazelog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6791478115" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6791478115" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -865,7 +883,7 @@
         <p class="card__desc">Just photograph your child’s drawings and crafts — SakuLog straightens them and sorts them by age automatically. A swipe-to-decide sorting mode helps you keep or let go, so you can part with the physical originals with peace of mind. Data stays in your own iCloud, no account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/sakulog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6791827004" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6791827004" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -880,7 +898,7 @@
         <p class="card__desc">A fully offline horse-care ledger for owners. Due-date alerts for farrier visits and vaccinations, costs totalled per currency, plus 5-generation pedigree, shows and breeding — all in one place. No account, one-time purchase. Japanese / English / العربية (RTL).</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/khaylog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6792197271" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6792197271" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -895,7 +913,7 @@
         <p class="card__desc">A planting chart built around the “plot” of an allotment or rented garden, managing everything from contract to harvest. Works offline, with optional iCloud sync. Track plantings per ridge, plot-visit logs, contract-renewal reminders and crop-rotation checks. No account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/unelog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6792154276" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6792154276" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -910,7 +928,7 @@
         <p class="card__desc">Deciding what to cook, watching the stock, remembering deadlines. Kajimieru organises 130 easy-to-miss household tasks into 11 categories and turns how you split them into counts and percentages in about ten minutes. Fully offline, no account, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/kajimieru/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6797382805" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6797382805" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1028,7 +1046,7 @@
         <p class="card__desc">An income-threshold simulator accurately updated for Japan’s 2026 rules. Visualizes the spousal-deduction, social-insurance and residence-tax thresholds on one household-level screen and suggests the take-home-maximizing scenario.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/homenetnavi/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6772911843" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6772911843" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1043,7 +1061,8 @@
         <p class="card__desc">Simulates the full lifecycle from accumulation to drawdown with Monte Carlo, preserving the correlation of a simultaneous stock-crash-and-strong-yen shock. Fully offline, no account linking.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/mochiru/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6778235888" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6778235888" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/mochiru/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1058,7 +1077,7 @@
         <p class="card__desc">Your own estate inventory, entrusted to neither a financial institution nor the cloud. Manage financial assets, real estate and high-net-worth asset classes in a ledger; from net-worth trends to an inheritance-tax estimate and an estate-inventory PDF, everything stays on your device. Fully offline, one-time purchase, no ads.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/zaicho/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6788175241" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1073,7 +1092,7 @@
         <p class="card__desc">From receipt photos and imported e-transaction data, on-device OCR extracts the date, amount and payee. Monthly totals and CSV/PDF export tidy up the prep before your accounting software. Supports Japan’s electronic bookkeeping act. Fully offline, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/keihiba/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6779895529" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6779895529" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1088,7 +1107,7 @@
         <p class="card__desc">Record your stock trading decisions and reconcile them against your plan at exit. Manage the quality of your judgment, not just P/L, and make your own trading rules more repeatable. Not investment advice — a private record for your own review. No account linking, fully offline, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/kimekabu/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6789459452" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6789459452" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
     </div>
@@ -1116,7 +1135,7 @@
         <p class="card__desc">What you invoice and what you keep are different numbers. Arari shows the gross profit of each project and what it works out to per hour. Estimates, delivery notes and invoices print tax per rate and withholding tax, in your client&#x27;s language. Native on iPhone, iPad and Mac.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/arari/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6797534182" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6797534182" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1131,7 +1150,7 @@
         <p class="card__desc">Visit records, automatic night-shift and holiday premium calculation, and monthly PDF reports. Prevents in real time the mistakes you’d otherwise only notice on the payslip.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/carehours/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6769304063" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6769304063" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1146,7 +1165,7 @@
         <p class="card__desc">Just take photos and they’re organized into an A4 PDF report. GPS tags, handwritten notes and custom templates, working anywhere on-site, fully offline.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/genbalog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6770864162" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6770864162" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1161,7 +1180,8 @@
         <p class="card__desc">Aggregates food-delivery and light-cargo sales and expenses across platforms. Automatic mileage, peak-earning prediction from your own history, and tax-filing CSV export, all fully offline.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/hanro/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6771629040" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6771629040" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/hanro/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1176,7 +1196,8 @@
         <p class="card__desc">A scoresheet for table officials (TO) on iPad / iPhone. Built-in active rule checking and mini-basketball playing-time validation reduce recording errors, fully offline with no data collection.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/toscore/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6776913396" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6776913396" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/toscore/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1191,7 +1212,7 @@
         <p class="card__desc">Record a meeting and transcribe it on-device; AI summarizes it into “key points, decisions, to-dos” and generates a title automatically. Tap a timecode to jump-and-play. Recording and transcription both stay on-device, with no data collection. Freemium (60 free minutes/month).</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/koegaki/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6780139132" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6780139132" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1206,7 +1227,7 @@
         <p class="card__desc">A records app for households in the UAE that employ domestic staff — maids, drivers, nannies and more. Manage visa and contract deadlines, work hours, leave and pay estimates on-device, and export to CSV/PDF. No account, no server sync, fully offline. English / العربية / 日本語.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/dartrack/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6788604524" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6788604524" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1221,7 +1242,8 @@
         <p class="card__desc">Treatment history, photos, cautions and products used — managed fully offline in a client chart built for nail techs. Product master, CSV/PDF export and iPad support. No sign-up, zero data collection.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/nailog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6790943773" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6790943773" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/nailog/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1236,7 +1258,8 @@
         <p class="card__desc">Track method-book progress, repertoire and tuition notes fully offline — a student chart for independent piano and music teachers. Your students&#x27; details never leave the device. One-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/otolog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6791038062" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6791038062" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/otolog/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1251,7 +1274,8 @@
         <p class="card__desc">Session logs, session-pass balances and body-composition graphs, fully offline — a client chart for personal trainers. Your clients&#x27; details never leave the device. One-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/torekarte/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/torekarte/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1266,7 +1290,8 @@
         <p class="card__desc">Client records, booking, session history and consent forms for tattoo artists — from the first consult to a consent form with a handwritten signature, all in one app. Your clients’ information never leaves the device. Fully offline, one-time purchase.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/inkarte/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6792252166" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6792252166" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/inkarte/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1311,7 +1336,7 @@
         <p class="card__desc">Records how many days you worked at each site and what materials you paid for, so month end has a basis. Rates are stored as revisions, so raising yours never rewrites an amount you already reported. Confirming a closing freezes the total.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/temalog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6799075773" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6799075773" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1326,7 +1351,7 @@
         <p class="card__desc">An alteration log for tailors, kept one garment at a time. Alongside the original and finished measurements it keeps where you measured from, the heel height of the shoes, standing or seated, and whether the garment was washed first. The hem allowance left is recorded too, so you can answer &quot;can it go longer?&quot; before opening the garment. One tap starts the next alteration from the last one.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/hemlog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6800742261" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6800742261" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1356,7 +1381,7 @@
         <p class="card__desc">Shows the work time you actually have between the five daily prayers and fits meetings and tasks into it. Time for travel and wudu is reserved around each prayer, and long work that doesn&#x27;t fit is split at the prayer. Prayer times are on-device estimates; your local mosque is the reference.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/waqtain/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6799283353" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6799283353" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1371,7 +1396,8 @@
         <p class="card__desc">A calendar that puts the Hijri date first with the Gregorian date alongside. It handles the two things a standard calendar can’t — events that repeat “every Hijri year,” and a sighting correction that shifts all your saved reminders to match the local moon-sighting announcement. It only manages dates and makes no religious rulings. Fully offline, one-time purchase. العربية (RTL) / English / Japanese.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/qamari/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6791838601" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6791838601" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store btn--wait" href="/web/qamari/en/#android-about">Android soon</a>
         </div>
       </article>
       <article class="card">
@@ -1401,7 +1427,7 @@
         <p class="card__desc">A log for cooking in a different kitchen every time. Record each household&#x27;s hob and oven, the guests&#x27; restrictions and what you served last time; a menu then becomes a shopping list and a timeline counted back from the serving time. Steps you cannot walk away from are never scheduled at the same moment.</p>
         <div class="card__actions">
           <a class="btn btn--primary" href="/web/chezlog/en/">Learn more</a>
-          <a class="btn" href="https://apps.apple.com/app/id6800338366" target="_blank" rel="noopener">App Store</a>
+          <a class="btn btn--store" href="https://apps.apple.com/app/id6800338366" target="_blank" rel="noopener">App Store</a>
         </div>
       </article>
       <article class="card">
@@ -1518,7 +1544,11 @@
     <div class="faq" aria-label="Frequently asked questions">
       <details>
         <summary>What is freetokyo apps?</summary>
-        <p>A collection of iOS apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 64 small tools that make daily chores a little lighter.</p>
+        <p>A collection of apps built by indie developer freetokyo. Across four areas — health, life, money and work — it offers 64 small tools that make daily chores a little lighter.</p>
+      </details>
+      <details>
+        <summary>Which devices are supported? Is there an Android version?</summary>
+        <p>The apps are on the App Store today, for iPhone and iPad, with some also on Apple Watch and Mac. Android versions of 16 apps are in preparation and will be published on Google Play. Each app page has an “Android version” section with the supported Android release and when it arrives — store links are not shown before a listing goes live, because the URL 404s until then.</p>
       </details>
       <details>
         <summary>Is it free to use?</summary>

@@ -4,7 +4,7 @@
 
 Web: https://freetokyo.github.io/web/netlit/
 状態: 近日公開 / coming soon
-開発: freetokyo（個人 iOS 開発）
+開発: freetokyo（個人開発）
 対応言語（Webページ）: ja / en
 
 ## ページ

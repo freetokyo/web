@@ -4,7 +4,7 @@
 
 Web: https://freetokyo.github.io/web/kimekabu/
 App Store: https://apps.apple.com/app/id6789459452
-開発: freetokyo（個人 iOS 開発）
+開発: freetokyo（個人開発）
 バージョン: 1.2 / 対応: iOS 26.0 以降
 価格: 無料（アプリ内課金あり）
 対応言語（Webページ）: ja / en

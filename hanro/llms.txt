@@ -1,10 +1,11 @@
 # Hanro
 
-> 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理 iOS アプリ。マルチプラットフォーム、自動マイレージ、AI 稼ぎ時予測、確定申告 CSV。英語版あり。
+> 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理アプリ。マルチプラットフォーム、自動マイレージ、稼ぎ時予測（過去実績の平均）、確定申告 CSV。英語版あり。
 
 Web: https://freetokyo.github.io/web/hanro/
 App Store: https://apps.apple.com/app/id6771629040
-開発: freetokyo（個人 iOS 開発）
+Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
+開発: freetokyo（個人開発）
 バージョン: 1.3 / 対応: iOS 17.0 以降
 価格: 無料（アプリ内課金あり）
 対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
