@@ -518,10 +518,10 @@ See also the <a href="support.html">support page</a>.</p>
 <h2 id="android-privacy">How the Android version handles your data</h2>
 <p>The following describes the Android version (Android 8.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
 <p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
-<p>Google cloud backup is disabled (<code>allowBackup="false"</code>). Direct device-to-device transfer when you change phones follows the Android default. If you do not want a copy to leave the device, exclude this app during transfer.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
 <p>The only external service used is Google Play Billing (purchases). Google processes all payments; card details never reach the developer.</p>
 <p>The only device permissions the app requests are showing notifications and re-arming reminders after a reboot. Each is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
-<p>Uninstalling the app deletes the data on your device.</p>
+<p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
 </section>
 
 <section class="ftlegal">
