@@ -547,19 +547,27 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Established: May 2026 / Developer: freetokyo</p>
     <div class="legal-content">
 <h2>Introduction</h2>
-<p>IeKan is an iOS app for families to jointly manage their family home. This policy explains what information is collected, how it is used, where it is stored, and your rights. The app displays no advertising and does not sell your information to third parties.</p>
+<p>IeKan is an app for families to jointly manage their family home, available for iOS and Android. This policy explains what information is collected, how it is used, where it is stored, and your rights. The app displays no advertising and does not sell your information to third parties.</p>
+<p><strong>Android:</strong> The Android version <strong>does not offer family sharing (syncing via iCloud / CloudKit)</strong>. All data stays on the one device and is never synced to another device or to a family member&#x27;s device. The Android version does not even hold the permission to use the network (in-app purchases and review prompts are handled by Google Play). Below, wherever iOS and Android differ, the text is marked <strong>iOS:</strong> / <strong>Android:</strong>.</p>
 <h2>Information We Collect</h2>
 <p>User-entered: property name, address, prefecture, year built; photos; scanned document images and OCR-extracted text; your name (profile); checklist items, tasks, and comments.</p>
-<p>Auto-collected: first install date and launch count, anonymous usage patterns, device free space (backup feasibility only).</p>
+<p><strong>iOS:</strong> Auto-collected: first install date and launch count, anonymous usage patterns, device free space (backup feasibility only).</p>
+<p><strong>Android:</strong> Auto-collected: the time of first launch only, used to decide whether to ask you for a review inside the app, and stored on the device. <strong>The Android version collects no usage statistics</strong> — it holds no network permission, so there is nowhere to send them.</p>
 <p>NOT collected: GPS location (address is text-entry only), contacts, advertising ID (IDFA), biometric data, browsing history.</p>
 <h2>How We Use Your Information</h2>
-<p>Collected information is used solely for: local property, document, and photo management; syncing data between family members via iCloud (CloudKit); delivering maintenance reminder notifications; improving service quality through anonymous statistics; determining subscription plan eligibility.</p>
+<p><strong>iOS:</strong> Collected information is used solely for: local property, document, and photo management; syncing data between family members via iCloud (CloudKit); delivering maintenance reminder notifications; improving service quality through anonymous statistics; determining subscription plan eligibility.</p>
+<p><strong>Android:</strong> Collected information is used solely for: local property, document, and photo management; delivering maintenance reminder notifications; and determining subscription plan eligibility. There is no syncing between family members and no usage statistics.</p>
 <h2>Where Data Is Stored</h2>
-<p>On your device: photos, documents, checklists, and other data are stored in SwiftData (local database). iCloud (Apple CloudKit): when using family sharing, data is synced in encrypted form through Apple&#x27;s CloudKit, subject to Apple&#x27;s Privacy Policy. No data is sent to the developer&#x27;s servers.</p>
+<p><strong>iOS:</strong> On your device: photos, documents, checklists, and other data are stored in SwiftData (local database). iCloud (Apple CloudKit): when using family sharing, data is synced in encrypted form through Apple&#x27;s CloudKit, subject to Apple&#x27;s Privacy Policy.</p>
+<p><strong>Android:</strong> On your device only: checklists, document details, and OCR-extracted text are stored in a local database (Room); photos and scanned document images are stored in the app&#x27;s private storage (not readable by other apps). There is no cloud sync, no cloud backup and no device-to-device transfer — Android&#x27;s own backup and transfer are both disabled by the app.</p>
+<p>No data is sent to the developer&#x27;s servers on either platform.</p>
 <h2>Third-Party Services</h2>
-<p>The app uses Apple-provided services only: CloudKit (family sync, end-to-end encrypted); StoreKit / App Store (subscription billing); VisionKit OCR (document text recognition, on-device only); UserNotifications (maintenance reminders). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
+<p><strong>iOS:</strong> The app uses Apple-provided services only: CloudKit (family sync, end-to-end encrypted); StoreKit / App Store (subscription billing); VisionKit OCR (document text recognition, on-device only); UserNotifications (maintenance reminders). See apple.com/legal/privacy for Apple&#x27;s privacy policy.</p>
+<p><strong>Android:</strong> The app uses Google-provided services only: Google Play Billing (subscription billing); ML Kit text recognition with the bundled model (document text recognition, on-device only, no network); Google Play In-app Review (asking you for a review inside the app). There is no equivalent of CloudKit — nothing is synced. See policies.google.com/privacy for Google&#x27;s privacy policy.</p>
 <h2>Data Retention</h2>
-<p>Data is retained on your device until the app is deleted. iCloud data follows Apple&#x27;s data retention policy. You can delete CloudKit data by signing in to iCloud.com.</p>
+<p>Data is retained on your device until the app is deleted.</p>
+<p><strong>iOS:</strong> iCloud data follows Apple&#x27;s data retention policy. You can delete CloudKit data by signing in to iCloud.com.</p>
+<p><strong>Android:</strong> Nothing is held outside the device, so deleting the app removes everything. There is no second place to delete from.</p>
 <h2>Your Rights</h2>
 <p>Data export: Settings → Backup exports all data (properties, photos, documents, checklists) as JSON.</p>
 <p>Data deletion: deleting a property cascade-deletes all related data; deleting the app removes all local data.</p>

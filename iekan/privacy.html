@@ -573,10 +573,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
       <h2>1. はじめに</h2>
       <p>
-        IeKan（家看）（以下「本アプリ」）は、実家の管理を家族で共有することを目的としたiOSアプリです。本プライバシーポリシーは、本アプリの利用にあたって収集する情報の種類、利用目的、保存方法、およびお客様の権利について説明します。
+        IeKan（家看）（以下「本アプリ」）は、実家の管理を家族で共有することを目的としたアプリです（iOS 版と Android 版があります）。本プライバシーポリシーは、本アプリの利用にあたって収集する情報の種類、利用目的、保存方法、およびお客様の権利について説明します。
       </p>
       <p>
         本アプリは広告を表示せず、お客様の情報を第三者に販売しません。収集する情報はサービスの提供・改善のみに使用します。
+      </p>
+      <p>
+        <strong>Android:</strong> Android 版は<strong>家族共有（iCloud / CloudKit を通じた同期）を提供しません</strong>。すべてのデータは端末内だけで完結し、他の端末や他のご家族の端末へ同期されることはありません。加えて Android 版はネットワークに接続する権限そのものを持ちません（アプリ内課金と評価の依頼は Google Play が処理します）。以下、iOS 版と Android 版で扱いが違う箇所には <strong>iOS:</strong> / <strong>Android:</strong>（箇条書きでは App Store: / Google Play:）を付けています。
       </p>
 
       <h2>2. 収集する情報</h2>
@@ -592,9 +595,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
       <p><strong>2-2. 自動的に収集される情報</strong></p>
       <ul>
-        <li>アプリの初回インストール日時・起動回数（機能の利用状況把握のため）</li>
-        <li>匿名の利用パターン（サービス改善のための統計情報。個人を特定できません）</li>
-        <li>デバイスの空き容量（バックアップ可否の判定のみに使用）</li>
+        <li>App Store: アプリの初回インストール日時・起動回数（機能の利用状況把握のため）</li>
+        <li>App Store: 匿名の利用パターン（サービス改善のための統計情報。個人を特定できません）</li>
+        <li>App Store: デバイスの空き容量（バックアップ可否の判定のみに使用）</li>
+        <li>Google Play: 初回起動の時刻のみ（アプリ内で評価をお願いするかどうかの判定に使用。端末内にのみ保存されます）。<strong>Android 版は利用状況の統計を取りません</strong>── ネットワークに接続する権限を持たないため、送信先がありません</li>
       </ul>
 
       <p><strong>2-3. 収集しない情報</strong></p>
@@ -610,9 +614,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       <p>収集した情報は以下の目的のみに使用します。</p>
       <ul>
         <li>物件・書類・写真のローカル管理機能の提供</li>
-        <li>iCloud（CloudKit）を通じた家族間でのデータ同期</li>
+        <li>App Store: iCloud（CloudKit）を通じた家族間でのデータ同期</li>
+        <li>Google Play: 端末内での管理のみ（家族間の同期は行いません）</li>
         <li>メンテナンスリマインダー通知の配信</li>
-        <li>匿名統計によるサービス品質の改善</li>
+        <li>App Store: 匿名統計によるサービス品質の改善</li>
         <li>サブスクリプションプランの適用判定</li>
       </ul>
 
@@ -620,18 +625,30 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       <p>お客様のデータは以下の場所に保存されます。</p>
       <ul>
         <li>
-          <strong>お使いのデバイス内：</strong>写真・書類・チェックリストなどのデータはSwiftData（デバイス内のローカルデータベース）に保存されます。
+          App Store: <strong>お使いのデバイス内：</strong>写真・書類・チェックリストなどのデータはSwiftData（デバイス内のローカルデータベース）に保存されます。
         </li>
         <li>
-          <strong>iCloud（Apple CloudKit）：</strong>家族共有機能を使用する場合、データはAppleのCloudKitインフラを通じて暗号化された状態で同期されます。AppleのプライバシーポリシーおよびiCloudのセキュリティが適用されます。
+          Google Play: <strong>お使いのデバイス内：</strong>チェックリスト・書類の情報・OCRで抽出したテキストなどは端末内のローカルデータベース（Room）に、写真と書類の画像はアプリ専用の領域（他のアプリから読めない場所）に保存されます。
+        </li>
+        <li>
+          App Store: <strong>iCloud（Apple CloudKit）：</strong>家族共有機能を使用する場合、データはAppleのCloudKitインフラを通じて暗号化された状態で同期されます。AppleのプライバシーポリシーおよびiCloudのセキュリティが適用されます。
+        </li>
+        <li>
+          Google Play: <strong>クラウド同期・クラウドバックアップ・端末間の移行：</strong>いずれもありません。Android 版に家族共有は無く、端末の自動バックアップ（Google ドライブ）と端末間の移行もアプリ側で無効にしてあります。
         </li>
       </ul>
       <p>
-        <strong>開発者のサーバーにはデータを一切送信しません。</strong>本アプリのPrivacyInfo.xcprivacyには追跡（NSPrivacyTracking）なしを宣言しており、サードパーティ追跡も行いません。
+        <strong>開発者のサーバーにはデータを一切送信しません。</strong>
+      </p>
+      <p>
+        <strong>iOS:</strong> 本アプリのPrivacyInfo.xcprivacyには追跡（NSPrivacyTracking）なしを宣言しており、サードパーティ追跡も行いません。
+      </p>
+      <p>
+        <strong>Android:</strong> Android 版も広告識別子を読まず、追跡は行いません。同じ内容を Google Play の「データ セーフティ」に申告しています。
       </p>
 
       <h2>5. 第三者サービス</h2>
-      <p>本アプリが使用する第三者サービスは以下の通りです。いずれもApple Inc.が提供するサービスです。</p>
+      <p><strong>iOS:</strong> iOS 版が使用する第三者サービスは以下の通りです。いずれもApple Inc.が提供するサービスです。</p>
 
       <table>
         <thead>
@@ -669,9 +686,46 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         Appleのプライバシーポリシーについては、<a href="https://www.apple.com/jp/legal/privacy/" target="_blank" rel="noopener">apple.com/jp/legal/privacy</a> をご参照ください。
       </p>
 
+      <p><strong>Android:</strong> Android 版が使用する第三者サービスは以下の通りです。いずれも Google LLC が提供するサービスで、<strong>CloudKit に相当する同期サービスは使用しません</strong>。</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>サービス</th>
+            <th>提供者</th>
+            <th>目的</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Play Billing</td>
+            <td>Google LLC</td>
+            <td>サブスクリプション課金処理</td>
+          </tr>
+          <tr>
+            <td>ML Kit テキスト認識（同梱モデル）</td>
+            <td>Google LLC</td>
+            <td>書類テキスト認識（<strong>端末内処理のみ・通信なし</strong>）</td>
+          </tr>
+          <tr>
+            <td>Google Play In-app Review</td>
+            <td>Google LLC</td>
+            <td>アプリ内での評価のお願い</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Google のプライバシーポリシーについては、<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">policies.google.com/privacy</a> をご参照ください。</p>
+
       <h2>6. データの保持期間</h2>
       <p>
-        お客様のデータは、本アプリをデバイスから削除するまでデバイス内に保持されます。iCloud上のデータについては、Appleのデータ保持ポリシーに従います。iCloud.comにサインインすることで、CloudKitに保存されたデータをご自身で削除することができます。
+        お客様のデータは、本アプリをデバイスから削除するまでデバイス内に保持されます。
+      </p>
+      <p>
+        <strong>iOS:</strong> iCloud上のデータについては、Appleのデータ保持ポリシーに従います。iCloud.comにサインインすることで、CloudKitに保存されたデータをご自身で削除することができます。
+      </p>
+      <p>
+        <strong>Android:</strong> 端末の外に保管されるデータがないため、アプリを削除すればすべて消えます。別途削除していただく先はありません。
       </p>
 
       <h2>7. お客様の権利</h2>

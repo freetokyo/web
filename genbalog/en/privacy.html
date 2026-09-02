@@ -547,7 +547,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Last updated: May 2026 / Developer: freetokyo</p>
     <div class="legal-content">
 <h2>1. Introduction</h2>
-<p>Genbalog (the App) is an iOS application designed to help field workers and independent contractors streamline their reporting workflow. This Privacy Policy explains what information the App collects, how it is used, and how it is protected.</p>
+<p>Genbalog (the App) is an iOS and Android application designed to help field workers and independent contractors streamline their reporting workflow. This Privacy Policy explains what information the App collects, how it is used, and how it is protected.</p>
 <h2>2. Information collected</h2>
 <p>The App processes the following information on-device only — no data is sent to external servers: photos and image data (stored on-device only); captions and annotations attached to photos; project name, work type, and section information; location data when taking photos (only if the user grants permission); app settings such as language.</p>
 <h2>3. How information is used</h2>
@@ -555,15 +555,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2>4. Third-party disclosure</h2>
 <p>The App does not sell, provide, or disclose user data to third parties, except: when the user shares or exports a PDF themselves (by the user&#x27;s own action); or when disclosure is required by law.</p>
 <h2>5. Location information</h2>
-<p>The App can record latitude and longitude when taking photos. Location access requires the user&#x27;s prior permission. Location data is used only for inclusion in PDF reports and is never sent to external servers. You can revoke location permission at any time in iOS Settings.</p>
+<p>The App can record latitude and longitude when taking photos. Location access requires the user&#x27;s prior permission. Location data is used only for inclusion in PDF reports and is never sent to external servers.</p>
+<p><strong>iOS:</strong> You can revoke location permission at any time in iOS Settings.</p>
+<p><strong>Android:</strong> Recording coordinates also requires the device location permission on Android. You can still take photos and produce reports without granting it (the coordinate field is left empty). Revoke the permission at any time under Settings → Apps → Genbalog → Permissions.</p>
 <h2>6. Camera and photo library access</h2>
-<p>The App requests access to the camera and photo library to take photos and import images. Photo data is stored only in the device&#x27;s SwiftData database and is never sent externally.</p>
+<p><strong>iOS:</strong> The App requests access to the camera and photo library to take photos and import images. Photo data is stored only in the device&#x27;s SwiftData database and is never sent externally.</p>
+<p><strong>Android:</strong> The Android version requests the camera permission only. Images are imported through the Android photo picker, so <strong>it never asks for permission to read your whole photo library</strong> — only the picture you pick is handed to the App. The image files are kept in the app&#x27;s private storage (not readable by other apps) and the records — project name, captions, coordinates — in a local database (Room). Neither is ever sent externally.</p>
 <h2>7. Voice recognition</h2>
-<p>The Pro version provides voice caption input. Voice recognition uses Apple&#x27;s Speech Framework and is subject to Apple&#x27;s privacy policy. Voice data may be processed on Apple&#x27;s servers.</p>
+<p><strong>iOS:</strong> The Pro version provides voice caption input. Voice recognition uses Apple&#x27;s Speech Framework and is subject to Apple&#x27;s privacy policy. Voice data may be processed on Apple&#x27;s servers.</p>
+<p><strong>Android:</strong> The Pro version on Android also provides voice caption input, but <strong>the App itself never records audio</strong>. Recording and recognition are performed by the speech recognition app installed on the device, and the App receives only the resulting text. The App therefore does not request the microphone permission (RECORD_AUDIO). Handling of the audio is governed by the privacy policy of that speech recognition app&#x27;s provider. On devices with no speech recognition app the feature is unavailable.</p>
 <h2>8. Subscription and billing</h2>
-<p>All billing is handled via Apple&#x27;s App Store. The App does not collect or store payment information such as credit card details. Billing privacy is governed by Apple&#x27;s privacy policy.</p>
+<p><strong>iOS:</strong> All billing is handled via Apple&#x27;s App Store. The App does not collect or store payment information such as credit card details. Billing privacy is governed by Apple&#x27;s privacy policy.</p>
+<p><strong>Android:</strong> All billing is handled via Google Play Billing. The App does not collect or store payment information such as credit card details. Billing privacy is governed by Google&#x27;s privacy policy.</p>
 <h2>9. Data storage and deletion</h2>
-<p>All user data is stored on-device only. Deleting the app removes all data from the device. Cloud backup follows iCloud backup settings.</p>
+<p>All user data is stored on-device only. Deleting the app removes all data from the device.</p>
+<p><strong>iOS:</strong> Cloud backup follows iCloud backup settings.</p>
+<p><strong>Android:</strong> Android cloud backup (to Google Drive) and device-to-device transfer are both disabled by the app. No copy is left outside the device.</p>
 <h2>10. Children&#x27;s privacy</h2>
 <p>The App is intended for business use and is not designed for use by children under 13.</p>
 <h2>11. Changes to this policy</h2>
