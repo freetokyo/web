@@ -500,7 +500,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       </div>
 
       <h2>1. Data we collect</h2>
-      <p>The app saves the following data in local storage on your device (SwiftData). This data is never transmitted externally.</p>
+      <p><strong>iOS:</strong> The app saves the following data in local storage on your device (SwiftData). This data is never transmitted externally.</p>
+      <p><strong>Android:</strong> The data is saved in a local database on the device (Room). The kinds of data, and the fact that none of it leaves the device, are the same as on iOS (<a href="#android-privacy">How the Android version handles your data</a>).</p>
       <ul>
         <li>Period records (start and end dates, flow, pain level, and other self-reported information)</li>
         <li>Basal body temperature (BBT) records</li>
@@ -511,7 +512,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <li>Notes and free text</li>
       </ul>
 
-      <h2>2. Apple HealthKit integration</h2>
+      <h2>2. Health data integration (Apple HealthKit on iOS, Health Connect on Android)</h2>
+      <p><strong>Android:</strong> The Android version uses Health Connect. The record types it reads and writes are listed under <a href="#android-privacy">How the Android version handles your data</a>. The section below describes the iOS version.</p>
       <p>The app reads and writes Apple Health (HealthKit) data only when you explicitly grant permission in the settings screen.</p>
       <ul>
         <li>HealthKit integration is optional. Every feature of the app remains available if you do not grant it.</li>
@@ -522,8 +524,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
       <h2>3. Where data is stored</h2>
       <ul>
-        <li><strong>Location:</strong> On your iPhone only (local storage via SwiftData)</li>
-        <li><strong>iCloud sync:</strong> None</li>
+        <li>App Store: <strong>Location:</strong> On your iPhone only (local storage via SwiftData)</li>
+        <li>Google Play: <strong>Location:</strong> On your Android device only (local storage via Room)</li>
+        <li>App Store: <strong>iCloud sync:</strong> None</li>
+        <li>Google Play: <strong>Cloud backup and device-to-device transfer:</strong> Both disabled</li>
         <li><strong>External servers:</strong> None</li>
         <li><strong>Data the developer can access:</strong> None</li>
       </ul>
@@ -538,7 +542,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       </ul>
 
       <h2>5. Purchases and payment</h2>
-      <p>Billing for Premium features is processed through Apple&#x27;s StoreKit. The app never handles credit card or payment details directly. For billing enquiries, please contact Apple Support.</p>
+      <p><strong>iOS:</strong> Billing for Premium features is processed through Apple&#x27;s StoreKit. The app never handles credit card or payment details directly. For billing enquiries, please contact Apple Support.</p>
+      <p><strong>Android:</strong> Billing is processed through Google Play Billing. Google handles the payment, and no card details ever reach the developer. For billing enquiries, please contact Google Play support.</p>
 
       <h2>6. Managing and deleting your data</h2>
       <p>You can do all of the following at any time from &quot;Settings → Data Management&quot;.</p>

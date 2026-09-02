@@ -501,7 +501,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       </div>
 
       <h2>1. 収集するデータについて</h2>
-      <p>本アプリは以下のデータをお使いのデバイス内のローカルストレージ（SwiftData）に保存します。これらのデータが外部に送信されることはありません。</p>
+      <p><strong>iOS:</strong> 本アプリは以下のデータをお使いのデバイス内のローカルストレージ（SwiftData）に保存します。これらのデータが外部に送信されることはありません。</p>
+      <p><strong>Android:</strong> 保存先は端末内のローカルデータベース（Room）です。保存するデータの種類も、外部に送信しないことも iOS 版と同じです（<a href="#android-privacy">Android 版でのデータの扱い</a>）。</p>
       <ul>
         <li>生理記録（開始日・終了日・経血量・痛みレベル・その他の自己申告情報）</li>
         <li>基礎体温（BBT）記録</li>
@@ -512,7 +513,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <li>メモ・フリーテキスト</li>
       </ul>
 
-      <h2>2. Apple HealthKit との連携</h2>
+      <h2>2. 健康データの連携（iOS は Apple HealthKit / Android は Health Connect）</h2>
+      <p><strong>Android:</strong> Android 版が使うのは Health Connect です。読み書きする種類と扱いは<a href="#android-privacy">下の「Android 版でのデータの扱い」</a>をご覧ください。以下は iOS 版の説明です。</p>
       <p>本アプリは、ユーザーが設定画面で明示的に許可した場合に限り、Apple ヘルスケア（HealthKit）のデータを読み書きします。</p>
       <ul>
         <li>HealthKit 連携は任意です。許可しなくても本アプリのすべての機能をご利用いただけます。</li>
@@ -523,8 +525,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
       <h2>3. データの保存場所</h2>
       <ul>
-        <li><strong>保存場所：</strong> お使いの iPhone 内のみ（SwiftData によるローカル保存）</li>
-        <li><strong>iCloud 同期：</strong> なし</li>
+        <li>App Store: <strong>保存場所：</strong> お使いの iPhone 内のみ（SwiftData によるローカル保存）</li>
+        <li>Google Play: <strong>保存場所：</strong> お使いの Android 端末内のみ（Room によるローカル保存）</li>
+        <li>App Store: <strong>iCloud 同期：</strong> なし</li>
+        <li>Google Play: <strong>クラウドバックアップ・端末間移行：</strong> どちらも無効</li>
         <li><strong>外部サーバー：</strong> なし</li>
         <li><strong>開発者がアクセスできるデータ：</strong> なし</li>
       </ul>
@@ -539,7 +543,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       </ul>
 
       <h2>5. 課金・決済</h2>
-      <p>プレミアム機能の課金処理は、Apple の StoreKit を経由して行われます。本アプリはクレジットカード情報・決済情報を直接取り扱いません。課金に関するお問い合わせは Apple サポートへお問い合わせください。</p>
+      <p><strong>iOS:</strong> プレミアム機能の課金処理は、Apple の StoreKit を経由して行われます。本アプリはクレジットカード情報・決済情報を直接取り扱いません。課金に関するお問い合わせは Apple サポートへお問い合わせください。</p>
+      <p><strong>Android:</strong> 課金処理は Google Play Billing を経由して行われます。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。課金に関するお問い合わせは Google Play サポートへお願いします。</p>
 
       <h2>6. データの管理・削除</h2>
       <p>ユーザーは「設定 → データ管理」から、いつでも以下の操作を行えます。</p>
