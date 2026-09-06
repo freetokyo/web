@@ -168,7 +168,7 @@
 - [Dartrack](https://freetokyo.github.io/web/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。
   - App Store: https://apps.apple.com/app/id6788604524
   - 詳細: https://freetokyo.github.io/web/dartrack/llms.txt
-- [ネイログ（Nailog）](https://freetokyo.github.io/web/nailog/): ネイリスト向けの顧客カルテアプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、アイテムマスタ・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。
+- [ネイログ（Nailog）](https://freetokyo.github.io/web/nailog/): ネイリスト向けの顧客カルテアプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、写真への手書きメモ・無料のバックアップ・売上集計・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。
   - App Store: https://apps.apple.com/app/id6790943773
   - Google Play: 準備中 / in preparation（Android 8.0 以降）
   - 詳細: https://freetokyo.github.io/web/nailog/llms.txt
