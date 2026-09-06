@@ -738,10 +738,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2 id="android-privacy">Android 版でのデータの扱い</h2>
 <p>以下は Android 版（Android 9.0 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
 <p>Android 版は iOS 版と同じ Cloud Firestore を使います。アカウントの認証は Firebase Authentication が行い、記録はあなたのアカウントに紐づけて Google のインフラ上に保存されます（保存先・削除の手順は上の iOS 版の記述と同じです）。端末内のデータベースはその控えとして働きます。</p>
-<p>Google のクラウドバックアップは無効にしてあります（<code>allowBackup="false"</code>）。端末を買い替えたときの端末間の直接移行は Android の既定に従います。端末外にコピーを残したくない場合は、移行時にこのアプリを対象から外してください。</p>
+<p>クラウドバックアップと端末間移行はどちらも無効にしてあります（<code>allowBackup="false"</code> と <code>data_extraction_rules.xml</code>）。端末を替えたときはサインインし直してください ── 記録はアカウントに紐づいてサーバーに在るので、そのまま戻ります。</p>
 <p>あなたの許可のもとで、Trero は端末上の Health Connect を使います。読み取るのは体脂肪率、体重です。書き込むのは体脂肪率、体重、運動です。</p>
 <p>Health Connect を通じて扱う健康データは、アプリ内で結果を算出して表示する目的にのみ使用します。広告に利用することも、データブローカーと共有することも、第三者に開示することもありません。Health Connect の許可は、いつでも端末の設定から取り消せます。</p>
-<p>利用している外部サービスは Google Play Billing（購入）だけです。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。</p>
+<p>利用している外部サービスは Firebase Authentication（サインイン）、Cloud Firestore（記録の保存と同期）、Google Play Billing（購入）だけです。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。</p>
 <p>アプリが求める端末の権限は通知の表示、指定した時刻ちょうどの通知だけです。いずれも該当する機能を使うときにのみ要求され、断っても他の機能は使えます。</p>
 <p>アプリをアンインストールしても、アカウントに紐づくデータは残ります。消すにはアプリ内の設定からアカウントを削除してください（手順は上の iOS 版の記述と同じです）。</p>
 </section>

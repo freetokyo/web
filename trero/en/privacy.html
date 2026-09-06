@@ -681,10 +681,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2 id="android-privacy">How the Android version handles your data</h2>
 <p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
 <p>The Android version uses the same Cloud Firestore backend as the iOS version. Firebase Authentication signs you in, and your records are stored on Google's infrastructure under your account (storage and deletion work exactly as described for iOS above). The on-device database acts as a local copy.</p>
-<p>Google cloud backup is disabled (<code>allowBackup="false"</code>). Direct device-to-device transfer when you change phones follows the Android default. If you do not want a copy to leave the device, exclude this app during transfer.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). When you change devices, just sign in again — your records live on the server under your account and come back with you.</p>
 <p>With your permission, Trero uses Health Connect on your device. It reads body fat and weight. It writes body fat, exercise and weight.</p>
 <p>Health data handled through Health Connect is used solely to calculate and display results inside the app. It is never used for advertising, shared with data brokers, or disclosed to third parties. You can revoke Health Connect permission at any time in your device settings.</p>
-<p>The only external service used is Google Play Billing (purchases). Google processes all payments; card details never reach the developer.</p>
+<p>The only external services used are Firebase Authentication (sign-in), Cloud Firestore (storing and syncing your records) and Google Play Billing (purchases). Google processes all payments; card details never reach the developer.</p>
 <p>The only device permissions the app requests are showing notifications and exact-time reminders. Each is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
 <p>Uninstalling the app does not delete the data tied to your account. To remove it, delete your account from the app's settings screen (the same procedure described for iOS above).</p>
 </section>
