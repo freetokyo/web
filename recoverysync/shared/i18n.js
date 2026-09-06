@@ -174,7 +174,7 @@ const TRANSLATIONS = {
     "product.feat5.title":  "One-Time Purchase",
     "product.feat5.desc":   "No subscription, no recurring charges. Pay once, use forever.",
     "product.feat6.title":  "Trend Analysis",
-    "product.feat6.desc":   "Track your recovery trends over time with built-in charts. Export your data as CSV anytime.",
+    "product.feat6.desc":   "Track your recovery trends over time with built-in charts. With Full Access, export your history as CSV.",
 
     "product.how.title":  "How it works",
     "product.step1.title": "Wear Apple Watch to sleep",
@@ -365,7 +365,7 @@ const TRANSLATIONS = {
     "product.feat5.title":  "買い切り",
     "product.feat5.desc":   "サブスクなし、継続課金なし。一度購入すれば永続的に使用できます。",
     "product.feat6.title":  "トレンド分析",
-    "product.feat6.desc":   "内蔵チャートでリカバリーの傾向を追跡できます。CSVとしていつでもエクスポート可能。",
+    "product.feat6.desc":   "内蔵チャートで回復の傾向を追跡できます。フルアクセスなら履歴をCSVでエクスポートできます。",
 
     "product.how.title":   "使い方",
     "product.step1.title": "Apple Watchを装着して就寝",
