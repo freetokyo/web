@@ -1,0 +1,22 @@
+{
+  "_comment": [
+    "ブランド情報の唯一の真実源。web/ 配下の HTML / JSON / JS / TXT / PY は全部ここを参照する。",
+    "変更するときはこのファイルだけを直し、`python3 _brand/apply_brand.py --apply` を流す。",
+    "旧い値は previous_* に積む（消さない）。積んである限り、取りこぼしがあっても次回の実行で回収できる。"
+  ],
+
+  "brand": {
+    "name": "Freetokyo Labs",
+    "previous_names": [
+      "freetokyo apps"
+    ]
+  },
+
+  "contact": {
+    "email": "support@freetokyolabs.com",
+    "previous_emails": [
+      "freetokyo2020@yahoo.co.jp",
+      "chenyangli123@gmail.com"
+    ]
+  }
+}

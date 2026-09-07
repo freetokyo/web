@@ -12,7 +12,7 @@
 <link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/yuralog/en/privacy.html">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/yuralog/privacy.html">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="freetokyo apps">
+<meta property="og:site_name" content="Freetokyo Labs">
 <meta property="og:title" content="プライバシーポリシー — ユラログ / Yuralog">
 <meta property="og:description" content="ユラログ（Yuralog）のプライバシーポリシー。データは一切収集しません。記録はすべて端末内に保存されます。">
 <meta property="og:url" content="https://freetokyo.github.io/web/yuralog/privacy.html">
@@ -29,7 +29,7 @@
 <meta name="theme-color" content="#6D5A73">
 <meta name="apple-itunes-app" content="app-id=6792374401">
 <style>:root{--brand-1:#6D5A73;--brand-2:#E39A5B;--brand-bg:#6D5A73;--brand-fg:#ffffff;--brand-bg-dark:#736179;--brand-fg-dark:#ffffff}
-/* freetokyo apps 共通スタイル。
+/* Freetokyo Labs 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
    このファイルは build.py が各ページへインライン展開する。 */
@@ -456,7 +456,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Yuralog（ユラログ）", "description": "ユラログ（Yuralog）のプライバシーポリシー。データは一切収集しません。記録はすべて端末内に保存されます。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "url": "https://freetokyo.github.io/web/yuralog/privacy.html", "image": "https://freetokyo.github.io/web/yuralog/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6792374401"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Yuralog（ユラログ）", "item": "https://freetokyo.github.io/web/yuralog/"}, {"@type": "ListItem", "position": 3, "name": "プライバシー", "item": "https://freetokyo.github.io/web/yuralog/privacy.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "Yuralog（ユラログ）", "item": "https://freetokyo.github.io/web/yuralog/"}, {"@type": "ListItem", "position": 3, "name": "プライバシー", "item": "https://freetokyo.github.io/web/yuralog/privacy.html"}]}</script>
 </head>
 <body>
 
@@ -465,7 +465,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <div class="container nav__inner">
     <a class="nav__brand" href="../">
       <span class="nav__logo" aria-hidden="true">ft</span>
-      freetokyo apps
+      Freetokyo Labs
     </a>
     <a class="nav__here" href="../yuralog/">Yuralog（ユラログ）</a>
     <div class="nav__links">
@@ -496,10 +496,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <p>暗号化バックアップ機能を使う場合、利用者自身がパスフレーズで暗号化したファイルを、利用者の選んだ保存先（「ファイル」アプリ等）に書き出します。ファイルの管理は利用者に委ねられます。</p>
 
   <h2>お問い合わせ</h2>
-  <p>ご不明な点は <a href="mailto:freetokyo2020@yahoo.co.jp">freetokyo2020@yahoo.co.jp</a> までご連絡ください。</p>
+  <p>ご不明な点は <a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a> までご連絡ください。</p>
+<section class="ftlegal">
+<h2 id="android-privacy">Android 版でのデータの扱い</h2>
+<p>以下は Android 版（Android 9.0 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
+<p>記録したデータは端末内のローカルデータベース（Room）に保存され、開発者のサーバーへ送られることはありません。本アプリ自身は通信の実装を持ちません。</p>
+<p>クラウドバックアップと端末間移行はどちらも無効にしてあります（<code>allowBackup="false"</code> と <code>data_extraction_rules.xml</code>）。端末を替えるときは、アプリ内の書き出し機能でご自身でバックアップしてください。</p>
+<p>あなたの許可のもとで、Yuralog は端末上の Health Connect を使います。読み取るのは睡眠、月経、皮膚温です。アクセスは読み取り専用で、書き戻すことはありません。</p>
+<p>Health Connect を通じて扱う健康データは、アプリ内で結果を算出して表示する目的にのみ使用します。広告に利用することも、データブローカーと共有することも、第三者に開示することもありません。Health Connect の許可は、いつでも端末の設定から取り消せます。</p>
+<p>メモを整形する機能は、端末の中で動く生成 AI（Android の AICore）を使います。<strong>メモの本文が端末の外へ出ることはありません。</strong>通信が発生するのは、この機能を初めて使うときにモデルを取得する場合だけで、そこで送られるのは利用者のデータではありません。整形は利用者がボタンを押したときにだけ実行されます。</p>
+<p>Wear OS 版から記録した内容は、時計とスマートフォンの直接の接続（Bluetooth / Wi-Fi）を通じて手元のスマートフォンへ渡ります。保存先はスマートフォン側の端末内データベースだけで、クラウドを経由しません。</p>
+<p>ホーム画面のウィジェットに表示するのは、その日に記録したかどうかと連続日数だけです。症状の分類・強さ・メモをウィジェットに出すことはありません。</p>
+<p>利用している外部サービスは Google Play Billing（購入）だけです。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。</p>
+<p>アプリが求める端末の権限は通知の表示と、再起動後にリマインダーを設定し直すことだけです。健康データの読み取りは Health Connect の許可として別に求められ、断っても他の機能は使えます。</p>
+<p>アプリをアンインストールすると、端末内のデータは削除されます。バックアップも移行も無効なので、端末の外にコピーは残りません。</p>
+</section>
+
 <section class="ftlegal">
 <h2>事業者・お問い合わせ・権利について</h2>
-<p>本アプリの提供者（データ管理者）は個人開発者 freetokyo です。 本ポリシーおよび個人データの取り扱いに関するお問い合わせは freetokyo2020@yahoo.co.jp までご連絡ください。 通常5営業日以内に返信します。</p>
+<p>本アプリの提供者（データ管理者）は個人開発者 freetokyo です。 本ポリシーおよび個人データの取り扱いに関するお問い合わせは support@freetokyolabs.com までご連絡ください。 通常5営業日以内に返信します。</p>
 <p>EU / EEA / 英国にお住まいの方は、GDPR にもとづき、ご自身の個人データへのアクセス・訂正・ 削除・処理の制限・データポータビリティを求める権利、および同意の撤回・処理への異議申立ての 権利をお持ちです。お住まいの国のデータ保護監督機関へ苦情を申し立てることもできます。</p>
 <p>カリフォルニア州にお住まいの方は、CCPA / CPRA にもとづき、収集された個人情報の開示・削除・ 訂正を求める権利、および個人情報の「販売」「共有」を拒否する権利をお持ちです。 当方は個人情報を販売も共有もしていません。</p>
 <p>本アプリが端末内にのみデータを保存する場合、当方はそのデータにアクセスできないため、 上記の権利の多くは端末上の操作（アプリ内の削除・書き出し、アプリの削除）で直接行使できます。 その場合でもお問い合わせには回答します。</p>
@@ -508,10 +523,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </main>
 <footer class="footer">
   <div class="container">
-    <p><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシー</a><a href="../">← freetokyo apps（アプリ一覧）</a></p>
+    <p><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシー</a><a href="../">← Freetokyo Labs（アプリ一覧）</a></p>
     <p class="ftlangs" style="margin-top:8px"><strong>日本語</strong> · <a href="en/privacy.html" hreflang="en">English</a></p>
-    <p style="margin-top:8px"><a href="mailto:freetokyo2020@yahoo.co.jp">お問い合わせ: freetokyo2020@yahoo.co.jp</a></p>
-    <p style="margin-top:8px">&copy; 2026 freetokyo apps</p>
+    <p style="margin-top:8px"><a href="mailto:support@freetokyolabs.com">お問い合わせ: support@freetokyolabs.com</a></p>
+    <p style="margin-top:8px">&copy; 2026 Freetokyo Labs</p>
   </div>
 </footer>
 </body>

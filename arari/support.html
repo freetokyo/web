@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://freetokyo.github.io/web/arari/zh-Hant/support.html">
 <link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/arari/support.html">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="freetokyo apps">
+<meta property="og:site_name" content="Freetokyo Labs">
 <meta property="og:title" content="サポート｜アラリ">
 <meta property="og:description" content="アラリのサポート。実質時給の計算方法、為替レートの入れ方、帳票の言語、購読の解約、機種変更のときのバックアップと復元について。">
 <meta property="og:url" content="https://freetokyo.github.io/web/arari/support.html">
@@ -37,7 +37,7 @@
 <meta name="theme-color" content="#3A3F58">
 <meta name="apple-itunes-app" content="app-id=6797534182">
 <style>:root{--brand-1:#3A3F58;--brand-2:#C8873A;--brand-bg:#3A3F58;--brand-fg:#ffffff;--brand-bg-dark:#65697d;--brand-fg-dark:#ffffff}
-/* freetokyo apps 共通スタイル。
+/* Freetokyo Labs 共通スタイル。
    ルート index.html のデザインシステムを全アプリページで共有する。
    ブランド色だけ各ページが --brand-1 / --brand-2 で上書きする。
    このファイルは build.py が各ページへインライン展開する。 */
@@ -464,7 +464,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "アラリ（Arari）", "description": "アラリのサポート。実質時給の計算方法、為替レートの入れ方、帳票の言語、購読の解約、機種変更のときのバックアップと復元について。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyo.github.io/web/arari/support.html", "image": "https://freetokyo.github.io/web/arari/og-image.png", "publisher": {"@type": "Organization", "name": "freetokyo", "url": "https://freetokyo.github.io/web/"}, "installUrl": "https://apps.apple.com/app/id6797534182"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "freetokyo apps", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "アラリ（Arari）", "item": "https://freetokyo.github.io/web/arari/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/arari/support.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyo.github.io/web/"}, {"@type": "ListItem", "position": 2, "name": "アラリ（Arari）", "item": "https://freetokyo.github.io/web/arari/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyo.github.io/web/arari/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "実質時給はどう計算していますか", "acceptedAnswer": {"@type": "Answer", "text": "（発行済みの請求書の税抜合計 − その案件の経費）÷ 記録した作業時間 です。 作業時間が0のときは「—」と表示します。0円/時ではなく「まだ計れない」という意味だからです。"}}, {"@type": "Question", "name": "ダッシュボードの数字が合いません", "acceptedAnswer": {"@type": "Answer", "text": "売上・経費・作業時間・実質時給は、すべて 同じ案件の集合 から計算しています。 為替レートを入れていない案件は合算から外れるため、その件数を「除外: レート未設定の案件 N件」として表示します。 レートを入れると合算に加わります。"}}, {"@type": "Question", "name": "為替レートは自動で入りませんか", "acceptedAnswer": {"@type": "Answer", "text": "入りません。アラリは通信をしないため、ご自身で入力していただきます。 同じ通貨ペアを次に使うときは、前回入力した値を初期値として出します。"}}, {"@type": "Question", "name": "消費税の端数処理はどうなっていますか", "acceptedAnswer": {"@type": "Answer", "text": "「一の伝票につき、税率ごとに1回」端数処理します。明細行ごとに丸めて合算する方式ではありません。 切り捨て・切り上げ・四捨五入は「設定 → 自社情報」で選べます（既定は切り捨て）。 変更は今後発行する伝票に適用され、発行済みの伝票は再計算しません。"}}, {"@type": "Question", "name": "伝票番号が連番になりません", "acceptedAnswer": {"@type": "Answer", "text": "仕様です。番号は「種別-発行日-英数4桁」の形で、重複しないことを優先しています。 日本の適格請求書に連番の記載義務はありません。"}}, {"@type": "Question", "name": "顧客の言語で請求書を出したい", "acceptedAnswer": {"@type": "Answer", "text": "顧客の編集画面で「帳票の言語」を選んでください。アプリの表示言語とは独立して設定できます（Pro）。"}}, {"@type": "Question", "name": "機種変更するときは", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → バックアップを書き出す」でファイルを保管し、新しい端末で「バックアップから復元」を選んでください。 iCloud 同期を有効にしている場合は、同じ Apple アカウントでサインインすれば自動的に揃います。"}}, {"@type": "Question", "name": "復元するとどうなりますか", "acceptedAnswer": {"@type": "Answer", "text": "この端末の内容が、バックアップの中身で 置き換わります 。 心配な場合は先にバックアップを書き出してから実行してください。"}}, {"@type": "Question", "name": "無料枠の20通は何ですか", "acceptedAnswer": {"@type": "Answer", "text": "無料で作れる見積書・請求書の 累計 の数です。伝票を削除しても枠は戻りません。 顧客5社・案件10件の枠は、ゴミ箱から完全に削除すると戻ります。"}}, {"@type": "Question", "name": "枠に達したら過去のデータは見られなくなりますか", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。上限は 新しく作るとき にだけ効きます。 すでにあるデータの閲覧・編集・書き出しはいつでもできます。"}}, {"@type": "Question", "name": "購読を解約したらどうなりますか", "acceptedAnswer": {"@type": "Answer", "text": "データは残ります。閲覧と PDF・CSV の書き出しは引き続きできます。 止まるのは新規作成と編集だけです。解約は Apple アカウントの設定から行ってください。"}}, {"@type": "Question", "name": "購入したのに Pro になりません", "acceptedAnswer": {"@type": "Answer", "text": "同じ Apple アカウントでサインインしていることを確認し、 「設定 → 購入を復元」または Pro の案内画面にある「購入を復元」を実行してください。"}}, {"@type": "Question", "name": "Mac 版は別に買う必要がありますか", "acceptedAnswer": {"@type": "Answer", "text": "いりません。iPhone・iPad・Mac は同じ App Record（ユニバーサル購入）なので、1つの購読で3つとも使えます。"}}, {"@type": "Question", "name": "アプリにロックをかけたい", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → アプリのロック」を有効にすると、開くときに Face ID・Touch ID・端末のパスコードを求めます。 無料で使えます。端末にパスコードが設定されていない場合は有効にできません。"}}]}</script>
 </head>
 <body>
@@ -474,7 +474,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <div class="container nav__inner">
     <a class="nav__brand" href="../">
       <span class="nav__logo" aria-hidden="true">ft</span>
-      freetokyo apps
+      Freetokyo Labs
     </a>
     <a class="nav__here" href="../arari/">アラリ（Arari）</a>
     <div class="nav__links">
@@ -547,14 +547,14 @@ iCloud 同期を有効にしている場合は、同じ Apple アカウントで
 <h2>お問い合わせ</h2>
 <p>不具合のご報告・ご要望は下記までお願いします。返信にはお時間をいただく場合があります。</p>
 <p>freetokyo（開発者）<br>
-メール: freetokyo2020@yahoo.co.jp</p>
+メール: support@freetokyolabs.com</p>
 </main>
 <footer class="footer">
   <div class="container">
-    <p><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシー</a><a href="../">← freetokyo apps（アプリ一覧）</a></p>
+    <p><a href="index.html">ホーム</a><a href="support.html">サポート</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシー</a><a href="../">← Freetokyo Labs（アプリ一覧）</a></p>
     <p class="ftlangs" style="margin-top:8px"><strong>日本語</strong> · <a href="en/support.html" hreflang="en">English</a> · <a href="es/support.html" hreflang="es">Español</a> · <a href="de/support.html" hreflang="de">Deutsch</a> · <a href="fr/support.html" hreflang="fr">Français</a> · <a href="zh-Hant/support.html" hreflang="zh-Hant">繁體中文</a></p>
-    <p style="margin-top:8px"><a href="mailto:freetokyo2020@yahoo.co.jp">お問い合わせ: freetokyo2020@yahoo.co.jp</a></p>
-    <p style="margin-top:8px">&copy; 2026 freetokyo apps</p>
+    <p style="margin-top:8px"><a href="mailto:support@freetokyolabs.com">お問い合わせ: support@freetokyolabs.com</a></p>
+    <p style="margin-top:8px">&copy; 2026 Freetokyo Labs</p>
   </div>
 </footer>
 </body>

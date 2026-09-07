@@ -110,7 +110,7 @@ LANGS = {
     "Share on LINE": "مشاركة على LINE",
     "Copy URL": "نسخ الرابط",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "الوسوم المقترحة: #تمرين #صالة_رياضية #Trero #تدريب_قوة #لياقة #أهداف #تكوين_جسم",
-    "Contact: freetokyo2020@yahoo.co.jp": "التواصل: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "التواصل: support@freetokyolabs.com",
     "Privacy Policy": "سياسة الخصوصية",
     "Support & FAQ": "الدعم والأسئلة الشائعة",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "تنظم هذه الصفحة الأسئلة التي يبحث عنها المستخدمون قبل الاشتراك، مرتبة حسب مناطق الميزات الرئيسية.",
@@ -231,7 +231,7 @@ LANGS = {
     "8. Relationship with Apple": "8. العلاقة مع Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "يُوزَّع هذا التطبيق عبر App Store، لكن أطراف هذه الشروط هم المستخدم والمطور. Apple ليست طرفاً مباشراً.",
     "9. Governing Law and Contact": "9. القانون الحاكم والتواصل",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "تخضع هذه الشروط للقانون الياباني. التواصل: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "تخضع هذه الشروط للقانون الياباني. التواصل: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -357,7 +357,7 @@ LANGS = {
     "Share on LINE": "Compartir a LINE",
     "Copy URL": "Copiar URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Etiquetes suggerides: #entrenament #gimnàs #Trero #entrenamentforca #fitness #objectius #composiciocorporal",
-    "Contact: freetokyo2020@yahoo.co.jp": "Contacte: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Contacte: support@freetokyolabs.com",
     "Privacy Policy": "Política de privadesa",
     "Support & FAQ": "Suport i PMF",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Aquesta pàgina organitza les preguntes que els usuaris solen investigar abans de subscriure's, agrupades per àrees de funcions principals.",
@@ -478,7 +478,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Relació amb Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Aquesta app es distribueix a través de l'App Store d'Apple, però les parts d'aquestes condicions són l'usuari i el desenvolupador. Apple no és una part directa.",
     "9. Governing Law and Contact": "9. Llei aplicable i contacte",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Aquestes condicions es regeixen per la llei japonesa. Contacte: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Aquestes condicions es regeixen per la llei japonesa. Contacte: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -604,7 +604,7 @@ LANGS = {
     "Share on LINE": "Sdílet na LINE",
     "Copy URL": "Zkopírovat URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Doporučené hashtagy: #trénink #posilovna #Trero #silovyTrenink #fitness #cile #slozeniTela",
-    "Contact: freetokyo2020@yahoo.co.jp": "Kontakt: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Kontakt: support@freetokyolabs.com",
     "Privacy Policy": "Zásady ochrany soukromí",
     "Support & FAQ": "Podpora a FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Tato stránka organizuje otázky, které si uživatelé kladou před předplatným, seřazené podle hlavních funkčních oblastí.",
@@ -725,7 +725,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Vztah k Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Tato aplikace je distribuována přes Apple App Store, ale stranami těchto podmínek jsou uživatel a vývojář. Apple není přímou stranou.",
     "9. Governing Law and Contact": "9. Rozhodné právo a kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Tyto podmínky se řídí japonským právem. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Tyto podmínky se řídí japonským právem. Kontakt: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -851,7 +851,7 @@ LANGS = {
     "Share on LINE": "Κοινοποίηση στο LINE",
     "Copy URL": "Αντιγραφή URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Προτεινόμενα hashtags: #προπόνηση #γυμναστήριο #Trero #προπόνησηδύναμης #fitness #στόχοι #σύστασησώματος",
-    "Contact: freetokyo2020@yahoo.co.jp": "Επικοινωνία: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Επικοινωνία: support@freetokyolabs.com",
     "Privacy Policy": "Πολιτική Απορρήτου",
     "Support & FAQ": "Υποστήριξη & Συχνές Ερωτήσεις",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Αυτή η σελίδα οργανώνει τις ερωτήσεις που οι χρήστες διερευνούν πριν τη συνδρομή, ταξινομημένες κατά κύριες λειτουργικές περιοχές.",
@@ -972,7 +972,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Σχέση με την Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Η εφαρμογή διανέμεται μέσω Apple App Store, αλλά τα μέρη αυτών των Όρων είναι ο χρήστης και ο προγραμματιστής. Η Apple δεν είναι άμεσο μέρος.",
     "9. Governing Law and Contact": "9. Εφαρμοστέο δίκαιο και επικοινωνία",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Αυτοί οι Όροι διέπονται από το ιαπωνικό δίκαιο. Επικοινωνία: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Αυτοί οι Όροι διέπονται από το ιαπωνικό δίκαιο. Επικοινωνία: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -1098,7 +1098,7 @@ LANGS = {
     "Share on LINE": "Jaa LINEssä",
     "Copy URL": "Kopioi URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Ehdotetut hashtagit: #treeni #sali #Trero #voimaharjoittelu #fitness #tavoitteet #kehonkoostumus",
-    "Contact: freetokyo2020@yahoo.co.jp": "Yhteystiedot: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Yhteystiedot: support@freetokyolabs.com",
     "Privacy Policy": "Tietosuojakäytäntö",
     "Support & FAQ": "Tuki ja UKK",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Tämä sivu järjestää kysymykset, joita käyttäjät tutkivat ennen tilausta, pääominaisuusalueittain.",
@@ -1219,7 +1219,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Suhde Appleen",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Sovellus jaetaan Applen App Storen kautta, mutta näiden ehtojen osapuolet ovat käyttäjä ja kehittäjä. Apple ei ole suora osapuoli.",
     "9. Governing Law and Contact": "9. Sovellettava laki ja yhteystiedot",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Näihin ehtoihin sovelletaan Japanin lakia. Yhteystiedot: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Näihin ehtoihin sovelletaan Japanin lakia. Yhteystiedot: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -1345,7 +1345,7 @@ LANGS = {
     "Share on LINE": "שתף ב-LINE",
     "Copy URL": "העתק כתובת",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "תגיות מוצעות: #אימון #חדרכושר #Trero #אימוניכוח #כושר #יעדים #הרכבגוף",
-    "Contact: freetokyo2020@yahoo.co.jp": "יצירת קשר: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "יצירת קשר: support@freetokyolabs.com",
     "Privacy Policy": "מדיניות פרטיות",
     "Support & FAQ": "תמיכה ושאלות נפוצות",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "דף זה מארגן את השאלות שמשתמשים שואלים לפני רכישת מנוי, ממוינות לפי תחומי תכונות עיקריים.",
@@ -1466,7 +1466,7 @@ LANGS = {
     "8. Relationship with Apple": "8. קשר עם Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "האפליקציה מופצת דרך App Store של Apple, אך הצדדים לתנאים הם המשתמש והמפתח. Apple אינה צד ישיר.",
     "9. Governing Law and Contact": "9. חוק חל ויצירת קשר",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "תנאים אלה כפופים לחוק היפני. יצירת קשר: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "תנאים אלה כפופים לחוק היפני. יצירת קשר: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -1592,7 +1592,7 @@ LANGS = {
     "Share on LINE": "LINE पर साझा करें",
     "Copy URL": "URL कॉपी करें",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "सुझाए गए हैशटैग: #वर्कआउट #जिम #Trero #स्ट्रेंथट्रेनिंग #फिटनेस #लक्ष्य #शरीरसंरचना",
-    "Contact: freetokyo2020@yahoo.co.jp": "संपर्क: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "संपर्क: support@freetokyolabs.com",
     "Privacy Policy": "गोपनीयता नीति",
     "Support & FAQ": "सहायता और FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "यह पृष्ठ सब्सक्राइब करने से पहले उपयोगकर्ताओं द्वारा शोध किए गए प्रश्नों को मुख्य सुविधा क्षेत्रों द्वारा व्यवस्थित करता है।",
@@ -1713,7 +1713,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Apple के साथ संबंध",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "यह ऐप Apple App Store के माध्यम से वितरित है, लेकिन इन शर्तों के पक्ष उपयोगकर्ता और डेवलपर हैं। Apple सीधा पक्ष नहीं है।",
     "9. Governing Law and Contact": "9. शासी कानून और संपर्क",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "ये शर्तें जापानी कानून द्वारा शासित हैं। संपर्क: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "ये शर्तें जापानी कानून द्वारा शासित हैं। संपर्क: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -1839,7 +1839,7 @@ LANGS = {
     "Share on LINE": "Podijeli na LINE",
     "Copy URL": "Kopiraj URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Predloženi hashtagovi: #trening #teretana #Trero #trenigSnage #fitness #ciljevi #sastavTijela",
-    "Contact: freetokyo2020@yahoo.co.jp": "Kontakt: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Kontakt: support@freetokyolabs.com",
     "Privacy Policy": "Pravila privatnosti",
     "Support & FAQ": "Podrška i FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Ova stranica organizira pitanja koja korisnici istražuju prije pretplate, razvrstana prema glavnim područjima značajki.",
@@ -1960,7 +1960,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Odnos s Appleom",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Aplikacija se distribuira preko Apple App Storea, ali stranke ovih uvjeta su korisnik i razvojni programer. Apple nije izravna strana.",
     "9. Governing Law and Contact": "9. Mjerodavno pravo i kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ovi uvjeti podliježu japanskom pravu. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Ovi uvjeti podliježu japanskom pravu. Kontakt: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -2086,7 +2086,7 @@ LANGS = {
     "Share on LINE": "Megosztás LINE-on",
     "Copy URL": "URL másolása",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Javasolt hashtagek: #edzés #konditerem #Trero #erősítőedzés #fitness #célok #testösszetétel",
-    "Contact: freetokyo2020@yahoo.co.jp": "Kapcsolat: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Kapcsolat: support@freetokyolabs.com",
     "Privacy Policy": "Adatvédelmi irányelvek",
     "Support & FAQ": "Támogatás és GYIK",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Ez az oldal rendezi a felhasználók által előfizetés előtt kutatott kérdéseket, a fő funkcióterületek szerint.",
@@ -2207,7 +2207,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Kapcsolat az Apple-lel",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Az alkalmazás az Apple App Store-on keresztül kerül forgalomba, de a feltételek felei a felhasználó és a fejlesztő. Az Apple nem közvetlen fél.",
     "9. Governing Law and Contact": "9. Irányadó jog és kapcsolat",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ezekre a feltételekre a japán jog vonatkozik. Kapcsolat: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Ezekre a feltételekre a japán jog vonatkozik. Kapcsolat: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -2332,7 +2332,7 @@ LANGS = {
     "Share on LINE": "Bagikan di LINE",
     "Copy URL": "Salin URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Tagar yang disarankan: #latihan #gym #Trero #latihankekuatan #kebugaran #tujuan #komposisitubuh",
-    "Contact: freetokyo2020@yahoo.co.jp": "Kontak: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Kontak: support@freetokyolabs.com",
     "Privacy Policy": "Kebijakan Privasi",
     "Support & FAQ": "Dukungan & FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Halaman ini mengatur pertanyaan yang sering diteliti pengguna sebelum berlangganan, berdasarkan area fitur utama.",
@@ -2453,7 +2453,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Hubungan dengan Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Aplikasi ini didistribusikan melalui App Store Apple, tetapi pihak dalam ketentuan ini adalah pengguna dan pengembang. Apple bukan pihak langsung.",
     "9. Governing Law and Contact": "9. Hukum yang mengatur dan kontak",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ketentuan ini diatur oleh hukum Jepang. Kontak: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Ketentuan ini diatur oleh hukum Jepang. Kontak: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -2578,7 +2578,7 @@ LANGS = {
     "Share on LINE": "Kongsi di LINE",
     "Copy URL": "Salin URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Hashtag disarankan: #latihan #gim #Trero #latihankekuatan #kecergasan #matlamat #komposisibadan",
-    "Contact: freetokyo2020@yahoo.co.jp": "Hubungi: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Hubungi: support@freetokyolabs.com",
     "Privacy Policy": "Dasar Privasi",
     "Support & FAQ": "Sokongan & FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Halaman ini menyusun soalan yang sering dicari sebelum melanggan, mengikut kawasan ciri utama.",
@@ -2699,7 +2699,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Hubungan dengan Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Aplikasi ini diedarkan melalui App Store Apple, tetapi pihak dalam syarat ini ialah pengguna dan pembangun. Apple bukan pihak langsung.",
     "9. Governing Law and Contact": "9. Undang-undang dan hubungan",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Syarat ini dikawal oleh undang-undang Jepun. Hubungi: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Syarat ini dikawal oleh undang-undang Jepun. Hubungi: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -2824,7 +2824,7 @@ LANGS = {
     "Share on LINE": "Compartilhar no LINE",
     "Copy URL": "Copiar URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Hashtags sugeridas: #treino #academia #Trero #musculação #fitness #metas #composiçãocorporal",
-    "Contact: freetokyo2020@yahoo.co.jp": "Contato: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Contato: support@freetokyolabs.com",
     "Privacy Policy": "Política de Privacidade",
     "Support & FAQ": "Suporte & FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Esta página organiza as dúvidas mais pesquisadas antes de assinar, por área principal de recursos.",
@@ -2945,7 +2945,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Relação com a Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Este app é distribuído pela App Store da Apple, mas as partes destes Termos são o usuário e o desenvolvedor. A Apple não é parte direta.",
     "9. Governing Law and Contact": "9. Lei aplicável e contato",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estes Termos são regidos pela lei japonesa. Contato: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Estes Termos são regidos pela lei japonesa. Contato: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -3072,7 +3072,7 @@ LANGS = {
     "Share on LINE": "Partilhar no LINE",
     "Copy URL": "Copiar URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Hashtags sugeridas: #treino #ginásio #Trero #treinodeforça #fitness #objetivos #composiçãocorporal",
-    "Contact: freetokyo2020@yahoo.co.jp": "Contacto: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Contacto: support@freetokyolabs.com",
     "Privacy Policy": "Política de Privacidade",
     "Support & FAQ": "Suporte e FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Esta página organiza as perguntas que os utilizadores pesquisam frequentemente antes de subscrever, por áreas de funcionalidades.",
@@ -3193,7 +3193,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Relação com a Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Esta app é distribuída através da App Store da Apple, mas as partes destes termos são o utilizador e o programador. A Apple não é uma parte direta.",
     "9. Governing Law and Contact": "9. Lei aplicável e contacto",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Estes termos são regidos pela lei japonesa. Contacto: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Estes termos são regidos pela lei japonesa. Contacto: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -3319,7 +3319,7 @@ LANGS = {
     "Share on LINE": "Distribuie pe LINE",
     "Copy URL": "Copiază URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Hashtag-uri sugerate: #antrenament #sala #Trero #antrenamentforta #fitness #obiective #compozitiecorporala",
-    "Contact: freetokyo2020@yahoo.co.jp": "Contact: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Contact: support@freetokyolabs.com",
     "Privacy Policy": "Politica de confidențialitate",
     "Support & FAQ": "Suport și FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Această pagină organizează întrebările pe care utilizatorii le cercetează frecvent înainte de a se abona, pe zone de funcții principale.",
@@ -3440,7 +3440,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Relația cu Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Această aplicație este distribuită prin App Store-ul Apple, dar părțile acestor termeni sunt utilizatorul și dezvoltatorul. Apple nu este o parte directă.",
     "9. Governing Law and Contact": "9. Legea aplicabilă și contact",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Acești termeni sunt reglementați de legea japoneză. Contact: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Acești termeni sunt reglementați de legea japoneză. Contact: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -3567,7 +3567,7 @@ LANGS = {
     "Share on LINE": "Поделиться в LINE",
     "Copy URL": "Копировать URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Рекомендуемые хэштеги: #тренировка #зал #Trero #силовыетренировки #фитнес #цели #составтела",
-    "Contact: freetokyo2020@yahoo.co.jp": "Контакт: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Контакт: support@freetokyolabs.com",
     "Privacy Policy": "Политика конфиденциальности",
     "Support & FAQ": "Поддержка и FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Эта страница организует вопросы, которые пользователи часто изучают перед подпиской, по основным функциональным областям.",
@@ -3688,7 +3688,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Отношения с Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Это приложение распространяется через App Store, но сторонами этих условий являются пользователь и разработчик. Apple не является прямой стороной.",
     "9. Governing Law and Contact": "9. Применимое право и контакт",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Эти условия регулируются японским правом. Контакт: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Эти условия регулируются японским правом. Контакт: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -3814,7 +3814,7 @@ LANGS = {
     "Share on LINE": "Zdieľať na LINE",
     "Copy URL": "Kopírovať URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Navrhované hashtagy: #trening #posilovna #Trero #silovytrening #fitness #ciele #zlozenieTela",
-    "Contact: freetokyo2020@yahoo.co.jp": "Kontakt: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Kontakt: support@freetokyolabs.com",
     "Privacy Policy": "Zásady ochrany súkromia",
     "Support & FAQ": "Podpora a FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Táto stránka organizuje otázky, ktoré používatelia často skúmajú pred predplatením, podľa hlavných funkčných oblastí.",
@@ -3935,7 +3935,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Vzťah s Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Táto aplikácia je distribuovaná prostredníctvom App Store, ale stranami týchto podmienok sú používateľ a vývojár. Apple nie je priamou stranou.",
     "9. Governing Law and Contact": "9. Rozhodné právo a kontakt",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Tieto podmienky sa riadia japonským právom. Kontakt: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Tieto podmienky sa riadia japonským právom. Kontakt: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -4062,7 +4062,7 @@ LANGS = {
     "Share on LINE": "แชร์บน LINE",
     "Copy URL": "คัดลอก URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "แฮชแท็กที่แนะนำ: #ออกกำลังกาย #ยิม #Trero #ฝึกความแข็งแรง #ฟิตเนส #เป้าหมาย #องค์ประกอบร่างกาย",
-    "Contact: freetokyo2020@yahoo.co.jp": "ติดต่อ: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "ติดต่อ: support@freetokyolabs.com",
     "Privacy Policy": "นโยบายความเป็นส่วนตัว",
     "Support & FAQ": "ความช่วยเหลือและคำถามที่พบบ่อย",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "หน้านี้จัดเรียงคำถามที่ผู้ใช้มักค้นคว้าก่อนสมัครสมาชิก ตามพื้นที่ฟีเจอร์หลัก",
@@ -4183,7 +4183,7 @@ LANGS = {
     "8. Relationship with Apple": "8. ความสัมพันธ์กับ Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "แอปนี้เผยแพร่ผ่าน App Store ของ Apple แต่คู่สัญญาของข้อกำหนดเหล่านี้คือผู้ใช้และนักพัฒนา Apple ไม่ใช่คู่สัญญาโดยตรง",
     "9. Governing Law and Contact": "9. กฎหมายที่ใช้บังคับและการติดต่อ",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "ข้อกำหนดเหล่านี้อยู่ภายใต้กฎหมายญี่ปุ่น ติดต่อ: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "ข้อกำหนดเหล่านี้อยู่ภายใต้กฎหมายญี่ปุ่น ติดต่อ: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -4310,7 +4310,7 @@ LANGS = {
     "Share on LINE": "LINE'da Paylaş",
     "Copy URL": "URL'yi Kopyala",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Önerilen hashtagler: #antrenman #sporsalonu #Trero #güçantrenmanı #fitness #hedefler #vücutkompozisyonu",
-    "Contact: freetokyo2020@yahoo.co.jp": "İletişim: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "İletişim: support@freetokyolabs.com",
     "Privacy Policy": "Gizlilik Politikası",
     "Support & FAQ": "Destek ve SSS",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Bu sayfa, kullanıcıların abonelik öncesinde sıklıkla araştırdığı soruları ana özellik alanlarına göre düzenler.",
@@ -4431,7 +4431,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Apple ile İlişki",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Bu uygulama Apple'ın App Store'u aracılığıyla dağıtılmaktadır, ancak bu Koşulların tarafları kullanıcı ve geliştiricisidir. Apple bu Koşulların doğrudan tarafı değildir.",
     "9. Governing Law and Contact": "9. Geçerli Hukuk ve İletişim",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Bu Koşullar Japon hukukuna tabidir. İletişim: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Bu Koşullar Japon hukukuna tabidir. İletişim: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -4558,7 +4558,7 @@ LANGS = {
     "Share on LINE": "Поділитися в LINE",
     "Copy URL": "Копіювати URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Рекомендовані хештеги: #тренування #зал #Trero #силовітренування #фітнес #цілі #складтіла",
-    "Contact: freetokyo2020@yahoo.co.jp": "Контакт: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Контакт: support@freetokyolabs.com",
     "Privacy Policy": "Політика конфіденційності",
     "Support & FAQ": "Підтримка та FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Ця сторінка організовує запитання, які користувачі часто досліджують перед підпискою, за основними функціональними областями.",
@@ -4679,7 +4679,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Відносини з Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Цей додаток розповсюджується через App Store, але сторонами цих умов є користувач та розробник. Apple не є прямою стороною.",
     "9. Governing Law and Contact": "9. Застосовне право та контакт",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Ці умови регулюються японським правом. Контакт: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Ці умови регулюються японським правом. Контакт: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {
@@ -4805,7 +4805,7 @@ LANGS = {
     "Share on LINE": "Chia sẻ trên LINE",
     "Copy URL": "Sao chép URL",
     "Suggested hashtags: #workout #gym #Trero #strengthtraining #fitness #goals #bodycomposition": "Hashtag gợi ý: #taptheluc #phongthe #Trero #luyentapsucmanh #fitness #muctieu #thanhphancothể",
-    "Contact: freetokyo2020@yahoo.co.jp": "Liên hệ: freetokyo2020@yahoo.co.jp",
+    "Contact: support@freetokyolabs.com": "Liên hệ: support@freetokyolabs.com",
     "Privacy Policy": "Chính sách bảo mật",
     "Support & FAQ": "Hỗ trợ và FAQ",
     "This page organises the questions users often research before subscribing, along with the points that are easy to get stuck on right after getting started, by major feature area.": "Trang này tổ chức các câu hỏi người dùng thường tìm hiểu trước khi đăng ký theo các vùng tính năng chính.",
@@ -4926,7 +4926,7 @@ LANGS = {
     "8. Relationship with Apple": "8. Mối quan hệ với Apple",
     "This app is distributed through Apple's App Store, but the parties to these Terms are the user and the developer. Apple is not a direct party to these Terms.": "Ứng dụng này được phân phối qua App Store của Apple, nhưng các bên trong Điều khoản này là người dùng và nhà phát triển. Apple không phải là bên trực tiếp.",
     "9. Governing Law and Contact": "9. Luật điều chỉnh và liên hệ",
-    "These Terms are governed by Japanese law. Contact: freetokyo2020@yahoo.co.jp": "Các điều khoản này được điều chỉnh bởi luật Nhật Bản. Liên hệ: freetokyo2020@yahoo.co.jp"
+    "These Terms are governed by Japanese law. Contact: support@freetokyolabs.com": "Các điều khoản này được điều chỉnh bởi luật Nhật Bản. Liên hệ: support@freetokyolabs.com"
   },
   "blocks": {
     "index.html": {

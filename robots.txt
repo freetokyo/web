@@ -8,7 +8,7 @@
 # アプリ配下の robots.txt（18本）は、どの構成でも効かないので削除した。
 
 # https://freetokyo.github.io/robots.txt
-# freetokyo apps — 実体は /web/ 配下。
+# Freetokyo Labs — 実体は /web/ 配下。
 
 User-agent: *
 Allow: /
