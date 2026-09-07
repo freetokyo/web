@@ -4,7 +4,7 @@
 
 Web: https://freetokyolabs.com/tillcount/
 状態: 近日公開 / coming soon
-開発: freetokyo（個人開発）
+開発: Freetokyo Labs
 対応言語（Webページ）: ja / en
 
 ## ページ

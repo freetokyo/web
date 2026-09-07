@@ -4,7 +4,7 @@
 
 Web: https://freetokyolabs.com/yuralog/
 App Store: https://apps.apple.com/app/id6792374401
-開発: freetokyo（個人開発）
+開発: Freetokyo Labs
 バージョン: 1.2 / 対応: iOS 17.0 以降
 対応言語（Webページ）: ja / en
 

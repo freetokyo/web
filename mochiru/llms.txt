@@ -5,7 +5,7 @@
 Web: https://freetokyolabs.com/mochiru/
 App Store: https://apps.apple.com/app/id6778235888
 Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
-開発: freetokyo（個人開発）
+開発: Freetokyo Labs
 バージョン: 1.3 / 対応: iOS 17.0 以降
 価格: 500円（買い切り）
 対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant

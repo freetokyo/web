@@ -5,7 +5,7 @@
 Web: https://freetokyolabs.com/calmgraph/
 App Store: https://apps.apple.com/app/id6790698772
 Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で公開予定。公開まで URL は出さない）
-開発: freetokyo（個人開発）
+開発: Freetokyo Labs
 バージョン: 1.2 / 対応: iOS 26.0 以降
 対応言語（Webページ）: ja / en
 

@@ -1,17 +1,15 @@
 {
   "_comment": [
-    "ブランド情報とサイト URL の唯一の真実源。web/ 配下の HTML / JSON / JS / TXT / PY / XML は全部ここを参照する。",
+    "ブランド情報・連絡先・サイト URL・事業主体名の唯一の真実源。web/ 配下の HTML / JSON / JS / TXT / PY / XML は全部ここを参照する。",
     "変更するときはこのファイルだけを直し、`python3 _brand/apply_brand.py --apply` を流す。",
-    "旧い値は previous_* に積む（消さない）。積んである限り、取りこぼしがあっても次回の実行で回収できる。"
+    "旧い値は previous_* / from に積む（消さない）。積んである限り、取りこぼしがあっても次回の実行で回収できる。"
   ],
-
   "brand": {
     "name": "Freetokyo Labs",
     "previous_names": [
       "freetokyo apps"
     ]
   },
-
   "contact": {
     "email": "support@freetokyolabs.com",
     "previous_emails": [
@@ -19,7 +17,6 @@
       "chenyangli123@gmail.com"
     ]
   },
-
   "site": {
     "_note": "CNAME で freetokyolabs.com を当てている。プロジェクトページ時代の /web プレフィックスは独自ドメインでは付かない。",
     "url": "https://freetokyolabs.com",
@@ -27,7 +24,6 @@
       "https://freetokyo.github.io/web"
     ]
   },
-
   "extra_replacements": [
     {
       "_why": "SNS シェアリンクは URL 全体がパーセントエンコードされている（https%3A%2F%2F…）ため、スキームを含まない形で別に置き換える",
@@ -36,6 +32,85 @@
       "from": [
         "freetokyo.github.io%2Fweb"
       ]
+    },
+    {
+      "_why": "GDPR のデータ管理者の名義。体制の説明ではなく責任主体を書く。英字の前後は日本語の体裁に合わせて空白を入れる",
+      "label": "データ管理者（日本語）",
+      "to": "は Freetokyo Labs です",
+      "from": [
+        "は個人開発者 freetokyo です",
+        "はFreetokyo Labs です"
+      ]
+    },
+    {
+      "_why": "同上の英語版。事業主体を指すので関係代名詞は who ではなく which にする",
+      "label": "データ管理者（英語）",
+      "to": "Freetokyo Labs, which acts as the data controller",
+      "from": [
+        "freetokyo, an independent developer, who acts as the data controller"
+      ]
+    },
+    {
+      "_why": "返信が遅れる理由に開発体制を持ち出さない。事実だけ残す",
+      "label": "サポートの断り書き（理由の句を削除）",
+      "to": "",
+      "from": [
+        "個人開発のため、"
+      ]
+    },
+    {
+      "_why": "同上の英語版。アプリ名を含む一文なので丸ごと差し替える",
+      "label": "サポートの断り書き（英語）",
+      "to": "Replies may take a little time.",
+      "from": [
+        "TsukiLift is built by a solo developer, so replies may take a little time."
+      ]
+    },
+    {
+      "_why": "llms.txt が AI に伝える開発者情報",
+      "label": "llms.txt の開発者行",
+      "to": "開発: Freetokyo Labs",
+      "from": [
+        "開発: freetokyo（個人開発）",
+        "開発: freetokyo（個人 iOS 開発）"
+      ]
+    },
+    {
+      "_why": "特定商取引法の販売事業者欄。アプリ名ではなく事業主体名を書く",
+      "label": "特商法の販売事業者",
+      "to": "Freetokyo Labs",
+      "from": [
+        "TsukiLift 運営者"
+      ]
+    },
+    {
+      "_why": "屋号を持つ個人事業主なので、法人格を示唆する『当社』は使わない",
+      "label": "一人称",
+      "to": "当方",
+      "from": [
+        "当社"
+      ]
+    },
+    {
+      "_why": [
+        "開発者名・著作権者名・規約の当事者名として残っている素の freetokyo を事業主体名に揃える。",
+        "(?!labs) で freetokyolabs.com を、(?<!github.com/) で GitHub のユーザー名 github.com/freetokyo/web を守る。",
+        "正規表現は大小を区別して当てるので、置換後の Freetokyo Labs には再マッチしない。"
+      ],
+      "label": "開発者名",
+      "to": "Freetokyo Labs",
+      "from_regex": [
+        "(?<!github\\.com/)freetokyo(?!labs)"
+      ]
     }
-  ]
+  ],
+  "operator": {
+    "_note": [
+      "Google Play の組織アカウント（D-U-N-S 取得済み）で配信するため、開発体制の規模を語る表現は置かない。",
+      "GDPR も特定商取引法も求めているのは『誰が責任主体か』であって人数ではない。",
+      "実態は屋号を持つ個人事業主。法人格を示唆する『当社』『弊社』は使わず、一人称は『当方』に統一する。"
+    ],
+    "legal_name": "Freetokyo Labs",
+    "first_person_ja": "当方"
+  }
 }

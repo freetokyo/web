@@ -35,12 +35,18 @@ SKIP_DIRS = {".git", "node_modules", ".github", "_brand"}
 class Rule:
     """旧表記 → 現行表記のひとつの置き換え。"""
 
-    def __init__(self, label: str, old: str, new: str):
+    def __init__(self, label: str, old: str, new: str, is_regex: bool = False):
         self.label = label
         self.old = old
         self.new = new
-        # 大小の揺れ（Freetokyo Apps / freetokyo apps）も拾って現行表記に正規化する。
-        self.pattern = re.compile(re.escape(old), re.IGNORECASE)
+        self.is_regex = is_regex
+        if is_regex:
+            # 正規表現は書いたとおりに当てる。大小を無視すると、置換後の
+            # 表記（Freetokyo Labs）に自分で再マッチして冪等性が壊れる。
+            self.pattern = re.compile(old)
+        else:
+            # 文字列は大小の揺れ（Freetokyo Apps / freetokyo apps）も拾って正規化する。
+            self.pattern = re.compile(re.escape(old), re.IGNORECASE)
 
     def apply(self, text: str) -> tuple[str, int]:
         return self.pattern.subn(self.new, text)
@@ -56,8 +62,15 @@ def load_rules() -> list[Rule]:
 
     rules: list[Rule] = []
 
-    def add(label: str, current: str, olds: list[str], where: str) -> None:
+    def add(label: str, current: str, olds: list[str], where: str, is_regex: bool = False) -> None:
         for old in olds:
+            if is_regex:
+                try:
+                    re.compile(old)
+                except re.error as e:
+                    sys.exit(f"brand.json の {where} の正規表現が壊れている: {old!r} — {e}")
+                rules.append(Rule(label, old, current, is_regex=True))
+                continue
             if old.lower() == current.lower():
                 # 自己置換は無限に自分を書き換え続けるので設定ミスとして止める。
                 sys.exit(
@@ -80,16 +93,19 @@ def load_rules() -> list[Rule]:
 
     # 名前付きセクションで表せない置き換え（パーセントエンコードされた URL など）。
     for extra in cfg.get("extra_replacements", []):
-        to = extra.get("to")
-        if not to:
+        if "to" not in extra:
             sys.exit("extra_replacements に to が無い項目がある")
-        add(extra.get("label", "その他"), to, extra.get("from", []), "extra_replacements.from")
+        to = extra["to"]  # 空文字は「その表現を消す」の意味なので許す
+        label = extra.get("label", "その他")
+        add(label, to, extra.get("from", []), "extra_replacements.from")
+        add(label, to, extra.get("from_regex", []), "extra_replacements.from_regex", is_regex=True)
 
     if not rules:
         sys.exit("置換ルールが 0 件。brand.json の previous_* が空。")
 
-    # 長い旧値から先に当てる。短い値が長い値の一部を食う事故を防ぐ。
-    rules.sort(key=lambda r: len(r.old), reverse=True)
+    # 文字列を長い順に当ててから、広く拾う正規表現を最後に回す。
+    # 短い値が長い値の一部を食う事故と、正規表現が個別ルールを先取りする事故を防ぐ。
+    rules.sort(key=lambda r: (r.is_regex, -len(r.old)))
     return rules
 
 
