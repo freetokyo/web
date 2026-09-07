@@ -2,7 +2,7 @@
 
 > 完全オフラインの終活ノート iOS アプリ。資産・保険・連絡先・想いを一冊のノートに記録。アカウント登録不要・データ収集なし・買い切り。
 
-Web: https://freetokyo.github.io/web/yuzuri/
+Web: https://freetokyolabs.com/yuzuri/
 App Store: https://apps.apple.com/app/id6784874949
 開発: freetokyo（個人開発）
 バージョン: 1.0.1 / 対応: iOS 18.0 以降
@@ -17,40 +17,40 @@ App Store: https://apps.apple.com/app/id6784874949
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/yuzuri/
-- サポート / FAQ: https://freetokyo.github.io/web/yuzuri/support.html
-- 利用規約: https://freetokyo.github.io/web/yuzuri/terms.html
-- プライバシー: https://freetokyo.github.io/web/yuzuri/privacy.html
-- ar: https://freetokyo.github.io/web/yuzuri/ar/
-- ca: https://freetokyo.github.io/web/yuzuri/ca/
-- cs: https://freetokyo.github.io/web/yuzuri/cs/
-- da: https://freetokyo.github.io/web/yuzuri/da/
-- de: https://freetokyo.github.io/web/yuzuri/de/
-- el: https://freetokyo.github.io/web/yuzuri/el/
-- en: https://freetokyo.github.io/web/yuzuri/en/
-- es: https://freetokyo.github.io/web/yuzuri/es/
-- fi: https://freetokyo.github.io/web/yuzuri/fi/
-- fr: https://freetokyo.github.io/web/yuzuri/fr/
-- he: https://freetokyo.github.io/web/yuzuri/he/
-- hi: https://freetokyo.github.io/web/yuzuri/hi/
-- hr: https://freetokyo.github.io/web/yuzuri/hr/
-- hu: https://freetokyo.github.io/web/yuzuri/hu/
-- id: https://freetokyo.github.io/web/yuzuri/id/
-- it: https://freetokyo.github.io/web/yuzuri/it/
-- ko: https://freetokyo.github.io/web/yuzuri/ko/
-- ms: https://freetokyo.github.io/web/yuzuri/ms/
-- nb: https://freetokyo.github.io/web/yuzuri/nb/
-- nl: https://freetokyo.github.io/web/yuzuri/nl/
-- pl: https://freetokyo.github.io/web/yuzuri/pl/
-- pt-BR: https://freetokyo.github.io/web/yuzuri/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/yuzuri/pt-PT/
-- ro: https://freetokyo.github.io/web/yuzuri/ro/
-- ru: https://freetokyo.github.io/web/yuzuri/ru/
-- sk: https://freetokyo.github.io/web/yuzuri/sk/
-- sv: https://freetokyo.github.io/web/yuzuri/sv/
-- th: https://freetokyo.github.io/web/yuzuri/th/
-- tr: https://freetokyo.github.io/web/yuzuri/tr/
-- uk: https://freetokyo.github.io/web/yuzuri/uk/
-- vi: https://freetokyo.github.io/web/yuzuri/vi/
-- zh-Hans: https://freetokyo.github.io/web/yuzuri/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/yuzuri/zh-Hant/
+- 紹介: https://freetokyolabs.com/yuzuri/
+- サポート / FAQ: https://freetokyolabs.com/yuzuri/support.html
+- 利用規約: https://freetokyolabs.com/yuzuri/terms.html
+- プライバシー: https://freetokyolabs.com/yuzuri/privacy.html
+- ar: https://freetokyolabs.com/yuzuri/ar/
+- ca: https://freetokyolabs.com/yuzuri/ca/
+- cs: https://freetokyolabs.com/yuzuri/cs/
+- da: https://freetokyolabs.com/yuzuri/da/
+- de: https://freetokyolabs.com/yuzuri/de/
+- el: https://freetokyolabs.com/yuzuri/el/
+- en: https://freetokyolabs.com/yuzuri/en/
+- es: https://freetokyolabs.com/yuzuri/es/
+- fi: https://freetokyolabs.com/yuzuri/fi/
+- fr: https://freetokyolabs.com/yuzuri/fr/
+- he: https://freetokyolabs.com/yuzuri/he/
+- hi: https://freetokyolabs.com/yuzuri/hi/
+- hr: https://freetokyolabs.com/yuzuri/hr/
+- hu: https://freetokyolabs.com/yuzuri/hu/
+- id: https://freetokyolabs.com/yuzuri/id/
+- it: https://freetokyolabs.com/yuzuri/it/
+- ko: https://freetokyolabs.com/yuzuri/ko/
+- ms: https://freetokyolabs.com/yuzuri/ms/
+- nb: https://freetokyolabs.com/yuzuri/nb/
+- nl: https://freetokyolabs.com/yuzuri/nl/
+- pl: https://freetokyolabs.com/yuzuri/pl/
+- pt-BR: https://freetokyolabs.com/yuzuri/pt-BR/
+- pt-PT: https://freetokyolabs.com/yuzuri/pt-PT/
+- ro: https://freetokyolabs.com/yuzuri/ro/
+- ru: https://freetokyolabs.com/yuzuri/ru/
+- sk: https://freetokyolabs.com/yuzuri/sk/
+- sv: https://freetokyolabs.com/yuzuri/sv/
+- th: https://freetokyolabs.com/yuzuri/th/
+- tr: https://freetokyolabs.com/yuzuri/tr/
+- uk: https://freetokyolabs.com/yuzuri/uk/
+- vi: https://freetokyolabs.com/yuzuri/vi/
+- zh-Hans: https://freetokyolabs.com/yuzuri/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/yuzuri/zh-Hant/

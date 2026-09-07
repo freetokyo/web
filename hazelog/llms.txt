@@ -2,7 +2,7 @@
 
 > コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。
 
-Web: https://freetokyo.github.io/web/hazelog/
+Web: https://freetokyolabs.com/hazelog/
 App Store: https://apps.apple.com/app/id6791478115
 開発: freetokyo（個人開発）
 バージョン: 1.1 / 対応: iOS 17.0 以降
@@ -10,8 +10,8 @@ App Store: https://apps.apple.com/app/id6791478115
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/hazelog/
-- サポート / FAQ: https://freetokyo.github.io/web/hazelog/support.html
-- 利用規約: https://freetokyo.github.io/web/hazelog/terms.html
-- プライバシー: https://freetokyo.github.io/web/hazelog/privacy.html
-- en: https://freetokyo.github.io/web/hazelog/en/
+- 紹介: https://freetokyolabs.com/hazelog/
+- サポート / FAQ: https://freetokyolabs.com/hazelog/support.html
+- 利用規約: https://freetokyolabs.com/hazelog/terms.html
+- プライバシー: https://freetokyolabs.com/hazelog/privacy.html
+- en: https://freetokyolabs.com/hazelog/en/

@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://freetokyo.github.io/web/sonalog/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/" />
+    <loc>https://freetokyolabs.com/sonalog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/sonalog/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/privacy.html" />
+    <loc>https://freetokyolabs.com/sonalog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/sonalog/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/terms.html" />
+    <loc>https://freetokyolabs.com/sonalog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/terms.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/sonalog/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/support.html" />
+    <loc>https://freetokyolabs.com/sonalog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/support.html" />
   </url>
-  <url><loc>https://freetokyo.github.io/web/sonalog/llms.txt</loc></url>
+  <url><loc>https://freetokyolabs.com/sonalog/llms.txt</loc></url>
   <url>
-    <loc>https://freetokyo.github.io/web/sonalog/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/" />
-  </url>
-  <url>
-    <loc>https://freetokyo.github.io/web/sonalog/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/privacy.html" />
+    <loc>https://freetokyolabs.com/sonalog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/sonalog/en/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/terms.html" />
+    <loc>https://freetokyolabs.com/sonalog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/sonalog/en/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/sonalog/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/sonalog/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/sonalog/support.html" />
+    <loc>https://freetokyolabs.com/sonalog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/sonalog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/sonalog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/sonalog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/sonalog/support.html" />
   </url>
 </urlset>

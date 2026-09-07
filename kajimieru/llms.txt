@@ -2,7 +2,7 @@
 
 > 「名もなき家事」130項目を11カテゴリに体系化し、夫婦・パートナー間の分担を件数と割合で可視化する iOS アプリ。毎日の完了チェックではなく一度きりの棚卸しに絞る。世帯構成により該当しない最大28項目はスワイプで分母から外せる。評価語を出さず、話し合いの出発点として使う設計。完全オフライン（ネットワーク通信コードを持たない）・アカウント不要・買い切り。
 
-Web: https://freetokyo.github.io/web/kajimieru/
+Web: https://freetokyolabs.com/kajimieru/
 App Store: https://apps.apple.com/app/id6797382805
 開発: freetokyo（個人開発）
 バージョン: 1.1 / 対応: iOS 17.0 以降
@@ -10,8 +10,8 @@ App Store: https://apps.apple.com/app/id6797382805
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/kajimieru/
-- サポート / FAQ: https://freetokyo.github.io/web/kajimieru/support.html
-- 利用規約: https://freetokyo.github.io/web/kajimieru/terms.html
-- プライバシー: https://freetokyo.github.io/web/kajimieru/privacy.html
-- en: https://freetokyo.github.io/web/kajimieru/en/
+- 紹介: https://freetokyolabs.com/kajimieru/
+- サポート / FAQ: https://freetokyolabs.com/kajimieru/support.html
+- 利用規約: https://freetokyolabs.com/kajimieru/terms.html
+- プライバシー: https://freetokyolabs.com/kajimieru/privacy.html
+- en: https://freetokyolabs.com/kajimieru/en/

@@ -2,7 +2,7 @@
 
 > 完全オフラインの資産寿命シミュレーターアプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。
 
-Web: https://freetokyo.github.io/web/mochiru/
+Web: https://freetokyolabs.com/mochiru/
 App Store: https://apps.apple.com/app/id6778235888
 Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -25,40 +25,40 @@ Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/mochiru/
-- サポート / FAQ: https://freetokyo.github.io/web/mochiru/support.html
-- 利用規約: https://freetokyo.github.io/web/mochiru/terms.html
-- プライバシー: https://freetokyo.github.io/web/mochiru/privacy.html
-- ar: https://freetokyo.github.io/web/mochiru/ar/
-- ca: https://freetokyo.github.io/web/mochiru/ca/
-- cs: https://freetokyo.github.io/web/mochiru/cs/
-- da: https://freetokyo.github.io/web/mochiru/da/
-- de: https://freetokyo.github.io/web/mochiru/de/
-- el: https://freetokyo.github.io/web/mochiru/el/
-- en: https://freetokyo.github.io/web/mochiru/en/
-- es: https://freetokyo.github.io/web/mochiru/es/
-- fi: https://freetokyo.github.io/web/mochiru/fi/
-- fr: https://freetokyo.github.io/web/mochiru/fr/
-- he: https://freetokyo.github.io/web/mochiru/he/
-- hi: https://freetokyo.github.io/web/mochiru/hi/
-- hr: https://freetokyo.github.io/web/mochiru/hr/
-- hu: https://freetokyo.github.io/web/mochiru/hu/
-- id: https://freetokyo.github.io/web/mochiru/id/
-- it: https://freetokyo.github.io/web/mochiru/it/
-- ko: https://freetokyo.github.io/web/mochiru/ko/
-- ms: https://freetokyo.github.io/web/mochiru/ms/
-- nb: https://freetokyo.github.io/web/mochiru/nb/
-- nl: https://freetokyo.github.io/web/mochiru/nl/
-- pl: https://freetokyo.github.io/web/mochiru/pl/
-- pt-BR: https://freetokyo.github.io/web/mochiru/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/mochiru/pt-PT/
-- ro: https://freetokyo.github.io/web/mochiru/ro/
-- ru: https://freetokyo.github.io/web/mochiru/ru/
-- sk: https://freetokyo.github.io/web/mochiru/sk/
-- sv: https://freetokyo.github.io/web/mochiru/sv/
-- th: https://freetokyo.github.io/web/mochiru/th/
-- tr: https://freetokyo.github.io/web/mochiru/tr/
-- uk: https://freetokyo.github.io/web/mochiru/uk/
-- vi: https://freetokyo.github.io/web/mochiru/vi/
-- zh-Hans: https://freetokyo.github.io/web/mochiru/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/mochiru/zh-Hant/
+- 紹介: https://freetokyolabs.com/mochiru/
+- サポート / FAQ: https://freetokyolabs.com/mochiru/support.html
+- 利用規約: https://freetokyolabs.com/mochiru/terms.html
+- プライバシー: https://freetokyolabs.com/mochiru/privacy.html
+- ar: https://freetokyolabs.com/mochiru/ar/
+- ca: https://freetokyolabs.com/mochiru/ca/
+- cs: https://freetokyolabs.com/mochiru/cs/
+- da: https://freetokyolabs.com/mochiru/da/
+- de: https://freetokyolabs.com/mochiru/de/
+- el: https://freetokyolabs.com/mochiru/el/
+- en: https://freetokyolabs.com/mochiru/en/
+- es: https://freetokyolabs.com/mochiru/es/
+- fi: https://freetokyolabs.com/mochiru/fi/
+- fr: https://freetokyolabs.com/mochiru/fr/
+- he: https://freetokyolabs.com/mochiru/he/
+- hi: https://freetokyolabs.com/mochiru/hi/
+- hr: https://freetokyolabs.com/mochiru/hr/
+- hu: https://freetokyolabs.com/mochiru/hu/
+- id: https://freetokyolabs.com/mochiru/id/
+- it: https://freetokyolabs.com/mochiru/it/
+- ko: https://freetokyolabs.com/mochiru/ko/
+- ms: https://freetokyolabs.com/mochiru/ms/
+- nb: https://freetokyolabs.com/mochiru/nb/
+- nl: https://freetokyolabs.com/mochiru/nl/
+- pl: https://freetokyolabs.com/mochiru/pl/
+- pt-BR: https://freetokyolabs.com/mochiru/pt-BR/
+- pt-PT: https://freetokyolabs.com/mochiru/pt-PT/
+- ro: https://freetokyolabs.com/mochiru/ro/
+- ru: https://freetokyolabs.com/mochiru/ru/
+- sk: https://freetokyolabs.com/mochiru/sk/
+- sv: https://freetokyolabs.com/mochiru/sv/
+- th: https://freetokyolabs.com/mochiru/th/
+- tr: https://freetokyolabs.com/mochiru/tr/
+- uk: https://freetokyolabs.com/mochiru/uk/
+- vi: https://freetokyolabs.com/mochiru/vi/
+- zh-Hans: https://freetokyolabs.com/mochiru/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/mochiru/zh-Hant/

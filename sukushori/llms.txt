@@ -2,7 +2,7 @@
 
 > 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、解析と保存は端末内・買い切り・広告なし。通信は「地図で見る」のときだけ。
 
-Web: https://freetokyo.github.io/web/sukushori/
+Web: https://freetokyolabs.com/sukushori/
 App Store: https://apps.apple.com/app/id6778336001
 開発: freetokyo（個人開発）
 バージョン: 1.2 / 対応: iOS 17.0 以降
@@ -24,40 +24,40 @@ App Store: https://apps.apple.com/app/id6778336001
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/sukushori/
-- サポート / FAQ: https://freetokyo.github.io/web/sukushori/support.html
-- 利用規約: https://freetokyo.github.io/web/sukushori/terms.html
-- プライバシー: https://freetokyo.github.io/web/sukushori/privacy.html
-- ar: https://freetokyo.github.io/web/sukushori/ar/
-- ca: https://freetokyo.github.io/web/sukushori/ca/
-- cs: https://freetokyo.github.io/web/sukushori/cs/
-- da: https://freetokyo.github.io/web/sukushori/da/
-- de: https://freetokyo.github.io/web/sukushori/de/
-- el: https://freetokyo.github.io/web/sukushori/el/
-- en: https://freetokyo.github.io/web/sukushori/en/
-- es: https://freetokyo.github.io/web/sukushori/es/
-- fi: https://freetokyo.github.io/web/sukushori/fi/
-- fr: https://freetokyo.github.io/web/sukushori/fr/
-- he: https://freetokyo.github.io/web/sukushori/he/
-- hi: https://freetokyo.github.io/web/sukushori/hi/
-- hr: https://freetokyo.github.io/web/sukushori/hr/
-- hu: https://freetokyo.github.io/web/sukushori/hu/
-- id: https://freetokyo.github.io/web/sukushori/id/
-- it: https://freetokyo.github.io/web/sukushori/it/
-- ko: https://freetokyo.github.io/web/sukushori/ko/
-- ms: https://freetokyo.github.io/web/sukushori/ms/
-- nb: https://freetokyo.github.io/web/sukushori/nb/
-- nl: https://freetokyo.github.io/web/sukushori/nl/
-- pl: https://freetokyo.github.io/web/sukushori/pl/
-- pt-BR: https://freetokyo.github.io/web/sukushori/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/sukushori/pt-PT/
-- ro: https://freetokyo.github.io/web/sukushori/ro/
-- ru: https://freetokyo.github.io/web/sukushori/ru/
-- sk: https://freetokyo.github.io/web/sukushori/sk/
-- sv: https://freetokyo.github.io/web/sukushori/sv/
-- th: https://freetokyo.github.io/web/sukushori/th/
-- tr: https://freetokyo.github.io/web/sukushori/tr/
-- uk: https://freetokyo.github.io/web/sukushori/uk/
-- vi: https://freetokyo.github.io/web/sukushori/vi/
-- zh-Hans: https://freetokyo.github.io/web/sukushori/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/sukushori/zh-Hant/
+- 紹介: https://freetokyolabs.com/sukushori/
+- サポート / FAQ: https://freetokyolabs.com/sukushori/support.html
+- 利用規約: https://freetokyolabs.com/sukushori/terms.html
+- プライバシー: https://freetokyolabs.com/sukushori/privacy.html
+- ar: https://freetokyolabs.com/sukushori/ar/
+- ca: https://freetokyolabs.com/sukushori/ca/
+- cs: https://freetokyolabs.com/sukushori/cs/
+- da: https://freetokyolabs.com/sukushori/da/
+- de: https://freetokyolabs.com/sukushori/de/
+- el: https://freetokyolabs.com/sukushori/el/
+- en: https://freetokyolabs.com/sukushori/en/
+- es: https://freetokyolabs.com/sukushori/es/
+- fi: https://freetokyolabs.com/sukushori/fi/
+- fr: https://freetokyolabs.com/sukushori/fr/
+- he: https://freetokyolabs.com/sukushori/he/
+- hi: https://freetokyolabs.com/sukushori/hi/
+- hr: https://freetokyolabs.com/sukushori/hr/
+- hu: https://freetokyolabs.com/sukushori/hu/
+- id: https://freetokyolabs.com/sukushori/id/
+- it: https://freetokyolabs.com/sukushori/it/
+- ko: https://freetokyolabs.com/sukushori/ko/
+- ms: https://freetokyolabs.com/sukushori/ms/
+- nb: https://freetokyolabs.com/sukushori/nb/
+- nl: https://freetokyolabs.com/sukushori/nl/
+- pl: https://freetokyolabs.com/sukushori/pl/
+- pt-BR: https://freetokyolabs.com/sukushori/pt-BR/
+- pt-PT: https://freetokyolabs.com/sukushori/pt-PT/
+- ro: https://freetokyolabs.com/sukushori/ro/
+- ru: https://freetokyolabs.com/sukushori/ru/
+- sk: https://freetokyolabs.com/sukushori/sk/
+- sv: https://freetokyolabs.com/sukushori/sv/
+- th: https://freetokyolabs.com/sukushori/th/
+- tr: https://freetokyolabs.com/sukushori/tr/
+- uk: https://freetokyolabs.com/sukushori/uk/
+- vi: https://freetokyolabs.com/sukushori/vi/
+- zh-Hans: https://freetokyolabs.com/sukushori/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/sukushori/zh-Hant/

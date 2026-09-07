@@ -1,14 +1,11 @@
-# ！このファイルは現在クローラーに読まれていない。
-# robots.txt はホスト単位のプロトコルで、ホストのルートにあるものだけが読まれる。
-# 実体は https://freetokyo.github.io/web/ なので、効いているのは
-# https://freetokyo.github.io/robots.txt（= freetokyo/freetokyo.github.io リポジトリ）。
-# 独自ドメインを CNAME で当てた場合はこのファイルがルートに来て有効になるので、
-# 内容はルート側と同じに保つ。以下はルート側のコピー。
+# https://freetokyolabs.com/robots.txt
+# Freetokyo Labs — このファイルはサイトルートに置かれ、クローラーに読まれている。
+#
+# 経緯: 以前は GitHub Pages のプロジェクトページ（旧ホスト配下の /web/）で、
+# robots.txt はホスト単位のプロトコルのためこのファイルは読まれていなかった。
+# CNAME で freetokyolabs.com を当てた結果、このファイルがルートに来て有効になった。
 #
 # アプリ配下の robots.txt（18本）は、どの構成でも効かないので削除した。
-
-# https://freetokyo.github.io/robots.txt
-# Freetokyo Labs — 実体は /web/ 配下。
 
 User-agent: *
 Allow: /
@@ -80,4 +77,4 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
-Sitemap: https://freetokyo.github.io/web/sitemap.xml
+Sitemap: https://freetokyolabs.com/sitemap.xml

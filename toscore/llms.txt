@@ -2,7 +2,7 @@
 
 > ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。
 
-Web: https://freetokyo.github.io/web/toscore/
+Web: https://freetokyolabs.com/toscore/
 App Store: https://apps.apple.com/app/id6776913396
 Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -25,40 +25,40 @@ Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/toscore/
-- サポート / FAQ: https://freetokyo.github.io/web/toscore/support.html
-- 利用規約: https://freetokyo.github.io/web/toscore/terms.html
-- プライバシー: https://freetokyo.github.io/web/toscore/privacy.html
-- ar: https://freetokyo.github.io/web/toscore/ar/
-- ca: https://freetokyo.github.io/web/toscore/ca/
-- cs: https://freetokyo.github.io/web/toscore/cs/
-- da: https://freetokyo.github.io/web/toscore/da/
-- de: https://freetokyo.github.io/web/toscore/de/
-- el: https://freetokyo.github.io/web/toscore/el/
-- en: https://freetokyo.github.io/web/toscore/en/
-- es: https://freetokyo.github.io/web/toscore/es/
-- fi: https://freetokyo.github.io/web/toscore/fi/
-- fr: https://freetokyo.github.io/web/toscore/fr/
-- he: https://freetokyo.github.io/web/toscore/he/
-- hi: https://freetokyo.github.io/web/toscore/hi/
-- hr: https://freetokyo.github.io/web/toscore/hr/
-- hu: https://freetokyo.github.io/web/toscore/hu/
-- id: https://freetokyo.github.io/web/toscore/id/
-- it: https://freetokyo.github.io/web/toscore/it/
-- ko: https://freetokyo.github.io/web/toscore/ko/
-- ms: https://freetokyo.github.io/web/toscore/ms/
-- nb: https://freetokyo.github.io/web/toscore/nb/
-- nl: https://freetokyo.github.io/web/toscore/nl/
-- pl: https://freetokyo.github.io/web/toscore/pl/
-- pt-BR: https://freetokyo.github.io/web/toscore/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/toscore/pt-PT/
-- ro: https://freetokyo.github.io/web/toscore/ro/
-- ru: https://freetokyo.github.io/web/toscore/ru/
-- sk: https://freetokyo.github.io/web/toscore/sk/
-- sv: https://freetokyo.github.io/web/toscore/sv/
-- th: https://freetokyo.github.io/web/toscore/th/
-- tr: https://freetokyo.github.io/web/toscore/tr/
-- uk: https://freetokyo.github.io/web/toscore/uk/
-- vi: https://freetokyo.github.io/web/toscore/vi/
-- zh-Hans: https://freetokyo.github.io/web/toscore/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/toscore/zh-Hant/
+- 紹介: https://freetokyolabs.com/toscore/
+- サポート / FAQ: https://freetokyolabs.com/toscore/support.html
+- 利用規約: https://freetokyolabs.com/toscore/terms.html
+- プライバシー: https://freetokyolabs.com/toscore/privacy.html
+- ar: https://freetokyolabs.com/toscore/ar/
+- ca: https://freetokyolabs.com/toscore/ca/
+- cs: https://freetokyolabs.com/toscore/cs/
+- da: https://freetokyolabs.com/toscore/da/
+- de: https://freetokyolabs.com/toscore/de/
+- el: https://freetokyolabs.com/toscore/el/
+- en: https://freetokyolabs.com/toscore/en/
+- es: https://freetokyolabs.com/toscore/es/
+- fi: https://freetokyolabs.com/toscore/fi/
+- fr: https://freetokyolabs.com/toscore/fr/
+- he: https://freetokyolabs.com/toscore/he/
+- hi: https://freetokyolabs.com/toscore/hi/
+- hr: https://freetokyolabs.com/toscore/hr/
+- hu: https://freetokyolabs.com/toscore/hu/
+- id: https://freetokyolabs.com/toscore/id/
+- it: https://freetokyolabs.com/toscore/it/
+- ko: https://freetokyolabs.com/toscore/ko/
+- ms: https://freetokyolabs.com/toscore/ms/
+- nb: https://freetokyolabs.com/toscore/nb/
+- nl: https://freetokyolabs.com/toscore/nl/
+- pl: https://freetokyolabs.com/toscore/pl/
+- pt-BR: https://freetokyolabs.com/toscore/pt-BR/
+- pt-PT: https://freetokyolabs.com/toscore/pt-PT/
+- ro: https://freetokyolabs.com/toscore/ro/
+- ru: https://freetokyolabs.com/toscore/ru/
+- sk: https://freetokyolabs.com/toscore/sk/
+- sv: https://freetokyolabs.com/toscore/sv/
+- th: https://freetokyolabs.com/toscore/th/
+- tr: https://freetokyolabs.com/toscore/tr/
+- uk: https://freetokyolabs.com/toscore/uk/
+- vi: https://freetokyolabs.com/toscore/vi/
+- zh-Hans: https://freetokyolabs.com/toscore/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/toscore/zh-Hant/

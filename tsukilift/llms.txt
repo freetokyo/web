@@ -2,7 +2,7 @@
 
 > 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
 
-Web: https://freetokyo.github.io/web/tsukilift/
+Web: https://freetokyolabs.com/tsukilift/
 App Store: https://apps.apple.com/app/id6767084251
 Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -25,8 +25,8 @@ Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/tsukilift/
-- サポート / FAQ: https://freetokyo.github.io/web/tsukilift/support.html
-- 利用規約: https://freetokyo.github.io/web/tsukilift/terms.html
-- プライバシー: https://freetokyo.github.io/web/tsukilift/privacy.html
-- en: https://freetokyo.github.io/web/tsukilift/en/
+- 紹介: https://freetokyolabs.com/tsukilift/
+- サポート / FAQ: https://freetokyolabs.com/tsukilift/support.html
+- 利用規約: https://freetokyolabs.com/tsukilift/terms.html
+- プライバシー: https://freetokyolabs.com/tsukilift/privacy.html
+- en: https://freetokyolabs.com/tsukilift/en/

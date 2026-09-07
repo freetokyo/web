@@ -3,7 +3,7 @@
 Trero web/scripts/gen_sitemap.py を Jitsuhiro 用にスラッグ変更したもの。"""
 import os
 
-BASE_URL = "https://freetokyo.github.io/web/jitsuhiro"
+BASE_URL = "https://freetokyolabs.com/jitsuhiro"
 WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = ["", "support.html", "privacy.html", "terms.html"]  # "" = index
 

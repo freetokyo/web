@@ -39,7 +39,7 @@ REGIONAL_VARIANTS = {
 
 def page_url(lang, page):
     """Return the canonical URL for a given lang/page combo."""
-    base = "https://freetokyo.github.io/web/trero"
+    base = "https://freetokyolabs.com/trero"
     slug = "" if page == "index.html" else page
     if lang == "ja":
         return f"{base}/{slug}"

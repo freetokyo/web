@@ -1,6 +1,6 @@
 {
   "_comment": [
-    "ブランド情報の唯一の真実源。web/ 配下の HTML / JSON / JS / TXT / PY は全部ここを参照する。",
+    "ブランド情報とサイト URL の唯一の真実源。web/ 配下の HTML / JSON / JS / TXT / PY / XML は全部ここを参照する。",
     "変更するときはこのファイルだけを直し、`python3 _brand/apply_brand.py --apply` を流す。",
     "旧い値は previous_* に積む（消さない）。積んである限り、取りこぼしがあっても次回の実行で回収できる。"
   ],
@@ -18,5 +18,24 @@
       "freetokyo2020@yahoo.co.jp",
       "chenyangli123@gmail.com"
     ]
-  }
+  },
+
+  "site": {
+    "_note": "CNAME で freetokyolabs.com を当てている。プロジェクトページ時代の /web プレフィックスは独自ドメインでは付かない。",
+    "url": "https://freetokyolabs.com",
+    "previous_urls": [
+      "https://freetokyo.github.io/web"
+    ]
+  },
+
+  "extra_replacements": [
+    {
+      "_why": "SNS シェアリンクは URL 全体がパーセントエンコードされている（https%3A%2F%2F…）ため、スキームを含まない形で別に置き換える",
+      "label": "サイトURL（パーセントエンコード）",
+      "to": "freetokyolabs.com",
+      "from": [
+        "freetokyo.github.io%2Fweb"
+      ]
+    }
+  ]
 }

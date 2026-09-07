@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://freetokyo.github.io/web/printmemo/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/" />
+    <loc>https://freetokyolabs.com/printmemo/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/printmemo/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/privacy.html" />
+    <loc>https://freetokyolabs.com/printmemo/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/printmemo/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/terms.html" />
+    <loc>https://freetokyolabs.com/printmemo/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/terms.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/printmemo/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/support.html" />
+    <loc>https://freetokyolabs.com/printmemo/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/support.html" />
   </url>
-  <url><loc>https://freetokyo.github.io/web/printmemo/llms.txt</loc></url>
+  <url><loc>https://freetokyolabs.com/printmemo/llms.txt</loc></url>
   <url>
-    <loc>https://freetokyo.github.io/web/printmemo/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/" />
-  </url>
-  <url>
-    <loc>https://freetokyo.github.io/web/printmemo/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/privacy.html" />
+    <loc>https://freetokyolabs.com/printmemo/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/printmemo/en/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/terms.html" />
+    <loc>https://freetokyolabs.com/printmemo/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/printmemo/en/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/printmemo/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/printmemo/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/printmemo/support.html" />
+    <loc>https://freetokyolabs.com/printmemo/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/printmemo/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/printmemo/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/printmemo/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/printmemo/support.html" />
   </url>
 </urlset>

@@ -2,7 +2,7 @@
 
 > 中古マンションの間取り図を取り込み、柱・梁を引いた「純・有効面積」と帖差を算出。家具配置で動線・クリアランスも検証でき、内見・住み替えの意思決定を図面の数字だけに頼らず確かめられる。完全オフライン・買い切り。
 
-Web: https://freetokyo.github.io/web/jitsuhiro/
+Web: https://freetokyolabs.com/jitsuhiro/
 App Store: https://apps.apple.com/app/id6779472712
 開発: freetokyo（個人開発）
 バージョン: 1.1 / 対応: iOS 18.0 以降
@@ -24,40 +24,40 @@ App Store: https://apps.apple.com/app/id6779472712
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/jitsuhiro/
-- サポート / FAQ: https://freetokyo.github.io/web/jitsuhiro/support.html
-- 利用規約: https://freetokyo.github.io/web/jitsuhiro/terms.html
-- プライバシー: https://freetokyo.github.io/web/jitsuhiro/privacy.html
-- ar: https://freetokyo.github.io/web/jitsuhiro/ar/
-- ca: https://freetokyo.github.io/web/jitsuhiro/ca/
-- cs: https://freetokyo.github.io/web/jitsuhiro/cs/
-- da: https://freetokyo.github.io/web/jitsuhiro/da/
-- de: https://freetokyo.github.io/web/jitsuhiro/de/
-- el: https://freetokyo.github.io/web/jitsuhiro/el/
-- en: https://freetokyo.github.io/web/jitsuhiro/en/
-- es: https://freetokyo.github.io/web/jitsuhiro/es/
-- fi: https://freetokyo.github.io/web/jitsuhiro/fi/
-- fr: https://freetokyo.github.io/web/jitsuhiro/fr/
-- he: https://freetokyo.github.io/web/jitsuhiro/he/
-- hi: https://freetokyo.github.io/web/jitsuhiro/hi/
-- hr: https://freetokyo.github.io/web/jitsuhiro/hr/
-- hu: https://freetokyo.github.io/web/jitsuhiro/hu/
-- id: https://freetokyo.github.io/web/jitsuhiro/id/
-- it: https://freetokyo.github.io/web/jitsuhiro/it/
-- ko: https://freetokyo.github.io/web/jitsuhiro/ko/
-- ms: https://freetokyo.github.io/web/jitsuhiro/ms/
-- nb: https://freetokyo.github.io/web/jitsuhiro/nb/
-- nl: https://freetokyo.github.io/web/jitsuhiro/nl/
-- pl: https://freetokyo.github.io/web/jitsuhiro/pl/
-- pt-BR: https://freetokyo.github.io/web/jitsuhiro/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/jitsuhiro/pt-PT/
-- ro: https://freetokyo.github.io/web/jitsuhiro/ro/
-- ru: https://freetokyo.github.io/web/jitsuhiro/ru/
-- sk: https://freetokyo.github.io/web/jitsuhiro/sk/
-- sv: https://freetokyo.github.io/web/jitsuhiro/sv/
-- th: https://freetokyo.github.io/web/jitsuhiro/th/
-- tr: https://freetokyo.github.io/web/jitsuhiro/tr/
-- uk: https://freetokyo.github.io/web/jitsuhiro/uk/
-- vi: https://freetokyo.github.io/web/jitsuhiro/vi/
-- zh-Hans: https://freetokyo.github.io/web/jitsuhiro/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/jitsuhiro/zh-Hant/
+- 紹介: https://freetokyolabs.com/jitsuhiro/
+- サポート / FAQ: https://freetokyolabs.com/jitsuhiro/support.html
+- 利用規約: https://freetokyolabs.com/jitsuhiro/terms.html
+- プライバシー: https://freetokyolabs.com/jitsuhiro/privacy.html
+- ar: https://freetokyolabs.com/jitsuhiro/ar/
+- ca: https://freetokyolabs.com/jitsuhiro/ca/
+- cs: https://freetokyolabs.com/jitsuhiro/cs/
+- da: https://freetokyolabs.com/jitsuhiro/da/
+- de: https://freetokyolabs.com/jitsuhiro/de/
+- el: https://freetokyolabs.com/jitsuhiro/el/
+- en: https://freetokyolabs.com/jitsuhiro/en/
+- es: https://freetokyolabs.com/jitsuhiro/es/
+- fi: https://freetokyolabs.com/jitsuhiro/fi/
+- fr: https://freetokyolabs.com/jitsuhiro/fr/
+- he: https://freetokyolabs.com/jitsuhiro/he/
+- hi: https://freetokyolabs.com/jitsuhiro/hi/
+- hr: https://freetokyolabs.com/jitsuhiro/hr/
+- hu: https://freetokyolabs.com/jitsuhiro/hu/
+- id: https://freetokyolabs.com/jitsuhiro/id/
+- it: https://freetokyolabs.com/jitsuhiro/it/
+- ko: https://freetokyolabs.com/jitsuhiro/ko/
+- ms: https://freetokyolabs.com/jitsuhiro/ms/
+- nb: https://freetokyolabs.com/jitsuhiro/nb/
+- nl: https://freetokyolabs.com/jitsuhiro/nl/
+- pl: https://freetokyolabs.com/jitsuhiro/pl/
+- pt-BR: https://freetokyolabs.com/jitsuhiro/pt-BR/
+- pt-PT: https://freetokyolabs.com/jitsuhiro/pt-PT/
+- ro: https://freetokyolabs.com/jitsuhiro/ro/
+- ru: https://freetokyolabs.com/jitsuhiro/ru/
+- sk: https://freetokyolabs.com/jitsuhiro/sk/
+- sv: https://freetokyolabs.com/jitsuhiro/sv/
+- th: https://freetokyolabs.com/jitsuhiro/th/
+- tr: https://freetokyolabs.com/jitsuhiro/tr/
+- uk: https://freetokyolabs.com/jitsuhiro/uk/
+- vi: https://freetokyolabs.com/jitsuhiro/vi/
+- zh-Hans: https://freetokyolabs.com/jitsuhiro/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/jitsuhiro/zh-Hant/

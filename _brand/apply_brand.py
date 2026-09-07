@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """_brand/brand.json を web/ 配下の全ファイルへ反映する。
 
-brand.json がブランド名と連絡先の唯一の真実源で、このスクリプトはそれを
+brand.json がブランド名・連絡先・サイト URL の唯一の真実源で、このスクリプトはそれを
 静的ファイルへ配る係。出力は静的 HTML のままなので、OGP クローラや検索
 エンジン（JS を実行しない）にもそのまま届く。
 
@@ -55,25 +55,41 @@ def load_rules() -> list[Rule]:
         sys.exit(f"brand.json が壊れている: {e}")
 
     rules: list[Rule] = []
+
+    def add(label: str, current: str, olds: list[str], where: str) -> None:
+        for old in olds:
+            if old.lower() == current.lower():
+                # 自己置換は無限に自分を書き換え続けるので設定ミスとして止める。
+                sys.exit(
+                    f"brand.json の {where} に現行値 '{current}' が入っている。"
+                    " previous_* / from には旧い値だけを入れる。"
+                )
+            rules.append(Rule(label, old, current))
+
+    # 名前付きセクション。current が空なら設定ミスとして止める。
     for section, current_key, previous_key, label in (
         ("brand", "name", "previous_names", "ブランド名"),
         ("contact", "email", "previous_emails", "連絡先"),
+        ("site", "url", "previous_urls", "サイトURL"),
     ):
         block = cfg.get(section, {})
         current = block.get(current_key)
         if not current:
             sys.exit(f"brand.json の {section}.{current_key} が空")
-        for old in block.get(previous_key, []):
-            if old.lower() == current.lower():
-                # 自己置換は無限に自分を書き換え続けるので設定ミスとして止める。
-                sys.exit(
-                    f"brand.json の {section}.{previous_key} に現行値 '{current}' が入っている。"
-                    " previous_* には旧い値だけを入れる。"
-                )
-            rules.append(Rule(label, old, current))
+        add(label, current, block.get(previous_key, []), f"{section}.{previous_key}")
+
+    # 名前付きセクションで表せない置き換え（パーセントエンコードされた URL など）。
+    for extra in cfg.get("extra_replacements", []):
+        to = extra.get("to")
+        if not to:
+            sys.exit("extra_replacements に to が無い項目がある")
+        add(extra.get("label", "その他"), to, extra.get("from", []), "extra_replacements.from")
 
     if not rules:
         sys.exit("置換ルールが 0 件。brand.json の previous_* が空。")
+
+    # 長い旧値から先に当てる。短い値が長い値の一部を食う事故を防ぐ。
+    rules.sort(key=lambda r: len(r.old), reverse=True)
     return rules
 
 

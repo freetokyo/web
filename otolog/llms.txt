@@ -2,7 +2,7 @@
 
 > ピアノ・音楽教室の個人講師向け生徒カルテアプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。
 
-Web: https://freetokyo.github.io/web/otolog/
+Web: https://freetokyolabs.com/otolog/
 App Store: https://apps.apple.com/app/id6791038062
 Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -11,8 +11,8 @@ Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/otolog/
-- サポート / FAQ: https://freetokyo.github.io/web/otolog/support.html
-- 利用規約: https://freetokyo.github.io/web/otolog/terms.html
-- プライバシー: https://freetokyo.github.io/web/otolog/privacy.html
-- en: https://freetokyo.github.io/web/otolog/en/
+- 紹介: https://freetokyolabs.com/otolog/
+- サポート / FAQ: https://freetokyolabs.com/otolog/support.html
+- 利用規約: https://freetokyolabs.com/otolog/terms.html
+- プライバシー: https://freetokyolabs.com/otolog/privacy.html
+- en: https://freetokyolabs.com/otolog/en/

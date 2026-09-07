@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://freetokyo.github.io/web/nailog/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/" />
+    <loc>https://freetokyolabs.com/nailog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/nailog/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/privacy.html" />
+    <loc>https://freetokyolabs.com/nailog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/nailog/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/terms.html" />
+    <loc>https://freetokyolabs.com/nailog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/terms.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/nailog/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/support.html" />
+    <loc>https://freetokyolabs.com/nailog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/support.html" />
   </url>
-  <url><loc>https://freetokyo.github.io/web/nailog/llms.txt</loc></url>
+  <url><loc>https://freetokyolabs.com/nailog/llms.txt</loc></url>
   <url>
-    <loc>https://freetokyo.github.io/web/nailog/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/" />
-  </url>
-  <url>
-    <loc>https://freetokyo.github.io/web/nailog/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/privacy.html" />
+    <loc>https://freetokyolabs.com/nailog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/nailog/en/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/terms.html" />
+    <loc>https://freetokyolabs.com/nailog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/nailog/en/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/nailog/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/nailog/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/nailog/support.html" />
+    <loc>https://freetokyolabs.com/nailog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/nailog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/nailog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/nailog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/nailog/support.html" />
   </url>
 </urlset>

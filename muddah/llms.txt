@@ -2,7 +2,7 @@
 
 > GCC 駐在家族のための完全オフライン書類期限ボルトアプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。
 
-Web: https://freetokyo.github.io/web/muddah/
+Web: https://freetokyolabs.com/muddah/
 App Store: https://apps.apple.com/app/id6790558814
 Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -12,8 +12,8 @@ Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/muddah/
-- サポート / FAQ: https://freetokyo.github.io/web/muddah/support.html
-- 利用規約: https://freetokyo.github.io/web/muddah/terms.html
-- プライバシー: https://freetokyo.github.io/web/muddah/privacy.html
-- ar: https://freetokyo.github.io/web/muddah/ar/
+- 紹介: https://freetokyolabs.com/muddah/
+- サポート / FAQ: https://freetokyolabs.com/muddah/support.html
+- 利用規約: https://freetokyolabs.com/muddah/terms.html
+- プライバシー: https://freetokyolabs.com/muddah/privacy.html
+- ar: https://freetokyolabs.com/muddah/ar/

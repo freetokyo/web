@@ -2,7 +2,7 @@
 
 > ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
 
-Web: https://freetokyo.github.io/web/qamari/
+Web: https://freetokyolabs.com/qamari/
 App Store: https://apps.apple.com/app/id6791838601
 Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -51,9 +51,9 @@ Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/qamari/
-- サポート / FAQ: https://freetokyo.github.io/web/qamari/support.html
-- 利用規約: https://freetokyo.github.io/web/qamari/terms.html
-- プライバシー: https://freetokyo.github.io/web/qamari/privacy.html
-- ar: https://freetokyo.github.io/web/qamari/ar/
-- en: https://freetokyo.github.io/web/qamari/en/
+- 紹介: https://freetokyolabs.com/qamari/
+- サポート / FAQ: https://freetokyolabs.com/qamari/support.html
+- 利用規約: https://freetokyolabs.com/qamari/terms.html
+- プライバシー: https://freetokyolabs.com/qamari/privacy.html
+- ar: https://freetokyolabs.com/qamari/ar/
+- en: https://freetokyolabs.com/qamari/en/

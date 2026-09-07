@@ -2,7 +2,7 @@
 
 > 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。
 
-Web: https://freetokyo.github.io/web/zaicho/
+Web: https://freetokyolabs.com/zaicho/
 App Store: https://apps.apple.com/app/id6788175241
 開発: freetokyo（個人開発）
 バージョン: 1.1 / 対応: iOS 18.0 以降
@@ -36,8 +36,8 @@ App Store: https://apps.apple.com/app/id6788175241
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/zaicho/
-- サポート / FAQ: https://freetokyo.github.io/web/zaicho/support.html
-- 利用規約: https://freetokyo.github.io/web/zaicho/terms.html
-- プライバシー: https://freetokyo.github.io/web/zaicho/privacy.html
-- en: https://freetokyo.github.io/web/zaicho/en/
+- 紹介: https://freetokyolabs.com/zaicho/
+- サポート / FAQ: https://freetokyolabs.com/zaicho/support.html
+- 利用規約: https://freetokyolabs.com/zaicho/terms.html
+- プライバシー: https://freetokyolabs.com/zaicho/privacy.html
+- en: https://freetokyolabs.com/zaicho/en/

@@ -2,7 +2,7 @@
 
 > ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
 
-Web: https://freetokyo.github.io/web/jamalog/
+Web: https://freetokyolabs.com/jamalog/
 App Store: https://apps.apple.com/app/id6788732648
 開発: freetokyo（個人開発）
 バージョン: 1.2 / 対応: iOS 17.0 以降
@@ -11,9 +11,9 @@ App Store: https://apps.apple.com/app/id6788732648
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/jamalog/
-- サポート / FAQ: https://freetokyo.github.io/web/jamalog/support.html
-- 利用規約: https://freetokyo.github.io/web/jamalog/terms.html
-- プライバシー: https://freetokyo.github.io/web/jamalog/privacy.html
-- ar: https://freetokyo.github.io/web/jamalog/ar/
-- ja: https://freetokyo.github.io/web/jamalog/ja/
+- 紹介: https://freetokyolabs.com/jamalog/
+- サポート / FAQ: https://freetokyolabs.com/jamalog/support.html
+- 利用規約: https://freetokyolabs.com/jamalog/terms.html
+- プライバシー: https://freetokyolabs.com/jamalog/privacy.html
+- ar: https://freetokyolabs.com/jamalog/ar/
+- ja: https://freetokyolabs.com/jamalog/ja/

@@ -1,7 +1,13 @@
 # _brand — ブランド情報の一元管理
 
-`brand.json` が **ブランド名と連絡先の唯一の真実源**。web/ 配下の 2,900 本超の
-HTML / JSON / JS / TXT / PY は全部ここから配られた値を持っている。
+`brand.json` が **ブランド名・連絡先・サイト URL の唯一の真実源**。web/ 配下の
+3,000 本超の HTML / JSON / JS / TXT / PY / XML は全部ここから配られた値を持っている。
+
+| 項目 | 現行値 |
+|---|---|
+| ブランド名 | `Freetokyo Labs` |
+| 連絡先 | `support@freetokyolabs.com` |
+| サイト URL | `https://freetokyolabs.com`（CNAME で当てた独自ドメイン） |
 
 ## 変えたいとき
 
@@ -11,6 +17,9 @@ HTML / JSON / JS / TXT / PY は全部ここから配られた値を持ってい�
 ```bash
 python3 _brand/apply_brand.py --apply
 ```
+
+`site.url` は canonical / og:url / hreflang / JSON-LD / sitemap の `<loc>` を貫いて
+いるので（21万箇所超）、ドメインを変えるときも直すのはこの 1 行だけでいい。
 
 例：連絡先を変える場合
 
@@ -43,6 +52,14 @@ python3 _brand/apply_brand.py --apply
 カードと検索結果に旧名や空白が出る。各 HTML は共通 JS を読み込まない完全自己完結の
 構造でもあるため、出力は静的 HTML のままにして、真実源からの反映をビルド時（=この
 スクリプト）に寄せている。
+
+## 名前付きセクションで表せないもの
+
+`extra_replacements` に置く。いまは SNS シェアリンクが該当する。シェア URL は
+`https%3A%2F%2F…` とパーセントエンコードされていて `site.url`（スキーム付き）では
+当たらないため、スキーム抜きの形を別ルールにしてある。
+
+ルールは**旧値の長い順**に適用される。短い値が長い値の一部を食う事故を防ぐため。
 
 ## 触らない場所
 

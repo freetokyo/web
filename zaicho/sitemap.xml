@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://freetokyo.github.io/web/zaicho/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/" />
+    <loc>https://freetokyolabs.com/zaicho/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/zaicho/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/privacy.html" />
+    <loc>https://freetokyolabs.com/zaicho/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/zaicho/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/terms.html" />
+    <loc>https://freetokyolabs.com/zaicho/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/terms.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/zaicho/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/support.html" />
+    <loc>https://freetokyolabs.com/zaicho/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/support.html" />
   </url>
-  <url><loc>https://freetokyo.github.io/web/zaicho/llms.txt</loc></url>
+  <url><loc>https://freetokyolabs.com/zaicho/llms.txt</loc></url>
   <url>
-    <loc>https://freetokyo.github.io/web/zaicho/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/" />
-  </url>
-  <url>
-    <loc>https://freetokyo.github.io/web/zaicho/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/privacy.html" />
+    <loc>https://freetokyolabs.com/zaicho/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/zaicho/en/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/terms.html" />
+    <loc>https://freetokyolabs.com/zaicho/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/zaicho/en/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/zaicho/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/zaicho/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/zaicho/support.html" />
+    <loc>https://freetokyolabs.com/zaicho/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/zaicho/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/zaicho/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/zaicho/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/zaicho/support.html" />
   </url>
 </urlset>

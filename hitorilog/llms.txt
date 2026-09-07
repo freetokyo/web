@@ -2,7 +2,7 @@
 
 > ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
 
-Web: https://freetokyo.github.io/web/hitorilog/
+Web: https://freetokyolabs.com/hitorilog/
 App Store: https://apps.apple.com/app/id6785472192
 開発: freetokyo（個人開発）
 バージョン: 1.0.1 / 対応: iOS 18.0 以降
@@ -17,40 +17,40 @@ App Store: https://apps.apple.com/app/id6785472192
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/hitorilog/
-- サポート / FAQ: https://freetokyo.github.io/web/hitorilog/support.html
-- 利用規約: https://freetokyo.github.io/web/hitorilog/terms.html
-- プライバシー: https://freetokyo.github.io/web/hitorilog/privacy.html
-- ar: https://freetokyo.github.io/web/hitorilog/ar/
-- ca: https://freetokyo.github.io/web/hitorilog/ca/
-- cs: https://freetokyo.github.io/web/hitorilog/cs/
-- da: https://freetokyo.github.io/web/hitorilog/da/
-- de: https://freetokyo.github.io/web/hitorilog/de/
-- el: https://freetokyo.github.io/web/hitorilog/el/
-- en: https://freetokyo.github.io/web/hitorilog/en/
-- es: https://freetokyo.github.io/web/hitorilog/es/
-- fi: https://freetokyo.github.io/web/hitorilog/fi/
-- fr: https://freetokyo.github.io/web/hitorilog/fr/
-- he: https://freetokyo.github.io/web/hitorilog/he/
-- hi: https://freetokyo.github.io/web/hitorilog/hi/
-- hr: https://freetokyo.github.io/web/hitorilog/hr/
-- hu: https://freetokyo.github.io/web/hitorilog/hu/
-- id: https://freetokyo.github.io/web/hitorilog/id/
-- it: https://freetokyo.github.io/web/hitorilog/it/
-- ko: https://freetokyo.github.io/web/hitorilog/ko/
-- ms: https://freetokyo.github.io/web/hitorilog/ms/
-- nb: https://freetokyo.github.io/web/hitorilog/nb/
-- nl: https://freetokyo.github.io/web/hitorilog/nl/
-- pl: https://freetokyo.github.io/web/hitorilog/pl/
-- pt-BR: https://freetokyo.github.io/web/hitorilog/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/hitorilog/pt-PT/
-- ro: https://freetokyo.github.io/web/hitorilog/ro/
-- ru: https://freetokyo.github.io/web/hitorilog/ru/
-- sk: https://freetokyo.github.io/web/hitorilog/sk/
-- sv: https://freetokyo.github.io/web/hitorilog/sv/
-- th: https://freetokyo.github.io/web/hitorilog/th/
-- tr: https://freetokyo.github.io/web/hitorilog/tr/
-- uk: https://freetokyo.github.io/web/hitorilog/uk/
-- vi: https://freetokyo.github.io/web/hitorilog/vi/
-- zh-Hans: https://freetokyo.github.io/web/hitorilog/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/hitorilog/zh-Hant/
+- 紹介: https://freetokyolabs.com/hitorilog/
+- サポート / FAQ: https://freetokyolabs.com/hitorilog/support.html
+- 利用規約: https://freetokyolabs.com/hitorilog/terms.html
+- プライバシー: https://freetokyolabs.com/hitorilog/privacy.html
+- ar: https://freetokyolabs.com/hitorilog/ar/
+- ca: https://freetokyolabs.com/hitorilog/ca/
+- cs: https://freetokyolabs.com/hitorilog/cs/
+- da: https://freetokyolabs.com/hitorilog/da/
+- de: https://freetokyolabs.com/hitorilog/de/
+- el: https://freetokyolabs.com/hitorilog/el/
+- en: https://freetokyolabs.com/hitorilog/en/
+- es: https://freetokyolabs.com/hitorilog/es/
+- fi: https://freetokyolabs.com/hitorilog/fi/
+- fr: https://freetokyolabs.com/hitorilog/fr/
+- he: https://freetokyolabs.com/hitorilog/he/
+- hi: https://freetokyolabs.com/hitorilog/hi/
+- hr: https://freetokyolabs.com/hitorilog/hr/
+- hu: https://freetokyolabs.com/hitorilog/hu/
+- id: https://freetokyolabs.com/hitorilog/id/
+- it: https://freetokyolabs.com/hitorilog/it/
+- ko: https://freetokyolabs.com/hitorilog/ko/
+- ms: https://freetokyolabs.com/hitorilog/ms/
+- nb: https://freetokyolabs.com/hitorilog/nb/
+- nl: https://freetokyolabs.com/hitorilog/nl/
+- pl: https://freetokyolabs.com/hitorilog/pl/
+- pt-BR: https://freetokyolabs.com/hitorilog/pt-BR/
+- pt-PT: https://freetokyolabs.com/hitorilog/pt-PT/
+- ro: https://freetokyolabs.com/hitorilog/ro/
+- ru: https://freetokyolabs.com/hitorilog/ru/
+- sk: https://freetokyolabs.com/hitorilog/sk/
+- sv: https://freetokyolabs.com/hitorilog/sv/
+- th: https://freetokyolabs.com/hitorilog/th/
+- tr: https://freetokyolabs.com/hitorilog/tr/
+- uk: https://freetokyolabs.com/hitorilog/uk/
+- vi: https://freetokyolabs.com/hitorilog/vi/
+- zh-Hans: https://freetokyolabs.com/hitorilog/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/hitorilog/zh-Hant/

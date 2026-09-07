@@ -2,7 +2,7 @@
 
 > 天気と生活習慣の重なりから「明日の肌」を見通す iOS / watchOS アプリ。突っ張り・ベタつき・ゆらぎの 3 問を 15 秒タップするだけで、湿度・気温・UV・風と睡眠などの生活習慣との関係を可視化する。使ったコスメを記録すれば、使った日と使わなかった日で指数の平均がどう違ったかも見比べられる。肌を撮影する必要はない。診断・医療目的ではない。アカウント不要・買い切り。
 
-Web: https://freetokyo.github.io/web/hadalog/
+Web: https://freetokyolabs.com/hadalog/
 App Store: https://apps.apple.com/app/id6793892712
 Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -35,11 +35,11 @@ Health data is read only and is never written, used for advertising, or shared. 
 service contacted is Apple's WeatherKit, for weather data.
 
 ## Pages
-- Home (ja): https://freetokyo.github.io/web/hadalog/
-- Home (en): https://freetokyo.github.io/web/hadalog/en/
-- Support: https://freetokyo.github.io/web/hadalog/en/support.html
-- Terms: https://freetokyo.github.io/web/hadalog/en/terms.html
-- Privacy: https://freetokyo.github.io/web/hadalog/en/privacy.html
+- Home (ja): https://freetokyolabs.com/hadalog/
+- Home (en): https://freetokyolabs.com/hadalog/en/
+- Support: https://freetokyolabs.com/hadalog/en/support.html
+- Terms: https://freetokyolabs.com/hadalog/en/terms.html
+- Privacy: https://freetokyolabs.com/hadalog/en/privacy.html
 
 ## 日本語概要
 「なぜ今日は調子が違うのか」を、天気と生活の重なりとして見えるようにするアプリです。カメラで肌を撮る必要はありません。
@@ -47,8 +47,8 @@ service contacted is Apple's WeatherKit, for weather data.
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/hadalog/
-- サポート / FAQ: https://freetokyo.github.io/web/hadalog/support.html
-- 利用規約: https://freetokyo.github.io/web/hadalog/terms.html
-- プライバシー: https://freetokyo.github.io/web/hadalog/privacy.html
-- en: https://freetokyo.github.io/web/hadalog/en/
+- 紹介: https://freetokyolabs.com/hadalog/
+- サポート / FAQ: https://freetokyolabs.com/hadalog/support.html
+- 利用規約: https://freetokyolabs.com/hadalog/terms.html
+- プライバシー: https://freetokyolabs.com/hadalog/privacy.html
+- en: https://freetokyolabs.com/hadalog/en/

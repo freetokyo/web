@@ -2,7 +2,7 @@
 
 > 個人事業主・フリーランス向けの経費レシート整理 iOS アプリ。レシート撮影と電子取引データ取り込みから端末内 OCR で日付・金額・取引先を抽出し、月次集計と CSV / PDF 書き出し。電子帳簿保存法への対応を支援。完全オフライン・買い切り。
 
-Web: https://freetokyo.github.io/web/keihiba/
+Web: https://freetokyolabs.com/keihiba/
 App Store: https://apps.apple.com/app/id6779895529
 開発: freetokyo（個人開発）
 バージョン: 1.1.0 / 対応: iOS 18.0 以降
@@ -24,40 +24,40 @@ App Store: https://apps.apple.com/app/id6779895529
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/keihiba/
-- サポート / FAQ: https://freetokyo.github.io/web/keihiba/support.html
-- 利用規約: https://freetokyo.github.io/web/keihiba/terms.html
-- プライバシー: https://freetokyo.github.io/web/keihiba/privacy.html
-- ar: https://freetokyo.github.io/web/keihiba/ar/
-- ca: https://freetokyo.github.io/web/keihiba/ca/
-- cs: https://freetokyo.github.io/web/keihiba/cs/
-- da: https://freetokyo.github.io/web/keihiba/da/
-- de: https://freetokyo.github.io/web/keihiba/de/
-- el: https://freetokyo.github.io/web/keihiba/el/
-- en: https://freetokyo.github.io/web/keihiba/en/
-- es: https://freetokyo.github.io/web/keihiba/es/
-- fi: https://freetokyo.github.io/web/keihiba/fi/
-- fr: https://freetokyo.github.io/web/keihiba/fr/
-- he: https://freetokyo.github.io/web/keihiba/he/
-- hi: https://freetokyo.github.io/web/keihiba/hi/
-- hr: https://freetokyo.github.io/web/keihiba/hr/
-- hu: https://freetokyo.github.io/web/keihiba/hu/
-- id: https://freetokyo.github.io/web/keihiba/id/
-- it: https://freetokyo.github.io/web/keihiba/it/
-- ko: https://freetokyo.github.io/web/keihiba/ko/
-- ms: https://freetokyo.github.io/web/keihiba/ms/
-- nb: https://freetokyo.github.io/web/keihiba/nb/
-- nl: https://freetokyo.github.io/web/keihiba/nl/
-- pl: https://freetokyo.github.io/web/keihiba/pl/
-- pt-BR: https://freetokyo.github.io/web/keihiba/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/keihiba/pt-PT/
-- ro: https://freetokyo.github.io/web/keihiba/ro/
-- ru: https://freetokyo.github.io/web/keihiba/ru/
-- sk: https://freetokyo.github.io/web/keihiba/sk/
-- sv: https://freetokyo.github.io/web/keihiba/sv/
-- th: https://freetokyo.github.io/web/keihiba/th/
-- tr: https://freetokyo.github.io/web/keihiba/tr/
-- uk: https://freetokyo.github.io/web/keihiba/uk/
-- vi: https://freetokyo.github.io/web/keihiba/vi/
-- zh-Hans: https://freetokyo.github.io/web/keihiba/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/keihiba/zh-Hant/
+- 紹介: https://freetokyolabs.com/keihiba/
+- サポート / FAQ: https://freetokyolabs.com/keihiba/support.html
+- 利用規約: https://freetokyolabs.com/keihiba/terms.html
+- プライバシー: https://freetokyolabs.com/keihiba/privacy.html
+- ar: https://freetokyolabs.com/keihiba/ar/
+- ca: https://freetokyolabs.com/keihiba/ca/
+- cs: https://freetokyolabs.com/keihiba/cs/
+- da: https://freetokyolabs.com/keihiba/da/
+- de: https://freetokyolabs.com/keihiba/de/
+- el: https://freetokyolabs.com/keihiba/el/
+- en: https://freetokyolabs.com/keihiba/en/
+- es: https://freetokyolabs.com/keihiba/es/
+- fi: https://freetokyolabs.com/keihiba/fi/
+- fr: https://freetokyolabs.com/keihiba/fr/
+- he: https://freetokyolabs.com/keihiba/he/
+- hi: https://freetokyolabs.com/keihiba/hi/
+- hr: https://freetokyolabs.com/keihiba/hr/
+- hu: https://freetokyolabs.com/keihiba/hu/
+- id: https://freetokyolabs.com/keihiba/id/
+- it: https://freetokyolabs.com/keihiba/it/
+- ko: https://freetokyolabs.com/keihiba/ko/
+- ms: https://freetokyolabs.com/keihiba/ms/
+- nb: https://freetokyolabs.com/keihiba/nb/
+- nl: https://freetokyolabs.com/keihiba/nl/
+- pl: https://freetokyolabs.com/keihiba/pl/
+- pt-BR: https://freetokyolabs.com/keihiba/pt-BR/
+- pt-PT: https://freetokyolabs.com/keihiba/pt-PT/
+- ro: https://freetokyolabs.com/keihiba/ro/
+- ru: https://freetokyolabs.com/keihiba/ru/
+- sk: https://freetokyolabs.com/keihiba/sk/
+- sv: https://freetokyolabs.com/keihiba/sv/
+- th: https://freetokyolabs.com/keihiba/th/
+- tr: https://freetokyolabs.com/keihiba/tr/
+- uk: https://freetokyolabs.com/keihiba/uk/
+- vi: https://freetokyolabs.com/keihiba/vi/
+- zh-Hans: https://freetokyolabs.com/keihiba/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/keihiba/zh-Hant/

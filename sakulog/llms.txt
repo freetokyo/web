@@ -2,7 +2,7 @@
 
 > こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。
 
-Web: https://freetokyo.github.io/web/sakulog/
+Web: https://freetokyolabs.com/sakulog/
 App Store: https://apps.apple.com/app/id6791827004
 開発: freetokyo（個人開発）
 バージョン: 1.1 / 対応: iOS 26.0 以降
@@ -10,8 +10,8 @@ App Store: https://apps.apple.com/app/id6791827004
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/sakulog/
-- サポート / FAQ: https://freetokyo.github.io/web/sakulog/support.html
-- 利用規約: https://freetokyo.github.io/web/sakulog/terms.html
-- プライバシー: https://freetokyo.github.io/web/sakulog/privacy.html
-- en: https://freetokyo.github.io/web/sakulog/en/
+- 紹介: https://freetokyolabs.com/sakulog/
+- サポート / FAQ: https://freetokyolabs.com/sakulog/support.html
+- 利用規約: https://freetokyolabs.com/sakulog/terms.html
+- プライバシー: https://freetokyolabs.com/sakulog/privacy.html
+- en: https://freetokyolabs.com/sakulog/en/

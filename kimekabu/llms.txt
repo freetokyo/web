@@ -2,7 +2,7 @@
 
 > 株の「売買判断」を記録し、決済時に自分の計画と照合するトレードノート iOS アプリ。損益ではなく「判断の質」を振り返り、売買ルールの再現性を高める。投資助言ではなく自分の記録・振り返り用。口座連携なし・完全オフライン・買い切り。日本語 / English 対応。
 
-Web: https://freetokyo.github.io/web/kimekabu/
+Web: https://freetokyolabs.com/kimekabu/
 App Store: https://apps.apple.com/app/id6789459452
 開発: freetokyo（個人開発）
 バージョン: 1.2 / 対応: iOS 26.0 以降
@@ -11,8 +11,8 @@ App Store: https://apps.apple.com/app/id6789459452
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/kimekabu/
-- サポート / FAQ: https://freetokyo.github.io/web/kimekabu/support.html
-- 利用規約: https://freetokyo.github.io/web/kimekabu/terms.html
-- プライバシー: https://freetokyo.github.io/web/kimekabu/privacy.html
-- en: https://freetokyo.github.io/web/kimekabu/en/
+- 紹介: https://freetokyolabs.com/kimekabu/
+- サポート / FAQ: https://freetokyolabs.com/kimekabu/support.html
+- 利用規約: https://freetokyolabs.com/kimekabu/terms.html
+- プライバシー: https://freetokyolabs.com/kimekabu/privacy.html
+- en: https://freetokyolabs.com/kimekabu/en/

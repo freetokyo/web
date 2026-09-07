@@ -2,7 +2,7 @@
 
 > 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間・休日の割増自動計算、月次 PDF レポート出力。
 
-Web: https://freetokyo.github.io/web/carehours/
+Web: https://freetokyolabs.com/carehours/
 App Store: https://apps.apple.com/app/id6769304063
 開発: freetokyo（個人開発）
 バージョン: 1.4 / 対応: iOS 17.0 以降
@@ -24,40 +24,40 @@ App Store: https://apps.apple.com/app/id6769304063
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/carehours/
-- サポート / FAQ: https://freetokyo.github.io/web/carehours/support.html
-- 利用規約: https://freetokyo.github.io/web/carehours/terms.html
-- プライバシー: https://freetokyo.github.io/web/carehours/privacy.html
-- ar: https://freetokyo.github.io/web/carehours/ar/
-- ca: https://freetokyo.github.io/web/carehours/ca/
-- cs: https://freetokyo.github.io/web/carehours/cs/
-- da: https://freetokyo.github.io/web/carehours/da/
-- de: https://freetokyo.github.io/web/carehours/de/
-- el: https://freetokyo.github.io/web/carehours/el/
-- en: https://freetokyo.github.io/web/carehours/en/
-- es: https://freetokyo.github.io/web/carehours/es/
-- fi: https://freetokyo.github.io/web/carehours/fi/
-- fr: https://freetokyo.github.io/web/carehours/fr/
-- he: https://freetokyo.github.io/web/carehours/he/
-- hi: https://freetokyo.github.io/web/carehours/hi/
-- hr: https://freetokyo.github.io/web/carehours/hr/
-- hu: https://freetokyo.github.io/web/carehours/hu/
-- id: https://freetokyo.github.io/web/carehours/id/
-- it: https://freetokyo.github.io/web/carehours/it/
-- ko: https://freetokyo.github.io/web/carehours/ko/
-- ms: https://freetokyo.github.io/web/carehours/ms/
-- nb: https://freetokyo.github.io/web/carehours/nb/
-- nl: https://freetokyo.github.io/web/carehours/nl/
-- pl: https://freetokyo.github.io/web/carehours/pl/
-- pt-BR: https://freetokyo.github.io/web/carehours/pt-BR/
-- pt-PT: https://freetokyo.github.io/web/carehours/pt-PT/
-- ro: https://freetokyo.github.io/web/carehours/ro/
-- ru: https://freetokyo.github.io/web/carehours/ru/
-- sk: https://freetokyo.github.io/web/carehours/sk/
-- sv: https://freetokyo.github.io/web/carehours/sv/
-- th: https://freetokyo.github.io/web/carehours/th/
-- tr: https://freetokyo.github.io/web/carehours/tr/
-- uk: https://freetokyo.github.io/web/carehours/uk/
-- vi: https://freetokyo.github.io/web/carehours/vi/
-- zh-Hans: https://freetokyo.github.io/web/carehours/zh-Hans/
-- zh-Hant: https://freetokyo.github.io/web/carehours/zh-Hant/
+- 紹介: https://freetokyolabs.com/carehours/
+- サポート / FAQ: https://freetokyolabs.com/carehours/support.html
+- 利用規約: https://freetokyolabs.com/carehours/terms.html
+- プライバシー: https://freetokyolabs.com/carehours/privacy.html
+- ar: https://freetokyolabs.com/carehours/ar/
+- ca: https://freetokyolabs.com/carehours/ca/
+- cs: https://freetokyolabs.com/carehours/cs/
+- da: https://freetokyolabs.com/carehours/da/
+- de: https://freetokyolabs.com/carehours/de/
+- el: https://freetokyolabs.com/carehours/el/
+- en: https://freetokyolabs.com/carehours/en/
+- es: https://freetokyolabs.com/carehours/es/
+- fi: https://freetokyolabs.com/carehours/fi/
+- fr: https://freetokyolabs.com/carehours/fr/
+- he: https://freetokyolabs.com/carehours/he/
+- hi: https://freetokyolabs.com/carehours/hi/
+- hr: https://freetokyolabs.com/carehours/hr/
+- hu: https://freetokyolabs.com/carehours/hu/
+- id: https://freetokyolabs.com/carehours/id/
+- it: https://freetokyolabs.com/carehours/it/
+- ko: https://freetokyolabs.com/carehours/ko/
+- ms: https://freetokyolabs.com/carehours/ms/
+- nb: https://freetokyolabs.com/carehours/nb/
+- nl: https://freetokyolabs.com/carehours/nl/
+- pl: https://freetokyolabs.com/carehours/pl/
+- pt-BR: https://freetokyolabs.com/carehours/pt-BR/
+- pt-PT: https://freetokyolabs.com/carehours/pt-PT/
+- ro: https://freetokyolabs.com/carehours/ro/
+- ru: https://freetokyolabs.com/carehours/ru/
+- sk: https://freetokyolabs.com/carehours/sk/
+- sv: https://freetokyolabs.com/carehours/sv/
+- th: https://freetokyolabs.com/carehours/th/
+- tr: https://freetokyolabs.com/carehours/tr/
+- uk: https://freetokyolabs.com/carehours/uk/
+- vi: https://freetokyolabs.com/carehours/vi/
+- zh-Hans: https://freetokyolabs.com/carehours/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/carehours/zh-Hant/

@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://freetokyo.github.io/web/saqrlog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/saqrlog/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/saqrlog/" />
+    <loc>https://freetokyolabs.com/saqrlog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/saqrlog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/saqrlog/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/saqrlog/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/saqrlog/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/saqrlog/privacy.html" />
+    <loc>https://freetokyolabs.com/saqrlog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/saqrlog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/saqrlog/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/saqrlog/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/saqrlog/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/saqrlog/terms.html" />
+    <loc>https://freetokyolabs.com/saqrlog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/saqrlog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/saqrlog/terms.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/saqrlog/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/saqrlog/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/saqrlog/support.html" />
+    <loc>https://freetokyolabs.com/saqrlog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/saqrlog/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/saqrlog/support.html" />
   </url>
-  <url><loc>https://freetokyo.github.io/web/saqrlog/llms.txt</loc></url>
+  <url><loc>https://freetokyolabs.com/saqrlog/llms.txt</loc></url>
 </urlset>

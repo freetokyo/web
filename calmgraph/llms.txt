@@ -2,7 +2,7 @@
 
 > ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。
 
-Web: https://freetokyo.github.io/web/calmgraph/
+Web: https://freetokyolabs.com/calmgraph/
 App Store: https://apps.apple.com/app/id6790698772
 Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -11,8 +11,8 @@ Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/calmgraph/
-- サポート / FAQ: https://freetokyo.github.io/web/calmgraph/support.html
-- 利用規約: https://freetokyo.github.io/web/calmgraph/terms.html
-- プライバシー: https://freetokyo.github.io/web/calmgraph/privacy.html
-- en: https://freetokyo.github.io/web/calmgraph/en/
+- 紹介: https://freetokyolabs.com/calmgraph/
+- サポート / FAQ: https://freetokyolabs.com/calmgraph/support.html
+- 利用規約: https://freetokyolabs.com/calmgraph/terms.html
+- プライバシー: https://freetokyolabs.com/calmgraph/privacy.html
+- en: https://freetokyolabs.com/calmgraph/en/

@@ -2,7 +2,7 @@
 
 > 礼拝と礼拝のあいだの「実際に使える作業時間」を可視化し、会議とタスクをその枠に収める iOS アプリ。礼拝前後のバッファを差し引いた作業ウィンドウを毎日生成し、長時間タスクは礼拝で分割する。礼拝時刻は端末内の天文計算による推定値（地元モスクの告知が基準）。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
 
-Web: https://freetokyo.github.io/web/waqtain/
+Web: https://freetokyolabs.com/waqtain/
 App Store: https://apps.apple.com/app/id6799283353
 開発: freetokyo（個人開発）
 バージョン: 1.1 / 対応: iOS 18.0 以降
@@ -11,9 +11,9 @@ App Store: https://apps.apple.com/app/id6799283353
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/waqtain/
-- サポート / FAQ: https://freetokyo.github.io/web/waqtain/support.html
-- 利用規約: https://freetokyo.github.io/web/waqtain/terms.html
-- プライバシー: https://freetokyo.github.io/web/waqtain/privacy.html
-- ar: https://freetokyo.github.io/web/waqtain/ar/
-- en: https://freetokyo.github.io/web/waqtain/en/
+- 紹介: https://freetokyolabs.com/waqtain/
+- サポート / FAQ: https://freetokyolabs.com/waqtain/support.html
+- 利用規約: https://freetokyolabs.com/waqtain/terms.html
+- プライバシー: https://freetokyolabs.com/waqtain/privacy.html
+- ar: https://freetokyolabs.com/waqtain/ar/
+- en: https://freetokyolabs.com/waqtain/en/

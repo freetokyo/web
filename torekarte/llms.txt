@@ -2,7 +2,7 @@
 
 > パーソナルトレーナー向けの顧客カルテアプリ。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。
 
-Web: https://freetokyo.github.io/web/torekarte/
+Web: https://freetokyolabs.com/torekarte/
 App Store: https://apps.apple.com/app/id6791176557
 Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -11,8 +11,8 @@ Android 版: 準備中 / in preparation（Android 8.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/torekarte/
-- サポート / FAQ: https://freetokyo.github.io/web/torekarte/support.html
-- 利用規約: https://freetokyo.github.io/web/torekarte/terms.html
-- プライバシー: https://freetokyo.github.io/web/torekarte/privacy.html
-- en: https://freetokyo.github.io/web/torekarte/en/
+- 紹介: https://freetokyolabs.com/torekarte/
+- サポート / FAQ: https://freetokyolabs.com/torekarte/support.html
+- 利用規約: https://freetokyolabs.com/torekarte/terms.html
+- プライバシー: https://freetokyolabs.com/torekarte/privacy.html
+- en: https://freetokyolabs.com/torekarte/en/

@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://freetokyo.github.io/web/khaylog/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/" />
+    <loc>https://freetokyolabs.com/khaylog/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/khaylog/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/privacy.html" />
+    <loc>https://freetokyolabs.com/khaylog/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/khaylog/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/terms.html" />
+    <loc>https://freetokyolabs.com/khaylog/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/terms.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/khaylog/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/support.html" />
+    <loc>https://freetokyolabs.com/khaylog/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/support.html" />
   </url>
-  <url><loc>https://freetokyo.github.io/web/khaylog/llms.txt</loc></url>
+  <url><loc>https://freetokyolabs.com/khaylog/llms.txt</loc></url>
   <url>
-    <loc>https://freetokyo.github.io/web/khaylog/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/" />
-  </url>
-  <url>
-    <loc>https://freetokyo.github.io/web/khaylog/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/privacy.html" />
+    <loc>https://freetokyolabs.com/khaylog/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/khaylog/en/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/terms.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/terms.html" />
+    <loc>https://freetokyolabs.com/khaylog/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/privacy.html" />
   </url>
   <url>
-    <loc>https://freetokyo.github.io/web/khaylog/en/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyo.github.io/web/khaylog/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyo.github.io/web/khaylog/en/support.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyo.github.io/web/khaylog/support.html" />
+    <loc>https://freetokyolabs.com/khaylog/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/khaylog/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/support.html" />
   </url>
 </urlset>

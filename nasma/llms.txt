@@ -2,7 +2,7 @@
 
 > 紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録するアプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
 
-Web: https://freetokyo.github.io/web/nasma/
+Web: https://freetokyolabs.com/nasma/
 App Store: https://apps.apple.com/app/id6797344961
 Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: freetokyo（個人開発）
@@ -11,9 +11,9 @@ Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で�
 
 ## ページ
 
-- 紹介: https://freetokyo.github.io/web/nasma/
-- サポート / FAQ: https://freetokyo.github.io/web/nasma/support.html
-- 利用規約: https://freetokyo.github.io/web/nasma/terms.html
-- プライバシー: https://freetokyo.github.io/web/nasma/privacy.html
-- ar: https://freetokyo.github.io/web/nasma/ar/
-- en: https://freetokyo.github.io/web/nasma/en/
+- 紹介: https://freetokyolabs.com/nasma/
+- サポート / FAQ: https://freetokyolabs.com/nasma/support.html
+- 利用規約: https://freetokyolabs.com/nasma/terms.html
+- プライバシー: https://freetokyolabs.com/nasma/privacy.html
+- ar: https://freetokyolabs.com/nasma/ar/
+- en: https://freetokyolabs.com/nasma/en/
