@@ -586,7 +586,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
     <div class="section">
       <h2 data-i18n="privacy.android.title">Health Connect (Android)</h2>
-      <p data-i18n="privacy.android.read">With your permission, RecoverySync reads the following data from Health Connect on your device: heart rate variability (SDNN), resting heart rate and sleep. All access is read-only — RecoverySync never writes anything back.</p>
+      <p data-i18n="privacy.android.read">With your permission, RecoverySync reads the following data from Health Connect on your device: heart rate variability (RMSSD), heart rate, resting heart rate and sleep. All access is read-only — RecoverySync never writes anything back.</p>
       <p data-i18n="privacy.android.storage">This data is stored on your device in a local database. Cloud backup and device transfer are turned off, so it never leaves your device.</p>
       <p data-i18n="privacy.android.services">The only external services used are Health Connect, Google Play Billing (purchase) and Google Play In-app Review (rating prompt). None of them receives your health data.</p>
       <p data-i18n="privacy.android.usage">Health data obtained through Health Connect is used solely to calculate and display your recovery score within the app. It is never used for advertising, shared with data brokers, or disclosed to third parties.</p>
@@ -613,7 +613,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
 <p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
 <p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
-<p>With your permission, RecoverySync uses Health Connect on your device. It reads heart rate variability, resting heart rate and sleep. Access is read-only; nothing is ever written back.</p>
+<p>With your permission, RecoverySync uses Health Connect on your device. It reads heart rate variability, heart rate, resting heart rate and sleep. Access is read-only; nothing is ever written back.</p>
 <p>Health data handled through Health Connect is used solely to calculate and display results inside the app. It is never used for advertising, shared with data brokers, or disclosed to third parties. You can revoke Health Connect permission at any time in your device settings.</p>
 <p>The only external service used is Google Play Billing (purchases). Google processes all payments; card details never reach the developer.</p>
 <p>The only device permission the app requests is showing notifications. It is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
