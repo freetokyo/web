@@ -583,6 +583,18 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       <a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a>
     </div>
   </div>
+<section class="ftandroid">
+<h2 id="android-privacy">How data is handled in the Android version</h2>
+<p>The following applies to the Android version (Android 9.0 and later). The iOS description is above; only the points written here differ on Android.</p>
+<p>Your site photos, work sections and reports are stored in a local database (Room) and in the app's own file storage on your device. They are never sent to the developer's servers. The app itself performs no network communication.</p>
+<p>The app requests only two permissions. <strong>Camera</strong> is used to take site photos. <strong>Location</strong> is used, when you turn stamping on, to record GPS coordinates on a photo and to fill the coordinate columns in the CSV export. Both stay on your device and are never transmitted. You can decline location and still use the app; the coordinate fields are simply left empty.</p>
+<p>Voice caption input hands the recording to Android's own speech recognition (<code>RecognizerIntent</code>) and receives only the recognised text. This app holds no recording permission and never handles the audio itself. The audio is handled under the privacy policy of whichever app provides speech recognition on your device.</p>
+<p>Cloud backup and device-to-device transfer are both disabled (<code>allowBackup="false"</code> and <code>data_extraction_rules.xml</code>). To move to a new device, use "Back up everything" in Settings to write a ZIP, then "Restore from backup" on the new device. Both are available without a subscription.</p>
+<p>The only external service used is Google Play Billing (purchases). Google processes all payments; card numbers and other payment details never reach the developer.</p>
+<p>When you share a report, the file is passed to another app only at the moment you choose that app yourself. The developer does not receive its contents.</p>
+<p>Uninstalling the app deletes the data on the device. Because backup and transfer are disabled, no copy remains outside the device.</p>
+</section>
+
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
 <p>This app is provided by Freetokyo Labs, which acts as the data controller. For any question about this policy or about personal data, contact support@freetokyolabs.com. We normally reply within five business days.</p>
