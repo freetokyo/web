@@ -7,7 +7,7 @@ App Store: https://apps.apple.com/app/id6797344961
 Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で公開予定。公開まで URL は出さない）
 開発: Freetokyo Labs
 バージョン: 1.1 / 対応: iOS 18.0 以降
-対応言語（Webページ）: ja / ar / en
+対応言語（Webページ）: ja / ar / en / de / fr / id / ms / tr
 
 ## ページ
 
@@ -17,3 +17,8 @@ Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で�
 - プライバシー: https://freetokyolabs.com/nasma/privacy.html
 - ar: https://freetokyolabs.com/nasma/ar/
 - en: https://freetokyolabs.com/nasma/en/
+- de: https://freetokyolabs.com/nasma/de/
+- fr: https://freetokyolabs.com/nasma/fr/
+- id: https://freetokyolabs.com/nasma/id/
+- ms: https://freetokyolabs.com/nasma/ms/
+- tr: https://freetokyolabs.com/nasma/tr/
