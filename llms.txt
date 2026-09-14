@@ -4,7 +4,7 @@
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 64（健康 10 / くらし 24 / おかね 5 / しごと 25）
-配信: App Store 48 本（Android 版を 16 本準備中）
+配信: App Store 48 本（Android 版を 17 本準備中）
 
 ## Apps
 
@@ -76,6 +76,7 @@
   - 詳細: https://freetokyolabs.com/hitorilog/llms.txt
 - [Weekwise](https://freetokyolabs.com/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。34言語対応。
   - App Store: https://apps.apple.com/app/id6788981648
+  - Google Play: 準備中 / in preparation（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/lifeweeks/llms.txt
 - [Jamalog](https://freetokyolabs.com/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
   - App Store: https://apps.apple.com/app/id6788732648
