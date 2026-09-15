@@ -30,7 +30,7 @@ probability of symptoms.
 - Apple Watch app
 
 ## Privacy
-Your entries and health data stay on your device and are never sent anywhere. Only weather data is fetched, from Apple's weather service.
+Your entries and health data stay on your device and are never sent anywhere. Only weather data and place-name lookups go out, to Apple's weather and maps services.
 Health data is read only and is never written, used for advertising, or shared. The only network
 service contacted is Apple's WeatherKit, for weather data.
 
