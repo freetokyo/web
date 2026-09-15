@@ -478,6 +478,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h1>Privacy Policy</h1><p><small>Privacy policy for Kimekabu ("the App").</small></p><h2>Data collection</h2><p>The App does not collect or transmit any personal information. All data — decision records, executions, analysis — is stored only on your device and is never sent to the developer or any third party.</p><h2>Network</h2><p>The App works fully offline. It does not link to brokerage accounts or communicate with external servers.</p><h2>Account</h2><p>No account registration is required.</p><h2>In-app purchase</h2><p>The one-time in-app purchase uses Apple's standard StoreKit. Purchase data is processed by Apple; the developer does not retain payment information.</p><h2>Contact</h2><p>For questions about this policy, please contact us via the Support page.</p>
 </div></section>
 <section class="ftlegal">
+<h2 id="android-privacy">How the Android version handles your data</h2>
+<p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app. Both export and import are free features.</p>
+<p>The only external services used are Google Play Billing (purchases) and Google Play In-app Review (rating prompt). The "In-app purchase" section above describes the iOS version; on Android, Google processes all payments. In either case, card details never reach the developer.</p>
+<p>The only device permission the app declares is unlocking it with biometrics or your device screen lock (PIN or pattern). It requests no runtime permissions at all, and it does not use the camera, location, contacts or notifications.</p>
+<p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
+</section>
+<section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
 <p>This app is provided by Freetokyo Labs, which acts as the data controller. For any question about this policy or about personal data, contact support@freetokyolabs.com. We normally reply within five business days.</p>
 <p>If you are in the EU, the EEA or the UK, the GDPR gives you the right to access, rectify, erase, restrict and port your personal data, to withdraw consent and to object to processing. You may also lodge a complaint with your national supervisory authority.</p>

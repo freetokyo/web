@@ -518,7 +518,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CareHours", "description": "CareHours 訪問介護 給与計算・記録 — Privacy Policy", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/carehours/en/privacy.html", "image": "https://freetokyolabs.com/carehours/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6769304063", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CareHours", "description": "CareHours 訪問介護 給与計算・記録 — Privacy Policy", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/carehours/en/privacy.html", "image": "https://freetokyolabs.com/carehours/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6769304063", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "CareHours", "item": "https://freetokyolabs.com/carehours/en/"}, {"@type": "ListItem", "position": 3, "name": "Privacy", "item": "https://freetokyolabs.com/carehours/en/privacy.html"}]}</script>
 </head>
 <body>
@@ -547,18 +547,18 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <p style="opacity:.5;font-size:.85rem;margin-bottom:20px">Last updated: May 2026 / Developer: Freetokyo Labs</p>
     <div class="legal-content">
 <h2>Basic Policy</h2>
-<p>CareHours respects user privacy to the maximum. Your personal information and visit record data are stored only on your device or your own iCloud account. The developer has no means to access your data.</p>
+<p><strong>iOS:</strong> CareHours respects user privacy to the maximum. Your personal information and visit record data are stored only on your device or your own iCloud account. The developer has no means to access your data. (The Android version does not use iCloud — see “How the Android version handles your data” below.)</p>
 <h2>Information We Collect</h2>
 <p>The app collects and stores the following: visit records entered by the user (date/time, client name, service type, hours, etc.</p>
 <p>); app settings (hourly rate, transportation, etc.</p>
 <p>); purchase information (premium subscription status).</p>
-<p>All of this is stored on your device or in iCloud and is not sent to the developer&#x27;s servers.</p>
+<p><strong>iOS:</strong> All of this is stored on your device or in iCloud and is not sent to the developer&#x27;s servers.</p>
 <h2>Information NOT Collected</h2>
 <p>The app does not collect any of the following: personal identifying information (name, email address, phone number, etc.); location or GPS information; access to contacts, camera, or microphone; behavioral logs or access analytics data; advertising identifier (IDFA).</p>
-<h2>iCloud Sync</h2>
-<p>The premium plan provides a data sync feature using Apple iCloud. Data is stored on Apple&#x27;s servers (iCloud). iCloud privacy protection follows Apple&#x27;s privacy policy. The developer has no means to access your iCloud data. iCloud sync can be disabled at any time in Apple ID settings.</p>
+<h2>iCloud Sync (iOS only)</h2>
+<p><strong>iOS:</strong> The premium plan provides a data sync feature using Apple iCloud. <strong>The Android version has no such feature</strong> (data is stored on the device only). Data is stored on Apple&#x27;s servers (iCloud). iCloud privacy protection follows Apple&#x27;s privacy policy. The developer has no means to access your iCloud data. iCloud sync can be disabled at any time in Apple ID settings.</p>
 <h2>Purchase and Payment Information</h2>
-<p>Premium plan purchases are made via Apple&#x27;s App Store. Payment information such as credit card details is managed by Apple and is not provided to the developer. StoreKit 2 is used to verify subscription status.</p>
+<p><strong>iOS:</strong> Premium plan purchases are made via Apple&#x27;s App Store. Payment information such as credit card details is managed by Apple and is not provided to the developer. StoreKit 2 is used to verify subscription status.</p>
 <h2>Third-Party Information Sharing</h2>
 <p>The app does not sell, provide, or share user information with third parties, except in the following cases: with the user&#x27;s consent; or when disclosure is required by law.</p>
 <h2>Children&#x27;s Privacy</h2>
@@ -573,6 +573,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       <a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a>
     </div>
   </div>
+
+<section class="ftlegal">
+<h2 id="android-privacy">How the Android version handles your data</h2>
+<p>The following describes the Android version (Android 8.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
+<p>The only external services used are Google Play Billing (purchases) and Google Play In-app Review (rating prompt). Google processes all payments; card details never reach the developer.</p>
+<p>The only device permission the app requests is showing notifications. It is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
+<p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
+</section>
+
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
 <p>This app is provided by Freetokyo Labs, which acts as the data controller. For any question about this policy or about personal data, contact support@freetokyolabs.com. We normally reply within five business days.</p>

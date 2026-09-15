@@ -576,6 +576,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </div>
   </div>
 <section class="ftlegal">
+<h2 id="android-privacy">How data is handled in the Android version</h2>
+<p>This section describes the Android version (Android 8.0 and later). Everything above describes the iOS version; only the points written here are different on Android.</p>
+<p><strong>The Android version has no iCloud sync.</strong> Entries, photos and the documents you attach to a vet record are kept only on your device, in the app's own database and file area. Nothing is sent to the developer's servers — there is no server to send it to.</p>
+<p><strong>The Android version has no AI condition assessment.</strong> The daily condition (good / normal / caution) is computed by the app from the meals, water, litter and symptoms you entered yourself. Photos are stored alongside an entry and are never analysed.</p>
+<p>Cloud backup and device-to-device transfer are both disabled (<code>allowBackup="false"</code> and <code>data_extraction_rules.xml</code>). When you change devices, export everything to a single file from inside the app and import it on the new device. You choose where that file goes; the developer is not involved.</p>
+<p>The only external service used is Google Play Billing (purchases). All payments are handled by Google, and payment details such as card numbers never reach the developer.</p>
+<p>The only device permission the app asks for is showing notifications. It is requested only when you turn on care reminders or alert notices, and declining it leaves every other feature usable. Picking and taking photos is delegated to the system photo picker and the camera app, so no photo, camera or storage permission is requested. Location is never used.</p>
+<p>Uninstalling the app deletes all of its data from the device. Because cloud backup and device transfer are disabled, no copy is left outside the device.</p>
+</section>
+
+<section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
 <p>This app is provided by Freetokyo Labs, which acts as the data controller. For any question about this policy or about personal data, contact support@freetokyolabs.com. We normally reply within five business days.</p>
 <p>If you are in the EU, the EEA or the UK, the GDPR gives you the right to access, rectify, erase, restrict and port your personal data, to withdraw consent and to object to processing. You may also lodge a complaint with your national supervisory authority.</p>
