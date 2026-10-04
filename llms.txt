@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 64 本（配信中 48 本・近日公開 16 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 16 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 64 本（配信中 48 本・近日公開 16 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 2 本は Google Play でも配信し、15 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 64（健康 10 / くらし 24 / おかね 5 / しごと 25）
-配信: App Store 48 本（Android 版を 17 本準備中）
+配信: App Store 48 本 / Google Play 2 本（Android 版を 15 本準備中）
 
 ## Apps
 
@@ -12,7 +12,7 @@
 
 - [RecoverySync](https://freetokyolabs.com/recoverysync/): Apple Watch でのリカバリースコア（睡眠・HRV・安静時心拍）追跡アプリ。サブスクなし・アカウントなし・データはデバイス内で完結。
   - App Store: https://apps.apple.com/app/id6770408873
-  - Google Play: 準備中 / in preparation（Android 9.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.recoverysync
   - 詳細: https://freetokyolabs.com/recoverysync/llms.txt
 - [SaunaFlow](https://freetokyolabs.com/saunaflow/): Apple Watch で使うサウナ・水風呂・休憩タイマー。ととのいスコア、履歴、プリセット、買い切りプレミアム、完全オフライン。
   - App Store: https://apps.apple.com/app/id6761906547
@@ -171,7 +171,7 @@
   - 詳細: https://freetokyolabs.com/dartrack/llms.txt
 - [ネイログ（Nailog）](https://freetokyolabs.com/nailog/): ネイリスト向けの顧客カルテアプリ。施術履歴・写真・注意事項・使用アイテムを完全オフラインで管理し、写真への手書きメモ・無料のバックアップ・売上集計・CSV / PDF 出力・iPad に対応。登録不要・データ収集ゼロ。
   - App Store: https://apps.apple.com/app/id6790943773
-  - Google Play: 準備中 / in preparation（Android 8.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.nailog
   - 詳細: https://freetokyolabs.com/nailog/llms.txt
 - [オトログ（Otolog）](https://freetokyolabs.com/otolog/): ピアノ・音楽教室の個人講師向け生徒カルテアプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。
   - App Store: https://apps.apple.com/app/id6791038062
