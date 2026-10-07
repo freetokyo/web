@@ -425,6 +425,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -508,7 +514,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p class="note">不具合のご報告では、iOS のバージョン・端末の機種・アプリのバージョン（設定の最下部に表示されます）をお知らせいただけると助かります。</p>
 <section class="ftlegal">
 <h2 id="android-support">Android 版について</h2>
-<p>対応するのは Android 8.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>対応するのは Android 8.0 以降です。<a href="https://play.google.com/store/apps/details?id=com.chen.qamari" target="_blank" rel="noopener">Google Play</a> からダウンロードできます。</p>
 <p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
 <p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
 </section>

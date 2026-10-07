@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 64 本（配信中 48 本・近日公開 16 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 2 本は Google Play でも配信し、15 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 64 本（配信中 48 本・近日公開 16 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 4 本は Google Play でも配信し、13 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 64（健康 10 / くらし 24 / おかね 5 / しごと 25）
-配信: App Store 48 本 / Google Play 2 本（Android 版を 15 本準備中）
+配信: App Store 48 本 / Google Play 4 本（Android 版を 13 本準備中）
 
 ## Apps
 
@@ -175,7 +175,7 @@
   - 詳細: https://freetokyolabs.com/nailog/llms.txt
 - [オトログ（Otolog）](https://freetokyolabs.com/otolog/): ピアノ・音楽教室の個人講師向け生徒カルテアプリ。教則本の進度・課題曲・月謝メモを完全オフラインで記録し、生徒の情報を端末の外に出さない。買い切り。
   - App Store: https://apps.apple.com/app/id6791038062
-  - Google Play: 準備中 / in preparation（Android 8.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.otolog
   - 詳細: https://freetokyolabs.com/otolog/llms.txt
 - [トレカルテ（ToreKarte）](https://freetokyolabs.com/torekarte/): パーソナルトレーナー向けの顧客カルテアプリ。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。
   - App Store: https://apps.apple.com/app/id6791176557
@@ -205,7 +205,7 @@
   - 詳細: https://freetokyolabs.com/waqtain/llms.txt
 - [قمري / Qamari（カマリ）](https://freetokyolabs.com/qamari/): ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
   - App Store: https://apps.apple.com/app/id6791838601
-  - Google Play: 準備中 / in preparation（Android 8.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.qamari
   - 詳細: https://freetokyolabs.com/qamari/llms.txt
 - [カルテラ ラッシュ（Kartella Lash）](https://freetokyolabs.com/kartellalash/): まつ毛エクステとラッシュリフトを扱うアイリストのための顧客カルテ iOS アプリ。施術ごとに使ったグルーのロットを紐づけ、ロット番号から該当する顧客を逆引きできる。パッチテストの有効期間は製品ブランドごとに規則を設定でき、判定した日の値をそのまま保存するため、あとから規則を変えても過去の判定は動かない。ラッシュリフトの放置時間は開始時刻からの差分で実測する。記録は端末内のみ・アカウント不要・買い切り。
   - App Store: 近日公開 / coming soon

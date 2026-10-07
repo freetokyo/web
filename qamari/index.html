@@ -425,6 +425,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -611,15 +617,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
 <section class="ftlegal">
 <h2 id="android-about">Android 版について</h2>
-<p>Qamari は Android 版を準備しています。Android 8.0 以降に対応し、Google Play での公開を予定しています。</p>
+<p>Qamari の Android 版は <a href="https://play.google.com/store/apps/details?id=com.chen.qamari" target="_blank" rel="noopener">Google Play</a> で配信しています。Android 8.0 以降に対応しています。</p>
 <p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
-<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
+<p>Android 版についてのご質問は<a href="support.html#android-support">サポートページ</a>をご覧ください。</p>
 </section>
 
 <section class="ftcta">
 <h2>قمري / Qamari（カマリ）</h2>
-<p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>
-<a class="cta" href="https://apps.apple.com/app/id6791838601" target="_blank" rel="noopener">App Store で見る</a>
+<p>App Store と Google Play から入手できます。iPhone / iPad でも Android でも使えます。</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6791838601" target="_blank" rel="noopener">App Store で見る</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.qamari" target="_blank" rel="noopener">Google Play で見る</a></div>
 </section>
 </main>
 <footer class="footer">
