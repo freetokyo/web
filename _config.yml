@@ -1,0 +1,5 @@
+# GitHub Pages は _config.yml が無くても Jekyll を通し、`.` で始まるパスを出力から落とす。
+# Android の Credential Manager / App Links は https://freetokyolabs.com/.well-known/assetlinks.json
+# だけを見るので、.well-known だけを通す（2026-10-12）。.nojekyll はサイト全体の描画に効くので採らない。
+include:
+  - .well-known

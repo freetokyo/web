@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.chen.trero",
+      "sha256_cert_fingerprints": [
+        "9C:98:17:14:2A:94:D8:88:06:F1:A2:FE:39:C9:6D:40:5E:7C:0C:0C:54:60:FE:77:67:96:A6:04:E0:7C:3A:C2"
+      ]
+    }
+  }
+]
