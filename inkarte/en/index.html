@@ -387,7 +387,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -396,9 +397,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -435,11 +438,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -480,7 +485,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 </nav>
 <main class="ftbody" id="ftmain">
-<header class="hero"><div class="drop">🩸</div><h1>インカルテ / Inkarte</h1><p class="lead">From consult to consent — your whole studio, in one app.</p><a class="badge" href="https://apps.apple.com/app/id6792252166">Get it on the App Store</a></header>
+<header class="hero"><div class="drop">🩸</div><h1>インカルテ / Inkarte</h1><p class="lead">From consult to consent — your whole studio, in one app.</p><a class="badge" href="https://apps.apple.com/app/id6792252166">Get it on the App Store</a>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.chen.inkarte" target="_blank" rel="noopener" data-ftplay>Get it on Google Play</a></header>
 <div class="wrap">
 <h2>Features</h2><div class="features"><div class="card"><h3>Client records</h3><p>Contact, social handle, health screening (allergies/medications/history/keloid), skin notes and tags. Alerts pinned to the top of the karte.</p></div><div class="card"><h3>Appointments</h3><p>One calendar for everything, with reminders and optional export to your device Calendar (initials only by default for privacy).</p></div><div class="card"><h3>Session history</h3><p>Body part, price, machine/needle, inks used (brand/color/lot) and photos (design, stencil, immediately after, healed, other).</p></div><div class="card"><h3>Consent &amp; signature</h3><p>Check items from a standard or custom template, then capture a handwritten signature on screen and save as PDF. The signing screen is a guest mode only the artist can exit.</p></div><div class="card"><h3>Ink lot search</h3><p>Find every client a specific lot was used on — useful for follow-up.</p></div><div class="card"><h3>Aftercare reminders</h3><p>Follow-up notifications a chosen number of days after a session. General care reminders, not medical advice.</p></div><div class="card"><h3>Statistics</h3><p>Monthly revenue, session count and style breakdown, computed on device.</p></div><div class="card"><h3>Bulk export &amp; backup</h3><p>Export all data as CSV or combine consent PDFs, plus an encrypted archive you can restore with your passphrase.</p></div></div>
 <h2>Pricing</h2><p>The free tier supports up to 10 clients and 3 signed consent forms per calendar month, with unlimited sessions, appointments and backup/restore. A one-time Full Access purchase makes clients and consent forms unlimited and unlocks statistics, custom templates, portfolio and bulk export. There is no subscription.</p>

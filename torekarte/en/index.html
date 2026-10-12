@@ -387,7 +387,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -396,9 +397,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -435,11 +438,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -485,6 +490,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <span style="display:flex;gap:12px;align-items:center">
       <span class="lang-switch"><a href="../index.html" hreflang="ja">日本語</a> · <strong>EN</strong></span>
       <a class="appstore" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">App Store</a>
+<a class="appstore" href="https://play.google.com/store/apps/details?id=com.chen.torekarte" target="_blank" rel="noopener" data-ftplay>Google Play</a>
     </span>
   </div>
 
@@ -495,6 +501,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <h1>Your records are your coaching edge.</h1>
         <p class="tag">A client chart for personal trainers. Session logs and prepaid packages — all on your device.</p>
         <a class="cta" data-appstore href="https://apps.apple.com/app/id6791176557" target="_blank" rel="noopener">Download on the App Store</a>
+<a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.torekarte" target="_blank" rel="noopener" data-ftplay>Get it on Google Play</a>
       </div>
       <div class="grid">
         <div class="card"><h3>Last session, right there</h3><p>The Today screen lists your sessions for the day, plus recent clients with what they did last time. Start recording and their previous weights and reps are already filled in — leave them as-is if nothing changed.</p></div>

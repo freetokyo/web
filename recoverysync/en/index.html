@@ -450,7 +450,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -459,9 +460,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -498,11 +501,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -551,6 +556,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <p class="hero__tagline" data-i18n="product.tagline">RecoverySync analyzes your HRV, resting heart rate, and sleep to deliver a single daily recovery score — right on your wrist.</p>
     <div class="hero__cta">
       <a href="https://apps.apple.com/app/id6770408873" class="btn--primary" data-i18n="product.cta.store">Download on the App Store</a>
+<a class="btn--primary" href="https://play.google.com/store/apps/details?id=com.chen.recoverysync" target="_blank" rel="noopener" data-ftplay>Get it on Google Play</a>
       <a href="#how-it-works" class="btn--ghost" data-i18n="product.cta.learn">Learn more</a>
     </div>
   </section>
@@ -693,6 +699,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <span class="price-tag" data-i18n="product.download.price">$4.99 one-time · ¥780</span>
     <div>
       <a href="https://apps.apple.com/app/id6770408873" class="btn--primary" data-i18n="product.download.btn">Download on the App Store</a>
+<a class="btn--primary" href="https://play.google.com/store/apps/details?id=com.chen.recoverysync" target="_blank" rel="noopener" data-ftplay>Get it on Google Play</a>
     </div>
     <div style="margin-top: 2rem;">
       <p style="font-size: .875rem; color: var(--color-text-muted); margin-bottom: .5rem;" data-i18n="product.compat.title">Requires</p>

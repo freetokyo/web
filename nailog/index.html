@@ -388,7 +388,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -397,9 +398,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -436,11 +439,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -486,6 +491,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <span style="display:flex;gap:12px;align-items:center">
       <span class="lang-switch"><strong>日本語</strong> · <a href="./en/index.html" hreflang="en">EN</a></span>
       <a class="appstore" href="https://apps.apple.com/app/id6790943773" target="_blank" rel="noopener">App Store</a>
+<a class="appstore" href="https://play.google.com/store/apps/details?id=com.chen.nailog" target="_blank" rel="noopener" data-ftplay>Google Play</a>
     </span>
   </div>
 
@@ -496,6 +502,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <h1>お客さまの爪の履歴書。</h1>
         <p class="tag">ネイリストのための顧客カルテアプリ。施術履歴・写真・注意事項を、完全オフラインで。</p>
         <a class="cta" href="https://apps.apple.com/app/id6790943773" target="_blank" rel="noopener">App Store でダウンロード</a>
+<a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.nailog" target="_blank" rel="noopener" data-ftplay>Google Play でダウンロード</a>
       </div>
       <div class="grid">
         <div class="card"><h3>施術タイムライン</h3><p>来店ごとにメニュー・料金・使用カラー（品番）・会話メモ・写真を記録。前回の内容が一目でわかります。</p></div>

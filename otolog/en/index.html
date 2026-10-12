@@ -387,7 +387,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -396,9 +397,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -435,11 +438,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -485,6 +490,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <span style="display:flex;gap:12px;align-items:center">
       <span class="lang-switch"><a href="../index.html" hreflang="ja">日本語</a> · <strong>EN</strong></span>
       <a class="appstore" href="https://apps.apple.com/app/id6791038062" target="_blank" rel="noopener">App Store</a>
+<a class="appstore" href="https://play.google.com/store/apps/details?id=com.chen.otolog" target="_blank" rel="noopener" data-ftplay>Google Play</a>
     </span>
   </div>
 
@@ -495,6 +501,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <h1>Every student&#x27;s progress, in your hand.</h1>
         <p class="tag">A student record app for independent music teachers. Method-book progress and monthly tuition — all on your device.</p>
         <a class="cta" href="https://apps.apple.com/app/id6791038062" target="_blank" rel="noopener">Download on the App Store</a>
+<a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.otolog" target="_blank" rel="noopener" data-ftplay>Get it on Google Play</a>
       </div>
       <div class="grid">
         <div class="card"><h3>Method-book progress at a glance</h3><p>Beyer, Burgmüller 25, Czerny 30/40, Hanon, Sonatina Album, Burnam, and Gillock come built in. Tap a piece number to mark it passed and see how far each student has come on the progress bar. You can add your own method books too (1 on the free tier, unlimited with Pro).</p></div>
