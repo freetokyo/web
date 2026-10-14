@@ -1,17 +1,18 @@
 # قمري / Qamari（カマリ）
 
-> ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記する iOS カレンダーアプリ。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
+> ヒジュラ暦（イスラム暦）を「第一の暦」として扱い、西暦を常に併記するカレンダーアプリ（iPhone / Android）。標準カレンダーにできない2点 —— ①ヒジュラ暦での繰り返し（毎ヒジュラ年・毎ヒジュラ月・特定の月日）②実見補正で登録済み通知が全て自動追従 —— が差別化の核心。日付の管理のみを行い、宗教的な断定・解釈は表示しない。完全オフライン・買い切り。العربية（RTL）/ English / 日本語対応。
 
 Web: https://freetokyolabs.com/qamari/
 App Store: https://apps.apple.com/app/id6791838601
-Google Play: https://play.google.com/store/apps/details?id=com.chen.qamari
+Google Play: https://play.google.com/store/apps/details?id=com.chen.qamari（Android 8.0 以降）
 開発: Freetokyo Labs
 バージョン: 1.2 / 対応: iOS 26.0 以降
+価格: 無料（アプリ内課金あり）
 対応言語（Webページ）: ja / ar / en
 
 ## 概要
 - 開発: Freetokyo Labs
-- プラットフォーム: iOS 26.0+ / iPhone 専用（Android 8.0 以降の Android 版を準備中）
+- プラットフォーム: iOS 26.0+（iPhone）/ Android 8.0+（Google Play）
 - カテゴリ: 仕事効率化（セカンダリ: ライフスタイル）
 - 対応言語: العربية（右から左）/ English / 日本語
 - 主要市場: GCC（サウジアラビア・UAE 等）

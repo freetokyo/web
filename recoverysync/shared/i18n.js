@@ -77,7 +77,7 @@ const TRANSLATIONS = {
     "terms.s1.body":         "Subject to these terms, we grant you a personal, non-exclusive, non-transferable, revocable license to use the App on Apple devices that you own or control, for personal, non-commercial purposes.",
 
     "terms.s2.title":        "2. Purchase and Payment",
-    "terms.s2.item1":        "RecoverySync is available as a one-time purchase ($4.99 / ¥780) through Apple's App Store.",
+    "terms.s2.item1":        "RecoverySync is available as a one-time purchase ($4.99 / ¥660) through Apple's App Store.",
     "terms.s2.item2":        "All purchases are processed by Apple. Refunds are subject to Apple's standard refund policy.",
     "terms.s2.item3":        "Prices may vary by region and are subject to change.",
 
@@ -192,7 +192,7 @@ const TRANSLATIONS = {
 
     "product.download.title":  "Start tracking your recovery",
     "product.download.body":   "Available on the App Store for iPhone and Apple Watch.",
-    "product.download.price":  "$4.99 one-time · ¥780",
+    "product.download.price":  "$4.99 one-time · ¥660",
     "product.download.btn":    "Download on the App Store",
     "product.compat.title":    "Requires",
   },
@@ -268,7 +268,7 @@ const TRANSLATIONS = {
     "terms.s1.body":         "本規約に従い、お客様が所有または管理するAppleデバイス上で、個人的・非商業的目的のために本アプリを使用する個人的・非独占的・譲渡不可・取消可能なライセンスを付与します。",
 
     "terms.s2.title":        "2. 購入および支払い",
-    "terms.s2.item1":        "RecoverySyncはApple App Storeにて買い切り（$4.99 / ¥780）でご提供しています。",
+    "terms.s2.item1":        "RecoverySyncはApple App Storeにて買い切り（$4.99 / ¥660）でご提供しています。",
     "terms.s2.item2":        "すべての購入処理はAppleが行います。払い戻しはAppleの標準的な返金ポリシーに従います。",
     "terms.s2.item3":        "価格は地域によって異なる場合があり、変更される可能性があります。",
 
@@ -383,7 +383,7 @@ const TRANSLATIONS = {
 
     "product.download.title":  "リカバリーの追跡を始める",
     "product.download.body":   "iPhoneおよびApple Watch向けにApp Storeで配信中。",
-    "product.download.price":  "¥780 買い切り · $4.99",
+    "product.download.price":  "¥660 買い切り · $4.99",
     "product.download.btn":    "App Storeでダウンロード",
     "product.compat.title":    "動作条件",
   }
