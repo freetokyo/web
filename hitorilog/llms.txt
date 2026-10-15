@@ -1,6 +1,6 @@
 # ヒトリログ（HitoriLog）
 
-> ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
+> ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・買い切り。記録は端末内に保存（iCloudバックアップは任意）。
 
 Web: https://freetokyolabs.com/hitorilog/
 App Store: https://apps.apple.com/app/id6785472192
@@ -10,9 +10,9 @@ App Store: https://apps.apple.com/app/id6785472192
 対応言語（Webページ）: ja / ar / ca / cs / da / de / el / en / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## 主な機能
-- 体温・血圧・水分・食事・服薬・排泄・睡眠・気分の8項目記録
+- 体温・血圧・水分・食事・排泄・服薬・睡眠・気分/様子・脈拍・体重・血糖値・入浴の12項目記録
 - 誰にも見せない本音メモ
-- 広告なし・アカウント不要・完全オフライン
+- 広告なし・アカウント不要。記録は端末内に保存し、iCloudバックアップ（プレミアム）をオンにしたときだけ自分のプライベートiCloudへ
 - PDF出力
 
 ## ページ

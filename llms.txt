@@ -71,7 +71,7 @@
 - [Yuzuri（ユズリ）](https://freetokyolabs.com/yuzuri/): 完全オフラインの終活ノート iOS アプリ。資産・保険・連絡先・想いを一冊のノートに記録。アカウント登録不要・データ収集なし・買い切り。
   - App Store: https://apps.apple.com/app/id6784874949
   - 詳細: https://freetokyolabs.com/yuzuri/llms.txt
-- [ヒトリログ（HitoriLog）](https://freetokyolabs.com/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・完全オフライン・買い切り。
+- [ヒトリログ（HitoriLog）](https://freetokyolabs.com/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・買い切り。記録は端末内に保存（iCloudバックアップは任意）。
   - App Store: https://apps.apple.com/app/id6785472192
   - 詳細: https://freetokyolabs.com/hitorilog/llms.txt
 - [Weekwise](https://freetokyolabs.com/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。34言語対応。
