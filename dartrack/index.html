@@ -390,7 +390,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -399,9 +400,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -425,6 +428,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -432,11 +441,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -457,7 +468,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Dartrack", "description": "Dartrack helps UAE households keep private, offline records for domestic staff — visa & contract deadlines with reminders, work hours, leave, payroll and end-of-service estimates. On-device, no account, no data collection. English, العربية, 日本語.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/dartrack/", "image": "https://freetokyolabs.com/dartrack/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6788604524", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Dartrack", "description": "Dartrack helps UAE households keep private, offline records for domestic staff — visa & contract deadlines with reminders, work hours, leave, payroll and end-of-service estimates. On-device, no account, no data collection. English, العربية, 日本語.", "inLanguage": "en", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/dartrack/", "image": "https://freetokyolabs.com/dartrack/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6788604524", "sameAs": ["https://apps.apple.com/app/id6788604524", "https://play.google.com/store/apps/details?id=com.chen.dartrack"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Dartrack", "item": "https://freetokyolabs.com/dartrack/"}]}</script>
 </head>
 <body>
@@ -534,22 +545,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       </div>
       <p class="disc">Dartrack keeps private records. It does not file visas or contracts, process wage payments (WPS), or provide legal advice. Labor-standard values are adjustable references only.</p>
     </section>
+
+
+<section class="ftlegal">
+<h2 id="android-about">About the Android version</h2>
+<p>The Android version of Dartrack is available on <a href="https://play.google.com/store/apps/details?id=com.chen.dartrack" target="_blank" rel="noopener">Google Play</a>. It supports Android 9.0 and later.</p>
+<p>Both implementations are checked against the same verification data so that the Android build calculates and judges exactly as the iOS one does. Storage and backup behaviour is described in the <a href="privacy.html#android-privacy">privacy policy</a>.</p>
+<p>For questions about the Android version, see the <a href="support.html#android-support">support page</a>.</p>
+</section>
 <section class="ftshots" aria-label="Screens">
 <h2>Screens</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/en/01.webp" alt="Home screen showing days left on the nearest deadline, today&#x27;s staff list, and upcoming visa and labour-card deadlines" width="360" height="782" loading="lazy" decoding="async"><figcaption>Mark today&#x27;s attendance in one tap</figcaption></figure><figure class="ftshot"><img src="shots/en/02.webp" alt="Staff detail. Role, employment start date and monthly salary, visa and contract deadlines, and this week&#x27;s work log with overtime" width="360" height="782" loading="lazy" decoding="async"><figcaption>Visa and contract dates, hours and overtime</figcaption></figure><figure class="ftshot"><img src="shots/en/03.webp" alt="Payroll screen. Payslip and end-of-service estimates, outstanding advance balance in AED, repayments and notes" width="360" height="782" loading="lazy" decoding="async"><figcaption>Payslips, gratuity and salary advances</figcaption></figure></div>
 </section>
-
-<section class="ftlegal">
-<h2 id="android-about">About the Android version</h2>
-<p>An Android version of Dartrack is in preparation. It supports Android 9.0 and later and will be published on Google Play.</p>
-<p>Both implementations are checked against the same verification data so that the Android build calculates and judges exactly as the iOS one does. Storage and backup behaviour is described in the <a href="privacy.html#android-privacy">privacy policy</a>.</p>
-<p>We are not linking to a store page until it is live. We will announce it here and on the <a href="support.html#android-support">support page</a>.</p>
-</section>
-
 <section class="ftcta">
 <h2>Dartrack</h2>
-<p>Available on the App Store, for iPhone and iPad.</p>
-<a class="cta" href="https://apps.apple.com/app/id6788604524" target="_blank" rel="noopener">View on the App Store</a><span class="ftcta__price">Free with in-app purchase</span>
+<p>Available on the App Store and Google Play, for iPhone, iPad and Android.</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6788604524" target="_blank" rel="noopener">View on the App Store</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.dartrack" target="_blank" rel="noopener">Get it on Google Play</a></div><span class="ftcta__price">Free with in-app purchase</span>
 </section>
 </main>
 <footer class="footer">
