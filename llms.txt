@@ -10,7 +10,7 @@
 
 ### Health（健康）
 
-- [RecoverySync](https://freetokyolabs.com/recoverysync/): 睡眠・HRV・安静時心拍からリカバリースコアを出す追跡アプリ（iPhone は Apple Watch、Android は Health Connect のデータを使用）。サブスクなし・アカウントなし・データはデバイス内で完結。
+- [RecoverySync](https://freetokyolabs.com/recoverysync/): 睡眠・HRV・安静時心拍からリカバリースコアを出す追跡アプリ（iPhone はヘルスケア＝Apple Watch などの記録、Android は Health Connect のデータを使用）。サブスクなし・アカウントなし・データはデバイス内で完結。
   - App Store: https://apps.apple.com/app/id6770408873
   - Google Play: https://play.google.com/store/apps/details?id=com.chen.recoverysync（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/recoverysync/llms.txt

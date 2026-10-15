@@ -1,25 +1,26 @@
 # RecoverySync
 
-> 睡眠・HRV・安静時心拍からリカバリースコアを出す追跡アプリ（iPhone は Apple Watch、Android は Health Connect のデータを使用）。サブスクなし・アカウントなし・データはデバイス内で完結。
+> 睡眠・HRV・安静時心拍からリカバリースコアを出す追跡アプリ（iPhone はヘルスケア＝Apple Watch などの記録、Android は Health Connect のデータを使用）。サブスクなし・アカウントなし・データはデバイス内で完結。
 
 Web: https://freetokyolabs.com/recoverysync/
 App Store: https://apps.apple.com/app/id6770408873
 Google Play: https://play.google.com/store/apps/details?id=com.chen.recoverysync（Android 9.0 以降）
 開発: Freetokyo Labs
-バージョン: 1.4.0 / 対応: iOS 17.0 以降
+バージョン: 1.5.0 / 対応: iOS 17.0 以降
 価格: 無料（アプリ内課金あり）
 対応言語（Webページ）: en / ar / ca / cs / da / de / el / es / fi / fr / he / hi / hr / hu / id / it / ko / ms / nb / nl / pl / pt-BR / pt-PT / ro / ru / sk / sv / th / tr / uk / vi / zh-Hans / zh-Hant
 
 ## Features
-- Single recovery score from Apple Watch (iPhone) or Health Connect (Android)
+- Single recovery score from Apple Health (iPhone; e.g. Apple Watch) or Health Connect (Android)
 - HRV (SDNN) tracking
 - Resting heart rate analysis
 - Sleep-based calibration
+- Yesterday's exertion: active energy compared with your own previous 28 days (free, iOS)
 - Apple Watch complication (iOS)
 - On-device, no account, no servers
 
 ## How to use
-1. Wear Apple Watch (iPhone) or a watch that writes to Health Connect (Android) while you sleep
+1. Wear a watch that writes to Apple Health (iPhone; e.g. Apple Watch) or Health Connect (Android) while you sleep
 2. RecoverySync reads HRV, resting HR and sleep
 3. Check your single daily recovery score
 

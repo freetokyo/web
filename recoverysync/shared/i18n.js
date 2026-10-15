@@ -77,7 +77,7 @@ const TRANSLATIONS = {
     "terms.s1.body":         "Subject to these terms, we grant you a personal, non-exclusive, non-transferable, revocable license to use the App on Apple devices that you own or control, for personal, non-commercial purposes.",
 
     "terms.s2.title":        "2. Purchase and Payment",
-    "terms.s2.item1":        "RecoverySync is available as a one-time purchase ($4.99 / ¥660) through Apple's App Store.",
+    "terms.s2.item1":        "RecoverySync is available as a one-time purchase through Apple's App Store.",
     "terms.s2.item2":        "All purchases are processed by Apple. Refunds are subject to Apple's standard refund policy.",
     "terms.s2.item3":        "Prices may vary by region and are subject to change.",
 
@@ -119,13 +119,13 @@ const TRANSLATIONS = {
     "support.faq.title":     "Frequently Asked Questions",
 
     "support.faq.q1":  "How does the recovery score work?",
-    "support.faq.a1":  "Your recovery score is calculated from three metrics read from Apple Watch: Heart Rate Variability (HRV, SDNN) accounts for 50%, Resting Heart Rate accounts for 30%, and Sleep Duration accounts for 20%. Each metric is compared to your personal 28-day baseline to produce a score from 0–100. HIGH is 76–100, MODERATE is 51–75, and LOW is 0–50.",
+    "support.faq.a1":  "Your recovery score is calculated from three metrics read from Apple Health: Heart Rate Variability (HRV, SDNN) accounts for 50%, Resting Heart Rate accounts for 30%, and Sleep Duration accounts for 20%. Each metric is compared to your personal 28-day baseline to produce a score from 0–100. HIGH is 76–100, MODERATE is 51–75, and LOW is 0–50.",
 
     "support.faq.q2":  "Why is my score showing \"—\" (dash)?",
     "support.faq.a2":  "A dash (—) means RecoverySync has no data for last night yet — not that the app is still calibrating; a score appears from your very first night of data. In the Health app, make sure Sleep, Heart Rate Variability and Resting Heart Rate are all allowed for RecoverySync, and turn on sleep tracking in the Watch app so your Apple Watch records sleep overnight.",
 
     "support.faq.q3":  "Does RecoverySync work without an Apple Watch?",
-    "support.faq.a3":  "No. RecoverySync requires Apple Watch (Series 4 or later) to record the HRV, resting heart rate, and sleep data used for score calculation. The iPhone app displays and analyzes the data, but the Apple Watch is the required data source.",
+    "support.faq.a3":  "Yes, as long as the data reaches Health. RecoverySync reads heart rate variability, resting heart rate and sleep from Apple Health, not from a particular device. Apple Watch (Series 4 or later) is one example; any wearable or app that writes these three to Health while you sleep works the same way. If Health has none of this data, the app shows an empty state instead of a score.",
 
     "support.faq.q4":  "Why does the app need access to my Health data?",
     "support.faq.a4":  "RecoverySync reads HRV (SDNN), resting heart rate, and sleep data from Apple HealthKit to calculate your recovery score. This is the only purpose for which health data is used. The data is processed entirely on-device and never leaves your iPhone.",
@@ -140,20 +140,20 @@ const TRANSLATIONS = {
     "support.faq.a7":  "Open the Watch app on your iPhone → My Watch tab → scroll to RecoverySync → tap it → make sure the complication is added to your active watch face. You can also long-press your watch face → Edit → select a complication slot → choose RecoverySync.",
 
     "support.faq.q8":  "What Apple Watch models are supported?",
-    "support.faq.a8":  "RecoverySync requires Apple Watch Series 4 or later running watchOS 10.0 or later, paired with an iPhone running iOS 17.0 or later.",
+    "support.faq.a8":  "Apple Watch Series 4 or later with watchOS 10.0 or later, paired with an iPhone on iOS 17.0 or later. This also covers the optional Watch app and complications. Apple Watch itself is not required if another device writes these three data types to Health.",
 
     "support.compat.title": "Compatibility",
 
     /* ── Product page ─────────────────────────────────────────────────────── */
     "product.page-title":   "RecoverySync — Sleep & HRV Recovery Tracker",
-    "product.eyebrow":      "For Apple Watch",
+    "product.eyebrow":      "For iPhone · Apple Health",
     "product.title":        "Know your recovery.\nTrain smarter.",
-    "product.tagline":      "RecoverySync analyzes your HRV, resting heart rate, and sleep to deliver a single daily recovery score — right on your wrist.",
+    "product.tagline":      "RecoverySync analyzes your HRV, resting heart rate, and sleep to deliver a single daily recovery score — every morning.",
     "product.cta.store":    "Download on the App Store",
     "product.cta.learn":    "Learn more",
 
     "product.score.title":    "One score. Three signals.",
-    "product.score.subtitle": "Your recovery score is calculated from the health data your Apple Watch records while you sleep.",
+    "product.score.subtitle": "Your recovery score is calculated from the sleep, HRV and resting heart rate your wearable writes to Apple Health — Apple Watch, for example.",
     "product.level.high":     "HIGH",
     "product.level.mod":      "MODERATE",
     "product.level.low":      "LOW",
@@ -165,8 +165,8 @@ const TRANSLATIONS = {
     "product.features.subtitle": "No subscriptions. No account. No data leaving your device.",
     "product.feat1.title":  "Privacy First",
     "product.feat1.desc":   "Zero data collection. Your health data stays on your device. No servers, no tracking, no ads.",
-    "product.feat2.title":  "Apple Watch Native",
-    "product.feat2.desc":   "Reads directly from HealthKit. Works with Apple Watch Series 4 and later, including complications and widgets.",
+    "product.feat2.title":  "Reads Apple Health",
+    "product.feat2.desc":   "Reads HRV, resting heart rate and sleep from Apple Health — from Apple Watch or any wearable that writes them there. Widgets and Apple Watch complications included.",
     "product.feat3.title":  "Morning Score",
     "product.feat3.desc":   "Get your personalized recovery score every morning. Optional notification delivers it before you start your day.",
     "product.feat4.title":  "Personal Baseline",
@@ -175,10 +175,12 @@ const TRANSLATIONS = {
     "product.feat5.desc":   "No subscription, no recurring charges. Pay once, use forever.",
     "product.feat6.title":  "Trend Analysis",
     "product.feat6.desc":   "Track your recovery trends over time with built-in charts. With Full Access, export your history as CSV.",
+    "product.feat7.title":  "Yesterday's Exertion",
+    "product.feat7.desc":   "Free: compares yesterday's active energy with your own previous 28 days, right next to your recovery score.",
 
     "product.how.title":  "How it works",
-    "product.step1.title": "Wear Apple Watch to sleep",
-    "product.step1.desc":  "Sleep tracking and HRV recording happen automatically.",
+    "product.step1.title": "Wear your watch to sleep",
+    "product.step1.desc":  "Apple Watch or another wearable records sleep and HRV to Apple Health.",
     "product.step2.title": "Open the app in the morning",
     "product.step2.desc":  "Your recovery score is ready when you wake up.",
     "product.step3.title": "Read your score",
@@ -191,8 +193,8 @@ const TRANSLATIONS = {
     "product.privacy.link":  "Read our Privacy Policy",
 
     "product.download.title":  "Start tracking your recovery",
-    "product.download.body":   "Available on the App Store for iPhone and Apple Watch.",
-    "product.download.price":  "$4.99 one-time · ¥660",
+    "product.download.body":   "Available on the App Store for iPhone, with an optional Apple Watch app.",
+    "product.download.price":  "Free to start · Full Access is a one-time purchase",
     "product.download.btn":    "Download on the App Store",
     "product.compat.title":    "Requires",
   },
@@ -268,7 +270,7 @@ const TRANSLATIONS = {
     "terms.s1.body":         "本規約に従い、お客様が所有または管理するAppleデバイス上で、個人的・非商業的目的のために本アプリを使用する個人的・非独占的・譲渡不可・取消可能なライセンスを付与します。",
 
     "terms.s2.title":        "2. 購入および支払い",
-    "terms.s2.item1":        "RecoverySyncはApple App Storeにて買い切り（$4.99 / ¥660）でご提供しています。",
+    "terms.s2.item1":        "RecoverySyncはApple App Storeにて買い切りでご提供しています。",
     "terms.s2.item2":        "すべての購入処理はAppleが行います。払い戻しはAppleの標準的な返金ポリシーに従います。",
     "terms.s2.item3":        "価格は地域によって異なる場合があり、変更される可能性があります。",
 
@@ -310,13 +312,13 @@ const TRANSLATIONS = {
     "support.faq.title":     "よくある質問",
 
     "support.faq.q1":  "リカバリースコアはどのように計算されますか？",
-    "support.faq.a1":  "リカバリースコアはApple Watchから取得した3つの指標をもとに算出されます。心拍変動（HRV、SDNN）が50%、安静時心拍数が30%、睡眠時間が20%の割合で計算されます。各指標はお客様個人の28日間移動平均と比較され、0〜100のスコアが算出されます。76〜100がHIGH、51〜75がMODERATE、0〜50がLOWです。",
+    "support.faq.a1":  "リカバリースコアはヘルスケアから取得した3つの指標をもとに算出されます。心拍変動（HRV、SDNN）が50%、安静時心拍数が30%、睡眠時間が20%の割合で計算されます。各指標はお客様個人の28日間移動平均と比較され、0〜100のスコアが算出されます。76〜100がHIGH、51〜75がMODERATE、0〜50がLOWです。",
 
     "support.faq.q2":  "スコアが「—」（ダッシュ）と表示されるのはなぜですか？",
     "support.faq.a2":  "「—」は、まだ前夜のデータが取得できていないサインです（較正中という意味ではありません。データがあれば初日からスコアが表示されます）。ヘルスケアAppで「睡眠」「心拍変動」「安静時心拍数」がRecoverySyncに許可されているか、またWatch Appで睡眠の記録がオンになっていて夜間にApple Watchが睡眠を記録しているかをご確認ください。",
 
-    "support.faq.q3":  "Apple Watchなしで使用できますか？",
-    "support.faq.a3":  "使用できません。RecoverySyncはスコア計算に使用するHRV・安静時心拍数・睡眠データを記録するためにApple Watch（Series 4以降）が必要です。iPhoneアプリはデータの表示と分析を行いますが、Apple Watchが必須のデータソースです。",
+    "support.faq.q3":  "Apple Watch がなくても使えますか？",
+    "support.faq.a3":  "データがヘルスケアに届いていれば使えます。RecoverySync は特定の機器ではなく、ヘルスケアから心拍変動・安静時心拍数・睡眠を読み取ります。Apple Watch（Series 4以降）はその一例で、就寝中にこの3つをヘルスケアへ書き込むウェアラブルやアプリなら同じように使えます。ヘルスケアにこれらのデータが無い場合は、スコアの代わりに空の状態を表示します。",
 
     "support.faq.q4":  "アプリにヘルスデータへのアクセスが必要なのはなぜですか？",
     "support.faq.a4":  "RecoverySyncはリカバリースコアを算出するために、Apple HealthKitからHRV（SDNN）・安静時心拍数・睡眠データを読み取ります。これが健康データを使用する唯一の目的です。データはデバイス上で完全に処理され、iPhoneの外に出ることはありません。",
@@ -330,21 +332,21 @@ const TRANSLATIONS = {
     "support.faq.q7":  "Apple Watchのコンプリケーションが表示されません",
     "support.faq.a7":  "iPhoneのWatchアプリを開き、「マイウォッチ」タブ → RecoverySyncまでスクロール → タップして、コンプリケーションが現在のウォッチフェイスに追加されていることを確認してください。ウォッチフェイスを長押し → 編集 → コンプリケーションスロットを選択 → RecoverySyncを選択することもできます。",
 
-    "support.faq.q8":  "対応しているApple Watchのモデルは？",
-    "support.faq.a8":  "RecoverySyncはwatchOS 10.0以降を搭載したApple Watch Series 4以降が必要です。iOS 17.0以降を搭載したiPhoneとペアリングしてください。",
+    "support.faq.q8":  "対応している Apple Watch のモデルは？",
+    "support.faq.a8":  "watchOS 10.0以降の Apple Watch Series 4以降を、iOS 17.0以降の iPhone とペアリングしてお使いください（任意の Watch アプリとコンプリケーションも同じ条件です）。ほかの機器がこの3種類のデータをヘルスケアに書き込むなら、Apple Watch は必須ではありません。",
 
     "support.compat.title": "動作環境",
 
     /* ── 製品ページ ───────────────────────────────────────────────────────── */
     "product.page-title":   "RecoverySync — 睡眠・HRVリカバリートラッカー",
-    "product.eyebrow":      "Apple Watch対応",
+    "product.eyebrow":      "iPhone・ヘルスケア対応",
     "product.title":        "リカバリーを知り、\nスマートに鍛える。",
-    "product.tagline":      "RecoverySyncはHRV・安静時心拍・睡眠を分析し、1日1回のリカバリースコアをあなたの手首に届けます。",
+    "product.tagline":      "RecoverySyncはHRV・安静時心拍・睡眠を分析し、毎朝1つのリカバリースコアを届けます。",
     "product.cta.store":    "App Storeでダウンロード",
     "product.cta.learn":    "詳しく見る",
 
     "product.score.title":    "1つのスコア、3つのシグナル。",
-    "product.score.subtitle": "リカバリースコアは、就寝中にApple Watchが記録した健康データをもとに算出されます。",
+    "product.score.subtitle": "リカバリースコアは、ウェアラブル（Apple Watch など）がヘルスケアに記録した睡眠・HRV・安静時心拍数をもとに算出されます。",
     "product.level.high":     "HIGH",
     "product.level.mod":      "MODERATE",
     "product.level.low":      "LOW",
@@ -356,8 +358,8 @@ const TRANSLATIONS = {
     "product.features.subtitle": "サブスクなし。アカウントなし。データはデバイスの外に出ません。",
     "product.feat1.title":  "プライバシー最優先",
     "product.feat1.desc":   "データ収集ゼロ。健康データはデバイス上に留まります。サーバーなし、トラッキングなし、広告なし。",
-    "product.feat2.title":  "Apple Watchネイティブ",
-    "product.feat2.desc":   "HealthKitから直接読み取り。Apple Watch Series 4以降、コンプリケーション、ウィジェットに対応。",
+    "product.feat2.title":  "ヘルスケアから読み取り",
+    "product.feat2.desc":   "HRV・安静時心拍数・睡眠をヘルスケアから読み取ります。Apple Watch でも、ヘルスケアに書き込む他のウェアラブルでも。ウィジェットと Apple Watch のコンプリケーションにも対応。",
     "product.feat3.title":  "朝のスコア通知",
     "product.feat3.desc":   "毎朝、パーソナライズされたリカバリースコアを受け取れます。オプションの通知で1日が始まる前にお知らせします。",
     "product.feat4.title":  "個人ベースライン",
@@ -366,10 +368,12 @@ const TRANSLATIONS = {
     "product.feat5.desc":   "サブスクなし、継続課金なし。一度購入すれば永続的に使用できます。",
     "product.feat6.title":  "トレンド分析",
     "product.feat6.desc":   "内蔵チャートで回復の傾向を追跡できます。フルアクセスなら履歴をCSVでエクスポートできます。",
+    "product.feat7.title":  "昨日の運動負荷",
+    "product.feat7.desc":   "無料：昨日のアクティブエネルギーを、あなた自身の直前28日と比べて表示します。回復スコアと並べて見られます。",
 
     "product.how.title":   "使い方",
-    "product.step1.title": "Apple Watchを装着して就寝",
-    "product.step1.desc":  "睡眠トラッキングとHRVの記録は自動的に行われます。",
+    "product.step1.title": "ウォッチを着けて就寝",
+    "product.step1.desc":  "Apple Watch などのウェアラブルが、睡眠とHRVをヘルスケアに記録します。",
     "product.step2.title": "朝にアプリを開く",
     "product.step2.desc":  "起床時にリカバリースコアが準備できています。",
     "product.step3.title": "スコアを確認する",
@@ -382,8 +386,8 @@ const TRANSLATIONS = {
     "product.privacy.link":  "プライバシーポリシーを読む",
 
     "product.download.title":  "リカバリーの追跡を始める",
-    "product.download.body":   "iPhoneおよびApple Watch向けにApp Storeで配信中。",
-    "product.download.price":  "¥660 買い切り · $4.99",
+    "product.download.body":   "iPhone 向けに App Store で配信中（Apple Watch アプリは任意）。",
+    "product.download.price":  "無料で始められます · フルアクセスは買い切り",
     "product.download.btn":    "App Storeでダウンロード",
     "product.compat.title":    "動作条件",
   }
