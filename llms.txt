@@ -182,7 +182,7 @@
   - App Store: https://apps.apple.com/app/id6791176557
   - Google Play: https://play.google.com/store/apps/details?id=com.chen.torekarte（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/torekarte/llms.txt
-- [Inkarte（インカルテ）](https://freetokyolabs.com/inkarte/): タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書アプリ（iPhone / iPad / Android）。カウンセリングから電子署名付き同意書（PDF）まで一台で管理し、顧客情報を端末の外に出さない。完全オフライン・買い切り。
+- [Inkarte（インカルテ）](https://freetokyolabs.com/inkarte/): タトゥーアーティスト（彫師）向けの顧客カルテ・予約・施術記録・同意書アプリ（iPhone / iPad / Android）。カウンセリングから電子署名付き同意書（PDF）まで一台で管理する。顧客情報は既定で端末内だけに置き、開発者には届かない（iPhone / iPad 版は任意の iCloud 同期〔フルアクセス・初期設定はオフ〕でご自身の iCloud へ同期できる）。オフラインで動く買い切り。
   - App Store: https://apps.apple.com/app/id6792252166
   - Google Play: https://play.google.com/store/apps/details?id=com.chen.inkarte（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/inkarte/llms.txt
