@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 9 本は Google Play でも配信し、10 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 10 本は Google Play でも配信し、9 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 9 本（Android 版を 10 本準備中）
+配信: App Store 48 本 / Google Play 10 本（Android 版を 9 本準備中）
 
 ## Apps
 
@@ -20,7 +20,7 @@
   - 詳細: https://freetokyolabs.com/saunaflow/llms.txt
 - [Trero](https://freetokyolabs.com/trero/): iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。34 言語対応のフラッグシップアプリ。
   - App Store: https://apps.apple.com/app/id6760746164
-  - Google Play: 準備中 / in preparation（Android 9.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.trero（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/trero/llms.txt
 - [TsukiLift](https://freetokyolabs.com/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
   - App Store: https://apps.apple.com/app/id6767084251

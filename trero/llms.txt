@@ -1,10 +1,10 @@
 # Trero
 
-> iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。35 言語対応のフラッグシップアプリ。
+> iPhone / Apple Watch 向け筋トレ・ワークアウト記録アプリ。前回値の再利用、目標管理、進捗分析、体組成連動。34 言語対応のフラッグシップアプリ。
 
 Web: https://freetokyolabs.com/trero/
 App Store: https://apps.apple.com/app/id6760746164
-Android 版: 準備中 / in preparation（Android 9.0 以降、Google Play で公開予定。公開まで URL は出さない）
+Google Play: https://play.google.com/store/apps/details?id=com.chen.trero（Android 9.0 以降）
 開発: Freetokyo Labs
 バージョン: 1.5.0 / 対応: iOS 17.0 以降
 価格: 無料（アプリ内課金あり）
