@@ -451,7 +451,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -460,9 +461,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -486,6 +489,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -493,11 +502,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -518,7 +529,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Genbalog", "description": "Asistență — Genbalog - 現場写真PDF報告書", "inLanguage": "ro", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/genbalog/ro/support.html", "image": "https://freetokyolabs.com/genbalog/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6770864162", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Genbalog", "description": "Asistență — Genbalog - 現場写真PDF報告書", "inLanguage": "ro", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/genbalog/ro/support.html", "image": "https://freetokyolabs.com/genbalog/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6770864162", "sameAs": ["https://apps.apple.com/app/id6770864162", "https://play.google.com/store/apps/details?id=com.chen.genbalog"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Genbalog", "item": "https://freetokyolabs.com/genbalog/ro/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/genbalog/ro/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Cum fac fotografii și creez un PDF?", "acceptedAnswer": {"@type": "Answer", "text": "Creați un proiect și atingeți-l → butonul + pentru a adăuga fotografii din cameră/bibliotecă → atingeți o fotografie pentru a edita subtitlurile și adnotările → atingeți Creează PDF."}}, {"@type": "Question", "name": "Editările foto uneori nu se salvează", "acceptedAnswer": {"@type": "Answer", "text": "Atingeți Salvare în dreapta sus înainte de a închide. Butonul × renunță la modificări."}}, {"@type": "Question", "name": "Ce pot face cu versiunea gratuită?", "acceptedAnswer": {"@type": "Answer", "text": "Până la 5 PDF-uri pe lună, ultimele 10 proiecte, fotografii cu adnotări și subtitrări vocale. Pro = nelimitat."}}, {"@type": "Question", "name": "Cum anulez Pro?", "acceptedAnswer": {"@type": "Answer", "text": "iOS Setări → Apple ID → Abonamente → Genbalog Pro → Anulare. Cel puțin 24h înainte de reînnoire."}}, {"@type": "Question", "name": "Unde sunt stocate datele?", "acceptedAnswer": {"@type": "Answer", "text": "Toate datele doar pe dispozitiv. Nimic trimis la servere externe. Recomandăm iCloud Backup."}}, {"@type": "Question", "name": "Pot transfera datele la schimbarea dispozitivului?", "acceptedAnswer": {"@type": "Answer", "text": "Restaurați din iCloud Backup sau iTunes Backup. Pentru abonament: restaurați achiziția cu același Apple ID."}}, {"@type": "Question", "name": "Cum adaug un logo la PDF-uri?", "acceptedAnswer": {"@type": "Answer", "text": "Funcție Pro. Actualizați la Pro, apoi Setări → Info companie → setați logo."}}, {"@type": "Question", "name": "Cum schimb limba aplicației?", "acceptedAnswer": {"@type": "Answer", "text": "Setări → Limbă → Japoneză/Engleză/Sistem. Imediat."}}, {"@type": "Question", "name": "Subtitrările vocale nu sunt recunoscute", "acceptedAnswer": {"@type": "Answer", "text": "iOS Setări → Confidențialitate → Recunoaștere vocală → permiteți Genbalog. Permisiunea microfonului este de asemenea necesară."}}, {"@type": "Question", "name": "Aplicația se blochează sau este instabilă", "acceptedAnswer": {"@type": "Answer", "text": "Închideți complet și reporniți. Actualizați iOS și aplicația. Contactați-ne dacă problema persistă."}}]}</script>
 </head>

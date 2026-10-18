@@ -452,7 +452,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -461,9 +462,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -487,6 +490,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -494,11 +503,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -519,7 +530,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Genbalog", "description": "Genbalog は現場職人のための報告書アプリ。現場写真をワンタップで A4 PDF にまとめ、GPS タグ・手書きメモ・カスタムテンプレートに対応。完全オフライン・登録不要。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/genbalog/", "image": "https://freetokyolabs.com/genbalog/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6770864162", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Genbalog", "description": "Genbalog は現場職人のための報告書アプリ。現場写真をワンタップで A4 PDF にまとめ、GPS タグ・手書きメモ・カスタムテンプレートに対応。完全オフライン・登録不要。", "inLanguage": "ja", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/genbalog/", "image": "https://freetokyolabs.com/genbalog/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6770864162", "sameAs": ["https://apps.apple.com/app/id6770864162", "https://play.google.com/store/apps/details?id=com.chen.genbalog"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "Genbalog", "item": "https://freetokyolabs.com/genbalog/"}]}</script>
 </head>
 <body>
@@ -546,6 +557,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <div class="hero-cta">
     <a href="https://apps.apple.com/jp/app/genbalog/id6770864162" class="btn-primary">
       <span>🍎</span><span data-i18n="hero.download">App Store でダウンロード</span>
+    </a>
+<a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.chen.genbalog" target="_blank" rel="noopener" data-ftplay>
+      <span>Google Play でダウンロード</span>
     </a>
     <a href="support.html" class="btn-secondary" data-i18n="hero.learnmore">詳しく見る</a>
   </div>
@@ -639,6 +653,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <li class="no" data-i18n="plan.free.f6">カスタムテンプレート</li>
       </ul>
       <a href="https://apps.apple.com/jp/app/genbalog/id6770864162" class="plan-btn secondary" data-i18n="plan.free.cta">無料で始める</a>
+<a class="plan-btn secondary" href="https://play.google.com/store/apps/details?id=com.chen.genbalog" target="_blank" rel="noopener" data-ftplay>Google Play で入手</a>
     </div>
     <div class="plan-card popular">
       <div class="popular-badge" data-i18n="plan.pro.badge">おすすめ</div>
@@ -654,6 +669,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <li data-i18n="plan.pro.f6">カスタムテンプレート（最大6）</li>
       </ul>
       <a href="https://apps.apple.com/jp/app/genbalog/id6770864162" class="plan-btn primary" data-i18n="plan.pro.cta">3日間無料で試す</a>
+<a class="plan-btn primary" href="https://play.google.com/store/apps/details?id=com.chen.genbalog" target="_blank" rel="noopener" data-ftplay>Google Play で入手</a>
     </div>
   </div>
 </section>
@@ -683,14 +699,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <a href="support.html" class="btn-secondary" data-i18n="faq.more">他の質問を見る →</a>
   </div>
 </section>
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Genbalog の Android 版は <a href="https://play.google.com/store/apps/details?id=com.chen.genbalog" target="_blank" rel="noopener">Google Play</a> で配信しています。Android 9.0 以降に対応しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>Android 版についてのご質問は<a href="support.html#android-support">サポートページ</a>をご覧ください。</p>
+</section>
 <section class="ftshots" aria-label="アプリの画面">
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="案件の一覧。現場ごとに住所・顧客名・写真枚数・進行状況が並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>案件一覧</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="写真編集。現場写真にペンで注釈を描き込む画面。ペン・色・太さのツールバーが下部にある" width="360" height="782" loading="lazy" decoding="async"><figcaption>写真に注釈</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="PDF プレビュー。現場名と日付の見出し付きで、注釈した写真がレイアウトされた報告書" width="360" height="782" loading="lazy" decoding="async"><figcaption>A4 PDF報告書</figcaption></figure></div>
 </section>
 <section class="ftcta">
 <h2>Genbalog</h2>
-<p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>
-<a class="cta" href="https://apps.apple.com/app/id6770864162" target="_blank" rel="noopener">App Store で見る</a><span class="ftcta__price">無料（アプリ内課金あり）</span>
+<p>App Store と Google Play から入手できます。iPhone / iPad でも Android でも使えます。</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6770864162" target="_blank" rel="noopener">App Store で見る</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.genbalog" target="_blank" rel="noopener">Google Play で見る</a></div><span class="ftcta__price">無料（アプリ内課金あり）</span>
 </section>
 </main>
 <footer class="footer">

@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 64 本（配信中 48 本・近日公開 16 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 8 本は Google Play でも配信し、10 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 64 本（配信中 48 本・近日公開 16 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 9 本は Google Play でも配信し、10 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 64（健康 10 / くらし 24 / おかね 5 / しごと 25）
-配信: App Store 48 本 / Google Play 8 本（Android 版を 10 本準備中）
+配信: App Store 48 本 / Google Play 9 本（Android 版を 10 本準備中）
 
 ## Apps
 
@@ -154,6 +154,7 @@
   - 詳細: https://freetokyolabs.com/carehours/llms.txt
 - [Genbalog](https://freetokyolabs.com/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。
   - App Store: https://apps.apple.com/app/id6770864162
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.genbalog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/genbalog/llms.txt
 - [Hanro](https://freetokyolabs.com/hanro/): 配達ドライバー（フードデリバリー・軽貨物）向けの売上 & 経費管理アプリ。マルチプラットフォーム、自動マイレージ、稼ぎ時予測（過去実績の平均）、確定申告 CSV。英語版あり。
   - App Store: https://apps.apple.com/app/id6771629040
