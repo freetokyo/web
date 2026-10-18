@@ -580,12 +580,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2 id="android-privacy">How the Android version handles your data</h2>
 <p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
 <p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
-<p>Google cloud backup is disabled (<code>allowBackup="false"</code>). Direct device-to-device transfer when you change phones follows the Android default. If you do not want a copy to leave the device, exclude this app during transfer.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
 <p>With your permission, SaunaFlow uses Health Connect on your device. It writes exercise and heart rate.</p>
 <p>Health data handled through Health Connect is used solely to calculate and display results inside the app. It is never used for advertising, shared with data brokers, or disclosed to third parties. You can revoke Health Connect permission at any time in your device settings.</p>
-<p>The only external service used is Google Play Billing (purchases). Google processes all payments; card details never reach the developer.</p>
-<p>The only device permission the app requests is showing notifications. It is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
-<p>Uninstalling the app deletes the data on your device.</p>
+<p>The only external services used are Google Play Billing (purchases), Google Play In-app Review (rating prompt) and the Wear OS Data Layer (syncing with your watch). Google processes all payments; card details never reach the developer.</p>
+<p>The only device permission the phone app requests is showing notifications. It is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
+<p>The Android version also runs on Wear OS watches. Data moving between the watch and the phone is carried by the Wear OS Data Layer in Google Play services and never passes through the developer's servers. When the watch and the phone are not connected over Bluetooth, it may be relayed through Google's servers (end-to-end encrypted on that route).</p>
+<p>With your permission, heart rate is measured by the watch's heart-rate sensor (Health Services).</p>
+<p>The only permissions the watch app asks for are the heart-rate sensor and showing notifications; it asks when you open the watch app.</p>
+<p>It also declares permissions that Android grants without asking: keeping a session running in the foreground while the screen is off (a foreground service) and vibration.</p>
+<p>Cloud backup and device-to-device transfer are disabled in the watch app too.</p>
+<p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
 </section>
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
