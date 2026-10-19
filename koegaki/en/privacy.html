@@ -547,6 +547,18 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <p><a href="https://freetokyolabs.com/koegaki/privacy.html" style="color:#3A6ED6">🇯🇵 Privacy Policy（日本語）</a></p>
     <p style="margin-top:16px"><a href="mailto:support@freetokyolabs.com" style="color:#3A6ED6">support@freetokyolabs.com</a></p>
   </section>
+
+<section class="ftlegal">
+<h2 id="android-privacy">How the Android version handles your data</h2>
+<p>The following describes the Android version (Android 12 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
+<p>The only external services used are Google Play Billing (purchases) and Google Play In-app Review (rating prompt). Google processes all payments; card details never reach the developer.</p>
+<p>Transcription uses only Android's on-device speech recognition (<code>createOnDeviceSpeechRecognizer</code>). It never falls back to network speech recognition; on devices without on-device recognition, transcription is simply unavailable. Your recordings and transcripts are never sent off the device.</p>
+<p>The only device permissions the app requests are staying in the foreground while recording, showing notifications and the microphone (recording). Each is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
+<p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
+</section>
+
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
 <p>This app is provided by Freetokyo Labs, which acts as the data controller. For any question about this policy or about personal data, contact support@freetokyolabs.com. We normally reply within five business days.</p>
