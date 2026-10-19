@@ -476,6 +476,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </nav>
 <main class="ftbody" id="ftmain">
 <section><div class="wrap"><h2>プライバシーポリシー</h2><p>Hemlog（以下「本アプリ」）における個人情報および入力内容の取り扱いについて説明します。</p></div></section><section><div class="wrap"><h2>収集する情報</h2><p><strong>本アプリは利用者の情報を収集しません。</strong>氏名・メールアドレス・端末識別子・利用状況のいずれも取得しません。</p></div></section><section><div class="wrap"><h2>データの保存場所</h2><p>Hemlog は<strong>通信を行いません</strong>。<strong>アカウント登録は不要</strong>で、<strong>開発者にデータは送信されません</strong>。</p><p>端末で iCloud バックアップが有効な場合、他のアプリと同じく Hemlog のデータもApple のバックアップに含まれます。そのバックアップを扱うのは Apple であり、Hemlog ではありません。</p><p>解析 SDK・広告 SDK は組み込んでおらず、開発者が利用状況を知る手段はありません。</p></div></section><section><div class="wrap"><h2>端末の機能の利用</h2><ul><li><strong>カメラ</strong>: 仕上がり写真などをその場で撮影するために使用します。</li><li><strong>Face ID / Touch ID</strong>: アプリロックの解除に使用します。生体情報は端末の外に出ず、本アプリが受け取ることもありません。</li></ul><p>写真ライブラリから画像を選ぶ操作は iOS 標準のピッカーを通すため、写真へのアクセス許可を必要としません。位置情報・連絡先・マイク・通知は使用しません。</p></div></section><section><div class="wrap"><h2>顧客（第三者）の情報について</h2><p>本アプリに入力される顧客の氏名・連絡先は、<strong>本アプリをお使いの事業者ご自身が管理する情報</strong>です。開発者はそれを受け取らず、保存もしません。適用される法令の遵守は事業者ご自身の責任となります。</p><p>顧客から情報の削除を求められた場合に備えて、<strong>「連絡先だけを削除」</strong>（氏名と連絡先を消し、匿名 ID に置き換えて直しの記録は残す）と<strong>「完全に削除」</strong>を分けて用意しています。どちらが適切かの判断は事業者ご自身が行ってください。本記述は法的助言ではありません。</p></div></section><section><div class="wrap"><h2>データの書き出しと削除</h2><p>設定から、完全書き出し（写真を含む `.hemlog` ファイル）と復元、台帳の書き出し（TSV）が行えます。<strong>台帳の書き出しには写真が含まれないため、バックアップにはなりません。</strong>アプリを削除すると、端末内のデータも消えます。</p></div></section><section><div class="wrap"><h2>お問い合わせ</h2><p><a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a></p></div></section>
+
+<section class="ftlegal">
+<h2 id="android-privacy">Android 版でのデータの扱い</h2>
+<p>以下は Android 版（Android 8.0 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
+<p>記録したデータは端末内のローカルデータベース（Room）に保存され、開発者のサーバーへ送られることはありません。</p>
+<p>クラウドバックアップと端末間移行はどちらも無効にしてあります（<code>allowBackup="false"</code> と <code>data_extraction_rules.xml</code>）。端末を替えるときは、アプリ内の書き出し機能でご自身でバックアップしてください。</p>
+<p>利用している外部サービスは Google Play Billing（購入）だけです。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。</p>
+<p>アプリをアンインストールすると、端末内のデータは削除されます。バックアップも移行も無効なので、端末の外にコピーは残りません。</p>
+</section>
+
 <section class="ftlegal">
 <h2>事業者・お問い合わせ・権利について</h2>
 <p>本アプリの提供者（データ管理者）は Freetokyo Labs です。 本ポリシーおよび個人データの取り扱いに関するお問い合わせは support@freetokyolabs.com までご連絡ください。 通常5営業日以内に返信します。</p>
