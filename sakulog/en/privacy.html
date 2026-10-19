@@ -520,6 +520,18 @@ The Developer never receives any of it.</p></div></header>
 <p>Freetokyo Labs · support@freetokyolabs.com</p>
 <p class="note">Last updated: July 2026</p>
 </div></section>
+
+<section class="ftlegal">
+<h2 id="android-privacy">How the Android version handles your data</h2>
+<p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>Google cloud backup is disabled (<code>allowBackup="false"</code>). Direct device-to-device transfer when you change phones follows the Android default. If you do not want a copy to leave the device, exclude this app during transfer.</p>
+<p>Document scanning uses the ML Kit document scanner in Google Play services. Capturing the pages and turning them into a PDF happen on your device inside Google Play services; SakuLog receives only the finished file and keeps it in its own storage. No image is uploaded. SakuLog itself does not request camera permission.</p>
+<p>The only external services used are Google Play Billing (purchases), Google Play In-app Review (rating prompt) and the ML Kit document scanner in Google Play services (scanning documents). Google processes all payments; card details never reach the developer.</p>
+<p>The only device permissions the app requests are showing notifications, the microphone (recording) and writing to shared storage (Android 9 and earlier). Each is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
+<p>Uninstalling the app deletes the data on your device.</p>
+</section>
+
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
 <p>This app is provided by Freetokyo Labs, which acts as the data controller. For any question about this policy or about personal data, contact support@freetokyolabs.com. We normally reply within five business days.</p>

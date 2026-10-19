@@ -530,6 +530,18 @@ iCloud 上のデータは、iOS の設定 &gt; Apple Account &gt; iCloud から�
 <p>Freetokyo Labs ／ support@freetokyolabs.com</p>
 <p class="note">最終更新: 2026年7月</p>
 </div></section>
+
+<section class="ftlegal">
+<h2 id="android-privacy">Android 版でのデータの扱い</h2>
+<p>以下は Android 版（Android 9.0 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
+<p>記録したデータは端末内のローカルデータベース（Room）に保存され、開発者のサーバーへ送られることはありません。</p>
+<p>Google のクラウドバックアップは無効にしてあります（<code>allowBackup="false"</code>）。端末を買い替えたときの端末間の直接移行は Android の既定に従います。端末外にコピーを残したくない場合は、移行時にこのアプリを対象から外してください。</p>
+<p>書類のスキャンには、Google Play 開発者サービスに含まれる ML Kit の文書スキャナを使います。撮影から PDF への変換までは端末上の Google Play 開発者サービスの中で行われ、SakuLog が受け取るのは出来上がったファイルだけで、アプリ内の保存領域に置きます。画像がアップロードされることはありません。SakuLog 自身はカメラの権限を求めません。</p>
+<p>利用している外部サービスは Google Play Billing（購入）、Google Play In-app Review（評価の依頼）、Google Play 開発者サービスの ML Kit 文書スキャナ（書類のスキャン）だけです。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。</p>
+<p>アプリが求める端末の権限は通知の表示、マイク（録音）、共有ストレージへの書き込み（Android 9 以下）だけです。いずれも該当する機能を使うときにのみ要求され、断っても他の機能は使えます。</p>
+<p>アプリをアンインストールすると、端末内のデータは削除されます。</p>
+</section>
+
 <section class="ftlegal">
 <h2>事業者・お問い合わせ・権利について</h2>
 <p>本アプリの提供者（データ管理者）は Freetokyo Labs です。 本ポリシーおよび個人データの取り扱いに関するお問い合わせは support@freetokyolabs.com までご連絡ください。 通常5営業日以内に返信します。</p>
