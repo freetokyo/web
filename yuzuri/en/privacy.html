@@ -568,6 +568,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
       <a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a>
     </div>
   </div>
+
+<section class="ftlegal">
+<h2 id="android-privacy">How the Android version handles your data</h2>
+<p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>The app itself contains no networking code.</p>
+<p>Sensitive fields such as account numbers and passwords are encrypted (AES-GCM) with a key held in the Android Keystore before they are stored on your device. The key cannot be extracted from the Keystore, so a copy of the ciphertext elsewhere cannot be decrypted.</p>
+<p>Photos you attach are chosen with the system photo picker, which hands the app only the photo you pick, so the app does not ask for permission to read your whole photo library. The chosen photo is copied into the app's own storage and the database keeps only its location.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
+<p>The key for sensitive fields cannot leave the device, so carrying only the ciphertext to a new device would leave it unreadable. To move, write an encrypted backup (protected by a passphrase) from inside the app. <strong>Restoring works without a purchase.</strong></p>
+<p>The only external services used are Google Play Billing (purchases) and Google Play In-app Review (rating prompt). Google processes all payments; card details never reach the developer.</p>
+<p>When you export a PDF or an encrypted backup, you choose where it is saved (Android's file picker). If you use Share to send it to another app, a temporary copy is kept in the app's cache and deleted the next time you share and on the next launch. What the receiving app does with it is up to that app. Nothing you write is passed to Google Play Billing or In-app Review.</p>
+<p>The only device permission the app asks for is biometric authentication (fingerprint or face) for the app lock. The biometric data itself is handled by Android; the app receives only whether authentication succeeded. You can turn the app lock off.</p>
+<p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
+<p>Backup files you exported yourself stay wherever you saved them.</p>
+</section>
+
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
 <p>This app is provided by Freetokyo Labs, which acts as the data controller. For any question about this policy or about personal data, contact support@freetokyolabs.com. We normally reply within five business days.</p>
