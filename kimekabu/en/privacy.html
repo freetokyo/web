@@ -481,8 +481,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <h2 id="android-privacy">How the Android version handles your data</h2>
 <p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
 <p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
-<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app. Both export and import are free features.</p>
-<p>The only external services used are Google Play Billing (purchases) and Google Play In-app Review (rating prompt). The "In-app purchase" section above describes the iOS version; on Android, Google processes all payments. In either case, card details never reach the developer.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
+<p>Both export and import are free features.</p>
+<p>The only external services used are Google Play Billing (purchases) and Google Play In-app Review (rating prompt). Google processes all payments; card details never reach the developer.</p>
+<p>The "In-app purchase" section above describes the iOS version; on Android, payments are processed by Google Play.</p>
 <p>The only device permission the app declares is unlocking it with biometrics or your device screen lock (PIN or pattern). It requests no runtime permissions at all, and it does not use the camera, location, contacts or notifications.</p>
 <p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
 </section>
