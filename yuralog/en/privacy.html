@@ -502,18 +502,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
   <hr />
 <section class="ftlegal">
-<h2 id="android-privacy">How data is handled in the Android version</h2>
-<p>The following applies to the Android version (Android 9.0 and later). The description above covers the iOS version; only the points listed here differ on Android.</p>
-<p>Your entries are stored in a local database (Room) on your device and are never sent to the developer's servers. The app itself contains no networking code.</p>
-<p>Cloud backup and device-to-device transfer are both disabled (<code>allowBackup="false"</code> and <code>data_extraction_rules.xml</code>). When you change devices, use the export feature inside the app to make your own backup.</p>
-<p>With your permission, Yuralog reads from Health Connect on your device. It reads sleep, menstruation and skin temperature. Access is read-only; nothing is written back.</p>
-<p>Health data obtained through Health Connect is used solely to calculate and display results inside the app. It is never used for advertising, never shared with data brokers, and never disclosed to third parties. You can revoke the Health Connect permission at any time in your device settings.</p>
-<p>The note tidy-up feature uses generative AI that runs on your device (Android AICore). <strong>The text of your notes never leaves the device.</strong> Network access happens only when the model has to be downloaded the first time you use the feature, and what is sent there is not your data. Tidying runs only when you tap the button.</p>
-<p>Entries made on the Wear OS app reach your phone over the direct watch-to-phone connection (Bluetooth / Wi-Fi). They are stored only in the on-device database on the phone and do not pass through any cloud service.</p>
+<h2 id="android-privacy">How the Android version handles your data</h2>
+<p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>The app itself contains no networking code and does not hold the network permission (<code>INTERNET</code>).</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
+<p>With your permission, Yuralog uses Health Connect on your device. It reads menstruation, skin temperature and sleep. Access is read-only; nothing is ever written back.</p>
+<p>Health data handled through Health Connect is used solely to calculate and display results inside the app. It is never used for advertising, shared with data brokers, or disclosed to third parties. You can revoke Health Connect permission at any time in your device settings.</p>
+<p>The only external services used are Google Play Billing (purchases), Google Play In-app Review (rating prompt) and the Wear OS Data Layer (syncing with your watch). Google processes all payments; card details never reach the developer.</p>
+<p>The note tidy-up feature uses generative AI that runs on your device (Android AICore). <strong>The text of your notes never leaves the device.</strong> When the model has to be fetched the first time you use the feature, it is Android's AICore that downloads it; the app never sends your data. Tidying runs only when you tap the button.</p>
 <p>The home screen widget shows only whether you logged today and your current streak. It never shows symptom categories, intensities or notes.</p>
-<p>The only external service used is Google Play Billing (purchases). All payments are processed by Google; card numbers and other payment details never reach the developer.</p>
-<p>The device permissions the app requests are showing notifications and re-scheduling your reminders after a restart. Reading health data is requested separately as a Health Connect permission, and declining it leaves the rest of the app usable.</p>
-<p>Uninstalling the app deletes the data on your device. Because backup and transfer are both disabled, no copy is left outside the device.</p>
+<p>The only device permissions the phone app requests are showing notifications and re-arming reminders after a reboot. Each is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
+<p>The Android version also runs on Wear OS watches. Data moving between the watch and the phone is carried by the Wear OS Data Layer in Google Play services and never passes through the developer's servers. When the watch and the phone are not connected over Bluetooth, it may be relayed through Google's servers (end-to-end encrypted on that route).</p>
+<p>The watch app requests no device permissions.</p>
+<p>The watch app has Google cloud backup disabled, but direct device-to-device transfer when you change watches follows the Android default.</p>
+<p>Uninstalling the app deletes the data on your device.</p>
 </section>
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
