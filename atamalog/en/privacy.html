@@ -521,17 +521,24 @@ PDF or CSV first.</p>
 
 </div>
 <section class="ftlegal">
-<h2 id="android-privacy">How data is handled in the Android version</h2>
-<p>This section describes the Android version (Android 9.0 and later). The text above describes the iOS version; only the points written here differ on Android.</p>
-<p>Your entries (intensity, medication, notes), the health data the App reads, the weather it fetches and your settings are stored in a local database (Room) and a settings store on your device. They are never sent to a developer server. We do not operate a server.</p>
-<p>Cloud backup and device-to-device transfer are both disabled (<code>allowBackup="false"</code> and <code>data_extraction_rules.xml</code>). When you change phones, use the in-app export and restore (free) to move your data yourself.</p>
-<p>With your permission, Atamalog reads from Health Connect on your device: sleep, heart rate variability (HRV) and resting heart rate. Access is read-only; nothing is written back. It is used only to compute and show the day's index (0&ndash;100) on your device. Health data is never used for advertising, never shared with data brokers and never disclosed to third parties. You can revoke Health Connect access at any time in your device settings.</p>
+<h2 id="android-privacy">How the Android version handles your data</h2>
+<p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>What stays on your device: your entries (intensity, medication, notes), the health data the app reads, the weather it fetches and your settings. We do not operate a server.</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
+<p>The in-app export and restore are free.</p>
+<p>With your permission, Atamalog uses Health Connect on your device. It reads heart rate variability, resting heart rate and sleep. Access is read-only; nothing is ever written back.</p>
+<p>Health data handled through Health Connect is used solely to calculate and display results inside the app. It is never used for advertising, shared with data brokers, or disclosed to third parties. You can revoke Health Connect permission at any time in your device settings.</p>
+<p>The app contacts api.open-meteo.com, geocoding-api.open-meteo.com to fetch external data such as weather. Only the minimum needed for that query is sent; your own records are never transmitted.</p>
+<p>The only external services used are Google Play Billing (purchases), Google Play In-app Review (rating prompt) and the Wear OS Data Layer (syncing with your watch). Google processes all payments; card details never reach the developer.</p>
 <p><strong>Location works differently from the iOS version.</strong> The Android version requests no location permission at all. The place used for weather stays empty until you search for a place name in Settings and choose one.</p>
-<p>Once you choose a place, <strong>its latitude and longitude are sent to Open-Meteo (<a href="https://open-meteo.com/" target="_blank" rel="noopener">open-meteo.com</a>)</strong> to fetch the weather, and when you search for a place the text you type is sent to the same provider's place-name lookup. Those two are the only things that leave your device: your entries, your health data and your index never do. We keep no copy of what is sent; please refer to Open-Meteo's privacy policy for how they handle it. If you never choose a place, no network request is made at all, and your entries and the index (without the weather factors) still work.</p>
-<p>The only other external service is Google Play Billing (purchases). Google processes all payments; card details never reach the developer.</p>
-<p>If you use the Wear OS app, the day's index and your entries are synchronised between your own phone and watch through the Google Play services Data Layer. The developer does not receive the contents of that exchange.</p>
-<p>The only device permission the App asks for is showing notifications. It is requested only when you use the relevant feature, and declining it leaves everything else usable. The App contains no advertising or analytics SDKs.</p>
-<p>Uninstalling the App deletes the data on your device. Because backup and transfer are disabled, no copy remains outside the device. Export anything you want to keep as PDF/CSV or with the backup feature first.</p>
+<p>Once you choose a place, <strong>its latitude and longitude are sent to Open-Meteo (<a href="https://open-meteo.com/" target="_blank" rel="noopener">open-meteo.com</a>)</strong> to fetch the weather, and when you search for a place the text you type is sent to the same provider's place-name lookup. Your entries, your health data and your index never leave the device. We keep no copy of what is sent; please refer to Open-Meteo's privacy policy for how they handle it. If you never choose a place, no weather request is made, and your entries and the index (without the weather factors) still work.</p>
+<p>The only device permissions the phone app requests are network access and showing notifications. Each is asked for only when you use the matching feature, and declining leaves the rest of the app usable.</p>
+<p>The Android version also runs on Wear OS watches. Data moving between the watch and the phone is carried by the Wear OS Data Layer in Google Play services and never passes through the developer's servers. When the watch and the phone are not connected over Bluetooth, it may be relayed through Google's servers (end-to-end encrypted on that route).</p>
+<p>The watch app requests no device permissions.</p>
+<p>The watch app has Google cloud backup disabled, but direct device-to-device transfer when you change watches follows the Android default.</p>
+<p>Uninstalling the app deletes the data on your device.</p>
+<p>Export anything you want to keep as PDF/CSV or with the backup feature before uninstalling.</p>
 </section>
 <section class="ftlegal">
 <h2>Controller, contact and your rights</h2>
