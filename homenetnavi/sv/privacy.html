@@ -555,32 +555,32 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>2-1.</p>
 <p>Information du anger • Hushållsöverhuvudets och makens/makans årsinkomst (lön/näringsinkomst) • Antal och åldersklass för anhöriga • Olika inkomstavdrag (sjukvårdskostnader, socialförsäkringsavgifter, ömsesidig hjälp för småföretag, etc.</p>
 <p>) • Kommunklassificering för kommunalskatt (Premium-funktion) • Namn/anteckningar för sparade scenarier 2-2.</p>
-<p>Automatiskt insamlad information • Datum för första installation/antal appstarter (för att förstå funktionsanvändning, endast på enheten) • Status för prenumerationsköp (bestäms av Apple StoreKit) 2-3.</p>
+<p><strong>iOS:</strong> Automatiskt insamlad information • Datum för första installation/antal appstarter (för att förstå funktionsanvändning, endast på enheten) • Status för prenumerationsköp (bestäms av Apple StoreKit) 2-3.</p>
 <p>Information som inte samlas in • Personligt identifierbar information som namn, adress, telefonnummer, e-postadress • GPS-platsdata • Kontakter/adressbok • Reklamidentifierare (IDFA) • Biometrisk data • Webbläsarhistorik / användning av andra appar • Data synkroniserad till molnet (denna app utför ingen serveröverföring)</p>
 <h2>3. Syfte med användning av information</h2>
 <p>Den hanterade informationen används endast för följande syften.</p>
-<p>• Beräkning och presentation av inkomstskatt, kommunalskatt och socialförsäkringsavgifter baserat på 2026 års system, och visning av nettolön • Hushållsbaserad scenariojämförelse och lagring • Lokala aviseringar vid närmande av en &quot;inkomstgräns&quot; • Bestämning av prenumerationens tillämpning (via StoreKit)</p>
+<p><strong>iOS:</strong> • Beräkning och presentation av inkomstskatt, kommunalskatt och socialförsäkringsavgifter baserat på 2026 års system, och visning av nettolön • Hushållsbaserad scenariojämförelse och lagring • Lokala aviseringar vid närmande av en &quot;inkomstgräns&quot; • Bestämning av prenumerationens tillämpning (via StoreKit)</p>
 <h2>4. Var data lagras</h2>
 <p>Din data lagras på följande platser.</p>
 <p>• Endast på din enhet: angivna värden och sparade scenarier lagras i UserDefaults och FileManager (lokal lagring på enheten).</p>
 <p>• Ingen serveröverföring: denna app har ingen egen backend-server.</p>
 <p>Det finns ingen överföring till Firebase eller något eget API.</p>
-<p>• iCloud / CloudKit: eftersom denna app inte erbjuder familjedelning eller synkronisering mellan enheter, använder den inte CloudKit.</p>
-<p>Om denna apps data ingår i en iCloud-säkerhetskopia följer Apples specifikationer för enhetssäkerhetskopiering.</p>
+<p><strong>iOS:</strong> • iCloud / CloudKit: eftersom denna app inte erbjuder familjedelning eller synkronisering mellan enheter, använder den inte CloudKit.</p>
+<p><strong>iOS:</strong> Om denna apps data ingår i en iCloud-säkerhetskopia följer Apples specifikationer för enhetssäkerhetskopiering.</p>
 <p>Ingen data överförs någonsin till utvecklarens server.</p>
 <p>Denna apps PrivacyInfo.</p>
 <p>xcprivacy deklarerar ingen spårning (NSPrivacyTracking), och den utför ingen tredjepartsspårning.</p>
 <h2>5. Tredjepartstjänster</h2>
 <p>Tredjepartstjänsterna som används av denna app är följande.</p>
 <p>Alla är tjänster som tillhandahålls av Apple Inc.</p>
-<p>Tjänst | Leverantör | Syfte / StoreKit / App Store | Apple Inc.</p>
+<p><strong>iOS:</strong> Tjänst | Leverantör | Syfte / StoreKit / App Store | Apple Inc.</p>
 <p>| Behandling av prenumerationsköp / UserNotifications | Apple Inc.</p>
 <p>| Lokala aviseringar vid närmande av en &quot;gräns&quot; (behandling på enheten) Denna app tillhandahåller länkar till externa systemsidor (nationella skatteverket, japanska pensionstjänsten, etc.</p>
 <p>), men beteendet på dessa länkade webbplatser styrs av respektive webbplats egen sekretesspolicy.</p>
 <p>Se apple.</p>
 <p>com/jp/legal/privacy för Apples sekretesspolicy.</p>
 <h2>6. Datalagringsperiod</h2>
-<p>Angivna värden och sparade scenarier behålls på enheten tills denna app raderas från din enhet. Radering av appen raderar all lokal data (förutom när det ingår i en iCloud-säkerhetskopia).</p>
+<p><strong>iOS:</strong> Angivna värden och sparade scenarier behålls på enheten tills denna app raderas från din enhet. Radering av appen raderar all lokal data (förutom när det ingår i en iCloud-säkerhetskopia).</p>
 <h2>7. Dina rättigheter</h2>
 <p>Radering av data Du kan radera varje scenario från &quot;Inställningar&quot; i appen.</p>
 <p>Radering av själva appen raderar all lokal data på enheten.</p>
@@ -596,6 +596,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>För frågor om denna sekretesspolicy, eller förfrågningar angående personlig information, kontakta oss nedan.</p>
 <h2>11. Ändringar av denna policy</h2>
 <p>Denna sekretesspolicy kan revideras vid behov. Väsentliga ändringar kommer att tillkännages via avisering i appen eller publicering på denna sida.</p>
+<h2 id="android">Android</h2>
+<p>Dessa data lagras på din enhet i en lokal databas. Molnsäkerhetskopiering och överföring mellan enheter är avstängda, så de lämnar aldrig din enhet.</p>
+<p>När appen avinstalleras raderas all data på enheten. Eftersom molnsäkerhetskopiering och överföring mellan enheter är avstängda finns ingen kopia utanför enheten.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontakt</p>

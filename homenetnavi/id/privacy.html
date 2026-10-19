@@ -555,32 +555,32 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>2-1.</p>
 <p>Informasi yang Anda masukkan • Pendapatan tahunan kepala rumah tangga dan pasangan (gaji/pendapatan bisnis) • Jumlah dan kategori usia tanggungan • Berbagai pengurangan pendapatan (biaya medis, premi asuransi sosial, bantuan timbal balik usaha kecil, dll.</p>
 <p>) • Klasifikasi kotamadya pajak daerah (fitur Premium) • Nama/catatan skenario yang disimpan 2-2.</p>
-<p>Informasi yang dikumpulkan secara otomatis • Tanggal instalasi pertama/jumlah peluncuran aplikasi (untuk memahami penggunaan fitur, hanya di perangkat) • Status pembelian langganan (ditentukan oleh Apple StoreKit) 2-3.</p>
+<p><strong>iOS:</strong> Informasi yang dikumpulkan secara otomatis • Tanggal instalasi pertama/jumlah peluncuran aplikasi (untuk memahami penggunaan fitur, hanya di perangkat) • Status pembelian langganan (ditentukan oleh Apple StoreKit) 2-3.</p>
 <p>Informasi yang tidak dikumpulkan • Informasi identitas pribadi seperti nama, alamat, nomor telepon, alamat email • Data lokasi GPS • Kontak/buku alamat • Pengenal iklan (IDFA) • Data biometrik • Riwayat penjelajahan / penggunaan aplikasi lain • Data yang disinkronkan ke cloud (aplikasi ini tidak melakukan transmisi server apa pun)</p>
 <h2>3. Tujuan Penggunaan Informasi</h2>
 <p>Informasi yang ditangani hanya digunakan untuk tujuan berikut.</p>
-<p>• Menghitung dan menyajikan pajak penghasilan, pajak daerah, dan premi asuransi sosial berdasarkan sistem 2026, dan menampilkan gaji bersih • Perbandingan dan penyimpanan skenario berbasis rumah tangga • Notifikasi lokal saat mendekati &quot;ambang batas pendapatan&quot; • Menentukan penerapan langganan (melalui StoreKit)</p>
+<p><strong>iOS:</strong> • Menghitung dan menyajikan pajak penghasilan, pajak daerah, dan premi asuransi sosial berdasarkan sistem 2026, dan menampilkan gaji bersih • Perbandingan dan penyimpanan skenario berbasis rumah tangga • Notifikasi lokal saat mendekati &quot;ambang batas pendapatan&quot; • Menentukan penerapan langganan (melalui StoreKit)</p>
 <h2>4. Di Mana Data Disimpan</h2>
 <p>Data Anda disimpan di lokasi berikut.</p>
 <p>• Hanya di perangkat Anda: nilai yang dimasukkan dan skenario yang disimpan disimpan di UserDefaults dan FileManager (penyimpanan lokal di perangkat).</p>
 <p>• Tidak ada transmisi server: aplikasi ini tidak memiliki server backend sendiri.</p>
 <p>Tidak ada transmisi ke Firebase atau API milik sendiri apa pun.</p>
-<p>• iCloud / CloudKit: karena aplikasi ini tidak menyediakan berbagi keluarga atau sinkronisasi lintas perangkat, aplikasi ini tidak menggunakan CloudKit.</p>
-<p>Apakah data aplikasi ini disertakan dalam cadangan iCloud mengikuti spesifikasi cadangan perangkat Apple.</p>
+<p><strong>iOS:</strong> • iCloud / CloudKit: karena aplikasi ini tidak menyediakan berbagi keluarga atau sinkronisasi lintas perangkat, aplikasi ini tidak menggunakan CloudKit.</p>
+<p><strong>iOS:</strong> Apakah data aplikasi ini disertakan dalam cadangan iCloud mengikuti spesifikasi cadangan perangkat Apple.</p>
 <p>Tidak ada data yang pernah dikirimkan ke server pengembang.</p>
 <p>PrivacyInfo.</p>
 <p>xcprivacy aplikasi ini menyatakan tidak ada pelacakan (NSPrivacyTracking), dan tidak melakukan pelacakan pihak ketiga apa pun.</p>
 <h2>5. Layanan Pihak Ketiga</h2>
 <p>Layanan pihak ketiga yang digunakan oleh aplikasi ini adalah sebagai berikut.</p>
 <p>Semuanya adalah layanan yang disediakan oleh Apple Inc.</p>
-<p>Layanan | Penyedia | Tujuan / StoreKit / App Store | Apple Inc.</p>
+<p><strong>iOS:</strong> Layanan | Penyedia | Tujuan / StoreKit / App Store | Apple Inc.</p>
 <p>| Pemrosesan pembelian langganan / UserNotifications | Apple Inc.</p>
 <p>| Notifikasi lokal saat mendekati &quot;ambang batas&quot; (pemrosesan di perangkat) Aplikasi ini menyediakan tautan ke halaman sistem eksternal (Badan Pajak Nasional, Layanan Pensiun Jepang, dll.</p>
 <p>), tetapi perilaku di situs tertaut tersebut diatur oleh kebijakan privasi masing-masing situs.</p>
 <p>Silakan merujuk ke apple.</p>
 <p>com/jp/legal/privacy untuk kebijakan privasi Apple.</p>
 <h2>6. Periode Retensi Data</h2>
-<p>Nilai yang dimasukkan dan skenario yang disimpan disimpan di perangkat hingga aplikasi ini dihapus dari perangkat Anda. Menghapus aplikasi akan menghapus semua data lokal (kecuali jika disertakan dalam cadangan iCloud).</p>
+<p><strong>iOS:</strong> Nilai yang dimasukkan dan skenario yang disimpan disimpan di perangkat hingga aplikasi ini dihapus dari perangkat Anda. Menghapus aplikasi akan menghapus semua data lokal (kecuali jika disertakan dalam cadangan iCloud).</p>
 <h2>7. Hak Anda</h2>
 <p>Penghapusan data Anda dapat menghapus setiap skenario dari &quot;Pengaturan&quot; dalam aplikasi.</p>
 <p>Menghapus aplikasi itu sendiri akan menghapus semua data lokal di perangkat.</p>
@@ -596,6 +596,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>Untuk pertanyaan tentang Kebijakan Privasi ini, atau permintaan terkait informasi pribadi, silakan hubungi kami di bawah ini.</p>
 <h2>11. Perubahan pada Kebijakan Ini</h2>
 <p>Kebijakan Privasi ini dapat direvisi sesuai kebutuhan. Perubahan material akan diumumkan melalui notifikasi dalam aplikasi atau posting di halaman ini.</p>
+<h2 id="android">Android</h2>
+<p>Data ini disimpan di perangkat Anda dalam basis data lokal. Pencadangan cloud dan transfer antarperangkat dinonaktifkan, sehingga data tidak pernah meninggalkan perangkat Anda.</p>
+<p>Menghapus instalan aplikasi akan menghapus semua data di perangkat. Karena pencadangan cloud dan transfer antarperangkat dinonaktifkan, tidak ada salinan yang tersisa di luar perangkat.</p>
+
     </div>
     <div class="contact-box" style="margin-top:32px">
       <p>Kontak</p>
