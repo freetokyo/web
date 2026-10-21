@@ -550,7 +550,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </div>
 
 <div class="content">
-  <p class="updated">最終更新日：2026年5月</p>
+  <p class="updated">最終更新日：2026年10月</p>
 
   <div class="card">
     <h2><span class="icon">📌</span>基本方針</h2>
@@ -566,8 +566,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <ul>
       <li>お客様が入力した猫の記録（体重・食事量・トイレ回数・水分・メモ等）</li>
       <li>アプリ設定情報（猫のプロフィール・体重基準値等）</li>
-      <li>AI体調判定の使用回数カウント（月次リセット）</li>
-      <li>購入情報（プレミアムプランの購読状態）</li>
+      <li>獣医向けPDFの無料お試しを使ったかどうか</li>
+      <li>購入情報（プレミアムを購入済みかどうか）</li>
     </ul>
     <p>これらの情報はすべてお客様のデバイス内またはiCloudに保存されます。開発者のサーバーには送信されません。</p>
   </div>
@@ -585,30 +585,31 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 
   <div class="card">
-    <h2><span class="icon">📸</span>AI体調判定について</h2>
-    <p>AI体調判定機能では、愛猫の写真を使用します。この処理について以下をご確認ください。</p>
+    <h2><span class="icon">📸</span>写真について</h2>
+    <p>記録に添付した写真（1日1枚）と通院記録に添付した書類の扱いは以下のとおりです。</p>
     <ul>
-      <li>写真の解析はお使いのデバイス上の Core ML モデルのみで行われます</li>
-      <li>写真データは外部サーバーに送信されません</li>
-      <li>解析後、写真データはアプリ内のみで管理されます</li>
-      <li>AI判定結果（体調スコア）はローカルに保存されます</li>
+      <li>毎日の記録に添付した写真は端末内にのみ保存されます</li>
+      <li>通院記録に添付した書類（ワクチン証明・処方箋・検査結果など）は、端末とお客様のiCloudの中だけに保存されます</li>
+      <li>いずれも開発者や第三者のサーバーには送信されません</li>
+      <li>写真を解析・判定する機能はありません。その日の体調は、入力した食事・水分・トイレ・症状の記録から整理します</li>
+      <li>書き出したバックアップファイルには写真も含まれます。ファイルの保管・共有はお客様の管理となります</li>
     </ul>
   </div>
 
   <div class="card">
     <h2><span class="icon">☁️</span>iCloud同期について</h2>
-    <p>プレミアムプランでは、Apple iCloudを利用したデータ同期機能を提供します。</p>
+    <p>本アプリは、Apple iCloudを利用したデータ同期機能を、無料・プレミアムを問わずすべての方に提供します。同期はお客様ご自身のApple Account内で行われます。</p>
     <ul>
       <li>データはApple社のサーバー（iCloud）に保存されます</li>
       <li>iCloudのプライバシー保護はAppleのプライバシーポリシーに準じます</li>
       <li>開発者はiCloud上のお客様データへアクセスする手段を持ちません</li>
-      <li>iCloud同期はApple IDの設定でいつでも無効にできます</li>
+      <li>iCloud同期はApple Accountの設定でいつでも無効にできます</li>
     </ul>
   </div>
 
   <div class="card">
     <h2><span class="icon">💳</span>購入・決済情報</h2>
-    <p>プレミアムプランの購入はAppleのApp Store経由で行われます。クレジットカード情報等の決済情報はAppleが管理し、開発者には提供されません。購読状態の確認にはStoreKit 2を使用します。</p>
+    <p>プレミアム（買い切り）の購入はAppleのApp Store経由で行われます。クレジットカード情報等の決済情報はAppleが管理し、開発者には提供されません。購入済みかどうかの確認には、端末上でStoreKit 2を使用します。</p>
   </div>
 
   <div class="card">

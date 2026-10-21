@@ -53,7 +53,7 @@
 - [PrintSummary / プリサマ](https://freetokyolabs.com/printmemo/): 学校プリントを撮るだけで OCR が読み取り、締切と提出状況をまとめて管理する iOS アプリ。家族カレンダー連携対応。
   - App Store: https://apps.apple.com/app/id6761879860
   - 詳細: https://freetokyolabs.com/printmemo/llms.txt
-- [Miawell](https://freetokyolabs.com/miawell/): 猫専用ヘルスケア iOS アプリ。AI 写真判定で表情や姿勢の変化を読み取り、日次記録と行動改善コーチングで愛猫の体調を毎日スマートに管理。
+- [Miawell](https://freetokyolabs.com/miawell/): 猫専用の健康記録 iOS アプリ。体重・食事・トイレ・水分・症状を1タップで記録し、いつもと違う変化を通知。動物病院で見せられるPDFと行動改善コーチング付き。
   - App Store: https://apps.apple.com/app/id6774019571
   - 詳細: https://freetokyolabs.com/miawell/llms.txt
 - [スクショリ](https://freetokyolabs.com/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、解析と保存は端末内・買い切り・広告なし。通信は「地図で見る」のときだけ。
