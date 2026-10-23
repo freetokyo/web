@@ -451,7 +451,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -460,9 +461,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -486,6 +489,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -493,11 +502,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -518,7 +529,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CareHours", "description": "Suporte do CareHours: perguntas frequentes e como falar conosco por e-mail.", "inLanguage": "pt-BR", "operatingSystem": "iOS", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/carehours/pt-BR/support.html", "image": "https://freetokyolabs.com/carehours/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6769304063", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CareHours", "description": "Suporte do CareHours: perguntas frequentes e como falar conosco por e-mail.", "inLanguage": "pt-BR", "operatingSystem": "iOS 17.0+, Android 8.0+", "applicationCategory": "BusinessApplication", "url": "https://freetokyolabs.com/carehours/pt-BR/support.html", "image": "https://freetokyolabs.com/carehours/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6769304063", "sameAs": ["https://apps.apple.com/app/id6769304063", "https://play.google.com/store/apps/details?id=com.chen.carehours"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "CareHours", "item": "https://freetokyolabs.com/carehours/pt-BR/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/carehours/pt-BR/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Onde meus dados são armazenados?", "acceptedAnswer": {"@type": "Answer", "text": "No plano gratuito, os dados são armazenados no iPhone (armazenamento local). No plano premium, a sincronização com iCloud está disponível. Em ambos os casos, o desenvolvedor não pode acessar seus dados."}}, {"@type": "Question", "name": "Como o adicional noturno é calculado?", "acceptedAnswer": {"@type": "Answer", "text": "22:00–06:00 é o período noturno, e os minutos nesse período são calculados à tarifa noturna (geralmente 25% a mais). Por exemplo, para uma visita de 21:00–23:00: 21:00–22:00 à tarifa normal e 22:00–23:00 automaticamente à tarifa com adicional."}}, {"@type": "Question", "name": "Posso cancelar o plano premium a qualquer momento?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Vá para Configurações App Store → Assinaturas para cancelar. Após o cancelamento, você pode continuar usando os recursos premium até a próxima data de renovação."}}, {"@type": "Question", "name": "O que acontece com meus dados ao trocar de dispositivo?", "acceptedAnswer": {"@type": "Answer", "text": "Plano gratuito: os dados podem ser transferidos restaurando um backup do iPhone. Plano premium com sincronização iCloud: entre com o mesmo Apple ID e os dados serão transferidos automaticamente."}}, {"@type": "Question", "name": "Posso usar se estiver registrado em vários locais de trabalho?", "acceptedAnswer": {"@type": "Answer", "text": "O plano premium suporta gerenciamento de vários empregadores. Você pode definir a taxa horária e o subsídio de transporte por empregador e ver o salário estimado combinado."}}, {"@type": "Question", "name": "Posso personalizar o conteúdo do relatório PDF?", "acceptedAnswer": {"@type": "Answer", "text": "A versão atual suporta apenas saída PDF no formato padrão. A personalização está planejada para uma atualização futura."}}, {"@type": "Question", "name": "Qual versão do iOS é suportada?", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0 e posterior. Recomenda-se atualizar para o iOS mais recente."}}]}</script>
 </head>

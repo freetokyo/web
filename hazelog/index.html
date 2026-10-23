@@ -388,7 +388,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -397,9 +398,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -423,6 +426,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -430,11 +439,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -455,7 +466,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ハゼログ（HazeLog）", "description": "手網・手鍋・小型焙煎機の焙煎を曲線で記録し、前回の曲線と並走して再現するiPhone・iPadアプリ。温度プローブ不要、ROR/DTR自動計算、完全オフライン・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/hazelog/", "image": "https://freetokyolabs.com/hazelog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6791478115"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ハゼログ（HazeLog）", "description": "手網・手鍋・小型焙煎機の焙煎を曲線で記録し、前回の曲線と並走して再現するiPhone・iPadアプリ。温度プローブ不要、ROR/DTR自動計算、完全オフライン・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/hazelog/", "image": "https://freetokyolabs.com/hazelog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6791478115", "sameAs": ["https://apps.apple.com/app/id6791478115", "https://play.google.com/store/apps/details?id=com.chen.hazelog"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "ハゼログ（HazeLog）", "item": "https://freetokyolabs.com/hazelog/"}]}</script>
 </head>
 <body>
@@ -480,6 +491,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <p class="lead">ハゼログは、手網・手鍋・小型焙煎機で焙煎する人のためのロースト曲線記録アプリです。<br>
   「うまく焼けた一回」を曲線ごと保存し、次回はその曲線と並走しながら再現を目指せます。</p>
   <a class="badge" href="https://apps.apple.com/jp/app/id6791478115">App Store で見る</a>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.chen.hazelog" target="_blank" rel="noopener" data-ftplay>Google Play で見る</a>
   <div class="shots">
     <img src="shot-live.png" alt="焙煎中の画面。経過時間と現在温度、ゴースト曲線、大型の記録ボタン" loading="lazy">
     <img src="shot-analysis.png" alt="分析画面。ロースト曲線とフェーズ帯、DTR・重量減率などの指標" loading="lazy">
@@ -557,22 +569,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   <details><summary>あとから記録を直せますか？</summary><p>直せます。焙煎の詳細画面から「編集」で、日時・投入量・焙煎後重量・焙煎度・生豆に加えて、イベントの時刻や温度も修正でき、不要なイベントは1件ずつ削除できます。投入量を変えると生豆の在庫も自動で調整されます。</p></details>
   <details><summary>写真は外部に送信されますか？</summary><p>送信しません。写真は端末内にのみ保存され、バックアップに含めるかどうかもご自身で選べます。なお写真の選択には iOS 標準のピッカーを使うため、写真ライブラリへのアクセス許可も求めません。</p></details>
 </div></section>
+
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>HazeLog の Android 版は <a href="https://play.google.com/store/apps/details?id=com.chen.hazelog" target="_blank" rel="noopener">Google Play</a> で配信しています。Android 9.0 以降に対応しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>Android 版についてのご質問は<a href="support.html#android-support">サポートページ</a>をご覧ください。</p>
+</section>
 <section class="ftshots" aria-label="アプリの画面">
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="焙煎中の画面。経過5分34秒・163℃を大きく示し、温度カーブを折れ線で描きながら、1ハゼ開始や煎り止めをボタンで記録する" width="360" height="782" loading="lazy" decoding="async"><figcaption>前回の自分と、並走する焙煎。 実測とゴーストを重ねて再現へ</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="分析。1回の焙煎のロースト曲線と ROR（上昇率）を並べ、DTR・重量減率・乾燥・メイラードの各指標を百分率で出す" width="360" height="782" loading="lazy" decoding="async"><figcaption>ROR・DTRを自動で計算 温度計がなくても記録できる</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="ホーム。最近の焙煎が豆の名前・日付・DTR 付きで並び、下部に「焙煎を始める」ボタン" width="360" height="782" loading="lazy" decoding="async"><figcaption>自家焙煎はワンタップで記録 曲線とDTRが一覧に積み上がる</figcaption></figure></div>
 </section>
-
-<section class="ftlegal">
-<h2 id="android-about">Android 版について</h2>
-<p>HazeLog は Android 版を準備しています。Android 9.0 以降に対応し、Google Play での公開を予定しています。</p>
-<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
-<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
-</section>
-
 <section class="ftcta">
 <h2>ハゼログ（HazeLog）</h2>
-<p>App Store から入手できます。iPhone と iPad（iOS / iPadOS 17.0 以降）で使えます。</p>
-<a class="cta" href="https://apps.apple.com/app/id6791478115" target="_blank" rel="noopener">App Store で見る</a>
+<p>App Store と Google Play から入手できます。iPhone / iPad でも Android でも使えます。</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6791478115" target="_blank" rel="noopener">App Store で見る</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.hazelog" target="_blank" rel="noopener">Google Play で見る</a></div>
 </section>
 </main>
 <footer class="footer">

@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 10 本は Google Play でも配信し、9 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 13 本は Google Play でも配信し、8 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 10 本（Android 版を 9 本準備中）
+配信: App Store 48 本 / Google Play 13 本（Android 版を 8 本準備中）
 
 ## Apps
 
@@ -90,6 +90,7 @@
   - 詳細: https://freetokyolabs.com/sonalog/llms.txt
 - [ハゼログ（HazeLog）](https://freetokyolabs.com/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6791478115
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.hazelog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/hazelog/llms.txt
 - [SakuLog（サクログ）](https://freetokyolabs.com/sakulog/): こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6791827004
@@ -121,7 +122,7 @@
   - 詳細: https://freetokyolabs.com/homenetnavi/llms.txt
 - [Mochiru](https://freetokyolabs.com/mochiru/): 完全オフラインの資産寿命シミュレーターアプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。
   - App Store: https://apps.apple.com/app/id6778235888
-  - Google Play: 準備中 / in preparation（Android 8.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.mochiru（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/mochiru/llms.txt
 - [ザイチョウ（Zaicho）](https://freetokyolabs.com/zaicho/): 完全オフラインの財産目録 iOS アプリ。金融資産・不動産・富裕層資産クラスを台帳で管理し、純資産の推移から相続税の概算・財産目録 PDF まで端末内で完結。データ収集なし・口座連携なし・買い切り 3,000 円・広告なし。
   - App Store: https://apps.apple.com/app/id6788175241
@@ -140,6 +141,7 @@
   - 詳細: https://freetokyolabs.com/arari/llms.txt
 - [CareHours](https://freetokyolabs.com/carehours/): 訪問介護ヘルパー向けの給与管理 iOS アプリ。訪問記録、夜間・休日の割増自動計算、月次 PDF レポート出力。
   - App Store: https://apps.apple.com/app/id6769304063
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.carehours（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/carehours/llms.txt
 - [Genbalog](https://freetokyolabs.com/genbalog/): 現場職人向けの報告書作成 iOS アプリ。写真をワンタップで A4 PDF に整理、GPS タグ・手書きメモ・カスタムテンプレート、完全オフライン。
   - App Store: https://apps.apple.com/app/id6770864162

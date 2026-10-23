@@ -451,7 +451,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -460,9 +461,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -486,6 +489,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -493,11 +502,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -518,9 +529,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Support for Mochiru: frequently asked questions and how to contact us by email.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "FinanceApplication", "url": "https://freetokyolabs.com/mochiru/en/support.html", "image": "https://freetokyolabs.com/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mochiru", "description": "Support for Mochiru: frequently asked questions and how to contact us by email.", "inLanguage": "en", "operatingSystem": "iOS 17.0+, Android 8.0+", "applicationCategory": "FinanceApplication", "url": "https://freetokyolabs.com/mochiru/en/support.html", "image": "https://freetokyolabs.com/mochiru/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6778235888", "sameAs": ["https://apps.apple.com/app/id6778235888", "https://play.google.com/store/apps/details?id=com.chen.mochiru"], "offers": {"@type": "Offer", "price": "500", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Mochiru", "item": "https://freetokyolabs.com/mochiru/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/mochiru/en/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you need an internet connection?", "acceptedAnswer": {"@type": "Answer", "text": "Calculations, inputs and records stay on your device and are never sent anywhere. The network is used only to buy or restore the purchase and to open the legal pages."}}, {"@type": "Question", "name": "Is my financial information sent externally?", "acceptedAnswer": {"@type": "Answer", "text": "No. Input data is stored only on your device and never sent to the developer or any third party."}}, {"@type": "Question", "name": "Does the app link with bank or securities accounts?", "acceptedAnswer": {"@type": "Answer", "text": "No. This app does not link to any accounts or require registration. You enter all figures yourself."}}, {"@type": "Question", "name": "Can I trust the simulation results?", "acceptedAnswer": {"@type": "Answer", "text": "Results are estimates based on your entered assumptions and do not guarantee future performance. This app is not investment advice and does not recommend specific financial products or trading timing. It is designed to compare outcomes by adjusting assumptions. Final decisions are your own responsibility."}}, {"@type": "Question", "name": "Is there a cost?", "acceptedAnswer": {"@type": "Answer", "text": "A free preview is available (includes basic simulation, results dashboard, and sensitivity analysis). Full features — including sequence/hedge/historical analysis, scenario saving and comparison, PDF export, and more simulation runs — are unlocked with a one-time premium purchase (¥500, non-consumable, no subscription). StoreKit 2 purchase restore is supported."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you need an internet connection?", "acceptedAnswer": {"@type": "Answer", "text": "Calculations, inputs and records stay on your device and are never sent anywhere. The network is used only to buy or restore the purchase and to open the legal pages."}}, {"@type": "Question", "name": "Is my financial information sent externally?", "acceptedAnswer": {"@type": "Answer", "text": "No. Input data is stored only on your device and never sent to the developer or any third party."}}, {"@type": "Question", "name": "Does the app link with bank or securities accounts?", "acceptedAnswer": {"@type": "Answer", "text": "No. This app does not link to any accounts or require registration. You enter all figures yourself."}}, {"@type": "Question", "name": "Can I trust the simulation results?", "acceptedAnswer": {"@type": "Answer", "text": "Results are estimates based on your entered assumptions and do not guarantee future performance. This app is not investment advice and does not recommend specific financial products or trading timing. It is designed to compare outcomes by adjusting assumptions. Final decisions are your own responsibility."}}, {"@type": "Question", "name": "Is there a cost?", "acceptedAnswer": {"@type": "Answer", "text": "A free preview is available (includes basic simulation, results dashboard, and sensitivity analysis). Full features — including sequence/hedge/historical analysis, scenario saving and comparison, PDF export, and more simulation runs — are unlocked with a one-time premium purchase (¥500, non-consumable, no subscription). StoreKit 2 purchase restore is supported."}}, {"@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": {"@type": "Answer", "text": "The Android version supports Android 8.0 and later. Download it from Google Play . To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically. For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer."}}]}</script>
 </head>
 <body>
 
@@ -575,7 +586,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 <section class="ftlegal">
 <h2 id="android-support">About the Android version</h2>
-<p>The Android version supports Android 8.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>The Android version supports Android 8.0 and later. Download it from <a href="https://play.google.com/store/apps/details?id=com.chen.mochiru" target="_blank" rel="noopener">Google Play</a>.</p>
 <p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
 <p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
 </section>

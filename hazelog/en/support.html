@@ -387,7 +387,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -396,9 +397,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -422,6 +425,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -429,11 +438,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -454,9 +465,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HazeLog", "description": "How to use HazeLog, FAQ and contact.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/hazelog/en/support.html", "image": "https://freetokyolabs.com/hazelog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6791478115"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HazeLog", "description": "How to use HazeLog, FAQ and contact.", "inLanguage": "en", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/hazelog/en/support.html", "image": "https://freetokyolabs.com/hazelog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6791478115", "sameAs": ["https://apps.apple.com/app/id6791478115", "https://play.google.com/store/apps/details?id=com.chen.hazelog"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "HazeLog", "item": "https://freetokyolabs.com/hazelog/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/hazelog/en/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "I don't have a thermometer. Can I still use it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every temperature entry is optional — use \"Record without temperature\" to log an event by time alone. With first crack and drop, DTR is still calculated."}}, {"@type": "Question", "name": "How do I switch to Fahrenheit?", "acceptedAnswer": {"@type": "Answer", "text": "Settings tab → Units. Readings are stored normalized internally, so past roasts stay comparable when you switch."}}, {"@type": "Question", "name": "The ghost curve doesn't appear", "acceptedAnswer": {"@type": "Answer", "text": "The ghost curve is a HazeLog Pro feature. Also, only a saved roast with \"Mark as target profile\" turned on can be used as a target. Save one roast first, then mark it."}}, {"@type": "Question", "name": "The screen turns off while roasting", "acceptedAnswer": {"@type": "Answer", "text": "Auto-lock is disabled while the roasting screen is open, and returns to normal when you leave it or switch apps."}}, {"@type": "Question", "name": "I can only add three beans", "acceptedAnswer": {"@type": "Answer", "text": "The free tier allows three beans. A fourth and beyond unlock with the one-time HazeLog Pro purchase."}}, {"@type": "Question", "name": "I purchased Pro but it isn't active", "acceptedAnswer": {"@type": "Answer", "text": "Try \"Restore Purchase\" in the Settings tab or on the paywall. You must be signed in with the same Apple ID used for the purchase."}}, {"@type": "Question", "name": "How do I back up my roasts?", "acceptedAnswer": {"@type": "Answer", "text": "Settings → Backup & Restore writes every roast, bean, event, note and condition — and, if you choose, photos — into one file that you can import on another device. It is free. CSV and PDF export (Pro) are for analysis and sharing and cannot be restored."}}, {"@type": "Question", "name": "My data disappeared", "acceptedAnswer": {"@type": "Answer", "text": "Records live only on your device, so deleting the app removes them permanently. Export a backup regularly from Settings → Backup & Restore."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "I don't have a thermometer. Can I still use it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every temperature entry is optional — use \"Record without temperature\" to log an event by time alone. With first crack and drop, DTR is still calculated."}}, {"@type": "Question", "name": "How do I switch to Fahrenheit?", "acceptedAnswer": {"@type": "Answer", "text": "Settings tab → Units. Readings are stored normalized internally, so past roasts stay comparable when you switch."}}, {"@type": "Question", "name": "The ghost curve doesn't appear", "acceptedAnswer": {"@type": "Answer", "text": "The ghost curve is a HazeLog Pro feature. Also, only a saved roast with \"Mark as target profile\" turned on can be used as a target. Save one roast first, then mark it."}}, {"@type": "Question", "name": "The screen turns off while roasting", "acceptedAnswer": {"@type": "Answer", "text": "Auto-lock is disabled while the roasting screen is open, and returns to normal when you leave it or switch apps."}}, {"@type": "Question", "name": "I can only add three beans", "acceptedAnswer": {"@type": "Answer", "text": "The free tier allows three beans. A fourth and beyond unlock with the one-time HazeLog Pro purchase."}}, {"@type": "Question", "name": "I purchased Pro but it isn't active", "acceptedAnswer": {"@type": "Answer", "text": "Try \"Restore Purchase\" in the Settings tab or on the paywall. You must be signed in with the same Apple ID used for the purchase."}}, {"@type": "Question", "name": "How do I back up my roasts?", "acceptedAnswer": {"@type": "Answer", "text": "Settings → Backup &amp; Restore writes every roast, bean, event, note and condition — and, if you choose, photos — into one file that you can import on another device. It is free. CSV and PDF export (Pro) are for analysis and sharing and cannot be restored."}}, {"@type": "Question", "name": "My data disappeared", "acceptedAnswer": {"@type": "Answer", "text": "Records live only on your device, so deleting the app removes them permanently. Export a backup regularly from Settings → Backup &amp; Restore."}}, {"@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": {"@type": "Answer", "text": "The Android version supports Android 9.0 and later. Download it from Google Play . To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically. For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer."}}]}</script>
 </head>
 <body>
 
@@ -502,12 +513,10 @@ Please include your device (e.g. iPhone 15), iOS version and the app version (sh
 </div></section>
 <section class="ftlegal">
 <h2 id="android-support">About the Android version</h2>
-<p>The Android version supports Android 9.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>The Android version supports Android 9.0 and later. Download it from <a href="https://play.google.com/store/apps/details?id=com.chen.hazelog" target="_blank" rel="noopener">Google Play</a>.</p>
 <p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
 <p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
 </section>
-
-
 </main>
 <footer class="footer">
   <div class="container">
