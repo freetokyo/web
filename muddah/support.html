@@ -388,7 +388,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -397,9 +398,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -423,6 +426,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -430,11 +439,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -455,9 +466,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Muddah", "description": "Support and FAQ for Muddah — Hijri and Gregorian dates, reminders, restoring your purchase, and data handling.", "inLanguage": "en", "operatingSystem": "iOS, Android", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/muddah/support.html", "image": "https://freetokyolabs.com/muddah/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6790558814", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Muddah", "description": "Support and FAQ for Muddah — Hijri and Gregorian dates, reminders, restoring your purchase, and data handling.", "inLanguage": "en", "operatingSystem": "iOS 18.0+, Android 8.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/muddah/support.html", "image": "https://freetokyolabs.com/muddah/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6790558814", "sameAs": ["https://apps.apple.com/app/id6790558814", "https://play.google.com/store/apps/details?id=com.chen.muddah"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Muddah", "item": "https://freetokyolabs.com/muddah/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/muddah/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do my Hijri and Gregorian dates differ by a day sometimes?", "acceptedAnswer": {"@type": "Answer", "text": "Muddah uses the Umm al-Qura calendar for Hijri dates. It can differ by a day from calendars based on moon sighting. Always confirm the official date on your document."}}, {"@type": "Question", "name": "I renewed a document. Do I have to work out the new date myself?", "acceptedAnswer": {"@type": "Answer", "text": "No. Open the document and tap &quot;I renewed this&quot;. Muddah counts the new expiry on the calendar that document actually uses — a Hijri year is about 354 days, not 365 — and keeps the old date as history. You can also pick a date by hand."}}, {"@type": "Question", "name": "Will I always get every reminder?", "acceptedAnswer": {"@type": "Answer", "text": "Reminders are delivered on your device by iOS, which limits how many can be scheduled at once. Muddah keeps the nearest reminders scheduled and rebuilds the queue every time you open the app. We can&#x27;t guarantee delivery of every reminder — you remain responsible for renewing on time."}}, {"@type": "Question", "name": "Can I change what time reminders arrive?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Settings › Notifications lets you choose the time of day, and which reminder stages new documents start with."}}, {"@type": "Question", "name": "How do I restore my purchase on a new phone?", "acceptedAnswer": {"@type": "Answer", "text": "Open Settings inside Muddah and tap &quot;Restore purchase&quot;. Muddah Pro is a one-time purchase and works with Family Sharing."}}, {"@type": "Question", "name": "Is my data backed up?", "acceptedAnswer": {"@type": "Answer", "text": "All data stays on your device and is not synced to any cloud. Deleting the app deletes your data, so keep your own backups. With Pro you can export your documents to a JSON file and import it again on another device. The export is a plain JSON file, not encrypted, and photos and scans are not included in it."}}, {"@type": "Question", "name": "Do you collect any data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Muddah has no account, no analytics, and no servers. Scanning and reading dates from a scan also happen entirely on your device."}}, {"@type": "Question", "name": "Is Muddah connected to a government service?", "acceptedAnswer": {"@type": "Answer", "text": "No. Muddah is an independent personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice. Muddah is a personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice. English · العربية"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do my Hijri and Gregorian dates differ by a day sometimes?", "acceptedAnswer": {"@type": "Answer", "text": "Muddah uses the Umm al-Qura calendar for Hijri dates. It can differ by a day from calendars based on moon sighting. Always confirm the official date on your document."}}, {"@type": "Question", "name": "I renewed a document. Do I have to work out the new date myself?", "acceptedAnswer": {"@type": "Answer", "text": "No. Open the document and tap &quot;I renewed this&quot;. Muddah counts the new expiry on the calendar that document actually uses — a Hijri year is about 354 days, not 365 — and keeps the old date as history. You can also pick a date by hand."}}, {"@type": "Question", "name": "Will I always get every reminder?", "acceptedAnswer": {"@type": "Answer", "text": "Reminders are delivered on your device by iOS, which limits how many can be scheduled at once. Muddah keeps the nearest reminders scheduled and rebuilds the queue every time you open the app. We can&#x27;t guarantee delivery of every reminder — you remain responsible for renewing on time."}}, {"@type": "Question", "name": "Can I change what time reminders arrive?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Settings › Notifications lets you choose the time of day, and which reminder stages new documents start with."}}, {"@type": "Question", "name": "How do I restore my purchase on a new phone?", "acceptedAnswer": {"@type": "Answer", "text": "Open Settings inside Muddah and tap &quot;Restore purchase&quot;. Muddah Pro is a one-time purchase and works with Family Sharing."}}, {"@type": "Question", "name": "Is my data backed up?", "acceptedAnswer": {"@type": "Answer", "text": "All data stays on your device and is not synced to any cloud. Deleting the app deletes your data, so keep your own backups. With Pro you can export your documents to a JSON file and import it again on another device. The export is a plain JSON file, not encrypted, and photos and scans are not included in it."}}, {"@type": "Question", "name": "Do you collect any data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Muddah has no account, no analytics, and no servers. Scanning and reading dates from a scan also happen entirely on your device."}}, {"@type": "Question", "name": "Is Muddah connected to a government service?", "acceptedAnswer": {"@type": "Answer", "text": "No. Muddah is an independent personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice. Muddah is a personal record-keeping and reminder tool. It is not affiliated with any government and does not provide legal or immigration advice. English · العربية"}}, {"@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": {"@type": "Answer", "text": "The Android version supports Android 8.0 and later. Download it from Google Play . To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically. For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer."}}]}</script>
 </head>
 <body>
 
@@ -503,7 +514,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </div></article>
 <section class="ftlegal">
 <h2 id="android-support">About the Android version</h2>
-<p>The Android version supports Android 8.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>The Android version supports Android 8.0 and later. Download it from <a href="https://play.google.com/store/apps/details?id=com.chen.muddah" target="_blank" rel="noopener">Google Play</a>.</p>
 <p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
 <p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
 </section>

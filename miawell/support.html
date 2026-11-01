@@ -452,7 +452,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -461,9 +462,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -487,6 +490,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -494,11 +503,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -519,9 +530,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Miawell", "description": "Miawell（猫専用ヘルスケアアプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/miawell/support.html", "image": "https://freetokyolabs.com/miawell/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6774019571", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Miawell", "description": "Miawell（猫専用ヘルスケアアプリ）のサポートページです。よくある質問、基本的な使い方、不具合のご報告や機能のご要望、お問い合わせ方法をご案内します。安心してお使いいただける情報をまとめました。", "inLanguage": "ja", "operatingSystem": "iOS 17.0+, Android 8.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/miawell/support.html", "image": "https://freetokyolabs.com/miawell/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6774019571", "sameAs": ["https://apps.apple.com/app/id6774019571", "https://play.google.com/store/apps/details?id=com.chen.miawell"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "Miawell", "item": "https://freetokyolabs.com/miawell/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyolabs.com/miawell/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "お使いのiPhone内に保存されます。iCloudにサインインしている場合は、あなたのApple Account内でiCloud同期されます（無料・プレミアムを問わず使えます）。開発者がお客様のデータを閲覧することはなく、第三者SDK・広告・トラッキングもありません。"}}, {"@type": "Question", "name": "写真が外部に送信されることはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "ありません。写真は端末内にのみ保存され、写真も記録も開発者や第三者に送信されることはありません。"}}, {"@type": "Question", "name": "複数の猫を管理できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。「設定」→「猫を追加」から何匹でも登録できます。2匹以上いるときは、各画面の上部で猫を切り替えられます。"}}, {"@type": "Question", "name": "無料で使える機能と、プレミアムの機能は？", "acceptedAnswer": {"@type": "Answer", "text": "無料のまま使えること：毎日の記録、写真の添付、週のグラフ、アラート通知、コーチング1プログラム、ナレッジ記事2本、今週のまとめの冒頭（記録7日目から）、獣医向けPDFのお試し1回（透かし入り）。プレミアムで解放されること：月・3ヶ月のグラフ、今週のまとめ、獣医向けPDF、コーチング全6プログラム、ナレッジ記事すべて。"}}, {"@type": "Question", "name": "プレミアムの料金と支払い方法は？", "acceptedAnswer": {"@type": "Answer", "text": "プレミアムは買い切りで、日本の App Store では ¥1,500（税込）です。お支払いは1回のみで自動更新はなく、ファミリー共有に対応しています。ほかの端末ではプレミアム画面の「購入を復元」で使えます。バージョン1.3までにサブスクリプションをご購入の方は、App Store のサブスクリプション設定からいつでも解約できます。"}}, {"@type": "Question", "name": "機種変更したらデータはどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "同じApple Accountでサインインすれば、iCloud同期で記録が引き継がれます。「設定」→「バックアップとデータ」から全データを写真ごと1つのファイルに書き出し、新しい端末で復元することもできます。"}}, {"@type": "Question", "name": "対応しているiOSのバージョンは？", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0以降に対応しています。最新のiOSへのアップデートを推奨します。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "お使いのiPhone内に保存されます。iCloudにサインインしている場合は、あなたのApple Account内でiCloud同期されます（無料・プレミアムを問わず使えます）。開発者がお客様のデータを閲覧することはなく、第三者SDK・広告・トラッキングもありません。"}}, {"@type": "Question", "name": "写真が外部に送信されることはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "ありません。写真は端末内にのみ保存され、写真も記録も開発者や第三者に送信されることはありません。"}}, {"@type": "Question", "name": "複数の猫を管理できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。「設定」→「猫を追加」から何匹でも登録できます。2匹以上いるときは、各画面の上部で猫を切り替えられます。"}}, {"@type": "Question", "name": "無料で使える機能と、プレミアムの機能は？", "acceptedAnswer": {"@type": "Answer", "text": "無料のまま使えること：毎日の記録、写真の添付、週のグラフ、アラート通知、コーチング1プログラム、ナレッジ記事2本、今週のまとめの冒頭（記録7日目から）、獣医向けPDFのお試し1回（透かし入り）。プレミアムで解放されること：月・3ヶ月のグラフ、今週のまとめ、獣医向けPDF、コーチング全6プログラム、ナレッジ記事すべて。"}}, {"@type": "Question", "name": "プレミアムの料金と支払い方法は？", "acceptedAnswer": {"@type": "Answer", "text": "プレミアムは買い切りで、日本の App Store では ¥1,500（税込）です。お支払いは1回のみで自動更新はなく、ファミリー共有に対応しています。ほかの端末ではプレミアム画面の「購入を復元」で使えます。バージョン1.3までにサブスクリプションをご購入の方は、App Store のサブスクリプション設定からいつでも解約できます。"}}, {"@type": "Question", "name": "機種変更したらデータはどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "同じApple Accountでサインインすれば、iCloud同期で記録が引き継がれます。「設定」→「バックアップとデータ」から全データを写真ごと1つのファイルに書き出し、新しい端末で復元することもできます。"}}, {"@type": "Question", "name": "対応しているiOSのバージョンは？", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0以降に対応しています。最新のiOSへのアップデートを推奨します。"}}, {"@type": "Question", "name": "Android 版はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "対応するのは Android 8.0 以降です。 Google Play からダウンロードできます。 端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。 ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。"}}]}</script>
 </head>
 <body>
 
@@ -639,12 +650,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </div>
 <section class="ftlegal">
 <h2 id="android-support">Android 版について</h2>
-<p>対応するのは Android 8.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>対応するのは Android 8.0 以降です。<a href="https://play.google.com/store/apps/details?id=com.chen.miawell" target="_blank" rel="noopener">Google Play</a> からダウンロードできます。</p>
 <p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
 <p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
 </section>
-
-
 </main>
 <footer class="footer">
   <div class="container">

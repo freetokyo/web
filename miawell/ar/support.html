@@ -451,7 +451,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -460,9 +461,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -486,6 +489,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -493,11 +502,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -518,7 +529,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Miawell", "description": "دعم Miawell: الأسئلة الشائعة وطريقة التواصل معنا عبر البريد الإلكتروني.", "inLanguage": "ar", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/miawell/ar/support.html", "image": "https://freetokyolabs.com/miawell/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6774019571", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Miawell", "description": "دعم Miawell: الأسئلة الشائعة وطريقة التواصل معنا عبر البريد الإلكتروني.", "inLanguage": "ar", "operatingSystem": "iOS 17.0+, Android 8.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/miawell/ar/support.html", "image": "https://freetokyolabs.com/miawell/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6774019571", "sameAs": ["https://apps.apple.com/app/id6774019571", "https://play.google.com/store/apps/details?id=com.chen.miawell"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Miawell", "item": "https://freetokyolabs.com/miawell/ar/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/miawell/ar/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "أين تُخزَّن بياناتي؟", "acceptedAnswer": {"@type": "Answer", "text": "على جهازك. وإذا كنت مسجّلاً في iCloud، تتم مزامنة السجلات داخل حساب Apple الخاص بك فقط، والمزامنة متاحة للجميع مجاناً أو مع بريميوم. لا يستطيع المطوّر رؤية بياناتك، ولا يحتوي التطبيق على حزم تطوير من أطراف ثالثة أو إعلانات أو تتبّع."}}, {"@type": "Question", "name": "هل تُرسَل الصور خارجياً؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. تُحفظ الصور على جهازك فقط، ولا تُرسل الصور ولا السجلات إلى المطوّر أو إلى أي طرف ثالث."}}, {"@type": "Question", "name": "هل يمكن إدارة قطط متعددة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم. أضف قطة من الإعدادات ← «أضف قطة». عندما يكون لديك قطتان أو أكثر، يمكنك التبديل بينها من أعلى كل شاشة."}}, {"@type": "Question", "name": "ما المجاني وما الذي يحتاج إلى بريميوم؟", "acceptedAnswer": {"@type": "Answer", "text": "مجاني دائماً: التسجيل اليومي وإرفاق الصور والرسم الأسبوعي والتنبيهات وبرنامج مرافقة واحد ومقالتان، ومعاينة لملخّص الأسبوع (من اليوم 7)، وملف PDF تجريبي واحد للطبيب البيطري (بعلامة مائية). يفتح بريميوم: رسوم الشهر وثلاثة أشهر، وملخّص الأسبوع، وملف PDF للطبيب البيطري، والبرامج الستة كلها، وجميع المقالات."}}, {"@type": "Question", "name": "هل بريميوم اشتراك؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. بريميوم شراء لمرة واحدة: بلا اشتراك ولا تجديد، ويشمل المشاركة العائلية؛ اطّلع على السعر في منطقتك عبر App Store. يُخصم المبلغ من حسابك في App Store. على أجهزتك الأخرى، اضغط «استعادة الشراء» لفتح بريميوم. إذا كنت قد اشتركت في الإصدار 1.3 أو ما قبله، فيمكنك إلغاء ذلك الاشتراك في أي وقت من إعدادات الاشتراكات في App Store، ويبقى بريميوم مفتوحاً حتى نهاية المدة المدفوعة."}}, {"@type": "Question", "name": "ما يحدث لبياناتي عند تغيير الجهاز؟", "acceptedAnswer": {"@type": "Answer", "text": "سجّل الدخول بحساب Apple نفسه وستنقل مزامنة iCloud سجلاتك. ويمكنك أيضاً من الإعدادات ← «النسخ الاحتياطي والبيانات» تصدير كل شيء مع الصور في ملف واحد واستعادته على الجهاز الجديد."}}, {"@type": "Question", "name": "ما إصدار iOS المدعوم؟", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17.0 أو أحدث."}}]}</script>
 </head>

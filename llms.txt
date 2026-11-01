@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 13 本は Google Play でも配信し、8 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 15 本は Google Play でも配信し、7 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 13 本（Android 版を 8 本準備中）
+配信: App Store 48 本 / Google Play 15 本（Android 版を 7 本準備中）
 
 ## Apps
 
@@ -55,6 +55,7 @@
   - 詳細: https://freetokyolabs.com/printmemo/llms.txt
 - [Miawell](https://freetokyolabs.com/miawell/): 猫専用の健康記録 iOS アプリ。体重・食事・トイレ・水分・症状を1タップで記録し、いつもと違う変化を通知。動物病院で見せられるPDFと行動改善コーチング付き。
   - App Store: https://apps.apple.com/app/id6774019571
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.miawell（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/miawell/llms.txt
 - [スクショリ](https://freetokyolabs.com/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、解析と保存は端末内・買い切り・広告なし。通信は「地図で見る」のときだけ。
   - App Store: https://apps.apple.com/app/id6778336001
@@ -83,7 +84,7 @@
   - 詳細: https://freetokyolabs.com/saqrlog/llms.txt
 - [Muddah（ムッダ）](https://freetokyolabs.com/muddah/): GCC 駐在家族のための完全オフライン書類期限ボルトアプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。
   - App Store: https://apps.apple.com/app/id6790558814
-  - Google Play: 準備中 / in preparation（Android 8.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.muddah（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/muddah/llms.txt
 - [ソナログ（Sonalog）](https://freetokyolabs.com/sonalog/): 消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにする iOS アプリ。期限が近い備蓄を通知し、家族の人数から必要量を計算、防災カルテは PDF で持ち出せる。完全オフライン・アカウント不要・買い切り。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6790403062
