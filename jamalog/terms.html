@@ -21,7 +21,38 @@
 <meta property="og:image:alt" content="Jamalog — A logbook for camels">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="cs_CZ">
+<meta property="og:locale:alternate" content="da_DK">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="el_GR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fi_FI">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="he_IL">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="hr_HR">
+<meta property="og:locale:alternate" content="hu_HU">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="it_IT">
 <meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="nb_NO">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="ro_RO">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="sk_SK">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="uk_UA">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jamalog — Terms of Use">
 <meta name="twitter:description" content="Terms of Use for Jamalog, including auto-renewable subscription terms.">
@@ -388,7 +419,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -397,9 +429,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -423,6 +457,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -430,11 +470,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -455,7 +497,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Jamalog", "description": "Terms of Use for Jamalog, including auto-renewable subscription terms.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/jamalog/terms.html", "image": "https://freetokyolabs.com/jamalog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6788732648", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Jamalog", "description": "Terms of Use for Jamalog, including auto-renewable subscription terms.", "inLanguage": "en", "operatingSystem": "iOS 17.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/jamalog/terms.html", "image": "https://freetokyolabs.com/jamalog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6788732648", "sameAs": ["https://apps.apple.com/app/id6788732648"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Jamalog", "item": "https://freetokyolabs.com/jamalog/"}, {"@type": "ListItem", "position": 3, "name": "Terms", "item": "https://freetokyolabs.com/jamalog/terms.html"}]}</script>
 </head>
 <body>
@@ -519,7 +561,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>In-app purchases in the Android version are processed through Google Play. Payment and refund procedures follow Google Play's terms and processes. Google Play handles refunds immediately after purchase; after that window, please contact us through the support page.</p>
 <p>Minors may use this app, but should obtain a parent or guardian's consent before making an in-app purchase. Guardians can control purchases with Family Sharing / Ask to Buy on the App Store, or Parental Controls on Google Play.</p>
 </section>
-
 <section class="ftlegal">
 <h2>Limitation of liability (overriding)</h2>
 <p>Notwithstanding any other provision of these terms, Except in cases of our willful misconduct or gross negligence, our liability for any damages arising from your use of the app is limited to the amount you paid us for the app. Where such a limitation is not permitted by mandatory law, we are liable to the extent that law provides.</p>
@@ -528,7 +569,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <footer class="footer">
   <div class="container">
     <p><a href="index.html">Home</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="../">← Freetokyo Labs</a></p>
-    <p class="ftlangs" style="margin-top:8px"><strong>English</strong> · <a href="ar/index.html" hreflang="ar">العربية</a> · <a href="ja/index.html" hreflang="ja">日本語</a></p>
+    <p class="ftlangs" style="margin-top:8px"><strong>English</strong> · <a href="ar/index.html" hreflang="ar">العربية</a> · <a href="bn/index.html" hreflang="bn">বাংলা</a> · <a href="ca/index.html" hreflang="ca">Català</a> · <a href="cs/index.html" hreflang="cs">Čeština</a> · <a href="da/index.html" hreflang="da">Dansk</a> · <a href="de/index.html" hreflang="de">Deutsch</a> · <a href="el/index.html" hreflang="el">Ελληνικά</a> · <a href="es/index.html" hreflang="es">Español</a> · <a href="fi/index.html" hreflang="fi">Suomi</a> · <a href="fr/index.html" hreflang="fr">Français</a> · <a href="gu/index.html" hreflang="gu">ગુજરાતી</a> · <a href="he/index.html" hreflang="he">עברית</a> · <a href="hi/index.html" hreflang="hi">हिन्दी</a> · <a href="hr/index.html" hreflang="hr">Hrvatski</a> · <a href="hu/index.html" hreflang="hu">Magyar</a> · <a href="id/index.html" hreflang="id">Indonesia</a> · <a href="it/index.html" hreflang="it">Italiano</a> · <a href="ja/index.html" hreflang="ja">日本語</a> · <a href="kn/index.html" hreflang="kn">ಕನ್ನಡ</a> · <a href="ko/index.html" hreflang="ko">한국어</a> · <a href="ml/index.html" hreflang="ml">മലയാളം</a> · <a href="mr/index.html" hreflang="mr">मराठी</a> · <a href="ms/index.html" hreflang="ms">Melayu</a> · <a href="nb/index.html" hreflang="nb">Norsk</a> · <a href="nl/index.html" hreflang="nl">Nederlands</a> · <a href="or/index.html" hreflang="or">ଓଡ଼ିଆ</a> · <a href="pa/index.html" hreflang="pa">ਪੰਜਾਬੀ</a> · <a href="pl/index.html" hreflang="pl">Polski</a> · <a href="pt-BR/index.html" hreflang="pt-BR">Português (BR)</a> · <a href="pt-PT/index.html" hreflang="pt-PT">Português</a> · <a href="ro/index.html" hreflang="ro">Română</a> · <a href="ru/index.html" hreflang="ru">Русский</a> · <a href="sk/index.html" hreflang="sk">Slovenčina</a> · <a href="sl/index.html" hreflang="sl">Slovenščina</a> · <a href="sv/index.html" hreflang="sv">Svenska</a> · <a href="ta/index.html" hreflang="ta">தமிழ்</a> · <a href="te/index.html" hreflang="te">తెలుగు</a> · <a href="th/index.html" hreflang="th">ไทย</a> · <a href="tr/index.html" hreflang="tr">Türkçe</a> · <a href="uk/index.html" hreflang="uk">Українська</a> · <a href="ur/index.html" hreflang="ur">اردو</a> · <a href="vi/index.html" hreflang="vi">Tiếng Việt</a> · <a href="zh-Hans/index.html" hreflang="zh-Hans">简体中文</a> · <a href="zh-Hant/index.html" hreflang="zh-Hant">繁體中文</a></p>
     <p style="margin-top:8px"><a href="mailto:support@freetokyolabs.com">Contact: support@freetokyolabs.com</a></p>
     <p style="margin-top:8px">&copy; 2026 Freetokyo Labs</p>
   </div>

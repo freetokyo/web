@@ -76,7 +76,7 @@
   - App Store: https://apps.apple.com/app/id6788981648
   - Google Play: 準備中 / in preparation（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/lifeweeks/llms.txt
-- [Jamalog](https://freetokyolabs.com/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
+- [Jamalog](https://freetokyolabs.com/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。45言語対応（アラビア語は RTL）。
   - App Store: https://apps.apple.com/app/id6788732648
   - 詳細: https://freetokyolabs.com/jamalog/llms.txt
 - [Saqrlog（サクルログ）](https://freetokyolabs.com/saqrlog/): 鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。

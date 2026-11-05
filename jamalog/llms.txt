@@ -1,13 +1,13 @@
 # Jamalog
 
-> ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。アラビア語（RTL）/ English / 日本語対応。
+> ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。45言語対応（アラビア語は RTL）。
 
 Web: https://freetokyolabs.com/jamalog/
 App Store: https://apps.apple.com/app/id6788732648
 開発: Freetokyo Labs
 バージョン: 1.2 / 対応: iOS 17.0 以降
 価格: 無料（アプリ内課金あり）
-対応言語（Webページ）: en / ar / ja
+対応言語（Webページ）: en / ar / bn / ca / cs / da / de / el / es / fi / fr / gu / he / hi / hr / hu / id / it / ja / kn / ko / ml / mr / ms / nb / nl / or / pa / pl / pt-BR / pt-PT / ro / ru / sk / sl / sv / ta / te / th / tr / uk / ur / vi / zh-Hans / zh-Hant
 
 ## ページ
 
@@ -16,4 +16,46 @@ App Store: https://apps.apple.com/app/id6788732648
 - 利用規約: https://freetokyolabs.com/jamalog/terms.html
 - プライバシー: https://freetokyolabs.com/jamalog/privacy.html
 - ar: https://freetokyolabs.com/jamalog/ar/
+- bn: https://freetokyolabs.com/jamalog/bn/
+- ca: https://freetokyolabs.com/jamalog/ca/
+- cs: https://freetokyolabs.com/jamalog/cs/
+- da: https://freetokyolabs.com/jamalog/da/
+- de: https://freetokyolabs.com/jamalog/de/
+- el: https://freetokyolabs.com/jamalog/el/
+- es: https://freetokyolabs.com/jamalog/es/
+- fi: https://freetokyolabs.com/jamalog/fi/
+- fr: https://freetokyolabs.com/jamalog/fr/
+- gu: https://freetokyolabs.com/jamalog/gu/
+- he: https://freetokyolabs.com/jamalog/he/
+- hi: https://freetokyolabs.com/jamalog/hi/
+- hr: https://freetokyolabs.com/jamalog/hr/
+- hu: https://freetokyolabs.com/jamalog/hu/
+- id: https://freetokyolabs.com/jamalog/id/
+- it: https://freetokyolabs.com/jamalog/it/
 - ja: https://freetokyolabs.com/jamalog/ja/
+- kn: https://freetokyolabs.com/jamalog/kn/
+- ko: https://freetokyolabs.com/jamalog/ko/
+- ml: https://freetokyolabs.com/jamalog/ml/
+- mr: https://freetokyolabs.com/jamalog/mr/
+- ms: https://freetokyolabs.com/jamalog/ms/
+- nb: https://freetokyolabs.com/jamalog/nb/
+- nl: https://freetokyolabs.com/jamalog/nl/
+- or: https://freetokyolabs.com/jamalog/or/
+- pa: https://freetokyolabs.com/jamalog/pa/
+- pl: https://freetokyolabs.com/jamalog/pl/
+- pt-BR: https://freetokyolabs.com/jamalog/pt-BR/
+- pt-PT: https://freetokyolabs.com/jamalog/pt-PT/
+- ro: https://freetokyolabs.com/jamalog/ro/
+- ru: https://freetokyolabs.com/jamalog/ru/
+- sk: https://freetokyolabs.com/jamalog/sk/
+- sl: https://freetokyolabs.com/jamalog/sl/
+- sv: https://freetokyolabs.com/jamalog/sv/
+- ta: https://freetokyolabs.com/jamalog/ta/
+- te: https://freetokyolabs.com/jamalog/te/
+- th: https://freetokyolabs.com/jamalog/th/
+- tr: https://freetokyolabs.com/jamalog/tr/
+- uk: https://freetokyolabs.com/jamalog/uk/
+- ur: https://freetokyolabs.com/jamalog/ur/
+- vi: https://freetokyolabs.com/jamalog/vi/
+- zh-Hans: https://freetokyolabs.com/jamalog/zh-Hans/
+- zh-Hant: https://freetokyolabs.com/jamalog/zh-Hant/
