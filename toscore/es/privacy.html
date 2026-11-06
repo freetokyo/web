@@ -165,7 +165,7 @@
     .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 52px; }
     .nav__brand { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-text); }
     .nav__brand:hover { text-decoration: none; }
-    .nav__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, #0A84FF 0%, #34C759 40%, #5E5CE6 70%, #FF9F0A 100%); display: grid; place-items: center; color: white; font-weight: 700; font-size: 14px; }
+    .nav__logo { width: 28px; height: 28px; border-radius: 50%; background: #141C40; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12); display: grid; place-items: center; overflow: hidden; }
     .nav__links { display: flex; gap: 18px; }
     .nav__links a { color: var(--color-text-sub); font-size: 14px; }
     @media (max-width: 720px) { .nav__links a:nth-child(n+5) { display: none; } }
@@ -527,7 +527,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="../../en/">
-      <span class="nav__logo" aria-hidden="true">ft</span>
+      <span class="nav__logo" aria-hidden="true"><svg viewBox="0 0 2048 2048" width="28" height="28"><g fill="none" stroke="#fff" stroke-linecap="round"><path stroke-width="250" d="M900 1640V800A255 255 0 0 1 1282 579"/><path stroke-width="210" d="M640 1000H1190"/></g><circle cx="1480" cy="1480" r="150" fill="#FF9F0A"/></svg></span>
       Freetokyo Labs
     </a>
     <a class="nav__here" href="../../toscore/es/">Toscore</a>

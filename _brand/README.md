@@ -9,6 +9,20 @@
 | 連絡先 | `support@freetokyolabs.com` |
 | サイト URL | `https://freetokyolabs.com`（CNAME で当てた独自ドメイン） |
 
+## ロゴ
+
+紺地に白の f と橙の点（2026-11-06 に「ft」のグラデーションから置き換えた）。Play デベロッパー
+アイコンと同じ絵で、`logo.png` は Console に上げた画像とバイトではなく画素が一致する。
+
+| 素材 | 使う場所 |
+|---|---|
+| `logo.png`（512） | JSON-LD の `Organization.logo` |
+| `favicon.ico` / `favicon.svg` / `apple-touch-icon.png` | ルート 2 枚が宣言し、宣言の無い全ページはブラウザが `/favicon.ico` を取りに来る |
+| `og-default.png`（1200x630） | ルートの OGP と、og-image を持たないページの既定 |
+| ナビの SVG | `~/freetokyo-claude/web/chrome.py` の `NAV_LOGO_SVG`（地の紺は `templates/base.css`） |
+
+形を変えるときは `_brand/make_logo.py`・`favicon.svg`・`NAV_LOGO_SVG` の 3 つを同じ座標で直す。
+
 ## 変えたいとき
 
 1. `brand.json` を直す。**旧い値は `previous_*` に足す（消さない）**。

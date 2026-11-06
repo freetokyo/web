@@ -30,8 +30,10 @@
   <meta name="twitter:description" content="51 apps that make your everyday a little lighter — across health, life, money and work.">
   <meta name="twitter:image" content="https://freetokyolabs.com/og-default.png">
 
-  <!-- Favicon (emoji as SVG) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <style>
     :root {
@@ -103,7 +105,7 @@
     .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 52px; }
     .nav__brand { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-text); }
     .nav__brand:hover { text-decoration: none; }
-    .nav__logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, #0A84FF 0%, #34C759 40%, #5E5CE6 70%, #FF9F0A 100%); display: grid; place-items: center; color: white; font-weight: 700; font-size: 14px; }
+    .nav__logo { width: 28px; height: 28px; border-radius: 50%; background: #141C40; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12); display: grid; place-items: center; overflow: hidden; }
     .nav__links { display: flex; gap: 18px; }
     .nav__links a { color: var(--color-text-sub); font-size: 14px; }
     @media (max-width: 720px) { .nav__links a:nth-child(n+5) { display: none; } }
@@ -307,7 +309,7 @@
     "@type": "Organization",
     "name": "Freetokyo Labs",
     "url": "https://freetokyolabs.com/",
-    "logo": "https://freetokyolabs.com/og-default.png",
+    "logo": "https://freetokyolabs.com/logo.png",
     "description": "A portfolio of apps by Freetokyo Labs that stay on your device, useful across health, life, money and work. On iOS today, with Android versions rolling out on Google Play.",
     "sameAs": ["https://github.com/freetokyo"]
   }
@@ -339,7 +341,7 @@
 <nav class="nav" aria-label="Global">
   <div class="container nav__inner">
     <a class="nav__brand" href="/en/">
-      <span class="nav__logo" aria-hidden="true">ft</span>
+      <span class="nav__logo" aria-hidden="true"><svg viewBox="0 0 2048 2048" width="28" height="28"><g fill="none" stroke="#fff" stroke-linecap="round"><path stroke-width="250" d="M900 1640V800A255 255 0 0 1 1282 579"/><path stroke-width="210" d="M640 1000H1190"/></g><circle cx="1480" cy="1480" r="150" fill="#FF9F0A"/></svg></span>
       Freetokyo Labs
     </a>
     <div class="nav__links">
