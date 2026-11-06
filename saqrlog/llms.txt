@@ -5,7 +5,7 @@
 Web: https://freetokyolabs.com/saqrlog/
 App Store: https://apps.apple.com/app/id6789535072
 開発: Freetokyo Labs
-バージョン: 1.2 / 対応: iOS 17.0 以降
+バージョン: 1.4 / 対応: iOS 17.0 以降
 価格: 無料（アプリ内課金あり）
 対応言語（Webページ）: en
 

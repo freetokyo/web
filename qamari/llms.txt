@@ -6,13 +6,13 @@ Web: https://freetokyolabs.com/qamari/
 App Store: https://apps.apple.com/app/id6791838601
 Google Play: https://play.google.com/store/apps/details?id=com.chen.qamari（Android 8.0 以降）
 開発: Freetokyo Labs
-バージョン: 1.2 / 対応: iOS 26.0 以降
+バージョン: 1.4 / 対応: iOS 18.0 以降
 価格: 無料（アプリ内課金あり）
 対応言語（Webページ）: ja / ar / en
 
 ## 概要
 - 開発: Freetokyo Labs
-- プラットフォーム: iOS 26.0+（iPhone）/ Android 8.0+（Google Play）
+- プラットフォーム: iOS 18.0+（iPhone）/ Android 8.0+（Google Play）
 - カテゴリ: 仕事効率化（セカンダリ: ライフスタイル）
 - 対応言語: العربية（右から左）/ English / 日本語
 - 主要市場: GCC（サウジアラビア・UAE 等）
