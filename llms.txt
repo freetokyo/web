@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 15 本は Google Play でも配信し、7 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 18 本は Google Play でも配信し、4 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 15 本（Android 版を 7 本準備中）
+配信: App Store 48 本 / Google Play 18 本（Android 版を 4 本準備中）
 
 ## Apps
 
@@ -24,7 +24,7 @@
   - 詳細: https://freetokyolabs.com/trero/llms.txt
 - [TsukiLift](https://freetokyolabs.com/tsukilift/): 生理周期と筋トレを一緒に管理する女性向けフィットネスアプリ。周期フェーズに合わせたトレーニング推奨、HealthKit 連携。
   - App Store: https://apps.apple.com/app/id6767084251
-  - Google Play: 準備中 / in preparation（Android 9.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.tsukilift（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/tsukilift/llms.txt
 - [Calmgraph（カームグラフ）](https://freetokyolabs.com/calmgraph/): ストレスを 0–100 のスコアで可視化する iOS / watchOS アプリ。Apple Watch の HRV または数タップのチェックインからその日のストレスを算出し、原因タグと週次インサイトで傾向を掴む。完全オフライン・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6790698772
@@ -42,7 +42,7 @@
   - 詳細: https://freetokyolabs.com/hadalog/llms.txt
 - [نسمة / Nasma（ナスマ）](https://freetokyolabs.com/nasma/): 紙巻きたばこと水たばこ（シーシャ）を別々の単位で記録するアプリ。セッション・時間・フレーバー・場所まで残し、単一換算は行わない。ラマダンの断食時間中に吸わなかった時間を集計でき、開始日は地域の発表に合わせて調整できる。完全オフライン・アカウント不要・買い切り。8 言語対応（アラビア語は RTL）。
   - App Store: https://apps.apple.com/app/id6797344961
-  - Google Play: 準備中 / in preparation（Android 9.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.nasma（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/nasma/llms.txt
 
 ### Life（くらし）
@@ -154,7 +154,7 @@
   - 詳細: https://freetokyolabs.com/hanro/llms.txt
 - [Toscore](https://freetokyolabs.com/toscore/): ミニバス対応のテーブルオフィシャルズ（TO）向けデジタルスコアシート iOS / iPadOS アプリ。能動的ルール検証とミニバス出場時間検証を搭載、完全オフライン・データ収集なしで記録ミスを減らす。
   - App Store: https://apps.apple.com/app/id6776913396
-  - Google Play: 準備中 / in preparation（Android 8.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.toscore（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/toscore/llms.txt
 - [コエガキ（Koegaki）](https://freetokyolabs.com/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。
   - App Store: https://apps.apple.com/app/id6780139132

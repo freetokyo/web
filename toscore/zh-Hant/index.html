@@ -451,7 +451,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -460,9 +461,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -486,6 +489,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -493,11 +502,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -518,7 +529,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "守護迷你籃球記錄員，遠離記錄失誤。快速記錄得分、犯規與上場，依照JBA規則自動驗證。完全離線，不收集任何資料。", "inLanguage": "zh-Hant", "operatingSystem": "iOS, Android", "applicationCategory": "SportsApplication", "url": "https://freetokyolabs.com/toscore/zh-Hant/", "image": "https://freetokyolabs.com/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Toscore", "description": "守護迷你籃球記錄員，遠離記錄失誤。快速記錄得分、犯規與上場，依照JBA規則自動驗證。完全離線，不收集任何資料。", "inLanguage": "zh-Hant", "operatingSystem": "iOS 17.0+, Android 8.0+", "applicationCategory": "SportsApplication", "url": "https://freetokyolabs.com/toscore/zh-Hant/", "image": "https://freetokyolabs.com/toscore/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6776913396", "sameAs": ["https://apps.apple.com/app/id6776913396", "https://play.google.com/store/apps/details?id=com.chen.toscore"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Toscore", "item": "https://freetokyolabs.com/toscore/zh-Hant/"}]}</script>
 </head>
 <body>
@@ -532,7 +543,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </a>
     <a class="nav__here" href="../../toscore/zh-Hant/">Toscore</a>
     <div class="nav__links">
-      <div class="nav__item"><a href="../../en/#health">Health</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/en/">Atamalog<span>Headache × pressure log</span></a><a href="../../calmgraph/en/">Calmgraph<span>Stress as one number</span></a><a href="../../hadalog/en/">Hadalog<span>Tomorrow’s skin, known today</span></a><a href="../../nasma/en/">Nasma<span>Quit smoking &amp; shisha (GCC)</span></a><a href="../../recoverysync/zh-Hant/">RecoverySync<span>Sleep &amp; HRV recovery score</span></a><a href="../../saunaflow/zh-Hant/">SaunaFlow<span>Apple Watch sauna timer</span></a><a href="../../trero/zh-Hant/">Trero<span>Strength &amp; workout tracking</span></a><a href="../../tsukilift/en/">TsukiLift<span>Menstrual cycle × training</span></a><a href="../../yuralog/en/">Yuralog<span>Menopause symptom log</span></a></div></div></div><div class="nav__item"><a href="../../en/#life">Life</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../hazelog/en/">HazeLog<span>Coffee roast-curve log</span></a><a href="../../heyalog/zh-Hant/">Heyalog<span>Rental move-in/out records</span></a><a href="../../hitorilog/zh-Hant/">HitoriLog<span>Solo-caregiver records</span></a><a href="../../iekan/zh-Hant/">IeKan<span>Watch over your family home</span></a><a href="../../jamalog/">Jamalog<span>A logbook for camels</span></a><a href="../../jitsuhiro/zh-Hant/">Jitsuhiro<span>Floor-plan effective area</span></a><a href="../../kajimieru/en/">Kajimieru<span>Split 130 invisible chores</span></a><a href="../../kedgelog/en/">Kedgelog<span>Boat safety gear expiry tracker</span></a><a href="../../khaylog/en/">Khaylog<span>Horse care &amp; records</span></a><a href="../../lifeweeks/zh-Hant/">Weekwise<span>Your life in weeks</span></a><a href="../../miawell/zh-Hant/">Miawell<span>Cat-only healthcare</span></a><a href="../../muddah/">Muddah<span>GCC family document vault</span></a><a href="../../printmemo/en/">PrintSummary<span>School printouts × OCR</span></a><a href="../../qamari/en/">Qamari<span>Hijri-first calendar</span></a><a href="../../sakulog/en/">SakuLog<span>Kids’ artwork archive</span></a><a href="../../saqrlog/">Saqrlog<span>Records for falconers</span></a><a href="../../sonalog/en/">Sonalog<span>Home disaster-prep × supplies</span></a><a href="../../sukushori/zh-Hant/">Sukushori<span>Automatic screenshot triage</span></a><a href="../../unelog/en/">Unelog<span>Allotment garden log</span></a><a href="../../vatlog/en/">Vatlog<span>Homebrew batch log &amp; annual volume</span></a><a href="../../yuzuri/zh-Hant/">Yuzuri<span>End-of-life notebook</span></a></div></div></div><div class="nav__item"><a href="../../en/#money">Money</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/zh-Hant/">HomeNet Navi<span>“Income wall” simulator</span></a><a href="../../keihiba/zh-Hant/">Keihiba<span>Expense receipts</span></a><a href="../../kimekabu/en/">Kimekabu<span>Stock trade-decision journal</span></a><a href="../../mochiru/zh-Hant/">Mochiru<span>Asset-longevity simulator</span></a><a href="../../zaicho/en/">Zaicho<span>Estate inventory</span></a></div></div></div><div class="nav__item"><a href="../../en/#work">Work</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../arari/zh-Hant/">Arari<span>Real hourly rate per job</span></a><a href="../../carehours/zh-Hant/">CareHours<span>Home-care helper payroll</span></a><a href="../../chezlog/en/">Chezlog<span>Private chef job &amp; menu log</span></a><a href="../../dartrack/">Dartrack<span>Household-staff records (UAE)</span></a><a href="../../genbalog/zh-Hant/">Genbalog<span>On-site reports in 60s</span></a><a href="../../hanro/zh-Hant/">hanro<span>Delivery-driver income</span></a><a href="../../hemlog/en/">Hemlog<span>Per-garment alteration log</span></a><a href="../../inkarte/en/">Inkarte<span>Tattoo-artist client &amp; consent</span></a><a href="../../koegaki/zh-Hant/">Koegaki<span>On-device meeting notes</span></a><a href="../../lessonreport/en/">Lesson Report<span>A one-page report for the parent</span></a><a href="../../nailog/en/">Nailog<span>Nail-tech client charts</span></a><a href="../../otolog/en/">Otolog<span>Music-lesson student charts</span></a><a href="../../temalog/en/">Temalog<span>Day rate &amp; site log</span></a><a href="../../torekarte/en/">ToreKarte<span>Personal-trainer client charts</span></a><a href="../../toscore/zh-Hant/">Toscore<span>Mini-basketball scoresheet</span></a><a href="../../waqtain/en/">Waqtain<span>Plan the hours between prayers</span></a></div></div></div>
+      <div class="nav__item"><a href="../../en/#health">Health</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../atamalog/en/">Atamalog<span>Headache × pressure log</span></a><a href="../../calmgraph/en/">Calmgraph<span>Stress as one number</span></a><a href="../../hadalog/en/">Hadalog<span>Tomorrow’s skin, known today</span></a><a href="../../nasma/en/">Nasma<span>Quit smoking &amp; shisha (GCC)</span></a><a href="../../recoverysync/zh-Hant/">RecoverySync<span>Sleep &amp; HRV recovery score</span></a><a href="../../saunaflow/zh-Hant/">SaunaFlow<span>Apple Watch sauna timer</span></a><a href="../../trero/zh-Hant/">Trero<span>Strength &amp; workout tracking</span></a><a href="../../tsukilift/en/">TsukiLift<span>Menstrual cycle × training</span></a><a href="../../yuralog/en/">Yuralog<span>Menopause symptom log</span></a></div></div></div><div class="nav__item"><a href="../../en/#life">Life</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../hazelog/en/">HazeLog<span>Coffee roast-curve log</span></a><a href="../../heyalog/zh-Hant/">Heyalog<span>Rental move-in/out records</span></a><a href="../../hitorilog/zh-Hant/">HitoriLog<span>Solo-caregiver records</span></a><a href="../../iekan/zh-Hant/">IeKan<span>Watch over your family home</span></a><a href="../../jamalog/zh-Hant/">Jamalog<span>A logbook for camels</span></a><a href="../../jitsuhiro/zh-Hant/">Jitsuhiro<span>Floor-plan effective area</span></a><a href="../../kajimieru/en/">Kajimieru<span>Split 130 invisible chores</span></a><a href="../../kedgelog/en/">Kedgelog<span>Boat safety gear expiry tracker</span></a><a href="../../khaylog/en/">Khaylog<span>Horse care &amp; records</span></a><a href="../../lifeweeks/zh-Hant/">Weekwise<span>Your life in weeks</span></a><a href="../../miawell/zh-Hant/">Miawell<span>Cat-only healthcare</span></a><a href="../../muddah/">Muddah<span>GCC family document vault</span></a><a href="../../printmemo/en/">PrintSummary<span>School printouts × OCR</span></a><a href="../../qamari/en/">Qamari<span>Hijri-first calendar</span></a><a href="../../sakulog/en/">SakuLog<span>Kids’ artwork archive</span></a><a href="../../saqrlog/">Saqrlog<span>Records for falconers</span></a><a href="../../sonalog/en/">Sonalog<span>Home disaster-prep × supplies</span></a><a href="../../sukushori/zh-Hant/">Sukushori<span>Automatic screenshot triage</span></a><a href="../../unelog/en/">Unelog<span>Allotment garden log</span></a><a href="../../vatlog/en/">Vatlog<span>Homebrew batch log &amp; annual volume</span></a><a href="../../yuzuri/zh-Hant/">Yuzuri<span>End-of-life notebook</span></a></div></div></div><div class="nav__item"><a href="../../en/#money">Money</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../homenetnavi/zh-Hant/">HomeNet Navi<span>“Income wall” simulator</span></a><a href="../../keihiba/zh-Hant/">Keihiba<span>Expense receipts</span></a><a href="../../kimekabu/en/">Kimekabu<span>Stock trade-decision journal</span></a><a href="../../mochiru/zh-Hant/">Mochiru<span>Asset-longevity simulator</span></a><a href="../../zaicho/en/">Zaicho<span>Estate inventory</span></a></div></div></div><div class="nav__item"><a href="../../en/#work">Work</a><div class="nav__drop"><div class="nav__drop-inner"><a href="../../arari/zh-Hant/">Arari<span>Real hourly rate per job</span></a><a href="../../carehours/zh-Hant/">CareHours<span>Home-care helper payroll</span></a><a href="../../chezlog/en/">Chezlog<span>Private chef job &amp; menu log</span></a><a href="../../dartrack/">Dartrack<span>Household-staff records (UAE)</span></a><a href="../../genbalog/zh-Hant/">Genbalog<span>On-site reports in 60s</span></a><a href="../../hanro/zh-Hant/">hanro<span>Delivery-driver income</span></a><a href="../../hemlog/en/">Hemlog<span>Per-garment alteration log</span></a><a href="../../inkarte/en/">Inkarte<span>Tattoo-artist client &amp; consent</span></a><a href="../../koegaki/zh-Hant/">Koegaki<span>On-device meeting notes</span></a><a href="../../lessonreport/en/">Lesson Report<span>A one-page report for the parent</span></a><a href="../../nailog/en/">Nailog<span>Nail-tech client charts</span></a><a href="../../otolog/en/">Otolog<span>Music-lesson student charts</span></a><a href="../../temalog/en/">Temalog<span>Day rate &amp; site log</span></a><a href="../../torekarte/en/">ToreKarte<span>Personal-trainer client charts</span></a><a href="../../toscore/zh-Hant/">Toscore<span>Mini-basketball scoresheet</span></a><a href="../../waqtain/en/">Waqtain<span>Plan the hours between prayers</span></a></div></div></div>
     </div>
     <a class="nav__cta" href="https://apps.apple.com/app/id6776913396" target="_blank" rel="noopener">View on the App Store</a>
   </div>
@@ -543,6 +554,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     <h1>ToScore 籃球比賽記錄</h1>
     <p class="subtitle">得分表與規則驗證</p>
     <a class="btn-dl" href="https://apps.apple.com/app/id6776913396" rel="noopener">在 App Store 下載</a>
+<a class="btn-dl" href="https://play.google.com/store/apps/details?id=com.chen.toscore" target="_blank" rel="noopener" data-ftplay>Google Play</a>
   </section>
   <section class="desc">
 <p>ToScore 是專為迷你籃球（minibasket）桌邊裁判（TO）打造的數位計分表與驗證應用程式。專注於減少記錄失誤，結合了符合JBA規則的「主動規則驗證」與「上場時間驗證」功能。僅使用Apple標準技術構建，完全離線運行，零資料收集。</p>
@@ -606,8 +618,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
 <section class="ftcta">
 <h2>Toscore</h2>
-<p>Available on the App Store, for iPhone and iPad.</p>
-<a class="cta" href="https://apps.apple.com/app/id6776913396" target="_blank" rel="noopener">View on the App Store</a><span class="ftcta__price">Free with in-app purchase</span>
+<p>Available on the App Store and Google Play, for iPhone, iPad and Android.</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6776913396" target="_blank" rel="noopener">View on the App Store</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.toscore" target="_blank" rel="noopener">Get it on Google Play</a></div><span class="ftcta__price">Free with in-app purchase</span>
 </section>
 </main>
 <footer class="footer">
