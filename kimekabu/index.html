@@ -388,7 +388,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -397,9 +398,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -423,6 +426,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -430,11 +439,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -455,7 +466,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "キメカブ（Kimekabu）", "description": "キメカブは株の「売買判断」を記録し、決済時に計画と照合するトレードノート。損益ではなく判断の質を管理。口座連携なし・完全オフライン・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyolabs.com/kimekabu/", "image": "https://freetokyolabs.com/kimekabu/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6789459452", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "キメカブ（Kimekabu）", "description": "キメカブは株の「売買判断」を記録し、決済時に計画と照合するトレードノート。損益ではなく判断の質を管理。口座連携なし・完全オフライン・買い切り。", "inLanguage": "ja", "operatingSystem": "iOS 26.0+, Android 9.0+", "applicationCategory": "FinanceApplication", "url": "https://freetokyolabs.com/kimekabu/", "image": "https://freetokyolabs.com/kimekabu/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6789459452", "sameAs": ["https://apps.apple.com/app/id6789459452", "https://play.google.com/store/apps/details?id=com.chen.kimekabu"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "キメカブ（Kimekabu）", "item": "https://freetokyolabs.com/kimekabu/"}]}</script>
 </head>
 <body>
@@ -480,27 +491,28 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p class="slogan">キメカブ</p>
 <p class="lead">買う前の「なぜ」を約90秒で記録し、売る時に計画とのズレを照合。自分の判断のクセが数字で見える、株式投資のためのトレードノートです。</p>
 <a class="cta" href="https://apps.apple.com/app/id6789459452">App Storeでダウンロード</a>
+<a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.kimekabu" target="_blank" rel="noopener" data-ftplay>Google Play でダウンロード</a>
 <p class="price">iPhone · iOS 26+ · 無料（App内課金あり）</p>
 </div></header>
 <section><div class="wrap"><h2>主な機能</h2><div class="grid"><div class="feat"><div class="ic">📝</div><h3>判断カード</h3><p>銘柄・仮説・根拠タグ・確信度・目標/損切り・想定保有日数を、発注前に約90秒で構造化記録。</p></div><div class="feat"><div class="ic">⚖️</div><h3>決済照合</h3><p>決済時に計画（目標・損切り・期間）との乖離を自動照合し、逸脱理由と教訓を記録。分割決済にも対応。</p></div><div class="feat"><div class="ic">🗓️</div><h3>週次レビュー</h3><p>今週クローズした判断・逸脱の内訳・先週の教訓の再掲を1画面にまとめます。</p></div><div class="feat"><div class="ic">📊</div><h3>判断分析</h3><p>根拠タグ別の勝率、確信度と結果の相関、ルール逸脱率、保有期間の分布を可視化。</p></div><div class="feat"><div class="ic">✏️</div><h3>あとから直せる</h3><p>決済単価の打ち間違い・逸脱理由・教訓は、記録したあとでも編集できます。</p></div><div class="feat"><div class="ic">🧷</div><h3>添付とロック</h3><p>チャート画像の添付、約定画面の文字認識、Face ID ロック、カレンダー表示。</p></div><div class="feat"><div class="ic">💾</div><h3>バックアップと復元</h3><p>記録を書き出して読み戻せます。機種変更でも持ち運べて、処理はすべて端末内。</p></div><div class="feat"><div class="ic">🔒</div><h3>完全オフライン</h3><p>証券口座連携なし。データはすべて端末内。アカウント不要で機内モードでも全機能動作。</p></div><div class="feat"><div class="ic">💴</div><h3>買い切り</h3><p>サブスクなし。無料で25カードまで体験、Pro（買い切り¥2,000）で無制限・全期間のクロス分析・エクスポート。</p></div><div class="feat"><div class="ic">📤</div><h3>エクスポート</h3><p>判断記録をCSV / PDFで書き出し。バックアップや振り返りに。</p></div></div></div></section>
 <section><div class="wrap"><div class="disc">本アプリはあなた自身の売買判断を記録・整理するためのツールです。特定の金融商品の推奨・勧誘や、売買タイミングの助言を行うものではありません。表示される集計はすべてあなた自身の過去の記録に基づく整理であり、将来の成果を保証するものではありません。最終的な投資判断はご自身の責任で行ってください。</div></div></section>
 <section style="max-width:720px;margin:0 auto;padding:8px 24px 28px"><p style="font-size:13px;line-height:1.8;opacity:.75;border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:12px 16px;margin:0"><strong>ご注意：</strong>本アプリは売買判断を記録・整理するツールであり、投資助言・特定銘柄の推奨を行うものではありません。集計はご自身の過去の記録に基づく参考情報であり、将来の成果を保証しません。投資判断はご自身の責任で行ってください。</p></section>
+
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Kimekabu の Android 版は <a href="https://play.google.com/store/apps/details?id=com.chen.kimekabu" target="_blank" rel="noopener">Google Play</a> で配信しています。Android 9.0 以降に対応しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>Android 版についてのご質問は<a href="support.html#android-support">サポートページ</a>をご覧ください。</p>
+</section>
 <section class="ftshots" aria-label="アプリの画面">
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="記録の一覧。保有中の AAPL・7203 が売買理由のテーマつきで並び、クローズ済みの 9984 は +¥169,890（+17.9%）の結果を示す" width="360" height="782" loading="lazy" decoding="async"><figcaption>買う前の「なぜ」を残す</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="記録の詳細一覧。保有中とクローズ済みをタブで切り替え、銘柄・タグで検索できる" width="360" height="782" loading="lazy" decoding="async"><figcaption>保有中とクローズ済みを一覧</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="Pro の案内。無料と Pro の機能比較表（判断の記録・照合、分析、週次レビュー、CSV/PDF 出力、バックアップ）と買い切り価格" width="360" height="782" loading="lazy" decoding="async"><figcaption>無料と Pro のちがい</figcaption></figure></div>
 </section>
-
-<section class="ftlegal">
-<h2 id="android-about">Android 版について</h2>
-<p>Kimekabu は Android 版を準備しています。Android 9.0 以降に対応し、Google Play での公開を予定しています。</p>
-<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
-<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
-</section>
-
 <section class="ftcta">
 <h2>キメカブ（Kimekabu）</h2>
-<p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>
-<a class="cta" href="https://apps.apple.com/app/id6789459452" target="_blank" rel="noopener">App Store で見る</a><span class="ftcta__price">無料（アプリ内課金あり）</span>
+<p>App Store と Google Play から入手できます。iPhone / iPad でも Android でも使えます。</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6789459452" target="_blank" rel="noopener">App Store で見る</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.kimekabu" target="_blank" rel="noopener">Google Play で見る</a></div><span class="ftcta__price">無料（アプリ内課金あり）</span>
 </section>
 </main>
 <footer class="footer">
