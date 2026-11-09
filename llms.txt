@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 19 本は Google Play でも配信し、4 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 20 本は Google Play でも配信し、4 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 19 本（Android 版を 4 本準備中）
+配信: App Store 48 本 / Google Play 20 本（Android 版を 4 本準備中）
 
 ## Apps
 
@@ -59,6 +59,7 @@
   - 詳細: https://freetokyolabs.com/miawell/llms.txt
 - [スクショリ](https://freetokyolabs.com/sukushori/): 撮ったまま埋もれるスクリーンショットを、端末内 AI が「行きたい店」「予定」「欲しいモノ」などに自動仕分け。Vision OCR + FoundationModels、解析と保存は端末内・買い切り・広告なし。通信は「地図で見る」のときだけ。
   - App Store: https://apps.apple.com/app/id6778336001
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.sukushori（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/sukushori/llms.txt
 - [ヘヤログ（Heyalog）](https://freetokyolabs.com/heyalog/): 賃貸住宅の入居・退去時の部屋状態を写真で記録し、国土交通省「原状回復をめぐるトラブルとガイドライン」準拠のチェックリストと PDF 報告書を作成。同アングル比較撮影で敷金トラブルを防ぐ。完全オフライン・買い切り 600 円・広告なし。
   - App Store: https://apps.apple.com/app/id6778713193

@@ -4,6 +4,7 @@
 
 Web: https://freetokyolabs.com/sukushori/
 App Store: https://apps.apple.com/app/id6778336001
+Google Play: https://play.google.com/store/apps/details?id=com.chen.sukushori（Android 8.0 以降）
 開発: Freetokyo Labs
 バージョン: 1.4 / 対応: iOS 17.0 以降
 価格: 無料（アプリ内課金あり）
@@ -14,7 +15,7 @@ App Store: https://apps.apple.com/app/id6778336001
 - 行きたい店・予定・欲しいモノに仕分け
 - 手動での再分類
 - 要点の抽出（タイトル・要約）
-- 完全オフライン・データ収集なし
+- データ収集なし・通信は地図のときだけ
 - 買い切り
 
 ## 使い方
