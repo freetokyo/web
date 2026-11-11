@@ -451,7 +451,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -460,9 +461,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -486,6 +489,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -493,11 +502,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -518,7 +529,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Yuzuri", "description": "الدعم — Yuzuri", "inLanguage": "ar", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/yuzuri/ar/support.html", "image": "https://freetokyolabs.com/yuzuri/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6784874949", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Yuzuri", "description": "الدعم — Yuzuri", "inLanguage": "ar", "operatingSystem": "iOS 18.0+, Android 9.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/yuzuri/ar/support.html", "image": "https://freetokyolabs.com/yuzuri/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6784874949", "sameAs": ["https://apps.apple.com/app/id6784874949", "https://play.google.com/store/apps/details?id=com.chen.yuzuri"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Yuzuri", "item": "https://freetokyolabs.com/yuzuri/ar/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/yuzuri/ar/support.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "هل الاستخدام مجاني؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، Yuzuri تطبيق بشراء لمرة واحدة. بعد الشراء الأولي، لا توجد أي مشتريات داخل التطبيق على الإطلاق. لا حاجة إلى اشتراك."}}, {"@type": "Question", "name": "أين يتم تخزين بياناتي؟", "acceptedAnswer": {"@type": "Answer", "text": "يتم تخزين جميع البيانات فقط على جهاز iPhone الخاص بك. لا يتم إرسال أو مزامنة أي شيء مع خوادم السحابة. إذا كنت تريد الحماية من فقدان جهاز iPhone الخاص بك، فاستخدم ميزة النسخ الاحتياطي لـ iPhone (iCloud)."}}, {"@type": "Question", "name": "هل يتم جمع معلوماتي الشخصية؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. هذا التطبيق لا يرسل أبدًا المعلومات الشخصية أو بيانات الاستخدام إلى الخارج. لا يتم استخدام أي أدوات تحليل أو حزم تطوير برامج إعلانية."}}, {"@type": "Question", "name": "أريد نقل مشترياتي إلى جهاز iPhone آخر", "acceptedAnswer": {"@type": "Answer", "text": "بعد تنزيل التطبيق على جهاز iPhone الجديد الخاص بك، يمكنك استعادته من &quot;استعادة المشتريات&quot; داخل التطبيق."}}, {"@type": "Question", "name": "ماذا لو نسيت كلمة المرور الخاصة بي؟", "acceptedAnswer": {"@type": "Answer", "text": "لا يتطلب Yuzuri تسجيل حساب، لذا لا توجد كلمة مرور. إنه محمي بنفس الأمان الموجود في شاشة قفل جهاز iPhone الخاص بك."}}, {"@type": "Question", "name": "هل يمكنني مشاركة البيانات مع عائلتي؟", "acceptedAnswer": {"@type": "Answer", "text": "يتم تخزين بيانات Yuzuri فقط على الجهاز. إذا كنت ترغب في مشاركتها، فافعل ذلك بالطريقة التي تختارها بنفسك — مثل إظهار جهاز iPhone مباشرة لعائلتك أو نسخ الملاحظات يدويًا."}}, {"@type": "Question", "name": "هل يتم تضمينه في النسخ الاحتياطي لـ iCloud؟", "acceptedAnswer": {"@type": "Answer", "text": "يتبع إعدادات النسخ الاحتياطي لجهاز iPhone الخاص بك. بشكل افتراضي، يتم تضمينه في النسخ الاحتياطي لـ iCloud. إذا قمت بتعطيل النسخ الاحتياطي لـ iCloud، فسيتم تخزين بياناتك فقط على جهاز iPhone الخاص بك."}}, {"@type": "Question", "name": "أريد الانتقال إلى جهاز iPhone جديد", "acceptedAnswer": {"@type": "Answer", "text": "إذا قمت بتمكين النسخ الاحتياطي لـ iCloud على جهاز iPhone القديم الخاص بك، فستتم استعادة نفس البيانات على جهاز iPhone الجديد الخاص بك."}}, {"@type": "Question", "name": "تم فجأة تحصيل رسوم اشتراك مني", "acceptedAnswer": {"@type": "Answer", "text": "لا يحتوي Yuzuri على أي ميزة اشتراك. إذا تم تحصيل رسوم منك، يرجى التواصل معنا عبر البريد الإلكتروني."}}, {"@type": "Question", "name": "التطبيق لا يبدأ التشغيل", "acceptedAnswer": {"@type": "Answer", "text": "يرجى تجربة ما يلي بالترتيب: 1. أعد تشغيل جهاز iPhone الخاص بك 2. تحقق من تحديثات التطبيق في App Store 3. إذا استمرت المشكلة، يرجى التواصل معنا."}}, {"@type": "Question", "name": "بياناتي لا تظهر", "acceptedAnswer": {"@type": "Answer", "text": "قد يكون هذا لأحد الأسباب التالية: 1. أعد تشغيل جهاز iPhone الخاص بك 2. أغلق التطبيق تمامًا (أزله من شاشة تعدد المهام) وأعد فتحه 3. إذا استمرت المشكلة، يرجى التواصل معنا."}}]}</script>
 </head>

@@ -4,6 +4,7 @@
 
 Web: https://freetokyolabs.com/lifeweeks/
 App Store: https://apps.apple.com/app/id6788981648
+Google Play: https://play.google.com/store/apps/details?id=com.chen.lifeweeks（Android 9.0 以降）
 開発: Freetokyo Labs
 バージョン: 1.4 / 対応: iOS 17.0 以降
 価格: USD 9.99（買い切り）

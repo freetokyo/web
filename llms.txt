@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 20 本は Google Play でも配信し、4 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 23 本は Google Play でも配信し、3 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 20 本（Android 版を 4 本準備中）
+配信: App Store 48 本 / Google Play 23 本（Android 版を 3 本準備中）
 
 ## Apps
 
@@ -69,13 +69,14 @@
   - 詳細: https://freetokyolabs.com/jitsuhiro/llms.txt
 - [Yuzuri（ユズリ）](https://freetokyolabs.com/yuzuri/): 完全オフラインの終活ノート iOS アプリ。資産・保険・連絡先・想いを一冊のノートに記録。アカウント登録不要・データ収集なし・買い切り。
   - App Store: https://apps.apple.com/app/id6784874949
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.yuzuri（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/yuzuri/llms.txt
 - [ヒトリログ（HitoriLog）](https://freetokyolabs.com/hitorilog/): ひとりで介護を担う人のためのケア記録 iOS アプリ。誰にも見せない本音メモで介護のリアルを記録。広告なし・アカウント不要・買い切り。記録は端末内に保存（iCloudバックアップは任意）。
   - App Store: https://apps.apple.com/app/id6785472192
   - 詳細: https://freetokyolabs.com/hitorilog/llms.txt
 - [Weekwise](https://freetokyolabs.com/lifeweeks/): 人生全体を「週」のグリッドで可視化し、その週の本音を書き残す完全オフラインの週次ジャーナル iOS アプリ。マイルストーン・バケットリスト・検索対応。サブスクなし・買い切り・アカウント不要・データ収集なし。34言語対応。
   - App Store: https://apps.apple.com/app/id6788981648
-  - Google Play: 準備中 / in preparation（Android 9.0 以降）
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.lifeweeks（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/lifeweeks/llms.txt
 - [Jamalog](https://freetokyolabs.com/jamalog/): ラクダの飼い主のための完全オフラインの台帳 iOS アプリ。プロフィール・健康記録・血統・レース・書類・リマインダーを端末内で一元管理。アカウント不要・データ収集なし。45言語対応（アラビア語は RTL）。
   - App Store: https://apps.apple.com/app/id6788732648
@@ -160,6 +161,7 @@
   - 詳細: https://freetokyolabs.com/toscore/llms.txt
 - [コエガキ（Koegaki）](https://freetokyolabs.com/koegaki/): 完全オンデバイスの議事メモ iOS アプリ。会議を録音し端末内で文字起こし、AI が「要点・決定事項・ToDo」の 3 区分に要約してタイトルも自動生成。タイムコード tap で頭出し再生。録音・文字起こしとも端末内完結でデータ収集なし。フリーミアム（月 60 分無料）。
   - App Store: https://apps.apple.com/app/id6780139132
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.koegaki（Android 13 以降）
   - 詳細: https://freetokyolabs.com/koegaki/llms.txt
 - [Dartrack](https://freetokyolabs.com/dartrack/): UAE の家庭で家事使用人（メイド・ドライバー・ナニー等）を雇う世帯向けの完全オフライン記録 iOS アプリ。ビザ・契約期限のリマインド、勤務時間、休暇、給与概算を端末内で管理し CSV／PDF に書き出し。アカウント不要・サーバー同期なし・データ収集なし。English / العربية / 日本語対応。
   - App Store: https://apps.apple.com/app/id6788604524
