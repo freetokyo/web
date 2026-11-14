@@ -4,6 +4,7 @@
 
 Web: https://freetokyolabs.com/sonalog/
 App Store: https://apps.apple.com/app/id6790403062
+Google Play: https://play.google.com/store/apps/details?id=com.chen.sonalog（Android 9.0 以降）
 開発: Freetokyo Labs
 バージョン: 1.2 / 対応: iOS 17.0 以降
 価格: 無料（アプリ内課金あり）

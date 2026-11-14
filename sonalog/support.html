@@ -388,7 +388,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -397,9 +398,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -423,6 +426,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -430,11 +439,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -455,9 +466,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ソナログ（Sonalog）", "description": "ソナログ（Sonalog）のサポート。使い方、通知、購入の復元、よくある質問、お問い合わせ先。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/sonalog/support.html", "image": "https://freetokyolabs.com/sonalog/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6790403062", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ソナログ（Sonalog）", "description": "ソナログ（Sonalog）のサポート。使い方、通知、購入の復元、よくある質問、お問い合わせ先。", "inLanguage": "ja", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/sonalog/support.html", "image": "https://freetokyolabs.com/sonalog/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6790403062", "sameAs": ["https://apps.apple.com/app/id6790403062", "https://play.google.com/store/apps/details?id=com.chen.sonalog"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "ソナログ（Sonalog）", "item": "https://freetokyolabs.com/sonalog/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyolabs.com/sonalog/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "① 家族を登録", "acceptedAnswer": {"@type": "Answer", "text": "「必要量」タブで家族の年齢層を追加すると、人数に応じた水・食料の必要量の目安が表示されます。"}}, {"@type": "Question", "name": "② 備蓄を登録", "acceptedAnswer": {"@type": "Answer", "text": "「備蓄」タブの＋から品名・カテゴリ・数量・期限を登録。期限の30日前と7日前にお知らせします（通知がオンのとき）。"}}, {"@type": "Question", "name": "③ 防災カルテ", "acceptedAnswer": {"@type": "Answer", "text": "「防災カルテ」タブで非常持ち出し品・連絡先・集合場所を記録。フルアクセスを購入すると1枚のPDFに出力できます。"}}, {"@type": "Question", "name": "データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "すべて端末内に保存され、外部送信・収集はありません。アカウント登録も不要です。"}}, {"@type": "Question", "name": "期限の通知が来ません。", "acceptedAnswer": {"@type": "Answer", "text": "端末の「設定」アプリで本アプリの通知が許可されているか、アプリ内の設定で「期限の通知」がオンかをご確認ください。通知がオフでも、各画面のバッジで期限をご確認いただけます。"}}, {"@type": "Question", "name": "機種変更後に購入を引き継げますか？", "acceptedAnswer": {"@type": "Answer", "text": "同じ Apple ID でアプリ内の「購入を復元」から復元できます。"}}, {"@type": "Question", "name": "必要量はどのくらい正確ですか？", "acceptedAnswer": {"@type": "Answer", "text": "内閣府・消防庁等の公的指針に基づく一般的な目安です。避難の要否や医療的な判断は行いません。最終的な判断は自治体の公式情報をご確認ください。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "① 家族を登録", "acceptedAnswer": {"@type": "Answer", "text": "「必要量」タブで家族の年齢層を追加すると、人数に応じた水・食料の必要量の目安が表示されます。"}}, {"@type": "Question", "name": "② 備蓄を登録", "acceptedAnswer": {"@type": "Answer", "text": "「備蓄」タブの＋から品名・カテゴリ・数量・期限を登録。期限の30日前と7日前にお知らせします（通知がオンのとき）。"}}, {"@type": "Question", "name": "③ 防災カルテ", "acceptedAnswer": {"@type": "Answer", "text": "「防災カルテ」タブで非常持ち出し品・連絡先・集合場所を記録。フルアクセスを購入すると1枚のPDFに出力できます。"}}, {"@type": "Question", "name": "データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "すべて端末内に保存され、外部送信・収集はありません。アカウント登録も不要です。"}}, {"@type": "Question", "name": "期限の通知が来ません。", "acceptedAnswer": {"@type": "Answer", "text": "端末の「設定」アプリで本アプリの通知が許可されているか、アプリ内の設定で「期限の通知」がオンかをご確認ください。通知がオフでも、各画面のバッジで期限をご確認いただけます。"}}, {"@type": "Question", "name": "機種変更後に購入を引き継げますか？", "acceptedAnswer": {"@type": "Answer", "text": "同じ Apple ID でアプリ内の「購入を復元」から復元できます。"}}, {"@type": "Question", "name": "必要量はどのくらい正確ですか？", "acceptedAnswer": {"@type": "Answer", "text": "内閣府・消防庁等の公的指針に基づく一般的な目安です。避難の要否や医療的な判断は行いません。最終的な判断は自治体の公式情報をご確認ください。"}}, {"@type": "Question", "name": "Android 版はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "対応するのは Android 9.0 以降です。 Google Play からダウンロードできます。 端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。 ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。"}}]}</script>
 </head>
 <body>
 
@@ -484,6 +495,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         <a class="lang-button" href="./en/support.html" hreflang="en">English</a>
       </div>
       <a class="appstore" href="https://apps.apple.com/app/id6790403062" target="_blank" rel="noopener">App Store</a>
+<a class="appstore" href="https://play.google.com/store/apps/details?id=com.chen.sonalog" target="_blank" rel="noopener" data-ftplay>Google Play</a>
     </span>
   </div>
   
@@ -514,12 +526,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
     </div>
 <section class="ftlegal">
 <h2 id="android-support">Android 版について</h2>
-<p>対応するのは Android 9.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>対応するのは Android 9.0 以降です。<a href="https://play.google.com/store/apps/details?id=com.chen.sonalog" target="_blank" rel="noopener">Google Play</a> からダウンロードできます。</p>
 <p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
 <p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
 </section>
-
-
 </main>
 <footer class="footer">
   <div class="container">

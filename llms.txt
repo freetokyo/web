@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 23 本は Google Play でも配信し、3 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 29 本は Google Play でも配信し、3 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 23 本（Android 版を 3 本準備中）
+配信: App Store 48 本 / Google Play 29 本（Android 版を 3 本準備中）
 
 ## Apps
 
@@ -90,6 +90,7 @@
   - 詳細: https://freetokyolabs.com/muddah/llms.txt
 - [ソナログ（Sonalog）](https://freetokyolabs.com/sonalog/): 消費して補充する「ローリングストック」の備蓄管理と、家族の防災情報をまとめる「家庭防災カルテ」をひとつにする iOS アプリ。期限が近い備蓄を通知し、家族の人数から必要量を計算、防災カルテは PDF で持ち出せる。完全オフライン・アカウント不要・買い切り。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6790403062
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.sonalog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/sonalog/llms.txt
 - [ハゼログ（HazeLog）](https://freetokyolabs.com/hazelog/): コーヒー自家焙煎のロースト曲線を記録する iOS アプリ。「うまく焼けた一回」を曲線ごと保存し、次回はゴースト曲線と並走して再現。手網・手鍋・小型焙煎機対応、温度プローブ不要。完全オフライン・買い切り。日本語 / English 対応。
   - App Store: https://apps.apple.com/app/id6791478115
@@ -100,6 +101,7 @@
   - 詳細: https://freetokyolabs.com/sakulog/llms.txt
 - [Khaylog（ハイログ）](https://freetokyolabs.com/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
   - App Store: https://apps.apple.com/app/id6792197271
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.khaylog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/khaylog/llms.txt
 - [Unelog（ウネログ）](https://freetokyolabs.com/unelog/): 市民農園・貸し農園の「区画」に特化した区画栽培カルテ iOS アプリ。記録は端末に保存し、iCloud 同期は任意。畝ごとの作付け、訪園ログ、契約更新リマインド、連作チェックを契約から収穫まで一つで管理。買い切り。
   - App Store: https://apps.apple.com/app/id6792154276
@@ -122,6 +124,7 @@
 
 - [世帯手取ナビ（HomeNet Navi）](https://freetokyolabs.com/homenetnavi/): 2026 年制度に正確対応した「年収の壁」シミュレーター iOS アプリ。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案。
   - App Store: https://apps.apple.com/app/id6772911843
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.homenetnavi（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/homenetnavi/llms.txt
 - [Mochiru](https://freetokyolabs.com/mochiru/): 完全オフラインの資産寿命シミュレーターアプリ。積立から取り崩しまでの全ライフサイクルを Monte Carlo で試算、株安×円高の同時クラッシュ相関を保持。買い切り 500 円・口座連携なし・データ収集ゼロ。
   - App Store: https://apps.apple.com/app/id6778235888
@@ -185,15 +188,18 @@
   - 詳細: https://freetokyolabs.com/inkarte/llms.txt
 - [テマログ（Temalog）](https://freetokyolabs.com/temalog/): 建設業の一人親方（個人事業主）向けの出面・立替材料記録 iOS アプリ。人工（にんく）を単位に現場ごとの単価で金額を出し、立て替えた材料をレシート写真つきで残す。単価改定は履歴として積み、締め確定時に金額をスナップショットで凍結するため、すでに元請へ出した請求根拠が後から書き換わらない。締め日は現場ごとに設定でき、支払サイトから入金予定日を生成する。完全ローカル・アカウント不要・買い切り。日本語 / English。
   - App Store: https://apps.apple.com/app/id6799075773
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.temalog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/temalog/llms.txt
 - [Hemlog（ヘムログ）](https://freetokyolabs.com/hemlog/): 洋服のお直し職人向けの iOS / iPadOS アプリ。記録の単位を「顧客の体」ではなく「一着ごとの直し」に置き、元寸法・仕上がり寸法・測定条件（基準点/ヒール高/姿勢）・折り返し代の残量・仕上がり写真を1枚のカードにまとめる。各寸法は実測/指示/算出を区別し、実測が足りない記録には再現の根拠が不足と表示する。inch は 1/8 刻みの分数入力。通信を行わずアカウント登録もない。
   - App Store: https://apps.apple.com/app/id6800742261
   - 詳細: https://freetokyolabs.com/hemlog/llms.txt
 - [وقتين / Waqtain（ワクタイン）](https://freetokyolabs.com/waqtain/): 礼拝と礼拝のあいだの「実際に使える作業時間」を可視化し、会議とタスクをその枠に収める iOS アプリ。礼拝前後のバッファを差し引いた作業ウィンドウを毎日生成し、長時間タスクは礼拝で分割する。礼拝時刻は端末内の天文計算による推定値（地元モスクの告知が基準）。完全オフライン・アカウント不要・買い切り。アラビア語（RTL）/ 英語 / 日本語。
   - App Store: https://apps.apple.com/app/id6799283353
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.waqtain（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/waqtain/llms.txt
 - [Chezlog（シェログ）](https://freetokyolabs.com/chezlog/): 出張シェフ（パーソナルシェフ・ケータリング）のための案件台帳 iOS アプリ。顧客宅ごとにコンロの口数・オーブン・調理器具・食物アレルギーや禁忌・前回提供した料理を記録し、同じ料理を続けて出さないよう提供履歴で照合する。献立を決めると必要な食材が買い物リストになり、提供時刻から逆算した当日の進行表を組み立てる。手が離せない工程は同じ時刻に重ならないよう配置する。記録は端末内のみ・アカウント不要・買い切り。UI 33言語。
   - App Store: https://apps.apple.com/app/id6800338366
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.chezlog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/chezlog/llms.txt
 - [指導レポート（Lesson Report）](https://freetokyolabs.com/lessonreport/): 家庭教師・個人指導者のための指導記録と報告書作成 iOS アプリ。タップ中心の入力フォームがそのまま保護者向け1ページPDFになる。前回の宿題と結果を次回の冒頭に引き継ぎ、指導の連続性を書面に残す。用紙は地域に応じて A4 / Letter を既定にし、設定で変更できる。生徒数・記録件数・保存期間は無制限で、無料版の上限は報告書PDFが月3件・定型コメントの登録が10件の2つ。
   - App Store: 近日公開 / coming soon

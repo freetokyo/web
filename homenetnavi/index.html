@@ -452,7 +452,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -461,9 +462,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -487,6 +490,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -494,11 +503,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -519,7 +530,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "世帯手取ナビ（HomeNet Navi）", "description": "2026年制度に正確対応した「年収の壁」シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案する iOS アプリ。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://freetokyolabs.com/homenetnavi/", "image": "https://freetokyolabs.com/homenetnavi/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6772911843", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "世帯手取ナビ（HomeNet Navi）", "description": "2026年制度に正確対応した「年収の壁」シミュレーター。配偶者控除・社会保険・住民税の壁を世帯ベースで一画面に可視化、手取り最大シナリオを提案する iOS アプリ。", "inLanguage": "ja", "operatingSystem": "iOS 16.0+, Android 9.0+", "applicationCategory": "FinanceApplication", "url": "https://freetokyolabs.com/homenetnavi/", "image": "https://freetokyolabs.com/homenetnavi/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6772911843", "sameAs": ["https://apps.apple.com/app/id6772911843", "https://play.google.com/store/apps/details?id=com.chen.homenetnavi"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "世帯手取ナビ（HomeNet Navi）", "item": "https://freetokyolabs.com/homenetnavi/"}]}</script>
 </head>
 <body>
@@ -571,6 +582,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
         </svg>
         <div>
           <span class="appstore-badge__sub">App Storeで入手</span>
+          世帯手取ナビ をダウンロード
+        </div>
+      </a>
+<a class="appstore-badge" aria-label="Google Play でダウンロード" href="https://play.google.com/store/apps/details?id=com.chen.homenetnavi" target="_blank" rel="noopener" data-ftplay>
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="18" height="18"><path d="M6 3.5v17l14-8.5z"/></svg>
+        <div>
+          <span class="appstore-badge__sub">Google Playで入手</span>
           世帯手取ナビ をダウンロード
         </div>
       </a>
@@ -703,6 +721,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
           <li>公的URLリンク</li>
         </ul>
         <a class="btn btn--outline btn--block" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">App Storeで入手</a>
+<a class="btn btn--outline btn--block" href="https://play.google.com/store/apps/details?id=com.chen.homenetnavi" target="_blank" rel="noopener" data-ftplay>Google Play で入手</a>
       </div>
 
       <!-- Premium -->
@@ -723,6 +742,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
           <li>1ヶ月無料トライアル付き</li>
         </ul>
         <a class="btn btn--primary btn--block" href="https://apps.apple.com/jp/app/id6772911843" target="_blank" rel="noopener">今すぐ始める</a>
+<a class="btn btn--primary btn--block" href="https://play.google.com/store/apps/details?id=com.chen.homenetnavi" target="_blank" rel="noopener" data-ftplay>Google Play で入手</a>
       </div>
 
     </div>
@@ -751,22 +771,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 </section>
 
 <!-- ===== FOOTER ===== -->
-<section class="ftshots" aria-label="アプリの画面">
-<h2>アプリの画面</h2>
-<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。いまは働き控えの谷にいるという判定と、年収を5万円下げると世帯の手取りが +227,590 円 増えるという試算を示す" width="360" height="783" loading="lazy" decoding="async"><figcaption>年収を下げたほうが 世帯の手取りが増えることがある</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="2026年の実績。給与見込み 1,272,000 円と、130万円・110万円・123万円の壁に達する月の警告、月ごとの給与の一覧" width="360" height="783" loading="lazy" decoding="async"><figcaption>毎月の給与から 年末の着地を予測</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="年収の壁の一覧。106万・110万・123万・130万・160万の各ラインについて、超えたときに何が起きるかと現在位置を示す" width="360" height="783" loading="lazy" decoding="async"><figcaption>6本の壁を 公的根拠つきで解説</figcaption></figure></div>
-</section>
+
 
 <section class="ftlegal">
 <h2 id="android-about">Android 版について</h2>
-<p>HomeNetNavi は Android 版を準備しています。Android 9.0 以降に対応し、Google Play での公開を予定しています。</p>
+<p>HomeNetNavi の Android 版は <a href="https://play.google.com/store/apps/details?id=com.chen.homenetnavi" target="_blank" rel="noopener">Google Play</a> で配信しています。Android 9.0 以降に対応しています。</p>
 <p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
-<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
+<p>Android 版についてのご質問は<a href="support.html#android-support">サポートページ</a>をご覧ください。</p>
 </section>
-
+<section class="ftshots" aria-label="アプリの画面">
+<h2>アプリの画面</h2>
+<div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="ホーム。いまは働き控えの谷にいるという判定と、年収を5万円下げると世帯の手取りが +227,590 円 増えるという試算を示す" width="360" height="783" loading="lazy" decoding="async"><figcaption>年収を下げたほうが 世帯の手取りが増えることがある</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="2026年の実績。給与見込み 1,272,000 円と、130万円・110万円・123万円の壁に達する月の警告、月ごとの給与の一覧" width="360" height="783" loading="lazy" decoding="async"><figcaption>毎月の給与から 年末の着地を予測（Pro）</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="年収の壁の一覧。106万・110万・123万・130万・160万の各ラインについて、超えたときに何が起きるかと現在位置を示す" width="360" height="783" loading="lazy" decoding="async"><figcaption>2026年分の壁を 公的根拠つきで解説</figcaption></figure></div>
+</section>
 <section class="ftcta">
 <h2>世帯手取ナビ（HomeNet Navi）</h2>
-<p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>
-<a class="cta" href="https://apps.apple.com/app/id6772911843" target="_blank" rel="noopener">App Store で見る</a><span class="ftcta__price">無料（アプリ内課金あり）</span>
+<p>App Store と Google Play から入手できます。iPhone / iPad でも Android でも使えます。</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6772911843" target="_blank" rel="noopener">App Store で見る</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.homenetnavi" target="_blank" rel="noopener">Google Play で見る</a></div><span class="ftcta__price">無料（アプリ内課金あり）</span>
 </section>
 </main>
 <footer class="footer">

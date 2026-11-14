@@ -390,7 +390,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -399,9 +400,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -425,6 +428,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -432,11 +441,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -457,7 +468,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "وقتين / Waqtain（ワクタイン）", "description": "礼拝と礼拝のあいだを、設計する", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://freetokyolabs.com/waqtain/", "image": "https://freetokyolabs.com/waqtain/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6799283353", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "وقتين / Waqtain（ワクタイン）", "description": "礼拝と礼拝のあいだを、設計する", "inLanguage": "ja", "operatingSystem": "iOS 18.0+, Android 9.0+", "applicationCategory": "ProductivityApplication", "url": "https://freetokyolabs.com/waqtain/", "image": "https://freetokyolabs.com/waqtain/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6799283353", "sameAs": ["https://apps.apple.com/app/id6799283353", "https://play.google.com/store/apps/details?id=com.chen.waqtain"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "وقتين / Waqtain（ワクタイン）", "item": "https://freetokyolabs.com/waqtain/"}]}</script>
 </head>
 <body>
@@ -497,22 +508,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p>買い切りの Waqtain Pro（¥1,500）で、タスク数の無制限化、週単位の自動配置、フォーカスセッション無制限、会議候補時間、カレンダーへの書き出し、バックアップが使えます。サブスクリプションではありません。</p>
 
 <p><a href="privacy.html">プライバシーポリシー</a> ／ <a href="terms.html">利用規約</a> ／ <a href="support.html">サポート</a></p>
+
+
+<section class="ftlegal">
+<h2 id="android-about">Android 版について</h2>
+<p>Waqtain の Android 版は <a href="https://play.google.com/store/apps/details?id=com.chen.waqtain" target="_blank" rel="noopener">Google Play</a> で配信しています。Android 9.0 以降に対応しています。</p>
+<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
+<p>Android 版についてのご質問は<a href="support.html#android-support">サポートページ</a>をご覧ください。</p>
+</section>
 <section class="ftshots" aria-label="アプリの画面">
 <h2>アプリの画面</h2>
 <div class="ftshot-row"><figure class="ftshot"><img src="shots/ja/01.webp" alt="今日の画面。この時間の残り1時間58分と、ファジュル・ズフルの礼拝時刻のあいだに作業ウィンドウが挟まって並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>礼拝のあいだに作業を置く</figcaption></figure><figure class="ftshot"><img src="shots/ja/02.webp" alt="作業ウィンドウ。6:00〜11:39 の1時間58分に、四半期レビューの資料作成90分と設計ドキュメントの読み合わせ28分を割り付ける" width="360" height="782" loading="lazy" decoding="async"><figcaption>作業ウィンドウに割り付け</figcaption></figure><figure class="ftshot"><img src="shots/ja/03.webp" alt="週表示。今週の集中4時間5分と、日ごとの作業可能時間・枠・タスク数が帯で並ぶ" width="360" height="782" loading="lazy" decoding="async"><figcaption>1週間の集中時間</figcaption></figure></div>
 </section>
-
-<section class="ftlegal">
-<h2 id="android-about">Android 版について</h2>
-<p>Waqtain は Android 版を準備しています。Android 9.0 以降に対応し、Google Play での公開を予定しています。</p>
-<p>iOS 版と同じ計算・同じ判定になるよう、両方の実装を同じ検証データで突き合わせて作っています。保存先とバックアップの扱いは<a href="privacy.html#android-privacy">プライバシーポリシー</a>に書いてあります。</p>
-<p>公開まではリンクを掲載していません。公開時にこのページと<a href="support.html#android-support">サポートページ</a>でお知らせします。</p>
-</section>
-
 <section class="ftcta">
 <h2>وقتين / Waqtain（ワクタイン）</h2>
-<p>App Store から入手できます。iPhone / iPad でそのまま使えます。</p>
-<a class="cta" href="https://apps.apple.com/app/id6799283353" target="_blank" rel="noopener">App Store で見る</a><span class="ftcta__price">無料（アプリ内課金あり）</span>
+<p>App Store と Google Play から入手できます。iPhone / iPad でも Android でも使えます。</p>
+<div class="ftcta__btns"><a class="cta" href="https://apps.apple.com/app/id6799283353" target="_blank" rel="noopener">App Store で見る</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.chen.waqtain" target="_blank" rel="noopener">Google Play で見る</a></div><span class="ftcta__price">無料（アプリ内課金あり）</span>
 </section>
 </main>
 <footer class="footer">

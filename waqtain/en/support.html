@@ -389,7 +389,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -398,9 +399,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -424,6 +427,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -431,11 +440,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -456,9 +467,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Waqtain", "description": "Support for Waqtain: frequently asked questions and how to contact us by email.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://freetokyolabs.com/waqtain/en/support.html", "image": "https://freetokyolabs.com/waqtain/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6799283353", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Waqtain", "description": "Support for Waqtain: frequently asked questions and how to contact us by email.", "inLanguage": "en", "operatingSystem": "iOS 18.0+, Android 9.0+", "applicationCategory": "ProductivityApplication", "url": "https://freetokyolabs.com/waqtain/en/support.html", "image": "https://freetokyolabs.com/waqtain/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6799283353", "sameAs": ["https://apps.apple.com/app/id6799283353", "https://play.google.com/store/apps/details?id=com.chen.waqtain"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Waqtain", "item": "https://freetokyolabs.com/waqtain/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/waqtain/en/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Prayer times differ from my local mosque by a few minutes", "acceptedAnswer": {"@type": "Answer", "text": "The times shown are calculated estimates, and actual iqamah times vary by mosque. Under Settings, “Fine-tune times” lets you shift each prayer by minutes to match your local mosque."}}, {"@type": "Question", "name": "Which calculation method should I choose?", "acceptedAnswer": {"@type": "Answer", "text": "Choose the one used where you live — Umm al-Qura in Saudi Arabia, Dubai in the UAE, and the respective methods in Qatar and Kuwait. This app does not designate any method as correct."}}, {"@type": "Question", "name": "I don't want to grant location access", "acceptedAnswer": {"@type": "Answer", "text": "You don't have to. Pick a city manually on first launch, or later from “Choose a city” in Settings. Every feature remains available."}}, {"@type": "Question", "name": "Will exporting duplicate prayer events in my calendar?", "acceptedAnswer": {"@type": "Answer", "text": "No. Export is limited to a dedicated calendar named “Waqtain”, and each export rebuilds that period rather than adding to it. Your existing calendars are never written to. Turning the export off removes what was exported."}}, {"@type": "Question", "name": "Some times are missing at high latitudes", "acceptedAnswer": {"@type": "Answer", "text": "At high latitudes there are days when the sun never reaches the angle the calculation requires, so Fajr and Isha are not mathematically defined. Rather than guessing, the app says the time cannot be calculated. Adjust manually in Settings, or try another method."}}, {"@type": "Question", "name": "I bought Pro but the features are locked", "acceptedAnswer": {"@type": "Answer", "text": "Try “Restore purchase” on the paywall or in Settings. If you purchased with the same Apple ID, it will restore."}}, {"@type": "Question", "name": "Can I move my data to a new device?", "acceptedAnswer": {"@type": "Answer", "text": "This app does not use iCloud sync. Use “Backup” in Settings to export your tasks and settings to a JSON file, then import it on the new device. Privacy Policy · Terms of Use"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Prayer times differ from my local mosque by a few minutes", "acceptedAnswer": {"@type": "Answer", "text": "The times shown are calculated estimates, and actual iqamah times vary by mosque. Under Settings, “Fine-tune times” lets you shift each prayer by minutes to match your local mosque."}}, {"@type": "Question", "name": "Which calculation method should I choose?", "acceptedAnswer": {"@type": "Answer", "text": "Choose the one used where you live — Umm al-Qura in Saudi Arabia, Dubai in the UAE, and the respective methods in Qatar and Kuwait. This app does not designate any method as correct."}}, {"@type": "Question", "name": "I don't want to grant location access", "acceptedAnswer": {"@type": "Answer", "text": "You don't have to. Pick a city manually on first launch, or later from “Choose a city” in Settings. Every feature remains available."}}, {"@type": "Question", "name": "Will exporting duplicate prayer events in my calendar?", "acceptedAnswer": {"@type": "Answer", "text": "No. Export is limited to a dedicated calendar named “Waqtain”, and each export rebuilds that period rather than adding to it. Your existing calendars are never written to. Turning the export off removes what was exported."}}, {"@type": "Question", "name": "Some times are missing at high latitudes", "acceptedAnswer": {"@type": "Answer", "text": "At high latitudes there are days when the sun never reaches the angle the calculation requires, so Fajr and Isha are not mathematically defined. Rather than guessing, the app says the time cannot be calculated. Adjust manually in Settings, or try another method."}}, {"@type": "Question", "name": "I bought Pro but the features are locked", "acceptedAnswer": {"@type": "Answer", "text": "Try “Restore purchase” on the paywall or in Settings. If you purchased with the same Apple ID, it will restore."}}, {"@type": "Question", "name": "Can I move my data to a new device?", "acceptedAnswer": {"@type": "Answer", "text": "This app does not use iCloud sync. Use “Backup” in Settings to export your tasks and settings to a JSON file, then import it on the new device. Privacy Policy · Terms of Use"}}, {"@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": {"@type": "Answer", "text": "The Android version supports Android 9.0 and later. Download it from Google Play . To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically. For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer."}}]}</script>
 </head>
 <body>
 
@@ -488,12 +499,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
 <section class="ftlegal">
 <h2 id="android-support">About the Android version</h2>
-<p>The Android version supports Android 9.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>The Android version supports Android 9.0 and later. Download it from <a href="https://play.google.com/store/apps/details?id=com.chen.waqtain" target="_blank" rel="noopener">Google Play</a>.</p>
 <p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
 <p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
 </section>
-
-
 </main>
 <footer class="footer">
   <div class="container">
