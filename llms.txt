@@ -178,7 +178,7 @@
   - App Store: https://apps.apple.com/app/id6791038062
   - Google Play: https://play.google.com/store/apps/details?id=com.chen.otolog（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/otolog/llms.txt
-- [トレカルテ（ToreKarte）](https://freetokyolabs.com/torekarte/): パーソナルトレーナー向けの顧客カルテアプリ。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。
+- [シドノート（Shidonote）](https://freetokyolabs.com/torekarte/): パーソナルトレーナー向けの顧客カルテアプリ（iPhone / iPad / Android）。セッション記録・回数券・体組成グラフを完全オフラインで管理し、顧客の情報を端末の外に出さない。買い切り。
   - App Store: https://apps.apple.com/app/id6791176557
   - Google Play: https://play.google.com/store/apps/details?id=com.chen.torekarte（Android 8.0 以降）
   - 詳細: https://freetokyolabs.com/torekarte/llms.txt
