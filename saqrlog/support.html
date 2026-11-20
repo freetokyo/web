@@ -386,7 +386,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -395,9 +396,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -421,6 +424,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -428,11 +437,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -453,9 +464,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Saqrlog", "description": "Saqrlog support and FAQ: offline data, subscription, restore purchases, units and languages.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/saqrlog/support.html", "image": "https://freetokyolabs.com/saqrlog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6789535072", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Saqrlog", "description": "Saqrlog support and FAQ: offline data, subscription, restore purchases, units and languages.", "inLanguage": "en", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/saqrlog/support.html", "image": "https://freetokyolabs.com/saqrlog/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6789535072", "sameAs": ["https://apps.apple.com/app/id6789535072", "https://play.google.com/store/apps/details?id=com.chen.saqrlog"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY", "availability": "https://schema.org/InStock"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Saqrlog", "item": "https://freetokyolabs.com/saqrlog/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/saqrlog/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Saqrlog is free for up to 2 falcons with all record types. Saqrlog Pro is an optional annual subscription (7-day free trial) that unlocks unlimited falcons, full weight history, per-falcon season comparison, and PDF/CSV export."}}, {"@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": {"@type": "Answer", "text": "Everything is stored on your device only. There is no account, no sync and no upload. The app works fully offline, even in airplane mode."}}, {"@type": "Question", "name": "How do I restore my purchase?", "acceptedAnswer": {"@type": "Answer", "text": "Open Settings inside the app and tap \"Restore purchases\". You can manage or cancel the subscription in the App Store: Settings → your Apple ID → Subscriptions."}}, {"@type": "Question", "name": "Flying weight vs. molt weight?", "acceptedAnswer": {"@type": "Answer", "text": "Each falcon can have two targets. During molt, birds are intentionally kept heavier, so a single target doesn't work — set both and Saqrlog uses the right one based on the falcon's current status."}}, {"@type": "Question", "name": "Grams or ounces?", "acceptedAnswer": {"@type": "Answer", "text": "Switch the unit anytime in Settings. Weights are stored internally and simply displayed in your chosen unit."}}, {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Arabic, Urdu, English and Japanese, with full right-to-left layout for Arabic and Urdu. Still need help? Email support@freetokyolabs.com ."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Saqrlog is free for up to 2 falcons with all record types. Saqrlog Pro is an optional annual subscription (7-day free trial) that unlocks unlimited falcons, full weight history, per-falcon season comparison, and PDF/CSV export."}}, {"@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": {"@type": "Answer", "text": "Everything is stored on your device only. There is no account, no sync and no upload. The app works fully offline, even in airplane mode."}}, {"@type": "Question", "name": "How do I restore my purchase?", "acceptedAnswer": {"@type": "Answer", "text": "Open Settings inside the app and tap \"Restore purchases\". You can manage or cancel the subscription in the App Store: Settings → your Apple ID → Subscriptions."}}, {"@type": "Question", "name": "Flying weight vs. molt weight?", "acceptedAnswer": {"@type": "Answer", "text": "Each falcon can have two targets. During molt, birds are intentionally kept heavier, so a single target doesn't work — set both and Saqrlog uses the right one based on the falcon's current status."}}, {"@type": "Question", "name": "Grams or ounces?", "acceptedAnswer": {"@type": "Answer", "text": "Switch the unit anytime in Settings. Weights are stored internally and simply displayed in your chosen unit."}}, {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Arabic, Urdu, English and Japanese, with full right-to-left layout for Arabic and Urdu. Still need help? Email support@freetokyolabs.com ."}}, {"@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": {"@type": "Answer", "text": "The Android version supports Android 9.0 and later. Download it from Google Play . To move to a new phone, export a backup from inside the app and import it on the new device. If backup is turned on in your device settings, Android's backup and device-to-device transfer also carry your records over. For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer."}}]}</script>
 </head>
 <body>
 
@@ -491,6 +502,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 
 <p class="contact">Still need help? Email <a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a>.</p>
 </div>
+<section class="ftlegal">
+<h2 id="android-support">About the Android version</h2>
+<p>The Android version supports Android 9.0 and later. Download it from <a href="https://play.google.com/store/apps/details?id=com.chen.saqrlog" target="_blank" rel="noopener">Google Play</a>.</p>
+<p>To move to a new phone, export a backup from inside the app and import it on the new device. If backup is turned on in your device settings, Android's backup and device-to-device transfer also carry your records over.</p>
+<p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
+</section>
 </main>
 <footer class="footer">
   <div class="container">

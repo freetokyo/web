@@ -1,10 +1,10 @@
 # Freetokyo Labs
 
-> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 29 本は Google Play でも配信し、3 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
+> Freetokyo Labs がリリースしているアプリ群の紹介ページ集約サイト。各アプリのプロダクト紹介、サポート、利用規約、プライバシーポリシーをホストする。健康（Health）・くらし（Life）・おかね（Money）・しごと（Work）の 4 カテゴリで、合計 51 本（配信中 48 本・近日公開 3 本）。現在は App Store（iOS / iPadOS / watchOS）で配信し、うち 30 本は Google Play でも配信し、3 本は Android 版を準備している。多くが完全オフライン・アカウント不要・買い切り。
 
 サイト: https://freetokyolabs.com/ （日本語） / https://freetokyolabs.com/en/ （English）
 アプリ数: 51（健康 9 / くらし 21 / おかね 5 / しごと 16）
-配信: App Store 48 本 / Google Play 29 本（Android 版を 3 本準備中）
+配信: App Store 48 本 / Google Play 30 本（Android 版を 3 本準備中）
 
 ## Apps
 
@@ -83,6 +83,7 @@
   - 詳細: https://freetokyolabs.com/jamalog/llms.txt
 - [Saqrlog（サクルログ）](https://freetokyolabs.com/saqrlog/): 鷹匠のための完全オフライン台帳 iOS アプリ。1 羽ごとに体重・給餌・訓練・狩りを日々記録し、飛翔前のコンディションを数字で管理。アカウント不要・データ収集なし。العربية（RTL）/ اردو / English / 日本語対応。
   - App Store: https://apps.apple.com/app/id6789535072
+  - Google Play: https://play.google.com/store/apps/details?id=com.chen.saqrlog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/saqrlog/llms.txt
 - [Muddah（ムッダ）](https://freetokyolabs.com/muddah/): GCC 駐在家族のための完全オフライン書類期限ボルトアプリ。イカマ・在留カード・パスポート・保険などの有効期限をヒジュラ暦／西暦の二暦で管理し、世帯・依存関係もまとめて更新忘れを防ぐ。アカウント不要・クラウド同期なし。English / العربية（RTL）/ 日本語対応。
   - App Store: https://apps.apple.com/app/id6790558814
