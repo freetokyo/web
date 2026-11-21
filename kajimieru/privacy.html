@@ -517,12 +517,12 @@ App Store のプライバシーラベルでは「データを収集していま�
 <p>Freetokyo Labs　メール: <a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a></p>
 <section class="ftlegal">
 <h2 id="android-privacy">Android 版でのデータの扱い</h2>
-<p>以下は Android 版（Android 9 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
-<p>家事の担当・該当なしの設定・表示名は、端末内のローカルデータベース（Room）と端末内の設定にのみ保存され、開発者のサーバーへ送られることはありません。Android 版はインターネットに接続する権限を持ちません。</p>
-<p>Android 版が実行時に求める許可（カメラ・写真・マイク・位置情報・連絡先・通知など）はありません。</p>
-<p>クラウドバックアップ（Google ドライブ）と端末間の移行は、どちらもアプリ側で無効にしてあります（<code>allowBackup="false"</code> と <code>data_extraction_rules.xml</code>）。端末を替えるときは、アプリ内のバックアップ機能でご自身でファイルに書き出してください。</p>
-<p>端末上の Google のサービスとして、Google Play Billing（アプリ内購入）と Google Play In-App Review（評価のお願い）を使います。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。課金に関するお問い合わせは Google Play サポートへお願いします。</p>
-<p>アプリをアンインストールすると、端末内のデータは削除されます。バックアップも移行も無効なので、ご自身で書き出したファイルを除き、端末の外にコピーは残りません。</p>
+<p>以下は Android 版（Android 9.0 以降）についての説明です。iOS 版の記述は上のとおりで、Android 版はここに書いた点だけが異なります。</p>
+<p>記録したデータは端末内のローカルデータベース（Room）に保存され、開発者のサーバーへ送られることはありません。</p>
+<p>Android 版はインターネットに接続する権限（<code>INTERNET</code>）を持たず、実行時に求める許可（カメラ・写真・マイク・位置情報・連絡先・通知など）もありません。画像・CSV・バックアップ・突き合わせ用のファイルは、利用者が共有シートまたは保存先を選んだときにだけ端末の外へ出ます（購入のときに通信するのは Google Play ストアアプリの側です）。</p>
+<p>クラウドバックアップと端末間移行はどちらも無効にしてあります（<code>allowBackup="false"</code> と <code>data_extraction_rules.xml</code>）。端末を替えるときは、アプリ内の書き出し機能でご自身でバックアップしてください。</p>
+<p>利用している外部サービスは Google Play Billing（購入）と Google Play In-app Review（評価の依頼）だけです。決済はすべて Google が処理し、カード番号などの決済情報が開発者に渡ることはありません。</p>
+<p>アプリをアンインストールすると、端末内のデータは削除されます。バックアップも移行も無効なので、端末の外にコピーは残りません。</p>
 </section>
 
 <section class="ftlegal">

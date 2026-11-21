@@ -517,12 +517,12 @@ device (any backup files you saved elsewhere remain).</p>
 <p>Freetokyo Labs — <a href="mailto:support@freetokyolabs.com">support@freetokyolabs.com</a></p>
 <section class="ftlegal">
 <h2 id="android-privacy">How the Android version handles your data</h2>
-<p>The following describes the Android version (Android 9 and later). Everything above applies to iOS; only the points below differ on Android.</p>
-<p>Your chore assignments, "not applicable" settings and display names are stored only in a local database (Room) and in settings on your device, and are never sent to the developer&#x27;s servers. The Android version has no permission to connect to the internet.</p>
-<p>The Android version asks for no runtime permissions (camera, photos, microphone, location, contacts, notifications or any other).</p>
-<p>Android&#x27;s cloud backup (Google Drive) and device-to-device transfer are both disabled by the app (<code>allowBackup="false"</code> and <code>data_extraction_rules.xml</code>). When you change devices, use the in-app backup to write a file yourself.</p>
-<p>The only Google services it uses on the device are Google Play Billing (in-app purchase) and Google Play In-App Review (the rating prompt). Google handles all payments, and payment information such as card numbers never reaches the developer. For billing enquiries, please contact Google Play support.</p>
-<p>Uninstalling the app deletes the data on the device. Because backup and transfer are disabled, no copy is left outside the device other than files you exported yourself.</p>
+<p>The following describes the Android version (Android 9.0 and later). Everything above applies to iOS; only the points below differ on Android.</p>
+<p>Your records are stored in a local database (Room) on your device. They are never sent to the developer's servers.</p>
+<p>The Android version does not hold the permission to connect to the internet (<code>INTERNET</code>) and asks for no runtime permissions (camera, photos, microphone, location, contacts, notifications or any other). Images, CSV files, backups and comparison files leave the device only when you pick a destination in the share sheet or the save dialog (when you buy, it is the Google Play Store app that talks to the network).</p>
+<p>Both cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code> plus <code>data_extraction_rules.xml</code>). To move to a new device, export a backup yourself from inside the app.</p>
+<p>The only external services used are Google Play Billing (purchases) and Google Play In-app Review (rating prompt). Google processes all payments; card details never reach the developer.</p>
+<p>Uninstalling the app deletes the data on your device. With backup and transfer disabled, no copy remains outside it.</p>
 </section>
 
 <section class="ftlegal">
