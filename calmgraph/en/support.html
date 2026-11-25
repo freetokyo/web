@@ -387,7 +387,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -396,9 +397,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -422,6 +425,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -429,11 +438,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -454,9 +465,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calmgraph", "description": "Calmgraph help and FAQ: scores, calibration, using it without an Apple Watch, restoring purchases, and data privacy.", "inLanguage": "en", "operatingSystem": "iOS, watchOS, Android", "applicationCategory": "HealthApplication", "url": "https://freetokyolabs.com/calmgraph/en/support.html", "image": "https://freetokyolabs.com/calmgraph/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6790698772"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Calmgraph", "description": "Calmgraph help and FAQ: scores, calibration, using it without an Apple Watch, restoring purchases, and data privacy.", "inLanguage": "en", "operatingSystem": "iOS 26.0+, watchOS, Android 9.0+", "applicationCategory": "HealthApplication", "url": "https://freetokyolabs.com/calmgraph/en/support.html", "image": "https://freetokyolabs.com/calmgraph/ogp.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6790698772", "sameAs": ["https://apps.apple.com/app/id6790698772", "https://play.google.com/store/apps/details?id=com.chen.calmgraph"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Calmgraph", "item": "https://freetokyolabs.com/calmgraph/en/"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://freetokyolabs.com/calmgraph/en/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "My score isn't showing", "acceptedAnswer": {"@type": "Answer", "text": "Add a 1-tap check-in (5 levels) from \"Check in\" on Home to see today's score. If you've connected Apple Watch, your score is computed once HRV and other data reaches your device (this can take a while depending on how you wear the Watch)."}}, {"@type": "Question", "name": "It says \"Calibrating\"", "acceptedAnswer": {"@type": "Answer", "text": "Your score is measured against your personal baseline. The first 14 days are a calibration period shown as provisional values. It grows more accurate the more you log."}}, {"@type": "Question", "name": "Can I use it without an Apple Watch?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. With subjective 1-tap check-ins alone, you get the full experience — score, tags, timeline, and weekly insight."}}, {"@type": "Question", "name": "I want to change Health permissions", "acceptedAnswer": {"@type": "Answer", "text": "Change the read items anytime in iOS under Settings &gt; Privacy &amp; Security &gt; Health &gt; Calmgraph."}}, {"@type": "Question", "name": "Restore a purchase / I got a new device", "acceptedAnswer": {"@type": "Answer", "text": "Tap \"Restore purchase\" in the Settings tab or the paywall. On the same Apple ID it restores with no extra charge. Because it's a one-time purchase, there is no subscription to cancel."}}, {"@type": "Question", "name": "Is my data safe?", "acceptedAnswer": {"@type": "Answer", "text": "All data is stored only on your device — nothing is sent off-device, shared with third parties, or used for advertising. See the Privacy Policy for details."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "My score isn't showing", "acceptedAnswer": {"@type": "Answer", "text": "Add a 1-tap check-in (5 levels) from \"Check in\" on Home to see today's score. If you've connected Apple Watch, your score is computed once HRV and other data reaches your device (this can take a while depending on how you wear the Watch)."}}, {"@type": "Question", "name": "It says \"Calibrating\"", "acceptedAnswer": {"@type": "Answer", "text": "Your score is measured against your personal baseline. The first 14 days are a calibration period shown as provisional values. It grows more accurate the more you log."}}, {"@type": "Question", "name": "Can I use it without an Apple Watch?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. With subjective 1-tap check-ins alone, you get the full experience — score, tags, timeline, and weekly insight."}}, {"@type": "Question", "name": "I want to change Health permissions", "acceptedAnswer": {"@type": "Answer", "text": "Change the read items anytime in iOS under Settings &gt; Privacy &amp; Security &gt; Health &gt; Calmgraph."}}, {"@type": "Question", "name": "Restore a purchase / I got a new device", "acceptedAnswer": {"@type": "Answer", "text": "Tap \"Restore purchase\" in the Settings tab or the paywall. On the same Apple ID it restores with no extra charge. Because it's a one-time purchase, there is no subscription to cancel."}}, {"@type": "Question", "name": "Is my data safe?", "acceptedAnswer": {"@type": "Answer", "text": "All data is stored only on your device — nothing is sent off-device, shared with third parties, or used for advertising. See the Privacy Policy for details."}}, {"@type": "Question", "name": "Is there an Android version?", "acceptedAnswer": {"@type": "Answer", "text": "The Android version supports Android 9.0 and later. Download it from Google Play . To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically. For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer."}}]}</script>
 </head>
 <body>
 
@@ -494,7 +505,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   </div>
 <section class="ftlegal">
 <h2 id="android-support">About the Android version</h2>
-<p>The Android version supports Android 9.0 and later. It is being prepared for Google Play and cannot be downloaded yet.</p>
+<p>The Android version supports Android 9.0 and later. Download it from <a href="https://play.google.com/store/apps/details?id=com.chen.calmgraph" target="_blank" rel="noopener">Google Play</a>.</p>
 <p>To move to a new phone, export a backup from inside the app and import it on the new device. Cloud backup and device-to-device transfer are both disabled in the Android version, so nothing carries over automatically.</p>
 <p>For questions, use the contact address below. Telling us whether you are on the iOS or the Android version gets you a faster answer.</p>
 </section>

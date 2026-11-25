@@ -388,7 +388,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
    素の青いテキストリンクとして出ていた（trero のヒーローで実測。
    background: rgba(0,0,0,0) で、二次導線のほうがボタンとして目立っていた）。
    クラス名ではなくリンク先で拾えば、本文に触らず全アプリ・全ロケールで直る。 */
-.ftbody a[href*="apps.apple.com"]{
+.ftbody a[href*="apps.apple.com"],
+.ftbody a[data-ftplay]{
   display:inline-block;
   background:var(--brand-bg,var(--color-accent));
   color:var(--brand-fg,#fff);
@@ -397,9 +398,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
   text-align:center; text-decoration:none;
   max-width:100%; margin:6px 6px 6px 0;
 }
-.ftbody a[href*="apps.apple.com"]:hover{opacity:.9;text-decoration:none}
+.ftbody a[href*="apps.apple.com"]:hover,
+.ftbody a[data-ftplay]:hover{opacity:.9;text-decoration:none}
 /* 表・箇条書き・注記の中のリンクまでボタンにすると読みにくい。 */
-.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+.ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+.ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
   display:inline; background:none; color:var(--color-accent);
   padding:0; border-radius:0; font-weight:inherit; font-size:inherit; margin:0;
 }
@@ -423,6 +426,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftcta h2{margin:0 0 6px;border:0;padding:0;font-size:20px}
 .ftcta p{margin:0 0 16px;color:var(--color-text-sub);font-size:15px}
 .ftcta__price{display:block;margin-top:10px;font-size:13px;color:var(--color-text-mute)}
+/* App Store と Google Play の両方で配信しているときは2つ並ぶ。狭い画面では折り返す */
+.ftcta__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+/* App Store 側はリンク先の規則（下の「App Store 導線」）で丸いピルになる。
+   Play のボタンだけ角丸の四角にならないよう、2つを同じ形に揃える */
+.ftcta__btns .cta{margin:0;padding:13px 26px;border-radius:999px;
+  font-size:16px;line-height:1.4}
 
 /* ダークではブランド色が面と同化する（64本中46本が #1c1c1e と 3:1 未満。
    trero #1d1d1f は 1.01:1 でボタンが完全に消える）。
@@ -430,11 +439,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 @media (prefers-color-scheme:dark){
   .ftbody .cta,
   .ftbody a[href*="apps.apple.com"],
+  .ftbody a[data-ftplay],
   .nav__cta{
     background:var(--brand-bg-dark,var(--color-accent));
     color:var(--brand-fg-dark,#fff);
   }
-  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"]{
+  .ftbody :is(table,li,.note,small,footer) a[href*="apps.apple.com"],
+  .ftbody :is(table,li,.note,small,footer) a[data-ftplay]{
     background:none; color:var(--color-accent);
   }
 }
@@ -455,9 +466,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible,
 .ftshot figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--color-text-sub)}
 @media (max-width:520px){.ftshot{width:158px}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "カジミエル（Kajimieru）", "description": "カジミエルのよくある質問と問い合わせ先。購入の復元、バックアップ、該当なしの設定について。", "inLanguage": "ja", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/kajimieru/support.html", "image": "https://freetokyolabs.com/kajimieru/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6797382805"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "カジミエル（Kajimieru）", "description": "カジミエルのよくある質問と問い合わせ先。購入の復元、バックアップ、該当なしの設定について。", "inLanguage": "ja", "operatingSystem": "iOS 17.0+, Android 9.0+", "applicationCategory": "LifestyleApplication", "url": "https://freetokyolabs.com/kajimieru/support.html", "image": "https://freetokyolabs.com/kajimieru/og-image.png", "publisher": {"@type": "Organization", "name": "Freetokyo Labs", "url": "https://freetokyolabs.com/"}, "installUrl": "https://apps.apple.com/app/id6797382805", "sameAs": ["https://apps.apple.com/app/id6797382805", "https://play.google.com/store/apps/details?id=com.chen.kajimieru"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Freetokyo Labs", "item": "https://freetokyolabs.com/"}, {"@type": "ListItem", "position": 2, "name": "カジミエル（Kajimieru）", "item": "https://freetokyolabs.com/kajimieru/"}, {"@type": "ListItem", "position": 3, "name": "サポート", "item": "https://freetokyolabs.com/kajimieru/support.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "毎日つけるアプリですか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。一度きりの棚卸しに絞っています。日々の完了チェックも通知もありません。 状況が変わったときに、また開いて直してください。"}}, {"@type": "Question", "name": "合計が100%になりません", "acceptedAnswer": {"@type": "Answer", "text": "仕様です。3つの割合をそれぞれ小数第1位で丸めているため、合計が 99.9% や 100.1% になることがあります。 見栄えのために数字を補正することはしていません。"}}, {"@type": "Question", "name": "うちに当てはまらない家事があります", "acceptedAnswer": {"@type": "Answer", "text": "その行を左にスワイプして「該当なし」にしてください。割合の分母から外れます。 初回の設問（子ども・車・持ち家・ペット・庭・介護）でまとめて外すこともできます。 戻すときは「設定 → 該当なしにした家事」から解除してください。"}}, {"@type": "Question", "name": "担当を間違えました", "acceptedAnswer": {"@type": "Answer", "text": "別のチップをタップすればその場で切り替わります。担当を消したいときは、 いま選ばれているチップをもう一度タップしてください。"}}, {"@type": "Question", "name": "全部やり直したい", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → 担当をリセット」で担当だけを未選択に戻せます（「該当なし」の設定は残ります）。 「該当なし」も含めて消すときは「すべてのデータを削除」を使ってください。"}}, {"@type": "Question", "name": "機種変更するときは？", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → バックアップと復元 → バックアップを作成」でファイルを書き出し、 新しい端末で同じ画面から「バックアップから復元」を選んでください。 データは端末内にのみ保存されるため、この手順を踏まないと引き継げません。"}}, {"@type": "Question", "name": "購入したのに機能が解放されません", "acceptedAnswer": {"@type": "Answer", "text": "同じ Apple ID でサインインしていることを確認し、 「設定 → 購入を復元」またはフルアクセスの画面にある「購入を復元」を実行してください。"}}, {"@type": "Question", "name": "表示名を変えたい", "acceptedAnswer": {"@type": "Answer", "text": "フルアクセスをご購入のうえ「設定 → 表示名」から変更できます。各20文字まで、絵文字は使えません。 空欄にすると既定の呼び方に戻ります。"}}, {"@type": "Question", "name": "英語で使いたい", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → 言語」から切り替えられます。既定はシステムの言語に従います。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "毎日つけるアプリですか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。一度きりの棚卸しに絞っています。日々の完了チェックも通知もありません。 状況が変わったときに、また開いて直してください。"}}, {"@type": "Question", "name": "合計が100%になりません", "acceptedAnswer": {"@type": "Answer", "text": "仕様です。3つの割合をそれぞれ小数第1位で丸めているため、合計が 99.9% や 100.1% になることがあります。 見栄えのために数字を補正することはしていません。"}}, {"@type": "Question", "name": "うちに当てはまらない家事があります", "acceptedAnswer": {"@type": "Answer", "text": "その行を左にスワイプして「該当なし」にしてください。割合の分母から外れます。 初回の設問（子ども・車・持ち家・ペット・庭・介護）でまとめて外すこともできます。 戻すときは「設定 → 該当なしにした家事」から解除してください。"}}, {"@type": "Question", "name": "担当を間違えました", "acceptedAnswer": {"@type": "Answer", "text": "別のチップをタップすればその場で切り替わります。担当を消したいときは、 いま選ばれているチップをもう一度タップしてください。"}}, {"@type": "Question", "name": "全部やり直したい", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → 担当をリセット」で担当だけを未選択に戻せます（「該当なし」の設定は残ります）。 「該当なし」も含めて消すときは「すべてのデータを削除」を使ってください。"}}, {"@type": "Question", "name": "機種変更するときは？", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → バックアップと復元 → バックアップを作成」でファイルを書き出し、 新しい端末で同じ画面から「バックアップから復元」を選んでください。 データは端末内にのみ保存されるため、この手順を踏まないと引き継げません。"}}, {"@type": "Question", "name": "購入したのに機能が解放されません", "acceptedAnswer": {"@type": "Answer", "text": "同じ Apple ID でサインインしていることを確認し、 「設定 → 購入を復元」またはフルアクセスの画面にある「購入を復元」を実行してください。"}}, {"@type": "Question", "name": "表示名を変えたい", "acceptedAnswer": {"@type": "Answer", "text": "フルアクセスをご購入のうえ「設定 → 表示名」から変更できます。各20文字まで、絵文字は使えません。 空欄にすると既定の呼び方に戻ります。"}}, {"@type": "Question", "name": "英語で使いたい", "acceptedAnswer": {"@type": "Answer", "text": "「設定 → 言語」から切り替えられます。既定はシステムの言語に従います。"}}, {"@type": "Question", "name": "Android 版はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "対応するのは Android 9.0 以降です。 Google Play からダウンロードできます。 端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。 ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。"}}]}</script>
 </head>
 <body>
 
@@ -524,12 +535,10 @@ Freetokyo Labs　メール: <a href="mailto:support@freetokyolabs.com">support@f
 （設定画面の最下部に表示されます）をお知らせいただけると調査が早くなります。</p>
 <section class="ftlegal">
 <h2 id="android-support">Android 版について</h2>
-<p>対応するのは Android 9.0 以降です。Google Play での公開を準備中で、公開まではダウンロードいただけません。</p>
+<p>対応するのは Android 9.0 以降です。<a href="https://play.google.com/store/apps/details?id=com.chen.kajimieru" target="_blank" rel="noopener">Google Play</a> からダウンロードできます。</p>
 <p>端末を替えるときは、アプリ内の書き出し機能でバックアップを作って新しい端末で読み込んでください。Android 版はクラウドバックアップも端末間移行も無効にしてあるため、自動では引き継がれません。</p>
 <p>ご質問は下のお問い合わせ先へどうぞ。iOS 版と Android 版のどちらをお使いかを書き添えていただけると、お返事が早くなります。</p>
 </section>
-
-
 </main>
 <footer class="footer">
   <div class="container">
