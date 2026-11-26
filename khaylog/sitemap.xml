@@ -5,24 +5,28 @@
     <loc>https://freetokyolabs.com/khaylog/</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/" />
   </url>
   <url>
     <loc>https://freetokyolabs.com/khaylog/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/privacy.html" />
   </url>
   <url>
     <loc>https://freetokyolabs.com/khaylog/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/terms.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/terms.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/terms.html" />
   </url>
   <url>
     <loc>https://freetokyolabs.com/khaylog/support.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/support.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/support.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/support.html" />
   </url>
   <url><loc>https://freetokyolabs.com/khaylog/llms.txt</loc></url>
@@ -30,24 +34,56 @@
     <loc>https://freetokyolabs.com/khaylog/en/</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/" />
   </url>
   <url>
     <loc>https://freetokyolabs.com/khaylog/en/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/privacy.html" />
   </url>
   <url>
     <loc>https://freetokyolabs.com/khaylog/en/terms.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/terms.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/terms.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/terms.html" />
   </url>
   <url>
     <loc>https://freetokyolabs.com/khaylog/en/support.html</loc>
     <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/support.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/support.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/khaylog/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/khaylog/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/khaylog/fr/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/terms.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/terms.html" />
+  </url>
+  <url>
+    <loc>https://freetokyolabs.com/khaylog/fr/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://freetokyolabs.com/khaylog/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetokyolabs.com/khaylog/en/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://freetokyolabs.com/khaylog/fr/support.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetokyolabs.com/khaylog/support.html" />
   </url>
 </urlset>

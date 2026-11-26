@@ -7,7 +7,7 @@ App Store: https://apps.apple.com/app/id6792197271
 Google Play: https://play.google.com/store/apps/details?id=com.chen.khaylog（Android 9.0 以降）
 開発: Freetokyo Labs
 バージョン: 1.3 / 対応: iOS 26.0 以降
-対応言語（Webページ）: ja / en
+対応言語（Webページ）: ja / en / fr
 
 ## ページ
 
@@ -16,3 +16,4 @@ Google Play: https://play.google.com/store/apps/details?id=com.chen.khaylog（An
 - 利用規約: https://freetokyolabs.com/khaylog/terms.html
 - プライバシー: https://freetokyolabs.com/khaylog/privacy.html
 - en: https://freetokyolabs.com/khaylog/en/
+- fr: https://freetokyolabs.com/khaylog/fr/
