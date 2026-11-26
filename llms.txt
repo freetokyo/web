@@ -102,7 +102,7 @@
 - [SakuLog（サクログ）](https://freetokyolabs.com/sakulog/): こどもの絵や工作を撮るだけでまっすぐ補正し、年齢べつに自動整理する iOS アプリ。残す・手放すをスワイプで決める整理モードで、現物を納得して手放せる。データはユーザー本人の iCloud のみ・アカウント不要・買い切り。
   - App Store: https://apps.apple.com/app/id6791827004
   - 詳細: https://freetokyolabs.com/sakulog/llms.txt
-- [Khaylog（ハイログ）](https://freetokyolabs.com/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。日本語 / English / العربية（RTL）対応。
+- [Khaylog（ハイログ）](https://freetokyolabs.com/khaylog/): 馬主のための完全オフライン馬管理台帳 iOS アプリ。装蹄・ワクチンの期限通知、費用の通貨別集計、5 代血統・ショー・繁殖まで一台で管理。アカウント不要・買い切り。35 言語対応（アラビア語は RTL）。
   - App Store: https://apps.apple.com/app/id6792197271
   - Google Play: https://play.google.com/store/apps/details?id=com.chen.khaylog（Android 9.0 以降）
   - 詳細: https://freetokyolabs.com/khaylog/llms.txt
